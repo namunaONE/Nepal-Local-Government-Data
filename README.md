@@ -80,9 +80,11 @@ void main() {
 The dataset reflects Nepal's gazetted federal structure (753 local levels,
 as established by the 2017 restructuring under the 2015 Constitution) with an
 "as of" date of **October 2026**. Counts are validated by the package's own
-test suite against the official national figures. Administrative boundaries
-may change through future government decisions; check the
-[releases page](https://github.com/namunaONE/Nepal-Local-Government-Data/releases)
+test suite against the official national figures. The dataset lives in
+`data/nepal_local_levels.json` (single source of truth) — its schema and
+update process are documented in [data/README.md](data/README.md).
+Administrative boundaries may change through future government decisions;
+check the [releases page](https://github.com/namunaONE/Nepal-Local-Government-Data/releases)
 for dataset updates.
 
 This project is not affiliated with the Government of Nepal.

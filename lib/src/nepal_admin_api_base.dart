@@ -18,12 +18,12 @@ enum LocalBodyType {
   /// A Rural Municipality — 460 exist nationwide.
   ruralMunicipality('RM', 'Rural Municipality'),
 
-  /// Fallback for entries that failed to parse.
+  /// Fallback for deserialization misses.
   unknown('Unknown', 'Unknown');
 
   const LocalBodyType(this.shortName, this.fullName);
 
-  /// The abbreviation used in the dataset, e.g. 'RM'.
+  /// The abbreviation used by the dataset, e.g. 'RM'.
   final String shortName;
 
   /// The human-readable name, e.g. 'Rural Municipality'.
@@ -109,19 +109,16 @@ class LocalBody {
 
 /// A district (77 nationwide), owning its local bodies.
 class District {
-  /// Matches dataset entries like 'Bharatpur (Metro)'.
-  static final RegExp _unitPattern = RegExp(r'(.*)\s\((Metro|Sub-Metro|M|RM)\)');
-
   final String name;
-  final String _rawUnits;
+  final List<(String, LocalBodyType)> _units;
   String _provinceName;
   List<LocalBody>? _parsedLocalBodies;
 
   District({
     required this.name,
-    required String rawUnits,
+    required List<(String, LocalBodyType)> units,
     String provinceName = '',
-  })  : _rawUnits = rawUnits,
+  })  : _units = units,
         _provinceName = provinceName;
 
   /// Called by [Province] when this district is attached to it.
@@ -133,26 +130,22 @@ class District {
   /// The province this district belongs to.
   String get provinceName => _provinceName;
 
-  /// The district's local bodies, parsed once and cached.
-  List<LocalBody> get localBodies => _parsedLocalBodies ??= _parse();
+  /// The district's local bodies, built once and cached.
+  List<LocalBody> get localBodies => _parsedLocalBodies ??= _build();
 
   /// Number of local bodies in this district.
   int get localBodyCount => localBodies.length;
 
-  List<LocalBody> _parse() {
-    return _rawUnits
-        .split('·')
-        .map((unit) => unit.trim())
-        .where((unit) => unit.isNotEmpty)
-        .map((unit) {
-      final match = _unitPattern.firstMatch(unit);
-      return LocalBody(
-        name: (match?.group(1) ?? unit).trim(),
-        type: LocalBodyType.fromShort(match?.group(2)),
-        districtName: name,
-        provinceName: _provinceName,
-      );
-    }).toList();
+  List<LocalBody> _build() {
+    return [
+      for (final (unitName, unitType) in _units)
+        LocalBody(
+          name: unitName,
+          type: unitType,
+          districtName: name,
+          provinceName: _provinceName,
+        ),
+    ];
   }
 
   Map<String, dynamic> toJson() => <String, dynamic>{

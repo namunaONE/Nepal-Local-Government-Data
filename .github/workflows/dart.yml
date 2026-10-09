@@ -15,8 +15,12 @@ jobs:
           sdk: stable
       - name: Install dependencies
         run: dart pub get
-      - name: Verify formatting
-        run: dart format --output=none --set-exit-if-changed .
+      - name: Verify formatting (generated file excluded)
+        run: dart format --output=none --set-exit-if-changed $(git ls-files '*.dart' | grep -v 'lib/src/nepal_data.dart')
+      - name: Regenerate dataset (validates JSON against official counts)
+        run: dart run tool/generate.dart
+      - name: Verify no codegen drift
+        run: git diff --exit-code -- lib/src/nepal_data.dart
       - name: Analyze
         run: dart analyze --fatal-infos
       - name: Run tests
