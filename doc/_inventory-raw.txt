@@ -1,6 +1,6 @@
 ==============================================================================
 STEP 1 SOURCE COVERAGE INVENTORY
-generated: 2026-10-11T08:51:03.785331Z
+generated: 2026-10-11T09:17:15.067995Z
 ==============================================================================
 
 ### abinrimal  (data/_raw/abinrimal)
@@ -20,22 +20,48 @@ generated: 2026-10-11T08:51:03.785331Z
   note: district.code unique=true range=1..77
 
 ### local-states-nepal  (data/_raw/local-states-nepal)
-  province.name_en: nonEmpty=0/7 (0%) devanagari=0 (0%)
-  province.name_ne: nonEmpty=0/7 (0%) devanagari=0 (0%)
-  province(np).name_ne: nonEmpty=0/7 (0%) devanagari=0 (0%)
-  district.name_en: nonEmpty=0/77 (0%) devanagari=0 (0%)
-  district.name_ne: nonEmpty=0/77 (0%) devanagari=0 (0%)
-  district.province_code: nonEmpty=0/77 (0%) devanagari=0 (0%)
-  municipality.id: nonEmpty=753/753 (100%) devanagari=0 (0%)
-  municipality.district_id: nonEmpty=753/753 (100%) devanagari=0 (0%)
-  municipality.category_id: nonEmpty=753/753 (100%) devanagari=0 (0%)
-  municipality.name: nonEmpty=753/753 (100%) devanagari=0 (0%)
-  municipality.area_sq_km: nonEmpty=753/753 (100%) devanagari=0 (0%)
-  municipality.website: nonEmpty=753/753 (100%) devanagari=1 (0%)
-  municipality.wards: nonEmpty=753/753 (100%) devanagari=0 (0%)
+  province.en.id: nonEmpty=7/7 (100%) devanagari=0 (0%)
+  province.en.name: nonEmpty=7/7 (100%) devanagari=0 (0%)
+  province.en.area_sq_km: nonEmpty=7/7 (100%) devanagari=0 (0%)
+  province.en.website: nonEmpty=7/7 (100%) devanagari=0 (0%)
+  province.en.headquarter: nonEmpty=7/7 (100%) devanagari=0 (0%)
+  province.np.id: nonEmpty=7/7 (100%) devanagari=0 (0%)
+  province.np.name: nonEmpty=7/7 (100%) devanagari=7 (100%)
+  province.np.area_sq_km: nonEmpty=7/7 (100%) devanagari=7 (100%)
+  province.np.website: nonEmpty=7/7 (100%) devanagari=0 (0%)
+  province.np.headquarter: nonEmpty=7/7 (100%) devanagari=7 (100%)
+  district.en.id: nonEmpty=77/77 (100%) devanagari=0 (0%)
+  district.en.province_id: nonEmpty=77/77 (100%) devanagari=0 (0%)
+  district.en.name: nonEmpty=77/77 (100%) devanagari=0 (0%)
+  district.en.area_sq_km: nonEmpty=77/77 (100%) devanagari=0 (0%)
+  district.en.website: nonEmpty=77/77 (100%) devanagari=0 (0%)
+  district.en.headquarter: nonEmpty=77/77 (100%) devanagari=0 (0%)
+  district.np.id: nonEmpty=77/77 (100%) devanagari=0 (0%)
+  district.np.province_id: nonEmpty=77/77 (100%) devanagari=0 (0%)
+  district.np.name: nonEmpty=77/77 (100%) devanagari=77 (100%)
+  district.np.area_sq_km: nonEmpty=77/77 (100%) devanagari=77 (100%)
+  district.np.website: nonEmpty=77/77 (100%) devanagari=0 (0%)
+  district.np.headquarter: nonEmpty=77/77 (100%) devanagari=77 (100%)
+  municipality.en.id: nonEmpty=753/753 (100%) devanagari=0 (0%)
+  municipality.en.district_id: nonEmpty=753/753 (100%) devanagari=0 (0%)
+  municipality.en.category_id: nonEmpty=753/753 (100%) devanagari=0 (0%)
+  municipality.en.name: nonEmpty=753/753 (100%) devanagari=0 (0%)
+  municipality.en.area_sq_km: nonEmpty=753/753 (100%) devanagari=0 (0%)
+  municipality.en.website: nonEmpty=753/753 (100%) devanagari=1 (0%)
+  municipality.en.wards: nonEmpty=753/753 (100%) devanagari=0 (0%)
+  municipality.np.id: nonEmpty=753/753 (100%) devanagari=0 (0%)
+  municipality.np.district_id: nonEmpty=753/753 (100%) devanagari=0 (0%)
+  municipality.np.category_id: nonEmpty=753/753 (100%) devanagari=0 (0%)
+  municipality.np.name: nonEmpty=753/753 (100%) devanagari=753 (100%)
+  municipality.np.area_sq_km: nonEmpty=753/753 (100%) devanagari=753 (100%)
+  municipality.np.website: nonEmpty=753/753 (100%) devanagari=1 (0%)
+  municipality.np.wards: nonEmpty=753/753 (100%) devanagari=753 (100%)
   note: provinces=7 districts=77 municipalities(en)=753 municipalities(np)=753
   note: municipality keys: [id, district_id, category_id, name, area_sq_km, website, wards]
   note: sample: {id: 1, district_id: 1, category_id: 3, name: Shadanand, area_sq_km: 241.15, website: http://www.shadanandamun.gov.np/, wards: 14}
+  note: SUM of en ward counts: 6743  (target 6743)
+  note: en wards are JSON strings of ASCII digits, NOT ints — parsed via devaDigitsToInt; -1000000 sentinel flags unparseable
+  note: np wards parseable as Devanagari numerals: 753/753
 
 ### nepali-geo-pro-max  (data/_raw/nepali-geo-pro-max)
   province.id: nonEmpty=7/7 (100%) devanagari=0 (0%)
@@ -51,6 +77,10 @@ generated: 2026-10-11T08:51:03.785331Z
   province.aliases: nonEmpty=7/7 (100%) devanagari=7 (100%)
   district.provinceId: nonEmpty=7/7 (100%) devanagari=0 (0%)
   district.districts: nonEmpty=7/7 (100%) devanagari=7 (100%)
+  districtSeed.nameEn: nonEmpty=77/77 (100%) devanagari=0 (0%)
+  districtSeed.nameNe: nonEmpty=77/77 (100%) devanagari=77 (100%)
+  districtSeed.headquarters: nonEmpty=77/77 (100%) devanagari=0 (0%)
+  districtSeed.aliases: nonEmpty=10/10 (100%) devanagari=0 (0%)
   localUnit.nameEn: nonEmpty=753/753 (100%) devanagari=0 (0%)
   localUnit.nameNe: nonEmpty=753/753 (100%) devanagari=753 (100%)
   localUnit.type: nonEmpty=753/753 (100%) devanagari=0 (0%)
@@ -58,6 +88,7 @@ generated: 2026-10-11T08:51:03.785331Z
   localUnit.wards: nonEmpty=753/753 (100%) devanagari=0 (0%)
   localUnit.postalCode: nonEmpty=16/16 (100%) devanagari=0 (0%)
   localUnit.aliases: nonEmpty=17/17 (100%) devanagari=1 (6%)
+  note: nested district seeds parsed: 77 (expect 77)
   note: provinces=7 districts=7 localUnits=753 legacyDistricts=75 zones=14 regions=5
   note: postal legacy map entries=409 postal 2025 map entries=752
   note: localUnits with ward count: 753/753
@@ -108,7 +139,136 @@ generated: 2026-10-11T08:51:03.785331Z
 
 ==============================================================================
 CROSS-SOURCE LOCAL-BODY MATCHING
+key = "<district>|<name>", flattened (lowercase, type suffix
+and (...) groups stripped, spaces/hyphens/apostrophes/dots
+removed). Absorbs "Mai Jogmai"/"Maijogmai" and "Bhojpur
+Municipality"/"Bhojpur", but NOT true spelling differences,
+which surface as fuzzy suggestions below.
 ==============================================================================
+WITHIN-SOURCE DUPLICATE KEYS (a duplicate here means the
+source itself double-counts a palika):
+  abinrimal      : 752 distinct keys (expect 753 records); duplicates: 1
+    DUPE x2: gulmi|chatrakot
+  sagautam5 (en) : 753 distinct keys (expect 753 records); duplicates: 0
+  geo-pro-max    : 753 distinct keys (expect 753 records); duplicates: 0
+  sagautam5 en ids: 753/753 unique; np ids: 753/753 unique; en<->np id sets equal: true
+AGREEMENT (abinrimal n=752 vs sagautam5 n=753):
+  shared keys: 595
+  in abinrimal only: 157
+    MISSING achham|bannigadhi
+    MISSING achham|sanphebagar  ~> suggests "achham|sanfebagar (d=2)"
+    MISSING achham|turmakhad  ~> suggests "achham|turmakhand (d=1)"
+    MISSING arghakhanchi|bhumekasthan  ~> suggests "arghakhanchi|bhumikasthan (d=1)"
+    MISSING baglung|kanthekhola  ~> suggests "baglung|khathekhola (d=2)"
+    MISSING baglung|nisikhola  ~> suggests "baglung|nishikhola (d=1)"
+    MISSING baitadi|dasharathchanda  ~> suggests "baitadi|dashrathchanda (d=1)"
+    MISSING baitadi|dilasaini  ~> suggests "baitadi|dilashaini (d=1)"
+    MISSING baitadi|dogadakedar  ~> suggests "baitadi|dogdakedar (d=1)"
+    MISSING bajhang|bithadchir  ~> suggests "bajhang|bitthadchir (d=1)"
+    MISSING bajhang|chabispathivera
+    MISSING bajhang|jayaprithivi  ~> suggests "bajhang|jayaprithvi (d=1)"
+    MISSING bajhang|kedarseu  ~> suggests "bajhang|kedarsyu (d=1)"
+    MISSING bajhang|saipaal  ~> suggests "bajhang|saipal (d=1)"
+    MISSING bajura|swamikartikkhaapar  ~> suggests "bajura|swamikartikkhapar (d=1)"
+    MISSING bajura|tribeni  ~> suggests "bajura|triveni (d=1)"
+    MISSING banke|janki  ~> suggests "banke|janaki (d=1)"
+    MISSING bara|simraungadh  ~> suggests "bara|simaraungadh (d=1)"
+    MISSING bardiya|bansagadhi  ~> suggests "bardiya|basgadhi (d=2)"
+    MISSING bhojpur|aamchowk  ~> suggests "bhojpur|aamchok (d=1)"
+  in sagautam5 only: 158
+    MISSING achham|bannigadijayagad
+    MISSING achham|sanfebagar  ~> suggests "achham|sanphebagar (d=2)"
+    MISSING achham|turmakhand  ~> suggests "achham|turmakhad (d=1)"
+    MISSING arghakhanchi|bhumikasthan  ~> suggests "arghakhanchi|bhumekasthan (d=1)"
+    MISSING baglung|khathekhola  ~> suggests "baglung|kanthekhola (d=2)"
+    MISSING baglung|nishikhola  ~> suggests "baglung|nisikhola (d=1)"
+    MISSING baitadi|dashrathchanda  ~> suggests "baitadi|dasharathchanda (d=1)"
+    MISSING baitadi|dilashaini  ~> suggests "baitadi|dilasaini (d=1)"
+    MISSING baitadi|dogdakedar  ~> suggests "baitadi|dogadakedar (d=1)"
+    MISSING bajhang|bitthadchir  ~> suggests "bajhang|bithadchir (d=1)"
+    MISSING bajhang|chhabispathibhera
+    MISSING bajhang|jayaprithvi  ~> suggests "bajhang|jayaprithivi (d=1)"
+    MISSING bajhang|kedarsyu  ~> suggests "bajhang|kedarseu (d=1)"
+    MISSING bajhang|saipal  ~> suggests "bajhang|saipaal (d=1)"
+    MISSING bajura|swamikartikkhapar  ~> suggests "bajura|swamikartikkhaapar (d=1)"
+    MISSING bajura|triveni  ~> suggests "bajura|tribeni (d=1)"
+    MISSING banke|janaki  ~> suggests "banke|janki (d=1)"
+    MISSING bara|simaraungadh  ~> suggests "bara|simraungadh (d=1)"
+    MISSING bardiya|basgadhi  ~> suggests "bardiya|bansagadhi (d=2)"
+    MISSING bhojpur|aamchok  ~> suggests "bhojpur|aamchowk (d=1)"
+EN SPELLING VARIANTS on shared keys: 26 (suffix/punctuation/case differences, e.g. suffix present in one):
+    abinrimal="Sundarharaicha" vs sagautam5="Sundar Haraicha"
+    abinrimal="Maiwakhola" vs sagautam5="Maiwa Khola"
+    abinrimal="Mikwakhola" vs sagautam5="Mikwa Khola"
+    abinrimal="Mahakulung" vs sagautam5="Maha Kulung"
+    abinrimal="Likhupike" vs sagautam5="Likhu Pike"
+    abinrimal="Nechasalyan" vs sagautam5="Necha Salyan"
+    abinrimal="Khijidemba" vs sagautam5="Khiji Demba"
+    abinrimal="Buddhashanti" vs sagautam5="Buddha Shanti"
+    abinrimal="Jitpursimara" vs sagautam5="Jitpur Simara"
+    abinrimal="Bode Barsain" vs sagautam5="Bodebarsain"
+    abinrimal="Balan Bihul" vs sagautam5="Balan-Bihul"
+    abinrimal="Mithila Bihari" vs sagautam5="MithilaBihari"
+    abinrimal="Tripura Sundari" vs sagautam5="Tripurasundari"
+    abinrimal="Khanikhola" vs sagautam5="Khani Khola"
+    abinrimal="Chaurideurali" vs sagautam5="Chauri Deurali"
+    abinrimal="Likhu Tamakoshi" vs sagautam5="LikhuTamakoshi"
+    abinrimal="Bhimsenthapa" vs sagautam5="Bhimsen Thapa"
+    abinrimal="Chum Nubri" vs sagautam5="Chumnubri"
+    abinrimal="MadhyaNepal" vs sagautam5="Madhya Nepal"
+    abinrimal="Madhyabindu" vs sagautam5="Madhya Bindu"
+DEVANAGARI AGREEMENT on shared keys: agree=376 differ-or-empty=219 unlinked=0 (exact string match; unicode-encoding differences would surface here and need review, not silent merging)
+    morang|belbari: abinrimal="बेलबारी" vs sag-np="बेलवारी"
+    morang|jahada: abinrimal="जहादा" vs sag-np="जहदा"
+    morang|kerabari: abinrimal="केराबारी" vs sag-np="केरावारी"
+    sunsari|itahari: abinrimal="इटहरी" vs sag-np="ईटहरी"
+    sunsari|duhabi: abinrimal="दुहबी" vs sag-np="दुहवी"
+    sunsari|inaruwa: abinrimal="इनरुवा" vs sag-np="ईनरुवा"
+    taplejung|phungling: abinrimal="फुङ्लिङ" vs sag-np="फुङलिङ"
+    taplejung|meringden: abinrimal="Meringden" vs sag-np="मेरिङदेन"
+    taplejung|maiwakhola: abinrimal="माइवाखोला" vs sag-np="मैवाखोला"
+    taplejung|phaktanglung: abinrimal="फाक्ताङलुङ" vs sag-np="फक्ताङलुङ"
+    taplejung|sirijangha: abinrimal="सिरिजाङ्घा" vs sag-np="सिरीजङ्घा"
+    sankhuwasabha|madi: abinrimal="माडी" vs sag-np="मादी"
+    sankhuwasabha|khandbari: abinrimal="खाँदबारी" vs sag-np="खाँदवारी"
+    sankhuwasabha|silichong: abinrimal="सिलिचङ" vs sag-np="सिलीचोङ"
+    solukhumbu|sotang: abinrimal="सोटाङ" vs sag-np="सोताङ"
+    solukhumbu|mahakulung: abinrimal="महाकुलुङ" vs sag-np="माहाकुलुङ"
+    solukhumbu|likhupike: abinrimal="लिखुपिके" vs sag-np="लिखु पिके"
+    okhaldhunga|siddhicharan: abinrimal="सिद्धिचरण" vs sag-np="सिद्दिचरण"
+    okhaldhunga|chisankhugadhi: abinrimal="चिसंखुगढी" vs sag-np="चिशंखुगढी"
+    okhaldhunga|manebhanjyang: abinrimal="मानेभञ्ज्याङ" vs sag-np="मानेभञ्याङ"
+abinrimal name_ne WITHOUT any Devanagari script: 2 [Meringden (15), Bogtan Foodsil (71)]
+WARD AGREEMENT sagautam5-en vs geo-pro-max: agree=751 / compared=752 (every mismatch is a candidate transcription error like the known 6742-vs-6743 case)
+    dhanusha|janakpurdham: sagautam5=25 vs geo-pro-max=24
+WARD INTERNAL sagautam5 en-vs-np (linked by id): agree=753 differ-or-unparseable=0
+
+DISTRICT nameNe + HQ AGREEMENT
+  districts seen: 77 (expect 77)
+  nameNe abinrimal-vs-sag-np: agree=64 differ=13
+  HQ sagautam5-vs-geo: agree=59 differ=18
+    HQ baitadi: sagautam5="Dasharathchand" geo="Baitadi"
+    HQ bajhang: sagautam5="Jayaprithvi" geo="Chainpur"
+    HQ bajura: sagautam5="Badimalika" geo="Martadi"
+    HQ banke: sagautam5="Nepalganj" geo="Nepalgunj"
+    HQ dadeldhura: sagautam5="Amargadhi" geo="Dadeldhura"
+    HQ dailekh: sagautam5="Dailekh" geo="Narayan"
+    HQ darchula: sagautam5="Darchula" geo="Khalanga"
+    nameNe dhading: abinrimal="धादिङ" sag-np="धादिंङ्ग" geo="धादिङ"
+    HQ dhading: sagautam5="Nilkantha" geo="Dhading Besi"
+    HQ dolakha: sagautam5="Bhimeshwar" geo="Charikot"
+    HQ jumla: sagautam5="Chandannath" geo="Jumla"
+    HQ kanchanpur: sagautam5="Bheemdatta" geo="Bhimdatta"
+    nameNe kathmandu: abinrimal="काठमाडौं" sag-np="काठमाडौँ" geo="काठमाडौँ"
+    nameNe kavrepalanchok: abinrimal="काभ्रेपलाञ्चोक" sag-np="काभ्रेपलान्चोक" geo="काभ्रेपलाञ्चोक"
+    nameNe khotang: abinrimal="खोटाङ" sag-np="खोटाँग" geo="खोटाङ"
+    HQ okhaldhunga: sagautam5="Siddhicharan" geo="Okhaldhunga"
+    HQ parbat: sagautam5="Kusma" geo="Kushma"
+    HQ sarlahi: sagautam5="Malangawa" geo="Malangwa"
+    HQ sindhuli: sagautam5="Kamalamai" geo="Sindhulimadi"
+    HQ syangja: sagautam5="Putalibazar" geo="Syangja"
+    HQ taplejung: sagautam5="Taplejung" geo="Phungling"
+    HQ udayapur: sagautam5="Gaighat" geo="Triyuga"
 
 ==============================================================================
 DISTRICT NUMBERING SCHEMES (all four sources disagree)
@@ -139,3 +299,242 @@ Saptari            27         21          NP0215       201
 postal-2025 yields a gapless 01..14 run for Koshi and 77 district prefixes nationally, split 14/8/13/11/12/10/9 per province â€” exactly our verified per-province district counts. It is the only source whose numbering is both complete and matches a published CBS/NSO reference code (Dharan = 11301). The other three schemes are internal orderings.
 
 *** None of these four schemes is verified as the CBS/NSO scheme except postal-2025, whose Dharan value 11301 matches the one published CBS/NSO reference code. Resolve in Step 2 against CBS/NSO directly. ***
+
+==============================================================================
+POSTAL-2025 JOIN (our 753 palikas)
+codes are 5-digit PDDPP; the district prefix scopes every tier
+==============================================================================
+  T1 exact "<name> <suffix>": 514
+  T2 normalised-with-suffix, prefix-disambiguated: 63
+  T2-AMBIG (shared normalised form, review only): 0
+  T3 fuzzy suggestion (d<=2, review only): 149
+  MISS (no candidate within d<=2, or none): 27
+    T3-SUGGEST Shadananda [Bhojpur] ~> "shadanand municipality" (d=1, review only)
+    T3-SUGGEST Aamchowk [Bhojpur] ~> "aamchok rural municipality" (d=1, review only)
+    T3-SUGGEST Pauwa Dunma [Bhojpur] ~> "pauwadungma rural municipality" (d=1, review only)
+    MISS Fakfokathum [Ilam]  closest: "ilam municipality" (d=3)
+    T3-SUGGEST Gauriganj [Jhapa] ~> "gaurigunj rural municipality" (d=1, review only)
+    T3-SUGGEST Kachanakawal [Jhapa] ~> "kachankawal rural municipality" (d=1, review only)
+    T3-SUGGEST Baraha Pokhari [Khotang] ~> "barahpokhari rural municipality" (d=1, review only)
+    MISS Diprung [Khotang]  closest: "kepilasgadhi rural municipality" (d=3)
+    T3-SUGGEST Pathari Shanishchare [Morang] ~> "pathari shanischare municipality" (d=1, review only)
+    T3-SUGGEST Sunwarshi [Morang] ~> "sunawarshi municipality" (d=1, review only)
+    T3-SUGGEST Budhiganga [Morang] ~> "budi ganga rural municipality" (d=1, review only)
+    T3-SUGGEST Dhanapalthan [Morang] ~> "dhanpalthan rural municipality" (d=1, review only)
+    T3-SUGGEST Chishankhu Gadhi [Okhaldhunga] ~> "chisankhugadhi rural municipality" (d=1, review only)
+    T3-SUGGEST Falelung [Panchthar] ~> "phalelung rural municipality" (d=2, review only)
+    T3-SUGGEST Falgunanda [Panchthar] ~> "phalgunanda rural municipality" (d=2, review only)
+    T3-SUGGEST Hilihan [Panchthar] ~> "hilihang rural municipality" (d=1, review only)
+    T3-SUGGEST Yangbarak [Panchthar] ~> "yangwarak rural municipality" (d=1, review only)
+    T3-SUGGEST Chainapur [Sankhuwasabha] ~> "chainpur municipality" (d=1, review only)
+    T3-SUGGEST Khandabari [Sankhuwasabha] ~> "khandbari municipality" (d=1, review only)
+    T3-SUGGEST Panchakhapan [Sankhuwasabha] ~> "panchkhapan municipality" (d=1, review only)
+    MISS Baraha [Sunsari]  closest: "barahakshetra municipality" (d=3)
+    MISS Bhokraha [Sunsari]  closest: "barahakshetra municipality" (d=3)
+    T3-SUGGEST Harinagara [Sunsari] ~> "harinagar rural municipality" (d=1, review only)
+    T3-SUGGEST Aatharai Tribeni [Taplejung] ~> "aathrai triveni rural municipality" (d=2, review only)
+    T3-SUGGEST Sidingba [Taplejung] ~> "sidingwa rural municipality" (d=1, review only)
+    T3-SUGGEST Aatharai [Terhathum] ~> "aathrai rural municipality" (d=1, review only)
+    T3-SUGGEST Menchhyayem [Terhathum] ~> "menchayayem rural municipality" (d=1, review only)
+    MISS Sunkoshi [Udayapur]  closest: "chaudandigadhi municipality" (d=3)
+    T3-SUGGEST Jitpur Simara [Bara] ~> "jeetpur simara sub-metropolitan city" (d=2, review only)
+    T3-SUGGEST Nijagadh [Bara] ~> "nijgadh municipality" (d=1, review only)
+    T3-SUGGEST Simroungadh [Bara] ~> "simaraungadh municipality" (d=2, review only)
+    T3-SUGGEST Aadarsha Kotwal [Bara] ~> "adarsh kotwal rural municipality" (d=2, review only)
+    T3-SUGGEST Parawanipur [Bara] ~> "parwanipur rural municipality" (d=1, review only)
+    T3-SUGGEST Subarna [Bara] ~> "suwarna rural municipality" (d=1, review only)
+    T3-SUGGEST Chhireshwornath [Dhanusha] ~> "chhireshwarnath municipality" (d=1, review only)
+    T3-SUGGEST Shahidnagar [Dhanusha] ~> "sahidnagar municipality" (d=1, review only)
+    T3-SUGGEST Bateshwor [Dhanusha] ~> "bateshwar rural municipality" (d=1, review only)
+    T3-SUGGEST Janak Nandini [Dhanusha] ~> "janaknandani rural municipality" (d=1, review only)
+    MISS Laxminiya [Dhanusha]  closest: "ganeshman charnath municipality" (d=3)
+    T3-SUGGEST Mukhiyapatti Musaharmiya [Dhanusha] ~> "mukhiyapatti musharniya rural municipality" (d=2, review only)
+    T3-SUGGEST Aurahi [Mahottari] ~> "aaurahi municipality" (d=1, review only)
+    T3-SUGGEST Jaleshwor [Mahottari] ~> "jaleshor municipality" (d=1, review only)
+    T3-SUGGEST Manara Shisawa [Mahottari] ~> "manara shiswa municipality" (d=1, review only)
+    T3-SUGGEST Ekadara [Mahottari] ~> "ekdara rural municipality" (d=1, review only)
+    T3-SUGGEST Boudhimai [Rautahat] ~> "baudhimai municipality" (d=1, review only)
+    T3-SUGGEST Garuda [Rautahat] ~> "guruda municipality" (d=1, review only)
+    T3-SUGGEST Durga Bhagawati [Rautahat] ~> "durga bhagwati rural municipality" (d=1, review only)
+    T3-SUGGEST Agnisair Krishna Sabaran [Saptari] ~> "agnisaira krishnasavaran rural municipality" (d=2, review only)
+    MISS Belhi Chapena [Saptari]  closest: "agnisaira krishnasavaran rural municipality" (d=3)
+    T3-SUGGEST Mahadewa [Saptari] ~> "mahadeva rural municipality" (d=1, review only)
+    T3-SUGGEST Tirahut [Saptari] ~> "tirhut rural municipality" (d=1, review only)
+    T3-SUGGEST Barahathawa [Sarlahi] ~> "barahathwa municipality" (d=1, review only)
+    T3-SUGGEST Ishworpur [Sarlahi] ~> "ishowrpur municipality" (d=2, review only)
+    T3-SUGGEST Kabilashi [Sarlahi] ~> "kabilasi municipality" (d=1, review only)
+    T3-SUGGEST Bishnu [Sarlahi] ~> "bisnu rural municipality" (d=1, review only)
+    T3-SUGGEST Brahmapuri [Sarlahi] ~> "brahampuri rural municipality" (d=2, review only)
+    T3-SUGGEST Dhanakaul [Sarlahi] ~> "dhankaul rural municipality" (d=1, review only)
+    T3-SUGGEST Bhagawanpur [Siraha] ~> "bhagwanpur rural municipality" (d=1, review only)
+    MISS Laxmipur Patari [Siraha]  closest: "lahan municipality" (d=3)
+    T3-SUGGEST Nawarajpur [Siraha] ~> "navarajpur rural municipality" (d=1, review only)
+    T3-SUGGEST Ratnanagar [Chitwan] ~> "ratnagar municipality" (d=2, review only)
+    T3-SUGGEST Dhunibenshi [Dhading] ~> "dhunibeshi municipality" (d=1, review only)
+    T3-SUGGEST Nilkhantha [Dhading] ~> "nilkantha municipality" (d=1, review only)
+    MISS Netrawati [Dhading]  closest: "tripurasundari rural municipality (dhading)" (d=3)
+    T3-SUGGEST Bhimeshwor [Dolakha] ~> "bhimeswor municipality" (d=1, review only)
+    MISS Baitedhar [Dolakha]  closest: "gaurishankar rural municipality" (d=3)
+    T3-SUGGEST Kalinchowk [Dolakha] ~> "kalinchok rural municipality" (d=1, review only)
+    T3-SUGGEST Shailung [Dolakha] ~> "sailung rural municipality" (d=1, review only)
+    T3-SUGGEST Budhanilkantha [Kathmandu] ~> "budhalikantha municipality" (d=2, review only)
+    T3-SUGGEST Bethanchowk [Kavrepalanchok] ~> "bethanchok rural municipality" (d=1, review only)
+    T3-SUGGEST Dupcheshwor [Nuwakot] ~> "dupcheshwar rural municipality" (d=1, review only)
+    MISS Meghang [Nuwakot]  closest: "dupcheshwar rural municipality" (d=3)
+    T3-SUGGEST Tarakeshwar [Nuwakot] ~> "tarkeshwar rural municipality" (d=1, review only)
+    MISS Likhu [Ramechhap]  closest: "umakunda rural municipality" (d=3)
+    MISS Aamachhodingmo [Rasuwa]  closest: "gosaikunda rural municipality" (d=3)
+    T3-SUGGEST Dudhouli [Sindhuli] ~> "dudhauli municipality" (d=1, review only)
+    T3-SUGGEST Ghyanglekha [Sindhuli] ~> "ghyanglekh rural municipality" (d=1, review only)
+    T3-SUGGEST Hariharpurgaghi [Sindhuli] ~> "hariharpurgadhi rural municipality" (d=1, review only)
+    T3-SUGGEST Chautara Sangachowkgadhi [Sindhupalchok] ~> "chautara sangachowkgadi municipality" (d=1, review only)
+    T3-SUGGEST Indrawoti [Sindhupalchok] ~> "indrawati rural municipality" (d=1, review only)
+    MISS Lisankhu Pakhar [Sindhupalchok]  closest: "bhotekoshi rural municipality" (d=3)
+    MISS Panchpokhari Thangpal [Sindhupalchok]  closest: "bhotekoshi rural municipality" (d=3)
+    T3-SUGGEST Jaimini [Baglung] ~> "jaimuni municipality" (d=1, review only)
+    T3-SUGGEST Kathekhola [Baglung] ~> "khathekhola rural municipality" (d=1, review only)
+    T3-SUGGEST Nisikhola [Baglung] ~> "nishi khola rural municipality" (d=1, review only)
+    MISS Bhimsen [Gorkha]  closest: "bhimsen thapa rural municipality" (d=3)
+    T3-SUGGEST Chumanubri [Gorkha] ~> "chumnubri rural municipality" (d=1, review only)
+    T3-SUGGEST Shahid Lakhan [Gorkha] ~> "sahid lakhan rural municipality" (d=1, review only)
+    T3-SUGGEST Bensi Shahar [Lamjung] ~> "besisahar municipality" (d=2, review only)
+    T3-SUGGEST Dudhapokhari [Lamjung] ~> "dudhpokhari rural municipality" (d=1, review only)
+    T3-SUGGEST Kwhola Sothar [Lamjung] ~> "kwhlosothar rural municipality" (d=2, review only)
+    T3-SUGGEST Marshyangdi [Lamjung] ~> "marsyangdi rural municipality" (d=1, review only)
+    MISS Naraphu [Manang]  closest: "narpabhumi rural municipality" (d=3)
+    T3-SUGGEST Nashong [Manang] ~> "nason rural municipality" (d=2, review only)
+    MISS Neshang [Manang]  closest: "narpabhumi rural municipality" (d=3)
+    MISS Dalome [Mustang]  closest: "lo-ghekar damodarkunda rural municipality" (d=3)
+    T3-SUGGEST Gharapjhong [Mustang] ~> "gharpajhong rural municipality" (d=2, review only)
+    T3-SUGGEST Dhawalagiri [Myagdi] ~> "dhaulagiri rural municipality" (d=2, review only)
+    T3-SUGGEST Devchuli [Nawalpur] ~> "devachuli municipality" (d=1, review only)
+    T3-SUGGEST Gaidakot [Nawalpur] ~> "gaindakot municipality" (d=1, review only)
+    MISS Bungdikali [Nawalpur]  closest: "baudikali rural municipality" (d=3)
+    T3-SUGGEST Phalebas [Parbat] ~> "phalewas municipality" (d=1, review only)
+    T3-SUGGEST Paiyu [Parbat] ~> "paiyun rural municipality" (d=1, review only)
+    T3-SUGGEST Bhirkot [Syangja] ~> "bheerkot municipality" (d=2, review only)
+    T3-SUGGEST Walling [Syangja] ~> "waling municipality" (d=1, review only)
+    T3-SUGGEST Shuklagandaki [Tanahun] ~> "suklagandaki municipality" (d=1, review only)
+    T3-SUGGEST Aanbu Khaireni [Tanahun] ~> "anbukhaireni rural municipality" (d=1, review only)
+    T3-SUGGEST Shitaganga [Arghakhanchi] ~> "sitganga municipality" (d=2, review only)
+    T3-SUGGEST Bansgadhi [Bardiya] ~> "basgadhi municipality" (d=1, review only)
+    T3-SUGGEST Bangalachuli [Dang] ~> "banglachuli rural municipality" (d=1, review only)
+    T3-SUGGEST Gulmi Durbar [Gulmi] ~> "gulmidarbar rural municipality" (d=1, review only)
+    MISS Ruru [Gulmi]  closest: "kaligandaki rural municipality (gulmi)" (d=3)
+    T3-SUGGEST Satyawoti [Gulmi] ~> "satyawati rural municipality" (d=1, review only)
+    T3-SUGGEST Maharajganj [Kapilvastu] ~> "maharajgunj municipality" (d=1, review only)
+    T3-SUGGEST Bijayanagar [Kapilvastu] ~> "bijaynagar rural municipality" (d=1, review only)
+    T3-SUGGEST Shuddhodhan [Kapilvastu] ~> "suddhodan rural municipality" (d=2, review only)
+    T3-SUGGEST Yasodhara [Kapilvastu] ~> "yashodhara rural municipality" (d=1, review only)
+    T3-SUGGEST Baganaskali [Palpa] ~> "bagnaskali rural municipality" (d=1, review only)
+    T3-SUGGEST Ribdikot [Palpa] ~> "ripdikot rural municipality" (d=1, review only)
+    T3-SUGGEST Tinau [Palpa] ~> "tinahu rural municipality" (d=1, review only)
+    T3-SUGGEST Sunawal [Parasi (Nawalparasi West)] ~> "sunwal municipality" (d=1, review only)
+    T3-SUGGEST Pratapapur [Parasi (Nawalparasi West)] ~> "pratappur rural municipality" (d=1, review only)
+    T3-SUGGEST Airawati [Pyuthan] ~> "ayirawati rural municipality" (d=1, review only)
+    T3-SUGGEST Jhimaruk [Pyuthan] ~> "jhimruk rural municipality" (d=1, review only)
+    T3-SUGGEST Paribartan [Rolpa] ~> "pariwartan rural municipality" (d=1, review only)
+    T3-SUGGEST Runtigadhi [Rolpa] ~> "runtigadi rural municipality" (d=1, review only)
+    T3-SUGGEST Sunil Smriti [Rolpa] ~> "sunil smiriti rural municipality" (d=1, review only)
+    T3-SUGGEST Thabang [Rolpa] ~> "thawang rural municipality" (d=1, review only)
+    T3-SUGGEST Tribeni [Rolpa] ~> "triveni rural municipality (rolpa)" (d=1, review only)
+    T3-SUGGEST Bhoome [Rukum East] ~> "bhume rural municipality" (d=2, review only)
+    T3-SUGGEST Putha Uttanganga [Rukum East] ~> "putha uttarganga rural municipality" (d=1, review only)
+    T3-SUGGEST Suddhodhan [Rupandehi] ~> "suddodhan rural municipality" (d=1, review only)
+    T3-SUGGEST Aathbis [Dailekh] ~> "aathabis municipality" (d=1, review only)
+    T3-SUGGEST Dungeshwor [Dailekh] ~> "dungeshwar rural municipality" (d=1, review only)
+    T3-SUGGEST Chharka Tangsong [Dolpa] ~> "chharka tongsong rural municipality" (d=1, review only)
+    T3-SUGGEST Shey Phoksundo [Dolpa] ~> "she phoksundo rural municipality" (d=1, review only)
+    T3-SUGGEST Nalagad [Jajarkot] ~> "nalgad municipality" (d=1, review only)
+    T3-SUGGEST Tilagupha [Kalikot] ~> "tilagufa municipality" (d=2, review only)
+    T3-SUGGEST Naraharinath [Kalikot] ~> "narharinath rural municipality" (d=1, review only)
+    T3-SUGGEST Sanni Tribeni [Kalikot] ~> "sanni triveni rural municipality" (d=1, review only)
+    T3-SUGGEST Mugu Karmarong [Mugu] ~> "mugum karmarong rural municipality" (d=1, review only)
+    T3-SUGGEST Aathabisakot [Rukum West] ~> "aathabiskot municipality" (d=1, review only)
+    T3-SUGGEST Tribeni [Rukum West] ~> "triveni rural municipality (western rukum)" (d=1, review only)
+    T3-SUGGEST Bagachour [Salyan] ~> "bagchaur municipality" (d=2, review only)
+    T3-SUGGEST Banagad Kupinde [Salyan] ~> "bangad kupinde municipality" (d=1, review only)
+    T3-SUGGEST Sharada [Salyan] ~> "shaarda municipality" (d=2, review only)
+    T3-SUGGEST Chhatreshwori [Salyan] ~> "chhatreshwari rural municipality" (d=1, review only)
+    MISS Dhorchaur [Salyan]  closest: "darma rural municipality" (d=3)
+    MISS Kumakh Malika [Salyan]  closest: "darma rural municipality" (d=3)
+    T3-SUGGEST Tribeni [Salyan] ~> "triveni rural municipality (salyan)" (d=1, review only)
+    T3-SUGGEST Lekabeshi [Surkhet] ~> "lekbeshi municipality" (d=1, review only)
+    T3-SUGGEST Panchdebal Binayak [Achham] ~> "panchadewal binayak municipality" (d=2, review only)
+    T3-SUGGEST Sanphebagar [Achham] ~> "sanfebagar municipality" (d=2, review only)
+    T3-SUGGEST Bannigadhi Jayagadh [Achham] ~> "bannigadi jayagad rural municipality" (d=2, review only)
+    T3-SUGGEST Dasharathchand [Baitadi] ~> "dashrathchanda municipality" (d=2, review only)
+    T3-SUGGEST Puchaundi [Baitadi] ~> "purchaudi municipality" (d=2, review only)
+    T3-SUGGEST Dilasaini [Baitadi] ~> "dilashaini rural municipality" (d=1, review only)
+    T3-SUGGEST Dogada Kedar [Baitadi] ~> "dogdakedar rural municipality" (d=1, review only)
+    T3-SUGGEST Pancheshwor [Baitadi] ~> "pancheshwar rural municipality" (d=1, review only)
+    T3-SUGGEST Chhabis Pathibhara [Bajhang] ~> "chhabis pathibhera rural municipality" (d=1, review only)
+    MISS Kanda [Bajhang]  closest: "masta rural municipality" (d=3)
+    T3-SUGGEST Kedarsyun [Bajhang] ~> "kedarsyu rural municipality" (d=1, review only)
+    T3-SUGGEST Tribeni [Bajura] ~> "triveni municipality" (d=1, review only)
+    MISS Swami Kartik [Bajura]  closest: "himali rural municipality" (d=3)
+    T3-SUGGEST Parashuram [Dadeldhura] ~> "parshuram municipality" (d=1, review only)
+    T3-SUGGEST Aalital [Dadeldhura] ~> "aalitaal rural municipality" (d=1, review only)
+    T3-SUGGEST Ajayameru [Dadeldhura] ~> "ajaymeru rural municipality" (d=1, review only)
+    T3-SUGGEST Bhageshwor [Dadeldhura] ~> "bhageshwar rural municipality" (d=1, review only)
+    T3-SUGGEST Ganyapdhura [Dadeldhura] ~> "ganyapadhura rural municipality" (d=1, review only)
+    T3-SUGGEST Nawadurga [Dadeldhura] ~> "navadurga rural municipality" (d=1, review only)
+    T3-SUGGEST Byas [Darchula] ~> "vyans rural municipality" (d=2, review only)
+    MISS Bogatan [Doti]  closest: "purbichauki rural municipality" (d=3)
+    T3-SUGGEST Purbichouki [Doti] ~> "purbichauki rural municipality" (d=1, review only)
+    T3-SUGGEST Bhajani [Kailali] ~> "bhajni municipality" (d=1, review only)
+    T3-SUGGEST Belouri [Kanchanpur] ~> "belauri municipality" (d=1, review only)
+    MISS Mahakali [Kanchanpur]  closest: "shuklaphanta municipality" (d=3)
+postal-2025 keys matching NO our-palika: 177 (stale/renamed names live here — review before trusting codes)
+    EXTRA "aalitaal rural municipality" = 70506
+    EXTRA "aamchok rural municipality" = 10609
+    EXTRA "aathabis municipality" = 60605
+    EXTRA "aathabiskot municipality" = 60801
+    EXTRA "aathrai rural municipality" = 10801
+    EXTRA "aathrai triveni rural municipality" = 10105
+    EXTRA "aaurahi municipality" = 20404
+    EXTRA "aaurahi rural municipality" = 20314
+    EXTRA "adarsh kotwal rural municipality" = 20711
+    EXTRA "agnisaira krishnasavaran rural municipality" = 20103
+    EXTRA "ajaymeru rural municipality" = 70503
+    EXTRA "anbukhaireni rural municipality" = 40710
+    EXTRA "ayirawati rural municipality" = 50308
+    EXTRA "bagchaur municipality" = 60905
+    EXTRA "bagnaskali rural municipality" = 50604
+    EXTRA "baiteshowr rural municipality" = 30104
+    EXTRA "bangad kupinde municipality" = 60903
+    EXTRA "banglachuli rural municipality" = 51001
+    EXTRA "bannigadi jayagad rural municipality" = 70707
+    EXTRA "barahakshetra municipality" = 11302
+    EXTRA "barahathwa municipality" = 20504
+    EXTRA "barahpokhari rural municipality" = 10510
+    EXTRA "basgadhi municipality" = 51201
+    EXTRA "bateshwar rural municipality" = 20304
+    EXTRA "baudhimai municipality" = 20611
+
+==============================================================================
+OPEN-ADMIN-DATA PER-DISTRICT COUNTS vs OURS
+==============================================================================
+  districts matched by name: 77/77
+  unit totals: ours=753 open-admin(sum of children_count)=775 gazette=753
+  districts with differing counts: 19
+    Sunsari: ours=12 open-admin=13 (delta +1)
+    Udayapur: ours=8 open-admin=9 (delta +1)
+    Bara: ours=16 open-admin=17 (delta +1)
+    Parsa: ours=14 open-admin=16 (delta +2)
+    Saptari: ours=18 open-admin=19 (delta +1)
+    Chitwan: ours=7 open-admin=8 (delta +1)
+    Makwanpur: ours=10 open-admin=12 (delta +2)
+    Nuwakot: ours=12 open-admin=14 (delta +2)
+    Baglung: ours=10 open-admin=11 (delta +1)
+    Myagdi: ours=6 open-admin=7 (delta +1)
+    Nawalpur: ours=8 open-admin=9 (delta +1)
+    Bardiya: ours=8 open-admin=9 (delta +1)
+    Rukum East: ours=3 open-admin=4 (delta +1)
+    Rupandehi: ours=16 open-admin=17 (delta +1)
+    Achham: ours=10 open-admin=11 (delta +1)
+    Bajhang: ours=12 open-admin=13 (delta +1)
+    Bajura: ours=9 open-admin=10 (delta +1)
+    Doti: ours=9 open-admin=10 (delta +1)
+    Kanchanpur: ours=9 open-admin=10 (delta +1)
+  oa districts matching no our-district: 0

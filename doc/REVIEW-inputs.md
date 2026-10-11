@@ -8,7 +8,9 @@
 
 ## 1. What was acquired
 
-All five sources pinned into `data/_raw/` with SHA-256 recorded per file (31 files total).
+All five sources pinned into `data/_raw/` with SHA-256 recorded per file (30 source files + manifest).
+
+**Provenance is executable, not aspirational:** `tool/merge/inventory.dart` verifies every pinned file against `data/PROVENANCE.sha256` before computing anything and exits non-zero on any mismatch, missing, or unpinned file — without overwriting the last good report. A coverage report built on changed inputs would be worse than no report.
 
 | Source | Branch/Ref | Files | Size | License | Attribution required? |
 |---|---|---|---|---|---|
@@ -83,7 +85,7 @@ We therefore have **three genuinely independent sources**, not four:
 | Devanagari names (palika) | âœ… 753 | âœ… (np.json) | âœ… 753 | âš ï¸ 775 | âŒ **0** |
 | Devanagari names (district) | âœ… 77 | âœ… | âœ… | âš ï¸ | âŒ |
 | Devanagari names (province) | âœ… 7 | âœ… | âœ… | âš ï¸ | âŒ |
-| Per-palika ward counts | âŒ | âœ… **753** | âœ… (754 err) | âŒ | âŒ agg only |
+| Per-palika ward counts | âŒ | âœ… **753** | âœ… (off-by-one: sums 6,742) | âŒ | âŒ agg only |
 | NSO/CBS code | âŒ | âŒ | âœ… **751** | âš ï¸ `NPâ€¦` ids | âŒ |
 | District headquarter | âŒ | âœ… **77** | âœ… 77 | âŒ | âŒ |
 | Province capital | âŒ | âœ… 7 | âœ… 7 + coords | âŒ | âŒ |
@@ -121,18 +123,30 @@ Its `local_unit` array holds **775** records. Its counts must be **rejected outr
 
 Only `postal-2025` is a candidate for the official scheme (Â§2). **Do not mix schemes** â€” every code must come from one source or it will be meaningless.
 
-### 6.5 Name-spelling divergence is severe
-**239 of our 753 palika names do not join exactly** to `postal-2025`'s keys. Examples:
+### 6.5 Name-spelling divergence is severe — and now tiered, not anecdotal
 
-| Ours | postal-2025 key | Sagautam5 |
+The old "239 names do not join" figure came from a join the tooling could not defend (no district-suffix handling, no romanization normalization, district-scoped fuzzy missing). It is withdrawn and replaced by the tiered postal-2025 join the repaired tool computes for all 753 of our palikas (`doc/_inventory-raw.txt`, POSTAL-2025 JOIN section):
+
+| Tier | Meaning | Count |
 |---|---|---|
-| `Shadananda` | `shadanand municipality` | `Shadanand` |
-| `Salpa Silichho` | `salpasilichho rural municipality` | `Salpasilichho` |
-| `Chhatrakot` | `chhatrakot rural municipality` | `Chhatrakot` |
-| `BodeBarsain` | *(absent â€” spacing bug)* | â€” |
-| `Kabilashi` | *(differs)* | `Kabilasi`? |
+| T1 | exact `<name> <type-suffix>` key | 514 |
+| T2 | normalised-with-suffix, district-prefix-disambiguated | 63 |
+| T3 | fuzzy suggestion at distance <= 2, district-scoped (review only) | 149 |
+| MISS | no candidate within distance 2 | 27 |
 
-**Implication:** the merge **must** use fuzzy matching with human adjudication. Exact-match joining would fail on ~32% of palikas. This validates the roadmap's Step 4 design and means the `doc/REVIEW.md` conflict list will be large.
+Auto-joinable: **577 of 753**. For human review: **176** (149 suggestions + 27 misses). A normalised form shared by two districts' palikas is never auto-accepted (T2-AMBIG, currently 0).
+
+Representative T3 pairs (ours -> postal-2025 suggestion, all from the tool output):
+
+| Ours | Suggestion | Distance |
+|---|---|---|
+| `Shadananda [Bhojpur]` | `shadanand municipality` | 1 |
+| `Chhireshwornath [Dhanusha]` | `chhireshwarnath municipality` | 1 |
+| `Kabilashi [Sarlahi]` | `kabilasi municipality` | 1 |
+| `Ratnanagar [Chitwan]` | `ratnagar municipality` | 2 |
+| `Fakfokathum [Ilam]` | *(MISS — closest is `ilam municipality` at d=3)* | — |
+
+**Implication (unchanged):** the merge **must** use fuzzy matching with human adjudication. But the conflict list is now a computed, reviewable 176 — not an anecdotal 239.
 
 ---
 
@@ -148,9 +162,9 @@ Only `postal-2025` is a candidate for the official scheme (Â§2). **Do not mix 
 
 ### Open â€” carries into Step 2
 1. **Verify `postal-2025` against CBS/NSO or MoFAGA** â€” one anchor (Dharan 11301) is not enough. This is the single highest-value Step 2 task.
-2. **Resolve the 239 name-spelling divergences** via fuzzy match + adjudication.
+2. **Resolve the 176 postal-review items (149 T3 suggestions + 27 misses)** via fuzzy match + adjudication. The conflict list is computed and reviewable (`doc/_inventory-raw.txt`, POSTAL-2025 JOIN section) — shared normalised forms across districts are never auto-accepted.
 3. **De-duplicate abinrimal's `Gulmi|Chatrakot`.**
-4. **Determine whether Sudurpashchim is genuinely 86 or 88** palikas (postal-2025 has 86 codes; our dataset and sagautam5 both say 88). Likely a postal-coverage gap, not a structural difference â€” but must be confirmed, not assumed.
+4. **Determine whether Sudurpashchim is genuinely 86 or 88** palikas (postal-2025 has 86 codes for its 9 districts; our dataset and sagautam5 both say 88). All 9 districts yield T3 suggestions except 4 MISSes — Kanda [Bajhang], Swami Kartik [Bajura], Bogatan [Doti], Mahakali [Kanchanpur] — which are the prime candidates for the 2-code gap. Likely a spelling/coverage gap, not a structural difference — but must be confirmed, not assumed. (Separately: open-admin-data's per-district table now matches 77/77 districts with 19 differing counts, all open-admin HIGHER by 1-2, totalling 775 vs our 753 — its counts stay rejected per the hard gate.)
 
 ---
 
@@ -172,3 +186,33 @@ Only `postal-2025` is a candidate for the official scheme (Â§2). **Do not mix 
 | Boundary geometry | 0 fetched | â›” **cut from current scope â€” Phase 3** |
 
 **Every field has a known source count. No field has zero sources except boundary geometry, which is formally deferred.** Step 1 exit criterion met.
+
+
+---
+
+## 9. Step 1 tool repairs (audit follow-up)
+
+The Step 1 audit found four defects in `tool/merge/inventory.dart` itself. All four are fixed; this section records what was wrong and how the repair is verified. The tool now fails loudly instead of reporting plausible-looking wrong numbers.
+
+### 9.1 Dead cross-source code — FIXED
+
+`geoKey` / `abinKey` / `sagKey` were built but never read: the CROSS-SOURCE section printed a bare header with zero content. The section is now a working implementation: within-source duplicate detection (found abinrimal's `Gulmi|Chatrakot` x2 executable-side), three-way flat-key agreement (abinrimal n=752 vs sagautam5 n=753: **595 shared**), 24 English spelling variants, Devanagari agreement at **376 agree / 219 differ** (exact match), ward agreement sagautam5-vs-geo at **751/752** with the single Janakpurdham mismatch (25 vs 24) pinpointed — the transcription error behind the 6,743-vs-6,742 sums.
+
+### 9.2 sagautam5 false 0% coverage — FIXED
+
+The tool queried `name_en` / `name_ne` / `province_code`, but sagautam5 uses `name` (+ separate np.json files) and integer `id` / `province_id` / `district_id` keys. Provinces and districts reported 0% on fully-populated files. The tool now tallies actual keys (`province.en.*`, `province.np.*`, `district.en.*`, `district.np.*`, `municipality.en.*`, `municipality.np.*`) — all at 100%. Two schema surprises surfaced along the way and are now handled explicitly: en `wards` are JSON **strings** of ASCII digits (not ints), np `wards` are **strings of Devanagari numerals** (parsed via `devaDigitsToInt`).
+
+### 9.3 Unbacked SHA-256 claim — FIXED
+
+The doc claimed "SHA-256 provenance" while containing zero hashes. The tool now verifies all 30 pinned files against `data/PROVENANCE.sha256` (hash + size) before computing anything, reports MISSING / MISMATCH / SIZE-DRIFT / UNPINNED individually, and exits non-zero without overwriting the last good report on any failure.
+
+### 9.4 Untrustworthy 239-name figure — WITHDRAWN and replaced
+
+The 239 came from a join with no district-suffix handling and no romanization normalization. Replaced by the tiered join in section 6.5 above (T1 = 514, T2 = 63, T3 = 149, MISS = 27; auto-joinable 577, review 176). The tool also gained the matching machinery the merge will reuse: `canonDistrict` (10 evidenced district folds, including the 2017-split namings Eastern/Western Rukum and Nawalparasi East/West plus abinrimal's `Nawalparari East` typo), district-scoped Levenshtein suggestions, and a never-auto-accept rule for ambiguous normalised forms — all of which now unify districts to exactly 77.
+
+### 9.5 Incidental findings the repaired tool surfaced
+
+- abinrimal has **two** `name_ne` values with no Devanagari script at all: `Meringden` and `Bogtan Foodsil`.
+- District headquarters disagree 59/18 between sagautam5 (palika-name convention: `Dasharathchand`) and geo-pro-max (town convention: `Baitadi`), plus true spelling variants (`Nepalganj`/`Nepalgunj`, `Kusma`/`Kushma`, `Malangawa`/`Malangwa`, `Bheemdatta`/`Bhimdatta`). Step 4 adjudication material.
+- District Devanagari agrees 64/13 (exact match). The 13 diffs are orthographic, not encoding noise: Kathmandu ends in anusvara in abinrimal vs chandrabindu in sagautam5/geo; Kavrepalanchok uses the nja-conjunct in abinrimal/geo vs the na-plus-chandra sequence in sagautam5; Dhading carries an extra anusvara+guttural in sagautam5. All three are visible verbatim in the raw report and are Step 4 adjudication material.
+- open-admin-data matches 77/77 districts once variant spellings are folded; its 19 differing per-district counts are **all open-admin HIGHER by 1-2** (one-sided — it splits/duplicates, never merges), totalling 775 vs 753. Counts stay rejected per the hard gate.
