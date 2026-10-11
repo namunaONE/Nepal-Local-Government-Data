@@ -104,7 +104,7 @@ class LocalBody {
       );
 
   @override
-  String toString() => '$name (' + type.shortName + ')';
+  String toString() => '$name (${type.shortName})';
 }
 
 /// A district (77 nationwide), owning its local bodies.
