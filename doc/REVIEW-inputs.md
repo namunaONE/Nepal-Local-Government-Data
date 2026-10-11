@@ -17,7 +17,7 @@ All five sources pinned into `data/_raw/` with SHA-256 recorded per file (30 sou
 | `abinrimal/nepal-administrative-divisions-json` | `main` | 4 JSON + LICENSE | ~185 KB | MIT | No |
 | `sagautam5/local-states-nepal` | `master` | 10 JSON + LICENSE | ~1.2 MB | MIT | No |
 | `l3lackcurtains/nepali-geo-pro-max` | `main` | 8 TS + LICENSE | ~243 KB | MIT | No |
-| `open-admin-data/nepal-administrative-divisions` | `main` | 4 JSON + LICENSE | ~933 KB | **CC-BY-4.0** | **Yes â€” visible in shipped package** |
+| `open-admin-data/nepal-administrative-divisions` | `main` | 4 JSON + LICENSE | ~933 KB | **CC-BY-4.0** | **Yes â€” satisfied via NOTICE (shipped with the package)** |
 | `opentechcommunity/map-of-nepal` | *(not yet fetched)* | GeoJSON | â€” | **CC-BY-4.0** | **Yes** |
 
 `opentechcommunity/map-of-nepal` was deliberately **not** downloaded in Step 1 â€” boundary geometry is Phase 3 scope. Recorded here so it is not forgotten.

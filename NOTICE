@@ -1,0 +1,24 @@
+THIRD-PARTY DATA ATTRIBUTION
+
+The package's own code is MIT-licensed (see LICENSE). Some dataset fields
+are adapted from third-party sources under Creative Commons Attribution 4.0
+International (CC-BY-4.0). This file satisfies the CC-BY-4.0 attribution
+requirement (credit + license link + adaptation note, in a reasonable
+manner). Per-field provenance, including retrieval dates, lives in
+data/SOURCES.md.
+
+1. Nepal Administrative Divisions (open-admin-data)
+   Source:  https://github.com/open-admin-data/nepal-administrative-divisions
+   License: Creative Commons Attribution 4.0 International (CC-BY-4.0),
+            https://creativecommons.org/licenses/by/4.0/
+   Used for: geographic coordinates (latitude/longitude) and postal codes
+            at province, district and local-unit level.
+   Adaptation: values are merged with other sources, reformatted into this
+            package's schema, and redistributed as part of its dataset.
+            Counts from this source are NOT used (it reports 775 local
+            units against the gazetted 753); only coordinates, postal codes
+            and slugs are consumed, each flagged as supplementary.
+
+Phase 3 boundary geometry (opentechcommunity/map-of-nepal, CC-BY-4.0) will
+be attributed here when it is imported. No other CC-BY-4.0 material is
+currently shipped.

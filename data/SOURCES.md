@@ -96,8 +96,12 @@ Tree pin: dataset updated 2026-09-08; files fetched 2026-10-11.
 **Provides:** lat/lon on all levels, JSON Schema, CC-BY-4.0.
 **Defect:** ships **775** local units, not 753. **Counts rejected** per the
 roadmap hard gate; `geo` retained as supplementary only.
-**Blocked:** cannot be imported into the core package until the CC-BY
-attribution decision (roadmap §9.3 step 2.0) is settled.
+**License status: RESOLVED.** CC-BY-4.0 coordinate/postal/slug fields may be
+imported: attribution travels in the shipped package via `NOTICE` (credit +
+license link + adaptation note, per CC-BY-4.0 section 3(a)), is surfaced in
+`README.md`, and is pinned per-field in this file. `LICENSE` stays MIT for
+the package's own code; it does not — and cannot — relicense the adapted
+CC-BY-4.0 portions, which remain under their original terms.
 
 ## Re-fetching
 

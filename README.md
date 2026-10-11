@@ -89,6 +89,14 @@ for dataset updates.
 
 This project is not affiliated with the Government of Nepal.
 
+## Data sources & attribution
+
+Our code is MIT-licensed. Some dataset fields are adapted from third-party
+sources; per-field provenance (source, license, retrieval date) lives in
+[data/SOURCES.md](data/SOURCES.md), and the CC-BY-4.0 attribution notice
+ships with the package in [NOTICE](NOTICE).
+
 ## License
 
-[MIT](LICENSE)
+[MIT](LICENSE) — applies to this package's own code. Third-party data
+attributions in [NOTICE](NOTICE) continue to apply to the adapted fields.
