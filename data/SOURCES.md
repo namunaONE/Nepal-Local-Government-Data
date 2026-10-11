@@ -24,6 +24,7 @@ re-fetchable from the URLs below. Integrity is verified against
 | 3 | `l3lackcurtains/nepali-geo-pro-max` | `main` | MIT | No | 2026-10-11 |
 | 4 | `open-admin-data/nepal-administrative-divisions` | `main` | **CC-BY-4.0** | **Yes** | 2026-10-11 |
 | 5 | `opentechcommunity/map-of-nepal` | `master` | **CC-BY-4.0** | **Yes** | *not fetched — Phase 3* |
+| 6 | opendatanepal `geographical-codes-for-states-districts-and-local-bodies` (CBS harvest) | CKAN resource IDs, see §6 | **CC-BY** (`license_id: cc-by`, re-verified at fetch) | **Yes — via NOTICE** | 2026-10-11 |
 
 ## File-level pins and blob SHAs
 
@@ -82,7 +83,7 @@ Tree: `117fd0f3d2dabae3bd86bfe9e4c57098ffe56669`
 > verification vote.
 
 **Provides:** `postal-codes-2025.ts` carries the **CBS/NSO administrative code
-list** (`PDDPP` = province + district + palika), 751 of 753 coded; `aliases`;
+list** (`PDDPP` = province + district + palika), 752 of 753 coded (the single gap is Mahakali Municipality, Kanchanpur = 70905; see doc/REVIEW-codes.md); `aliases`;
 province coordinates; two postal-code systems; the legacy 14-zone / 5-region /
 75-district cross-walk.
 **Defect:** its per-palika ward counts sum to **6,742** (one short) — a
@@ -102,6 +103,38 @@ license link + adaptation note, per CC-BY-4.0 section 3(a)), is surfaced in
 `README.md`, and is pinned per-field in this file. `LICENSE` stays MIT for
 the package's own code; it does not — and cannot — relicense the adapted
 CC-BY-4.0 portions, which remain under their original terms.
+
+### 6. CBS geographical codes via opendatanepal — `cbs-codes/…`
+
+Dataset: `geographical-codes-for-states-districts-and-local-bodies`
+(package `22870675-146d-4e4f-8848-2216380170de`), organization
+Central Bureau of Statistics, notes "harvested from Central Bureau of
+Statistics". License `cc-by` (attribution-only), re-verified at fetch
+2026-10-11; metadata unchanged since 2026-06-14.
+
+| File | CKAN resource ID | CKAN MD5 | Bytes |
+|---|---|---|---|
+| `cbs_districts.csv` | `de973922-7b56-4521-b6a4-aa3de7f8d8a2` | `e7f757371dda9765e310ac78bb2c0d8b` | 3022 |
+| `cbs_local_bodies.csv` | `e33aa0f3-72de-4074-a38b-c6a1bf55d9a8` | `78fac72eb1faf0a7913f8c9c58ab3a62` | 75955 |
+| `cbs_states.csv` | `37aa60f6-cbbe-43fd-b581-6864b72744ae` | `9ebc36a04637bf976b50af9b24aaa235` | 267 |
+
+Downloads verified MD5-identical to the CKAN metadata before use.
+Base download URL pattern:
+`https://api.opendatanepal.com/dataset/22870675-146d-4e4f-8848-2216380170de/resource/<id>/download/<file>`
+
+**Provides:** the authoritative CBS hierarchical codes — 77 districts
+(`PDD`, 101–709), 753 local bodies (`PDDPP`, 10101–70909), 7 states
+(1–7) — plus English and Devanagari names at every level.
+**Defects (verified at codepoint level, Step 2):** the districts CSV
+Devanagari column is corrupt from row 43 (`NAWALPARASI EAST`) onward —
+row 43 truncated mid-parenthetical, rows 44–77 each carry the previous
+row's district name (off-by-one cascade). **Quarantined: district
+`nameNe` is never sourced from this file.** The palika CSV is guarded by
+the suffix-correspondence check in `tool/merge/verify_codes.dart`.
+English spellings are UPPERCASE variants (`CHITAWAN`, `DHANUSA`,
+`Sub-Metropolitian` [sic]); codes join on codes, names join fuzzy.
+**Used for:** `nsoCode` (verified), `nsoCodeVerified`, district-code
+resolution, 4th Devanagari vote (palika level, where aligned).
 
 ## Re-fetching
 

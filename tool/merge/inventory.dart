@@ -21,155 +21,11 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:crypto/crypto.dart';
-
-// ---------------------------------------------------------------------------
-// Minimal TypeScript data-module parsing
-// ---------------------------------------------------------------------------
-
-/// Removes `//` and `/* */` comments while respecting string literals, so a
-/// `//` inside a quoted value is never mistaken for a comment. These modules
-/// use `"`, `'` and backtick-delimited strings.
-String _stripComments(String s) {
-  final out = StringBuffer();
-  var i = 0;
-  String? quote;
-  while (i < s.length) {
-    final c = s[i];
-
-    if (quote != null) {
-      if (c == r'\') {
-        out.write(c);
-        if (i + 1 < s.length) out.write(s[i + 1]);
-        i += 2;
-        continue;
-      }
-      if (c == quote) quote = null;
-      out.write(c);
-      i++;
-      continue;
-    }
-
-    if (c == '"' || c == "'" || c == '`') {
-      quote = c;
-      out.write(c);
-      i++;
-      continue;
-    }
-
-    if (c == '/' && i + 1 < s.length && s[i + 1] == '/') {
-      while (i < s.length && s[i] != '\n') {
-        i++;
-      }
-      continue;
-    }
-
-    if (c == '/' && i + 1 < s.length && s[i + 1] == '*') {
-      i += 2;
-      while (i + 1 < s.length && !(s[i] == '*' && s[i + 1] == '/')) {
-        i++;
-      }
-      i += 2;
-      continue;
-    }
-
-    out.write(c);
-    i++;
-  }
-  return out.toString();
-}
-
-/// Strips comments, numeric separators and imports/type declarations from a
-/// TypeScript data module, leaving roughly JSON-compatible source.
-String _cleanTs(String source) {
-  var s = source;
-  s = s.replaceAll(RegExp(r'^import[^\n]*\n', multiLine: true), '');
-  s = s.replaceAll(
-      RegExp(r'^(?:export\s+)?interface[^}]*\}\s*', multiLine: true), '');
-  // Function bodies (legacy-districts.ts defines a slugify helper).
-  s = s.replaceAll(
-      RegExp(r'^(?:export\s+)?function[\s\S]*?\n\}\s*', multiLine: true), '');
-  s = _stripComments(s);
-  s = s.replaceAllMapped(RegExp(r'(?<=\d)_(?=\d)'), (_) => '');
-  return s;
-}
-
-/// Extracts the first container literal (array or object) assigned to a
-/// top-level `const`, using bracket-depth scanning so a *second* declaration
-/// later in the module cannot overshoot the first.
-String _extractFirstContainer(String cleaned) {
-  final assign = RegExp(r'=\s*([\[{])').firstMatch(cleaned);
-  if (assign == null) {
-    throw const FormatException(
-        'could not locate container literal in TS module');
-  }
-  final open = assign.group(1)!;
-  final close = open == '[' ? ']' : '}';
-  final start = assign.end - 1;
-
-  var depth = 0;
-  for (var i = start; i < cleaned.length; i++) {
-    final c = cleaned[i];
-    if (c == open) {
-      depth++;
-    } else if (c == close) {
-      depth--;
-      if (depth == 0) return cleaned.substring(start, i + 1);
-    }
-  }
-  throw const FormatException('unbalanced container literal in TS module');
-}
-
-/// Quotes unquoted object keys and removes trailing commas.
-String _toJsonCompatible(String s) {
-  var out = s.replaceAllMapped(
-      RegExp(r'([{,]\s*)([A-Za-z_][A-Za-z0-9_]*)(\s*:)'),
-      (m) => '${m[1]}"${m[2]}"${m[3]}');
-  out = out.replaceAllMapped(RegExp(r',(\s*[}\]])'), (m) => m[1]!);
-  return out;
-}
-
-List<Map<String, dynamic>> _loadTsArray(String path) => _decodeArray(
-    _toJsonCompatible(
-        _extractFirstContainer(_cleanTs(File(path).readAsStringSync()))),
-    path);
-
-Map<String, dynamic> _loadTsObject(String path) => _decodeObject(
-    _toJsonCompatible(
-        _extractFirstContainer(_cleanTs(File(path).readAsStringSync()))),
-    path);
-
-dynamic _decode(String json, String path) {
-  try {
-    return jsonDecode(json);
-  } on FormatException catch (e) {
-    throw FormatException('$path: $e');
-  }
-}
-
-List<Map<String, dynamic>> _decodeArray(String json, String path) {
-  final decoded = _decode(json, path);
-  if (decoded is! List) throw FormatException('$path is not an array');
-  return decoded.map((e) => (e as Map).cast<String, dynamic>()).toList();
-}
-
-Map<String, dynamic> _decodeObject(String json, String path) {
-  final decoded = _decode(json, path);
-  if (decoded is! Map) throw FormatException('$path is not an object');
-  return decoded.cast<String, dynamic>();
-}
-
-List<Map<String, dynamic>> _loadJsonArray(String path) {
-  final decoded = jsonDecode(File(path).readAsStringSync());
-  if (decoded is! List) throw FormatException('$path is not a JSON array');
-  return decoded.map((e) => (e as Map).cast<String, dynamic>()).toList();
-}
+import 'common.dart';
 
 // ---------------------------------------------------------------------------
 // Reporting primitives
 // ---------------------------------------------------------------------------
-
-final _deva = RegExp(r'[\u0900-\u097F]');
 
 class FieldReport {
   FieldReport(this.name);
@@ -183,7 +39,7 @@ class FieldReport {
     if (value == null) return;
     final text = value is String ? value : value.toString();
     if (text.trim().isNotEmpty) nonEmpty++;
-    if (_deva.hasMatch(text)) devanagari++;
+    if (devaRegex.hasMatch(text)) devanagari++;
   }
 
   String get summary {
@@ -205,231 +61,6 @@ class SourceReport {
       fields.putIfAbsent(field, () => FieldReport(field)).tally(value);
 
   void note(String n) => notes.add(n);
-}
-
-String normDistrict(String? raw) {
-  if (raw == null) return '';
-  return raw.toLowerCase().trim().replaceAll(RegExp(r'\s+'), ' ');
-}
-
-/// Canonical district form for MATCHING ONLY (never for display or storage).
-/// Folds evidenced spelling variants to one key so cross-source agreement is
-/// not split by district naming. Each fold is backed by an observed variant:
-///
-/// - acham -> achham (sagautam5 calls Achham "Acham")
-/// - pachthar -> panchthar, ramechap -> ramechhap, parwat -> parbat
-///   (sagautam5 spellings; nepali-geo-pro-max documents the same four
-///   normalizations in its districts.ts header)
-/// - dhanusa -> dhanusha, chitawan -> chitwan, tanahu -> tanahun,
-///   kapilbastu -> kapilvastu, nawalparasi east -> nawalpur,
-///   parasi (nawalparasi west) -> nawalparasi west
-///   (open-admin-data spellings vs ours)
-/// - eastern rukum -> rukum east, western rukum -> rukum west,
-///   parasi -> nawalparasi west (sagautam5 / geo-pro-max name the 2017 splits
-///   "Eastern/Western Rukum" and "Parasi" where abinrimal and ours use
-///   "Rukum East/West" and "Parasi (Nawalparasi West)" / "Nawalparasi West")
-/// - nawalparari east -> nawalpur (abinrimal typo for "Nawalparasi East";
-///   the district is Nawalpur in ours, sagautam5 and geo-pro-max)
-String canonDistrict(String? raw) {
-  final n = normDistrict(raw);
-  const folds = {
-    'acham': 'achham',
-    'pachthar': 'panchthar',
-    'ramechap': 'ramechhap',
-    'parwat': 'parbat',
-    'dhanusa': 'dhanusha',
-    'chitawan': 'chitwan',
-    'tanahu': 'tanahun',
-    'nawalparasi east': 'nawalpur',
-    'nawalparari east': 'nawalpur',
-    'parasi (nawalparasi west)': 'nawalparasi west',
-    'parasi': 'nawalparasi west',
-    'kapilbastu': 'kapilvastu',
-    'eastern rukum': 'rukum east',
-    'western rukum': 'rukum west',
-  };
-  return folds[n] ?? n;
-}
-
-/// Matching key used across sources: `[district]|[name]`, both flattened.
-/// Flattening = lowercase, type suffix and "(...)" groups stripped, then all
-/// spaces, hyphens, apostrophes and dots removed. This absorbs "Mai Jogmai"
-/// vs "Maijogmai" and "Bhojpur Municipality" vs "Bhojpur", but NOT genuine
-/// spelling differences ("Shadananda" vs "Shadanand"), which are reported as
-/// fuzzy suggestions instead of silent matches.
-String palikaKey(String? district, String? name) =>
-    '${_flat(canonDistrict(district))}|${_flat(_stripSuffix(_stripParens((name ?? '').toLowerCase().trim())))}';
-
-String _stripParens(String s) => s
-    .replaceAll(RegExp(r'\([^)]*\)'), ' ')
-    .replaceAll(RegExp(r'\s+'), ' ')
-    .trim();
-
-String _stripSuffix(String s) {
-  for (final suffix in const [
-    'sub-metropolitan city',
-    'sub metropolitan city',
-    'metropolitan city',
-    'rural municipality',
-    'municipality',
-  ]) {
-    if (s.endsWith(' $suffix')) {
-      return s.substring(0, s.length - suffix.length - 1).trim();
-    }
-    if (s == suffix) return '';
-  }
-  return s;
-}
-
-String _flat(String s) => s.replaceAll(RegExp(r"[\s\-'.]"), '');
-
-/// Lighter normalisation for spelling-variant reporting: case and whitespace
-/// only, suffixes and punctuation kept. Two records sharing a flat key but
-/// differing here expose a suffix/punctuation variant (e.g. "Bhojpur" vs
-/// "Bhojpur Municipality").
-String looseName(String? raw) {
-  if (raw == null) return '';
-  return raw.toLowerCase().trim().replaceAll(RegExp(r'\s+'), ' ');
-}
-
-/// Levenshtein distance over runes (safe for Devanagari). Candidates whose
-/// lengths differ by more than [max] can never be within [max], so callers
-/// should prefilter on length to keep the national scans cheap.
-int levenshtein(String a, String b, [int max = 2]) {
-  final ar = a.runes.toList();
-  final br = b.runes.toList();
-  if ((ar.length - br.length).abs() > max) return max + 1;
-  var prev = List<int>.generate(br.length + 1, (j) => j);
-  for (var i = 1; i <= ar.length; i++) {
-    final cur = <int>[i];
-    var rowMin = i;
-    for (var j = 1; j <= br.length; j++) {
-      final cost = ar[i - 1] == br[j - 1] ? 0 : 1;
-      var v = prev[j] + 1;
-      final ins = cur[j - 1] + 1;
-      if (ins < v) v = ins;
-      final sub = prev[j - 1] + cost;
-      if (sub < v) v = sub;
-      cur.add(v);
-      if (v < rowMin) rowMin = v;
-    }
-    prev = cur;
-  }
-  return prev[br.length];
-}
-
-/// Best fuzzy suggestion for a key missing from [candidates]: same-district
-/// name parts within Levenshtein distance 2 first, then national.
-/// Returns null when nothing is within distance 2. Suggestions are for human
-/// review in doc/REVIEW.md — never auto-applied.
-String? _suggest(String missingKey, Set<String> candidates) {
-  final parts = missingKey.split('|');
-  final missingDist = parts[0];
-  final missingName = parts.length > 1 ? parts[1] : '';
-  String? best;
-  var bestD = 3;
-  String cname(String c) {
-    final cp = c.split('|');
-    return cp.length > 1 ? cp[1] : '';
-  }
-
-  for (final pass in const [true, false]) {
-    for (final c in candidates) {
-      if (pass && c.split('|')[0] != missingDist) continue;
-      final d = levenshtein(missingName, cname(c), 2);
-      if (d < bestD) {
-        bestD = d;
-        best = c;
-      }
-    }
-    if (best != null) return '$best (d=$bestD)';
-  }
-  return null;
-}
-
-const _devaDigits = '०१२३४५६७८९';
-
-/// Converts a Devanagari-numeral string (e.g. "१४") to int. Returns null when
-/// the string holds anything else, so callers can distinguish "missing" from
-/// "unparseable" instead of silently treating both as zero.
-int? devaDigitsToInt(Object? value) {
-  if (value is int) return value;
-  if (value is! String) return null;
-  final s = value.trim();
-  if (s.isEmpty) return null;
-  final out = StringBuffer();
-  for (final r in s.runes) {
-    final ch = String.fromCharCode(r);
-    final idx = _devaDigits.indexOf(ch);
-    if (idx >= 0) {
-      out.write(idx);
-    } else if (r >= 48 && r <= 57) {
-      out.write(ch);
-    } else {
-      return null;
-    }
-  }
-  return int.tryParse(out.toString());
-}
-
-/// Verifies every file pinned in data/PROVENANCE.sha256 against data/_raw/.
-/// Returns the list of problems (empty = verified). Manifest lines look like:
-/// `<sha256-hex>  <bytes>  <repo-relative-path-under-data/_raw>`.
-List<String> verifyProvenance() {
-  final problems = <String>[];
-  final manifest = File('data/PROVENANCE.sha256');
-  if (!manifest.existsSync()) {
-    return ['data/PROVENANCE.sha256 is missing — cannot verify inputs'];
-  }
-  final rawDir = Directory('data/_raw');
-  if (!rawDir.existsSync()) {
-    return [
-      'data/_raw/ is missing — nothing to verify. '
-          'Re-fetch the sources per data/SOURCES.md, then re-run.'
-    ];
-  }
-  final entry =
-      RegExp(r'^([0-9A-Fa-f]{64})\s+(\d+)\s+(\S+)\s*$', multiLine: false);
-  final pinned = <String>{};
-  for (final line in manifest.readAsLinesSync()) {
-    if (line.trim().isEmpty) continue;
-    final m = entry.firstMatch(line);
-    if (m == null) {
-      problems.add('manifest line is malformed: $line');
-      continue;
-    }
-    final wantHash = m.group(1)!.toUpperCase();
-    final wantSize = int.parse(m.group(2)!);
-    final rel = m.group(3)!;
-    pinned.add(rel);
-    final file = File('data/_raw/$rel');
-    if (!file.existsSync()) {
-      problems.add('MISSING: data/_raw/$rel (pinned in manifest, not on disk)');
-      continue;
-    }
-    final bytes = file.readAsBytesSync();
-    final gotHash = sha256.convert(bytes).toString().toUpperCase();
-    if (gotHash != wantHash) {
-      problems.add('MISMATCH: data/_raw/$rel '
-          '(manifest ${wantHash.substring(0, 16)}… != disk ${gotHash.substring(0, 16)}…) — '
-          'upstream changed; re-review before merging');
-    } else if (bytes.length != wantSize) {
-      problems.add('SIZE-DRIFT: data/_raw/$rel '
-          '(manifest $wantSize B != disk ${bytes.length} B with matching hash?!)');
-    }
-  }
-  for (final entity in rawDir.listSync(recursive: true)) {
-    if (entity is! File) continue;
-    final rel = entity.path
-        .replaceFirst(RegExp(r'^data[/\\]_raw[/\\]'), '')
-        .replaceAll('\\', '/');
-    if (rel == 'PROVENANCE.sha256') continue;
-    if (!pinned.contains(rel)) {
-      problems.add('UNPINNED: data/_raw/$rel exists on disk but is not in '
-          'the manifest — untracked input; pin it or remove it');
-    }
-  }
-  return problems;
 }
 
 // ---------------------------------------------------------------------------
@@ -460,9 +91,9 @@ void main() {
   final abinrimalDistricts = <String, Map<String, dynamic>>{};
   {
     final r = SourceReport('abinrimal', 'data/_raw/abinrimal');
-    final provinces = _loadJsonArray('${r.path}/provinces.json');
-    final districts = _loadJsonArray('${r.path}/districts.json');
-    final levels = _loadJsonArray('${r.path}/local_levels.json');
+    final provinces = loadJsonArray('${r.path}/provinces.json');
+    final districts = loadJsonArray('${r.path}/districts.json');
+    final levels = loadJsonArray('${r.path}/local_levels.json');
     abinrimalLevels.addAll(levels);
     for (final d in districts) {
       abinrimalDistricts[d['code'] as String] = d;
@@ -503,12 +134,12 @@ void main() {
   {
     final r =
         SourceReport('local-states-nepal', 'data/_raw/local-states-nepal');
-    final provinces = _loadJsonArray('${r.path}/dataset_provinces_en.json');
-    final provincesNp = _loadJsonArray('${r.path}/dataset_provinces_np.json');
-    final districtsEn = _loadJsonArray('${r.path}/dataset_districts_en.json');
-    final districtsNp = _loadJsonArray('${r.path}/dataset_districts_np.json');
-    final munisEn = _loadJsonArray('${r.path}/dataset_municipalities_en.json');
-    final munisNp = _loadJsonArray('${r.path}/dataset_municipalities_np.json');
+    final provinces = loadJsonArray('${r.path}/dataset_provinces_en.json');
+    final provincesNp = loadJsonArray('${r.path}/dataset_provinces_np.json');
+    final districtsEn = loadJsonArray('${r.path}/dataset_districts_en.json');
+    final districtsNp = loadJsonArray('${r.path}/dataset_districts_np.json');
+    final munisEn = loadJsonArray('${r.path}/dataset_municipalities_en.json');
+    final munisNp = loadJsonArray('${r.path}/dataset_municipalities_np.json');
     sagautamMunis.addAll(munisEn);
     sagautamMunisNp.addAll(munisNp);
 
@@ -572,14 +203,14 @@ void main() {
   {
     final r =
         SourceReport('nepali-geo-pro-max', 'data/_raw/nepali-geo-pro-max');
-    final provinces = _loadTsArray('${r.path}/src_data_provinces.ts');
-    final districts = _loadTsArray('${r.path}/src_data_districts.ts');
-    final units = _loadTsArray('${r.path}/src_data_local-units.ts');
-    final legacy = _loadTsArray('${r.path}/src_data_legacy-districts.ts');
-    final zones = _loadTsArray('${r.path}/src_data_zones.ts');
-    final regions = _loadTsArray('${r.path}/src_data_regions.ts');
-    final postal = _loadTsObject('${r.path}/src_data_postal-codes.ts');
-    final postalNew = _loadTsObject('${r.path}/src_data_postal-codes-2025.ts');
+    final provinces = loadTsArray('${r.path}/src_data_provinces.ts');
+    final districts = loadTsArray('${r.path}/src_data_districts.ts');
+    final units = loadTsArray('${r.path}/src_data_local-units.ts');
+    final legacy = loadTsArray('${r.path}/src_data_legacy-districts.ts');
+    final zones = loadTsArray('${r.path}/src_data_zones.ts');
+    final regions = loadTsArray('${r.path}/src_data_regions.ts');
+    final postal = loadTsObject('${r.path}/src_data_postal-codes.ts');
+    final postalNew = loadTsObject('${r.path}/src_data_postal-codes-2025.ts');
     geoUnits.addAll(units);
     geoDistricts.addAll(districts);
     postal2025.addAll(postalNew.cast<String, String>());
@@ -648,9 +279,9 @@ void main() {
   // ------------------------------------------------------------ open-admin-data
   {
     final r = SourceReport('open-admin-data', 'data/_raw/open-admin-data');
-    final provinces = _loadJsonArray('${r.path}/data_all-province.json');
-    final districts = _loadJsonArray('${r.path}/data_all-district.json');
-    final units = _loadJsonArray('${r.path}/data_all-local_unit.json');
+    final provinces = loadJsonArray('${r.path}/data_all-province.json');
+    final districts = loadJsonArray('${r.path}/data_all-district.json');
+    final units = loadJsonArray('${r.path}/data_all-local_unit.json');
     for (final p in provinces) {
       for (final k in p.keys) {
         r.tally('province.$k', p[k]);
@@ -735,7 +366,7 @@ void main() {
   // sagautam5 keys municipalities by `district_id`, resolved through
   // districts/en.json.
   final sagDistricts =
-      _loadJsonArray('data/_raw/local-states-nepal/dataset_districts_en.json');
+      loadJsonArray('data/_raw/local-states-nepal/dataset_districts_en.json');
   final sagDistName = {
     for (final d in sagDistricts) d['id'] as int: d['name'] as String,
   };
@@ -778,7 +409,7 @@ void main() {
       ..sort();
     out.writeln('  in $only only: ${missing.length}');
     for (final k in missing.take(20)) {
-      final sug = _suggest(k, only == 'abinrimal' ? sagKeys : abinKeys);
+      final sug = suggestKey(k, only == 'abinrimal' ? sagKeys : abinKeys);
       out.writeln('    MISSING $k'
           '${sug == null ? '' : '  ~> suggests "$sug"'}');
     }
@@ -842,7 +473,7 @@ void main() {
     out.writeln(l);
   }
   final abinNeNoDeva = abinrimalLevels
-      .where((l) => !_deva.hasMatch((l['name_ne'] as String?) ?? ''))
+      .where((l) => !devaRegex.hasMatch((l['name_ne'] as String?) ?? ''))
       .map((l) => '${l['name_en']} (${l['district_code']})')
       .toList();
   out.writeln('abinrimal name_ne WITHOUT any Devanagari script: '
@@ -903,7 +534,7 @@ void main() {
   // np district names are Devanagari and can never match a romanized key:
   // link np->en through the shared `id`, then key by the en name.
   final sagDistNpById = <int, Map<String, dynamic>>{};
-  for (final d in _loadJsonArray(
+  for (final d in loadJsonArray(
       'data/_raw/local-states-nepal/dataset_districts_np.json')) {
     sagDistNpById[d['id'] as int] = d;
   }
@@ -917,7 +548,7 @@ void main() {
   // NOTE: geo district seeds live in districts.ts (already tallied above);
   // re-parse here keyed by canonical district name for the HQ cross-check.
   final geoSeedFile =
-      _loadTsArray('data/_raw/nepali-geo-pro-max/src_data_districts.ts');
+      loadTsArray('data/_raw/nepali-geo-pro-max/src_data_districts.ts');
   for (final p in geoSeedFile) {
     final seeds = p['districts'];
     if (seeds is! List) continue;
@@ -1008,7 +639,7 @@ void main() {
 
   // open-admin-data district id -> parent province id.
   final oaDistricts =
-      _loadJsonArray('data/_raw/open-admin-data/data_all-district.json');
+      loadJsonArray('data/_raw/open-admin-data/data_all-district.json');
   final oaByParent = <String, List<Map<String, dynamic>>>{};
   for (final d in oaDistricts) {
     final parent = (d['parent'] as Map)['id'] as String;
@@ -1103,7 +734,7 @@ void main() {
   out.writeln('=' * 78);
 
   String normPostalKey(String raw) =>
-      _flat(_stripSuffix(_stripParens(raw.toLowerCase().trim())));
+      flatToken(stripSuffix(stripParens(raw.toLowerCase().trim())));
 
   final postalNorm = <String, List<MapEntry<String, String>>>{};
   for (final e in postal2025.entries) {

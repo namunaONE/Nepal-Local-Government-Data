@@ -37,7 +37,7 @@ Its `PDDPP` structure (`1` province + `2` district + `2` palika) is *structurall
 - **`"dharan sub-metropolitan city" = "11301"`** â€” exactly the published CBS/NSO code for Dharan from the peer-reviewed *Nepal Journal of Geography* coding paper. One independent, citable confirmation.
 - It yields **exactly 77 district prefixes**, split per province **14 / 8 / 13 / 11 / 12 / 10 / 9** â€” **identical to our verified dataset's district counts for all seven provinces.**
 - Koshi's sequence runs a **gapless 101â€¦114** across all 14 districts.
-- **751 of 753 palikas** carry a code.
+- **752 of 753 palikas** carry a code. (Step 1 reported 751: the shell regex missed `k.i.singh rural municipality` = 70606 — dots were outside its character class. Corrected in Step 2.)
 
 Because ISO 3166-2:NP only covers provinces (no district or palika codes), this is the *only* route to official codes below province level. **It is the strongest candidate and largely de-risks Step 2.**
 
@@ -164,7 +164,7 @@ Representative T3 pairs (ours -> postal-2025 suggestion, all from the tool outpu
 1. **Verify `postal-2025` against CBS/NSO or MoFAGA** â€” one anchor (Dharan 11301) is not enough. This is the single highest-value Step 2 task.
 2. **Resolve the 176 postal-review items (149 T3 suggestions + 27 misses)** via fuzzy match + adjudication. The conflict list is computed and reviewable (`doc/_inventory-raw.txt`, POSTAL-2025 JOIN section) — shared normalised forms across districts are never auto-accepted.
 3. **De-duplicate abinrimal's `Gulmi|Chatrakot`.**
-4. **Determine whether Sudurpashchim is genuinely 86 or 88** palikas (postal-2025 has 86 codes for its 9 districts; our dataset and sagautam5 both say 88). All 9 districts yield T3 suggestions except 4 MISSes — Kanda [Bajhang], Swami Kartik [Bajura], Bogatan [Doti], Mahakali [Kanchanpur] — which are the prime candidates for the 2-code gap. Likely a spelling/coverage gap, not a structural difference — but must be confirmed, not assumed. (Separately: open-admin-data's per-district table now matches 77/77 districts with 19 differing counts, all open-admin HIGHER by 1-2, totalling 775 vs our 753 — its counts stay rejected per the hard gate.)
+4. **RESOLVED in Step 2: Sudurpashchim is 88.** The CBS harvest holds 88 P7 rows with per-district counts identical to ours (10/10/12/9/7/9/9/13/9). Postal-2025 holds 87 P7 codes; the single CBS-only gap is Mahakali Municipality, Kanchanpur = 70905. The earlier "86" was the same regex miscount. See `doc/REVIEW-codes.md`.
 
 ---
 
