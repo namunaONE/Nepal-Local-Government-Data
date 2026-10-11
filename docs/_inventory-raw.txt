@@ -1,0 +1,141 @@
+==============================================================================
+STEP 1 SOURCE COVERAGE INVENTORY
+generated: 2026-10-11T06:59:54.766782Z
+==============================================================================
+
+### abinrimal  (data/_raw/abinrimal)
+  province.name_en: nonEmpty=7/7 (100%) devanagari=0 (0%)
+  province.name_ne: nonEmpty=7/7 (100%) devanagari=7 (100%)
+  district.name_en: nonEmpty=77/77 (100%) devanagari=0 (0%)
+  district.name_ne: nonEmpty=77/77 (100%) devanagari=77 (100%)
+  district.province_code: nonEmpty=77/77 (100%) devanagari=0 (0%)
+  localLevel.name_en: nonEmpty=753/753 (100%) devanagari=0 (0%)
+  localLevel.name_ne: nonEmpty=753/753 (100%) devanagari=751 (100%)
+  localLevel.district_code: nonEmpty=753/753 (100%) devanagari=0 (0%)
+  localLevel.province_code: nonEmpty=753/753 (100%) devanagari=0 (0%)
+  localLevel.type_en: nonEmpty=753/753 (100%) devanagari=0 (0%)
+  localLevel.type_ne: nonEmpty=753/753 (100%) devanagari=753 (100%)
+  note: provinces=7 districts=77 localLevels=753
+  note: localLevel.code distinct values: 4 -> NOT a unique id (values are 1/2/3/4 type codes)
+  note: district.code unique=true range=1..77
+
+### local-states-nepal  (data/_raw/local-states-nepal)
+  province.name_en: nonEmpty=0/7 (0%) devanagari=0 (0%)
+  province.name_ne: nonEmpty=0/7 (0%) devanagari=0 (0%)
+  province(np).name_ne: nonEmpty=0/7 (0%) devanagari=0 (0%)
+  district.name_en: nonEmpty=0/77 (0%) devanagari=0 (0%)
+  district.name_ne: nonEmpty=0/77 (0%) devanagari=0 (0%)
+  district.province_code: nonEmpty=0/77 (0%) devanagari=0 (0%)
+  municipality.id: nonEmpty=753/753 (100%) devanagari=0 (0%)
+  municipality.district_id: nonEmpty=753/753 (100%) devanagari=0 (0%)
+  municipality.category_id: nonEmpty=753/753 (100%) devanagari=0 (0%)
+  municipality.name: nonEmpty=753/753 (100%) devanagari=0 (0%)
+  municipality.area_sq_km: nonEmpty=753/753 (100%) devanagari=0 (0%)
+  municipality.website: nonEmpty=753/753 (100%) devanagari=1 (0%)
+  municipality.wards: nonEmpty=753/753 (100%) devanagari=0 (0%)
+  note: provinces=7 districts=77 municipalities(en)=753 municipalities(np)=753
+  note: municipality keys: [id, district_id, category_id, name, area_sq_km, website, wards]
+  note: sample: {id: 1, district_id: 1, category_id: 3, name: Shadanand, area_sq_km: 241.15, website: http://www.shadanandamun.gov.np/, wards: 14}
+
+### nepali-geo-pro-max  (data/_raw/nepali-geo-pro-max)
+  province.id: nonEmpty=7/7 (100%) devanagari=0 (0%)
+  province.number: nonEmpty=7/7 (100%) devanagari=0 (0%)
+  province.nameEn: nonEmpty=7/7 (100%) devanagari=0 (0%)
+  province.nameNe: nonEmpty=7/7 (100%) devanagari=7 (100%)
+  province.capital: nonEmpty=7/7 (100%) devanagari=0 (0%)
+  province.capitalNe: nonEmpty=7/7 (100%) devanagari=7 (100%)
+  province.capitalCoords: nonEmpty=7/7 (100%) devanagari=0 (0%)
+  province.areaKm2: nonEmpty=7/7 (100%) devanagari=0 (0%)
+  province.population: nonEmpty=7/7 (100%) devanagari=0 (0%)
+  province.slug: nonEmpty=7/7 (100%) devanagari=0 (0%)
+  province.aliases: nonEmpty=7/7 (100%) devanagari=7 (100%)
+  district.provinceId: nonEmpty=7/7 (100%) devanagari=0 (0%)
+  district.districts: nonEmpty=7/7 (100%) devanagari=7 (100%)
+  localUnit.nameEn: nonEmpty=753/753 (100%) devanagari=0 (0%)
+  localUnit.nameNe: nonEmpty=753/753 (100%) devanagari=753 (100%)
+  localUnit.type: nonEmpty=753/753 (100%) devanagari=0 (0%)
+  localUnit.districtNameEn: nonEmpty=753/753 (100%) devanagari=0 (0%)
+  localUnit.wards: nonEmpty=753/753 (100%) devanagari=0 (0%)
+  localUnit.postalCode: nonEmpty=16/16 (100%) devanagari=0 (0%)
+  localUnit.aliases: nonEmpty=17/17 (100%) devanagari=1 (6%)
+  note: provinces=7 districts=7 localUnits=753 legacyDistricts=75 zones=14 regions=5
+  note: postal legacy map entries=409 postal 2025 map entries=752
+  note: localUnits with ward count: 753/753
+  note: SUM of per-palika ward counts: 6742  (target 6743)
+  note: type split: {municipality: 276, rural-municipality: 460, metropolitan: 6, sub-metropolitan: 11}
+  note: postal-2025 codes failing ^[1-7][0-9]{4}: 0 []
+  note: *** postal-2025 appears to BE the NSO code list: "dharan sub-metropolitan city" = 11301 matches the published CBS/NSO code 11301 ***
+
+### open-admin-data  (data/_raw/open-admin-data)
+  province.id: nonEmpty=7/7 (100%) devanagari=0 (0%)
+  province.level: nonEmpty=7/7 (100%) devanagari=0 (0%)
+  province.level_name: nonEmpty=7/7 (100%) devanagari=7 (100%)
+  province.name: nonEmpty=7/7 (100%) devanagari=7 (100%)
+  province.code: nonEmpty=7/7 (100%) devanagari=0 (0%)
+  province.parent: nonEmpty=0/7 (0%) devanagari=0 (0%)
+  province.ancestors: nonEmpty=7/7 (100%) devanagari=0 (0%)
+  province.children_count: nonEmpty=7/7 (100%) devanagari=0 (0%)
+  province.zip_codes: nonEmpty=7/7 (100%) devanagari=0 (0%)
+  province.geo: nonEmpty=7/7 (100%) devanagari=0 (0%)
+  province.metadata: nonEmpty=7/7 (100%) devanagari=0 (0%)
+  province.source: nonEmpty=7/7 (100%) devanagari=0 (0%)
+  district.id: nonEmpty=77/77 (100%) devanagari=0 (0%)
+  district.level: nonEmpty=77/77 (100%) devanagari=0 (0%)
+  district.level_name: nonEmpty=77/77 (100%) devanagari=77 (100%)
+  district.name: nonEmpty=77/77 (100%) devanagari=77 (100%)
+  district.code: nonEmpty=77/77 (100%) devanagari=0 (0%)
+  district.parent: nonEmpty=77/77 (100%) devanagari=77 (100%)
+  district.ancestors: nonEmpty=77/77 (100%) devanagari=77 (100%)
+  district.children_count: nonEmpty=77/77 (100%) devanagari=0 (0%)
+  district.zip_codes: nonEmpty=77/77 (100%) devanagari=0 (0%)
+  district.geo: nonEmpty=77/77 (100%) devanagari=0 (0%)
+  district.metadata: nonEmpty=77/77 (100%) devanagari=0 (0%)
+  district.source: nonEmpty=77/77 (100%) devanagari=0 (0%)
+  localUnit.id: nonEmpty=775/775 (100%) devanagari=0 (0%)
+  localUnit.level: nonEmpty=775/775 (100%) devanagari=0 (0%)
+  localUnit.level_name: nonEmpty=775/775 (100%) devanagari=775 (100%)
+  localUnit.name: nonEmpty=775/775 (100%) devanagari=775 (100%)
+  localUnit.code: nonEmpty=775/775 (100%) devanagari=0 (0%)
+  localUnit.parent: nonEmpty=775/775 (100%) devanagari=775 (100%)
+  localUnit.ancestors: nonEmpty=775/775 (100%) devanagari=775 (100%)
+  localUnit.children_count: nonEmpty=775/775 (100%) devanagari=0 (0%)
+  localUnit.zip_codes: nonEmpty=775/775 (100%) devanagari=0 (0%)
+  localUnit.geo: nonEmpty=775/775 (100%) devanagari=0 (0%)
+  localUnit.metadata: nonEmpty=775/775 (100%) devanagari=0 (0%)
+  localUnit.source: nonEmpty=775/775 (100%) devanagari=0 (0%)
+  note: provinces=7 districts=77 localUnits=775  <-- NOTE: differs from the 753 gazette
+  note: sample local unit: {id: NP0101301, level: 3, level_name: {local: स्थानीय तह, en: Local Unit}, name: {local: फुङलिङ, en: Phungling, slug: phungling-np0101301}, code: {id: NP0101301, iso: null}, parent: {id: NP0101, level: 2, name: {local: ताप्लेजुङ, en: Taplejung, slug: taplejung-np0101}}, ancestors: [{id: NP01, level: 1, name: {local: कोशी, en: Koshi, slug: koshi-np01}}, {id: NP0101, level: 2, name: {local: ताप्लेजुङ, en: Taplejung, slug: taplejung-np0101}}], children_count: {}, zip_codes: [57500], geo: {lat: 27.383, lon: 87.716}, metadata: {}, source: {}}
+
+==============================================================================
+CROSS-SOURCE LOCAL-BODY MATCHING
+==============================================================================
+
+==============================================================================
+DISTRICT NUMBERING SCHEMES (all four sources disagree)
+==============================================================================
+our district | abinrimal | sagautam5 | open-admin | postal-2025
+Bhojpur            20         1           NP0110       106
+Dhankuta           21         2           NP0107       107
+Ilam               24         3           NP0103       110
+Jhapa              25         4           NP0104       111
+Khotang            19         5           NP0112       105
+Morang             4          6           NP0105       112
+Okhaldhunga        18         7           NP0113       104
+Panchthar          -          -           NP0102       109
+Sankhuwasabha      16         9           NP0109       102
+Solukhumbu         17         10          NP0111       103
+Sunsari            11         11          NP0106       113
+Taplejung          15         12          NP0101       101
+Terhathum          22         13          NP0108       108
+Udayapur           26         14          NP0114       114
+Bara               8          16          NP0233       207
+Dhanusha           29         20          -            203
+Mahottari          30         22          NP0218       204
+Parsa              3          15          NP0234       208
+Rautahat           32         17          NP0232       206
+Saptari            27         21          NP0215       201
+(first 20 of 77 districts shown)
+
+postal-2025 yields a gapless 01..14 run for Koshi and 77 district prefixes nationally, split 14/8/13/11/12/10/9 per province — exactly our verified per-province district counts. It is the only source whose numbering is both complete and matches a published CBS/NSO reference code (Dharan = 11301). The other three schemes are internal orderings.
+
+*** None of these four schemes is verified as the CBS/NSO scheme except postal-2025, whose Dharan value 11301 matches the one published CBS/NSO reference code. Resolve in Step 2 against CBS/NSO directly. ***

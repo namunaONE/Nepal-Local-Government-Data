@@ -1,0 +1,18 @@
+[
+  {
+    "type_en": "Metropolitan City",
+    "type_ne": "महानगरपालिका"
+  },
+  {
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "type_en": "Sub-Metropolitan City",
+    "type_ne": "उपमहानगरपालिका"
+  }
+]

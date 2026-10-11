@@ -1,0 +1,6779 @@
+[
+  {
+    "code": "1",
+    "name_en": "Biratnagar",
+    "name_ne": "विराटनगर",
+    "district_code": "4",
+    "province_code": "1",
+    "type_en": "Metropolitan City",
+    "type_ne": "महानगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Letang",
+    "name_ne": "लेटाङ",
+    "district_code": "4",
+    "province_code": "1",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Sunwarshi",
+    "name_ne": "सुनवर्शी",
+    "district_code": "4",
+    "province_code": "1",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Rangeli",
+    "name_ne": "रंगेली",
+    "district_code": "4",
+    "province_code": "1",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Pathari Shanishchare",
+    "name_ne": "पथरी शनिश्चरे",
+    "district_code": "4",
+    "province_code": "1",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Uralabari",
+    "name_ne": "उरालाबारी",
+    "district_code": "4",
+    "province_code": "1",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Belbari",
+    "name_ne": "बेलबारी",
+    "district_code": "4",
+    "province_code": "1",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Sundarharaicha",
+    "name_ne": "सुन्दरहरैचा",
+    "district_code": "4",
+    "province_code": "1",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Ratuwamai",
+    "name_ne": "रतुवामाई",
+    "district_code": "4",
+    "province_code": "1",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Jahada",
+    "name_ne": "जहादा",
+    "district_code": "4",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Katahari",
+    "name_ne": "कटहरी",
+    "district_code": "4",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Gramthan",
+    "name_ne": "ग्रामथान",
+    "district_code": "4",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Dhanpalthan",
+    "name_ne": "धनपालथान",
+    "district_code": "4",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Kerabari",
+    "name_ne": "केराबारी",
+    "district_code": "4",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Budhiganga",
+    "name_ne": "बुढीगंगा",
+    "district_code": "4",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Kanepokhari",
+    "name_ne": "कानेपोखरी",
+    "district_code": "4",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Miklajung",
+    "name_ne": "मिक्लाजुङ",
+    "district_code": "4",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "2",
+    "name_en": "Dharan",
+    "name_ne": "धरान",
+    "district_code": "11",
+    "province_code": "1",
+    "type_en": "Sub-Metropolitan City",
+    "type_ne": "उपमहानगरपालिका"
+  },
+  {
+    "code": "2",
+    "name_en": "Itahari",
+    "name_ne": "इटहरी",
+    "district_code": "11",
+    "province_code": "1",
+    "type_en": "Sub-Metropolitan City",
+    "type_ne": "उपमहानगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Ramdhuni",
+    "name_ne": "रामधुनी",
+    "district_code": "11",
+    "province_code": "1",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Barahchhetra",
+    "name_ne": "बराहक्षेत्र",
+    "district_code": "11",
+    "province_code": "1",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Duhabi",
+    "name_ne": "दुहबी",
+    "district_code": "11",
+    "province_code": "1",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Inaruwa",
+    "name_ne": "इनरुवा",
+    "district_code": "11",
+    "province_code": "1",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Gadhi",
+    "name_ne": "गढी",
+    "district_code": "11",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Koshi",
+    "name_ne": "कोशी",
+    "district_code": "11",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Barju",
+    "name_ne": "बर्जु",
+    "district_code": "11",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Harinagar",
+    "name_ne": "हरिनगर",
+    "district_code": "11",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Dewanganj",
+    "name_ne": "देवानगन्ज",
+    "district_code": "11",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Bhokraha Narsing",
+    "name_ne": "भोक्राहा नरसिङ्ग",
+    "district_code": "11",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Phungling",
+    "name_ne": "फुङ्लिङ",
+    "district_code": "15",
+    "province_code": "1",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Sidingba",
+    "name_ne": "सिडिङबा",
+    "district_code": "15",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Meringden",
+    "name_ne": "Meringden",
+    "district_code": "15",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Maiwakhola",
+    "name_ne": "माइवाखोला",
+    "district_code": "15",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Phaktanglung",
+    "name_ne": "फाक्ताङलुङ",
+    "district_code": "15",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Sirijangha",
+    "name_ne": "सिरिजाङ्घा",
+    "district_code": "15",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Mikwakhola",
+    "name_ne": "मिक्वाखोला",
+    "district_code": "15",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Aathrai Tribeni",
+    "name_ne": "आठराई त्रिवेणी",
+    "district_code": "15",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Pathivara Yangwarak",
+    "name_ne": "पाथिवरा यांगवारक",
+    "district_code": "15",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Dharmadevi",
+    "name_ne": "धर्मदेवी",
+    "district_code": "16",
+    "province_code": "1",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Madi",
+    "name_ne": "माडी",
+    "district_code": "16",
+    "province_code": "1",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Panchakhapan",
+    "name_ne": "पञ्चखापन",
+    "district_code": "16",
+    "province_code": "1",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Chainpur",
+    "name_ne": "चैनपुर",
+    "district_code": "16",
+    "province_code": "1",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Khandbari",
+    "name_ne": "खाँदबारी",
+    "district_code": "16",
+    "province_code": "1",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Makalu",
+    "name_ne": "मकालु",
+    "district_code": "16",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Chichila",
+    "name_ne": "चिचिला",
+    "district_code": "16",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Silichong",
+    "name_ne": "सिलिचङ",
+    "district_code": "16",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Bhotkhola",
+    "name_ne": "भोटखोला",
+    "district_code": "16",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Sabhapokhari",
+    "name_ne": "सभापोखरी",
+    "district_code": "16",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Solududhakunda",
+    "name_ne": "सोलुदुधाकुण्ड",
+    "district_code": "17",
+    "province_code": "1",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Sotang",
+    "name_ne": "सोटाङ",
+    "district_code": "17",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Mahakulung",
+    "name_ne": "महाकुलुङ",
+    "district_code": "17",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Likhupike",
+    "name_ne": "लिखुपिके",
+    "district_code": "17",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Nechasalyan",
+    "name_ne": "नेचासल्यान",
+    "district_code": "17",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Thulung Dudhkoshi",
+    "name_ne": "थुलुङ दुधकोशी",
+    "district_code": "17",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Maapya Dudhkoshi",
+    "name_ne": "माप्या दुधकोशी",
+    "district_code": "17",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Khumbupasanglahmu",
+    "name_ne": "खुम्बुपसङ्लाहमु",
+    "district_code": "17",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Siddhicharan",
+    "name_ne": "सिद्धिचरण",
+    "district_code": "18",
+    "province_code": "1",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Likhu",
+    "name_ne": "लिखु",
+    "district_code": "18",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Molung",
+    "name_ne": "मोलुङ",
+    "district_code": "18",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Sunkoshi",
+    "name_ne": "सुनकोशी",
+    "district_code": "18",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Champadevi",
+    "name_ne": "चम्पादेवी",
+    "district_code": "18",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Chisankhugadhi",
+    "name_ne": "चिसंखुगढी",
+    "district_code": "18",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Khijidemba",
+    "name_ne": "खिजिदेम्बा",
+    "district_code": "18",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Manebhanjyang",
+    "name_ne": "मानेभञ्ज्याङ",
+    "district_code": "18",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Halesi Tuwachung",
+    "name_ne": "हलेसी तुवाचुङ",
+    "district_code": "19",
+    "province_code": "1",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Diktel Rupakot Majhuwagadhi",
+    "name_ne": "दिक्तेल रुपाकोट मझुवागढी",
+    "district_code": "19",
+    "province_code": "1",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Sakela",
+    "name_ne": "साकेला",
+    "district_code": "19",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Khotehang",
+    "name_ne": "खोटेहाङ",
+    "district_code": "19",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Barahapokhari",
+    "name_ne": "बराहापोखरी",
+    "district_code": "19",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Ainselukhark",
+    "name_ne": "ऐसेलुखर्क",
+    "district_code": "19",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Rawa Besi",
+    "name_ne": "रवा बेसी",
+    "district_code": "19",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Kepilasagadhi",
+    "name_ne": "केपिलासगढी",
+    "district_code": "19",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Jantedhunga",
+    "name_ne": "जानतेढुङ्गा",
+    "district_code": "19",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Diprung",
+    "name_ne": "डिप्रुङ",
+    "district_code": "19",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Shadananda",
+    "name_ne": "षडानन्द",
+    "district_code": "20",
+    "province_code": "1",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Bhojpur",
+    "name_ne": "भोजपुर",
+    "district_code": "20",
+    "province_code": "1",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Arun",
+    "name_ne": "अरुण",
+    "district_code": "20",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Aamchowk",
+    "name_ne": "आमचोक",
+    "district_code": "20",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Hatuwagadhi",
+    "name_ne": "हतुवागढी",
+    "district_code": "20",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Pauwadungma",
+    "name_ne": "पौवाडुङ्मा",
+    "district_code": "20",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Temkemaiyung",
+    "name_ne": "टेम्केमाइयुङ",
+    "district_code": "20",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Salpasilichho",
+    "name_ne": "सालपसिलिछो",
+    "district_code": "20",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Ramprasad",
+    "name_ne": "रामप्रसाद",
+    "district_code": "20",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Pakhribas",
+    "name_ne": "पाखरिबास",
+    "district_code": "21",
+    "province_code": "1",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Mahalaxmi",
+    "name_ne": "महालक्ष्मी",
+    "district_code": "21",
+    "province_code": "1",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Dhankuta",
+    "name_ne": "धनकुटा",
+    "district_code": "21",
+    "province_code": "1",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Chaubise",
+    "name_ne": "चौबिसे",
+    "district_code": "21",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Shahidbhumi",
+    "name_ne": "शहिदभूमि",
+    "district_code": "21",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Sangurigadhi",
+    "name_ne": "साँगुरीगढी",
+    "district_code": "21",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Chhathar Jorpati",
+    "name_ne": "छथर जोरपाटी",
+    "district_code": "21",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Laligurans",
+    "name_ne": "लालीगुराँस",
+    "district_code": "22",
+    "province_code": "1",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Myanglung",
+    "name_ne": "म्याङलुङ",
+    "district_code": "22",
+    "province_code": "1",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Chhathar",
+    "name_ne": "छथर",
+    "district_code": "22",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Phedap",
+    "name_ne": "फेडाप",
+    "district_code": "22",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Aathrai",
+    "name_ne": "आठराई",
+    "district_code": "22",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Menchayam",
+    "name_ne": "मेन्चायम",
+    "district_code": "22",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Phidim",
+    "name_ne": "फिदिम",
+    "district_code": "23",
+    "province_code": "1",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Yangwarak",
+    "name_ne": "याङ्गवारक",
+    "district_code": "23",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Hilihang",
+    "name_ne": "हिलिहाङ",
+    "district_code": "23",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Falelung",
+    "name_ne": "फालेलुङ",
+    "district_code": "23",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Tumbewa",
+    "name_ne": "तुम्बेवा",
+    "district_code": "23",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Kummayak",
+    "name_ne": "कुमायक",
+    "district_code": "23",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Miklajung",
+    "name_ne": "मिक्लाजुङ",
+    "district_code": "23",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Falgunanda",
+    "name_ne": "फाल्गुनन्द",
+    "district_code": "23",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Illam",
+    "name_ne": "इलाम",
+    "district_code": "24",
+    "province_code": "1",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Mai",
+    "name_ne": "माई",
+    "district_code": "24",
+    "province_code": "1",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Deumai",
+    "name_ne": "देउमाई",
+    "district_code": "24",
+    "province_code": "1",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Suryodaya",
+    "name_ne": "सूर्योदय",
+    "district_code": "24",
+    "province_code": "1",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Rong",
+    "name_ne": "रोङ",
+    "district_code": "24",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Mangsebung",
+    "name_ne": "मङ्गेबुङ",
+    "district_code": "24",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Chulachuli",
+    "name_ne": "चुलाचुली",
+    "district_code": "24",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Sandakpur",
+    "name_ne": "सन्दकपुर",
+    "district_code": "24",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Fakphokthum",
+    "name_ne": "फाकफोक्थुम",
+    "district_code": "24",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Maijogmai",
+    "name_ne": "माइजोगमाई",
+    "district_code": "24",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Shivasataxi",
+    "name_ne": "शिवसताक्सी",
+    "district_code": "25",
+    "province_code": "1",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Bhadrapur",
+    "name_ne": "भद्रपुर",
+    "district_code": "25",
+    "province_code": "1",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Kankai",
+    "name_ne": "कनकाई",
+    "district_code": "25",
+    "province_code": "1",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Birtamod",
+    "name_ne": "बिर्तामोड",
+    "district_code": "25",
+    "province_code": "1",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Mechinagar",
+    "name_ne": "मेचीनगर",
+    "district_code": "25",
+    "province_code": "1",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Damak",
+    "name_ne": "दमक",
+    "district_code": "25",
+    "province_code": "1",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Arjundhara",
+    "name_ne": "अर्जुनधारा",
+    "district_code": "25",
+    "province_code": "1",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Gauradhaha",
+    "name_ne": "गौराधा",
+    "district_code": "25",
+    "province_code": "1",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Kamal",
+    "name_ne": "कमल",
+    "district_code": "25",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Jhapa",
+    "name_ne": "झापा",
+    "district_code": "25",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Kachankawal",
+    "name_ne": "कचनकवल",
+    "district_code": "25",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Gauriganj",
+    "name_ne": "गौरीगञ्ज",
+    "district_code": "25",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Barhadashi",
+    "name_ne": "बाह्रदशी",
+    "district_code": "25",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Haldibari",
+    "name_ne": "हल्दिबारी",
+    "district_code": "25",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Buddhashanti",
+    "name_ne": "बुद्धशान्ति",
+    "district_code": "25",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Triyuga",
+    "name_ne": "त्रियुग",
+    "district_code": "26",
+    "province_code": "1",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Katari",
+    "name_ne": "कटारी",
+    "district_code": "26",
+    "province_code": "1",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Chaudandigadhi",
+    "name_ne": "चौदण्डीगढी",
+    "district_code": "26",
+    "province_code": "1",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Belaka",
+    "name_ne": "बेलका",
+    "district_code": "26",
+    "province_code": "1",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Tapli",
+    "name_ne": "तापली",
+    "district_code": "26",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Rautamai",
+    "name_ne": "रौतामाई",
+    "district_code": "26",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Udayapurgadhi",
+    "name_ne": "उदयपुरगढी",
+    "district_code": "26",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Limchungbung",
+    "name_ne": "लिम्चुङबुङ",
+    "district_code": "26",
+    "province_code": "1",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "1",
+    "name_en": "Birgunj",
+    "name_ne": "वीरगन्ज",
+    "district_code": "3",
+    "province_code": "2",
+    "type_en": "Metropolitan City",
+    "type_ne": "महानगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Bahudaramai",
+    "name_ne": "बहुदरमाई",
+    "district_code": "3",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Pokhariya",
+    "name_ne": "पोखरिया",
+    "district_code": "3",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Parsagadhi",
+    "name_ne": "पर्सागढी",
+    "district_code": "3",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Thori",
+    "name_ne": "थोरी",
+    "district_code": "3",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Dhobini",
+    "name_ne": "धोबिनी",
+    "district_code": "3",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Chhipaharmai",
+    "name_ne": "छिपहरमाई",
+    "district_code": "3",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Jirabhawani",
+    "name_ne": "जिरभवानी",
+    "district_code": "3",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Jagarnathpur",
+    "name_ne": "जगरनाथपुर",
+    "district_code": "3",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Kalikamai",
+    "name_ne": "कालिकामाई",
+    "district_code": "3",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Bindabasini",
+    "name_ne": "बिन्दवासिनी",
+    "district_code": "3",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Pakaha mainpur",
+    "name_ne": "पकाहा मेनपुर",
+    "district_code": "3",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Sakhuwa Prasauni",
+    "name_ne": "सखुवा प्रसौनी",
+    "district_code": "3",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Paterwa sugauli",
+    "name_ne": "पटेरवा सुगौली",
+    "district_code": "3",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "2",
+    "name_en": "Jitpursimara",
+    "name_ne": "जितपुरसिमारा",
+    "district_code": "8",
+    "province_code": "2",
+    "type_en": "Sub-Metropolitan City",
+    "type_ne": "उपमहानगरपालिका"
+  },
+  {
+    "code": "2",
+    "name_en": "Kalaiya",
+    "name_ne": "कलैया",
+    "district_code": "8",
+    "province_code": "2",
+    "type_en": "Sub-Metropolitan City",
+    "type_ne": "उपमहानगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Pacharauta",
+    "name_ne": "पचरौता",
+    "district_code": "8",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Nijgadh",
+    "name_ne": "निजगढ",
+    "district_code": "8",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Simraungadh",
+    "name_ne": "सिम्रौनगढ",
+    "district_code": "8",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Mahagadhimai",
+    "name_ne": "महागढीमाई",
+    "district_code": "8",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Kolhabi",
+    "name_ne": "कोल्हाबी",
+    "district_code": "8",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Pheta",
+    "name_ne": "फेटा",
+    "district_code": "8",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Devtal",
+    "name_ne": "देवताल",
+    "district_code": "8",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Prasauni",
+    "name_ne": "प्रसौनी",
+    "district_code": "8",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Suwarna",
+    "name_ne": "सुवर्ण",
+    "district_code": "8",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Baragadhi",
+    "name_ne": "बारागढी",
+    "district_code": "8",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Karaiyamai",
+    "name_ne": "करैयामाई",
+    "district_code": "8",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Parwanipur",
+    "name_ne": "परवानीपुर",
+    "district_code": "8",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Bishrampur",
+    "name_ne": "बिश्रामपुर",
+    "district_code": "8",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Adarsh kotwal",
+    "name_ne": "आदर्श कोतवाल",
+    "district_code": "8",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Hanumannagar Kankalini",
+    "name_ne": "हनुमाननगर कंकालिनी",
+    "district_code": "27",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Kanchanrup",
+    "name_ne": "कञ्चनरुप",
+    "district_code": "27",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Rajbiraj",
+    "name_ne": "राजविराज",
+    "district_code": "27",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Khadak",
+    "name_ne": "खडक",
+    "district_code": "27",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Dakneshwori",
+    "name_ne": "डाक्नेश्वरी",
+    "district_code": "27",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Saptakoshi",
+    "name_ne": "सप्तकोशी",
+    "district_code": "27",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Surunga",
+    "name_ne": "सुरुङ्गा",
+    "district_code": "27",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Shambhunath",
+    "name_ne": "शम्भुनाथ",
+    "district_code": "27",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Bode Barsain",
+    "name_ne": "बोडे बार्सैन",
+    "district_code": "27",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Rajgadh",
+    "name_ne": "राजगढ",
+    "district_code": "27",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Rupani",
+    "name_ne": "रुपानी",
+    "district_code": "27",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Tirahut",
+    "name_ne": "तिराहुत",
+    "district_code": "27",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Mahadeva",
+    "name_ne": "महादेव",
+    "district_code": "27",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Bishnupur",
+    "name_ne": "विष्णुपुर",
+    "district_code": "27",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Chhinnamasta",
+    "name_ne": "छिन्नमस्ता",
+    "district_code": "27",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Balan Bihul",
+    "name_ne": "बालन बिहुल",
+    "district_code": "27",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Tilathi Koiladi",
+    "name_ne": "तिलाठी कोइलाडी",
+    "district_code": "27",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Agnisair Krishna Savaran",
+    "name_ne": "अग्निशैर कृष्ण सावरण",
+    "district_code": "27",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Mirchaiya",
+    "name_ne": "मिर्चैया",
+    "district_code": "28",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Lahan",
+    "name_ne": "लहान",
+    "district_code": "28",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Siraha",
+    "name_ne": "सिरहा",
+    "district_code": "28",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Dhangadhimai",
+    "name_ne": "धनगढीमाई",
+    "district_code": "28",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Kalyanpur",
+    "name_ne": "कल्याणपुर",
+    "district_code": "28",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Karjanha",
+    "name_ne": "कर्जन्हा",
+    "district_code": "28",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Golbazar",
+    "name_ne": "गोलबजार",
+    "district_code": "28",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Sukhipur",
+    "name_ne": "सुखीपुर",
+    "district_code": "28",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Aurahi",
+    "name_ne": "औरही",
+    "district_code": "28",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Naraha",
+    "name_ne": "नरहा",
+    "district_code": "28",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Arnama",
+    "name_ne": "अर्नामा",
+    "district_code": "28",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Bhagawanpur",
+    "name_ne": "भगवानपुर",
+    "district_code": "28",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Nawarajpur",
+    "name_ne": "नवराजपुर",
+    "district_code": "28",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Bishnupur",
+    "name_ne": "विष्णुपुर",
+    "district_code": "28",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Bariyarpatti",
+    "name_ne": "बरियारपट्टी",
+    "district_code": "28",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Laxmipur Patari",
+    "name_ne": "लक्ष्मीपुर पटारी",
+    "district_code": "28",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Sakhuwanankarkatti",
+    "name_ne": "सखुवानङ्करकट्टी",
+    "district_code": "28",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "2",
+    "name_en": "Janakpurdham",
+    "name_ne": "जनकपुरधाम",
+    "district_code": "29",
+    "province_code": "2",
+    "type_en": "Sub-Metropolitan City",
+    "type_ne": "उपमहानगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Mithila Bihari",
+    "name_ne": "मिथिला बिहारी",
+    "district_code": "29",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Nagarain",
+    "name_ne": "नगराई",
+    "district_code": "29",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Ganeshman Charnath",
+    "name_ne": "गणेशमान चारनाथ",
+    "district_code": "29",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Mithila",
+    "name_ne": "मिथिला",
+    "district_code": "29",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Dhanusadham",
+    "name_ne": "धनुषाधाम",
+    "district_code": "29",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Bideha",
+    "name_ne": "बिदेहा",
+    "district_code": "29",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Sabaila",
+    "name_ne": "सबाइला",
+    "district_code": "29",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Kamala",
+    "name_ne": "कमला",
+    "district_code": "29",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Hansapur",
+    "name_ne": "हंसपुर",
+    "district_code": "29",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Sahidnagar",
+    "name_ne": "सहिदनगर",
+    "district_code": "29",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Chhireshwarnath",
+    "name_ne": "क्षिरेश्वरनाथ",
+    "district_code": "29",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Aaurahi",
+    "name_ne": "औराही",
+    "district_code": "29",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Dhanauji",
+    "name_ne": "धनौजी",
+    "district_code": "29",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Bateshwor",
+    "name_ne": "बटेश्वर",
+    "district_code": "29",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Janaknandani",
+    "name_ne": "जनकनन्दनी",
+    "district_code": "29",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Lakshminiya",
+    "name_ne": "लक्ष्मीनिया",
+    "district_code": "29",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Mukhiyapatti Musarmiya",
+    "name_ne": "मुखियापट्टी मुसरमिया",
+    "district_code": "29",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Gaushala",
+    "name_ne": "गौशाला",
+    "district_code": "30",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Ramgopalpur",
+    "name_ne": "रामगोपालपुर",
+    "district_code": "30",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Aurahi",
+    "name_ne": "औरही",
+    "district_code": "30",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Bardibas",
+    "name_ne": "बर्दिवास",
+    "district_code": "30",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Bhangaha",
+    "name_ne": "भङ्गाहा",
+    "district_code": "30",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Jaleswor",
+    "name_ne": "जलेश्वर",
+    "district_code": "30",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Balwa",
+    "name_ne": "बलवा",
+    "district_code": "30",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Manra Siswa",
+    "name_ne": "मनरा सिसवा",
+    "district_code": "30",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Matihani",
+    "name_ne": "मटिहानी",
+    "district_code": "30",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Loharpatti",
+    "name_ne": "लोहारपट्टी",
+    "district_code": "30",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Pipra",
+    "name_ne": "पिपरा",
+    "district_code": "30",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Sonama",
+    "name_ne": "सोनामा",
+    "district_code": "30",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Samsi",
+    "name_ne": "सम्सी",
+    "district_code": "30",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Ekdanra",
+    "name_ne": "एकडानरा",
+    "district_code": "30",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Mahottari",
+    "name_ne": "महोत्तरी",
+    "district_code": "30",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Barahathawa",
+    "name_ne": "बराहथवा",
+    "district_code": "31",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Haripur",
+    "name_ne": "हरिपुर",
+    "district_code": "31",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Ishworpur",
+    "name_ne": "ईश्वरपुर",
+    "district_code": "31",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Lalbandi",
+    "name_ne": "लालबन्दी",
+    "district_code": "31",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Malangawa",
+    "name_ne": "मलङ्गवा",
+    "district_code": "31",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Kabilasi",
+    "name_ne": "कबिलासी",
+    "district_code": "31",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Bagmati",
+    "name_ne": "बागमती",
+    "district_code": "31",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Hariwan",
+    "name_ne": "हरिवान",
+    "district_code": "31",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Balara",
+    "name_ne": "बलरा",
+    "district_code": "31",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Haripurwa",
+    "name_ne": "हरिपुरवा",
+    "district_code": "31",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Godaita",
+    "name_ne": "गोदैता",
+    "district_code": "31",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Dhankaul",
+    "name_ne": "धनकौल",
+    "district_code": "31",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Parsa",
+    "name_ne": "पर्सा",
+    "district_code": "31",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Bishnu",
+    "name_ne": "विष्णु",
+    "district_code": "31",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Ramnagar",
+    "name_ne": "रामनगर",
+    "district_code": "31",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Kaudena",
+    "name_ne": "कौडेना",
+    "district_code": "31",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Basbariya",
+    "name_ne": "बासबरिया",
+    "district_code": "31",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Chandranagar",
+    "name_ne": "चन्द्रनगर",
+    "district_code": "31",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Chakraghatta",
+    "name_ne": "चक्रघट्टा",
+    "district_code": "31",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Bramhapuri",
+    "name_ne": "ब्रम्हपुरी",
+    "district_code": "31",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Katahariya",
+    "name_ne": "कटहरिया",
+    "district_code": "32",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Maulapur",
+    "name_ne": "मौलापुर",
+    "district_code": "32",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Madhav Narayan",
+    "name_ne": "माधव नारायण",
+    "district_code": "32",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Gaur",
+    "name_ne": "गौर",
+    "district_code": "32",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Gujara",
+    "name_ne": "गुजरा",
+    "district_code": "32",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Garuda",
+    "name_ne": "गरुड",
+    "district_code": "32",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Ishanath",
+    "name_ne": "ईशानाथ",
+    "district_code": "32",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Chandrapur",
+    "name_ne": "चन्द्रपुर",
+    "district_code": "32",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Dewahi Gonahi",
+    "name_ne": "देवाही गोनाही",
+    "district_code": "32",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Brindaban",
+    "name_ne": "वृन्दबन",
+    "district_code": "32",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Rajpur",
+    "name_ne": "राजपुर",
+    "district_code": "32",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Rajdevi",
+    "name_ne": "राजदेवी",
+    "district_code": "32",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Gadhimai",
+    "name_ne": "गढीमाई",
+    "district_code": "32",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Phatuwa Bijayapur",
+    "name_ne": "विजयपुर फटुवा",
+    "district_code": "32",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Baudhimai",
+    "name_ne": "बौधिमाई",
+    "district_code": "32",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Paroha",
+    "name_ne": "पारोहा",
+    "district_code": "32",
+    "province_code": "2",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Yemunamai",
+    "name_ne": "यमुनामाई",
+    "district_code": "32",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Durga Bhagwati",
+    "name_ne": "दुर्गा भगवती",
+    "district_code": "32",
+    "province_code": "2",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "1",
+    "name_en": "Bharatpur",
+    "name_ne": "भरतपुर",
+    "district_code": "2",
+    "province_code": "3",
+    "type_en": "Metropolitan City",
+    "type_ne": "महानगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Kalika",
+    "name_ne": "कालिका",
+    "district_code": "2",
+    "province_code": "3",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Khairahani",
+    "name_ne": "खैरहनी",
+    "district_code": "2",
+    "province_code": "3",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Madi",
+    "name_ne": "माडी",
+    "district_code": "2",
+    "province_code": "3",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Rapti",
+    "name_ne": "राप्ती",
+    "district_code": "2",
+    "province_code": "3",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Ratnanagar",
+    "name_ne": "रत्ननगर",
+    "district_code": "2",
+    "province_code": "3",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Ichchhyakamana",
+    "name_ne": "इच्छाकामना",
+    "district_code": "2",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "1",
+    "name_en": "Kathmandu",
+    "name_ne": "काठमाडौं ।",
+    "district_code": "5",
+    "province_code": "3",
+    "type_en": "Metropolitan City",
+    "type_ne": "महानगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Kirtipur",
+    "name_ne": "कीर्तिपुर",
+    "district_code": "5",
+    "province_code": "3",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Shankharapur",
+    "name_ne": "शंखरापुर",
+    "district_code": "5",
+    "province_code": "3",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Nagarjun",
+    "name_ne": "नागार्जुन",
+    "district_code": "5",
+    "province_code": "3",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Kageshwori Manahora",
+    "name_ne": "कागेश्वरी मनहोरा",
+    "district_code": "5",
+    "province_code": "3",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Dakshinkali",
+    "name_ne": "दक्षिणकाली",
+    "district_code": "5",
+    "province_code": "3",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Budhanilakantha",
+    "name_ne": "बुढानिलकण्ठ",
+    "district_code": "5",
+    "province_code": "3",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Tarakeshwor",
+    "name_ne": "तारकेश्वर",
+    "district_code": "5",
+    "province_code": "3",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Tokha",
+    "name_ne": "टोखा",
+    "district_code": "5",
+    "province_code": "3",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Chandragiri",
+    "name_ne": "चन्द्रागिरि",
+    "district_code": "5",
+    "province_code": "3",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Gokarneshwor",
+    "name_ne": "गोकर्णेश्वर",
+    "district_code": "5",
+    "province_code": "3",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "1",
+    "name_en": "Lalitpur",
+    "name_ne": "ललितपुर",
+    "district_code": "6",
+    "province_code": "3",
+    "type_en": "Metropolitan City",
+    "type_ne": "महानगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Mahalaxmi",
+    "name_ne": "महालक्ष्मी",
+    "district_code": "6",
+    "province_code": "3",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Godawari",
+    "name_ne": "गोदावरी",
+    "district_code": "6",
+    "province_code": "3",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Bagmati",
+    "name_ne": "बागमती",
+    "district_code": "6",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Mahankal",
+    "name_ne": "महांकाल",
+    "district_code": "6",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Konjyosom",
+    "name_ne": "कोन्ज्योसोम",
+    "district_code": "6",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "2",
+    "name_en": "Hetauda",
+    "name_ne": "हेटौंडा",
+    "district_code": "10",
+    "province_code": "3",
+    "type_en": "Sub-Metropolitan City",
+    "type_ne": "उपमहानगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Thaha",
+    "name_ne": "थाहा",
+    "district_code": "10",
+    "province_code": "3",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Bakaiya",
+    "name_ne": "बकैया",
+    "district_code": "10",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Kailash",
+    "name_ne": "कैलाश",
+    "district_code": "10",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Manahari",
+    "name_ne": "मनहरी",
+    "district_code": "10",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Bhimphedi",
+    "name_ne": "भीमफेदी",
+    "district_code": "10",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Bagmati",
+    "name_ne": "बागमती",
+    "district_code": "10",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Raksirang",
+    "name_ne": "रक्सिराङ",
+    "district_code": "10",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Makawanpurgadhi",
+    "name_ne": "मकवानपुरगढी",
+    "district_code": "10",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Indrasarowar",
+    "name_ne": "इन्द्रसरोवर",
+    "district_code": "10",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Jiri",
+    "name_ne": "जिरी",
+    "district_code": "33",
+    "province_code": "3",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Bhimeshwor",
+    "name_ne": "भीमेश्वर",
+    "district_code": "33",
+    "province_code": "3",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Bigu",
+    "name_ne": "बिगु",
+    "district_code": "33",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Sailung",
+    "name_ne": "सेलुङ",
+    "district_code": "33",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Melung",
+    "name_ne": "मेलुङ",
+    "district_code": "33",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Baiteshwor",
+    "name_ne": "बैतेश्वर",
+    "district_code": "33",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Tamakoshi",
+    "name_ne": "तामाकोशी",
+    "district_code": "33",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Gaurishankar",
+    "name_ne": "गौरीशंकर",
+    "district_code": "33",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Kalinchok",
+    "name_ne": "कालिञ्चोक",
+    "district_code": "33",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Chautara SangachokGadhi",
+    "name_ne": "चौतारा साँगाचोकगढी",
+    "district_code": "34",
+    "province_code": "3",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Barhabise",
+    "name_ne": "बाह्रबिसे",
+    "district_code": "34",
+    "province_code": "3",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Melamchi",
+    "name_ne": "मेलम्ची",
+    "district_code": "34",
+    "province_code": "3",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Jugal",
+    "name_ne": "जुगल",
+    "district_code": "34",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Balefi",
+    "name_ne": "बलेफी",
+    "district_code": "34",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Sunkoshi",
+    "name_ne": "सुनकोशी",
+    "district_code": "34",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Helambu",
+    "name_ne": "हेलम्बु",
+    "district_code": "34",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Bhotekoshi",
+    "name_ne": "भोटेकोशी",
+    "district_code": "34",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Lisangkhu",
+    "name_ne": "लिसाङ्खु",
+    "district_code": "34",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Indrawati",
+    "name_ne": "इन्द्रावती",
+    "district_code": "34",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Tripurasundari",
+    "name_ne": "त्रिपुरासुन्दरी",
+    "district_code": "34",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Panchpokhari Thangpal",
+    "name_ne": "पाँचपोखरी थाङ्पाल",
+    "district_code": "34",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Nilakantha",
+    "name_ne": "नीलकण्ठ",
+    "district_code": "35",
+    "province_code": "3",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Dhunibesi",
+    "name_ne": "धुनिबेसी",
+    "district_code": "35",
+    "province_code": "3",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Gajuri",
+    "name_ne": "गजुरी",
+    "district_code": "35",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Galchi",
+    "name_ne": "गाल्ची",
+    "district_code": "35",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Thakre",
+    "name_ne": "ठाकरे",
+    "district_code": "35",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Siddhalek",
+    "name_ne": "सिद्धलेक",
+    "district_code": "35",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Khaniyabash",
+    "name_ne": "खनियाबास",
+    "district_code": "35",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Jwalamukhi",
+    "name_ne": "ज्वालामुखी",
+    "district_code": "35",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Gangajamuna",
+    "name_ne": "गंगाजमुना",
+    "district_code": "35",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Rubi Valley",
+    "name_ne": "रुबी उपत्यका",
+    "district_code": "35",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Tripura Sundari",
+    "name_ne": "त्रिपुरा सुन्दरी",
+    "district_code": "35",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Netrawati Dabjong",
+    "name_ne": "नेत्रावती डब्जोङ",
+    "district_code": "35",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Benighat Rorang",
+    "name_ne": "बेनिघाट रोराङ",
+    "district_code": "35",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Belkotgadhi",
+    "name_ne": "बेलकोटगढी",
+    "district_code": "36",
+    "province_code": "3",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Bidur",
+    "name_ne": "बिदुर",
+    "district_code": "36",
+    "province_code": "3",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Kakani",
+    "name_ne": "ककनी",
+    "district_code": "36",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Tadi",
+    "name_ne": "ताडी",
+    "district_code": "36",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Likhu",
+    "name_ne": "लिखु",
+    "district_code": "36",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Myagang",
+    "name_ne": "म्यागाङ",
+    "district_code": "36",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Shivapuri",
+    "name_ne": "शिवपुरी",
+    "district_code": "36",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Kispang",
+    "name_ne": "किस्पाङ",
+    "district_code": "36",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Suryagadhi",
+    "name_ne": "सुर्यगढी",
+    "district_code": "36",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Tarkeshwar",
+    "name_ne": "तारकेश्वर",
+    "district_code": "36",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Panchakanya",
+    "name_ne": "पञ्चकन्या",
+    "district_code": "36",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Dupcheshwar",
+    "name_ne": "दुप्चेश्वर",
+    "district_code": "36",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Changunarayan",
+    "name_ne": "चाँगुनारायण",
+    "district_code": "37",
+    "province_code": "3",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Suryabinayak",
+    "name_ne": "सूर्यविनायक",
+    "district_code": "37",
+    "province_code": "3",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Bhaktapur",
+    "name_ne": "भक्तपुर",
+    "district_code": "37",
+    "province_code": "3",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Madhyapur Thimi",
+    "name_ne": "मध्यपुरथिमि",
+    "district_code": "37",
+    "province_code": "3",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Banepa",
+    "name_ne": "बनेपा",
+    "district_code": "38",
+    "province_code": "3",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Mandandeupur",
+    "name_ne": "मण्डनदेउपुर",
+    "district_code": "38",
+    "province_code": "3",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Dhulikhel",
+    "name_ne": "धुलिखेल",
+    "district_code": "38",
+    "province_code": "3",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Panauti",
+    "name_ne": "पनौती",
+    "district_code": "38",
+    "province_code": "3",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Namobuddha",
+    "name_ne": "नमोबुद्ध",
+    "district_code": "38",
+    "province_code": "3",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Panchkhal",
+    "name_ne": "पाँचखाल",
+    "district_code": "38",
+    "province_code": "3",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Roshi",
+    "name_ne": "रोशी",
+    "district_code": "38",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Temal",
+    "name_ne": "तेमल",
+    "district_code": "38",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Bhumlu",
+    "name_ne": "भुम्लु",
+    "district_code": "38",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Mahabharat",
+    "name_ne": "महाभारत",
+    "district_code": "38",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Bethanchowk",
+    "name_ne": "बेथानचोक",
+    "district_code": "38",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Khanikhola",
+    "name_ne": "खानीखोला",
+    "district_code": "38",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Chaurideurali",
+    "name_ne": "चौरीदेउराली",
+    "district_code": "38",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Manthali",
+    "name_ne": "मन्थली",
+    "district_code": "39",
+    "province_code": "3",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Ramechhap",
+    "name_ne": "रामेछाप",
+    "district_code": "39",
+    "province_code": "3",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Sunapati",
+    "name_ne": "सुनापति",
+    "district_code": "39",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Doramba",
+    "name_ne": "दोरम्बा",
+    "district_code": "39",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Umakunda",
+    "name_ne": "उमाकुण्ड",
+    "district_code": "39",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Khadadevi",
+    "name_ne": "खाडादेवी",
+    "district_code": "39",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Gokulganga",
+    "name_ne": "गोकुलगंगा",
+    "district_code": "39",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Likhu Tamakoshi",
+    "name_ne": "लिखु तामाकोशी",
+    "district_code": "39",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Dudhouli",
+    "name_ne": "दुधौली",
+    "district_code": "40",
+    "province_code": "3",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Kamalamai",
+    "name_ne": "कमलामाई",
+    "district_code": "40",
+    "province_code": "3",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Marin",
+    "name_ne": "मारिन",
+    "district_code": "40",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Phikkal",
+    "name_ne": "फिक्कल",
+    "district_code": "40",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Tinpatan",
+    "name_ne": "तिनपाटन",
+    "district_code": "40",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Sunkoshi",
+    "name_ne": "सुनकोशी",
+    "district_code": "40",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Golanjor",
+    "name_ne": "गोलन्जोर",
+    "district_code": "40",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Ghanglekh",
+    "name_ne": "घाङ्लेख",
+    "district_code": "40",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Hariharpurgadhi",
+    "name_ne": "हरिहरपुरगढी",
+    "district_code": "40",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Kalika",
+    "name_ne": "कालिका",
+    "district_code": "74",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Naukunda",
+    "name_ne": "नौकुण्ड",
+    "district_code": "74",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Uttargaya",
+    "name_ne": "उत्तरगया",
+    "district_code": "74",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Gosaikunda",
+    "name_ne": "गोसाइकुण्ड",
+    "district_code": "74",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Amachodingmo",
+    "name_ne": "अमाकोडिङमो",
+    "district_code": "74",
+    "province_code": "3",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "1",
+    "name_en": "Pokhara",
+    "name_ne": "पोखरा",
+    "district_code": "1",
+    "province_code": "4",
+    "type_en": "Metropolitan City",
+    "type_ne": "महानगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Rupa",
+    "name_ne": "रुपा",
+    "district_code": "1",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Madi",
+    "name_ne": "माडी",
+    "district_code": "1",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Annapurna",
+    "name_ne": "अन्नपूर्ण",
+    "district_code": "1",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Machhapuchchhre",
+    "name_ne": "माछापुच्छ्रे",
+    "district_code": "1",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Palungtar",
+    "name_ne": "पालुङटार",
+    "district_code": "41",
+    "province_code": "4",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Gorkha",
+    "name_ne": "गोरखा",
+    "district_code": "41",
+    "province_code": "4",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Gandaki",
+    "name_ne": "गण्डकी",
+    "district_code": "41",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Dharche",
+    "name_ne": "धार्चे",
+    "district_code": "41",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Aarughat",
+    "name_ne": "आरुघाट",
+    "district_code": "41",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Ajirkot",
+    "name_ne": "अजिरकोट",
+    "district_code": "41",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Sahid Lakhan",
+    "name_ne": "सहिद लखन",
+    "district_code": "41",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Siranchok",
+    "name_ne": "सिरञ्चोक",
+    "district_code": "41",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Bhimsenthapa",
+    "name_ne": "भीमसेनथापा",
+    "district_code": "41",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Chum Nubri",
+    "name_ne": "चुम नुब्रि",
+    "district_code": "41",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Barpak Sulikot",
+    "name_ne": "बारपाक सुलिकोट",
+    "district_code": "41",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Beni",
+    "name_ne": "बेनी",
+    "district_code": "42",
+    "province_code": "4",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Mangala",
+    "name_ne": "मंगला",
+    "district_code": "42",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Malika",
+    "name_ne": "मलिका",
+    "district_code": "42",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Raghuganga",
+    "name_ne": "रघुगंगा",
+    "district_code": "42",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Dhaulagiri",
+    "name_ne": "धौलागिरी",
+    "district_code": "42",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Annapurna",
+    "name_ne": "अन्नपूर्ण",
+    "district_code": "42",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Sundarbazar",
+    "name_ne": "सुन्दरबजार",
+    "district_code": "43",
+    "province_code": "4",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Besishahar",
+    "name_ne": "बेशिशहर",
+    "district_code": "43",
+    "province_code": "4",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Rainas",
+    "name_ne": "रैनास",
+    "district_code": "43",
+    "province_code": "4",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "MadhyaNepal",
+    "name_ne": "मध्यनेपाल",
+    "district_code": "43",
+    "province_code": "4",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Dordi",
+    "name_ne": "दोर्दी",
+    "district_code": "43",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Dudhpokhari",
+    "name_ne": "दूधपोखरी",
+    "district_code": "43",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Marsyangdi",
+    "name_ne": "मर्स्याङ्दी",
+    "district_code": "43",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Kwholasothar",
+    "name_ne": "क्वालासोथर",
+    "district_code": "43",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Byas",
+    "name_ne": "ब्यास",
+    "district_code": "44",
+    "province_code": "4",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Shuklagandaki",
+    "name_ne": "शुक्लागण्डकी",
+    "district_code": "44",
+    "province_code": "4",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Bhimad",
+    "name_ne": "भीमद",
+    "district_code": "44",
+    "province_code": "4",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Bhanu",
+    "name_ne": "भानु",
+    "district_code": "44",
+    "province_code": "4",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Ghiring",
+    "name_ne": "घिरिङ",
+    "district_code": "44",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Devghat",
+    "name_ne": "देवघाट",
+    "district_code": "44",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Rhishing",
+    "name_ne": "रिसिङ",
+    "district_code": "44",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Myagde",
+    "name_ne": "म्याग्दे",
+    "district_code": "44",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Bandipur",
+    "name_ne": "बन्दीपुर",
+    "district_code": "44",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Anbukhaireni",
+    "name_ne": "अन्बुखैरेनी",
+    "district_code": "44",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Madhyabindu",
+    "name_ne": "मध्यविन्दु",
+    "district_code": "45",
+    "province_code": "4",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Devchuli",
+    "name_ne": "देवचुली",
+    "district_code": "45",
+    "province_code": "4",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Gaidakot",
+    "name_ne": "गैडाकोट",
+    "district_code": "45",
+    "province_code": "4",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Kawasoti",
+    "name_ne": "कावासोती",
+    "district_code": "45",
+    "province_code": "4",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Baudeekali",
+    "name_ne": "बौदेकाली",
+    "district_code": "45",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Bulingtar",
+    "name_ne": "बुलिङटार",
+    "district_code": "45",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Hupsekot",
+    "name_ne": "हुप्सेकोट",
+    "district_code": "45",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Binayee",
+    "name_ne": "बिनयी",
+    "district_code": "45",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Putalibazar",
+    "name_ne": "पुतलीबजार",
+    "district_code": "46",
+    "province_code": "4",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Bhirkot",
+    "name_ne": "भिरकोट",
+    "district_code": "46",
+    "province_code": "4",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Galyang",
+    "name_ne": "गल्याङ",
+    "district_code": "46",
+    "province_code": "4",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Chapakot",
+    "name_ne": "चापाकोट",
+    "district_code": "46",
+    "province_code": "4",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Waling",
+    "name_ne": "वालिङ",
+    "district_code": "46",
+    "province_code": "4",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Harinas",
+    "name_ne": "हरिनास",
+    "district_code": "46",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Biruwa",
+    "name_ne": "बिरुवा",
+    "district_code": "46",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Aandhikhola",
+    "name_ne": "आँधीखोला",
+    "district_code": "46",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Phedikhola",
+    "name_ne": "फेदीखोला",
+    "district_code": "46",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Kaligandagi",
+    "name_ne": "कालीगण्डगी",
+    "district_code": "46",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Arjunchaupari",
+    "name_ne": "अर्जुनचौपरी",
+    "district_code": "46",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Kushma",
+    "name_ne": "कुश्मा",
+    "district_code": "47",
+    "province_code": "4",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Phalebas",
+    "name_ne": "फलेबास",
+    "district_code": "47",
+    "province_code": "4",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Modi",
+    "name_ne": "मोदी",
+    "district_code": "47",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Painyu",
+    "name_ne": "पाइन्यु",
+    "district_code": "47",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Jaljala",
+    "name_ne": "जलजला",
+    "district_code": "47",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Bihadi",
+    "name_ne": "बिहादी",
+    "district_code": "47",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Mahashila",
+    "name_ne": "महाशिला",
+    "district_code": "47",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Jaimuni",
+    "name_ne": "जैमुनी",
+    "district_code": "48",
+    "province_code": "4",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Baglung",
+    "name_ne": "बाग्लुङ",
+    "district_code": "48",
+    "province_code": "4",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Galkot",
+    "name_ne": "गलकोट",
+    "district_code": "48",
+    "province_code": "4",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Dhorpatan",
+    "name_ne": "ढोरपाटन",
+    "district_code": "48",
+    "province_code": "4",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Bareng",
+    "name_ne": "बरेङ",
+    "district_code": "48",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Badigad",
+    "name_ne": "बडिगाड",
+    "district_code": "48",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Nisikhola",
+    "name_ne": "निसिखोला",
+    "district_code": "48",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Kanthekhola",
+    "name_ne": "कान्ठेखोला",
+    "district_code": "48",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Tara Khola",
+    "name_ne": "तारा खोला",
+    "district_code": "48",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Taman Khola",
+    "name_ne": "तमन खोला",
+    "district_code": "48",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Chame",
+    "name_ne": "चामे",
+    "district_code": "75",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Narshon",
+    "name_ne": "नरशोन",
+    "district_code": "75",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Narpa Bhumi",
+    "name_ne": "नरपा भूमि",
+    "district_code": "75",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Manang Ingshyang",
+    "name_ne": "मनाङ इङ्स्याङ",
+    "district_code": "75",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Thasang",
+    "name_ne": "थासाङ",
+    "district_code": "76",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Gharapjhong",
+    "name_ne": "घरापझोङ",
+    "district_code": "76",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Lomanthang",
+    "name_ne": "लोमान्थाङ",
+    "district_code": "76",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Lo-Ghekar Damodarkunda",
+    "name_ne": "लो घेकर दामोदरकुण्ड",
+    "district_code": "76",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Waragung Muktikhsetra",
+    "name_ne": "वारागुङ मुक्तिक्षेत्र",
+    "district_code": "76",
+    "province_code": "4",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "2",
+    "name_en": "Ghorahi",
+    "name_ne": "घोराही",
+    "district_code": "7",
+    "province_code": "5",
+    "type_en": "Sub-Metropolitan City",
+    "type_ne": "उपमहानगरपालिका"
+  },
+  {
+    "code": "2",
+    "name_en": "Tulsipur",
+    "name_ne": "तुलसीपुर",
+    "district_code": "7",
+    "province_code": "5",
+    "type_en": "Sub-Metropolitan City",
+    "type_ne": "उपमहानगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Lamahi",
+    "name_ne": "लमही",
+    "district_code": "7",
+    "province_code": "5",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Babai",
+    "name_ne": "बबई",
+    "district_code": "7",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Gadhawa",
+    "name_ne": "गढवा",
+    "district_code": "7",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Rapti",
+    "name_ne": "राप्ती",
+    "district_code": "7",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Rajpur",
+    "name_ne": "राजपुर",
+    "district_code": "7",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Dangisharan",
+    "name_ne": "दंगिशरण",
+    "district_code": "7",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Shantinagar",
+    "name_ne": "शान्तिनगर",
+    "district_code": "7",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Banglachuli",
+    "name_ne": "बंगलाचुली",
+    "district_code": "7",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "2",
+    "name_en": "Butwal",
+    "name_ne": "बुटवल",
+    "district_code": "12",
+    "province_code": "5",
+    "type_en": "Sub-Metropolitan City",
+    "type_ne": "उपमहानगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Lumbini Sanskritik",
+    "name_ne": "लुम्बिनी संस्कृत",
+    "district_code": "12",
+    "province_code": "5",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Devdaha",
+    "name_ne": "देवदह",
+    "district_code": "12",
+    "province_code": "5",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Sainamaina",
+    "name_ne": "सैनामैना",
+    "district_code": "12",
+    "province_code": "5",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Siddharthanagar",
+    "name_ne": "सिद्धार्थनगर",
+    "district_code": "12",
+    "province_code": "5",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Tillotama",
+    "name_ne": "तिलोतमा",
+    "district_code": "12",
+    "province_code": "5",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Kanchan",
+    "name_ne": "कञ्चन",
+    "district_code": "12",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Siyari",
+    "name_ne": "सियारी",
+    "district_code": "12",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Rohini",
+    "name_ne": "रोहिणी",
+    "district_code": "12",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Gaidahawa",
+    "name_ne": "गैडहवा",
+    "district_code": "12",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Omsatiya",
+    "name_ne": "ओमसतिया",
+    "district_code": "12",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Sudhdhodhan",
+    "name_ne": "शुद्धोधन",
+    "district_code": "12",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Mayadevi",
+    "name_ne": "मायादेवी",
+    "district_code": "12",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Marchawari",
+    "name_ne": "मार्चवारी",
+    "district_code": "12",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Kotahimai",
+    "name_ne": "कोटाहिमाई",
+    "district_code": "12",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Sammarimai",
+    "name_ne": "समरीमाई",
+    "district_code": "12",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "2",
+    "name_en": "Nepalgunj",
+    "name_ne": "नेपालगन्ज",
+    "district_code": "14",
+    "province_code": "5",
+    "type_en": "Sub-Metropolitan City",
+    "type_ne": "उपमहानगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Kohalpur",
+    "name_ne": "कोहलपुर",
+    "district_code": "14",
+    "province_code": "5",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Khajura",
+    "name_ne": "खजुरा",
+    "district_code": "14",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Janki",
+    "name_ne": "जानकी",
+    "district_code": "14",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Baijanath",
+    "name_ne": "बैजनाथ",
+    "district_code": "14",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Duduwa",
+    "name_ne": "डुडुवा",
+    "district_code": "14",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Narainapur",
+    "name_ne": "नरैनापुर",
+    "district_code": "14",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Rapti Sonari",
+    "name_ne": "राप्ती सोनारी",
+    "district_code": "14",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Rolpa",
+    "name_ne": "रोल्पा",
+    "district_code": "49",
+    "province_code": "5",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Madi",
+    "name_ne": "माडी",
+    "district_code": "49",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Thawang",
+    "name_ne": "थवाङ",
+    "district_code": "49",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Sunchhahari",
+    "name_ne": "सुनछहरी",
+    "district_code": "49",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Lungri",
+    "name_ne": "लुङ्गरी",
+    "district_code": "49",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Gangadev",
+    "name_ne": "गंगादेव",
+    "district_code": "49",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Tribeni",
+    "name_ne": "त्रिवेणी",
+    "district_code": "49",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Pariwartan",
+    "name_ne": "परिवर्तन",
+    "district_code": "49",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Runtigadi",
+    "name_ne": "रुन्टीगढी",
+    "district_code": "49",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Sunil Smriti",
+    "name_ne": "सुनिल स्मृति",
+    "district_code": "49",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Pyuthan",
+    "name_ne": "प्युठान",
+    "district_code": "50",
+    "province_code": "5",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Sworgadwary",
+    "name_ne": "स्वर्गद्वारी",
+    "district_code": "50",
+    "province_code": "5",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Ayirabat",
+    "name_ne": "आइराबत",
+    "district_code": "50",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Gaumukhi",
+    "name_ne": "गौमुखी",
+    "district_code": "50",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Jhimruk",
+    "name_ne": "झिमरुक",
+    "district_code": "50",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Naubahini",
+    "name_ne": "नौबहिनी",
+    "district_code": "50",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Mandavi",
+    "name_ne": "मांडवी",
+    "district_code": "50",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Mallarani",
+    "name_ne": "मल्लरानी",
+    "district_code": "50",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Sarumarani",
+    "name_ne": "सरूमरानी",
+    "district_code": "50",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Resunga",
+    "name_ne": "रेसुंगा",
+    "district_code": "51",
+    "province_code": "5",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Musikot",
+    "name_ne": "मुसिकोट",
+    "district_code": "51",
+    "province_code": "5",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Ruru",
+    "name_ne": "रुरु",
+    "district_code": "51",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Isma",
+    "name_ne": "इस्मा",
+    "district_code": "51",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Madane",
+    "name_ne": "मदने",
+    "district_code": "51",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Malika",
+    "name_ne": "मलिका",
+    "district_code": "51",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Chatrakot",
+    "name_ne": "चत्रकोट",
+    "district_code": "51",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Chatrakot",
+    "name_ne": "चत्रकोट",
+    "district_code": "51",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Satyawati",
+    "name_ne": "सत्यवती",
+    "district_code": "51",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Chandrakot",
+    "name_ne": "चन्द्रकोट",
+    "district_code": "51",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Kaligandaki",
+    "name_ne": "कालीगण्डकी",
+    "district_code": "51",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Gulmidarbar",
+    "name_ne": "गुल्मीदरबार",
+    "district_code": "51",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Bhumekasthan",
+    "name_ne": "भुमेकस्थान",
+    "district_code": "52",
+    "province_code": "5",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Sitganga",
+    "name_ne": "सितगंगा",
+    "district_code": "52",
+    "province_code": "5",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Sandhikharka",
+    "name_ne": "सन्धिखर्क",
+    "district_code": "52",
+    "province_code": "5",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Panini",
+    "name_ne": "पाणिनी",
+    "district_code": "52",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Chhatradev",
+    "name_ne": "छत्रदेव",
+    "district_code": "52",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Malarani",
+    "name_ne": "मलारानी",
+    "district_code": "52",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Tansen",
+    "name_ne": "तानसेन",
+    "district_code": "53",
+    "province_code": "5",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Rampur",
+    "name_ne": "रामपुर",
+    "district_code": "53",
+    "province_code": "5",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Rambha",
+    "name_ne": "रम्भा",
+    "district_code": "53",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Tinau",
+    "name_ne": "तिनाउ",
+    "district_code": "53",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Nisdi",
+    "name_ne": "निस्दी",
+    "district_code": "53",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Mathagadhi",
+    "name_ne": "मठगढी",
+    "district_code": "53",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Ribdikot",
+    "name_ne": "रिब्दीकोट",
+    "district_code": "53",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Purbakhola",
+    "name_ne": "पूर्वखोला",
+    "district_code": "53",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Bagnaskali",
+    "name_ne": "बागनास्कली",
+    "district_code": "53",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Rainadevi",
+    "name_ne": "रैनादेवी",
+    "district_code": "53",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Bardaghat",
+    "name_ne": "बर्दघाट",
+    "district_code": "54",
+    "province_code": "5",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Sunwal",
+    "name_ne": "सुनवल",
+    "district_code": "54",
+    "province_code": "5",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Ramgram",
+    "name_ne": "रामग्राम",
+    "district_code": "54",
+    "province_code": "5",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Sarawal",
+    "name_ne": "सरवल",
+    "district_code": "54",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Susta",
+    "name_ne": "सुस्ता",
+    "district_code": "54",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Pratappur",
+    "name_ne": "प्रतापपुर",
+    "district_code": "54",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Palhi Nandan",
+    "name_ne": "पाल्ही नन्दन",
+    "district_code": "54",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Shivaraj",
+    "name_ne": "शिवराज",
+    "district_code": "55",
+    "province_code": "5",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Kapilbastu",
+    "name_ne": "कपिलवस्तु",
+    "district_code": "55",
+    "province_code": "5",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Buddhabhumi",
+    "name_ne": "बुद्धभूमि",
+    "district_code": "55",
+    "province_code": "5",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Maharajgunj",
+    "name_ne": "महाराजगन्ज",
+    "district_code": "55",
+    "province_code": "5",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Banganga",
+    "name_ne": "बाणगंगा",
+    "district_code": "55",
+    "province_code": "5",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Krishnanagar",
+    "name_ne": "कृष्णनगर",
+    "district_code": "55",
+    "province_code": "5",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Yashodhara",
+    "name_ne": "यशोधरा",
+    "district_code": "55",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Bijayanagar",
+    "name_ne": "विजयनगर",
+    "district_code": "55",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Mayadevi",
+    "name_ne": "मायादेवी",
+    "district_code": "55",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Suddhodhan",
+    "name_ne": "शुद्धोधन",
+    "district_code": "55",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Thakurbaba",
+    "name_ne": "ठाकुरबाबा",
+    "district_code": "56",
+    "province_code": "5",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Bansagadhi",
+    "name_ne": "बाँसगढी",
+    "district_code": "56",
+    "province_code": "5",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Barbardiya",
+    "name_ne": "बारबर्दिया",
+    "district_code": "56",
+    "province_code": "5",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Rajapur",
+    "name_ne": "राजापुर",
+    "district_code": "56",
+    "province_code": "5",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Madhuwan",
+    "name_ne": "मधुवन",
+    "district_code": "56",
+    "province_code": "5",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Gulariya",
+    "name_ne": "गुलरिया",
+    "district_code": "56",
+    "province_code": "5",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Geruwa",
+    "name_ne": "गेरुवा",
+    "district_code": "56",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Badhaiyatal",
+    "name_ne": "बढैयाताल",
+    "district_code": "56",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Bhume",
+    "name_ne": "भुमे",
+    "district_code": "77",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Sisne",
+    "name_ne": "सिस्ने",
+    "district_code": "77",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Putha Uttarganga",
+    "name_ne": "पुथा उत्तरगंगा",
+    "district_code": "77",
+    "province_code": "5",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Simkot",
+    "name_ne": "सिमकोट",
+    "district_code": "13",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Namkha",
+    "name_ne": "नम्खा",
+    "district_code": "13",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Chankheli",
+    "name_ne": "चनखेली",
+    "district_code": "13",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Tanjakot",
+    "name_ne": "तान्जाकोट",
+    "district_code": "13",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Sarkegad",
+    "name_ne": "सार्केगड",
+    "district_code": "13",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Adanchuli",
+    "name_ne": "अडांचुली",
+    "district_code": "13",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Kharpunath",
+    "name_ne": "खार्पुनाथ",
+    "district_code": "13",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Tripurasundari",
+    "name_ne": "त्रिपुरासुन्दरी",
+    "district_code": "57",
+    "province_code": "6",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Thuli Bheri",
+    "name_ne": "ठुली भेरी",
+    "district_code": "57",
+    "province_code": "6",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Kaike",
+    "name_ne": "काइके",
+    "district_code": "57",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Jagadulla",
+    "name_ne": "जगदुल्ला",
+    "district_code": "57",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Mudkechula",
+    "name_ne": "मुड्केचुला",
+    "district_code": "57",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Dolpo Buddha",
+    "name_ne": "डोल्पो बुद्ध",
+    "district_code": "57",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Shey Phoksundo",
+    "name_ne": "शे फोक्सुण्डो",
+    "district_code": "57",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Chharka Tangsong",
+    "name_ne": "छर्का ताङसोङ",
+    "district_code": "57",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Chhayanath Rara",
+    "name_ne": "छायानाथ रारा",
+    "district_code": "58",
+    "province_code": "6",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Soru",
+    "name_ne": "सोरु",
+    "district_code": "58",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Khatyad",
+    "name_ne": "खत्याड",
+    "district_code": "58",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Mugum Karmarong",
+    "name_ne": "मुगुम कर्मारोङ",
+    "district_code": "58",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Chandannath",
+    "name_ne": "चन्दननाथ",
+    "district_code": "59",
+    "province_code": "6",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Hima",
+    "name_ne": "हिमा",
+    "district_code": "59",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Tila",
+    "name_ne": "तिला",
+    "district_code": "59",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Sinja",
+    "name_ne": "सिन्जा",
+    "district_code": "59",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Guthichaur",
+    "name_ne": "गुठीचौर",
+    "district_code": "59",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Tatopani",
+    "name_ne": "तातोपानी",
+    "district_code": "59",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Patrasi",
+    "name_ne": "पत्रासी",
+    "district_code": "59",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Kanakasundari",
+    "name_ne": "कनकसुन्दरी",
+    "district_code": "59",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Khandachakra",
+    "name_ne": "खंडचक्र",
+    "district_code": "60",
+    "province_code": "6",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Raskot",
+    "name_ne": "रास्कोट",
+    "district_code": "60",
+    "province_code": "6",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Tilagufa",
+    "name_ne": "तिलागुफा",
+    "district_code": "60",
+    "province_code": "6",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Mahawai",
+    "name_ne": "महावाई",
+    "district_code": "60",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Palata",
+    "name_ne": "पलाता",
+    "district_code": "60",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Naraharinath",
+    "name_ne": "नरहरिनाथ",
+    "district_code": "60",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Pachaljharana",
+    "name_ne": "पाँचलझरना",
+    "district_code": "60",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Subha Kalika",
+    "name_ne": "शुभ कालिका",
+    "district_code": "60",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Sanni Tribeni",
+    "name_ne": "सन्नी त्रिवेणी",
+    "district_code": "60",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Aathabis",
+    "name_ne": "आठबिस",
+    "district_code": "61",
+    "province_code": "6",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Dullu",
+    "name_ne": "दुल्लु",
+    "district_code": "61",
+    "province_code": "6",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Chamunda Bindrasaini",
+    "name_ne": "चामुण्डा बिन्द्रसैनी",
+    "district_code": "61",
+    "province_code": "6",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Narayan",
+    "name_ne": "नारायण",
+    "district_code": "61",
+    "province_code": "6",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Bhairabi",
+    "name_ne": "भैरवी",
+    "district_code": "61",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Mahabu",
+    "name_ne": "महाबु",
+    "district_code": "61",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Gurans",
+    "name_ne": "गुराँस",
+    "district_code": "61",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Naumule",
+    "name_ne": "नौमुले",
+    "district_code": "61",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Bhagawatimai",
+    "name_ne": "भगवतीमाई",
+    "district_code": "61",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Thantikandh",
+    "name_ne": "ठान्टिकाण्ड",
+    "district_code": "61",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Dungeshwor",
+    "name_ne": "डुङ्गेश्वर",
+    "district_code": "61",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Nalagad",
+    "name_ne": "नालागड",
+    "district_code": "62",
+    "province_code": "6",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Bheri",
+    "name_ne": "भेरी",
+    "district_code": "62",
+    "province_code": "6",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Chhedagad",
+    "name_ne": "छेडागढ",
+    "district_code": "62",
+    "province_code": "6",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Kuse",
+    "name_ne": "कुसे",
+    "district_code": "62",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Shiwalaya",
+    "name_ne": "शिवालय",
+    "district_code": "62",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Barekot",
+    "name_ne": "बारेकोट",
+    "district_code": "62",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Junichande",
+    "name_ne": "जुनिचन्दे",
+    "district_code": "62",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Aathbiskot",
+    "name_ne": "आठबिस्कोट",
+    "district_code": "63",
+    "province_code": "6",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Chaurjahari",
+    "name_ne": "चौरजहारी",
+    "district_code": "63",
+    "province_code": "6",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Musikot",
+    "name_ne": "मुसिकोट",
+    "district_code": "63",
+    "province_code": "6",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Tribeni",
+    "name_ne": "त्रिवेणी",
+    "district_code": "63",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Sani Bheri",
+    "name_ne": "सानी भेरी",
+    "district_code": "63",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Banfikot",
+    "name_ne": "बनफिकोट",
+    "district_code": "63",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Sharada",
+    "name_ne": "शारदा",
+    "district_code": "64",
+    "province_code": "6",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Bangad",
+    "name_ne": "बांगड",
+    "district_code": "64",
+    "province_code": "6",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Bagchaur",
+    "name_ne": "बागचौर",
+    "district_code": "64",
+    "province_code": "6",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Kumakh",
+    "name_ne": "कुमाख",
+    "district_code": "64",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Darma",
+    "name_ne": "डार्मा",
+    "district_code": "64",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Kapurkot",
+    "name_ne": "कपुरकोट",
+    "district_code": "64",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Kalimati",
+    "name_ne": "कालीमाटी",
+    "district_code": "64",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Tribeni",
+    "name_ne": "त्रिवेणी",
+    "district_code": "64",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Chhatreshwori",
+    "name_ne": "छत्रेश्वरी",
+    "district_code": "64",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Siddha Kumakh",
+    "name_ne": "सिद्ध कुमाख",
+    "district_code": "64",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Gurbhakot",
+    "name_ne": "गुर्भाकोट",
+    "district_code": "65",
+    "province_code": "6",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Panchpuri",
+    "name_ne": "पञ्चपुरी",
+    "district_code": "65",
+    "province_code": "6",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Bheriganga",
+    "name_ne": "भेरीगंगा",
+    "district_code": "65",
+    "province_code": "6",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Lekbeshi",
+    "name_ne": "लेकबेशी",
+    "district_code": "65",
+    "province_code": "6",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Birendranagar",
+    "name_ne": "वीरेन्द्रनगर",
+    "district_code": "65",
+    "province_code": "6",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Chaukune",
+    "name_ne": "चौकुने",
+    "district_code": "65",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Simta",
+    "name_ne": "सिम्ता",
+    "district_code": "65",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Chingad",
+    "name_ne": "चिंगाड",
+    "district_code": "65",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Barahtal",
+    "name_ne": "बराहताल",
+    "district_code": "65",
+    "province_code": "6",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "2",
+    "name_en": "Dhangadhi",
+    "name_ne": "धनगढी",
+    "district_code": "9",
+    "province_code": "7",
+    "type_en": "Sub-Metropolitan City",
+    "type_ne": "उपमहानगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Tikapur",
+    "name_ne": "टीकापुर",
+    "district_code": "9",
+    "province_code": "7",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Ghodaghodi",
+    "name_ne": "घोडाघोडी",
+    "district_code": "9",
+    "province_code": "7",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Bhajani",
+    "name_ne": "भजनी",
+    "district_code": "9",
+    "province_code": "7",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Gauriganga",
+    "name_ne": "गौरीगंगा",
+    "district_code": "9",
+    "province_code": "7",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Godawari",
+    "name_ne": "गोदावरी",
+    "district_code": "9",
+    "province_code": "7",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Lamkichuha",
+    "name_ne": "लम्कीचुहा",
+    "district_code": "9",
+    "province_code": "7",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Chure",
+    "name_ne": "चुरे",
+    "district_code": "9",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Janaki",
+    "name_ne": "जानकी",
+    "district_code": "9",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Kailari",
+    "name_ne": "कैलारी",
+    "district_code": "9",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Joshipur",
+    "name_ne": "जोशीपुर",
+    "district_code": "9",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Mohanyal",
+    "name_ne": "मोहन्याल",
+    "district_code": "9",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Bardagoriya",
+    "name_ne": "बर्दगोरिया",
+    "district_code": "9",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Badimalika",
+    "name_ne": "बडिमालिका",
+    "district_code": "66",
+    "province_code": "7",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Tribeni",
+    "name_ne": "त्रिवेणी",
+    "district_code": "66",
+    "province_code": "7",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Budhiganga",
+    "name_ne": "बुढीगंगा",
+    "district_code": "66",
+    "province_code": "7",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Budhinanda",
+    "name_ne": "बुढीनन्द",
+    "district_code": "66",
+    "province_code": "7",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Gaumul",
+    "name_ne": "गौमुल",
+    "district_code": "66",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Himali",
+    "name_ne": "हिमाली",
+    "district_code": "66",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Jagannath",
+    "name_ne": "जगन्नाथ",
+    "district_code": "66",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Khaptad Chhededaha",
+    "name_ne": "खप्तड छेडेदह",
+    "district_code": "66",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Swami Kartik Khaapar",
+    "name_ne": "स्वामी कार्तिक खापर",
+    "district_code": "66",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "JayaPrithivi",
+    "name_ne": "जय पृथ्वी",
+    "district_code": "67",
+    "province_code": "7",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Bungal",
+    "name_ne": "बुंगल",
+    "district_code": "67",
+    "province_code": "7",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Masta",
+    "name_ne": "मस्त",
+    "district_code": "67",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Thalara",
+    "name_ne": "थालारा",
+    "district_code": "67",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Talkot",
+    "name_ne": "तालकोट",
+    "district_code": "67",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Surma",
+    "name_ne": "सुर्मा",
+    "district_code": "67",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "SaiPaal",
+    "name_ne": "साइपाल",
+    "district_code": "67",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Durgathali",
+    "name_ne": "दुर्गाथली",
+    "district_code": "67",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Bithadchir",
+    "name_ne": "बिठाडचिर",
+    "district_code": "67",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Kedarseu",
+    "name_ne": "केदारसेउ",
+    "district_code": "67",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Khaptadchhanna",
+    "name_ne": "खप्तडछन्ना",
+    "district_code": "67",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Chabispathivera",
+    "name_ne": "चाबिस्पाथीवेरा",
+    "district_code": "67",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Mahakali",
+    "name_ne": "महाकाली",
+    "district_code": "68",
+    "province_code": "7",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Shailyashikhar",
+    "name_ne": "शैल्यशिखर",
+    "district_code": "68",
+    "province_code": "7",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Lekam",
+    "name_ne": "लेकम",
+    "district_code": "68",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Naugad",
+    "name_ne": "नौगाड",
+    "district_code": "68",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Byas",
+    "name_ne": "ब्यास",
+    "district_code": "68",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Dunhu",
+    "name_ne": "दुन्हु",
+    "district_code": "68",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Marma",
+    "name_ne": "मर्मा",
+    "district_code": "68",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Apihimal",
+    "name_ne": "एपिहिमल",
+    "district_code": "68",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Malikaarjun",
+    "name_ne": "मालिकार्जुन",
+    "district_code": "68",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Melauli",
+    "name_ne": "मेलौली",
+    "district_code": "69",
+    "province_code": "7",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Dasharathchanda",
+    "name_ne": "दशरथचन्द",
+    "district_code": "69",
+    "province_code": "7",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Purchaudi",
+    "name_ne": "पुर्चौडी",
+    "district_code": "69",
+    "province_code": "7",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Patan",
+    "name_ne": "पाटन",
+    "district_code": "69",
+    "province_code": "7",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Sigas",
+    "name_ne": "सिगास",
+    "district_code": "69",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Shivanath",
+    "name_ne": "शिवनाथ",
+    "district_code": "69",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Surnaya",
+    "name_ne": "सुर्नाया",
+    "district_code": "69",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Dilasaini",
+    "name_ne": "डिलासैनी",
+    "district_code": "69",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Pancheshwar",
+    "name_ne": "पञ्चेश्वर",
+    "district_code": "69",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Dogadakedar",
+    "name_ne": "दोगडाकेदार",
+    "district_code": "69",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Amargadhi",
+    "name_ne": "अमरगढी",
+    "district_code": "70",
+    "province_code": "7",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Parashuram",
+    "name_ne": "परशुराम",
+    "district_code": "70",
+    "province_code": "7",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Alital",
+    "name_ne": "अलिताल",
+    "district_code": "70",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Ajaymeru",
+    "name_ne": "अजयमेरु",
+    "district_code": "70",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Bhageshwar",
+    "name_ne": "भागेश्वर",
+    "district_code": "70",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Nawadurga",
+    "name_ne": "नवदुर्गा",
+    "district_code": "70",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Ganayapdhura",
+    "name_ne": "गणयपधुरा",
+    "district_code": "70",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Dipayal Silgadi",
+    "name_ne": "दिपायल सिलगढी",
+    "district_code": "71",
+    "province_code": "7",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Shikhar",
+    "name_ne": "शिखर",
+    "district_code": "71",
+    "province_code": "7",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Sayal",
+    "name_ne": "सायल",
+    "district_code": "71",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Adharsha",
+    "name_ne": "आदर्श",
+    "district_code": "71",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Jorayal",
+    "name_ne": "जोरयाल",
+    "district_code": "71",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Badikedar",
+    "name_ne": "बडीकेदार",
+    "district_code": "71",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Purbichauki",
+    "name_ne": "पूर्वचौकी",
+    "district_code": "71",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "K I Singh",
+    "name_ne": "के आई सिंह",
+    "district_code": "71",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Bogtan Foodsil",
+    "name_ne": "Bogtan Foodsil",
+    "district_code": "71",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Sanphebagar",
+    "name_ne": "साँफेबगर",
+    "district_code": "72",
+    "province_code": "7",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Mangalsen",
+    "name_ne": "मंगलसेन",
+    "district_code": "72",
+    "province_code": "7",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Kamalbazar",
+    "name_ne": "कमलबजार",
+    "district_code": "72",
+    "province_code": "7",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Panchadewal Binayak",
+    "name_ne": "पञ्चदेवल विनायक",
+    "district_code": "72",
+    "province_code": "7",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Dhakari",
+    "name_ne": "ढकारी",
+    "district_code": "72",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Mellekh",
+    "name_ne": "मेल्लेख",
+    "district_code": "72",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Chaurpati",
+    "name_ne": "चौरपाटी",
+    "district_code": "72",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Ramaroshan",
+    "name_ne": "रामरोशन",
+    "district_code": "72",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Turmakhad",
+    "name_ne": "तुर्मखाड",
+    "district_code": "72",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Bannigadhi",
+    "name_ne": "बान्नीगढी",
+    "district_code": "72",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Punarbas",
+    "name_ne": "पुनर्वास",
+    "district_code": "73",
+    "province_code": "7",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Krishnapur",
+    "name_ne": "कृष्णपुर",
+    "district_code": "73",
+    "province_code": "7",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Mahakali",
+    "name_ne": "महाकाली",
+    "district_code": "73",
+    "province_code": "7",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Bedkot",
+    "name_ne": "बेदकोट",
+    "district_code": "73",
+    "province_code": "7",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Belauri",
+    "name_ne": "बेलौरी",
+    "district_code": "73",
+    "province_code": "7",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Bhimdatta",
+    "name_ne": "भीमदत्त",
+    "district_code": "73",
+    "province_code": "7",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "3",
+    "name_en": "Shuklaphanta",
+    "name_ne": "शुक्लाफाँटा",
+    "district_code": "73",
+    "province_code": "7",
+    "type_en": "Municipality",
+    "type_ne": "नगरपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Beldandi",
+    "name_ne": "बेलडाँडी",
+    "district_code": "73",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  },
+  {
+    "code": "4",
+    "name_en": "Laljhandi",
+    "name_ne": "लालझण्डी",
+    "district_code": "73",
+    "province_code": "7",
+    "type_en": "Rural Municipality",
+    "type_ne": "गाउँपालिका"
+  }
+]

@@ -1,0 +1,464 @@
+[
+  {
+    "code": "4",
+    "name_en": "Morang",
+    "name_ne": "मोरङ",
+    "province_code": "1"
+  },
+  {
+    "code": "11",
+    "name_en": "Sunsari",
+    "name_ne": "सुनसरी",
+    "province_code": "1"
+  },
+  {
+    "code": "15",
+    "name_en": "Taplejung",
+    "name_ne": "ताप्लेजुङ",
+    "province_code": "1"
+  },
+  {
+    "code": "16",
+    "name_en": "Sankhuwasabha",
+    "name_ne": "संखुवासभा",
+    "province_code": "1"
+  },
+  {
+    "code": "17",
+    "name_en": "Solukhumbu",
+    "name_ne": "सोलुखुम्बु",
+    "province_code": "1"
+  },
+  {
+    "code": "18",
+    "name_en": "Okhaldhunga",
+    "name_ne": "ओखलढुङ्गा",
+    "province_code": "1"
+  },
+  {
+    "code": "19",
+    "name_en": "Khotang",
+    "name_ne": "खोटाङ",
+    "province_code": "1"
+  },
+  {
+    "code": "20",
+    "name_en": "Bhojpur",
+    "name_ne": "भोजपुर",
+    "province_code": "1"
+  },
+  {
+    "code": "21",
+    "name_en": "Dhankuta",
+    "name_ne": "धनकुटा",
+    "province_code": "1"
+  },
+  {
+    "code": "22",
+    "name_en": "Terhathum",
+    "name_ne": "तेह्रथुम",
+    "province_code": "1"
+  },
+  {
+    "code": "23",
+    "name_en": "Pachthar",
+    "name_ne": "पाँचथर",
+    "province_code": "1"
+  },
+  {
+    "code": "24",
+    "name_en": "Ilam",
+    "name_ne": "इलाम",
+    "province_code": "1"
+  },
+  {
+    "code": "25",
+    "name_en": "Jhapa",
+    "name_ne": "झापा",
+    "province_code": "1"
+  },
+  {
+    "code": "26",
+    "name_en": "Udayapur",
+    "name_ne": "उदयपुर",
+    "province_code": "1"
+  },
+  {
+    "code": "3",
+    "name_en": "Parsa",
+    "name_ne": "पर्सा",
+    "province_code": "2"
+  },
+  {
+    "code": "8",
+    "name_en": "Bara",
+    "name_ne": "बारा",
+    "province_code": "2"
+  },
+  {
+    "code": "27",
+    "name_en": "Saptari",
+    "name_ne": "सप्तरी",
+    "province_code": "2"
+  },
+  {
+    "code": "28",
+    "name_en": "Siraha",
+    "name_ne": "सिराहा",
+    "province_code": "2"
+  },
+  {
+    "code": "29",
+    "name_en": "Dhanusha",
+    "name_ne": "धनुषा",
+    "province_code": "2"
+  },
+  {
+    "code": "30",
+    "name_en": "Mahottari",
+    "name_ne": "महोत्तरी",
+    "province_code": "2"
+  },
+  {
+    "code": "31",
+    "name_en": "Sarlahi",
+    "name_ne": "सर्लाही",
+    "province_code": "2"
+  },
+  {
+    "code": "32",
+    "name_en": "Rautahat",
+    "name_ne": "रौतहट",
+    "province_code": "2"
+  },
+  {
+    "code": "2",
+    "name_en": "Chitwan",
+    "name_ne": "चितवन",
+    "province_code": "3"
+  },
+  {
+    "code": "5",
+    "name_en": "Kathmandu",
+    "name_ne": "काठमाडौं",
+    "province_code": "3"
+  },
+  {
+    "code": "6",
+    "name_en": "Lalitpur",
+    "name_ne": "ललितपुर",
+    "province_code": "3"
+  },
+  {
+    "code": "10",
+    "name_en": "Makwanpur",
+    "name_ne": "मकवानपुर",
+    "province_code": "3"
+  },
+  {
+    "code": "33",
+    "name_en": "Dolakha",
+    "name_ne": "दोलखा",
+    "province_code": "3"
+  },
+  {
+    "code": "34",
+    "name_en": "Sindhupalchok",
+    "name_ne": "सिन्धुपाल्चोक",
+    "province_code": "3"
+  },
+  {
+    "code": "35",
+    "name_en": "Dhading",
+    "name_ne": "धादिङ",
+    "province_code": "3"
+  },
+  {
+    "code": "36",
+    "name_en": "Nuwakot",
+    "name_ne": "नुवाकोट",
+    "province_code": "3"
+  },
+  {
+    "code": "37",
+    "name_en": "Bhaktapur",
+    "name_ne": "भक्तपुर",
+    "province_code": "3"
+  },
+  {
+    "code": "38",
+    "name_en": "Kavrepalanchok",
+    "name_ne": "काभ्रेपलाञ्चोक",
+    "province_code": "3"
+  },
+  {
+    "code": "39",
+    "name_en": "Ramechhap",
+    "name_ne": "रामेछाप",
+    "province_code": "3"
+  },
+  {
+    "code": "40",
+    "name_en": "Sindhuli",
+    "name_ne": "सिन्धुली",
+    "province_code": "3"
+  },
+  {
+    "code": "74",
+    "name_en": "Rasuwa",
+    "name_ne": "रसुवा",
+    "province_code": "3"
+  },
+  {
+    "code": "1",
+    "name_en": "Kaski",
+    "name_ne": "कास्की",
+    "province_code": "4"
+  },
+  {
+    "code": "41",
+    "name_en": "Gorkha",
+    "name_ne": "गोरखा",
+    "province_code": "4"
+  },
+  {
+    "code": "42",
+    "name_en": "Myagdi",
+    "name_ne": "म्याग्दी",
+    "province_code": "4"
+  },
+  {
+    "code": "43",
+    "name_en": "Lamjung",
+    "name_ne": "लमजुङ",
+    "province_code": "4"
+  },
+  {
+    "code": "44",
+    "name_en": "Tanahu",
+    "name_ne": "तनहुँ",
+    "province_code": "4"
+  },
+  {
+    "code": "45",
+    "name_en": "Nawalparari East",
+    "name_ne": "नवलपरासी पूर्व",
+    "province_code": "4"
+  },
+  {
+    "code": "46",
+    "name_en": "Syangja",
+    "name_ne": "स्याङ्जा",
+    "province_code": "4"
+  },
+  {
+    "code": "47",
+    "name_en": "Parbat",
+    "name_ne": "पर्वत",
+    "province_code": "4"
+  },
+  {
+    "code": "48",
+    "name_en": "Baglung",
+    "name_ne": "बागलुङ",
+    "province_code": "4"
+  },
+  {
+    "code": "75",
+    "name_en": "Manang",
+    "name_ne": "मनाङ",
+    "province_code": "4"
+  },
+  {
+    "code": "76",
+    "name_en": "Mustang",
+    "name_ne": "मुस्ताङ",
+    "province_code": "4"
+  },
+  {
+    "code": "7",
+    "name_en": "Dang",
+    "name_ne": "दाङ",
+    "province_code": "5"
+  },
+  {
+    "code": "12",
+    "name_en": "Rupandehi",
+    "name_ne": "रुपन्देही",
+    "province_code": "5"
+  },
+  {
+    "code": "14",
+    "name_en": "Banke",
+    "name_ne": "बाँके",
+    "province_code": "5"
+  },
+  {
+    "code": "49",
+    "name_en": "Rolpa",
+    "name_ne": "रोल्पा",
+    "province_code": "5"
+  },
+  {
+    "code": "50",
+    "name_en": "Pyuthan",
+    "name_ne": "प्युठान",
+    "province_code": "5"
+  },
+  {
+    "code": "51",
+    "name_en": "Gulmi",
+    "name_ne": "गुल्मी",
+    "province_code": "5"
+  },
+  {
+    "code": "52",
+    "name_en": "Arghakhanchi",
+    "name_ne": "अर्घाखाँची",
+    "province_code": "5"
+  },
+  {
+    "code": "53",
+    "name_en": "Palpa",
+    "name_ne": "पाल्पा",
+    "province_code": "5"
+  },
+  {
+    "code": "54",
+    "name_en": "Nawalparasi West",
+    "name_ne": "नवलपरासी पश्चिम",
+    "province_code": "5"
+  },
+  {
+    "code": "55",
+    "name_en": "Kapilbastu",
+    "name_ne": "कपिलवस्तु",
+    "province_code": "5"
+  },
+  {
+    "code": "56",
+    "name_en": "Bardiya",
+    "name_ne": "बर्दिया",
+    "province_code": "5"
+  },
+  {
+    "code": "77",
+    "name_en": "Rukum East",
+    "name_ne": "रुकुम पूर्व",
+    "province_code": "5"
+  },
+  {
+    "code": "13",
+    "name_en": "Humla",
+    "name_ne": "हुम्ला",
+    "province_code": "6"
+  },
+  {
+    "code": "57",
+    "name_en": "Dolpa",
+    "name_ne": "डोल्पा",
+    "province_code": "6"
+  },
+  {
+    "code": "58",
+    "name_en": "Mugu",
+    "name_ne": "मुगु",
+    "province_code": "6"
+  },
+  {
+    "code": "59",
+    "name_en": "Jumla",
+    "name_ne": "जुम्ला",
+    "province_code": "6"
+  },
+  {
+    "code": "60",
+    "name_en": "Kalikot",
+    "name_ne": "कालिकोट",
+    "province_code": "6"
+  },
+  {
+    "code": "61",
+    "name_en": "Dailekh",
+    "name_ne": "दैलेख",
+    "province_code": "6"
+  },
+  {
+    "code": "62",
+    "name_en": "Jajarkot",
+    "name_ne": "जाजरकोट",
+    "province_code": "6"
+  },
+  {
+    "code": "63",
+    "name_en": "Rukum West",
+    "name_ne": "रुकुम पश्चिम",
+    "province_code": "6"
+  },
+  {
+    "code": "64",
+    "name_en": "Salyan",
+    "name_ne": "सल्यान",
+    "province_code": "6"
+  },
+  {
+    "code": "65",
+    "name_en": "Surkhet",
+    "name_ne": "सुर्खेत",
+    "province_code": "6"
+  },
+  {
+    "code": "9",
+    "name_en": "Kailali",
+    "name_ne": "कैलाली",
+    "province_code": "7"
+  },
+  {
+    "code": "66",
+    "name_en": "Bajura",
+    "name_ne": "बाजुरा",
+    "province_code": "7"
+  },
+  {
+    "code": "67",
+    "name_en": "Bajhang",
+    "name_ne": "बझाङ",
+    "province_code": "7"
+  },
+  {
+    "code": "68",
+    "name_en": "Darchula",
+    "name_ne": "दार्चुला",
+    "province_code": "7"
+  },
+  {
+    "code": "69",
+    "name_en": "Baitadi",
+    "name_ne": "बैतडी",
+    "province_code": "7"
+  },
+  {
+    "code": "70",
+    "name_en": "Dadeldhura",
+    "name_ne": "डडेलधुरा",
+    "province_code": "7"
+  },
+  {
+    "code": "71",
+    "name_en": "Doti",
+    "name_ne": "डोटी",
+    "province_code": "7"
+  },
+  {
+    "code": "72",
+    "name_en": "Achham",
+    "name_ne": "अछाम",
+    "province_code": "7"
+  },
+  {
+    "code": "73",
+    "name_en": "Kanchanpur",
+    "name_ne": "कञ्चनपुर",
+    "province_code": "7"
+  }
+]
