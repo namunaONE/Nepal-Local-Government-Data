@@ -7,6 +7,13 @@ pubspec.lock
 # Tests
 coverage/
 
+# Vendored third-party source snapshots (data/_raw/) are intentionally NOT
+# committed: they total ~2.5 MB and include CC-BY-4.0 data that requires
+# visible attribution in the distributed package, which is not yet decided.
+# Provenance is recorded in data/PROVENANCE.sha256 and data/SOURCES.md; the
+# snapshots are re-fetchable using the URLs in data/SOURCES.md.
+data/_raw/
+
 # Editors / OS
 .idea/
 .vscode/

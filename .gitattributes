@@ -1,0 +1,9 @@
+# Normalise all text files to LF in the repository and on checkout.
+#
+# Without this, a collaborator with core.autocrlf=true (the Windows default)
+# gets LF -> CRLF conversion on checkout, which silently mutates generated
+# and vendored files. This is not hypothetical: during the initial GitHub
+# reconnection, a rebase rewrote the data/_raw source snapshots from LF to
+# CRLF, growing abinrimal/local_levels.json from 173,898 to 180,676 bytes
+# and invalidating a SHA-256 provenance manifest that had just been written.
+* text=auto eol=lf
