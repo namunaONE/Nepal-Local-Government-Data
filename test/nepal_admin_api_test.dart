@@ -30,8 +30,7 @@ void main() {
     test('every province reconciles', () {
       for (final p in NepalAdminApi.getAllProvinces()) {
         final bodies = [for (final d in p.districts) ...d.localBodies];
-        int count(LocalBodyType t) =>
-            bodies.where((b) => b.type == t).length;
+        int count(LocalBodyType t) => bodies.where((b) => b.type == t).length;
 
         expect(p.districts.length, p.stats.districts,
             reason: '${p.name} districts');
@@ -86,8 +85,8 @@ void main() {
       final result = NepalAdminApi.search('Bharatpur');
       expect(result.localBodies, isNotEmpty);
       expect(
-        result.localBodies
-            .any((b) => b.districtName == 'Chitwan' && b.provinceName == 'Bagmati'),
+        result.localBodies.any(
+            (b) => b.districtName == 'Chitwan' && b.provinceName == 'Bagmati'),
         isTrue,
       );
     });
@@ -106,8 +105,7 @@ void main() {
     });
 
     test('json round-trip of a local body', () {
-      final bharatpur =
-          NepalAdminApi.search('Bharatpur').localBodies.first;
+      final bharatpur = NepalAdminApi.search('Bharatpur').localBodies.first;
       final restored = LocalBody.fromJson(bharatpur.toJson());
       expect(restored.name, bharatpur.name);
       expect(restored.type, bharatpur.type);

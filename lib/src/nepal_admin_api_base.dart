@@ -30,8 +30,9 @@ enum LocalBodyType {
   final String fullName;
 
   /// Resolves a dataset abbreviation to its enum value.
-  static LocalBodyType fromShort(String? value) => LocalBodyType.values
-      .firstWhere((t) => t.shortName == value, orElse: () => LocalBodyType.unknown);
+  static LocalBodyType fromShort(String? value) =>
+      LocalBodyType.values.firstWhere((t) => t.shortName == value,
+          orElse: () => LocalBodyType.unknown);
 }
 
 /// Aggregate counts for one province.

@@ -89,9 +89,12 @@ String _generate(List<Map<String, dynamic>> provinces) {
   b.writeln('// Source of truth: $jsonPath');
   b.writeln('// Regenerate with: dart run tool/generate.dart');
   b.writeln('//');
-  b.writeln('// Official federal structure: 7 provinces, 77 districts, 753 local');
-  b.writeln('// bodies (6 metropolitan, 11 sub-metropolitan, 276 municipalities,');
-  b.writeln('// 460 rural municipalities), 6,743 wards. Data as of October 2026.');
+  b.writeln(
+      '// Official federal structure: 7 provinces, 77 districts, 753 local');
+  b.writeln(
+      '// bodies (6 metropolitan, 11 sub-metropolitan, 276 municipalities,');
+  b.writeln(
+      '// 460 rural municipalities), 6,743 wards. Data as of October 2026.');
   b.writeln();
   b.writeln("import 'nepal_admin_api_base.dart';");
   b.writeln();
