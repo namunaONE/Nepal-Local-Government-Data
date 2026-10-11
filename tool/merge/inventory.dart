@@ -1,4 +1,4 @@
-// tool/merge/inventory.dart
+﻿// tool/merge/inventory.dart
 //
 // Step 1 of the roadmap: source coverage inventory.
 //
@@ -8,8 +8,8 @@
 // many contain Devanagari script, and which other sources agree.
 //
 // It performs NO merging and NO writing of the canonical dataset. Its only
-// output is a report on stdout plus docs/_inventory-raw.txt, to be
-// transcribed into docs/REVIEW-inputs.md.
+// output is a report on stdout plus doc/_inventory-raw.txt, to be
+// transcribed into doc/REVIEW-inputs.md.
 //
 // Usage (from the package root):
 //   dart run tool/merge/inventory.dart
@@ -203,7 +203,7 @@ class SourceReport {
 
 /// Normalises a palika name for cross-source keying: lowercase, collapse
 /// whitespace, drop the type suffix (which different sources spell
-/// differently — "Bhojpur Municipality" vs "Bhojpur").
+/// differently â€” "Bhojpur Municipality" vs "Bhojpur").
 String normName(String? raw) {
   if (raw == null) return '';
   var s = raw.toLowerCase().trim();
@@ -532,7 +532,8 @@ void main() {
                 normDistrict((d['name'] as Map)['en'] as String) ==
                 normDistrict(dname),
             orElse: () => <String, dynamic>{})
-        .map(MapEntry.new)['id'] as String?;    final postalPrefix = postalDistrictByPrefix.entries
+        .map(MapEntry.new)['id'] as String?;
+    final postalPrefix = postalDistrictByPrefix.entries
         .firstWhere((e) => normDistrict(e.value) == normDistrict(dname),
             orElse: () => const MapEntry('', ''))
         .key;
@@ -546,7 +547,7 @@ void main() {
   out.writeln('');
   out.writeln(
       'postal-2025 yields a gapless 01..14 run for Koshi and 77 district '
-      'prefixes nationally, split 14/8/13/11/12/10/9 per province — exactly our '
+      'prefixes nationally, split 14/8/13/11/12/10/9 per province â€” exactly our '
       'verified per-province district counts. It is the only source whose '
       'numbering is both complete and matches a published CBS/NSO reference '
       'code (Dharan = 11301). The other three schemes are internal orderings.');
@@ -557,5 +558,5 @@ void main() {
       'CBS/NSO reference code. Resolve in Step 2 against CBS/NSO directly. ***');
 
   stdout.write(out.toString());
-  File('docs/_inventory-raw.txt').writeAsStringSync(out.toString());
+  File('doc/_inventory-raw.txt').writeAsStringSync(out.toString());
 }

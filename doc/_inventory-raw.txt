@@ -1,6 +1,6 @@
 ==============================================================================
 STEP 1 SOURCE COVERAGE INVENTORY
-generated: 2026-10-11T08:35:16.127296Z
+generated: 2026-10-11T08:51:03.785331Z
 ==============================================================================
 
 ### abinrimal  (data/_raw/abinrimal)
@@ -136,6 +136,6 @@ Rautahat           32         17          NP0232       206
 Saptari            27         21          NP0215       201
 (first 20 of 77 districts shown)
 
-postal-2025 yields a gapless 01..14 run for Koshi and 77 district prefixes nationally, split 14/8/13/11/12/10/9 per province — exactly our verified per-province district counts. It is the only source whose numbering is both complete and matches a published CBS/NSO reference code (Dharan = 11301). The other three schemes are internal orderings.
+postal-2025 yields a gapless 01..14 run for Koshi and 77 district prefixes nationally, split 14/8/13/11/12/10/9 per province â€” exactly our verified per-province district counts. It is the only source whose numbering is both complete and matches a published CBS/NSO reference code (Dharan = 11301). The other three schemes are internal orderings.
 
 *** None of these four schemes is verified as the CBS/NSO scheme except postal-2025, whose Dharan value 11301 matches the one published CBS/NSO reference code. Resolve in Step 2 against CBS/NSO directly. ***
