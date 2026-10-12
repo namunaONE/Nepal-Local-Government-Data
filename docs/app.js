@@ -10,11 +10,15 @@ function initTheme() {
   const isDark = savedTheme ? savedTheme === 'dark' : prefersDark;
 
   document.documentElement.classList.toggle('dark', isDark);
+  if (savedTheme) {
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  }
 
   toggle.addEventListener('click', () => {
     const newDark = !document.documentElement.classList.contains('dark');
     document.documentElement.classList.toggle('dark', newDark);
     localStorage.setItem('theme', newDark ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', newDark ? 'dark' : 'light');
   });
 }
 
