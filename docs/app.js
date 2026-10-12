@@ -1,5 +1,23 @@
 // nepal_admin_api website JavaScript
 
+// Theme toggle with localStorage persistence
+function initTheme() {
+  const toggle = document.getElementById('theme-toggle');
+  if (!toggle) return;
+
+  const savedTheme = localStorage.getItem('theme');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const isDark = savedTheme ? savedTheme === 'dark' : prefersDark;
+
+  document.documentElement.classList.toggle('dark', isDark);
+
+  toggle.addEventListener('click', () => {
+    const newDark = !document.documentElement.classList.contains('dark');
+    document.documentElement.classList.toggle('dark', newDark);
+    localStorage.setItem('theme', newDark ? 'dark' : 'light');
+  });
+}
+
 // Toast notification
 function showToast(message) {
   const existing = document.querySelector('.toast');
@@ -231,6 +249,9 @@ function debounce(fn, delay) {
   };
 }
 
+// Initialize theme on load
+document.addEventListener('DOMContentLoaded', initTheme);
+
 // API docs nav highlighting
 if (document.querySelector('.api-nav')) {
   const sections = document.querySelectorAll('.api-section[id]');
@@ -247,9 +268,4 @@ if (document.querySelector('.api-nav')) {
   }, { rootMargin: '-100px 0px -66%' });
 
   sections.forEach(section => observer.observe(section));
-}
-
-// Theme detection for map placeholder (optional)
-if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-  document.documentElement.classList.add('dark');
 }
