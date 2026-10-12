@@ -3,8 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="nepal_admin_api - Offline administrative divisions of Nepal: 7 provinces, 77 districts, 753 local bodies, 6,743 wards with official CBS/NSO codes">
-  <title>nepal_admin_api - Nepal Administrative Divisions</title>
+  <meta name="description" content="Nepal Administrative Data by namunaONE — Offline administrative divisions of Nepal: 7 provinces, 77 districts, 753 local bodies, 6,743 wards with official CBS/NSO codes">
+  <meta name="theme-color" content="#DC143C">
+  <meta property="og:title" content="Nepal Administrative Data by namunaONE">
+  <meta property="og:description" content="Offline, type-safe Dart package with canonical 7 provinces, 77 districts, 753 local bodies, 6,743 wards — with official CBS codes and ISO 3166-2 province codes.">
+  <meta property="og:type" content="website">
+  <title>Nepal Administrative Data by namunaONE — Nepal Administrative Divisions</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" href="logo.svg">
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,11 +19,12 @@
 <body>
   <header class="header">
     <nav class="nav container">
-      <a href="index.html" class="logo">
-        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-        </svg>
-        <span>nepal_admin_api</span>
+      <a href="index.html" class="logo" aria-label="Nepal Administrative Data by namunaONE — home">
+        <img src="logo.svg" alt="Nepal Administrative Data logo" width="32" height="32">
+        <span class="logo-text">
+          <span class="logo-title">Nepal Administrative Data</span>
+          <span class="logo-sub">by namunaONE</span>
+        </span>
       </a>
       <div class="nav-links">
         <a href="index.html" class="nav-link active">Home</a>
@@ -84,6 +91,9 @@
           </div>
         </div>
         <div class="hero-visual">
+          <div class="brand-hero-card">
+            <img src="logo-full.svg" alt="Nepal Administrative Data by namunaONE — 7 provinces, 77 districts, 753 palikas" width="480" height="128">
+          </div>
           <div class="map-placeholder">
             <svg viewBox="0 0 400 300" class="nepal-map" aria-hidden="true">
               <rect width="400" height="300" fill="var(--color-bg-secondary)"/>
@@ -254,15 +264,20 @@ void main() {
     <div class="container">
       <div class="footer-grid">
         <div>
-          <h4>nepal_admin_api</h4>
-          <p>Offline administrative divisions of Nepal with official CBS/NSO codes.</p>
+          <div class="footer-brand">
+            <img src="logo.svg" alt="Nepal Administrative Data logo" width="44" height="44">
+            <div>
+              <h4 style="margin-bottom:4px;">Nepal Administrative Data</h4>
+              <p style="margin:0;">Offline administrative divisions of Nepal with official CBS/NSO codes.</p>
+            </div>
+          </div>
         </div>
         <div>
           <h4>Links</h4>
           <ul>
-            <li><a href="https://pub.dev/packages/nepal_admin_api" target="_blank">pub.dev package</a></li>
-            <li><a href="https://github.com/namunaONE/Nepal-Local-Government-Data" target="_blank">GitHub repository</a></li>
-            <li><a href="https://linear.app/hyamuji" target="_blank">Linear project</a></li>
+            <li><a href="https://pub.dev/packages/nepal_admin_api" target="_blank" rel="noopener">pub.dev package</a></li>
+            <li><a href="https://github.com/namunaONE/Nepal-Local-Government-Data" target="_blank" rel="noopener">GitHub repository</a></li>
+            <li><a href="https://linear.app/hyamuji" target="_blank" rel="noopener">Linear project</a></li>
           </ul>
         </div>
         <div>
@@ -271,6 +286,7 @@ void main() {
         </div>
       </div>
       <div class="footer-bottom">
+        <p class="maintainer-line"><span>Maintained by</span> <span class="maintainer-badge">namunaONE</span> <span>under</span> <span class="maintainer-badge">HyaMuji</span> <span>and</span> <span class="maintainer-badge">Taire Bhai</span></p>
         <p>Generated from <a href="https://github.com/namunaONE/Nepal-Local-Government-Data">Nepal-Local-Government-Data</a> · Built with Dart · Deployed via GitHub Pages</p>
       </div>
     </div>

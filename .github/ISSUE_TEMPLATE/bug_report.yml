@@ -1,0 +1,40 @@
+---
+name: Bug Report
+about: Report a bug in nepal_admin_api
+title: "fix(<scope>): <brief description>"
+labels: ["bug"]
+---
+
+## Environment
+
+- **Package version**: 
+- **Dart/Flutter version**: 
+- **Platform** (OS, arch): 
+
+## Description
+
+<!-- Clear description of the bug -->
+
+## Steps to Reproduce
+
+1. 
+2. 
+3. 
+
+## Expected Behavior
+
+<!-- What should happen? -->
+
+## Actual Behavior
+
+<!-- What actually happens? -->
+
+## Code Sample
+
+```dart
+// Minimal reproduction case
+```
+
+## Additional Context
+
+<!-- Logs, screenshots, related issues, etc. -->

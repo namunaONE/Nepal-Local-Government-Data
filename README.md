@@ -1,102 +1,262 @@
-# nepal_admin_api
+# Nepal Administrative Data by namunaONE — `nepal_admin_api`
 
-Offline, dependency-free administrative divisions of Nepal for Dart and Flutter.
+<p align="left">
+  <img src="docs/logo-full.svg" alt="Nepal Administrative Data by namunaONE" width="420">
+</p>
 
 [![pub package](https://img.shields.io/pub/v/nepal_admin_api.svg)](https://pub.dev/packages/nepal_admin_api)
+[![pub points](https://img.shields.io/pub/points/nepal_admin_api.svg)](https://pub.dev/packages/nepal_admin_api/score)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![CI](https://github.com/namunaONE/Nepal-Local-Government-Data/actions/workflows/dart.yml/badge.svg)](https://github.com/namunaONE/Nepal-Local-Government-Data/actions/workflows/dart.yml)
+[![Website](https://img.shields.io/badge/docs-GitHub%20Pages-DC143C)](https://namunaONE.github.io/Nepal-Local-Government-Data/)
 
-Nepal's federal structure — **7 provinces, 77 districts, 753 local bodies
-(6 metropolitan cities, 11 sub-metropolitan cities, 276 municipalities,
-460 rural municipalities) and 6,743 wards** — bundled as a pure-Dart package.
-No network calls, no assets, no dependencies: the data ships in the box.
+> **Offline administrative divisions of Nepal** — 7 provinces, 77 districts, 753 local bodies, 6,743 wards with **official CBS/NSO codes** (PDDPP format) and **ISO 3166-2 province codes** (NP-P1…NP-P7).
 
-## Features
+Pure Dart package. Zero runtime dependencies. Data ships in the box.
 
-- 🏔️ Full hierarchy: Province → District → Local Body (palika)
-- 🔍 Type-safe search across all levels
-- 📊 Verified counts (validated against the official national structure)
-- 🧊 Zero runtime dependencies — works on every Dart platform
-- 🔄 JSON serialization support
+> Maintained by **namunaONE** under **HyaMuji** and **Taire Bhai**.
 
-## Installation
+---
+
+## ✨ Features
+
+| Feature | Description |
+|---------|-------------|
+| **Complete hierarchy** | Province → District → Local Body (palika) |
+| **Official codes** | 547/753 palikas with verified 5-digit CBS codes (PDDPP), all 77 districts (3-digit), all 7 provinces (NP-P1…NP-P7) |
+| **Type-safe models** | `Province`, `District`, `LocalBody`, `LocalBodyType` enum |
+| **Hierarchical queries** | Navigate province → district → local body with typed accessors |
+| **Typed search** | Disambiguates duplicate names by district/province context |
+| **Computed stats** | National & provincial totals (not hardcoded) |
+| **JSON serialization** | `toJson()` / `fromJson()` on all models |
+| **Zero dependencies** | Pure Dart, works offline on every platform |
+| **130/130 pub.dev** | Full score: analysis, formatting, tests, docs, platform support |
+
+---
+
+## 📦 Installation
 
 ```yaml
 dependencies:
-  nepal_admin_api: ^1.0.0
+  nepal_admin_api: ^2.0.0
 ```
 
-## Usage
+```bash
+dart pub get
+# or
+flutter pub get
+```
+
+---
+
+## 🚀 Quick Start
 
 ```dart
 import 'package:nepal_admin_api/nepal_admin_api.dart';
 
 void main() {
-  // All 7 provinces
+  // ──────────────────────────────────────────────
+  // Provinces (with CBS/ISO codes in v2.0.0+)
+  // ──────────────────────────────────────────────
   final provinces = NepalAdminApi.getAllProvinces();
   print('Provinces: ${provinces.length}'); // 7
 
-  // One province
-  final bagmati = NepalAdminApi.getProvinceById('bagmati');
-  print('${bagmati!.name}: ${bagmati.stats.total} local bodies'); // 119
+  // By ID (case-insensitive) or ISO code
+  final koshi = NepalAdminApi.getProvinceById('koshi');
+  final byIso = NepalAdminApi.getProvinceById('NP-P1');
+  print('Koshi CBS: ${koshi?.cbsCode}, ISO: ${koshi?.isoCode}'); // 1, NP-P1
 
-  // Local bodies in a district
+  // ──────────────────────────────────────────────
+  // Districts
+  // ──────────────────────────────────────────────
   final chitwan = NepalAdminApi.getDistrictByName('Chitwan');
-  for (final body in chitwan!.localBodies) {
-    print('${body.name} — ${body.typeName}');
-  }
+  print('Chitwan bodies: ${chitwan?.localBodyCount}'); // 7
+  print('Chitwan CBS code: ${chitwan?.cbsCode}'); // 306
 
-  // Typed search across provinces, districts and palikas
-  final result = NepalAdminApi.search('Bharatpur');
-  for (final body in result.localBodies) {
-    print('${body.name} (${body.typeName}) in ${body.districtName}, ${body.provinceName}');
-  }
+  // ──────────────────────────────────────────────
+  // Local Bodies (palikas) with CBS codes
+  // ──────────────────────────────────────────────
+  final bharatpur = NepalAdminApi.search('Bharatpur').localBodies.first;
+  print('${bharatpur.name} (${bharatpur.typeName})');
+  print('District: ${bharatpur.districtName}');
+  print('Province: ${bharatpur.provinceName}');
+  print('CBS Code: ${bharatpur.cbsCode} (verified: ${bharatpur.cbsCodeVerified})');
+  // Bharatpur (Municipality)
+  // District: Chitwan
+  // Province: Bagmati
+  // CBS Code: 30601 (verified: true)
 
-  // National totals, computed live from the dataset
+  // ──────────────────────────────────────────────
+  // Search (handles duplicates via context)
+  // ──────────────────────────────────────────────
+  final sunkoshi = NepalAdminApi.search('Sunkoshi');
+  for (final lb in sunkoshi.localBodies) {
+    print('${lb.name} — ${lb.districtName}, ${lb.provinceName}');
+  }
+  // Sunkoshi — Okhaldhunga, Koshi
+  // Sunkoshi — Udayapur, Koshi
+  // Sunkoshi — Sindhupalchok, Bagmati
+  // Sunkoshi — Rautahat, Madhesh
+
+  // ──────────────────────────────────────────────
+  // National Statistics (computed, not hardcoded)
+  // ──────────────────────────────────────────────
   final stats = NepalAdminApi.getNationalStats();
-  print('${stats.total} local bodies, ${stats.wards} wards'); // 753, 6743
+  print('''
+Provinces: ${stats.provinces}           // 7
+Districts: ${stats.districts}           // 77
+Metropolitan: ${stats.metro}            // 6
+Sub-Metro: ${stats.subMetro}            // 11
+Municipalities: ${stats.municipalities} // 276
+Rural Municipalities: ${stats.ruralMunicipalities} // 460
+Total: ${stats.total}                   // 753
+Wards: ${stats.wards}                   // 6,743
+''');
+
+  // ──────────────────────────────────────────────
+  // JSON Serialization
+  // ──────────────────────────────────────────────
+  final json = bharatpur.toJson();
+  final restored = LocalBody.fromJson(json);
+  assert(restored.cbsCode == bharatpur.cbsCode);
 }
 ```
 
-## API overview
+---
 
-| Method | Returns |
-|---|---|
-| `getAllProvinces()` | All 7 provinces |
-| `getProvinceById(id)` | Province by id (`'koshi'`, `'madhesh'`, …) |
-| `getAllDistricts()` | All 77 districts |
-| `getDistrictsByProvince(id)` | Districts of one province |
-| `getDistrictByName(name)` | Single district |
-| `getAllLocalBodies()` | All 753 local bodies |
-| `getLocalBodiesByDistrict(name)` | Palikas of one district |
-| `search(query)` | Typed matches across all levels |
-| `getNationalStats()` | Computed national totals |
+## 📚 API Reference
 
-> ⚠️ **Palika names are not unique** (e.g. there are three `Aurahi`s and four
-> `Sunkoshi`s). Always disambiguate with `districtName` / `provinceName`,
-> which every `LocalBody` carries.
+| Method | Returns | Description |
+|--------|---------|-------------|
+| `getAllProvinces()` | `List<Province>` | All 7 provinces |
+| `getProvinceById(id)` | `Province?` | By ID (`'koshi'`) or ISO (`'NP-P3'`) |
+| `getAllDistricts()` | `List<District>` | All 77 districts |
+| `getDistrictsByProvince(id)` | `List<District>` | Districts in a province |
+| `getDistrictByName(name)` | `District?` | Case-insensitive lookup |
+| `getAllLocalBodies()` | `List<LocalBody>` | All 753 palikas |
+| `getLocalBodiesByDistrict(name)` | `List<LocalBody>` | Palikas in a district |
+| `search(query)` | `SearchResult` | Typed search across all levels |
+| `getNationalStats()` | `NationalStats` | Computed national totals |
 
-## Data provenance & disclaimer
+**Models**: `Province`, `District`, `LocalBody`, `LocalBodyType`, `ProvinceStats`, `NationalStats`, `SearchResult`
 
-The dataset reflects Nepal's gazetted federal structure (753 local levels,
-as established by the 2017 restructuring under the 2015 Constitution) with an
-"as of" date of **October 2026**. Counts are validated by the package's own
-test suite against the official national figures. The dataset lives in
-`data/nepal_local_levels.json` (single source of truth) — its schema and
-update process are documented in [data/README.md](data/README.md).
-Administrative boundaries may change through future government decisions;
-check the [releases page](https://github.com/namunaONE/Nepal-Local-Government-Data/releases)
-for dataset updates.
+👉 [Full API Documentation](https://namunaONE.github.io/Nepal-Local-Government-Data/api.html)
 
-This project is not affiliated with the Government of Nepal.
+---
 
-## Data sources & attribution
+## 🗺️ Data Explorer
 
-Our code is MIT-licensed. Some dataset fields are adapted from third-party
-sources; per-field provenance (source, license, retrieval date) lives in
-[data/SOURCES.md](data/SOURCES.md), and the CC-BY-4.0 attribution notice
-ships with the package in [NOTICE](NOTICE).
+Interactive table with all 753 local bodies — search, filter by province/district/type, view CBS codes and verification status.
 
-## License
+👉 [Open Data Explorer](https://namunaONE.github.io/Nepal-Local-Government-Data/explorer.html)
 
-[MIT](LICENSE) — applies to this package's own code. Third-party data
-attributions in [NOTICE](NOTICE) continue to apply to the adapted fields.
+---
+
+## 📊 Schema v2 (Breaking Changes in 2.0.0)
+
+| Class | New Fields |
+|-------|------------|
+| `Province` | `cbsCode` (1–7), `isoCode` (`NP-P1`…`NP-P7`) |
+| `District` | `cbsCode` (3-digit, e.g., `306` for Kathmandu) |
+| `LocalBody` | `cbsCode` (5-digit PDDPP), `cbsCodeVerified` (bool) |
+
+**Migration**:
+```dart
+// v1
+LocalBody(name: 'X', type: T, districtName: 'D', provinceName: 'P')
+
+// v2 (new params optional)
+LocalBody(
+  name: 'X', 
+  type: T, 
+  districtName: 'D', 
+  provinceName: 'P',
+  cbsCode: 30601,
+  cbsCodeVerified: true,
+)
+```
+
+---
+
+## 📋 Data Verification Pipeline
+
+```
+5+ independent sources
+       │
+       ▼
+Step 1: Inventory & defect audit (tool/merge/inventory.dart)
+       │
+       ▼
+Step 2: CBS code verification via MoFAGA harvest + Postal-2025 (tool/merge/verify_codes.dart)
+       │ 547/753 verified (73%)
+       ▼
+Step 3: Adjudication — 72 conflicts, 72 resolved (tool/merge/adjudicate.dart)
+       │ 49 mofaga-exact, 15 mofaga-slug, 8 human
+       ▼
+Step 4: Schema v2 with CBS codes embedded (tool/merge/apply_cbs_codes.dart)
+       │
+       ▼
+Generated: lib/src/nepal_data.dart (embedded, compile-time)
+```
+
+**Sources** (all CC-BY-4.0, attributed in [NOTICE](NOTICE)):
+- `abinrimal/nepal-local-levels` — Devanagari names
+- `sagautam5/local-states-nepal` — Municipalities dataset  
+- `CBS/NSO official CSVs` — States, districts, local bodies codes
+- `Postal Codes 2025` — Cross-reference for verification
+
+---
+
+## 🛠️ Development
+
+```bash
+# Setup
+git clone https://github.com/namunaONE/Nepal-Local-Government-Data.git
+cd Nepal-Local-Government-Data
+dart pub get
+
+# Run CI locally
+dart format --set-exit-if-changed .
+dart analyze --fatal-infos
+dart test
+dart run tool/generate.dart
+
+# Regenerate dataset (after data changes)
+dart run tool/merge/inventory.dart
+dart run tool/merge/match.dart
+dart run tool/merge/adjudicate.dart
+dart run tool/merge/verify_codes.dart
+dart run tool/merge/apply_cbs_codes.dart
+dart run tool/generate.dart
+```
+
+---
+
+## 🤝 Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for:
+- Bug reports, feature requests, PR guidelines
+- Conventional Commits format
+- Data pipeline documentation
+- Commit message conventions
+
+---
+
+## 📜 License
+
+**Code**: [MIT](LICENSE)  
+**Data**: CC-BY-4.0 attributed sources — see [NOTICE](NOTICE) and [data/SOURCES.md](data/SOURCES.md)
+
+> This project is not affiliated with the Government of Nepal. Data reflects the gazetted federal structure as of October 2026. Administrative boundaries may change through future government decisions.
+
+---
+
+## 🔗 Links
+
+- **Package**: [pub.dev/packages/nepal_admin_api](https://pub.dev/packages/nepal_admin_api)
+- **Documentation**: [GitHub Pages](https://namunaONE.github.io/Nepal-Local-Government-Data/)
+- **API Reference**: [/api.html](https://namunaONE.github.io/Nepal-Local-Government-Data/api.html)
+- **Data Explorer**: [/explorer.html](https://namunaONE.github.io/Nepal-Local-Government-Data/explorer.html)
+- **Repository**: [github.com/namunaONE/Nepal-Local-Government-Data](https://github.com/namunaONE/Nepal-Local-Government-Data)
+- **Issues**: [GitHub Issues](https://github.com/namunaONE/Nepal-Local-Government-Data/issues)
+- **Changelog**: [CHANGELOG.md](CHANGELOG.md)

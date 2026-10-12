@@ -1,0 +1,35 @@
+---
+name: Feature Request
+about: Suggest a new feature or enhancement
+title: "feat(<scope>): <brief description>"
+labels: ["enhancement"]
+---
+
+## Problem Statement
+
+<!-- What problem does this solve? Who does it affect? -->
+
+## Proposed Solution
+
+<!-- Describe your ideal solution. Include API sketches if applicable. -->
+
+```dart
+// Example usage
+```
+
+## Alternatives Considered
+
+<!-- Other approaches you've considered -->
+
+## Use Cases
+
+- [ ] 
+- [ ] 
+
+## Breaking Changes
+
+<!-- Does this require a major version bump? -->
+
+## Additional Context
+
+<!-- Links to related issues, references, mockups, etc. -->

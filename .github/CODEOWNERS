@@ -1,0 +1,30 @@
+# CODEOWNERS
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Global owners (all files)
+* @realpoudel
+
+# Documentation
+docs/ @realpoudel
+README.md @realpoudel
+CHANGELOG.md @realpoudel
+CONTRIBUTING.md @realpoudel
+CODE_OF_CONDUCT.md @realpoudel
+SECURITY.md @realpoudel
+
+# Dart package (lib, test)
+lib/ @realpoudel
+test/ @realpoudel
+pubspec.yaml @realpoudel
+analysis_options.yaml @realpoudel
+
+# Data pipeline
+data/ @realpoudel
+tool/ @realpoudel
+
+# CI/CD
+.github/ @realpoudel
+
+# Generated files (require review)
+lib/src/nepal_data.dart @realpoudel
+data/nepal_local_levels.json @realpoudel

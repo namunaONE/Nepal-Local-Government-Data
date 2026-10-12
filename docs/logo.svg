@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="nadTitle nadDesc">
+  <title id="nadTitle">Nepal Administrative Data</title>
+  <desc id="nadDesc">Double-pennon of Nepal in crimson with blue border, white moon, sun and Himalaya peaks</desc>
+  <!-- Double pennon base -->
+  <path d="M20 8 L64 33 L43 33 L68 62 L20 62 Z"
+        fill="#DC143C" stroke="#003893" stroke-width="6"
+        stroke-linejoin="round" stroke-linecap="round"/>
+  <!-- Moon (upper pennon) -->
+  <path d="M33 19 a7.5 7.5 0 1 0 5.2 12.8 A5.8 5.8 0 1 1 33 19 Z" fill="#fff"/>
+  <!-- Sun (lower pennon) -->
+  <g fill="#fff">
+    <circle cx="34" cy="47" r="4.6"/>
+    <g stroke="#fff" stroke-width="1.7" stroke-linecap="round">
+      <line x1="34" y1="38.5" x2="34" y2="40.8"/>
+      <line x1="34" y1="51.2" x2="34" y2="53.5"/>
+      <line x1="25.5" y1="47" x2="27.8" y2="47"/>
+      <line x1="40.2" y1="47" x2="42.5" y2="47"/>
+      <line x1="28" y1="41" x2="29.6" y2="42.6"/>
+      <line x1="38.4" y1="51.4" x2="40" y2="53"/>
+      <line x1="40" y1="41" x2="38.4" y2="42.6"/>
+      <line x1="29.6" y1="51.4" x2="28" y2="53"/>
+    </g>
+  </g>
+  <!-- Himalaya peaks -->
+  <path d="M20 62 L32 49 L39 56.5 L47 47.5 L56 57.5 L60 54 L68 62 Z" fill="#fff" opacity="0.96"/>
+  <!-- Data nodes: 7 provinces -->
+  <g fill="#003893">
+    <circle cx="28" cy="70" r="2.6"/>
+    <circle cx="36" cy="70" r="2.6"/>
+    <circle cx="44" cy="70" r="2.6"/>
+    <circle cx="52" cy="70" r="2.6"/>
+    <circle cx="60" cy="70" r="2.6" opacity="0.85"/>
+    <circle cx="68" cy="70" r="2.6" opacity="0.7"/>
+    <circle cx="76" cy="70" r="2.6" opacity="0.55"/>
+  </g>
+  <rect x="22" y="77.5" width="54" height="4.5" rx="2.25" fill="#003893" opacity="0.9"/>
+</svg>

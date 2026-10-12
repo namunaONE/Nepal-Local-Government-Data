@@ -1,0 +1,52 @@
+---
+name: Data Correction
+about: Report an error in the administrative divisions dataset
+title: "data(<district>/<palika>): <brief description>"
+labels: ["data"]
+---
+
+## Issue Type
+
+- [ ] Incorrect name (Devanagari/English)
+- [ ] Missing palika/district/province
+- [ ] Wrong CBS/NSO code
+- [ ] Wrong type classification (metro/sub-metro/municipality/rural)
+- [ ] Duplicate entry
+- [ ] Boundary/ward count error
+
+## Location
+
+- **Province**: 
+- **District**: 
+- **Local Body (Palika)**: 
+- **CBS Code** (if known): 
+
+## Current (Incorrect) Data
+
+<!-- What does the package currently show? -->
+
+## Correct Data
+
+<!-- What should it be? Provide source. -->
+
+## Source / Evidence
+
+<!-- Official source (CBS, MoFAGA, gazette, etc.) with link if possible -->
+
+## Verification
+
+- [ ] Cross-checked with CBS official codes
+- [ ] Cross-checked with MoFAGA directory
+- [ ] Cross-checked with Postal Codes 2025
+- [ ] Local knowledge / official document
+
+## Impact
+
+- [ ] Affects CBS code lookup
+- [ ] Affects search results
+- [ ] Affects national/provincial stats
+- [ ] Cosmetic only (display name)
+
+## Additional Context
+
+<!-- Any other information -->
