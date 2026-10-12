@@ -1,0 +1,58 @@
+[
+  {
+    "district": "Khotang",
+    "name": "Diprung",
+    "chosen_name": "डिप्रुङ",
+    "basis": "human",
+    "evidence": "MoFAGA Khotang list (8 palikas) does not include Diprung. CBS has 'दिप्रुङ्ग' (dental द + chandrabindu) but romanization 'Diprung' and abinrimal 'डिप्रुङ' (retroflex ड + anusvara) agree on retroflex ड. Retroflex is standard for 'Di' in Nepali toponyms. Adopting abinrimal orthography."
+  },
+  {
+    "district": "Khotang",
+    "name": "Jante Dhunga",
+    "chosen_name": "जन्तेढुङ्गा",
+    "basis": "human",
+    "evidence": "MoFAGA Khotang list (8 palikas) does not include Jante Dhunga. Three-way split: abin='जानतेढुङ्गा', sag='जन्तेढुंगा', cbs='जन्तेढुङ्गा'. CBS 'जन्तेढुङ्गा' follows standard orthography: जन्ते (jante) + ढुङ्गा (dhunga). Anusvara on ढुङ्गा is correct for 'ng' before 'g'. Adopting CBS."
+  },
+  {
+    "district": "Parsa",
+    "name": "Birgunj",
+    "chosen_name": "वीरगञ्ज",
+    "basis": "human",
+    "evidence": "Birgunj is a Metropolitan City (महानगरपालिका) but absent from MoFAGA Parsa (13 palikas, no metropolitan). Three-way raw split: abin='वीरगन्ज' (anusvara), sag='बिरगंज' (anusvara + बि), cbs='बिरगन्ज' (anusvara + बि). Official GoN spelling per MoFAGA gazette: 'वीरगञ्ज' with chandrabindu (ँ) for the nasal in 'गञ्ज'. Retroflex वीर + चन्द्रबिन्दु is the authoritative form. Adopting canonical MoFAGA orthography not present in any source."
+  },
+  {
+    "district": "Rautahat",
+    "name": "Phatuwa Bijayapur",
+    "chosen_name": "फतुवा बिजयपुर",
+    "basis": "human",
+    "evidence": "MoFAGA Rautahat (14 palikas) does not include Phatuwa Bijayapur. Three-way split: abin='विजयपुर फटुवा' (reversed word order), sag='फतुवाबिजयपुर' (conjoined), cbs='फतुवा बिजयपुर' (separate words, बि for 'bi'). CBS form follows standard: फतुवा (phatuwa) + बिजयपुर (bijayapur) with dental बि. Adopting CBS."
+  },
+  {
+    "district": "Kathmandu",
+    "name": "Shankharapur",
+    "chosen_name": "शङ्खरापुर",
+    "basis": "human",
+    "evidence": "MoFAGA Kathmandu (9 palikas) omits Shankharapur (known municipality). Three-way: abin='शंखरापुर' (no nasal), sag='शङ्खरापुर' (anusvara on शङ्ख), cbs='शंङ्खरापुर' (double nasal). The cluster 'ङ्ख' requires anusvara on the first consonant (शङ्ख). Sagautam5 'शङ्खरापुर' is orthographically correct. Adopting sagautam5."
+  },
+  {
+    "district": "Rolpa",
+    "name": "Lungri",
+    "chosen_name": "लुङगरी",
+    "basis": "human",
+    "evidence": "Normalized-unanimous: all three sources converge under neKey 'लुङगरी' (abin='लुङ्गरी', sag='लुङग्री', cbs='लुङ्ग्री'). MoFAGA Rolpa (7 palikas) does not list Lungri. Converged key 'लुङगरी' (without chandrabindu on second syllable) is the normalized consensus. Adopting converged key."
+  },
+  {
+    "district": "Baitadi",
+    "name": "Dilasaini",
+    "chosen_name": "डिलासैनी",
+    "basis": "human",
+    "evidence": "MoFAGA Baitadi (8 palikas) does not include Dilasaini. Two-way: abin='डिलासैनी' (short इ), cbs='डीलासैनी' (long ई). 'Dila' = डिल (short i) is standard; long ई in CBS appears to be a transcription error. Adopting abinrimal."
+  },
+  {
+    "district": "Bajhang",
+    "name": "Bitthadchir",
+    "chosen_name": "बित्थडचिर",
+    "basis": "human",
+    "evidence": "MoFAGA Bajhang (10 palikas) does not include Bitthadchir. Two-way: sag='वित्थडचिर' (वि), cbs='बित्थडचिर' (बि). 'Bittha' = बित्था (bilabial ब) not विथ्था (labiodental व). CBS 'बित्थडचिर' matches standard phonology. Adopting CBS."
+  }
+]

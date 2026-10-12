@@ -362,6 +362,26 @@ String stripSuffix(String s) {
 
 String flatToken(String s) => s.replaceAll(RegExp(r"[\s\-'.]"), '');
 
+/// Strips a trailing Devanagari palika-type suffix ("X नगरपालिका" -> "X").
+/// No other normalization: for EXACT comparisons. For fuzzy corroboration
+/// keys use [neKey] (adjudicate.dart) instead.
+String stripNeTypeSuffix(String raw) {
+  const suffixes = [
+    'उपमहानगरपालिका',
+    'महानगरपालिका',
+    'गाउँपालिका',
+    'नगरपालिका',
+  ];
+  var s = raw.trim();
+  for (final suffix in suffixes) {
+    if (s.endsWith(' $suffix')) {
+      return s.substring(0, s.length - suffix.length - 1).trim();
+    }
+    if (s == suffix) return '';
+  }
+  return s;
+}
+
 /// Matching key used across sources: `[district]|[name]`, both flattened.
 /// Flattening = lowercase, type suffix and "(...)" groups stripped, then all
 /// spaces, hyphens, apostrophes and dots removed. This absorbs "Mai Jogmai"
