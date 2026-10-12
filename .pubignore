@@ -1,0 +1,30 @@
+# GitHub Pages website (served separately, not part of package)
+docs/
+
+# Tooling scripts (not needed in published package)
+tool/
+
+# Raw data sources (not needed in published package)
+data/_raw/
+data/_stage/
+
+# Documentation
+doc/
+
+# Temporary files
+*.dart_tool/
+.packages
+pubspec.lock
+build/
+coverage/
+
+# IDE
+.idea/
+.vscode/
+.DS_Store
+
+# Test files (optional - can be included for reference)
+# test/
+
+# Example files (optional - can be included)
+# example/
