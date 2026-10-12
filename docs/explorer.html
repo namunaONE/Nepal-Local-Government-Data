@@ -53,7 +53,25 @@
     <div class="container">
       <section style="margin-bottom: 32px;">
         <h1>Data Explorer</h1>
-        <p style="color: var(--color-text-secondary); margin-bottom: 0;">Explore all 753 local bodies with CBS codes, filters, and search. Data sourced from official CBS/NSO codes (v2.0.0).</p>
+        <p style="color: var(--color-text-secondary); margin-bottom: 0;">Explore all 753 local bodies with CBS codes, filters, search and an interactive centroid map. Data sourced from official CBS/NSO codes (v2.2.0 gains map coordinates for 726/753 palikas).</p>
+      </section>
+
+      <section class="map-card" aria-label="Palika centroid map">
+        <div class="map-head">
+          <div>
+            <h2 class="map-title">Centroid map</h2>
+            <p class="map-sub" id="map-status" aria-live="polite">Loading map…</p>
+          </div>
+          <div class="map-legend" aria-label="Map legend">
+            <span class="legend-chip"><i class="dot dot-metro"></i>Metro</span>
+            <span class="legend-chip"><i class="dot dot-sub"></i>Sub-metro</span>
+            <span class="legend-chip"><i class="dot dot-mun"></i>Municipality</span>
+            <span class="legend-chip"><i class="dot dot-rural"></i>Rural</span>
+            <span class="legend-chip"><i class="dot dot-unverified"></i>Unverified</span>
+          </div>
+        </div>
+        <div id="map" class="map" role="application" aria-label="Interactive map of Nepal local bodies"></div>
+        <p class="map-attrib-note">Centroids: open-admin-data vendored extract (see SOURCES). Basemap © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors.</p>
       </section>
 
       <div class="explorer-toolbar">
@@ -96,7 +114,7 @@
     <div class="container">
       <div class="footer-bottom">
         <p class="maintainer-line"><span>Maintained by</span> <span class="maintainer-badge">namunaONE</span> <span>under</span> <span class="maintainer-badge">HyaMuji</span> <span>and</span> <span class="maintainer-badge">Taire Bhai</span></p>
-        <p>Nepal Administrative Data by namunaONE v2.0.0 · Data from <a href="https://github.com/namunaONE/Nepal-Local-Government-Data">Nepal-Local-Government-Data</a> · CBS/NSO verified codes</p>
+        <p>Nepal Administrative Data by namunaONE v2.2.0 · Data from <a href="https://github.com/namunaONE/Nepal-Local-Government-Data">Nepal-Local-Government-Data</a> · CBS/NSO verified codes · Basemap © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors</p>
       </div>
     </div>
   </footer>

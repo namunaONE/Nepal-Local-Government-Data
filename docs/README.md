@@ -4,7 +4,7 @@ Static documentation site deployed via GitHub Pages from `docs/`.
 
 - **Live:** https://namunaONE.github.io/Nepal-Local-Government-Data/
 - **Pages:** `index.html` (landing), `api.html` (reference),
-  `explorer.html` (interactive table over `data.json`)
+  `explorer.html` (interactive table + centroid map over `data.json`)
 - **Assets:** `logo.svg` (icon), `logo-full.svg` (icon + wordmark),
   `favicon.svg`, `styles.css`, `app.js`, `data.json`
 - **No build step.** Pure HTML/CSS/JS. `.nojekyll` disables Jekyll.
@@ -42,11 +42,28 @@ Dark mode: `html.dark` class (JS toggle + `localStorage`), with
 - Header uses `logo.svg` + stacked wordmark; hero uses `logo-full.svg`;
   footer reuses `logo.svg`.
 
+## Map
+
+Explorer embeds a Leaflet 1.9.4 + markercluster 1.5.3 dot map (lazy-loaded,
+CDN, only on `explorer.html`):
+
+- Tiles: OSM Standard keyless, maxZoom 19, `© OpenStreetMap contributors`
+  on-map + footer. Dark mode reuses the same tiles with a CSS filter
+  (no second tile set, no API key).
+- Markers: canvas circleMarkers colored by type (badge tokens), hollow
+  when CBS-unverified; clusters via `chunkedLoading` +
+  `removeOutsideVisibleBounds`.
+- Sync: filters/search rebuild markers (all filtered, not just the page);
+  table-row click/Enter flies to the marker; `?cbs=31304` deep-links.
+- Tile factory is a single `MAP_TILES` constant + `createTileLayer()` in
+  `app.js` so a future vector/PMTiles migration is surgical.
+
 ## Regenerating explorer data
 
 ```bash
 dart run tool/generate_explorer_data.dart
-# reads data/nepal_local_levels.json → writes docs/data.json (753 rows)
+# reads data/nepal_local_levels.json → writes docs/data.json (753 rows,
+# incl. lat/lng/geoSource where mapped: 726/753)
 ```
 
 ## Local preview

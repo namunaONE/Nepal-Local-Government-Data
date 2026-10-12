@@ -111,6 +111,8 @@ function initExplorer() {
     .then(data => {
       allData = data;
       filteredData = [...data];
+      window.__explorerByCbs = (cbs) =>
+        allData.find(d => String(d.cbsCode) === String(cbs)) || null;
       populateFilters();
       render();
     })
@@ -160,18 +162,21 @@ function initExplorer() {
 
     // Update stats
     const verified = filteredData.filter(d => d.cbsCode !== null).length;
+    const mapped = filteredData.filter(d => d.lat != null && d.lng != null).length;
     statsEl.innerHTML = `
       <span>Total: <strong>${filteredData.length}</strong></span>
       <span>Verified CBS: <strong>${verified}</strong></span>
       <span>Unverified: <strong>${filteredData.length - verified}</strong></span>
+      <span>Mapped: <strong>${mapped}</strong></span>
     `;
+    syncMap(filteredData);
 
     // Render table
     if (pageData.length === 0) {
       tableBody.innerHTML = '<tr><td colspan="7" style="text-align:center; padding: 48px; color: var(--color-text-muted);">No matching records</td></tr>';
     } else {
       tableBody.innerHTML = pageData.map(item => `
-        <tr>
+        <tr data-cbs="${item.cbsCode ?? ''}" data-lat="${item.lat ?? ''}" data-lng="${item.lng ?? ''}" data-name="${escapeHtml(item.name)}" tabindex="0" title="${item.lat != null ? 'Click to locate on map' : 'No coordinates available'}">
           <td>${escapeHtml(item.name)}</td>
           <td><span class="type-badge type-${item.type.toLowerCase().replace('municipality', 'mun').replace('rural', 'rural').replace('metropolitan', 'metro').replace('sub-metropolitan', 'sub')}">${escapeHtml(item.type)}</span></td>
           <td>${escapeHtml(item.district)}</td>
@@ -181,6 +186,16 @@ function initExplorer() {
           <td>${item.isoCode ? `<code>${item.isoCode}</code>` : '—'}</td>
         </tr>
       `).join('');
+      // Row → map: click a mapped row to fly to its marker.
+      tableBody.querySelectorAll('tr[data-lat]').forEach(row => {
+        if (!row.dataset.lat || !row.dataset.lng) return;
+        const go = () => focusMarker(parseFloat(row.dataset.lat), parseFloat(row.dataset.lng), row.dataset.name);
+        row.style.cursor = 'pointer';
+        row.addEventListener('click', go);
+        row.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); }
+        });
+      });
     }
 
     // Render pagination
@@ -251,6 +266,152 @@ function debounce(fn, delay) {
     clearTimeout(timeoutId);
     timeoutId = setTimeout(() => fn.apply(null, args), delay);
   };
+}
+
+// ---- Centroid map (Leaflet + OSM Standard, no API key) ----
+// Single tile factory so a future vector/PMTiles migration is surgical.
+const MAP_TILES = {
+  url: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+  maxZoom: 19,
+  attribution: '© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors',
+};
+const TYPE_COLORS = {
+  metropolitan: '#dc2626',
+  'sub-metropolitan': '#ea580c',
+  municipality: '#2563eb',
+  ruralMunicipality: '#16a34a',
+};
+let _map = null;
+let _cluster = null;
+let _leafletReady = null;
+
+function loadLeaflet() {
+  if (_leafletReady) return _leafletReady;
+  _leafletReady = new Promise((resolve, reject) => {
+    if (window.L && window.L.markerClusterGroup) { resolve(); return; }
+    const css = (href) => {
+      if (document.querySelector(`link[href="${href}"]`)) return;
+      const l = document.createElement('link');
+      l.rel = 'stylesheet'; l.href = href;
+      document.head.appendChild(l);
+    };
+    css('https://unpkg.com/leaflet@1.9.4/dist/leaflet.css');
+    css('https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css');
+    css('https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css');
+    const js = (src) => new Promise((res, rej) => {
+      const s = document.createElement('script');
+      s.src = src; s.defer = true;
+      s.onload = res; s.onerror = rej;
+      document.head.appendChild(s);
+    });
+    js('https://unpkg.com/leaflet@1.9.4/dist/leaflet.js')
+      .then(() => js('https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js'))
+      .then(resolve)
+      .catch(reject);
+  });
+  return _leafletReady;
+}
+
+function createTileLayer() {
+  return window.L.tileLayer(MAP_TILES.url, {
+    maxZoom: MAP_TILES.maxZoom,
+    attribution: MAP_TILES.attribution,
+  });
+}
+
+function ensureMap() {
+  const el = document.getElementById('map');
+  if (!el || _map) return Promise.resolve(_map);
+  return loadLeaflet().then(() => {
+    const status = document.getElementById('map-status');
+    _map = window.L.map('map', {
+      preferCanvas: true,
+      scrollWheelZoom: false,
+      tap: true,
+    }).setView([28.39, 84.12], 7);
+    _map.on('focus', () => _map.scrollWheelZoom.enable());
+    _map.on('blur', () => _map.scrollWheelZoom.disable());
+    createTileLayer().addTo(_map);
+    _cluster = window.L.markerClusterGroup({
+      chunkedLoading: true,
+      removeOutsideVisibleBounds: true,
+      showCoverageOnHover: false,
+      maxClusterRadius: 48,
+    });
+    _map.addLayer(_cluster);
+    if (status) status.textContent = '';
+    // Deep link: explorer.html?cbs=31304
+    const cbs = new URLSearchParams(window.location.search).get('cbs');
+    if (cbs && window.__explorerByCbs) {
+      const hit = window.__explorerByCbs(cbs);
+      if (hit && hit.lat != null) focusMarker(hit.lat, hit.lng, hit.name);
+    }
+    return _map;
+  }).catch((err) => {
+    console.error('Map failed to load:', err);
+    const status = document.getElementById('map-status');
+    if (status) status.textContent = 'Map unavailable offline — table still works.';
+  });
+}
+
+function markerColor(item) {
+  return TYPE_COLORS[item.type] || '#64748b';
+}
+
+function syncMap(items) {
+  if (!document.getElementById('map')) return;
+  ensureMap().then(() => {
+    if (!_map || !_cluster) return;
+    _cluster.clearLayers();
+    const pts = items.filter(d => d.lat != null && d.lng != null);
+    const markers = pts.map((item) => {
+      const color = markerColor(item);
+      const m = window.L.circleMarker([item.lat, item.lng], {
+        radius: item.type === 'metropolitan' ? 9 : item.type === 'sub-metropolitan' ? 8 : 6,
+        color,
+        weight: 2,
+        opacity: 1,
+        fillColor: color,
+        fillOpacity: item.cbsCodeVerified ? 0.85 : 0.2,
+      });
+      const cbs = item.cbsCode != null ? `<code>${item.cbsCode}</code>` : '—';
+      m.bindPopup(
+        `<strong>${escapeHtmlAttr(item.name)}</strong>` +
+        `${escapeHtmlAttr(item.district)}, ${escapeHtmlAttr(item.province)}<br>` +
+        `CBS: ${cbs} ${item.cbsCodeVerified ? '✓' : '(unverified)'}<br>` +
+        `<span style="color:#64748b;font-size:12px">${item.lat.toFixed(3)}, ${item.lng.toFixed(3)} · ${escapeHtmlAttr(item.geoSource || 'compiled')}</span>`
+      );
+      return m;
+    });
+    _cluster.addLayers(markers);
+    const status = document.getElementById('map-status');
+    if (status) {
+      const total = items.length;
+      status.textContent = `${pts.length} of ${total} shown on map` +
+        (total - pts.length > 0 ? ` (${total - pts.length} without coordinates — table only)` : '');
+    }
+    if (pts.length > 0 && !_map.__fitted) {
+      _map.__fitted = true;
+      _map.fitBounds(_cluster.getBounds().pad(0.15));
+    }
+  });
+}
+
+function focusMarker(lat, lng, name) {
+  ensureMap().then(() => {
+    if (!_map) return;
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    _map.flyTo([lat, lng], Math.max(_map.getZoom(), 10), { duration: reduced ? 0 : 0.8 });
+    window.L.popup()
+      .setLatLng([lat, lng])
+      .setContent(`<strong>${escapeHtmlAttr(name || 'Selected')}</strong>`)
+      .openOn(_map);
+    document.getElementById('map')?.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'nearest' });
+  });
+}
+
+function escapeHtmlAttr(text) {
+  return String(text ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
 // Initialize theme on load

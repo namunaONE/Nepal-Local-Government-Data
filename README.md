@@ -24,6 +24,7 @@ Pure Dart package. Zero runtime dependencies. Data ships in the box.
 |---------|-------------|
 | **Complete hierarchy** | Province → District → Local Body (palika) |
 | **Official codes** | 547/753 palikas with verified 5-digit CBS codes (PDDPP), all 77 districts (3-digit), all 7 provinces (NP-P1…NP-P7) |
+| **Map coordinates** | 726/753 palikas with approximate centroids (`lat`/`lng` + `geoSource`); `hasCoordinates`, `whereMapped` |
 | **Type-safe models** | `Province`, `District`, `LocalBody`, `LocalBodyType` enum |
 | **Hierarchical queries** | Navigate province → district → local body with typed accessors |
 | **Typed search** | Disambiguates duplicate names by district/province context |
@@ -38,7 +39,7 @@ Pure Dart package. Zero runtime dependencies. Data ships in the box.
 
 ```yaml
 dependencies:
-  nepal_admin_api: ^2.1.0
+  nepal_admin_api: ^2.2.0
 ```
 
 ```bash
@@ -155,7 +156,7 @@ Wards: ${stats.wards}                   // 6,743
 
 ## 🗺️ Data Explorer
 
-Interactive table with all 753 local bodies — search, filter by province/district/type, view CBS codes and verification status.
+Interactive table with all 753 local bodies — search, filter by province/district/type, view CBS codes and verification status — plus an interactive centroid map (726 mapped, Leaflet + clustered dots, click a row to fly to it, `?cbs=` deep links).
 
 👉 [Open Data Explorer](https://namunaONE.github.io/Nepal-Local-Government-Data/explorer.html)
 

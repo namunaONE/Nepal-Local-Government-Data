@@ -81,6 +81,15 @@ class LocalBody {
   /// Whether the [cbsCode] is verified (doubly-attested by CBS + postal-2025).
   final bool cbsCodeVerified;
 
+  /// Approximate centroid latitude (WGS84). Null when not yet geocoded.
+  final double? lat;
+
+  /// Approximate centroid longitude (WGS84). Null when not yet geocoded.
+  final double? lng;
+
+  /// Provenance of the coordinates, e.g. 'open-admin-data', 'osm-nominatim'.
+  final String? geoSource;
+
   const LocalBody({
     required this.name,
     required this.type,
@@ -88,6 +97,9 @@ class LocalBody {
     required this.provinceName,
     this.cbsCode,
     this.cbsCodeVerified = false,
+    this.lat,
+    this.lng,
+    this.geoSource,
   });
 
   /// Full display name of the type, e.g. 'Rural Municipality'.
@@ -102,6 +114,9 @@ class LocalBody {
   /// Whether this is a rural municipality.
   bool get isRural => type == LocalBodyType.ruralMunicipality;
 
+  /// Whether approximate map coordinates are available.
+  bool get hasCoordinates => lat != null && lng != null;
+
   /// Human-readable hierarchical path, e.g. 'Bharatpur, Chitwan, Bagmati'.
   /// Useful for dropdowns, breadcrumbs and disambiguating duplicate names.
   String get fullPath => '$name, $districtName, $provinceName';
@@ -113,6 +128,9 @@ class LocalBody {
         'province': provinceName,
         if (cbsCode != null) 'cbsCode': cbsCode,
         if (cbsCodeVerified) 'cbsCodeVerified': cbsCodeVerified,
+        if (lat != null) 'lat': lat,
+        if (lng != null) 'lng': lng,
+        if (geoSource != null) 'geoSource': geoSource,
       };
 
   factory LocalBody.fromJson(Map<String, dynamic> json) => LocalBody(
@@ -122,6 +140,9 @@ class LocalBody {
         provinceName: json['province'] as String? ?? '',
         cbsCode: json['cbsCode'] as int?,
         cbsCodeVerified: json['cbsCodeVerified'] as bool? ?? false,
+        lat: (json['lat'] as num?)?.toDouble(),
+        lng: (json['lng'] as num?)?.toDouble(),
+        geoSource: json['geoSource'] as String?,
       );
 
   @override
@@ -455,5 +476,11 @@ extension LocalBodyListX on List<LocalBody> {
   List<LocalBody> ofType(LocalBodyType type) => [
         for (final b in this)
           if (b.type == type) b,
+      ];
+
+  /// Only bodies with map coordinates.
+  List<LocalBody> get whereMapped => [
+        for (final b in this)
+          if (b.hasCoordinates) b,
       ];
 }

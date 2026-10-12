@@ -136,6 +136,17 @@ English spellings are UPPERCASE variants (`CHITAWAN`, `DHANUSA`,
 **Used for:** `nsoCode` (verified), `nsoCodeVerified`, district-code
 resolution, 4th Devanagari vote (palika level, where aligned).
 
+## Website basemap (not shipped in the package)
+
+The GitHub Pages explorer renders centroid dots over
+OpenStreetMap Standard raster tiles
+(`https://tile.openstreetmap.org/{z}/{x}/{y}.png`, maxZoom 19, no API key).
+Tiles are fetched at view time by the visitor's browser; no tile data is
+vendored. Attribution `© OpenStreetMap contributors` is shown on-map and
+in the explorer footer, per the ODbL. Dark mode reuses the same tiles with
+a CSS filter (no second tile set, no key). Centroid coordinates themselves
+derive from source #4 (open-admin-data, CC-BY-4.0, attributed in NOTICE).
+
 ## Re-fetching
 
 ```powershell

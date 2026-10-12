@@ -192,4 +192,48 @@ void main() {
           NepalAdminApi.search('Bharatpur, Chitwan').localBodies, isNotEmpty);
     });
   });
+
+  group('v2.2 coordinates', () {
+    test('coordinates are inside the Nepal bounding box', () {
+      for (final b in NepalAdminApi.getAllLocalBodies()) {
+        if (b.lat != null && b.lng != null) {
+          expect(b.lat!, greaterThanOrEqualTo(26.0),
+              reason: '${b.fullPath} lat');
+          expect(b.lat!, lessThanOrEqualTo(31.0), reason: '${b.fullPath} lat');
+          expect(b.lng!, greaterThanOrEqualTo(80.0),
+              reason: '${b.fullPath} lng');
+          expect(b.lng!, lessThanOrEqualTo(89.0), reason: '${b.fullPath} lng');
+        }
+      }
+    });
+
+    test('majority of palikas are mapped', () {
+      final mapped = NepalAdminApi.getAllLocalBodies().whereMapped;
+      expect(mapped.length, greaterThanOrEqualTo(700));
+    });
+
+    test('hasCoordinates + whereMapped agree', () {
+      final bodies = NepalAdminApi.getAllLocalBodies();
+      expect(bodies.whereMapped.length,
+          bodies.where((b) => b.hasCoordinates).length);
+    });
+
+    test('json round-trip preserves coordinates', () {
+      final mapped =
+          NepalAdminApi.getAllLocalBodies().firstWhere((b) => b.hasCoordinates);
+      final restored = LocalBody.fromJson(mapped.toJson());
+      expect(restored.lat, mapped.lat);
+      expect(restored.lng, mapped.lng);
+      expect(restored.geoSource, mapped.geoSource);
+    });
+
+    test('unmapped palikas have null coordinates', () {
+      for (final b in NepalAdminApi.getAllLocalBodies()) {
+        if (!b.hasCoordinates) {
+          expect(b.lat, isNull);
+          expect(b.lng, isNull);
+        }
+      }
+    });
+  });
 }

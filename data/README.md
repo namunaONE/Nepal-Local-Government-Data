@@ -34,6 +34,8 @@ from it.
 | `type` | enum | `metropolitan` \| `subMetropolitan` \| `municipality` \| `ruralMunicipality` |
 | `cbsCode` | int? | 5-digit PDDPP: P=province, DD=district, PP=palika; null when unverified |
 | `cbsCodeVerified` | bool | true only when doubly-attested (CBS + Postal-2025) |
+| `lat` / `lng` | double? | approximate WGS84 centroid; null for 27/753 (never fabricated) |
+| `geoSource` | string? | e.g. `open-admin-data`, `osm-nominatim` |
 
 Local-body names are **not unique** across Nepal (e.g. `Aurahi` ×3,
 `Sunkoshi` ×4) — always pair a name with its district and province.

@@ -37,6 +37,9 @@ void main() {
           'cbsCode': cbsCode,
           'cbsCodeVerified': cbsCodeVerified,
           'isoCode': isoCode,
+          if (body['lat'] != null) 'lat': body['lat'],
+          if (body['lng'] != null) 'lng': body['lng'],
+          if (body['geoSource'] != null) 'geoSource': body['geoSource'],
         });
       }
     }
@@ -57,8 +60,11 @@ void main() {
 
   // Stats
   final verified = explorerData.where((d) => d['cbsCode'] != null).length;
+  final mapped = explorerData.where((d) => d['lat'] != null).length;
   print('Generated docs/data.json');
   print('Total records: ${explorerData.length}');
   print('Verified CBS codes: $verified');
   print('Unverified: ${explorerData.length - verified}');
+  print('With coordinates: $mapped');
+  print('Without coordinates: ${explorerData.length - mapped}');
 }

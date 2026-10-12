@@ -4,6 +4,20 @@ All notable changes to this package are documented in this file.
 The format follows [Keep a Changelog](https://keepachangelog.com/) and the
 package adheres to [Semantic Versioning](https://semver.org/).
 
+## 2.2.0 — 2026-10-12
+
+### Added
+- Approximate centroid coordinates: `LocalBody.lat` / `lng` (WGS84,
+  nullable) + `geoSource` provenance + `hasCoordinates` getter.
+  Coverage 726/753 (96%) from the vendored open-admin-data extract;
+  27 remain null (table-only, never fabricated).
+- `LocalBodyListX.whereMapped` — only bodies with coordinates.
+- `tool/geocode_centroids.dart` — local-first merge with district
+  fuzzy-match gate, `data/_stage/geocodes.json` cache, opt-in
+  `--geocode-network` Nominatim fallback (1 req/s, custom UA).
+- Interactive centroid map in the Data Explorer (Leaflet +
+  markercluster over keyless OSM Standard tiles, dark-mode CSS filter).
+
 ## 2.1.0 — 2026-10-12
 
 ### Added

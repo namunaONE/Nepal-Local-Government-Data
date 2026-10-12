@@ -59,6 +59,24 @@ void _validate(List<Map<String, dynamic>> provinces, Map<String, int> totals) {
       for (final unit in units) {
         final type = unit['type'] as String;
         byType[type] = (byType[type] ?? 0) + 1;
+        // Coordinate validation: nullable, but when present must be
+        // numeric and inside the Nepal bounding box.
+        final lat = unit['lat'];
+        final lng = unit['lng'];
+        if (lat != null || lng != null) {
+          final latD = (lat as num?)?.toDouble();
+          final lngD = (lng as num?)?.toDouble();
+          if (latD == null ||
+              lngD == null ||
+              latD < 26.0 ||
+              latD > 31.0 ||
+              lngD < 80.0 ||
+              lngD > 89.0) {
+            stderr.writeln('ERROR: invalid coordinates for ${unit['name']} '
+                '(${district['name']}): lat=$lat lng=$lng.');
+            exit(1);
+          }
+        }
       }
     }
   }
@@ -148,13 +166,21 @@ String _generate(List<Map<String, dynamic>> provinces) {
           in (district['localBodies'] as List).cast<Map<String, dynamic>>()) {
         final lbCbs = unit['cbsCode'];
         final lbVerified = unit['cbsCodeVerified'] == true;
+        final lat = unit['lat'];
+        final lng = unit['lng'];
+        final geoSource = unit['geoSource'];
+        final extra = StringBuffer();
         if (lbCbs != null) {
-          b.writeln(
-              "            LocalBody(name: '${unit['name']}', type: LocalBodyType.${unit['type']}, districtName: '${district['name']}', provinceName: '${province['name']}', cbsCode: $lbCbs, cbsCodeVerified: $lbVerified),");
-        } else {
-          b.writeln(
-              "            LocalBody(name: '${unit['name']}', type: LocalBodyType.${unit['type']}, districtName: '${district['name']}', provinceName: '${province['name']}'),");
+          extra.write(', cbsCode: $lbCbs, cbsCodeVerified: $lbVerified');
         }
+        if (lat != null && lng != null) {
+          extra.write(', lat: $lat, lng: $lng');
+          if (geoSource != null) {
+            extra.write(", geoSource: '$geoSource'");
+          }
+        }
+        b.writeln(
+            "            LocalBody(name: '${unit['name']}', type: LocalBodyType.${unit['type']}, districtName: '${district['name']}', provinceName: '${province['name']}'$extra),");
       }
       b.writeln('          ],');
       b.writeln('        ),');
