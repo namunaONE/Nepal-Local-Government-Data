@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="nepal_admin_api - Offline administrative divisions of Nepal: 7 provinces, 77 districts, 753 local bodies, 6,743 wards with official CBS/NSO codes">
+  <title>nepal_admin_api - Nepal Administrative Divisions</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav container">
+      <a href="index.html" class="logo">
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+        </svg>
+        <span>nepal_admin_api</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="api.html" class="nav-link">API Docs</a>
+        <a href="explorer.html" class="nav-link">Data Explorer</a>
+        <a href="https://pub.dev/packages/nepal_admin_api" class="nav-link" target="_blank">pub.dev</a>
+        <a href="https://github.com/namunaONE/Nepal-Local-Government-Data" class="nav-link" target="_blank">GitHub</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <span class="badge">v2.0.0 · Schema v2 with CBS/NSO Codes</span>
+          <h1>Nepal Administrative Divisions</h1>
+          <p class="hero-subtitle">Offline, type-safe Dart package with canonical 7 provinces, 77 districts, 753 local bodies, 6,743 wards — now with official CBS codes (PDDPP format) and ISO 3166-2 province codes.</p>
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-value">7</span>
+              <span class="stat-label">Provinces</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">77</span>
+              <span class="stat-label">Districts</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">753</span>
+              <span class="stat-label">Local Bodies</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">6,743</span>
+              <span class="stat-label">Wards</span>
+            </div>
+          </div>
+          <div class="hero-actions">
+            <a href="https://pub.dev/packages/nepal_admin_api" class="btn btn-primary" target="_blank">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                <line x1="12" y1="22.08" x2="12" y2="12"/>
+              </svg>
+              View on pub.dev
+            </a>
+            <a href="api.html" class="btn btn-secondary">Read API Docs</a>
+            <a href="explorer.html" class="btn btn-secondary">Explore Data</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="map-placeholder">
+            <svg viewBox="0 0 400 300" class="nepal-map" aria-hidden="true">
+              <rect width="400" height="300" fill="var(--color-bg-secondary)"/>
+              <text x="200" y="150" text-anchor="middle" fill="var(--color-text-muted)" font-size="14">Interactive map available in Data Explorer</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container">
+        <h2>Key Features</h2>
+        <div class="features-grid">
+          <article class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                <line x1="12" y1="22.08" x2="12" y2="12"/>
+              </svg>
+            </div>
+            <h3>Zero Dependencies</h3>
+            <p>Pure Dart package with data embedded at compile time. No runtime I/O, no network calls, works completely offline.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                <path d="M9 9h6v6H9z"/>
+              </svg>
+            </div>
+            <h3>Schema v2: CBS/NSO Codes</h3>
+            <p>Official 5-digit PDDPP codes for 547/753 palikas (73%), 3-digit district codes, ISO 3166-2 NP-P1..NP-P7 for provinces.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+                <polyline points="10 9 9 9 8 9"/>
+              </svg>
+            </div>
+            <h3>Type-Safe Models</h3>
+            <p>Dart classes with JSON serialization, enum for LocalBodyType, computed national statistics, and typed search results.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="12" y1="16" x2="12" y2="12"/>
+                <line x1="12" y1="8" x2="12.01" y2="8"/>
+              </svg>
+            </div>
+            <h3>Verified Provenance</h3>
+            <p>5+ independent sources merged with MoFAGA corroboration, human-adjudicated conflicts, full audit trail in docs/.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <h3>Hierarchical Queries</h3>
+            <p>Navigate province → district → local body with typed accessors, case-insensitive search, and disambiguation by context.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3>130/130 pub.dev</h3>
+            <p>Passes all pub.dev scoring: analysis, formatting, tests, documentation, platform support, and publishing checks.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="install">
+      <div class="container">
+        <h2>Installation</h2>
+        <div class="code-block">
+          <div class="code-header">
+            <span>pubspec.yaml</span>
+            <button class="copy-btn" data-copy="dependencies:&#10;  nepal_admin_api: ^2.0.0">Copy</button>
+          </div>
+          <pre><code>dependencies:
+  nepal_admin_api: ^2.0.0</code></pre>
+        </div>
+        <p class="install-note">Then run <code>dart pub get</code> or <code>flutter pub get</code></p>
+      </div>
+    </section>
+
+    <section class="quickstart">
+      <div class="container">
+        <h2>Quick Start</h2>
+        <div class="code-block">
+          <div class="code-header">
+            <span>main.dart</span>
+            <button class="copy-btn" data-copy="import 'package:nepal_admin_api/nepal_admin_api.dart';&#10;&#10;void main() {&#10;  // Get all provinces&#10;  final provinces = NepalAdminApi.getAllProvinces();&#10;  print('Provinces: \${provinces.length}');&#10;&#10;  // Get province by ISO code&#10;  final bagmati = NepalAdminApi.getProvinceById('NP-P3');&#10;  print('Bagmati districts: \${bagmati?.districts.length}');&#10;&#10;  // Search local bodies&#10;  final result = NepalAdminApi.search('Bharatpur');&#10;  for (final lb in result.localBodies) {&#10;    print('\${lb.name} (\${lb.typeName}) - \${lb.districtName}, \${lb.provinceName}');&#10;    if (lb.cbsCode != null) {&#10;      print('  CBS Code: \${lb.cbsCode} (verified: \${lb.cbsCodeVerified})');&#10;    }&#10;  }&#10;&#10;  // National stats&#10;  final stats = NepalAdminApi.getNationalStats();&#10;  print('Total wards: \${stats.wards}');&#10;}">Copy</button>
+          </div>
+          <pre><code>import 'package:nepal_admin_api/nepal_admin_api.dart';
+
+void main() {
+  // Get all provinces
+  final provinces = NepalAdminApi.getAllProvinces();
+  print('Provinces: ${provinces.length}');
+
+  // Get province by ISO code
+  final bagmati = NepalAdminApi.getProvinceById('NP-P3');
+  print('Bagmati districts: ${bagmati?.districts.length}');
+
+  // Search local bodies
+  final result = NepalAdminApi.search('Bharatpur');
+  for (final lb in result.localBodies) {
+    print('${lb.name} (${lb.typeName}) - ${lb.districtName}, ${lb.provinceName}');
+    if (lb.cbsCode != null) {
+      print('  CBS Code: ${lb.cbsCode} (verified: ${lb.cbsCodeVerified})');
+    }
+  }
+
+  // National stats
+  final stats = NepalAdminApi.getNationalStats();
+  print('Total wards: ${stats.wards}');
+}</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="data-sources">
+      <div class="container">
+        <h2>Data Sources & Verification</h2>
+        <div class="sources-grid">
+          <div class="source-card">
+            <h3>Primary Sources</h3>
+            <ul>
+              <li><strong>abinrimal/nepal-local-levels</strong> — Local levels with Devanagari names</li>
+              <li><strong>sagautam5/local-states-nepal</strong> — Municipalities dataset</li>
+              <li><strong>CBS/NSO Official Codes</strong> — States, districts, local bodies CSVs</li>
+              <li><strong>Postal Codes 2025</strong> — Cross-reference for verification</li>
+            </ul>
+          </div>
+          <div class="source-card">
+            <h3>Verification Pipeline</h3>
+            <ol>
+              <li>Step 1: Inventory & defect audit (5 sources)</li>
+              <li>Step 2: CBS code verification via MoFAGA harvest</li>
+              <li>Step 3: Adjudication — 72 conflicts, 72 resolved</li>
+              <li>Step 4: Schema v2 with CBS codes embedded</li>
+            </ul>
+          </div>
+          <div class="source-card">
+            <h3>Attribution</h3>
+            <p>All CC-BY-4.0 sources attributed in <a href="https://github.com/namunaONE/Nepal-Local-Government-Data/blob/main/NOTICE">NOTICE</a>. Official CBS/MoFAGA codes are public domain.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>nepal_admin_api</h4>
+          <p>Offline administrative divisions of Nepal with official CBS/NSO codes.</p>
+        </div>
+        <div>
+          <h4>Links</h4>
+          <ul>
+            <li><a href="https://pub.dev/packages/nepal_admin_api" target="_blank">pub.dev package</a></li>
+            <li><a href="https://github.com/namunaONE/Nepal-Local-Government-Data" target="_blank">GitHub repository</a></li>
+            <li><a href="https://linear.app/hyamuji" target="_blank">Linear project</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>License</h4>
+          <p>MIT License — Data sources CC-BY-4.0 attributed in NOTICE</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Generated from <a href="https://github.com/namunaONE/Nepal-Local-Government-Data">Nepal-Local-Government-Data</a> · Built with Dart · Deployed via GitHub Pages</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="nepal_admin_api - API Reference Documentation">
+  <title>API Reference - nepal_admin_api</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav container">
+      <a href="index.html" class="logo">
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+        </svg>
+        <span>nepal_admin_api</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="api.html" class="nav-link active">API Docs</a>
+        <a href="explorer.html" class="nav-link">Data Explorer</a>
+        <a href="https://pub.dev/packages/nepal_admin_api" class="nav-link" target="_blank">pub.dev</a>
+        <a href="https://github.com/namunaONE/Nepal-Local-Government-Data" class="nav-link" target="_blank">GitHub</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container" style="display: grid; grid-template-columns: 260px 1fr; gap: 32px; padding-top: 32px; padding-bottom: 64px;">
+      <aside class="api-nav">
+        <ul>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#models">Models</a>
+            <ul style="margin-left: 16px; margin-top: 4px; margin-bottom: 8px;">
+              <li><a href="#province">Province</a></li>
+              <li><a href="#district">District</a></li>
+              <li><a href="#localbody">LocalBody</a></li>
+              <li><a href="#localbodytype">LocalBodyType</a></li>
+              <li><a href="#provincestats">ProvinceStats</a></li>
+              <li><a href="#nationalstats">NationalStats</a></li>
+              <li><a href="#searchresult">SearchResult</a></li>
+            </ul>
+          </li>
+          <li><a href="#nepaladminapi">NepalAdminApi</a>
+            <ul style="margin-left: 16px; margin-top: 4px; margin-bottom: 8px;">
+              <li><a href="#getallprovinces">getAllProvinces</a></li>
+              <li><a href="#getprovincebyid">getProvinceById</a></li>
+              <li><a href="#getalldistricts">getAllDistricts</a></li>
+              <li><a href="#getdistrictsbyprovince">getDistrictsByProvince</a></li>
+              <li><a href="#getdistrictbyname">getDistrictByName</a></li>
+              <li><a href="#getalllocalbodies">getAllLocalBodies</a></li>
+              <li><a href="#getlocalbodiesbydistrict">getLocalBodiesByDistrict</a></li>
+              <li><a href="#getnationalstats">getNationalStats</a></li>
+              <li><a href="#search">search</a></li>
+            </ul>
+          </li>
+          <li><a href="#examples">Usage Examples</a></li>
+          <li><a href="#migration">Migration Guide (v1 → v2)</a></li>
+        </ul>
+      </aside>
+
+      <article class="api-content">
+        <section id="overview" class="api-section">
+          <h2>API Reference</h2>
+          <p>The <code>nepal_admin_api</code> package provides a complete, type-safe API for querying Nepal's administrative divisions. All data is embedded at compile time — zero runtime dependencies, fully offline.</p>
+          
+          <div class="code-block">
+            <div class="code-header"><span>Import</span></div>
+            <pre><code>import 'package:nepal_admin_api/nepal_admin_api.dart';</code></pre>
+          </div>
+
+          <h3>Key Features</h3>
+          <ul>
+            <li><strong>Hierarchical access</strong> — Province → District → LocalBody</li>
+            <li><strong>Typed search</strong> — Disambiguates duplicate names by district/province context</li>
+            <li><strong>CBS/NSO codes</strong> — Official 5-digit PDDPP codes (v2.0.0+)</li>
+            <li><strong>ISO 3166-2</strong> — Province codes NP-P1 through NP-P7</li>
+            <li><strong>JSON serialization</strong> — <code>toJson()</code> / <code>fromJson()</code> on all models</li>
+            <li><strong>Computed stats</strong> — National and provincial totals, not hardcoded</li>
+          </ul>
+        </section>
+
+        <section id="models" class="api-section">
+          <h2>Models</h2>
+
+          <section id="localbodytype">
+            <h3>LocalBodyType <span class="api-method method-static">enum</span></h3>
+            <p>Represents the four types of local bodies in Nepal's federal structure.</p>
+            <div class="api-signature">enum LocalBodyType {
+  metropolitan,      // 6 nationwide
+  subMetropolitan,   // 11 nationwide
+  municipality,      // 276 nationwide
+  ruralMunicipality, // 460 nationwide
+  unknown            // fallback for deserialization
+}</div>
+            <p><strong>Properties:</strong></p>
+            <ul>
+              <li><code>shortName</code> — Abbreviation (e.g., "M", "RM", "Metro", "Sub-Metro")</li>
+              <li><code>fullName</code> — Human-readable name (e.g., "Municipality", "Rural Municipality")</li>
+            </ul>
+            <p><strong>Static method:</strong> <code>LocalBodyType.fromShort(String?)</code> — resolves abbreviation to enum.</p>
+          </section>
+
+          <section id="province">
+            <h3>Province</h3>
+            <p>One of Nepal's 7 provinces.</p>
+            <div class="api-signature">class Province {
+  final String id;              // e.g., "koshi", "bagmati"
+  final String name;            // e.g., "Koshi", "Bagmati"
+  final int cbsCode;            // 1-7 (NEW in v2)
+  final String isoCode;         // "NP-P1".."NP-P7" (NEW in v2)
+  final ProvinceStats stats;
+  final List<District> districts;
+}</div>
+            <p><strong>Constructor (v2):</strong> Requires <code>cbsCode</code> and <code>isoCode</code>.</p>
+          </section>
+
+          <section id="district">
+            <h3>District</h3>
+            <p>One of Nepal's 77 districts, belonging to a province.</p>
+            <div class="api-signature">class District {
+  final String name;
+  final int? cbsCode;           // 3-digit (e.g., 306 for Kathmandu) — NEW in v2
+  final List<LocalBody> localBodies; // getter
+  final int localBodyCount;     // getter
+  final String provinceName;    // getter (set by Province)
+  
+  // v2 Constructor
+  District({required name, cbsCode, required List<LocalBody> units})
+}</div>
+            <p><strong>Note:</strong> <code>units</code> parameter is now <code>List<LocalBody></code> (was <code>List<(String, LocalBodyType)></code> in v1).</p>
+          </section>
+
+          <section id="localbody">
+            <h3>LocalBody</h3>
+            <p>A single local body (palika) — metropolitan, sub-metropolitan, municipality, or rural municipality.</p>
+            <div class="api-signature">class LocalBody {
+  final String name;
+  final LocalBodyType type;
+  final String districtName;
+  final String provinceName;
+  final int? cbsCode;           // 5-digit PDDPP (NEW in v2)
+  final bool cbsCodeVerified;   // doubly-attested by CBS + Postal-2025 (NEW in v2)
+
+  // v2 Constructor
+  LocalBody({
+    required name, required type,
+    required districtName, required provinceName,
+    cbsCode, cbsCodeVerified = false
+  })
+
+  // Properties
+  String get typeName => type.fullName;
+  bool get isUrban => type == metropolitan || type == subMetropolitan || type == municipality;
+
+  // Serialization
+  Map<String, dynamic> toJson();
+  factory LocalBody.fromJson(Map<String, dynamic> json);
+}</div>
+            <p><strong>CBS Code Format (PDDPP):</strong> P=province (1-7), DD=district (01-77), PP=palika (01-99).<br>
+            Example: <code>30601</code> = Province 3 (Bagmati), District 06 (Kathmandu), Palika 01.</p>
+          </section>
+
+          <section id="provincestats">
+            <h3>ProvinceStats</h3>
+            <div class="api-signature">class ProvinceStats {
+  final int districts;
+  final int metro;
+  final int subMetro;
+  final int mun;
+  final int ruralMun;
+  final int total;
+  final int wards;
+  
+  Map<String, dynamic> toJson();
+}</div>
+          </section>
+
+          <section id="nationalstats">
+            <h3>NationalStats</h3>
+            <div class="api-signature">class NationalStats {
+  final int provinces;    // 7
+  final int districts;    // 77
+  final int metro;        // 6
+  final int subMetro;     // 11
+  final int municipalities; // 276
+  final int ruralMunicipalities; // 460
+  final int total;        // 753
+  final int wards;        // 6,743
+}</div>
+          </section>
+
+          <section id="searchresult">
+            <h3>SearchResult</h3>
+            <div class="api-signature">class SearchResult {
+  final List<Province> provinces;
+  final List<District> districts;
+  final List<LocalBody> localBodies;
+  
+  bool get isEmpty;
+  int get length;
+}</div>
+          </section>
+        </section>
+
+        <section id="nepaladminapi" class="api-section">
+          <h2>NepalAdminApi</h2>
+          <p>Static class providing all query methods.</p>
+
+          <section id="getallprovinces">
+            <h3>getAllProvinces <span class="api-method method-static">static</span></h3>
+            <div class="api-signature">List<Province> getAllProvinces()</div>
+            <p>Returns all 7 provinces.</p>
+          </section>
+
+          <section id="getprovincebyid">
+            <h3>getProvinceById <span class="api-method method-static">static</span></h3>
+            <div class="api-signature">Province? getProvinceById(String id)</div>
+            <p>Case-insensitive lookup by province ID (e.g., "bagmati") or ISO code (e.g., "NP-P3"). Returns <code>null</code> if not found.</p>
+          </section>
+
+          <section id="getalldistricts">
+            <h3>getAllDistricts <span class="api-method method-static">static</span></h3>
+            <div class="api-signature">List<District> getAllDistricts()</div>
+            <p>Returns all 77 districts, flattened across provinces.</p>
+          </section>
+
+          <section id="getdistrictsbyprovince">
+            <h3>getDistrictsByProvince <span class="api-method method-static">static</span></h3>
+            <div class="api-signature">List<District> getDistrictsByProvince(String provinceId)</div>
+            <p>Returns districts belonging to a province (by ID). Empty list if province unknown.</p>
+          </section>
+
+          <section id="getdistrictbyname">
+            <h3>getDistrictByName <span class="api-method method-static">static</span></h3>
+            <div class="api-signature">District? getDistrictByName(String name)</div>
+            <p>Case-insensitive lookup by district name (e.g., "chitwan"). Returns <code>null</code> if not found.</p>
+          </section>
+
+          <section id="getalllocalbodies">
+            <h3>getAllLocalBodies <span class="api-method method-static">static</span></h3>
+            <div class="api-signature">List<LocalBody> getAllLocalBodies()</div>
+            <p>Returns all 753 local bodies, flattened across all districts.</p>
+          </section>
+
+          <section id="getlocalbodiesbydistrict">
+            <h3>getLocalBodiesByDistrict <span class="api-method method-static">static</span></h3>
+            <div class="api-signature">List<LocalBody> getLocalBodiesByDistrict(String districtName)</div>
+            <p>Returns local bodies belonging to a district (case-insensitive). Empty list if district unknown.</p>
+          </section>
+
+          <section id="getnationalstats">
+            <h3>getNationalStats <span class="api-method method-static">static</span></h3>
+            <div class="api-signature">NationalStats getNationalStats()</div>
+            <p>Computes national totals live from the dataset.</p>
+          </section>
+
+          <section id="search">
+            <h3>search <span class="api-method method-static">static</span></h3>
+            <div class="api-signature">SearchResult search(String query)</div>
+            <p>Case-insensitive search across provinces, districts, and local bodies. Local body names are <strong>not unique</strong> nationwide — always use <code>LocalBody.districtName</code> and <code>LocalBody.provinceName</code> to disambiguate.</p>
+            <div class="api-example">
+              <strong>Example:</strong>
+              <div class="code-block">
+                <div class="code-header"><span>Dart</span></div>
+                <pre><code>final result = NepalAdminApi.search('Bharatpur');
+// result.localBodies contains matches with district/province context
+for (final lb in result.localBodies) {
+  print('${lb.name} - ${lb.districtName}, ${lb.provinceName}');
+}</code></pre>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section id="examples" class="api-section">
+          <h2>Usage Examples</h2>
+
+          <h3>Basic Lookups</h3>
+          <div class="code-block">
+            <div class="code-header"><span>Dart</span></div>
+            <pre><code>// All provinces
+final provinces = NepalAdminApi.getAllProvinces();
+
+// Province by ID (case-insensitive)
+final koshi = NepalAdminApi.getProvinceById('koshi');
+final byIso = NepalAdminApi.getProvinceById('NP-P1');
+
+// District by name
+final chitwan = NepalAdminApi.getDistrictByName('chitwan');
+print(chitwan?.localBodyCount); // 7
+
+// Local bodies in a district
+final bodies = NepalAdminApi.getLocalBodiesByDistrict('Kathmandu');
+for (final lb in bodies) {
+  print('${lb.name} (${lb.typeName})');
+}</code></pre>
+          </div>
+
+          <h3>Working with CBS Codes (v2)</h3>
+          <div class="code-block">
+            <div class="code-header"><span>Dart</span></div>
+            <pre><code>final bharatpur = NepalAdminApi.search('Bharatpur').localBodies.first;
+
+print('Name: ${bharatpur.name}');
+print('Type: ${bharatpur.typeName}');
+print('District: ${bharatpur.districtName}');
+print('Province: ${bharatpur.provinceName}');
+
+// CBS code (5-digit PDDPP)
+if (bharatpur.cbsCode != null) {
+  print('CBS Code: ${bharatpur.cbsCode}');
+  print('Verified: ${bharatpur.cbsCodeVerified}');
+}
+
+// Province ISO code
+final province = NepalAdminApi.getProvinceById('NP-P3');
+print('ISO: ${province?.isoCode}'); // NP-P3
+print('CBS: ${province?.cbsCode}'); // 3</code></pre>
+          </div>
+
+          <h3>JSON Serialization</h3>
+          <div class="code-block">
+            <div class="code-header"><span>Dart</span></div>
+            <pre><code>final lb = NepalAdminApi.search('Bharatpur').localBodies.first;
+
+// To JSON
+final json = lb.toJson();
+// {
+//   "name": "Bharatpur",
+//   "type": "M",
+//   "district": "Chitwan",
+//   "province": "Bagmati",
+//   "cbsCode": 30601,
+//   "cbsCodeVerified": true
+// }
+
+// From JSON
+final restored = LocalBody.fromJson(json);
+assert(restored.name == lb.name);
+assert(restored.type == lb.type);</code></pre>
+          </div>
+
+          <h3>National Statistics</h3>
+          <div class="code-block">
+            <div class="code-header"><span>Dart</span></div>
+            <pre><code>final stats = NepalAdminApi.getNationalStats();
+
+print('Provinces: ${stats.provinces}');        // 7
+print('Districts: ${stats.districts}');        // 77
+print('Metropolitan: ${stats.metro}');         // 6
+print('Sub-Metro: ${stats.subMetro}');         // 11
+print('Municipalities: ${stats.municipalities}'); // 276
+print('Rural Municipalities: ${stats.ruralMunicipalities}'); // 460
+print('Total: ${stats.total}');                // 753
+print('Wards: ${stats.wards}');                // 6743</code></pre>
+          </div>
+        </section>
+
+        <section id="migration" class="api-section">
+          <h2>Migration Guide: v1 → v2</h2>
+          <p>Version 2.0.0 introduces breaking changes to include official CBS/NSO codes.</p>
+
+          <h3>Breaking Changes</h3>
+          <table style="width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.875rem;">
+            <thead>
+              <tr style="border-bottom: 2px solid var(--color-border);">
+                <th style="padding: 12px; text-align: left;">Component</th>
+                <th style="padding: 12px; text-align: left;">v1</th>
+                <th style="padding: 12px; text-align: left;">v2</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid var(--color-border);">
+                <td style="padding: 12px;"><code>LocalBody</code></td>
+                <td style="padding: 12px;"><code>LocalBody({name, type, districtName, provinceName})</code></td>
+                <td style="padding: 12px;"><code>LocalBody({name, type, districtName, provinceName, cbsCode?, cbsCodeVerified?})</code></td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--color-border);">
+                <td style="padding: 12px;"><code>District</code></td>
+                <td style="padding: 12px;"><code>District({name, units: List<(String, LocalBodyType)>, provinceName?})</code></td>
+                <td style="padding: 12px;"><code>District({name, cbsCode?, units: List<LocalBody>, provinceName?})</code></td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--color-border);">
+                <td style="padding: 12px;"><code>Province</code></td>
+                <td style="padding: 12px;"><code>Province({id, name, stats, districts})</code></td>
+                <td style="padding: 12px;"><code>Province({id, name, cbsCode, isoCode, stats, districts})</code></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Migration Steps</h3>
+          <ol>
+            <li>Update <code>pubspec.yaml</code>: <code>nepal_admin_api: ^2.0.0</code></li>
+            <li>Run <code>dart pub get</code></li>
+            <li>Fix constructor calls:
+              <ul>
+                <li><code>LocalBody(...)</code> — add optional <code>cbsCode</code>, <code>cbsCodeVerified</code> params</li>
+                <li><code>District(...)</code> — pass <code>List<LocalBody></code> for units, optional <code>cbsCode</code></li>
+                <li><code>Province(...)</code> — add required <code>cbsCode</code> and <code>isoCode</code></li>
+              </ul>
+            </li>
+            <li>Use new fields: <code>lb.cbsCode</code>, <code>lb.cbsCodeVerified</code>, <code>d.cbsCode</code>, <code>p.isoCode</code></li>
+          </ol>
+
+          <h3>New Capabilities</h3>
+          <ul>
+            <li>Look up by ISO code: <code>getProvinceById('NP-P3')</code></li>
+            <li>Check CBS verification: <code>lb.cbsCodeVerified</code> (547/753 verified)</li>
+            <li>District codes: <code>district.cbsCode</code> (3-digit)</li>
+          </ul>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>nepal_admin_api v2.0.0 · <a href="https://github.com/namunaONE/Nepal-Local-Government-Data">GitHub</a> · <a href="https://pub.dev/packages/nepal_admin_api">pub.dev</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

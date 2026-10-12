@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="nepal_admin_api - Interactive Data Explorer for Nepal's Administrative Divisions">
+  <title>Data Explorer - nepal_admin_api</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav container">
+      <a href="index.html" class="logo">
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+        </svg>
+        <span>nepal_admin_api</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="api.html" class="nav-link">API Docs</a>
+        <a href="explorer.html" class="nav-link active">Data Explorer</a>
+        <a href="https://pub.dev/packages/nepal_admin_api" class="nav-link" target="_blank">pub.dev</a>
+        <a href="https://github.com/namunaONE/Nepal-Local-Government-Data" class="nav-link" target="_blank">GitHub</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <section style="margin-bottom: 32px;">
+        <h1>Data Explorer</h1>
+        <p style="color: var(--color-text-secondary); margin-bottom: 0;">Explore all 753 local bodies with CBS codes, filters, and search. Data sourced from official CBS/NSO codes (v2.0.0).</p>
+      </section>
+
+      <div class="explorer-toolbar">
+        <input type="search" id="search-input" placeholder="Search by name, district, or province..." aria-label="Search">
+        <select id="province-filter" aria-label="Filter by province">
+          <option value="">All Provinces</option>
+        </select>
+        <select id="district-filter" aria-label="Filter by district">
+          <option value="">All Districts</option>
+        </select>
+        <select id="type-filter" aria-label="Filter by type">
+          <option value="">All Types</option>
+        </select>
+      </div>
+
+      <div class="explorer-stats" aria-live="polite"></div>
+
+      <div style="overflow-x: auto;">
+        <table class="explorer-table" role="grid">
+          <thead>
+            <tr>
+              <th scope="col">Local Body</th>
+              <th scope="col">Type</th>
+              <th scope="col">District</th>
+              <th scope="col">Province</th>
+              <th scope="col">CBS Code (PDDPP)</th>
+              <th scope="col">Verification</th>
+              <th scope="col">ISO Province</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <nav class="pagination" aria-label="Pagination"></nav>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>nepal_admin_api v2.0.0 · Data from <a href="https://github.com/namunaONE/Nepal-Local-Government-Data">Nepal-Local-Government-Data</a> · CBS/NSO verified codes</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
