@@ -74,6 +74,18 @@ void main() {
       expect(NepalAdminApi.getProvinceById('atlantis'), isNull);
     });
 
+    test('getProvinceById also matches ISO codes', () {
+      expect(NepalAdminApi.getProvinceById('NP-P3')!.name, 'Bagmati');
+      expect(NepalAdminApi.getProvinceById('np-p1')!.name, 'Koshi');
+    });
+
+    test('getProvinceByIso / getProvinceByCbs', () {
+      expect(NepalAdminApi.getProvinceByIso('NP-P1')!.id, 'koshi');
+      expect(NepalAdminApi.getProvinceByIso('np-p7')!.id, 'sudurpashchim');
+      expect(NepalAdminApi.getProvinceByCbs(3)!.name, 'Bagmati');
+      expect(NepalAdminApi.getProvinceByCbs(99), isNull);
+    });
+
     test('getDistrictByName + local bodies of Chitwan', () {
       final chitwan = NepalAdminApi.getDistrictByName('chitwan')!;
       expect(chitwan.provinceName, 'Bagmati');
@@ -111,6 +123,73 @@ void main() {
       expect(restored.type, bharatpur.type);
       expect(restored.districtName, bharatpur.districtName);
       expect(restored.provinceName, bharatpur.provinceName);
+    });
+  });
+
+  group('v2.1 code-first lookups + helpers', () {
+    test('getDistrictByCbs finds Kathmandu (306)', () {
+      final ktm = NepalAdminApi.getDistrictByCbs(306)!;
+      expect(ktm.name, 'Kathmandu');
+      expect(ktm.provinceName, 'Bagmati');
+      expect(NepalAdminApi.getDistrictByCbs(999), isNull);
+    });
+
+    test('getLocalBodyByCbs finds Bharatpur (31304)', () {
+      final b = NepalAdminApi.getLocalBodyByCbs(31304)!;
+      expect(b.name, 'Bharatpur');
+      expect(b.districtName, 'Chitwan');
+      expect(b.cbsCodeVerified, isTrue);
+      expect(NepalAdminApi.getLocalBodyByCbs(99999), isNull);
+    });
+
+    test('getLocalBodiesByProvince accepts id or ISO', () {
+      final byId = NepalAdminApi.getLocalBodiesByProvince('bagmati');
+      final byIso = NepalAdminApi.getLocalBodiesByProvince('NP-P3');
+      expect(byId.length, byIso.length);
+      expect(byId, isNotEmpty);
+      expect(NepalAdminApi.getLocalBodiesByProvince('atlantis'), isEmpty);
+    });
+
+    test('getLocalBodiesByType + getVerifiedLocalBodies counts', () {
+      expect(
+          NepalAdminApi.getLocalBodiesByType(LocalBodyType.metropolitan).length,
+          6);
+      expect(
+          NepalAdminApi.getLocalBodiesByType(LocalBodyType.ruralMunicipality)
+              .length,
+          460);
+      final verified = NepalAdminApi.getVerifiedLocalBodies();
+      expect(verified.length, 547);
+      expect(verified.every((b) => b.cbsCodeVerified), isTrue);
+    });
+
+    test('fullPath + list extensions', () {
+      final bharatpur = NepalAdminApi.search('Bharatpur').localBodies.first;
+      expect(bharatpur.fullPath, 'Bharatpur, Chitwan, Bagmati');
+      expect(bharatpur.isUrban, isTrue);
+      expect(bharatpur.isRural, isFalse);
+
+      final bodies = NepalAdminApi.getAllLocalBodies();
+      final sorted = bodies.sortedByName;
+      expect(
+        sorted.first.name
+                .toLowerCase()
+                .compareTo(sorted.last.name.toLowerCase()) <=
+            0,
+        isTrue,
+        reason: 'sortedByName should order alphabetically',
+      );
+      expect(
+          bodies.whereUrban.length + bodies.whereRural.length, bodies.length);
+      expect(bodies.whereVerified.length, 547);
+      expect(bodies.ofType(LocalBodyType.metropolitan).length, 6);
+    });
+
+    test('search matches ISO codes and full paths', () {
+      expect(NepalAdminApi.search('NP-P3').provinces.map((p) => p.id),
+          contains('bagmati'));
+      expect(
+          NepalAdminApi.search('Bharatpur, Chitwan').localBodies, isNotEmpty);
     });
   });
 }

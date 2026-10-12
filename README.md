@@ -38,7 +38,7 @@ Pure Dart package. Zero runtime dependencies. Data ships in the box.
 
 ```yaml
 dependencies:
-  nepal_admin_api: ^2.0.0
+  nepal_admin_api: ^2.1.0
 ```
 
 ```bash
@@ -81,10 +81,10 @@ void main() {
   print('District: ${bharatpur.districtName}');
   print('Province: ${bharatpur.provinceName}');
   print('CBS Code: ${bharatpur.cbsCode} (verified: ${bharatpur.cbsCodeVerified})');
-  // Bharatpur (Municipality)
+  // Bharatpur (Metropolitan City)
   // District: Chitwan
   // Province: Bagmati
-  // CBS Code: 30601 (verified: true)
+  // CBS Code: 31304 (verified: true)
 
   // ──────────────────────────────────────────────
   // Search (handles duplicates via context)
@@ -130,15 +130,24 @@ Wards: ${stats.wards}                   // 6,743
 |--------|---------|-------------|
 | `getAllProvinces()` | `List<Province>` | All 7 provinces |
 | `getProvinceById(id)` | `Province?` | By ID (`'koshi'`) or ISO (`'NP-P3'`) |
+| `getProvinceByIso(iso)` | `Province?` | By ISO 3166-2 (`'NP-P3'`) |
+| `getProvinceByCbs(code)` | `Province?` | By CBS code (`3`) |
 | `getAllDistricts()` | `List<District>` | All 77 districts |
-| `getDistrictsByProvince(id)` | `List<District>` | Districts in a province |
+| `getDistrictsByProvince(id)` | `List<District>` | Districts in a province (id or ISO) |
 | `getDistrictByName(name)` | `District?` | Case-insensitive lookup |
+| `getDistrictByCbs(code)` | `District?` | By CBS code (`306` = Kathmandu) |
 | `getAllLocalBodies()` | `List<LocalBody>` | All 753 palikas |
 | `getLocalBodiesByDistrict(name)` | `List<LocalBody>` | Palikas in a district |
-| `search(query)` | `SearchResult` | Typed search across all levels |
+| `getLocalBodiesByProvince(id)` | `List<LocalBody>` | Palikas in a province (id or ISO) |
+| `getLocalBodiesByType(type)` | `List<LocalBody>` | Palikas of one type |
+| `getLocalBodyByCbs(code)` | `LocalBody?` | By CBS PDDPP (`31304` = Bharatpur) |
+| `getVerifiedLocalBodies()` | `List<LocalBody>` | Only CBS-verified (547/753) |
+| `search(query)` | `SearchResult` | Typed search (names, ISO, full paths) |
 | `getNationalStats()` | `NationalStats` | Computed national totals |
 
 **Models**: `Province`, `District`, `LocalBody`, `LocalBodyType`, `ProvinceStats`, `NationalStats`, `SearchResult`
+
+**Helpers**: `LocalBody.fullPath` (`'Bharatpur, Chitwan, Bagmati'`), `isUrban` / `isRural`, `LocalBodyListX` (`sortedByName`, `sortedByFullPath`, `whereUrban`, `whereRural`, `whereVerified`, `ofType`)
 
 👉 [Full API Documentation](https://namunaONE.github.io/Nepal-Local-Government-Data/api.html)
 
@@ -171,7 +180,7 @@ LocalBody(
   type: T, 
   districtName: 'D', 
   provinceName: 'P',
-  cbsCode: 30601,
+  cbsCode: 31304,
   cbsCodeVerified: true,
 )
 ```

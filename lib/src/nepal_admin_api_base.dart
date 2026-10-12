@@ -99,6 +99,13 @@ class LocalBody {
       type == LocalBodyType.subMetropolitan ||
       type == LocalBodyType.municipality;
 
+  /// Whether this is a rural municipality.
+  bool get isRural => type == LocalBodyType.ruralMunicipality;
+
+  /// Human-readable hierarchical path, e.g. 'Bharatpur, Chitwan, Bagmati'.
+  /// Useful for dropdowns, breadcrumbs and disambiguating duplicate names.
+  String get fullPath => '$name, $districtName, $provinceName';
+
   Map<String, dynamic> toJson() => <String, dynamic>{
         'name': name,
         'type': type.shortName,
@@ -154,6 +161,18 @@ class District {
   /// Number of local bodies in this district.
   int get localBodyCount => _units.length;
 
+  /// Local bodies of one [type] in this district.
+  List<LocalBody> localBodiesByType(LocalBodyType type) => [
+        for (final b in _units)
+          if (b.type == type) b
+      ];
+
+  /// Only CBS-verified local bodies in this district.
+  List<LocalBody> get verifiedLocalBodies => [
+        for (final b in _units)
+          if (b.cbsCodeVerified) b
+      ];
+
   Map<String, dynamic> toJson() => <String, dynamic>{
         'name': name,
         'province': _provinceName,
@@ -187,6 +206,15 @@ class Province {
       district.setProvinceContext(name);
     }
   }
+
+  /// All local bodies in this province, flattened across districts.
+  List<LocalBody> get localBodies => [
+        for (final d in districts) ...d.localBodies,
+      ];
+
+  /// Total local bodies in this province.
+  int get localBodyCount =>
+      districts.fold<int>(0, (sum, d) => sum + d.localBodyCount);
 }
 
 /// Computed national totals (matches the official federal structure).
@@ -238,10 +266,31 @@ class NepalAdminApi {
   static List<Province> getAllProvinces() => NepalData.provinces.toList();
 
   /// A province by id, e.g. 'bagmati' (case-insensitive).
+  ///
+  /// Also matches ISO 3166-2 codes, e.g. 'NP-P3' (case-insensitive),
+  /// so callers can use either identifier.
   static Province? getProvinceById(String id) {
     final lower = id.toLowerCase();
+    final upper = id.toUpperCase();
     for (final p in NepalData.provinces) {
-      if (p.id == lower) return p;
+      if (p.id == lower || p.isoCode.toUpperCase() == upper) return p;
+    }
+    return null;
+  }
+
+  /// A province by ISO 3166-2 code, e.g. 'NP-P3' (case-insensitive).
+  static Province? getProvinceByIso(String isoCode) {
+    final upper = isoCode.toUpperCase();
+    for (final p in NepalData.provinces) {
+      if (p.isoCode.toUpperCase() == upper) return p;
+    }
+    return null;
+  }
+
+  /// A province by CBS code (1–7), e.g. `3` for Bagmati.
+  static Province? getProvinceByCbs(int cbsCode) {
+    for (final p in NepalData.provinces) {
+      if (p.cbsCode == cbsCode) return p;
     }
     return null;
   }
@@ -252,6 +301,8 @@ class NepalAdminApi {
       ];
 
   /// Districts of one province (empty if the id is unknown).
+  ///
+  /// Accepts either a province id ('bagmati') or ISO code ('NP-P3').
   static List<District> getDistrictsByProvince(String provinceId) =>
       getProvinceById(provinceId)?.districts.toList() ?? const <District>[];
 
@@ -260,6 +311,14 @@ class NepalAdminApi {
     final lower = name.toLowerCase();
     for (final d in getAllDistricts()) {
       if (d.name.toLowerCase() == lower) return d;
+    }
+    return null;
+  }
+
+  /// A single district by CBS 3-digit code, e.g. `306` for Kathmandu.
+  static District? getDistrictByCbs(int cbsCode) {
+    for (final d in getAllDistricts()) {
+      if (d.cbsCode == cbsCode) return d;
     }
     return null;
   }
@@ -273,6 +332,36 @@ class NepalAdminApi {
   static List<LocalBody> getLocalBodiesByDistrict(String districtName) =>
       getDistrictByName(districtName)?.localBodies.toList() ??
       const <LocalBody>[];
+
+  /// Local bodies of one province (empty if the province is unknown).
+  ///
+  /// Accepts either a province id ('bagmati') or ISO code ('NP-P3').
+  static List<LocalBody> getLocalBodiesByProvince(String provinceId) =>
+      getProvinceById(provinceId)?.localBodies.toList() ?? const <LocalBody>[];
+
+  /// Local bodies of one [type] nationwide.
+  static List<LocalBody> getLocalBodiesByType(LocalBodyType type) => [
+        for (final b in getAllLocalBodies())
+          if (b.type == type) b,
+      ];
+
+  /// A single local body by CBS 5-digit code (PDDPP), e.g. `31304`
+  /// (Bharatpur: district 313 Chitwan + palika 04).
+  ///
+  /// Returns null when no verified entry carries the code. Unverified
+  /// entries (`cbsCode == null`) are never matched.
+  static LocalBody? getLocalBodyByCbs(int cbsCode) {
+    for (final b in getAllLocalBodies()) {
+      if (b.cbsCode == cbsCode) return b;
+    }
+    return null;
+  }
+
+  /// Only CBS-verified local bodies (547/753 in v2.0.0).
+  static List<LocalBody> getVerifiedLocalBodies() => [
+        for (final b in getAllLocalBodies())
+          if (b.cbsCodeVerified) b,
+      ];
 
   /// National totals, computed live from the dataset.
   static NationalStats getNationalStats() {
@@ -298,13 +387,15 @@ class NepalAdminApi {
   ///
   /// Local-body names are **not unique** nationwide — always use the
   /// [LocalBody.districtName] and [LocalBody.provinceName] of each match
-  /// to disambiguate.
+  /// to disambiguate. Prefer [LocalBody.fullPath] for display.
   static SearchResult search(String query) {
     final term = query.trim().toLowerCase();
     if (term.isEmpty) return const SearchResult();
 
     final provinces = NepalData.provinces
-        .where((p) => p.name.toLowerCase().contains(term))
+        .where((p) =>
+            p.name.toLowerCase().contains(term) ||
+            p.isoCode.toLowerCase().contains(term))
         .toList();
 
     final districts = getAllDistricts()
@@ -314,6 +405,7 @@ class NepalAdminApi {
     final localBodies = getAllLocalBodies()
         .where((lb) =>
             lb.name.toLowerCase().contains(term) ||
+            lb.fullPath.toLowerCase().contains(term) ||
             lb.type.fullName.toLowerCase().contains(term))
         .toList();
 
@@ -323,4 +415,45 @@ class NepalAdminApi {
       localBodies: localBodies,
     );
   }
+}
+
+/// Fluent helpers for working with palika lists.
+///
+/// Mirrors the patterns used by popular geo packages (`sortedByName`,
+/// `whereUrban`, …) so dropdowns and pickers stay one-liners.
+extension LocalBodyListX on List<LocalBody> {
+  /// Alphabetical by name (case-insensitive).
+  List<LocalBody> get sortedByName => [
+        ...this,
+      ]..sort((a, b) => a.name.toLowerCase().compareTo(b.name.toLowerCase()));
+
+  /// Alphabetical by `fullPath` (name, district, province).
+  List<LocalBody> get sortedByFullPath => [
+        ...this,
+      ]..sort((a, b) =>
+          a.fullPath.toLowerCase().compareTo(b.fullPath.toLowerCase()));
+
+  /// Only urban bodies (metro + sub-metro + municipality).
+  List<LocalBody> get whereUrban => [
+        for (final b in this)
+          if (b.isUrban) b
+      ];
+
+  /// Only rural municipalities.
+  List<LocalBody> get whereRural => [
+        for (final b in this)
+          if (b.isRural) b
+      ];
+
+  /// Only CBS-verified bodies.
+  List<LocalBody> get whereVerified => [
+        for (final b in this)
+          if (b.cbsCodeVerified) b,
+      ];
+
+  /// Only bodies of the given [type].
+  List<LocalBody> ofType(LocalBodyType type) => [
+        for (final b in this)
+          if (b.type == type) b,
+      ];
 }

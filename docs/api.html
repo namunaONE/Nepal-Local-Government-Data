@@ -74,6 +74,8 @@
               <li><a href="#getdistrictbyname">getDistrictByName</a></li>
               <li><a href="#getalllocalbodies">getAllLocalBodies</a></li>
               <li><a href="#getlocalbodiesbydistrict">getLocalBodiesByDistrict</a></li>
+              <li><a href="#v21-lookups">v2.1 code-first lookups</a></li>
+              <li><a href="#v21-helpers">v2.1 helpers + extensions</a></li>
               <li><a href="#getnationalstats">getNationalStats</a></li>
               <li><a href="#search">search</a></li>
             </ul>
@@ -181,8 +183,8 @@
   Map<String, dynamic> toJson();
   factory LocalBody.fromJson(Map<String, dynamic> json);
 }</div>
-            <p><strong>CBS Code Format (PDDPP):</strong> P=province (1-7), DD=district (01-77), PP=palika (01-99).<br>
-            Example: <code>30601</code> = Province 3 (Bagmati), District 06 (Kathmandu), Palika 01.</p>
+            <p><strong>CBS Code Format (PDDPP):</strong> 5 digits = 3-digit district code + 2-digit palika number.<br>
+            Example: <code>31304</code> = district 313 (Chitwan), palika 04 (Bharatpur). Kathmandu district is 306, so <code>30601</code> is a Kathmandu palika.</p>
           </section>
 
           <section id="provincestats">
@@ -240,7 +242,7 @@
           <section id="getprovincebyid">
             <h3>getProvinceById <span class="api-method method-static">static</span></h3>
             <div class="api-signature">Province? getProvinceById(String id)</div>
-            <p>Case-insensitive lookup by province ID (e.g., "bagmati") or ISO code (e.g., "NP-P3"). Returns <code>null</code> if not found.</p>
+            <p>Case-insensitive lookup by province ID (e.g., "bagmati") <strong>or</strong> ISO 3166-2 code (e.g., "NP-P3"). Returns <code>null</code> if not found. For explicit ISO lookup see <a href="#v21-lookups">getProvinceByIso</a>.</p>
           </section>
 
           <section id="getalldistricts">
@@ -271,6 +273,33 @@
             <h3>getLocalBodiesByDistrict <span class="api-method method-static">static</span></h3>
             <div class="api-signature">List<LocalBody> getLocalBodiesByDistrict(String districtName)</div>
             <p>Returns local bodies belonging to a district (case-insensitive). Empty list if district unknown.</p>
+          </section>
+
+          <section id="v21-lookups">
+            <h3>v2.1 code-first lookups <span class="api-method method-static">static</span></h3>
+            <div class="api-signature">Province? getProvinceByIso(String isoCode)
+Province? getProvinceByCbs(int cbsCode)
+District? getDistrictByCbs(int cbsCode)
+LocalBody? getLocalBodyByCbs(int cbsCode)
+List&lt;LocalBody&gt; getLocalBodiesByProvince(String provinceId)
+List&lt;LocalBody&gt; getLocalBodiesByType(LocalBodyType type)
+List&lt;LocalBody&gt; getVerifiedLocalBodies()</div>
+            <p><code>getProvinceByIso('NP-P3')</code> → Bagmati. <code>getDistrictByCbs(306)</code> → Kathmandu. <code>getLocalBodyByCbs(31304)</code> → Bharatpur (null when unverified). <code>getDistrictsByProvince</code> / <code>getLocalBodiesByProvince</code> accept an id or ISO code. <code>getVerifiedLocalBodies()</code> returns the 547 CBS-verified palikas.</p>
+          </section>
+
+          <section id="v21-helpers">
+            <h3>v2.1 helpers + extensions</h3>
+            <div class="api-signature">String LocalBody.fullPath // 'Bharatpur, Chitwan, Bagmati'
+bool LocalBody.isRural
+List&lt;LocalBody&gt; District.localBodiesByType(LocalBodyType type)
+List&lt;LocalBody&gt; District.verifiedLocalBodies
+List&lt;LocalBody&gt; Province.localBodies
+extension LocalBodyListX {
+  sortedByName, sortedByFullPath,
+  whereUrban, whereRural, whereVerified,
+  ofType(LocalBodyType type)
+}</div>
+            <p>Use <code>fullPath</code> for dropdown labels and breadcrumbs — it disambiguates duplicate names (e.g. four <code>Sunkoshi</code>s). <code>search()</code> also matches ISO codes and full paths since v2.1.</p>
           </section>
 
           <section id="getnationalstats">
@@ -355,7 +384,7 @@ final json = lb.toJson();
 //   "type": "M",
 //   "district": "Chitwan",
 //   "province": "Bagmati",
-//   "cbsCode": 30601,
+//   "cbsCode": 31304,
 //   "cbsCodeVerified": true
 // }
 

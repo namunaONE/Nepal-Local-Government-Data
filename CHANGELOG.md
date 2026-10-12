@@ -4,6 +4,22 @@ All notable changes to this package are documented in this file.
 The format follows [Keep a Changelog](https://keepachangelog.com/) and the
 package adheres to [Semantic Versioning](https://semver.org/).
 
+## 2.1.0 — 2026-10-12
+
+### Added
+- Code-first lookups: `getProvinceByIso`, `getProvinceByCbs`,
+  `getDistrictByCbs`, `getLocalBodyByCbs`, `getLocalBodiesByProvince`,
+  `getLocalBodiesByType`, `getVerifiedLocalBodies`.
+- `getProvinceById` now also matches ISO codes (`NP-P3`), so callers can
+  use either identifier. `getDistrictsByProvince` /
+  `getLocalBodiesByProvince` accept id or ISO.
+- `LocalBody.fullPath` (`Name, District, Province`), `isRural`,
+  `District.localBodiesByType` / `verifiedLocalBodies`,
+  `Province.localBodies` / `localBodyCount`.
+- `LocalBodyListX` extension: `sortedByName`, `sortedByFullPath`,
+  `whereUrban`, `whereRural`, `whereVerified`, `whereType`.
+- `search()` now also matches ISO codes and full paths.
+
 ## 2.0.0 — 2026-10-12
 
 ### Breaking
