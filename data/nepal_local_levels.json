@@ -24,211 +24,838 @@
         {
           "name": "Bhojpur",
           "localBodies": [
-            { "name": "Bhojpur", "type": "municipality" },
-            { "name": "Shadananda", "type": "municipality" },
-            { "name": "Aamchowk", "type": "ruralMunicipality" },
-            { "name": "Arun", "type": "ruralMunicipality" },
-            { "name": "Hatuwagadhi", "type": "ruralMunicipality" },
-            { "name": "Pauwa Dunma", "type": "ruralMunicipality" },
-            { "name": "Ramprasad Rai", "type": "ruralMunicipality" },
-            { "name": "Salpa Silichho", "type": "ruralMunicipality" },
-            { "name": "Tyamke Maiyum", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Bhojpur",
+              "type": "municipality",
+              "cbsCode": 10604,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Shadananda",
+              "type": "municipality"
+            },
+            {
+              "name": "Aamchowk",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Arun",
+              "type": "ruralMunicipality",
+              "cbsCode": 10605,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Hatuwagadhi",
+              "type": "ruralMunicipality",
+              "cbsCode": 10608,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Pauwa Dunma",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Ramprasad Rai",
+              "type": "ruralMunicipality",
+              "cbsCode": 10607,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Salpa Silichho",
+              "type": "ruralMunicipality",
+              "cbsCode": 10602,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Tyamke Maiyum",
+              "type": "ruralMunicipality",
+              "cbsCode": 10603,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 106
         },
         {
           "name": "Dhankuta",
           "localBodies": [
-            { "name": "Dhankuta", "type": "municipality" },
-            { "name": "Mahalaxmi", "type": "municipality" },
-            { "name": "Pakhribas", "type": "municipality" },
-            { "name": "Chaubise", "type": "ruralMunicipality" },
-            { "name": "Chhathar Jorpati", "type": "ruralMunicipality" },
-            { "name": "Sahidbhumi", "type": "ruralMunicipality" },
-            { "name": "Sangurigadhi", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Dhankuta",
+              "type": "municipality",
+              "cbsCode": 10704,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Mahalaxmi",
+              "type": "municipality",
+              "cbsCode": 10701,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Pakhribas",
+              "type": "municipality",
+              "cbsCode": 10702,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Chaubise",
+              "type": "ruralMunicipality",
+              "cbsCode": 10707,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Chhathar Jorpati",
+              "type": "ruralMunicipality",
+              "cbsCode": 10703,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Sahidbhumi",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Sangurigadhi",
+              "type": "ruralMunicipality",
+              "cbsCode": 10706,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 107
         },
         {
           "name": "Ilam",
           "localBodies": [
-            { "name": "Deumai", "type": "municipality" },
-            { "name": "Ilam", "type": "municipality" },
-            { "name": "Mai", "type": "municipality" },
-            { "name": "Suryodaya", "type": "municipality" },
-            { "name": "Chulachuli", "type": "ruralMunicipality" },
-            { "name": "Fakfokathum", "type": "ruralMunicipality" },
-            { "name": "Mai Jogmai", "type": "ruralMunicipality" },
-            { "name": "Mangsebung", "type": "ruralMunicipality" },
-            { "name": "Rong", "type": "ruralMunicipality" },
-            { "name": "Sandakpur", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Deumai",
+              "type": "municipality",
+              "cbsCode": 11004,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Ilam",
+              "type": "municipality",
+              "cbsCode": 11003,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Mai",
+              "type": "municipality",
+              "cbsCode": 11008,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Suryodaya",
+              "type": "municipality",
+              "cbsCode": 11009,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Chulachuli",
+              "type": "ruralMunicipality",
+              "cbsCode": 11007,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Fakfokathum",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Mai Jogmai",
+              "type": "ruralMunicipality",
+              "cbsCode": 11001,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Mangsebung",
+              "type": "ruralMunicipality",
+              "cbsCode": 11006,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Rong",
+              "type": "ruralMunicipality",
+              "cbsCode": 11010,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Sandakpur",
+              "type": "ruralMunicipality",
+              "cbsCode": 11002,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 110
         },
         {
           "name": "Jhapa",
           "localBodies": [
-            { "name": "Arjundhara", "type": "municipality" },
-            { "name": "Bhadrapur", "type": "municipality" },
-            { "name": "Birtamod", "type": "municipality" },
-            { "name": "Damak", "type": "municipality" },
-            { "name": "Gauradaha", "type": "municipality" },
-            { "name": "Kankai", "type": "municipality" },
-            { "name": "Mechinagar", "type": "municipality" },
-            { "name": "Shivasatakshi", "type": "municipality" },
-            { "name": "Barhadashi", "type": "ruralMunicipality" },
-            { "name": "Buddhashanti", "type": "ruralMunicipality" },
-            { "name": "Gauriganj", "type": "ruralMunicipality" },
-            { "name": "Haldibari", "type": "ruralMunicipality" },
-            { "name": "Jhapa", "type": "ruralMunicipality" },
-            { "name": "Kachanakawal", "type": "ruralMunicipality" },
-            { "name": "Kamal", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Arjundhara",
+              "type": "municipality",
+              "cbsCode": 11103,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Bhadrapur",
+              "type": "municipality",
+              "cbsCode": 11114,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Birtamod",
+              "type": "municipality",
+              "cbsCode": 11112,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Damak",
+              "type": "municipality",
+              "cbsCode": 11107,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Gauradaha",
+              "type": "municipality",
+              "cbsCode": 11108,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Kankai",
+              "type": "municipality",
+              "cbsCode": 11104,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Mechinagar",
+              "type": "municipality",
+              "cbsCode": 11101,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Shivasatakshi",
+              "type": "municipality",
+              "cbsCode": 11105,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Barhadashi",
+              "type": "ruralMunicipality",
+              "cbsCode": 11111,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Buddhashanti",
+              "type": "ruralMunicipality",
+              "cbsCode": 11102,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Gauriganj",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Haldibari",
+              "type": "ruralMunicipality",
+              "cbsCode": 11113,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Jhapa",
+              "type": "ruralMunicipality",
+              "cbsCode": 11110,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Kachanakawal",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Kamal",
+              "type": "ruralMunicipality",
+              "cbsCode": 11106,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 111
         },
         {
           "name": "Khotang",
           "localBodies": [
-            { "name": "Diktel Rupakot Majhuwagadhi", "type": "municipality" },
-            { "name": "Halesi Tuwachung", "type": "municipality" },
-            { "name": "Aiselukharka", "type": "ruralMunicipality" },
-            { "name": "Baraha Pokhari", "type": "ruralMunicipality" },
-            { "name": "Diprung", "type": "ruralMunicipality" },
-            { "name": "Jante Dhunga", "type": "ruralMunicipality" },
-            { "name": "Kepilasgadhi", "type": "ruralMunicipality" },
-            { "name": "Khotehang", "type": "ruralMunicipality" },
-            { "name": "Rawabesi", "type": "ruralMunicipality" },
-            { "name": "Sakela", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Diktel Rupakot Majhuwagadhi",
+              "type": "municipality"
+            },
+            {
+              "name": "Halesi Tuwachung",
+              "type": "municipality",
+              "cbsCode": 10504,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Aiselukharka",
+              "type": "ruralMunicipality",
+              "cbsCode": 10502,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Baraha Pokhari",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Diprung",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Jante Dhunga",
+              "type": "ruralMunicipality",
+              "cbsCode": 10509,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Kepilasgadhi",
+              "type": "ruralMunicipality",
+              "cbsCode": 10501,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Khotehang",
+              "type": "ruralMunicipality",
+              "cbsCode": 10508,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Rawabesi",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Sakela",
+              "type": "ruralMunicipality",
+              "cbsCode": 10506,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 105
         },
         {
           "name": "Morang",
           "localBodies": [
-            { "name": "Biratnagar", "type": "metropolitan" },
-            { "name": "Belbari", "type": "municipality" },
-            { "name": "Letang", "type": "municipality" },
-            { "name": "Pathari Shanishchare", "type": "municipality" },
-            { "name": "Rangeli", "type": "municipality" },
-            { "name": "Ratuwamai", "type": "municipality" },
-            { "name": "Sundarharaicha", "type": "municipality" },
-            { "name": "Sunwarshi", "type": "municipality" },
-            { "name": "Urlabari", "type": "municipality" },
-            { "name": "Budhiganga", "type": "ruralMunicipality" },
-            { "name": "Dhanapalthan", "type": "ruralMunicipality" },
-            { "name": "Gramthan", "type": "ruralMunicipality" },
-            { "name": "Jahada", "type": "ruralMunicipality" },
-            { "name": "Kanepokhari", "type": "ruralMunicipality" },
-            { "name": "Katahari", "type": "ruralMunicipality" },
-            { "name": "Kerabari", "type": "ruralMunicipality" },
-            { "name": "Miklajung", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Biratnagar",
+              "type": "metropolitan",
+              "cbsCode": 11214,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Belbari",
+              "type": "municipality",
+              "cbsCode": 11205,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Letang",
+              "type": "municipality",
+              "cbsCode": 11202,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Pathari Shanishchare",
+              "type": "municipality"
+            },
+            {
+              "name": "Rangeli",
+              "type": "municipality",
+              "cbsCode": 11211,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Ratuwamai",
+              "type": "municipality",
+              "cbsCode": 11209,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Sundarharaicha",
+              "type": "municipality",
+              "cbsCode": 11204,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Sunwarshi",
+              "type": "municipality"
+            },
+            {
+              "name": "Urlabari",
+              "type": "municipality",
+              "cbsCode": 11208,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Budhiganga",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Dhanapalthan",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Gramthan",
+              "type": "ruralMunicipality",
+              "cbsCode": 11212,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Jahada",
+              "type": "ruralMunicipality",
+              "cbsCode": 11217,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Kanepokhari",
+              "type": "ruralMunicipality",
+              "cbsCode": 11206,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Katahari",
+              "type": "ruralMunicipality",
+              "cbsCode": 11215,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Kerabari",
+              "type": "ruralMunicipality",
+              "cbsCode": 11203,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Miklajung",
+              "type": "ruralMunicipality",
+              "cbsCode": 11201,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 112
         },
         {
           "name": "Okhaldhunga",
           "localBodies": [
-            { "name": "Siddhicharan", "type": "municipality" },
-            { "name": "Champadevi", "type": "ruralMunicipality" },
-            { "name": "Chishankhu Gadhi", "type": "ruralMunicipality" },
-            { "name": "Khiji Demba", "type": "ruralMunicipality" },
-            { "name": "Likhu", "type": "ruralMunicipality" },
-            { "name": "Manebhanjyang", "type": "ruralMunicipality" },
-            { "name": "Molung", "type": "ruralMunicipality" },
-            { "name": "Sunkoshi", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Siddhicharan",
+              "type": "municipality",
+              "cbsCode": 10402,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Champadevi",
+              "type": "ruralMunicipality",
+              "cbsCode": 10406,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Chishankhu Gadhi",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Khiji Demba",
+              "type": "ruralMunicipality",
+              "cbsCode": 10404,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Likhu",
+              "type": "ruralMunicipality",
+              "cbsCode": 10405,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Manebhanjyang",
+              "type": "ruralMunicipality",
+              "cbsCode": 10408,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Molung",
+              "type": "ruralMunicipality",
+              "cbsCode": 10403,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Sunkoshi",
+              "type": "ruralMunicipality",
+              "cbsCode": 10407,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 104
         },
         {
           "name": "Panchthar",
           "localBodies": [
-            { "name": "Phidim", "type": "municipality" },
-            { "name": "Falelung", "type": "ruralMunicipality" },
-            { "name": "Falgunanda", "type": "ruralMunicipality" },
-            { "name": "Hilihan", "type": "ruralMunicipality" },
-            { "name": "Kummayak", "type": "ruralMunicipality" },
-            { "name": "Miklajung", "type": "ruralMunicipality" },
-            { "name": "Tumbewa", "type": "ruralMunicipality" },
-            { "name": "Yangbarak", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Phidim",
+              "type": "municipality",
+              "cbsCode": 10904,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Falelung",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Falgunanda",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Hilihan",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Kummayak",
+              "type": "ruralMunicipality",
+              "cbsCode": 10906,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Miklajung",
+              "type": "ruralMunicipality",
+              "cbsCode": 10908,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Tumbewa",
+              "type": "ruralMunicipality",
+              "cbsCode": 10907,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Yangbarak",
+              "type": "ruralMunicipality"
+            }
+          ],
+          "cbsCode": 109
         },
         {
           "name": "Sankhuwasabha",
           "localBodies": [
-            { "name": "Chainapur", "type": "municipality" },
-            { "name": "Dharmadevi", "type": "municipality" },
-            { "name": "Khandabari", "type": "municipality" },
-            { "name": "Madi", "type": "municipality" },
-            { "name": "Panchakhapan", "type": "municipality" },
-            { "name": "Bhotkhola", "type": "ruralMunicipality" },
-            { "name": "Chichila", "type": "ruralMunicipality" },
-            { "name": "Makalu", "type": "ruralMunicipality" },
-            { "name": "Sabhapokhari", "type": "ruralMunicipality" },
-            { "name": "Silichong", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Chainapur",
+              "type": "municipality"
+            },
+            {
+              "name": "Dharmadevi",
+              "type": "municipality",
+              "cbsCode": 10210,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Khandabari",
+              "type": "municipality"
+            },
+            {
+              "name": "Madi",
+              "type": "municipality",
+              "cbsCode": 10209,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Panchakhapan",
+              "type": "municipality"
+            },
+            {
+              "name": "Bhotkhola",
+              "type": "ruralMunicipality",
+              "cbsCode": 10201,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Chichila",
+              "type": "ruralMunicipality",
+              "cbsCode": 10204,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Makalu",
+              "type": "ruralMunicipality",
+              "cbsCode": 10202,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Sabhapokhari",
+              "type": "ruralMunicipality",
+              "cbsCode": 10205,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Silichong",
+              "type": "ruralMunicipality",
+              "cbsCode": 10203,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 102
         },
         {
           "name": "Solukhumbu",
           "localBodies": [
-            { "name": "Solu Dudhkunda", "type": "municipality" },
-            { "name": "Khumbu Pasanglhamu", "type": "ruralMunicipality" },
-            { "name": "Likhu Pike", "type": "ruralMunicipality" },
-            { "name": "Mahakulung", "type": "ruralMunicipality" },
-            { "name": "Mapya Dudhkoshi", "type": "ruralMunicipality" },
-            { "name": "Necha Salyan", "type": "ruralMunicipality" },
-            { "name": "Sotang", "type": "ruralMunicipality" },
-            { "name": "Thulung Dudhkoshi", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Solu Dudhkunda",
+              "type": "municipality"
+            },
+            {
+              "name": "Khumbu Pasanglhamu",
+              "type": "ruralMunicipality",
+              "cbsCode": 10301,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Likhu Pike",
+              "type": "ruralMunicipality",
+              "cbsCode": 10308,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Mahakulung",
+              "type": "ruralMunicipality",
+              "cbsCode": 10302,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Mapya Dudhkoshi",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Necha Salyan",
+              "type": "ruralMunicipality",
+              "cbsCode": 10306,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Sotang",
+              "type": "ruralMunicipality",
+              "cbsCode": 10303,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Thulung Dudhkoshi",
+              "type": "ruralMunicipality"
+            }
+          ],
+          "cbsCode": 103
         },
         {
           "name": "Sunsari",
           "localBodies": [
-            { "name": "Dharan", "type": "subMetropolitan" },
-            { "name": "Itahari", "type": "subMetropolitan" },
-            { "name": "Baraha", "type": "municipality" },
-            { "name": "Duhabi", "type": "municipality" },
-            { "name": "Inaruwa", "type": "municipality" },
-            { "name": "Ramdhuni", "type": "municipality" },
-            { "name": "Barju", "type": "ruralMunicipality" },
-            { "name": "Bhokraha", "type": "ruralMunicipality" },
-            { "name": "Dewangunj", "type": "ruralMunicipality" },
-            { "name": "Gadhi", "type": "ruralMunicipality" },
-            { "name": "Harinagara", "type": "ruralMunicipality" },
-            { "name": "Koshi", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Dharan",
+              "type": "subMetropolitan",
+              "cbsCode": 11301,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Itahari",
+              "type": "subMetropolitan",
+              "cbsCode": 11306,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Baraha",
+              "type": "municipality"
+            },
+            {
+              "name": "Duhabi",
+              "type": "municipality",
+              "cbsCode": 11307,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Inaruwa",
+              "type": "municipality",
+              "cbsCode": 11309,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Ramdhuni",
+              "type": "municipality",
+              "cbsCode": 11305,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Barju",
+              "type": "ruralMunicipality",
+              "cbsCode": 11312,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Bhokraha",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Dewangunj",
+              "type": "ruralMunicipality",
+              "cbsCode": 11311,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Gadhi",
+              "type": "ruralMunicipality",
+              "cbsCode": 11308,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Harinagara",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Koshi",
+              "type": "ruralMunicipality",
+              "cbsCode": 11303,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 113
         },
         {
           "name": "Taplejung",
           "localBodies": [
-            { "name": "Phungling", "type": "municipality" },
-            { "name": "Aatharai Tribeni", "type": "ruralMunicipality" },
-            { "name": "Maiwakhola", "type": "ruralMunicipality" },
-            { "name": "Meringden", "type": "ruralMunicipality" },
-            { "name": "Mikwakhola", "type": "ruralMunicipality" },
-            { "name": "Phaktanglung", "type": "ruralMunicipality" },
-            { "name": "Sidingba", "type": "ruralMunicipality" },
-            { "name": "Sirijangha", "type": "ruralMunicipality" },
-            { "name": "Yangwarak", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Phungling",
+              "type": "municipality",
+              "cbsCode": 10106,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Aatharai Tribeni",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Maiwakhola",
+              "type": "ruralMunicipality",
+              "cbsCode": 10104,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Meringden",
+              "type": "ruralMunicipality",
+              "cbsCode": 10103,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Mikwakhola",
+              "type": "ruralMunicipality",
+              "cbsCode": 10102,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Phaktanglung",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Sidingba",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Sirijangha",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Yangwarak",
+              "type": "ruralMunicipality"
+            }
+          ],
+          "cbsCode": 101
         },
         {
           "name": "Terhathum",
           "localBodies": [
-            { "name": "Laligurans", "type": "municipality" },
-            { "name": "Myanglung", "type": "municipality" },
-            { "name": "Aatharai", "type": "ruralMunicipality" },
-            { "name": "Chhathar", "type": "ruralMunicipality" },
-            { "name": "Menchhyayem", "type": "ruralMunicipality" },
-            { "name": "Phedap", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Laligurans",
+              "type": "municipality",
+              "cbsCode": 10805,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Myanglung",
+              "type": "municipality",
+              "cbsCode": 10804,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Aatharai",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Chhathar",
+              "type": "ruralMunicipality",
+              "cbsCode": 10806,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Menchhyayem",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Phedap",
+              "type": "ruralMunicipality",
+              "cbsCode": 10802,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 108
         },
         {
           "name": "Udayapur",
           "localBodies": [
-            { "name": "Belaka", "type": "municipality" },
-            { "name": "Chaudandigadhi", "type": "municipality" },
-            { "name": "Katari", "type": "municipality" },
-            { "name": "Triyuga", "type": "municipality" },
-            { "name": "Rautamai", "type": "ruralMunicipality" },
-            { "name": "Sunkoshi", "type": "ruralMunicipality" },
-            { "name": "Tapli", "type": "ruralMunicipality" },
-            { "name": "Udayapurgadhi", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Belaka",
+              "type": "municipality",
+              "cbsCode": 11401,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Chaudandigadhi",
+              "type": "municipality",
+              "cbsCode": 11402,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Katari",
+              "type": "municipality",
+              "cbsCode": 11407,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Triyuga",
+              "type": "municipality",
+              "cbsCode": 11403,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Rautamai",
+              "type": "ruralMunicipality",
+              "cbsCode": 11404,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Sunkoshi",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Tapli",
+              "type": "ruralMunicipality",
+              "cbsCode": 11406,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Udayapurgadhi",
+              "type": "ruralMunicipality",
+              "cbsCode": 11408,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 114
         }
-      ]
+      ],
+      "cbsCode": 1,
+      "isoCode": "NP-P1"
     },
     {
       "id": "madhesh",
@@ -238,180 +865,802 @@
         {
           "name": "Bara",
           "localBodies": [
-            { "name": "Jitpur Simara", "type": "subMetropolitan" },
-            { "name": "Kalaiya", "type": "subMetropolitan" },
-            { "name": "Kolhabi", "type": "municipality" },
-            { "name": "Mahagadhimai", "type": "municipality" },
-            { "name": "Nijagadh", "type": "municipality" },
-            { "name": "Pacharauta", "type": "municipality" },
-            { "name": "Simroungadh", "type": "municipality" },
-            { "name": "Aadarsha Kotwal", "type": "ruralMunicipality" },
-            { "name": "Baragadhi", "type": "ruralMunicipality" },
-            { "name": "Bishrampur", "type": "ruralMunicipality" },
-            { "name": "Devtal", "type": "ruralMunicipality" },
-            { "name": "Karaiyamai", "type": "ruralMunicipality" },
-            { "name": "Parawanipur", "type": "ruralMunicipality" },
-            { "name": "Pheta", "type": "ruralMunicipality" },
-            { "name": "Prasauni", "type": "ruralMunicipality" },
-            { "name": "Subarna", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Jitpur Simara",
+              "type": "subMetropolitan"
+            },
+            {
+              "name": "Kalaiya",
+              "type": "subMetropolitan",
+              "cbsCode": 20708,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Kolhabi",
+              "type": "municipality",
+              "cbsCode": 20702,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Mahagadhimai",
+              "type": "municipality",
+              "cbsCode": 20714,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Nijagadh",
+              "type": "municipality"
+            },
+            {
+              "name": "Pacharauta",
+              "type": "municipality",
+              "cbsCode": 20713,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Simroungadh",
+              "type": "municipality"
+            },
+            {
+              "name": "Aadarsha Kotwal",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Baragadhi",
+              "type": "ruralMunicipality",
+              "cbsCode": 20710,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Bishrampur",
+              "type": "ruralMunicipality",
+              "cbsCode": 20706,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Devtal",
+              "type": "ruralMunicipality",
+              "cbsCode": 20715,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Karaiyamai",
+              "type": "ruralMunicipality",
+              "cbsCode": 20709,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Parawanipur",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Pheta",
+              "type": "ruralMunicipality",
+              "cbsCode": 20707,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Prasauni",
+              "type": "ruralMunicipality",
+              "cbsCode": 20705,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Subarna",
+              "type": "ruralMunicipality"
+            }
+          ],
+          "cbsCode": 207
         },
         {
           "name": "Dhanusha",
           "localBodies": [
-            { "name": "Janakpurdham", "type": "subMetropolitan" },
-            { "name": "Bideha", "type": "municipality" },
-            { "name": "Chhireshwornath", "type": "municipality" },
-            { "name": "Dhanushadham", "type": "municipality" },
-            { "name": "Ganeshman Charnath", "type": "municipality" },
-            { "name": "Hansapur", "type": "municipality" },
-            { "name": "Kamala", "type": "municipality" },
-            { "name": "Mithila", "type": "municipality" },
-            { "name": "Mithila Bihari", "type": "municipality" },
-            { "name": "Nagarain", "type": "municipality" },
-            { "name": "Sabaila", "type": "municipality" },
-            { "name": "Shahidnagar", "type": "municipality" },
-            { "name": "Aurahi", "type": "ruralMunicipality" },
-            { "name": "Bateshwor", "type": "ruralMunicipality" },
-            { "name": "Dhanauji", "type": "ruralMunicipality" },
-            { "name": "Janak Nandini", "type": "ruralMunicipality" },
-            { "name": "Laxminiya", "type": "ruralMunicipality" },
-            { "name": "Mukhiyapatti Musaharmiya", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Janakpurdham",
+              "type": "subMetropolitan"
+            },
+            {
+              "name": "Bideha",
+              "type": "municipality",
+              "cbsCode": 20313,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Chhireshwornath",
+              "type": "municipality"
+            },
+            {
+              "name": "Dhanushadham",
+              "type": "municipality",
+              "cbsCode": 20302,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Ganeshman Charnath",
+              "type": "municipality",
+              "cbsCode": 20301,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Hansapur",
+              "type": "municipality",
+              "cbsCode": 20308,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Kamala",
+              "type": "municipality",
+              "cbsCode": 20311,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Mithila",
+              "type": "municipality",
+              "cbsCode": 20303,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Mithila Bihari",
+              "type": "municipality",
+              "cbsCode": 20307,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Nagarain",
+              "type": "municipality",
+              "cbsCode": 20317,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Sabaila",
+              "type": "municipality",
+              "cbsCode": 20309,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Shahidnagar",
+              "type": "municipality"
+            },
+            {
+              "name": "Aurahi",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Bateshwor",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Dhanauji",
+              "type": "ruralMunicipality",
+              "cbsCode": 20316,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Janak Nandini",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Laxminiya",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Mukhiyapatti Musaharmiya",
+              "type": "ruralMunicipality"
+            }
+          ],
+          "cbsCode": 203
         },
         {
           "name": "Mahottari",
           "localBodies": [
-            { "name": "Aurahi", "type": "municipality" },
-            { "name": "Balawa", "type": "municipality" },
-            { "name": "Bardibas", "type": "municipality" },
-            { "name": "Bhangaha", "type": "municipality" },
-            { "name": "Gaushala", "type": "municipality" },
-            { "name": "Jaleshwor", "type": "municipality" },
-            { "name": "Loharpatti", "type": "municipality" },
-            { "name": "Manara Shisawa", "type": "municipality" },
-            { "name": "Matihani", "type": "municipality" },
-            { "name": "Ram Gopalpur", "type": "municipality" },
-            { "name": "Ekadara", "type": "ruralMunicipality" },
-            { "name": "Mahottari", "type": "ruralMunicipality" },
-            { "name": "Pipara", "type": "ruralMunicipality" },
-            { "name": "Samsi", "type": "ruralMunicipality" },
-            { "name": "Sonama", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Aurahi",
+              "type": "municipality"
+            },
+            {
+              "name": "Balawa",
+              "type": "municipality",
+              "cbsCode": 20407,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Bardibas",
+              "type": "municipality",
+              "cbsCode": 20401,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Bhangaha",
+              "type": "municipality",
+              "cbsCode": 20405,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Gaushala",
+              "type": "municipality",
+              "cbsCode": 20402,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Jaleshwor",
+              "type": "municipality"
+            },
+            {
+              "name": "Loharpatti",
+              "type": "municipality",
+              "cbsCode": 20406,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Manara Shisawa",
+              "type": "municipality"
+            },
+            {
+              "name": "Matihani",
+              "type": "municipality",
+              "cbsCode": 20414,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Ram Gopalpur",
+              "type": "municipality",
+              "cbsCode": 20408,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Ekadara",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Mahottari",
+              "type": "ruralMunicipality",
+              "cbsCode": 20412,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Pipara",
+              "type": "ruralMunicipality",
+              "cbsCode": 20413,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Samsi",
+              "type": "ruralMunicipality",
+              "cbsCode": 20409,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Sonama",
+              "type": "ruralMunicipality",
+              "cbsCode": 20403,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 204
         },
         {
           "name": "Parsa",
           "localBodies": [
-            { "name": "Birgunj", "type": "metropolitan" },
-            { "name": "Bahudarmai", "type": "municipality" },
-            { "name": "Parsagadhi", "type": "municipality" },
-            { "name": "Pokhariya", "type": "municipality" },
-            { "name": "Bindabasini", "type": "ruralMunicipality" },
-            { "name": "Chhipaharmai", "type": "ruralMunicipality" },
-            { "name": "Dhobini", "type": "ruralMunicipality" },
-            { "name": "Jagarnathpur", "type": "ruralMunicipality" },
-            { "name": "Jirabhawani", "type": "ruralMunicipality" },
-            { "name": "Kalikamai", "type": "ruralMunicipality" },
-            { "name": "Pakaha Mainpur", "type": "ruralMunicipality" },
-            { "name": "Paterwa Sugauli", "type": "ruralMunicipality" },
-            { "name": "Sakhuwa Prasauni", "type": "ruralMunicipality" },
-            { "name": "Thori", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Birgunj",
+              "type": "metropolitan",
+              "cbsCode": 20807,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Bahudarmai",
+              "type": "municipality",
+              "cbsCode": 20808,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Parsagadhi",
+              "type": "municipality",
+              "cbsCode": 20806,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Pokhariya",
+              "type": "municipality",
+              "cbsCode": 20809,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Bindabasini",
+              "type": "ruralMunicipality",
+              "cbsCode": 20814,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Chhipaharmai",
+              "type": "ruralMunicipality",
+              "cbsCode": 20812,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Dhobini",
+              "type": "ruralMunicipality",
+              "cbsCode": 20811,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Jagarnathpur",
+              "type": "ruralMunicipality",
+              "cbsCode": 20803,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Jirabhawani",
+              "type": "ruralMunicipality",
+              "cbsCode": 20802,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Kalikamai",
+              "type": "ruralMunicipality",
+              "cbsCode": 20810,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Pakaha Mainpur",
+              "type": "ruralMunicipality",
+              "cbsCode": 20813,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Paterwa Sugauli",
+              "type": "ruralMunicipality",
+              "cbsCode": 20804,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Sakhuwa Prasauni",
+              "type": "ruralMunicipality",
+              "cbsCode": 20805,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Thori",
+              "type": "ruralMunicipality",
+              "cbsCode": 20801,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 208
         },
         {
           "name": "Rautahat",
           "localBodies": [
-            { "name": "Boudhimai", "type": "municipality" },
-            { "name": "Brindaban", "type": "municipality" },
-            { "name": "Chandrapur", "type": "municipality" },
-            { "name": "Dewahi Gonahi", "type": "municipality" },
-            { "name": "Gadhimai", "type": "municipality" },
-            { "name": "Garuda", "type": "municipality" },
-            { "name": "Gaur", "type": "municipality" },
-            { "name": "Gujara", "type": "municipality" },
-            { "name": "Ishanath", "type": "municipality" },
-            { "name": "Katahariya", "type": "municipality" },
-            { "name": "Madhav Narayan", "type": "municipality" },
-            { "name": "Maulapur", "type": "municipality" },
-            { "name": "Paroha", "type": "municipality" },
-            { "name": "Phatuwa Bijayapur", "type": "municipality" },
-            { "name": "Rajdevi", "type": "municipality" },
-            { "name": "Rajpur", "type": "municipality" },
-            { "name": "Durga Bhagawati", "type": "ruralMunicipality" },
-            { "name": "Yamunamai", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Boudhimai",
+              "type": "municipality"
+            },
+            {
+              "name": "Brindaban",
+              "type": "municipality",
+              "cbsCode": 20605,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Chandrapur",
+              "type": "municipality",
+              "cbsCode": 20601,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Dewahi Gonahi",
+              "type": "municipality",
+              "cbsCode": 20609,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Gadhimai",
+              "type": "municipality",
+              "cbsCode": 20606,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Garuda",
+              "type": "municipality"
+            },
+            {
+              "name": "Gaur",
+              "type": "municipality",
+              "cbsCode": 20617,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Gujara",
+              "type": "municipality",
+              "cbsCode": 20602,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Ishanath",
+              "type": "municipality",
+              "cbsCode": 20618,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Katahariya",
+              "type": "municipality",
+              "cbsCode": 20604,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Madhav Narayan",
+              "type": "municipality",
+              "cbsCode": 20607,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Maulapur",
+              "type": "municipality",
+              "cbsCode": 20610,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Paroha",
+              "type": "municipality",
+              "cbsCode": 20612,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Phatuwa Bijayapur",
+              "type": "municipality",
+              "cbsCode": 20603,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Rajdevi",
+              "type": "municipality",
+              "cbsCode": 20616,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Rajpur",
+              "type": "municipality",
+              "cbsCode": 20613,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Durga Bhagawati",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Yamunamai",
+              "type": "ruralMunicipality",
+              "cbsCode": 20614,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 206
         },
         {
           "name": "Saptari",
           "localBodies": [
-            { "name": "BodeBarsain", "type": "municipality" },
-            { "name": "Dakneshwori", "type": "municipality" },
-            { "name": "Hanumannagar Kankalini", "type": "municipality" },
-            { "name": "Kanchanrup", "type": "municipality" },
-            { "name": "Khadak", "type": "municipality" },
-            { "name": "Rajbiraj", "type": "municipality" },
-            { "name": "Saptakoshi", "type": "municipality" },
-            { "name": "Shambhunath", "type": "municipality" },
-            { "name": "Surunga", "type": "municipality" },
-            { "name": "Agnisair Krishna Sabaran", "type": "ruralMunicipality" },
-            { "name": "Balan-Bihul", "type": "ruralMunicipality" },
-            { "name": "Belhi Chapena", "type": "ruralMunicipality" },
-            { "name": "Bishnupur", "type": "ruralMunicipality" },
-            { "name": "Chhinnamasta", "type": "ruralMunicipality" },
-            { "name": "Mahadewa", "type": "ruralMunicipality" },
-            { "name": "Rupani", "type": "ruralMunicipality" },
-            { "name": "Tilathi Koiladi", "type": "ruralMunicipality" },
-            { "name": "Tirahut", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "BodeBarsain",
+              "type": "municipality",
+              "cbsCode": 20109,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Dakneshwori",
+              "type": "municipality",
+              "cbsCode": 20110,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Hanumannagar Kankalini",
+              "type": "municipality",
+              "cbsCode": 20116,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Kanchanrup",
+              "type": "municipality",
+              "cbsCode": 20102,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Khadak",
+              "type": "municipality",
+              "cbsCode": 20106,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Rajbiraj",
+              "type": "municipality",
+              "cbsCode": 20113,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Saptakoshi",
+              "type": "municipality",
+              "cbsCode": 20101,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Shambhunath",
+              "type": "municipality",
+              "cbsCode": 20105,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Surunga",
+              "type": "municipality",
+              "cbsCode": 20107,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Agnisair Krishna Sabaran",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Balan-Bihul",
+              "type": "ruralMunicipality",
+              "cbsCode": 20108,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Belhi Chapena",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Bishnupur",
+              "type": "ruralMunicipality",
+              "cbsCode": 20112,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Chhinnamasta",
+              "type": "ruralMunicipality",
+              "cbsCode": 20118,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Mahadewa",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Rupani",
+              "type": "ruralMunicipality",
+              "cbsCode": 20104,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Tilathi Koiladi",
+              "type": "ruralMunicipality",
+              "cbsCode": 20117,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Tirahut",
+              "type": "ruralMunicipality"
+            }
+          ],
+          "cbsCode": 201
         },
         {
           "name": "Sarlahi",
           "localBodies": [
-            { "name": "Bagmati", "type": "municipality" },
-            { "name": "Balara", "type": "municipality" },
-            { "name": "Barahathawa", "type": "municipality" },
-            { "name": "Godaita", "type": "municipality" },
-            { "name": "Haripur", "type": "municipality" },
-            { "name": "Haripurwa", "type": "municipality" },
-            { "name": "Hariwan", "type": "municipality" },
-            { "name": "Ishworpur", "type": "municipality" },
-            { "name": "Kabilashi", "type": "municipality" },
-            { "name": "Lalbandi", "type": "municipality" },
-            { "name": "Malangawa", "type": "municipality" },
-            { "name": "Basbariya", "type": "ruralMunicipality" },
-            { "name": "Bishnu", "type": "ruralMunicipality" },
-            { "name": "Brahmapuri", "type": "ruralMunicipality" },
-            { "name": "Chakraghatta", "type": "ruralMunicipality" },
-            { "name": "Chandranagar", "type": "ruralMunicipality" },
-            { "name": "Dhanakaul", "type": "ruralMunicipality" },
-            { "name": "Kaudena", "type": "ruralMunicipality" },
-            { "name": "Parsa", "type": "ruralMunicipality" },
-            { "name": "Ramnagar", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Bagmati",
+              "type": "municipality",
+              "cbsCode": 20503,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Balara",
+              "type": "municipality",
+              "cbsCode": 20516,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Barahathawa",
+              "type": "municipality"
+            },
+            {
+              "name": "Godaita",
+              "type": "municipality",
+              "cbsCode": 20517,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Haripur",
+              "type": "municipality",
+              "cbsCode": 20505,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Haripurwa",
+              "type": "municipality",
+              "cbsCode": 20507,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Hariwan",
+              "type": "municipality",
+              "cbsCode": 20502,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Ishworpur",
+              "type": "municipality"
+            },
+            {
+              "name": "Kabilashi",
+              "type": "municipality"
+            },
+            {
+              "name": "Lalbandi",
+              "type": "municipality",
+              "cbsCode": 20501,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Malangawa",
+              "type": "municipality",
+              "cbsCode": 20520,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Basbariya",
+              "type": "ruralMunicipality",
+              "cbsCode": 20513,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Bishnu",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Brahmapuri",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Chakraghatta",
+              "type": "ruralMunicipality",
+              "cbsCode": 20512,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Chandranagar",
+              "type": "ruralMunicipality",
+              "cbsCode": 20510,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Dhanakaul",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Kaudena",
+              "type": "ruralMunicipality",
+              "cbsCode": 20519,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Parsa",
+              "type": "ruralMunicipality",
+              "cbsCode": 20508,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Ramnagar",
+              "type": "ruralMunicipality",
+              "cbsCode": 20515,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 205
         },
         {
           "name": "Siraha",
           "localBodies": [
-            { "name": "Dhangadhimai", "type": "municipality" },
-            { "name": "Golbazar", "type": "municipality" },
-            { "name": "Kalyanpur", "type": "municipality" },
-            { "name": "Karjanha", "type": "municipality" },
-            { "name": "Lahan", "type": "municipality" },
-            { "name": "Mirchaiya", "type": "municipality" },
-            { "name": "Siraha", "type": "municipality" },
-            { "name": "Sukhipur", "type": "municipality" },
-            { "name": "Arnama", "type": "ruralMunicipality" },
-            { "name": "Aurahi", "type": "ruralMunicipality" },
-            { "name": "Bariyarpatti", "type": "ruralMunicipality" },
-            { "name": "Bhagawanpur", "type": "ruralMunicipality" },
-            { "name": "Bishnupur", "type": "ruralMunicipality" },
-            { "name": "Laxmipur Patari", "type": "ruralMunicipality" },
-            { "name": "Naraha", "type": "ruralMunicipality" },
-            { "name": "Nawarajpur", "type": "ruralMunicipality" },
-            { "name": "Sakhuwa Nankarkatti", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Dhangadhimai",
+              "type": "municipality",
+              "cbsCode": 20202,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Golbazar",
+              "type": "municipality",
+              "cbsCode": 20203,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Kalyanpur",
+              "type": "municipality",
+              "cbsCode": 20206,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Karjanha",
+              "type": "municipality",
+              "cbsCode": 20205,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Lahan",
+              "type": "municipality",
+              "cbsCode": 20201,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Mirchaiya",
+              "type": "municipality",
+              "cbsCode": 20204,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Siraha",
+              "type": "municipality",
+              "cbsCode": 20217,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Sukhipur",
+              "type": "municipality",
+              "cbsCode": 20210,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Arnama",
+              "type": "ruralMunicipality",
+              "cbsCode": 20209,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Aurahi",
+              "type": "ruralMunicipality",
+              "cbsCode": 20216,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Bariyarpatti",
+              "type": "ruralMunicipality",
+              "cbsCode": 20215,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Bhagawanpur",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Bishnupur",
+              "type": "ruralMunicipality",
+              "cbsCode": 20208,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Laxmipur Patari",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Naraha",
+              "type": "ruralMunicipality",
+              "cbsCode": 20207,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Nawarajpur",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Sakhuwa Nankarkatti",
+              "type": "ruralMunicipality",
+              "cbsCode": 20212,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 202
         }
-      ]
+      ],
+      "cbsCode": 2,
+      "isoCode": "NP-P2"
     },
     {
       "id": "bagmati",
@@ -421,188 +1670,744 @@
         {
           "name": "Bhaktapur",
           "localBodies": [
-            { "name": "Bhaktapur", "type": "municipality" },
-            { "name": "Changunarayan", "type": "municipality" },
-            { "name": "Madhyapur Thimi", "type": "municipality" },
-            { "name": "Suryabinayak", "type": "municipality" }
-          ]
+            {
+              "name": "Bhaktapur",
+              "type": "municipality",
+              "cbsCode": 30702,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Changunarayan",
+              "type": "municipality",
+              "cbsCode": 30701,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Madhyapur Thimi",
+              "type": "municipality",
+              "cbsCode": 30703,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Suryabinayak",
+              "type": "municipality",
+              "cbsCode": 30704,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 307
         },
         {
           "name": "Chitwan",
           "localBodies": [
-            { "name": "Bharatpur", "type": "metropolitan" },
-            { "name": "Kalika", "type": "municipality" },
-            { "name": "Khairhani", "type": "municipality" },
-            { "name": "Madi", "type": "municipality" },
-            { "name": "Rapti", "type": "municipality" },
-            { "name": "Ratnanagar", "type": "municipality" },
-            { "name": "Ichchhakamana", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Bharatpur",
+              "type": "metropolitan",
+              "cbsCode": 31304,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Kalika",
+              "type": "municipality",
+              "cbsCode": 31302,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Khairhani",
+              "type": "municipality"
+            },
+            {
+              "name": "Madi",
+              "type": "municipality",
+              "cbsCode": 31307,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Rapti",
+              "type": "municipality",
+              "cbsCode": 31301,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Ratnanagar",
+              "type": "municipality"
+            },
+            {
+              "name": "Ichchhakamana",
+              "type": "ruralMunicipality",
+              "cbsCode": 31303,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 313
         },
         {
           "name": "Dhading",
           "localBodies": [
-            { "name": "Dhunibenshi", "type": "municipality" },
-            { "name": "Nilkhantha", "type": "municipality" },
-            { "name": "Benighat Rorang", "type": "ruralMunicipality" },
-            { "name": "Gajuri", "type": "ruralMunicipality" },
-            { "name": "Galchhi", "type": "ruralMunicipality" },
-            { "name": "Ganga Jamuna", "type": "ruralMunicipality" },
-            { "name": "Jwalamukhi", "type": "ruralMunicipality" },
-            { "name": "Khaniyabas", "type": "ruralMunicipality" },
-            { "name": "Netrawati", "type": "ruralMunicipality" },
-            { "name": "Rubi Valley", "type": "ruralMunicipality" },
-            { "name": "Siddhalek", "type": "ruralMunicipality" },
-            { "name": "Thakre", "type": "ruralMunicipality" },
-            { "name": "Tripurasundari", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Dhunibenshi",
+              "type": "municipality"
+            },
+            {
+              "name": "Nilkhantha",
+              "type": "municipality"
+            },
+            {
+              "name": "Benighat Rorang",
+              "type": "ruralMunicipality",
+              "cbsCode": 30409,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Gajuri",
+              "type": "ruralMunicipality",
+              "cbsCode": 30410,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Galchhi",
+              "type": "ruralMunicipality",
+              "cbsCode": 30411,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Ganga Jamuna",
+              "type": "ruralMunicipality",
+              "cbsCode": 30403,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Jwalamukhi",
+              "type": "ruralMunicipality",
+              "cbsCode": 30407,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Khaniyabas",
+              "type": "ruralMunicipality",
+              "cbsCode": 30402,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Netrawati",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Rubi Valley",
+              "type": "ruralMunicipality",
+              "cbsCode": 30401,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Siddhalek",
+              "type": "ruralMunicipality",
+              "cbsCode": 30408,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Thakre",
+              "type": "ruralMunicipality",
+              "cbsCode": 30412,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Tripurasundari",
+              "type": "ruralMunicipality",
+              "cbsCode": 30404,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 304
         },
         {
           "name": "Dolakha",
           "localBodies": [
-            { "name": "Bhimeshwor", "type": "municipality" },
-            { "name": "Jiri", "type": "municipality" },
-            { "name": "Baitedhar", "type": "ruralMunicipality" },
-            { "name": "Bigu", "type": "ruralMunicipality" },
-            { "name": "Gaurishankar", "type": "ruralMunicipality" },
-            { "name": "Kalinchowk", "type": "ruralMunicipality" },
-            { "name": "Melung", "type": "ruralMunicipality" },
-            { "name": "Shailung", "type": "ruralMunicipality" },
-            { "name": "Tamakoshi", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Bhimeshwor",
+              "type": "municipality"
+            },
+            {
+              "name": "Jiri",
+              "type": "municipality",
+              "cbsCode": 30105,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Baitedhar",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Bigu",
+              "type": "ruralMunicipality",
+              "cbsCode": 30102,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Gaurishankar",
+              "type": "ruralMunicipality",
+              "cbsCode": 30101,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Kalinchowk",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Melung",
+              "type": "ruralMunicipality",
+              "cbsCode": 30107,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Shailung",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Tamakoshi",
+              "type": "ruralMunicipality",
+              "cbsCode": 30106,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 301
         },
         {
           "name": "Kathmandu",
           "localBodies": [
-            { "name": "Kathmandu", "type": "metropolitan" },
-            { "name": "Budhanilkantha", "type": "municipality" },
-            { "name": "Chandragiri", "type": "municipality" },
-            { "name": "Dakshinkali", "type": "municipality" },
-            { "name": "Gokarneshwar", "type": "municipality" },
-            { "name": "Kageshwari Manohara", "type": "municipality" },
-            { "name": "Kirtipur", "type": "municipality" },
-            { "name": "Nagarjun", "type": "municipality" },
-            { "name": "Shankharapur", "type": "municipality" },
-            { "name": "Tarakeshwar", "type": "municipality" },
-            { "name": "Tokha", "type": "municipality" }
-          ]
+            {
+              "name": "Kathmandu",
+              "type": "metropolitan",
+              "cbsCode": 30608,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Budhanilkantha",
+              "type": "municipality"
+            },
+            {
+              "name": "Chandragiri",
+              "type": "municipality",
+              "cbsCode": 30610,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Dakshinkali",
+              "type": "municipality",
+              "cbsCode": 30611,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Gokarneshwar",
+              "type": "municipality"
+            },
+            {
+              "name": "Kageshwari Manohara",
+              "type": "municipality"
+            },
+            {
+              "name": "Kirtipur",
+              "type": "municipality",
+              "cbsCode": 30609,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Nagarjun",
+              "type": "municipality",
+              "cbsCode": 30607,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Shankharapur",
+              "type": "municipality",
+              "cbsCode": 30601,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Tarakeshwar",
+              "type": "municipality"
+            },
+            {
+              "name": "Tokha",
+              "type": "municipality",
+              "cbsCode": 30605,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 306
         },
         {
           "name": "Kavrepalanchok",
           "localBodies": [
-            { "name": "Banepa", "type": "municipality" },
-            { "name": "Dhulikhel", "type": "municipality" },
-            { "name": "Mandan Deupur", "type": "municipality" },
-            { "name": "Namobuddha", "type": "municipality" },
-            { "name": "Panauti", "type": "municipality" },
-            { "name": "Panchkhal", "type": "municipality" },
-            { "name": "Bethanchowk", "type": "ruralMunicipality" },
-            { "name": "Bhumlu", "type": "ruralMunicipality" },
-            { "name": "Chauri Deurali", "type": "ruralMunicipality" },
-            { "name": "Khanikhola", "type": "ruralMunicipality" },
-            { "name": "Mahabharat", "type": "ruralMunicipality" },
-            { "name": "Roshi", "type": "ruralMunicipality" },
-            { "name": "Temal", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Banepa",
+              "type": "municipality",
+              "cbsCode": 30904,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Dhulikhel",
+              "type": "municipality",
+              "cbsCode": 30905,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Mandan Deupur",
+              "type": "municipality",
+              "cbsCode": 30903,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Namobuddha",
+              "type": "municipality",
+              "cbsCode": 30908,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Panauti",
+              "type": "municipality",
+              "cbsCode": 30909,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Panchkhal",
+              "type": "municipality",
+              "cbsCode": 30906,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Bethanchowk",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Bhumlu",
+              "type": "ruralMunicipality",
+              "cbsCode": 30902,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Chauri Deurali",
+              "type": "ruralMunicipality",
+              "cbsCode": 30901,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Khanikhola",
+              "type": "ruralMunicipality",
+              "cbsCode": 30913,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Mahabharat",
+              "type": "ruralMunicipality",
+              "cbsCode": 30912,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Roshi",
+              "type": "ruralMunicipality",
+              "cbsCode": 30911,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Temal",
+              "type": "ruralMunicipality",
+              "cbsCode": 30907,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 309
         },
         {
           "name": "Lalitpur",
           "localBodies": [
-            { "name": "Lalitpur", "type": "metropolitan" },
-            { "name": "Godawari", "type": "municipality" },
-            { "name": "Mahalaxmi", "type": "municipality" },
-            { "name": "Bagmati", "type": "ruralMunicipality" },
-            { "name": "Konjyosom", "type": "ruralMunicipality" },
-            { "name": "Mahankal", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Lalitpur",
+              "type": "metropolitan",
+              "cbsCode": 30802,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Godawari",
+              "type": "municipality",
+              "cbsCode": 30803,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Mahalaxmi",
+              "type": "municipality",
+              "cbsCode": 30801,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Bagmati",
+              "type": "ruralMunicipality",
+              "cbsCode": 30806,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Konjyosom",
+              "type": "ruralMunicipality",
+              "cbsCode": 30804,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Mahankal",
+              "type": "ruralMunicipality",
+              "cbsCode": 30805,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 308
         },
         {
           "name": "Makwanpur",
           "localBodies": [
-            { "name": "Hetauda", "type": "subMetropolitan" },
-            { "name": "Thaha", "type": "municipality" },
-            { "name": "Bagmati", "type": "ruralMunicipality" },
-            { "name": "Bakaiya", "type": "ruralMunicipality" },
-            { "name": "Bhimphedi", "type": "ruralMunicipality" },
-            { "name": "Indrasarowar", "type": "ruralMunicipality" },
-            { "name": "Kailash", "type": "ruralMunicipality" },
-            { "name": "Makawanpurgadhi", "type": "ruralMunicipality" },
-            { "name": "Manahari", "type": "ruralMunicipality" },
-            { "name": "Raksirang", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Hetauda",
+              "type": "subMetropolitan",
+              "cbsCode": 31206,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Thaha",
+              "type": "municipality",
+              "cbsCode": 31202,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Bagmati",
+              "type": "ruralMunicipality",
+              "cbsCode": 31210,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Bakaiya",
+              "type": "ruralMunicipality",
+              "cbsCode": 31209,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Bhimphedi",
+              "type": "ruralMunicipality",
+              "cbsCode": 31207,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Indrasarowar",
+              "type": "ruralMunicipality",
+              "cbsCode": 31201,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Kailash",
+              "type": "ruralMunicipality",
+              "cbsCode": 31203,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Makawanpurgadhi",
+              "type": "ruralMunicipality",
+              "cbsCode": 31208,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Manahari",
+              "type": "ruralMunicipality",
+              "cbsCode": 31205,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Raksirang",
+              "type": "ruralMunicipality",
+              "cbsCode": 31204,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 312
         },
         {
           "name": "Nuwakot",
           "localBodies": [
-            { "name": "Belkotgadhi", "type": "municipality" },
-            { "name": "Bidur", "type": "municipality" },
-            { "name": "Dupcheshwor", "type": "ruralMunicipality" },
-            { "name": "Kakani", "type": "ruralMunicipality" },
-            { "name": "Kispang", "type": "ruralMunicipality" },
-            { "name": "Likhu", "type": "ruralMunicipality" },
-            { "name": "Meghang", "type": "ruralMunicipality" },
-            { "name": "Panchakanya", "type": "ruralMunicipality" },
-            { "name": "Shivapuri", "type": "ruralMunicipality" },
-            { "name": "Suryagadhi", "type": "ruralMunicipality" },
-            { "name": "Tadi", "type": "ruralMunicipality" },
-            { "name": "Tarakeshwar", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Belkotgadhi",
+              "type": "municipality",
+              "cbsCode": 30508,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Bidur",
+              "type": "municipality",
+              "cbsCode": 30504,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Dupcheshwor",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Kakani",
+              "type": "ruralMunicipality",
+              "cbsCode": 30512,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Kispang",
+              "type": "ruralMunicipality",
+              "cbsCode": 30505,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Likhu",
+              "type": "ruralMunicipality",
+              "cbsCode": 30509,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Meghang",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Panchakanya",
+              "type": "ruralMunicipality",
+              "cbsCode": 30510,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Shivapuri",
+              "type": "ruralMunicipality",
+              "cbsCode": 30511,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Suryagadhi",
+              "type": "ruralMunicipality",
+              "cbsCode": 30503,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Tadi",
+              "type": "ruralMunicipality",
+              "cbsCode": 30502,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Tarakeshwar",
+              "type": "ruralMunicipality"
+            }
+          ],
+          "cbsCode": 305
         },
         {
           "name": "Ramechhap",
           "localBodies": [
-            { "name": "Manthali", "type": "municipality" },
-            { "name": "Ramechhap", "type": "municipality" },
-            { "name": "Doramba", "type": "ruralMunicipality" },
-            { "name": "Gokulganga", "type": "ruralMunicipality" },
-            { "name": "Khandadevi", "type": "ruralMunicipality" },
-            { "name": "Likhu", "type": "ruralMunicipality" },
-            { "name": "Sunapati", "type": "ruralMunicipality" },
-            { "name": "Umakunda", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Manthali",
+              "type": "municipality",
+              "cbsCode": 31005,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Ramechhap",
+              "type": "municipality",
+              "cbsCode": 31004,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Doramba",
+              "type": "ruralMunicipality",
+              "cbsCode": 31007,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Gokulganga",
+              "type": "ruralMunicipality",
+              "cbsCode": 31002,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Khandadevi",
+              "type": "ruralMunicipality",
+              "cbsCode": 31006,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Likhu",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Sunapati",
+              "type": "ruralMunicipality",
+              "cbsCode": 31008,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Umakunda",
+              "type": "ruralMunicipality",
+              "cbsCode": 31001,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 310
         },
         {
           "name": "Rasuwa",
           "localBodies": [
-            { "name": "Aamachhodingmo", "type": "ruralMunicipality" },
-            { "name": "Gosaikunda", "type": "ruralMunicipality" },
-            { "name": "Kalika", "type": "ruralMunicipality" },
-            { "name": "Naukunda", "type": "ruralMunicipality" },
-            { "name": "Uttargaya", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Aamachhodingmo",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Gosaikunda",
+              "type": "ruralMunicipality",
+              "cbsCode": 30301,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Kalika",
+              "type": "ruralMunicipality",
+              "cbsCode": 30304,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Naukunda",
+              "type": "ruralMunicipality",
+              "cbsCode": 30305,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Uttargaya",
+              "type": "ruralMunicipality",
+              "cbsCode": 30303,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 303
         },
         {
           "name": "Sindhuli",
           "localBodies": [
-            { "name": "Dudhouli", "type": "municipality" },
-            { "name": "Kamalamai", "type": "municipality" },
-            { "name": "Ghyanglekha", "type": "ruralMunicipality" },
-            { "name": "Golanjor", "type": "ruralMunicipality" },
-            { "name": "Hariharpurgaghi", "type": "ruralMunicipality" },
-            { "name": "Marin", "type": "ruralMunicipality" },
-            { "name": "Phikkal", "type": "ruralMunicipality" },
-            { "name": "Sunkoshi", "type": "ruralMunicipality" },
-            { "name": "Tinpatan", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Dudhouli",
+              "type": "municipality"
+            },
+            {
+              "name": "Kamalamai",
+              "type": "municipality",
+              "cbsCode": 31105,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Ghyanglekha",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Golanjor",
+              "type": "ruralMunicipality",
+              "cbsCode": 31104,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Hariharpurgaghi",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Marin",
+              "type": "ruralMunicipality",
+              "cbsCode": 31108,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Phikkal",
+              "type": "ruralMunicipality",
+              "cbsCode": 31102,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Sunkoshi",
+              "type": "ruralMunicipality",
+              "cbsCode": 31106,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Tinpatan",
+              "type": "ruralMunicipality",
+              "cbsCode": 31103,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 311
         },
         {
           "name": "Sindhupalchok",
           "localBodies": [
-            { "name": "Bahrabise", "type": "municipality" },
-            { "name": "Chautara Sangachowkgadhi", "type": "municipality" },
-            { "name": "Melamchi", "type": "municipality" },
-            { "name": "Balephi", "type": "ruralMunicipality" },
-            { "name": "Bhotekoshi", "type": "ruralMunicipality" },
-            { "name": "Helambu", "type": "ruralMunicipality" },
-            { "name": "Indrawoti", "type": "ruralMunicipality" },
-            { "name": "Jugal", "type": "ruralMunicipality" },
-            { "name": "Lisankhu Pakhar", "type": "ruralMunicipality" },
-            { "name": "Panchpokhari Thangpal", "type": "ruralMunicipality" },
-            { "name": "Sunkoshi", "type": "ruralMunicipality" },
-            { "name": "Tripurasundari", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Bahrabise",
+              "type": "municipality",
+              "cbsCode": 30209,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Chautara Sangachowkgadhi",
+              "type": "municipality"
+            },
+            {
+              "name": "Melamchi",
+              "type": "municipality"
+            },
+            {
+              "name": "Balephi",
+              "type": "ruralMunicipality",
+              "cbsCode": 30208,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Bhotekoshi",
+              "type": "ruralMunicipality",
+              "cbsCode": 30201,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Helambu",
+              "type": "ruralMunicipality",
+              "cbsCode": 30204,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Indrawoti",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Jugal",
+              "type": "ruralMunicipality",
+              "cbsCode": 30202,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Lisankhu Pakhar",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Panchpokhari Thangpal",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Sunkoshi",
+              "type": "ruralMunicipality",
+              "cbsCode": 30212,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Tripurasundari",
+              "type": "ruralMunicipality",
+              "cbsCode": 30210,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 302
         }
-      ]
+      ],
+      "cbsCode": 3,
+      "isoCode": "NP-P3"
     },
     {
       "id": "gandaki",
@@ -612,144 +2417,524 @@
         {
           "name": "Baglung",
           "localBodies": [
-            { "name": "Baglung", "type": "municipality" },
-            { "name": "Dhorpatan", "type": "municipality" },
-            { "name": "Galkot", "type": "municipality" },
-            { "name": "Jaimini", "type": "municipality" },
-            { "name": "Badigad", "type": "ruralMunicipality" },
-            { "name": "Bareng", "type": "ruralMunicipality" },
-            { "name": "Kathekhola", "type": "ruralMunicipality" },
-            { "name": "Nisikhola", "type": "ruralMunicipality" },
-            { "name": "Tamankhola", "type": "ruralMunicipality" },
-            { "name": "Tarakhola", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Baglung",
+              "type": "municipality",
+              "cbsCode": 41101,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Dhorpatan",
+              "type": "municipality",
+              "cbsCode": 41105,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Galkot",
+              "type": "municipality",
+              "cbsCode": 41108,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Jaimini",
+              "type": "municipality"
+            },
+            {
+              "name": "Badigad",
+              "type": "ruralMunicipality",
+              "cbsCode": 41107,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Bareng",
+              "type": "ruralMunicipality",
+              "cbsCode": 41109,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Kathekhola",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Nisikhola",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Tamankhola",
+              "type": "ruralMunicipality",
+              "cbsCode": 41104,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Tarakhola",
+              "type": "ruralMunicipality",
+              "cbsCode": 41103,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 411
         },
         {
           "name": "Gorkha",
           "localBodies": [
-            { "name": "Gorkha", "type": "municipality" },
-            { "name": "Palungtar", "type": "municipality" },
-            { "name": "Aarughat", "type": "ruralMunicipality" },
-            { "name": "Ajirkot", "type": "ruralMunicipality" },
-            { "name": "Bhimsen", "type": "ruralMunicipality" },
-            { "name": "Chumanubri", "type": "ruralMunicipality" },
-            { "name": "Dharche", "type": "ruralMunicipality" },
-            { "name": "Gandaki", "type": "ruralMunicipality" },
-            { "name": "Shahid Lakhan", "type": "ruralMunicipality" },
-            { "name": "Siranchowk", "type": "ruralMunicipality" },
-            { "name": "Sulikot", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Gorkha",
+              "type": "municipality",
+              "cbsCode": 40109,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Palungtar",
+              "type": "municipality",
+              "cbsCode": 40108,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Aarughat",
+              "type": "ruralMunicipality",
+              "cbsCode": 40105,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Ajirkot",
+              "type": "ruralMunicipality",
+              "cbsCode": 40102,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Bhimsen",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Chumanubri",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Dharche",
+              "type": "ruralMunicipality",
+              "cbsCode": 40104,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Gandaki",
+              "type": "ruralMunicipality",
+              "cbsCode": 40111,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Shahid Lakhan",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Siranchowk",
+              "type": "ruralMunicipality",
+              "cbsCode": 40107,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Sulikot",
+              "type": "ruralMunicipality",
+              "cbsCode": 40103,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 401
         },
         {
           "name": "Kaski",
           "localBodies": [
-            { "name": "Pokhara", "type": "metropolitan" },
-            { "name": "Annapurna", "type": "ruralMunicipality" },
-            { "name": "Machhapuchchhre", "type": "ruralMunicipality" },
-            { "name": "Madi", "type": "ruralMunicipality" },
-            { "name": "Rupa", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Pokhara",
+              "type": "metropolitan"
+            },
+            {
+              "name": "Annapurna",
+              "type": "ruralMunicipality",
+              "cbsCode": 40503,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Machhapuchchhre",
+              "type": "ruralMunicipality",
+              "cbsCode": 40502,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Madi",
+              "type": "ruralMunicipality",
+              "cbsCode": 40501,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Rupa",
+              "type": "ruralMunicipality",
+              "cbsCode": 40505,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 405
         },
         {
           "name": "Lamjung",
           "localBodies": [
-            { "name": "Bensi Shahar", "type": "municipality" },
-            { "name": "Madhya Nepal", "type": "municipality" },
-            { "name": "Rainas", "type": "municipality" },
-            { "name": "Sundarbazar", "type": "municipality" },
-            { "name": "Dordi", "type": "ruralMunicipality" },
-            { "name": "Dudhapokhari", "type": "ruralMunicipality" },
-            { "name": "Kwhola Sothar", "type": "ruralMunicipality" },
-            { "name": "Marshyangdi", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Bensi Shahar",
+              "type": "municipality"
+            },
+            {
+              "name": "Madhya Nepal",
+              "type": "municipality",
+              "cbsCode": 40604,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Rainas",
+              "type": "municipality",
+              "cbsCode": 40607,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Sundarbazar",
+              "type": "municipality",
+              "cbsCode": 40606,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Dordi",
+              "type": "ruralMunicipality",
+              "cbsCode": 40601,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Dudhapokhari",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Kwhola Sothar",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Marshyangdi",
+              "type": "ruralMunicipality"
+            }
+          ],
+          "cbsCode": 406
         },
         {
           "name": "Manang",
           "localBodies": [
-            { "name": "Chame", "type": "ruralMunicipality" },
-            { "name": "Naraphu", "type": "ruralMunicipality" },
-            { "name": "Nashong", "type": "ruralMunicipality" },
-            { "name": "Neshang", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Chame",
+              "type": "ruralMunicipality",
+              "cbsCode": 40203,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Naraphu",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Nashong",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Neshang",
+              "type": "ruralMunicipality"
+            }
+          ],
+          "cbsCode": 402
         },
         {
           "name": "Mustang",
           "localBodies": [
-            { "name": "Barhagaun Muktichhetra", "type": "ruralMunicipality" },
-            { "name": "Dalome", "type": "ruralMunicipality" },
-            { "name": "Gharapjhong", "type": "ruralMunicipality" },
-            { "name": "Lomanthang", "type": "ruralMunicipality" },
-            { "name": "Thasang", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Barhagaun Muktichhetra",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Dalome",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Gharapjhong",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Lomanthang",
+              "type": "ruralMunicipality",
+              "cbsCode": 40304,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Thasang",
+              "type": "ruralMunicipality",
+              "cbsCode": 40305,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 403
         },
         {
           "name": "Myagdi",
           "localBodies": [
-            { "name": "Beni", "type": "municipality" },
-            { "name": "Annapurna", "type": "ruralMunicipality" },
-            { "name": "Dhawalagiri", "type": "ruralMunicipality" },
-            { "name": "Malika", "type": "ruralMunicipality" },
-            { "name": "Mangala", "type": "ruralMunicipality" },
-            { "name": "Raghuganga", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Beni",
+              "type": "municipality",
+              "cbsCode": 40406,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Annapurna",
+              "type": "ruralMunicipality",
+              "cbsCode": 40401,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Dhawalagiri",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Malika",
+              "type": "ruralMunicipality",
+              "cbsCode": 40404,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Mangala",
+              "type": "ruralMunicipality",
+              "cbsCode": 40405,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Raghuganga",
+              "type": "ruralMunicipality",
+              "cbsCode": 40402,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 404
         },
         {
           "name": "Nawalpur",
           "localBodies": [
-            { "name": "Devchuli", "type": "municipality" },
-            { "name": "Gaidakot", "type": "municipality" },
-            { "name": "Kawasoti", "type": "municipality" },
-            { "name": "Madhya Bindu", "type": "municipality" },
-            { "name": "Binayi Tribeni", "type": "ruralMunicipality" },
-            { "name": "Bulingtar", "type": "ruralMunicipality" },
-            { "name": "Bungdikali", "type": "ruralMunicipality" },
-            { "name": "Hupsekot", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Devchuli",
+              "type": "municipality"
+            },
+            {
+              "name": "Gaidakot",
+              "type": "municipality"
+            },
+            {
+              "name": "Kawasoti",
+              "type": "municipality",
+              "cbsCode": 40806,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Madhya Bindu",
+              "type": "municipality",
+              "cbsCode": 40807,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Binayi Tribeni",
+              "type": "ruralMunicipality",
+              "cbsCode": 40808,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Bulingtar",
+              "type": "ruralMunicipality",
+              "cbsCode": 40802,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Bungdikali",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Hupsekot",
+              "type": "ruralMunicipality",
+              "cbsCode": 40804,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 408
         },
         {
           "name": "Parbat",
           "localBodies": [
-            { "name": "Kushma", "type": "municipality" },
-            { "name": "Phalebas", "type": "municipality" },
-            { "name": "Bihadi", "type": "ruralMunicipality" },
-            { "name": "Jaljala", "type": "ruralMunicipality" },
-            { "name": "Mahashila", "type": "ruralMunicipality" },
-            { "name": "Modi", "type": "ruralMunicipality" },
-            { "name": "Paiyu", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Kushma",
+              "type": "municipality",
+              "cbsCode": 41003,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Phalebas",
+              "type": "municipality"
+            },
+            {
+              "name": "Bihadi",
+              "type": "ruralMunicipality",
+              "cbsCode": 41006,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Jaljala",
+              "type": "ruralMunicipality",
+              "cbsCode": 41002,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Mahashila",
+              "type": "ruralMunicipality",
+              "cbsCode": 41005,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Modi",
+              "type": "ruralMunicipality",
+              "cbsCode": 41001,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Paiyu",
+              "type": "ruralMunicipality"
+            }
+          ],
+          "cbsCode": 410
         },
         {
           "name": "Syangja",
           "localBodies": [
-            { "name": "Bhirkot", "type": "municipality" },
-            { "name": "Chapakot", "type": "municipality" },
-            { "name": "Galyang", "type": "municipality" },
-            { "name": "Putalibazar", "type": "municipality" },
-            { "name": "Walling", "type": "municipality" },
-            { "name": "Aandhikhola", "type": "ruralMunicipality" },
-            { "name": "Arjunchaupari", "type": "ruralMunicipality" },
-            { "name": "Biruwa", "type": "ruralMunicipality" },
-            { "name": "Harinas", "type": "ruralMunicipality" },
-            { "name": "Kaligandaki", "type": "ruralMunicipality" },
-            { "name": "Phedikhola", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Bhirkot",
+              "type": "municipality"
+            },
+            {
+              "name": "Chapakot",
+              "type": "municipality",
+              "cbsCode": 40908,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Galyang",
+              "type": "municipality",
+              "cbsCode": 40910,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Putalibazar",
+              "type": "municipality",
+              "cbsCode": 40901,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Walling",
+              "type": "municipality"
+            },
+            {
+              "name": "Aandhikhola",
+              "type": "ruralMunicipality",
+              "cbsCode": 40903,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Arjunchaupari",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Biruwa",
+              "type": "ruralMunicipality",
+              "cbsCode": 40906,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Harinas",
+              "type": "ruralMunicipality",
+              "cbsCode": 40907,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Kaligandaki",
+              "type": "ruralMunicipality",
+              "cbsCode": 40911,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Phedikhola",
+              "type": "ruralMunicipality",
+              "cbsCode": 40902,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 409
         },
         {
           "name": "Tanahun",
           "localBodies": [
-            { "name": "Bhanu", "type": "municipality" },
-            { "name": "Bhimad", "type": "municipality" },
-            { "name": "Byas", "type": "municipality" },
-            { "name": "Shuklagandaki", "type": "municipality" },
-            { "name": "Aanbu Khaireni", "type": "ruralMunicipality" },
-            { "name": "Bandipur", "type": "ruralMunicipality" },
-            { "name": "Devghat", "type": "ruralMunicipality" },
-            { "name": "Ghiring", "type": "ruralMunicipality" },
-            { "name": "Myagde", "type": "ruralMunicipality" },
-            { "name": "Rishing", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Bhanu",
+              "type": "municipality",
+              "cbsCode": 40701,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Bhimad",
+              "type": "municipality",
+              "cbsCode": 40705,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Byas",
+              "type": "municipality",
+              "cbsCode": 40702,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Shuklagandaki",
+              "type": "municipality"
+            },
+            {
+              "name": "Aanbu Khaireni",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Bandipur",
+              "type": "ruralMunicipality",
+              "cbsCode": 40709,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Devghat",
+              "type": "ruralMunicipality",
+              "cbsCode": 40708,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Ghiring",
+              "type": "ruralMunicipality",
+              "cbsCode": 40706,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Myagde",
+              "type": "ruralMunicipality",
+              "cbsCode": 40703,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Rishing",
+              "type": "ruralMunicipality"
+            }
+          ],
+          "cbsCode": 407
         }
-      ]
+      ],
+      "cbsCode": 4,
+      "isoCode": "NP-P4"
     },
     {
       "id": "lumbini",
@@ -759,173 +2944,676 @@
         {
           "name": "Arghakhanchi",
           "localBodies": [
-            { "name": "Bhumikasthan", "type": "municipality" },
-            { "name": "Sandhikharka", "type": "municipality" },
-            { "name": "Shitaganga", "type": "municipality" },
-            { "name": "Chhatradev", "type": "ruralMunicipality" },
-            { "name": "Malarani", "type": "ruralMunicipality" },
-            { "name": "Panini", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Bhumikasthan",
+              "type": "municipality",
+              "cbsCode": 50503,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Sandhikharka",
+              "type": "municipality",
+              "cbsCode": 50504,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Shitaganga",
+              "type": "municipality"
+            },
+            {
+              "name": "Chhatradev",
+              "type": "ruralMunicipality",
+              "cbsCode": 50501,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Malarani",
+              "type": "ruralMunicipality",
+              "cbsCode": 50502,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Panini",
+              "type": "ruralMunicipality",
+              "cbsCode": 50505,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 505
         },
         {
           "name": "Banke",
           "localBodies": [
-            { "name": "Nepalgunj", "type": "subMetropolitan" },
-            { "name": "Kohalpur", "type": "municipality" },
-            { "name": "Baijanath", "type": "ruralMunicipality" },
-            { "name": "Duduwa", "type": "ruralMunicipality" },
-            { "name": "Janaki", "type": "ruralMunicipality" },
-            { "name": "Khajura", "type": "ruralMunicipality" },
-            { "name": "Narainapur", "type": "ruralMunicipality" },
-            { "name": "Rapti Sonari", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Nepalgunj",
+              "type": "subMetropolitan"
+            },
+            {
+              "name": "Kohalpur",
+              "type": "municipality",
+              "cbsCode": 51102,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Baijanath",
+              "type": "ruralMunicipality",
+              "cbsCode": 51103,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Duduwa",
+              "type": "ruralMunicipality",
+              "cbsCode": 51107,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Janaki",
+              "type": "ruralMunicipality",
+              "cbsCode": 51105,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Khajura",
+              "type": "ruralMunicipality",
+              "cbsCode": 51104,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Narainapur",
+              "type": "ruralMunicipality",
+              "cbsCode": 51108,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Rapti Sonari",
+              "type": "ruralMunicipality",
+              "cbsCode": 51101,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 511
         },
         {
           "name": "Bardiya",
           "localBodies": [
-            { "name": "Bansgadhi", "type": "municipality" },
-            { "name": "Barbardiya", "type": "municipality" },
-            { "name": "Gulariya", "type": "municipality" },
-            { "name": "Madhuwan", "type": "municipality" },
-            { "name": "Rajapur", "type": "municipality" },
-            { "name": "Thakurbaba", "type": "municipality" },
-            { "name": "Badhaiyatal", "type": "ruralMunicipality" },
-            { "name": "Geruwa", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Bansgadhi",
+              "type": "municipality"
+            },
+            {
+              "name": "Barbardiya",
+              "type": "municipality",
+              "cbsCode": 51202,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Gulariya",
+              "type": "municipality",
+              "cbsCode": 51207,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Madhuwan",
+              "type": "municipality",
+              "cbsCode": 51206,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Rajapur",
+              "type": "municipality",
+              "cbsCode": 51205,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Thakurbaba",
+              "type": "municipality",
+              "cbsCode": 51203,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Badhaiyatal",
+              "type": "ruralMunicipality",
+              "cbsCode": 51208,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Geruwa",
+              "type": "ruralMunicipality",
+              "cbsCode": 51204,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 512
         },
         {
           "name": "Dang",
           "localBodies": [
-            { "name": "Ghorahi", "type": "subMetropolitan" },
-            { "name": "Tulsipur", "type": "subMetropolitan" },
-            { "name": "Lamahi", "type": "municipality" },
-            { "name": "Babai", "type": "ruralMunicipality" },
-            { "name": "Bangalachuli", "type": "ruralMunicipality" },
-            { "name": "Dangisharan", "type": "ruralMunicipality" },
-            { "name": "Gadhawa", "type": "ruralMunicipality" },
-            { "name": "Rajpur", "type": "ruralMunicipality" },
-            { "name": "Rapti", "type": "ruralMunicipality" },
-            { "name": "Shantinagar", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Ghorahi",
+              "type": "subMetropolitan",
+              "cbsCode": 51002,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Tulsipur",
+              "type": "subMetropolitan",
+              "cbsCode": 51003,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Lamahi",
+              "type": "municipality",
+              "cbsCode": 51007,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Babai",
+              "type": "ruralMunicipality",
+              "cbsCode": 51005,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Bangalachuli",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Dangisharan",
+              "type": "ruralMunicipality",
+              "cbsCode": 51006,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Gadhawa",
+              "type": "ruralMunicipality",
+              "cbsCode": 51009,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Rajpur",
+              "type": "ruralMunicipality",
+              "cbsCode": 51010,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Rapti",
+              "type": "ruralMunicipality",
+              "cbsCode": 51008,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Shantinagar",
+              "type": "ruralMunicipality",
+              "cbsCode": 51004,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 510
         },
         {
           "name": "Gulmi",
           "localBodies": [
-            { "name": "Musikot", "type": "municipality" },
-            { "name": "Resunga", "type": "municipality" },
-            { "name": "Chandrakot", "type": "ruralMunicipality" },
-            { "name": "Chhatrakot", "type": "ruralMunicipality" },
-            { "name": "Dhurkot", "type": "ruralMunicipality" },
-            { "name": "Gulmi Durbar", "type": "ruralMunicipality" },
-            { "name": "Isma", "type": "ruralMunicipality" },
-            { "name": "Kali Gandaki", "type": "ruralMunicipality" },
-            { "name": "Madane", "type": "ruralMunicipality" },
-            { "name": "Malika", "type": "ruralMunicipality" },
-            { "name": "Ruru", "type": "ruralMunicipality" },
-            { "name": "Satyawoti", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Musikot",
+              "type": "municipality",
+              "cbsCode": 50404,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Resunga",
+              "type": "municipality",
+              "cbsCode": 50409,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Chandrakot",
+              "type": "ruralMunicipality",
+              "cbsCode": 50403,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Chhatrakot",
+              "type": "ruralMunicipality",
+              "cbsCode": 50411,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Dhurkot",
+              "type": "ruralMunicipality",
+              "cbsCode": 50408,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Gulmi Durbar",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Isma",
+              "type": "ruralMunicipality",
+              "cbsCode": 50405,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Kali Gandaki",
+              "type": "ruralMunicipality",
+              "cbsCode": 50401,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Madane",
+              "type": "ruralMunicipality",
+              "cbsCode": 50407,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Malika",
+              "type": "ruralMunicipality",
+              "cbsCode": 50406,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Ruru",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Satyawoti",
+              "type": "ruralMunicipality"
+            }
+          ],
+          "cbsCode": 504
         },
         {
           "name": "Kapilvastu",
           "localBodies": [
-            { "name": "Banganga", "type": "municipality" },
-            { "name": "Buddhabhumi", "type": "municipality" },
-            { "name": "Kapilvastu", "type": "municipality" },
-            { "name": "Krishnanagar", "type": "municipality" },
-            { "name": "Maharajganj", "type": "municipality" },
-            { "name": "Shivaraj", "type": "municipality" },
-            { "name": "Bijayanagar", "type": "ruralMunicipality" },
-            { "name": "Mayadevi", "type": "ruralMunicipality" },
-            { "name": "Shuddhodhan", "type": "ruralMunicipality" },
-            { "name": "Yasodhara", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Banganga",
+              "type": "municipality",
+              "cbsCode": 50901,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Buddhabhumi",
+              "type": "municipality",
+              "cbsCode": 50902,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Kapilvastu",
+              "type": "municipality"
+            },
+            {
+              "name": "Krishnanagar",
+              "type": "municipality",
+              "cbsCode": 50905,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Maharajganj",
+              "type": "municipality"
+            },
+            {
+              "name": "Shivaraj",
+              "type": "municipality",
+              "cbsCode": 50903,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Bijayanagar",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Mayadevi",
+              "type": "ruralMunicipality",
+              "cbsCode": 50909,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Shuddhodhan",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Yasodhara",
+              "type": "ruralMunicipality"
+            }
+          ],
+          "cbsCode": 509
         },
         {
           "name": "Palpa",
           "localBodies": [
-            { "name": "Rampur", "type": "municipality" },
-            { "name": "Tansen", "type": "municipality" },
-            { "name": "Baganaskali", "type": "ruralMunicipality" },
-            { "name": "Mathagadhi", "type": "ruralMunicipality" },
-            { "name": "Nisdi", "type": "ruralMunicipality" },
-            { "name": "Purbakhola", "type": "ruralMunicipality" },
-            { "name": "Rainadevi Chhahara", "type": "ruralMunicipality" },
-            { "name": "Rambha", "type": "ruralMunicipality" },
-            { "name": "Ribdikot", "type": "ruralMunicipality" },
-            { "name": "Tinau", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Rampur",
+              "type": "municipality",
+              "cbsCode": 50601,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Tansen",
+              "type": "municipality",
+              "cbsCode": 50605,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Baganaskali",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Mathagadhi",
+              "type": "ruralMunicipality",
+              "cbsCode": 50609,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Nisdi",
+              "type": "ruralMunicipality",
+              "cbsCode": 50610,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Purbakhola",
+              "type": "ruralMunicipality",
+              "cbsCode": 50602,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Rainadevi Chhahara",
+              "type": "ruralMunicipality",
+              "cbsCode": 50607,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Rambha",
+              "type": "ruralMunicipality",
+              "cbsCode": 50603,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Ribdikot",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Tinau",
+              "type": "ruralMunicipality"
+            }
+          ],
+          "cbsCode": 506
         },
         {
           "name": "Parasi (Nawalparasi West)",
           "localBodies": [
-            { "name": "Bardaghat", "type": "municipality" },
-            { "name": "Ramgram", "type": "municipality" },
-            { "name": "Sunawal", "type": "municipality" },
-            { "name": "Palhinandan", "type": "ruralMunicipality" },
-            { "name": "Pratapapur", "type": "ruralMunicipality" },
-            { "name": "Sarawal", "type": "ruralMunicipality" },
-            { "name": "Susta", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Bardaghat",
+              "type": "municipality",
+              "cbsCode": 50701,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Ramgram",
+              "type": "municipality",
+              "cbsCode": 50703,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Sunawal",
+              "type": "municipality"
+            },
+            {
+              "name": "Palhinandan",
+              "type": "ruralMunicipality",
+              "cbsCode": 50704,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Pratapapur",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Sarawal",
+              "type": "ruralMunicipality",
+              "cbsCode": 50705,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Susta",
+              "type": "ruralMunicipality",
+              "cbsCode": 50707,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 507
         },
         {
           "name": "Pyuthan",
           "localBodies": [
-            { "name": "Pyuthan", "type": "municipality" },
-            { "name": "Sworgadwari", "type": "municipality" },
-            { "name": "Airawati", "type": "ruralMunicipality" },
-            { "name": "Gaumukhi", "type": "ruralMunicipality" },
-            { "name": "Jhimaruk", "type": "ruralMunicipality" },
-            { "name": "Mallarani", "type": "ruralMunicipality" },
-            { "name": "Mandavi", "type": "ruralMunicipality" },
-            { "name": "Naubahini", "type": "ruralMunicipality" },
-            { "name": "Sarumarani", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Pyuthan",
+              "type": "municipality",
+              "cbsCode": 50304,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Sworgadwari",
+              "type": "municipality",
+              "cbsCode": 50305,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Airawati",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Gaumukhi",
+              "type": "ruralMunicipality",
+              "cbsCode": 50301,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Jhimaruk",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Mallarani",
+              "type": "ruralMunicipality",
+              "cbsCode": 50307,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Mandavi",
+              "type": "ruralMunicipality",
+              "cbsCode": 50306,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Naubahini",
+              "type": "ruralMunicipality",
+              "cbsCode": 50302,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Sarumarani",
+              "type": "ruralMunicipality",
+              "cbsCode": 50309,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 503
         },
         {
           "name": "Rolpa",
           "localBodies": [
-            { "name": "Rolpa", "type": "municipality" },
-            { "name": "Gangadev", "type": "ruralMunicipality" },
-            { "name": "Lungri", "type": "ruralMunicipality" },
-            { "name": "Madi", "type": "ruralMunicipality" },
-            { "name": "Paribartan", "type": "ruralMunicipality" },
-            { "name": "Runtigadhi", "type": "ruralMunicipality" },
-            { "name": "Sunchhahari", "type": "ruralMunicipality" },
-            { "name": "Sunil Smriti", "type": "ruralMunicipality" },
-            { "name": "Thabang", "type": "ruralMunicipality" },
-            { "name": "Tribeni", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Rolpa",
+              "type": "municipality",
+              "cbsCode": 50207,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Gangadev",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Lungri",
+              "type": "ruralMunicipality",
+              "cbsCode": 50210,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Madi",
+              "type": "ruralMunicipality",
+              "cbsCode": 50205,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Paribartan",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Runtigadhi",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Sunchhahari",
+              "type": "ruralMunicipality",
+              "cbsCode": 50201,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Sunil Smriti",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Thabang",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Tribeni",
+              "type": "ruralMunicipality"
+            }
+          ],
+          "cbsCode": 502
         },
         {
           "name": "Rukum East",
           "localBodies": [
-            { "name": "Bhoome", "type": "ruralMunicipality" },
-            { "name": "Putha Uttanganga", "type": "ruralMunicipality" },
-            { "name": "Sisne", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Bhoome",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Putha Uttanganga",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Sisne",
+              "type": "ruralMunicipality",
+              "cbsCode": 50102,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 501
         },
         {
           "name": "Rupandehi",
           "localBodies": [
-            { "name": "Butwal", "type": "subMetropolitan" },
-            { "name": "Devdaha", "type": "municipality" },
-            { "name": "Lumbini Sanskritik", "type": "municipality" },
-            { "name": "Sainamaina", "type": "municipality" },
-            { "name": "Siddharthanagar", "type": "municipality" },
-            { "name": "Tilottama", "type": "municipality" },
-            { "name": "Gaidahawa", "type": "ruralMunicipality" },
-            { "name": "Kanchan", "type": "ruralMunicipality" },
-            { "name": "Kotahimai", "type": "ruralMunicipality" },
-            { "name": "Marchawari", "type": "ruralMunicipality" },
-            { "name": "Mayadevi", "type": "ruralMunicipality" },
-            { "name": "Om Satiya", "type": "ruralMunicipality" },
-            { "name": "Rohini", "type": "ruralMunicipality" },
-            { "name": "Sammarimai", "type": "ruralMunicipality" },
-            { "name": "Siyari", "type": "ruralMunicipality" },
-            { "name": "Suddhodhan", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Butwal",
+              "type": "subMetropolitan",
+              "cbsCode": 50802,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Devdaha",
+              "type": "municipality",
+              "cbsCode": 50801,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Lumbini Sanskritik",
+              "type": "municipality",
+              "cbsCode": 50813,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Sainamaina",
+              "type": "municipality",
+              "cbsCode": 50803,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Siddharthanagar",
+              "type": "municipality",
+              "cbsCode": 50811,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Tilottama",
+              "type": "municipality",
+              "cbsCode": 50808,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Gaidahawa",
+              "type": "ruralMunicipality",
+              "cbsCode": 50805,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Kanchan",
+              "type": "ruralMunicipality",
+              "cbsCode": 50804,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Kotahimai",
+              "type": "ruralMunicipality",
+              "cbsCode": 50814,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Marchawari",
+              "type": "ruralMunicipality",
+              "cbsCode": 50816,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Mayadevi",
+              "type": "ruralMunicipality",
+              "cbsCode": 50812,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Om Satiya",
+              "type": "ruralMunicipality",
+              "cbsCode": 50809,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Rohini",
+              "type": "ruralMunicipality",
+              "cbsCode": 50810,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Sammarimai",
+              "type": "ruralMunicipality",
+              "cbsCode": 50815,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Siyari",
+              "type": "ruralMunicipality",
+              "cbsCode": 50807,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Suddhodhan",
+              "type": "ruralMunicipality"
+            }
+          ],
+          "cbsCode": 508
         }
-      ]
+      ],
+      "cbsCode": 5,
+      "isoCode": "NP-P5"
     },
     {
       "id": "karnali",
@@ -935,133 +3623,496 @@
         {
           "name": "Dailekh",
           "localBodies": [
-            { "name": "Aathbis", "type": "municipality" },
-            { "name": "Chamunda Bindrasaini", "type": "municipality" },
-            { "name": "Dullu", "type": "municipality" },
-            { "name": "Narayan", "type": "municipality" },
-            { "name": "Bhagawatimai", "type": "ruralMunicipality" },
-            { "name": "Bhairabi", "type": "ruralMunicipality" },
-            { "name": "Dungeshwor", "type": "ruralMunicipality" },
-            { "name": "Gurans", "type": "ruralMunicipality" },
-            { "name": "Mahabu", "type": "ruralMunicipality" },
-            { "name": "Naumule", "type": "ruralMunicipality" },
-            { "name": "Thantikandh", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Aathbis",
+              "type": "municipality"
+            },
+            {
+              "name": "Chamunda Bindrasaini",
+              "type": "municipality",
+              "cbsCode": 60606,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Dullu",
+              "type": "municipality",
+              "cbsCode": 60607,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Narayan",
+              "type": "municipality",
+              "cbsCode": 60608,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Bhagawatimai",
+              "type": "ruralMunicipality",
+              "cbsCode": 60609,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Bhairabi",
+              "type": "ruralMunicipality",
+              "cbsCode": 60603,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Dungeshwor",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Gurans",
+              "type": "ruralMunicipality",
+              "cbsCode": 60611,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Mahabu",
+              "type": "ruralMunicipality",
+              "cbsCode": 60602,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Naumule",
+              "type": "ruralMunicipality",
+              "cbsCode": 60601,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Thantikandh",
+              "type": "ruralMunicipality",
+              "cbsCode": 60604,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 606
         },
         {
           "name": "Dolpa",
           "localBodies": [
-            { "name": "Thulibheri", "type": "municipality" },
-            { "name": "Tripurasundari", "type": "municipality" },
-            { "name": "Chharka Tangsong", "type": "ruralMunicipality" },
-            { "name": "Dolpo Buddha", "type": "ruralMunicipality" },
-            { "name": "Jagadulla", "type": "ruralMunicipality" },
-            { "name": "Kaike", "type": "ruralMunicipality" },
-            { "name": "Mudkechula", "type": "ruralMunicipality" },
-            { "name": "Shey Phoksundo", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Thulibheri",
+              "type": "municipality",
+              "cbsCode": 60106,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Tripurasundari",
+              "type": "municipality",
+              "cbsCode": 60105,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Chharka Tangsong",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Dolpo Buddha",
+              "type": "ruralMunicipality",
+              "cbsCode": 60101,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Jagadulla",
+              "type": "ruralMunicipality",
+              "cbsCode": 60103,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Kaike",
+              "type": "ruralMunicipality",
+              "cbsCode": 60107,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Mudkechula",
+              "type": "ruralMunicipality",
+              "cbsCode": 60104,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Shey Phoksundo",
+              "type": "ruralMunicipality"
+            }
+          ],
+          "cbsCode": 601
         },
         {
           "name": "Humla",
           "localBodies": [
-            { "name": "Adanchuli", "type": "ruralMunicipality" },
-            { "name": "Chankheli", "type": "ruralMunicipality" },
-            { "name": "Kharpunath", "type": "ruralMunicipality" },
-            { "name": "Namkha", "type": "ruralMunicipality" },
-            { "name": "Sarkegad", "type": "ruralMunicipality" },
-            { "name": "Simkot", "type": "ruralMunicipality" },
-            { "name": "Tanjakot", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Adanchuli",
+              "type": "ruralMunicipality",
+              "cbsCode": 60306,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Chankheli",
+              "type": "ruralMunicipality",
+              "cbsCode": 60301,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Kharpunath",
+              "type": "ruralMunicipality",
+              "cbsCode": 60302,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Namkha",
+              "type": "ruralMunicipality",
+              "cbsCode": 60304,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Sarkegad",
+              "type": "ruralMunicipality",
+              "cbsCode": 60305,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Simkot",
+              "type": "ruralMunicipality",
+              "cbsCode": 60303,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Tanjakot",
+              "type": "ruralMunicipality",
+              "cbsCode": 60307,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 603
         },
         {
           "name": "Jajarkot",
           "localBodies": [
-            { "name": "Bheri", "type": "municipality" },
-            { "name": "Chhedagad", "type": "municipality" },
-            { "name": "Nalagad", "type": "municipality" },
-            { "name": "Barekot", "type": "ruralMunicipality" },
-            { "name": "Junichande", "type": "ruralMunicipality" },
-            { "name": "Kuse", "type": "ruralMunicipality" },
-            { "name": "Shivalaya", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Bheri",
+              "type": "municipality"
+            },
+            {
+              "name": "Chhedagad",
+              "type": "municipality",
+              "cbsCode": 60704,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Nalagad",
+              "type": "municipality"
+            },
+            {
+              "name": "Barekot",
+              "type": "ruralMunicipality",
+              "cbsCode": 60701,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Junichande",
+              "type": "ruralMunicipality",
+              "cbsCode": 60703,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Kuse",
+              "type": "ruralMunicipality",
+              "cbsCode": 60702,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Shivalaya",
+              "type": "ruralMunicipality",
+              "cbsCode": 60705,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 607
         },
         {
           "name": "Jumla",
           "localBodies": [
-            { "name": "Chandannath", "type": "municipality" },
-            { "name": "Guthichaur", "type": "ruralMunicipality" },
-            { "name": "Hima", "type": "ruralMunicipality" },
-            { "name": "Kanaka Sundari", "type": "ruralMunicipality" },
-            { "name": "Patarasi", "type": "ruralMunicipality" },
-            { "name": "Sinja", "type": "ruralMunicipality" },
-            { "name": "Tatopani", "type": "ruralMunicipality" },
-            { "name": "Tila", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Chandannath",
+              "type": "municipality",
+              "cbsCode": 60404,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Guthichaur",
+              "type": "ruralMunicipality",
+              "cbsCode": 60405,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Hima",
+              "type": "ruralMunicipality",
+              "cbsCode": 60408,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Kanaka Sundari",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Patarasi",
+              "type": "ruralMunicipality",
+              "cbsCode": 60401,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Sinja",
+              "type": "ruralMunicipality",
+              "cbsCode": 60403,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Tatopani",
+              "type": "ruralMunicipality",
+              "cbsCode": 60406,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Tila",
+              "type": "ruralMunicipality",
+              "cbsCode": 60407,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 604
         },
         {
           "name": "Kalikot",
           "localBodies": [
-            { "name": "Khandachakra", "type": "municipality" },
-            { "name": "Raskot", "type": "municipality" },
-            { "name": "Tilagupha", "type": "municipality" },
-            { "name": "Kalika", "type": "ruralMunicipality" },
-            { "name": "Mahawai", "type": "ruralMunicipality" },
-            { "name": "Naraharinath", "type": "ruralMunicipality" },
-            { "name": "Pachal Jharana", "type": "ruralMunicipality" },
-            { "name": "Palata", "type": "ruralMunicipality" },
-            { "name": "Sanni Tribeni", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Khandachakra",
+              "type": "municipality",
+              "cbsCode": 60506,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Raskot",
+              "type": "municipality",
+              "cbsCode": 60503,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Tilagupha",
+              "type": "municipality"
+            },
+            {
+              "name": "Kalika",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Mahawai",
+              "type": "ruralMunicipality",
+              "cbsCode": 60508,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Naraharinath",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Pachal Jharana",
+              "type": "ruralMunicipality",
+              "cbsCode": 60502,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Palata",
+              "type": "ruralMunicipality",
+              "cbsCode": 60501,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Sanni Tribeni",
+              "type": "ruralMunicipality"
+            }
+          ],
+          "cbsCode": 605
         },
         {
           "name": "Mugu",
           "localBodies": [
-            { "name": "Chhayanath Rara", "type": "municipality" },
-            { "name": "Khatyad", "type": "ruralMunicipality" },
-            { "name": "Mugu Karmarong", "type": "ruralMunicipality" },
-            { "name": "Soru", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Chhayanath Rara",
+              "type": "municipality",
+              "cbsCode": 60202,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Khatyad",
+              "type": "ruralMunicipality",
+              "cbsCode": 60204,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Mugu Karmarong",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Soru",
+              "type": "ruralMunicipality",
+              "cbsCode": 60203,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 602
         },
         {
           "name": "Rukum West",
           "localBodies": [
-            { "name": "Aathabisakot", "type": "municipality" },
-            { "name": "Chaurjahari", "type": "municipality" },
-            { "name": "Musikot", "type": "municipality" },
-            { "name": "Banphikot", "type": "ruralMunicipality" },
-            { "name": "Sanibheri", "type": "ruralMunicipality" },
-            { "name": "Tribeni", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Aathabisakot",
+              "type": "municipality"
+            },
+            {
+              "name": "Chaurjahari",
+              "type": "municipality",
+              "cbsCode": 60806,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Musikot",
+              "type": "municipality",
+              "cbsCode": 60804,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Banphikot",
+              "type": "ruralMunicipality",
+              "cbsCode": 60803,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Sanibheri",
+              "type": "ruralMunicipality",
+              "cbsCode": 60802,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Tribeni",
+              "type": "ruralMunicipality"
+            }
+          ],
+          "cbsCode": 608
         },
         {
           "name": "Salyan",
           "localBodies": [
-            { "name": "Bagachour", "type": "municipality" },
-            { "name": "Banagad Kupinde", "type": "municipality" },
-            { "name": "Sharada", "type": "municipality" },
-            { "name": "Chhatreshwori", "type": "ruralMunicipality" },
-            { "name": "Darma", "type": "ruralMunicipality" },
-            { "name": "Dhorchaur", "type": "ruralMunicipality" },
-            { "name": "Kalimati", "type": "ruralMunicipality" },
-            { "name": "Kapurkot", "type": "ruralMunicipality" },
-            { "name": "Kumakh Malika", "type": "ruralMunicipality" },
-            { "name": "Tribeni", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Bagachour",
+              "type": "municipality"
+            },
+            {
+              "name": "Banagad Kupinde",
+              "type": "municipality"
+            },
+            {
+              "name": "Sharada",
+              "type": "municipality"
+            },
+            {
+              "name": "Chhatreshwori",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Darma",
+              "type": "ruralMunicipality",
+              "cbsCode": 60901,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Dhorchaur",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Kalimati",
+              "type": "ruralMunicipality",
+              "cbsCode": 60908,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Kapurkot",
+              "type": "ruralMunicipality",
+              "cbsCode": 60910,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Kumakh Malika",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Tribeni",
+              "type": "ruralMunicipality"
+            }
+          ],
+          "cbsCode": 609
         },
         {
           "name": "Surkhet",
           "localBodies": [
-            { "name": "Bheriganga", "type": "municipality" },
-            { "name": "Birendranagar", "type": "municipality" },
-            { "name": "Gurbhakot", "type": "municipality" },
-            { "name": "Lekabeshi", "type": "municipality" },
-            { "name": "Panchapuri", "type": "municipality" },
-            { "name": "Barahatal", "type": "ruralMunicipality" },
-            { "name": "Chaukune", "type": "ruralMunicipality" },
-            { "name": "Chingad", "type": "ruralMunicipality" },
-            { "name": "Simta", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Bheriganga",
+              "type": "municipality",
+              "cbsCode": 61005,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Birendranagar",
+              "type": "municipality",
+              "cbsCode": 61006,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Gurbhakot",
+              "type": "municipality",
+              "cbsCode": 61004,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Lekabeshi",
+              "type": "municipality"
+            },
+            {
+              "name": "Panchapuri",
+              "type": "municipality",
+              "cbsCode": 61008,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Barahatal",
+              "type": "ruralMunicipality",
+              "cbsCode": 61007,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Chaukune",
+              "type": "ruralMunicipality",
+              "cbsCode": 61009,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Chingad",
+              "type": "ruralMunicipality",
+              "cbsCode": 61002,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Simta",
+              "type": "ruralMunicipality",
+              "cbsCode": 61001,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 610
         }
-      ]
+      ],
+      "cbsCode": 6,
+      "isoCode": "NP-P6"
     },
     {
       "id": "sudurpashchim",
@@ -1071,137 +4122,530 @@
         {
           "name": "Achham",
           "localBodies": [
-            { "name": "Kamal Bazar", "type": "municipality" },
-            { "name": "Mangalsen", "type": "municipality" },
-            { "name": "Panchdebal Binayak", "type": "municipality" },
-            { "name": "Sanphebagar", "type": "municipality" },
-            { "name": "Bannigadhi Jayagadh", "type": "ruralMunicipality" },
-            { "name": "Chaurpati", "type": "ruralMunicipality" },
-            { "name": "Dhakari", "type": "ruralMunicipality" },
-            { "name": "Mellekh", "type": "ruralMunicipality" },
-            { "name": "Ramaroshan", "type": "ruralMunicipality" },
-            { "name": "Turmakhand", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Kamal Bazar",
+              "type": "municipality",
+              "cbsCode": 70708,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Mangalsen",
+              "type": "municipality",
+              "cbsCode": 70706,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Panchdebal Binayak",
+              "type": "municipality"
+            },
+            {
+              "name": "Sanphebagar",
+              "type": "municipality"
+            },
+            {
+              "name": "Bannigadhi Jayagadh",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Chaurpati",
+              "type": "ruralMunicipality",
+              "cbsCode": 70705,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Dhakari",
+              "type": "ruralMunicipality",
+              "cbsCode": 70709,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Mellekh",
+              "type": "ruralMunicipality",
+              "cbsCode": 70703,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Ramaroshan",
+              "type": "ruralMunicipality",
+              "cbsCode": 70702,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Turmakhand",
+              "type": "ruralMunicipality",
+              "cbsCode": 70710,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 707
         },
         {
           "name": "Baitadi",
           "localBodies": [
-            { "name": "Dasharathchand", "type": "municipality" },
-            { "name": "Melauli", "type": "municipality" },
-            { "name": "Patan", "type": "municipality" },
-            { "name": "Puchaundi", "type": "municipality" },
-            { "name": "Dilasaini", "type": "ruralMunicipality" },
-            { "name": "Dogada Kedar", "type": "ruralMunicipality" },
-            { "name": "Pancheshwor", "type": "ruralMunicipality" },
-            { "name": "Shivanath", "type": "ruralMunicipality" },
-            { "name": "Sigas", "type": "ruralMunicipality" },
-            { "name": "Surnaya", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Dasharathchand",
+              "type": "municipality"
+            },
+            {
+              "name": "Melauli",
+              "type": "municipality",
+              "cbsCode": 70408,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Patan",
+              "type": "municipality"
+            },
+            {
+              "name": "Puchaundi",
+              "type": "municipality"
+            },
+            {
+              "name": "Dilasaini",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Dogada Kedar",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Pancheshwor",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Shivanath",
+              "type": "ruralMunicipality",
+              "cbsCode": 70407,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Sigas",
+              "type": "ruralMunicipality",
+              "cbsCode": 70410,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Surnaya",
+              "type": "ruralMunicipality",
+              "cbsCode": 70404,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 704
         },
         {
           "name": "Bajhang",
           "localBodies": [
-            { "name": "Bungal", "type": "municipality" },
-            { "name": "Jayaprithvi", "type": "municipality" },
-            { "name": "Bitthadchir", "type": "ruralMunicipality" },
-            { "name": "Chhabis Pathibhara", "type": "ruralMunicipality" },
-            { "name": "Durgathali", "type": "ruralMunicipality" },
-            { "name": "Kanda", "type": "ruralMunicipality" },
-            { "name": "Kedarsyun", "type": "ruralMunicipality" },
-            { "name": "Khaptad Chhanna", "type": "ruralMunicipality" },
-            { "name": "Masta", "type": "ruralMunicipality" },
-            { "name": "Surma", "type": "ruralMunicipality" },
-            { "name": "Talkot", "type": "ruralMunicipality" },
-            { "name": "Thalara", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Bungal",
+              "type": "municipality",
+              "cbsCode": 70202,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Jayaprithvi",
+              "type": "municipality"
+            },
+            {
+              "name": "Bitthadchir",
+              "type": "ruralMunicipality",
+              "cbsCode": 70210,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Chhabis Pathibhara",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Durgathali",
+              "type": "ruralMunicipality",
+              "cbsCode": 70208,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Kanda",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Kedarsyun",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Khaptad Chhanna",
+              "type": "ruralMunicipality",
+              "cbsCode": 70212,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Masta",
+              "type": "ruralMunicipality",
+              "cbsCode": 70205,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Surma",
+              "type": "ruralMunicipality",
+              "cbsCode": 70203,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Talkot",
+              "type": "ruralMunicipality",
+              "cbsCode": 70204,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Thalara",
+              "type": "ruralMunicipality",
+              "cbsCode": 70211,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 702
         },
         {
           "name": "Bajura",
           "localBodies": [
-            { "name": "Badimalika", "type": "municipality" },
-            { "name": "Budhiganga", "type": "municipality" },
-            { "name": "Budhinanda", "type": "municipality" },
-            { "name": "Tribeni", "type": "municipality" },
-            { "name": "Gaumul", "type": "ruralMunicipality" },
-            { "name": "Himali", "type": "ruralMunicipality" },
-            { "name": "Jagannath", "type": "ruralMunicipality" },
-            { "name": "Khaptad Chhededaha", "type": "ruralMunicipality" },
-            { "name": "Swami Kartik", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Badimalika",
+              "type": "municipality",
+              "cbsCode": 70106,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Budhiganga",
+              "type": "municipality",
+              "cbsCode": 70108,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Budhinanda",
+              "type": "municipality",
+              "cbsCode": 70103,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Tribeni",
+              "type": "municipality"
+            },
+            {
+              "name": "Gaumul",
+              "type": "ruralMunicipality",
+              "cbsCode": 70102,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Himali",
+              "type": "ruralMunicipality",
+              "cbsCode": 70101,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Jagannath",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Khaptad Chhededaha",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Swami Kartik",
+              "type": "ruralMunicipality"
+            }
+          ],
+          "cbsCode": 701
         },
         {
           "name": "Dadeldhura",
           "localBodies": [
-            { "name": "Amargadhi", "type": "municipality" },
-            { "name": "Parashuram", "type": "municipality" },
-            { "name": "Aalital", "type": "ruralMunicipality" },
-            { "name": "Ajayameru", "type": "ruralMunicipality" },
-            { "name": "Bhageshwor", "type": "ruralMunicipality" },
-            { "name": "Ganyapdhura", "type": "ruralMunicipality" },
-            { "name": "Nawadurga", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Amargadhi",
+              "type": "municipality",
+              "cbsCode": 70502,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Parashuram",
+              "type": "municipality"
+            },
+            {
+              "name": "Aalital",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Ajayameru",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Bhageshwor",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Ganyapdhura",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Nawadurga",
+              "type": "ruralMunicipality"
+            }
+          ],
+          "cbsCode": 705
         },
         {
           "name": "Darchula",
           "localBodies": [
-            { "name": "Mahakali", "type": "municipality" },
-            { "name": "Shailyashikhar", "type": "municipality" },
-            { "name": "Apihimal", "type": "ruralMunicipality" },
-            { "name": "Byas", "type": "ruralMunicipality" },
-            { "name": "Duhun", "type": "ruralMunicipality" },
-            { "name": "Lekam", "type": "ruralMunicipality" },
-            { "name": "Malikarjun", "type": "ruralMunicipality" },
-            { "name": "Marma", "type": "ruralMunicipality" },
-            { "name": "Naugad", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Mahakali",
+              "type": "municipality",
+              "cbsCode": 70303,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Shailyashikhar",
+              "type": "municipality",
+              "cbsCode": 70307,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Apihimal",
+              "type": "ruralMunicipality",
+              "cbsCode": 70305,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Byas",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Duhun",
+              "type": "ruralMunicipality",
+              "cbsCode": 70302,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Lekam",
+              "type": "ruralMunicipality",
+              "cbsCode": 70309,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Malikarjun",
+              "type": "ruralMunicipality",
+              "cbsCode": 70308,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Marma",
+              "type": "ruralMunicipality",
+              "cbsCode": 70306,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Naugad",
+              "type": "ruralMunicipality",
+              "cbsCode": 70304,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 703
         },
         {
           "name": "Doti",
           "localBodies": [
-            { "name": "Dipayal Silgadhi", "type": "municipality" },
-            { "name": "Shikhar", "type": "municipality" },
-            { "name": "Aadarsha", "type": "ruralMunicipality" },
-            { "name": "Badi Kedar", "type": "ruralMunicipality" },
-            { "name": "Bogatan", "type": "ruralMunicipality" },
-            { "name": "Jorayal", "type": "ruralMunicipality" },
-            { "name": "K.I. Singh", "type": "ruralMunicipality" },
-            { "name": "Purbichouki", "type": "ruralMunicipality" },
-            { "name": "Sayal", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Dipayal Silgadhi",
+              "type": "municipality",
+              "cbsCode": 70605,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Shikhar",
+              "type": "municipality",
+              "cbsCode": 70604,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Aadarsha",
+              "type": "ruralMunicipality",
+              "cbsCode": 70603,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Badi Kedar",
+              "type": "ruralMunicipality",
+              "cbsCode": 70608,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Bogatan",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Jorayal",
+              "type": "ruralMunicipality",
+              "cbsCode": 70609,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "K.I. Singh",
+              "type": "ruralMunicipality",
+              "cbsCode": 70606,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Purbichouki",
+              "type": "ruralMunicipality"
+            },
+            {
+              "name": "Sayal",
+              "type": "ruralMunicipality",
+              "cbsCode": 70602,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 706
         },
         {
           "name": "Kailali",
           "localBodies": [
-            { "name": "Dhangadhi", "type": "subMetropolitan" },
-            { "name": "Bhajani", "type": "municipality" },
-            { "name": "Gauriganga", "type": "municipality" },
-            { "name": "Ghodaghodi", "type": "municipality" },
-            { "name": "Godawari", "type": "municipality" },
-            { "name": "Lamki Chuha", "type": "municipality" },
-            { "name": "Tikapur", "type": "municipality" },
-            { "name": "Bardagoriya", "type": "ruralMunicipality" },
-            { "name": "Chure", "type": "ruralMunicipality" },
-            { "name": "Janaki", "type": "ruralMunicipality" },
-            { "name": "Joshipur", "type": "ruralMunicipality" },
-            { "name": "Kailari", "type": "ruralMunicipality" },
-            { "name": "Mohanyal", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Dhangadhi",
+              "type": "subMetropolitan",
+              "cbsCode": 70813,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Bhajani",
+              "type": "municipality"
+            },
+            {
+              "name": "Gauriganga",
+              "type": "municipality",
+              "cbsCode": 70804,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Ghodaghodi",
+              "type": "municipality",
+              "cbsCode": 70805,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Godawari",
+              "type": "municipality",
+              "cbsCode": 70803,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Lamki Chuha",
+              "type": "municipality",
+              "cbsCode": 70807,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Tikapur",
+              "type": "municipality",
+              "cbsCode": 70810,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Bardagoriya",
+              "type": "ruralMunicipality",
+              "cbsCode": 70806,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Chure",
+              "type": "ruralMunicipality",
+              "cbsCode": 70802,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Janaki",
+              "type": "ruralMunicipality",
+              "cbsCode": 70808,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Joshipur",
+              "type": "ruralMunicipality",
+              "cbsCode": 70809,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Kailari",
+              "type": "ruralMunicipality",
+              "cbsCode": 70812,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Mohanyal",
+              "type": "ruralMunicipality",
+              "cbsCode": 70801,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 708
         },
         {
           "name": "Kanchanpur",
           "localBodies": [
-            { "name": "Bedkot", "type": "municipality" },
-            { "name": "Belouri", "type": "municipality" },
-            { "name": "Bhimdatta", "type": "municipality" },
-            { "name": "Krishnapur", "type": "municipality" },
-            { "name": "Mahakali", "type": "municipality" },
-            { "name": "Punarbas", "type": "municipality" },
-            { "name": "Shuklaphanta", "type": "municipality" },
-            { "name": "Beldandi", "type": "ruralMunicipality" },
-            { "name": "Laljhadi", "type": "ruralMunicipality" }
-          ]
+            {
+              "name": "Bedkot",
+              "type": "municipality",
+              "cbsCode": 70903,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Belouri",
+              "type": "municipality"
+            },
+            {
+              "name": "Bhimdatta",
+              "type": "municipality",
+              "cbsCode": 70904,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Krishnapur",
+              "type": "municipality",
+              "cbsCode": 70901,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Mahakali",
+              "type": "municipality"
+            },
+            {
+              "name": "Punarbas",
+              "type": "municipality",
+              "cbsCode": 70907,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Shuklaphanta",
+              "type": "municipality",
+              "cbsCode": 70902,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Beldandi",
+              "type": "ruralMunicipality",
+              "cbsCode": 70909,
+              "cbsCodeVerified": true
+            },
+            {
+              "name": "Laljhadi",
+              "type": "ruralMunicipality",
+              "cbsCode": 70906,
+              "cbsCodeVerified": true
+            }
+          ],
+          "cbsCode": 709
         }
-      ]
+      ],
+      "cbsCode": 7,
+      "isoCode": "NP-P7"
     }
   ]
 }

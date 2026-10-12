@@ -74,11 +74,20 @@ class LocalBody {
   final String districtName;
   final String provinceName;
 
+  /// CBS 5-digit code (PDDPP format: P=province 1-7, DD=district 01-77, PP=palika 01-99).
+  /// Null if not verified against CBS/MoFAGA sources.
+  final int? cbsCode;
+
+  /// Whether the [cbsCode] is verified (doubly-attested by CBS + postal-2025).
+  final bool cbsCodeVerified;
+
   const LocalBody({
     required this.name,
     required this.type,
     required this.districtName,
     required this.provinceName,
+    this.cbsCode,
+    this.cbsCodeVerified = false,
   });
 
   /// Full display name of the type, e.g. 'Rural Municipality'.
@@ -95,6 +104,8 @@ class LocalBody {
         'type': type.shortName,
         'district': districtName,
         'province': provinceName,
+        if (cbsCode != null) 'cbsCode': cbsCode,
+        if (cbsCodeVerified) 'cbsCodeVerified': cbsCodeVerified,
       };
 
   factory LocalBody.fromJson(Map<String, dynamic> json) => LocalBody(
@@ -102,6 +113,8 @@ class LocalBody {
         type: LocalBodyType.fromShort(json['type'] as String?),
         districtName: json['district'] as String? ?? '',
         provinceName: json['province'] as String? ?? '',
+        cbsCode: json['cbsCode'] as int?,
+        cbsCodeVerified: json['cbsCodeVerified'] as bool? ?? false,
       );
 
   @override
@@ -111,13 +124,17 @@ class LocalBody {
 /// A district (77 nationwide), owning its local bodies.
 class District {
   final String name;
-  final List<(String, LocalBodyType)> _units;
+
+  /// CBS 3-digit district code (e.g., 101 for Taplejung, 306 for Kathmandu).
+  /// First digit = province (1-7), next two = district within province.
+  final int? cbsCode;
+  final List<LocalBody> _units;
   String _provinceName;
-  List<LocalBody>? _parsedLocalBodies;
 
   District({
     required this.name,
-    required List<(String, LocalBodyType)> units,
+    this.cbsCode,
+    required List<LocalBody> units,
     String provinceName = '',
   })  : _units = units,
         _provinceName = provinceName;
@@ -131,28 +148,17 @@ class District {
   /// The province this district belongs to.
   String get provinceName => _provinceName;
 
-  /// The district's local bodies, built once and cached.
-  List<LocalBody> get localBodies => _parsedLocalBodies ??= _build();
+  /// The district's local bodies.
+  List<LocalBody> get localBodies => _units;
 
   /// Number of local bodies in this district.
-  int get localBodyCount => localBodies.length;
-
-  List<LocalBody> _build() {
-    return [
-      for (final (unitName, unitType) in _units)
-        LocalBody(
-          name: unitName,
-          type: unitType,
-          districtName: name,
-          provinceName: _provinceName,
-        ),
-    ];
-  }
+  int get localBodyCount => _units.length;
 
   Map<String, dynamic> toJson() => <String, dynamic>{
         'name': name,
         'province': _provinceName,
-        'localBodies': [for (final b in localBodies) b.toJson()],
+        if (cbsCode != null) 'cbsCode': cbsCode,
+        'localBodies': [for (final b in _units) b.toJson()],
       };
 }
 
@@ -160,12 +166,20 @@ class District {
 class Province {
   final String id;
   final String name;
+
+  /// CBS province code (1-7).
+  final int cbsCode;
+
+  /// ISO 3166-2 code (NP-P1..NP-P7).
+  final String isoCode;
   final ProvinceStats stats;
   final List<District> districts;
 
   Province({
     required this.id,
     required this.name,
+    required this.cbsCode,
+    required this.isoCode,
     required this.stats,
     required this.districts,
   }) {

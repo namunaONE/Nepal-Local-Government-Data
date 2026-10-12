@@ -4,6 +4,37 @@ All notable changes to this package are documented in this file.
 The format follows [Keep a Changelog](https://keepachangelog.com/) and the
 package adheres to [Semantic Versioning](https://semver.org/).
 
+## 2.0.0 — 2026-10-12
+
+### Breaking
+- **Schema v2**: All models now include official CBS/NSO codes.
+  - `Province` adds `cbsCode` (1–7) and `isoCode` (NP-P1…NP-P7).
+  - `District` adds `cbsCode` (3-digit, e.g., 101 for Taplejung, 306 for Kathmandu).
+  - `LocalBody` adds `cbsCode` (5-digit PDDPP format) and `cbsCodeVerified` (bool).
+  - These fields are non-nullable where the official code is verified (547/753 palikas);
+    unverified entries have `cbsCode == null` and `cbsCodeVerified == false`.
+- `LocalBody` constructor signature changed: now accepts named parameters
+  `cbsCode` and `cbsCodeVerified` (both optional).
+- `District` constructor changed: `units` is now `List<LocalBody>` instead of
+  `List<(String, LocalBodyType)>`; `cbsCode` is optional.
+
+### Added
+- Official CBS codes for 547 palikas (73% verified, doubly-attested by CBS
+  local-body CSV and Postal Codes 2025), all 77 districts, and all 7 provinces.
+- ISO 3166-2 province codes (NP-P1..NP-P7) matching the federal structure.
+- `tool/merge/apply_cbs_codes.dart` to merge staged CBS codes into the dataset.
+- `data/nepal_local_levels.json` now includes `cbsCode`/`cbsCodeVerified` at
+  all three levels (province, district, local body).
+
+### Changed
+- Package version bumped to 2.0.0 per SemVer for breaking schema change.
+- `data/nepal_local_levels.json` size increased (~55 KB → ~124 KB) to carry
+  the new code fields.
+- Generated `lib/src/nepal_data.dart` now embeds CBS codes directly.
+
+### Fixed
+- Removed unused `_parsedLocalBodies` cache field from `District`.
+
 ## 1.0.0 — 2026-10-09
 
 ### Added

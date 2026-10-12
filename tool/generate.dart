@@ -95,6 +95,8 @@ String _generate(List<Map<String, dynamic>> provinces) {
       '// bodies (6 metropolitan, 11 sub-metropolitan, 276 municipalities,');
   b.writeln(
       '// 460 rural municipalities), 6,743 wards. Data as of October 2026.');
+  b.writeln(
+      '// Schema v2: includes CBS codes (province: NP-P1..NP-P7, district: 3-digit, localBody: 5-digit PDDPP).');
   b.writeln();
   b.writeln("import 'nepal_admin_api_base.dart';");
   b.writeln();
@@ -121,6 +123,8 @@ String _generate(List<Map<String, dynamic>> provinces) {
     b.writeln('    Province(');
     b.writeln("      id: '${province['id']}',");
     b.writeln("      name: '${province['name']}',");
+    b.writeln("      cbsCode: ${province['cbsCode']},");
+    b.writeln("      isoCode: '${province['isoCode']}',");
     b.writeln('      stats: const ProvinceStats(');
     b.writeln('        districts: ${provinceDistricts.length},');
     b.writeln('        metro: ${byType['metropolitan'] ?? 0},');
@@ -135,11 +139,22 @@ String _generate(List<Map<String, dynamic>> provinces) {
     for (final district in provinceDistricts) {
       b.writeln('        District(');
       b.writeln("          name: '${district['name']}',");
+      final dCbs = district['cbsCode'];
+      if (dCbs != null) {
+        b.writeln('          cbsCode: $dCbs,');
+      }
       b.writeln('          units: [');
       for (final unit
           in (district['localBodies'] as List).cast<Map<String, dynamic>>()) {
-        b.writeln(
-            "            ('${unit['name']}', LocalBodyType.${unit['type']}),");
+        final lbCbs = unit['cbsCode'];
+        final lbVerified = unit['cbsCodeVerified'] == true;
+        if (lbCbs != null) {
+          b.writeln(
+              "            LocalBody(name: '${unit['name']}', type: LocalBodyType.${unit['type']}, districtName: '${district['name']}', provinceName: '${province['name']}', cbsCode: $lbCbs, cbsCodeVerified: $lbVerified),");
+        } else {
+          b.writeln(
+              "            LocalBody(name: '${unit['name']}', type: LocalBodyType.${unit['type']}, districtName: '${district['name']}', provinceName: '${province['name']}'),");
+        }
       }
       b.writeln('          ],');
       b.writeln('        ),');
