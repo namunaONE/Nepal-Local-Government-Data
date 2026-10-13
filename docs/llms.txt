@@ -7,11 +7,12 @@
 - [Homepage](https://namunaONE.github.io/Nepal-Local-Government-Data/): Installation, quickstart, features, data sources, verification pipeline
 - [API Reference](https://namunaONE.github.io/Nepal-Local-Government-Data/api.html): Complete typed API — models, queries, JSON serialization, v1→v2 migration guide
 - [Data Explorer](https://namunaONE.github.io/Nepal-Local-Government-Data/explorer.html): Searchable, filterable table of all 753 palikas plus an interactive centroid map
+- [Brand System](https://namunaONE.github.io/Nepal-Local-Government-Data/brand.html): M3 dual-seed theme (navy #002C6D × green #4FD166) — tonal palettes, color roles, Flutter `ColorScheme` + CSS tokens
 - [Changelog](https://github.com/namunaONE/Nepal-Local-Government-Data/blob/main/CHANGELOG.md): Version history (Keep a Changelog, SemVer)
 
 ## Package
 
-- [pub.dev package](https://pub.dev/packages/nepal_admin_api): v2.3.0, pure Dart, zero runtime dependencies, offline-first
+- [pub.dev package](https://pub.dev/packages/nepal_admin_api): v2.3.1, pure Dart, zero runtime dependencies, offline-first
 - [GitHub repository](https://github.com/namunaONE/Nepal-Local-Government-Data): Source code, issue tracker, data merge pipeline
 - [Full documentation (single file)](https://namunaONE.github.io/Nepal-Local-Government-Data/llms-full.txt): Complete text of these docs for deep AI ingestion — paste this URL into any LLM for full context
 
@@ -24,7 +25,7 @@
 
 ## Key facts for code generation
 
-- Install: `dependencies: { nepal_admin_api: ^2.3.0 }`, then `dart pub get`.
+- Install: `dependencies: { nepal_admin_api: ^2.3.1 }`, then `dart pub get`.
 - Import: `import 'package:nepal_admin_api/nepal_admin_api.dart';`
 - Entry point is the static class `NepalAdminApi` (never instantiated).
 - `getProvinceById(id)` accepts a slug (`'bagmati'`) or ISO code (`'NP-P3'`), case-insensitive; `getProvinceByIso` / `getProvinceByCbs(3)` are explicit.

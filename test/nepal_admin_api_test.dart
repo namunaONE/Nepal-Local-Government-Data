@@ -1,3 +1,6 @@
+import 'dart:convert';
+import 'dart:io';
+
 import 'package:nepal_admin_api/nepal_admin_api.dart';
 import 'package:test/test.dart';
 
@@ -300,6 +303,19 @@ void main() {
       final restored = LocalBody.fromJson(withWards.toJson());
       expect(restored.wards, withWards.wards);
       expect(restored.wardsVerified, withWards.wardsVerified);
+    });
+  });
+
+  group('provenance freshness', () {
+    test('meta.dataAsOf never regresses below last verification', () {
+      // Floor = v2.3.1 verification date. Bump the floor (not the
+      // assertion) whenever the snapshot is re-verified.
+      final raw = File('data/nepal_local_levels.json').readAsStringSync();
+      final meta = (jsonDecode(raw) as Map)['meta'] as Map;
+      final asOf = DateTime.parse(meta['dataAsOf'] as String);
+      expect(asOf.isBefore(DateTime(2026, 10, 13)), isFalse,
+          reason: 'dataAsOf ${meta['dataAsOf']} predates last verification; '
+              're-verify the snapshot and bump the date + test floor');
     });
   });
 }

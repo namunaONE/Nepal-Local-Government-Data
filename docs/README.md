@@ -4,7 +4,8 @@ Static documentation site deployed via GitHub Pages from `docs/`.
 
 - **Live:** https://namunaONE.github.io/Nepal-Local-Government-Data/
 - **Pages:** `index.html` (landing), `api.html` (reference),
-  `explorer.html` (interactive table + centroid map over `data.json`)
+  `explorer.html` (interactive table + centroid map over `data.json`),
+  `brand.html` (Brand System v2 showcase over `brand-tokens.css`)
 - **Assets:** `logo.svg` (icon), `logo-full.svg` (icon + wordmark),
   `favicon.svg`, `styles.css`, `app.js`, `data.json`
 - **Cache policy:** asset URLs carry `?v=N` (bump on every visual/data

@@ -3,7 +3,7 @@
     "name": "Nepal local government structure",
     "description": "Canonical dataset of Nepal's federal administrative divisions: provinces, districts and local bodies (palikas).",
     "source": "Federal structure established by the Local Level Restructuring Commission (2017) under the Constitution of Nepal (2015); cross-checked against MoFAGA references.",
-    "dataAsOf": "2026-10-09",
+    "dataAsOf": "2026-10-13",
     "totals": {
       "provinces": 7,
       "districts": 77,

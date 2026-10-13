@@ -4,6 +4,17 @@ All notable changes to this package are documented in this file.
 The format follows [Keep a Changelog](https://keepachangelog.com/) and the
 package adheres to [Semantic Versioning](https://semver.org/).
 
+## 2.3.1 — 2026-10-13
+
+### Fixed
+- Provenance freshness: `meta.dataAsOf` corrected `2026-10-09` →
+  `2026-10-13` (snapshot verified through the v2.3.0 ward/geo merges).
+- New golden test pins `dataAsOf` to never regress below the last
+  verification date.
+- Website: Brand System v2 page (`brand.html`) linked from all navs and
+  footers; `llms.txt` / `llms-full.txt` cover the dual-seed theme
+  (navy `#002C6D` × green `#4FD166`) with the `copyWith` gotcha.
+
 ## 2.3.0 — 2026-10-13
 
 ### Added
