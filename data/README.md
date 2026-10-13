@@ -36,6 +36,8 @@ from it.
 | `cbsCodeVerified` | bool | true only when doubly-attested (CBS + Postal-2025) |
 | `lat` / `lng` | double? | approximate WGS84 centroid; null for 27/753 (never fabricated) |
 | `geoSource` | string? | e.g. `open-admin-data`, `osm-nominatim` |
+| `wards` | int? | ward count; null for 8/753 pending roster adjudication |
+| `wardsVerified` | bool | true only when doubly-attested (sagautam5 + geo-pro-max, incl. documented aliases) |
 
 Local-body names are **not unique** across Nepal (e.g. `Aurahi` ×3,
 `Sunkoshi` ×4) — always pair a name with its district and province.

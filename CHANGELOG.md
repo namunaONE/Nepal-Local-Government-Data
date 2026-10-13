@@ -4,6 +4,27 @@ All notable changes to this package are documented in this file.
 The format follows [Keep a Changelog](https://keepachangelog.com/) and the
 package adheres to [Semantic Versioning](https://semver.org/).
 
+## 2.3.0 — 2026-10-13
+
+### Added
+- Per-palika ward counts: `LocalBody.wards` (int, nullable) +
+  `wardsVerified` (bool). Coverage 745/753 (99%) doubly-attested
+  (sagautam5 + geo-pro-max agree, incl. documented aliases, fuzzy,
+  containment and 1 human decision); 8 remain null (see below).
+- `District.wards` (sums verified counts) and
+  `LocalBodyListX.whereWardsVerified`.
+- `tool/merge/verify_wards.dart` — merge tool with district-scoped
+  exact/alias/fuzzy/containment matching, `data/_stage/wards.json`
+  (assignments + review), `decisions_wards_manual.json` (Janakpurdham 25).
+- Explorer: Wards column + map popups show ward counts.
+
+### Known gaps (roster defects, not guessed)
+8 palikas carry no ward count pending roster adjudication (MoFAGA-backed
+findings in `data/_stage/wards.json` review): Manang Naraphu/Neshang,
+Salyan Dhorchaur, Bajhang Kanda, Udayapur Sunkoshi, Saptari Belhi Chapena,
+Nuwakot Meghang, Rasuwa Aamachhodingmo. Lumbini reconciles fully
+(109 units, 983 wards); other provinces reconcile modulo their gaps.
+
 ## 2.2.0 — 2026-10-12
 
 ### Added

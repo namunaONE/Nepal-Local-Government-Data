@@ -118,7 +118,7 @@ function initExplorer() {
     })
     .catch(err => {
       console.error('Failed to load data:', err);
-      tableBody.innerHTML = '<tr><td colspan="7" style="text-align:center; padding: 48px; color: var(--color-text-muted);">Failed to load data. Please ensure data.json exists.</td></tr>';
+      tableBody.innerHTML = '<tr><td colspan="8" style="text-align:center; padding: 48px; color: var(--color-text-muted);">Failed to load data. Please ensure data.json exists.</td></tr>';
     });
 
   function populateFilters() {
@@ -173,7 +173,7 @@ function initExplorer() {
 
     // Render table
     if (pageData.length === 0) {
-      tableBody.innerHTML = '<tr><td colspan="7" style="text-align:center; padding: 48px; color: var(--color-text-muted);">No matching records</td></tr>';
+      tableBody.innerHTML = '<tr><td colspan="8" style="text-align:center; padding: 48px; color: var(--color-text-muted);">No matching records</td></tr>';
     } else {
       tableBody.innerHTML = pageData.map(item => `
         <tr data-cbs="${item.cbsCode ?? ''}" data-lat="${item.lat ?? ''}" data-lng="${item.lng ?? ''}" data-name="${escapeHtml(item.name)}" tabindex="0" title="${item.lat != null ? 'Click to locate on map' : 'No coordinates available'}">
@@ -184,6 +184,7 @@ function initExplorer() {
           <td>${item.cbsCode !== null ? `<code>${item.cbsCode}</code>` : '<span class="unverified">—</span>'}</td>
           <td>${item.cbsCodeVerified ? '<span class="verified">✓ Verified</span>' : '<span class="unverified">Unverified</span>'}</td>
           <td>${item.isoCode ? `<code>${item.isoCode}</code>` : '—'}</td>
+          <td>${item.wards != null ? `${item.wards}` : '<span class="unverified">—</span>'}</td>
         </tr>
       `).join('');
       // Row → map: click a mapped row to fly to its marker.
@@ -375,10 +376,11 @@ function syncMap(items) {
         fillOpacity: item.cbsCodeVerified ? 0.85 : 0.2,
       });
       const cbs = item.cbsCode != null ? `<code>${item.cbsCode}</code>` : '—';
+      const wards = item.wards != null ? `${item.wards} wards` : 'wards n/a';
       m.bindPopup(
         `<strong>${escapeHtmlAttr(item.name)}</strong>` +
         `${escapeHtmlAttr(item.district)}, ${escapeHtmlAttr(item.province)}<br>` +
-        `CBS: ${cbs} ${item.cbsCodeVerified ? '✓' : '(unverified)'}<br>` +
+        `CBS: ${cbs} ${item.cbsCodeVerified ? '✓' : '(unverified)'} · ${wards}<br>` +
         `<span style="color:#64748b;font-size:12px">${item.lat.toFixed(3)}, ${item.lng.toFixed(3)} · ${escapeHtmlAttr(item.geoSource || 'compiled')}</span>`
       );
       return m;

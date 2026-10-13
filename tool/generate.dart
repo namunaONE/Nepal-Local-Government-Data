@@ -77,6 +77,14 @@ void _validate(List<Map<String, dynamic>> provinces, Map<String, int> totals) {
             exit(1);
           }
         }
+        // Ward-count validation: nullable, but when present must be a
+        // sane positive integer (observed range 5-32; cap 40 for safety).
+        final w = unit['wards'];
+        if (w != null && (w is! int || w < 1 || w > 40)) {
+          stderr.writeln('ERROR: invalid wards for ${unit['name']} '
+              '(${district['name']}): wards=$w.');
+          exit(1);
+        }
       }
     }
   }
@@ -177,6 +185,13 @@ String _generate(List<Map<String, dynamic>> provinces) {
           extra.write(', lat: $lat, lng: $lng');
           if (geoSource != null) {
             extra.write(", geoSource: '$geoSource'");
+          }
+        }
+        final wards = unit['wards'];
+        if (wards != null) {
+          extra.write(', wards: $wards');
+          if (unit['wardsVerified'] == true) {
+            extra.write(', wardsVerified: true');
           }
         }
         b.writeln(

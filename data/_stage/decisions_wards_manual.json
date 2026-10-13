@@ -1,0 +1,9 @@
+[
+  {
+    "district": "Dhanusha",
+    "name": "Janakpurdham",
+    "wards": 25,
+    "basis": "human",
+    "evidence": "Value conflict: sagautam5=25 vs geo-pro-max=24. Janakpurdham Sub-Metropolitan City officially comprises 25 wards; MoFAGA confirms sub-metropolitan status (जनकपुर उप-महानगरपालिका). geo-pro-max value is stale. Adopting 25."
+  }
+]

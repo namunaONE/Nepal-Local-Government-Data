@@ -24,6 +24,7 @@ Pure Dart package. Zero runtime dependencies. Data ships in the box.
 |---------|-------------|
 | **Complete hierarchy** | Province → District → Local Body (palika) |
 | **Official codes** | 547/753 palikas with verified 5-digit CBS codes (PDDPP), all 77 districts (3-digit), all 7 provinces (NP-P1…NP-P7) |
+| **Ward counts** | 745/753 palikas with verified ward counts; `District.wards` sums; 8 documented roster-defect gaps |
 | **Map coordinates** | 726/753 palikas with approximate centroids (`lat`/`lng` + `geoSource`); `hasCoordinates`, `whereMapped` |
 | **Type-safe models** | `Province`, `District`, `LocalBody`, `LocalBodyType` enum |
 | **Hierarchical queries** | Navigate province → district → local body with typed accessors |
@@ -39,7 +40,7 @@ Pure Dart package. Zero runtime dependencies. Data ships in the box.
 
 ```yaml
 dependencies:
-  nepal_admin_api: ^2.2.0
+  nepal_admin_api: ^2.3.0
 ```
 
 ```bash
@@ -148,7 +149,7 @@ Wards: ${stats.wards}                   // 6,743
 
 **Models**: `Province`, `District`, `LocalBody`, `LocalBodyType`, `ProvinceStats`, `NationalStats`, `SearchResult`
 
-**Helpers**: `LocalBody.fullPath` (`'Bharatpur, Chitwan, Bagmati'`), `isUrban` / `isRural`, `LocalBodyListX` (`sortedByName`, `sortedByFullPath`, `whereUrban`, `whereRural`, `whereVerified`, `ofType`)
+**Helpers**: `LocalBody.fullPath` (`'Bharatpur, Chitwan, Bagmati'`), `isUrban` / `isRural`, `hasCoordinates`, `LocalBodyListX` (`sortedByName`, `sortedByFullPath`, `whereUrban`, `whereRural`, `whereVerified`, `whereMapped`, `whereWardsVerified`, `ofType`), `District.wards` sums
 
 👉 [Full API Documentation](https://namunaONE.github.io/Nepal-Local-Government-Data/api.html)
 

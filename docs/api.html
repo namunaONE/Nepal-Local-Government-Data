@@ -167,16 +167,23 @@
   final String provinceName;
   final int? cbsCode;           // 5-digit PDDPP (NEW in v2)
   final bool cbsCodeVerified;   // doubly-attested by CBS + Postal-2025 (NEW in v2)
+  final double? lat, lng;       // WGS84 centroid, null when unmapped (NEW in v2.2)
+  final String? geoSource;      // e.g. 'open-admin-data' (NEW in v2.2)
+  final int? wards;             // ward count, null for 8 pending roster adjudication (NEW in v2.3)
+  final bool wardsVerified;     // doubly-attested sagautam5 + geo-pro-max (NEW in v2.3)
 
-  // v2 Constructor
+  // v2 Constructor (v2.2 adds lat/lng/geoSource; v2.3 adds wards/wardsVerified)
   LocalBody({
     required name, required type,
     required districtName, required provinceName,
-    cbsCode, cbsCodeVerified = false
+    cbsCode, cbsCodeVerified = false,
+    lat, lng, geoSource,
+    wards, wardsVerified = false
   })
 
   // Properties
   String get typeName => type.fullName;
+  bool get hasCoordinates => lat != null && lng != null;
   bool get isUrban => type == metropolitan || type == subMetropolitan || type == municipality;
 
   // Serialization

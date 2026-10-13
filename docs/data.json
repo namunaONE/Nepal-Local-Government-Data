@@ -9,7 +9,9 @@
     "isoCode": "NP-P3",
     "lat": 27.678,
     "lng": 85.431,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Changunarayan",
@@ -21,7 +23,9 @@
     "isoCode": "NP-P3",
     "lat": 27.692,
     "lng": 85.452,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Madhyapur Thimi",
@@ -33,7 +37,9 @@
     "isoCode": "NP-P3",
     "lat": 27.685,
     "lng": 85.382,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Suryabinayak",
@@ -45,7 +51,9 @@
     "isoCode": "NP-P3",
     "lat": 27.647,
     "lng": 85.435,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Bharatpur",
@@ -57,7 +65,9 @@
     "isoCode": "NP-P3",
     "lat": 27.688,
     "lng": 84.433,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 29,
+    "wardsVerified": true
   },
   {
     "name": "Ichchhakamana",
@@ -69,7 +79,9 @@
     "isoCode": "NP-P3",
     "lat": 27.804,
     "lng": 84.577,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Kalika",
@@ -81,7 +93,9 @@
     "isoCode": "NP-P3",
     "lat": 27.715,
     "lng": 84.595,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Khairhani",
@@ -93,7 +107,9 @@
     "isoCode": "NP-P3",
     "lat": 27.616,
     "lng": 84.566,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 13,
+    "wardsVerified": true
   },
   {
     "name": "Madi",
@@ -105,7 +121,9 @@
     "isoCode": "NP-P3",
     "lat": 27.434,
     "lng": 84.353,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Rapti",
@@ -117,7 +135,9 @@
     "isoCode": "NP-P3",
     "lat": 27.65,
     "lng": 84.661,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 13,
+    "wardsVerified": true
   },
   {
     "name": "Ratnanagar",
@@ -129,7 +149,9 @@
     "isoCode": "NP-P3",
     "lat": 27.615,
     "lng": 84.511,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 16,
+    "wardsVerified": true
   },
   {
     "name": "Benighat Rorang",
@@ -141,7 +163,9 @@
     "isoCode": "NP-P3",
     "lat": 27.747,
     "lng": 84.758,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Dhunibenshi",
@@ -153,7 +177,9 @@
     "isoCode": "NP-P3",
     "lat": 27.723,
     "lng": 85.169,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Gajuri",
@@ -165,7 +191,9 @@
     "isoCode": "NP-P3",
     "lat": 27.75,
     "lng": 84.897,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Galchhi",
@@ -177,7 +205,9 @@
     "isoCode": "NP-P3",
     "lat": 27.779,
     "lng": 84.987,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Ganga Jamuna",
@@ -189,7 +219,9 @@
     "isoCode": "NP-P3",
     "lat": 28.091,
     "lng": 84.921,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Jwalamukhi",
@@ -201,7 +233,9 @@
     "isoCode": "NP-P3",
     "lat": 27.919,
     "lng": 84.793,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Khaniyabas",
@@ -213,7 +247,9 @@
     "isoCode": "NP-P3",
     "lat": 28.083,
     "lng": 85.059,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Netrawati",
@@ -222,7 +258,9 @@
     "province": "Bagmati",
     "cbsCode": null,
     "cbsCodeVerified": false,
-    "isoCode": "NP-P3"
+    "isoCode": "NP-P3",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Nilkhantha",
@@ -234,7 +272,9 @@
     "isoCode": "NP-P3",
     "lat": 27.919,
     "lng": 84.93,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 14,
+    "wardsVerified": true
   },
   {
     "name": "Rubi Valley",
@@ -246,7 +286,9 @@
     "isoCode": "NP-P3",
     "lat": 28.226,
     "lng": 85.082,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Siddhalek",
@@ -258,7 +300,9 @@
     "isoCode": "NP-P3",
     "lat": 27.847,
     "lng": 84.837,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Thakre",
@@ -270,7 +314,9 @@
     "isoCode": "NP-P3",
     "lat": 27.737,
     "lng": 85.064,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Tripurasundari",
@@ -282,7 +328,9 @@
     "isoCode": "NP-P3",
     "lat": 28.019,
     "lng": 84.868,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Baitedhar",
@@ -291,7 +339,9 @@
     "province": "Bagmati",
     "cbsCode": null,
     "cbsCodeVerified": false,
-    "isoCode": "NP-P3"
+    "isoCode": "NP-P3",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Bhimeshwor",
@@ -303,7 +353,9 @@
     "isoCode": "NP-P3",
     "lat": 27.679,
     "lng": 86.022,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Bigu",
@@ -315,7 +367,9 @@
     "isoCode": "NP-P3",
     "lat": 27.955,
     "lng": 86.202,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Gaurishankar",
@@ -327,7 +381,9 @@
     "isoCode": "NP-P3",
     "lat": 27.81,
     "lng": 86.322,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Jiri",
@@ -339,7 +395,9 @@
     "isoCode": "NP-P3",
     "lat": 27.668,
     "lng": 86.273,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Kalinchowk",
@@ -351,7 +409,9 @@
     "isoCode": "NP-P3",
     "lat": 27.749,
     "lng": 86.094,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Melung",
@@ -363,7 +423,9 @@
     "isoCode": "NP-P3",
     "lat": 27.553,
     "lng": 86.034,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Shailung",
@@ -375,7 +437,9 @@
     "isoCode": "NP-P3",
     "lat": 27.615,
     "lng": 85.977,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Tamakoshi",
@@ -387,7 +451,9 @@
     "isoCode": "NP-P3",
     "lat": 27.544,
     "lng": 86.121,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Budhanilkantha",
@@ -399,7 +465,9 @@
     "isoCode": "NP-P3",
     "lat": 27.768,
     "lng": 85.361,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 13,
+    "wardsVerified": true
   },
   {
     "name": "Chandragiri",
@@ -411,7 +479,9 @@
     "isoCode": "NP-P3",
     "lat": 27.686,
     "lng": 85.233,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 15,
+    "wardsVerified": true
   },
   {
     "name": "Dakshinkali",
@@ -423,7 +493,9 @@
     "isoCode": "NP-P3",
     "lat": 27.614,
     "lng": 85.265,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Gokarneshwar",
@@ -435,7 +507,9 @@
     "isoCode": "NP-P3",
     "lat": 27.764,
     "lng": 85.405,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Kageshwari Manohara",
@@ -447,7 +521,9 @@
     "isoCode": "NP-P3",
     "lat": 27.733,
     "lng": 85.415,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Kathmandu",
@@ -459,7 +535,9 @@
     "isoCode": "NP-P3",
     "lat": 27.709,
     "lng": 85.325,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 32,
+    "wardsVerified": true
   },
   {
     "name": "Kirtipur",
@@ -471,7 +549,9 @@
     "isoCode": "NP-P3",
     "lat": 27.668,
     "lng": 85.276,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Nagarjun",
@@ -483,7 +563,9 @@
     "isoCode": "NP-P3",
     "lat": 27.724,
     "lng": 85.258,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Shankharapur",
@@ -495,7 +577,9 @@
     "isoCode": "NP-P3",
     "lat": 27.754,
     "lng": 85.502,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Tarakeshwar",
@@ -507,7 +591,9 @@
     "isoCode": "NP-P3",
     "lat": 27.777,
     "lng": 85.288,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Tokha",
@@ -519,7 +605,9 @@
     "isoCode": "NP-P3",
     "lat": 27.775,
     "lng": 85.333,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Banepa",
@@ -531,7 +619,9 @@
     "isoCode": "NP-P3",
     "lat": 27.648,
     "lng": 85.518,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 14,
+    "wardsVerified": true
   },
   {
     "name": "Bethanchowk",
@@ -543,7 +633,9 @@
     "isoCode": "NP-P3",
     "lat": 27.505,
     "lng": 85.504,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Bhumlu",
@@ -555,7 +647,9 @@
     "isoCode": "NP-P3",
     "lat": 27.627,
     "lng": 85.74,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Chauri Deurali",
@@ -567,7 +661,9 @@
     "isoCode": "NP-P3",
     "lat": 27.572,
     "lng": 85.779,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Dhulikhel",
@@ -579,7 +675,9 @@
     "isoCode": "NP-P3",
     "lat": 27.618,
     "lng": 85.563,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 12,
+    "wardsVerified": true
   },
   {
     "name": "Khanikhola",
@@ -591,7 +689,9 @@
     "isoCode": "NP-P3",
     "lat": 27.428,
     "lng": 85.489,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Mahabharat",
@@ -603,7 +703,9 @@
     "isoCode": "NP-P3",
     "lat": 27.398,
     "lng": 85.629,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Mandan Deupur",
@@ -615,7 +717,9 @@
     "isoCode": "NP-P3",
     "lat": 27.708,
     "lng": 85.596,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 12,
+    "wardsVerified": true
   },
   {
     "name": "Namobuddha",
@@ -627,7 +731,9 @@
     "isoCode": "NP-P3",
     "lat": 27.556,
     "lng": 85.634,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Panauti",
@@ -639,7 +745,9 @@
     "isoCode": "NP-P3",
     "lat": 27.583,
     "lng": 85.479,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 12,
+    "wardsVerified": true
   },
   {
     "name": "Panchkhal",
@@ -651,7 +759,9 @@
     "isoCode": "NP-P3",
     "lat": 27.642,
     "lng": 85.637,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 13,
+    "wardsVerified": true
   },
   {
     "name": "Roshi",
@@ -663,7 +773,9 @@
     "isoCode": "NP-P3",
     "lat": 27.468,
     "lng": 85.655,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 12,
+    "wardsVerified": true
   },
   {
     "name": "Temal",
@@ -675,7 +787,9 @@
     "isoCode": "NP-P3",
     "lat": 27.511,
     "lng": 85.753,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Bagmati",
@@ -687,7 +801,9 @@
     "isoCode": "NP-P3",
     "lat": 27.485,
     "lng": 85.292,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Godawari",
@@ -699,7 +815,9 @@
     "isoCode": "NP-P3",
     "lat": 27.581,
     "lng": 85.339,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 14,
+    "wardsVerified": true
   },
   {
     "name": "Konjyosom",
@@ -711,7 +829,9 @@
     "isoCode": "NP-P3",
     "lat": 27.52,
     "lng": 85.346,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Lalitpur",
@@ -723,7 +843,9 @@
     "isoCode": "NP-P3",
     "lat": 27.65,
     "lng": 85.312,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 29,
+    "wardsVerified": true
   },
   {
     "name": "Mahalaxmi",
@@ -735,7 +857,9 @@
     "isoCode": "NP-P3",
     "lat": 27.632,
     "lng": 85.38,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Mahankal",
@@ -747,7 +871,9 @@
     "isoCode": "NP-P3",
     "lat": 27.476,
     "lng": 85.401,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Bagmati",
@@ -759,7 +885,9 @@
     "isoCode": "NP-P3",
     "lat": 27.295,
     "lng": 85.363,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Bakaiya",
@@ -771,7 +899,9 @@
     "isoCode": "NP-P3",
     "lat": 27.341,
     "lng": 85.209,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 12,
+    "wardsVerified": true
   },
   {
     "name": "Bhimphedi",
@@ -783,7 +913,9 @@
     "isoCode": "NP-P3",
     "lat": 27.533,
     "lng": 85.116,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Hetauda",
@@ -795,7 +927,9 @@
     "isoCode": "NP-P3",
     "lat": 27.421,
     "lng": 85.009,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 19,
+    "wardsVerified": true
   },
   {
     "name": "Indrasarowar",
@@ -807,7 +941,9 @@
     "isoCode": "NP-P3",
     "lat": 27.602,
     "lng": 85.187,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Kailash",
@@ -819,7 +955,9 @@
     "isoCode": "NP-P3",
     "lat": 27.609,
     "lng": 84.952,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Makawanpurgadhi",
@@ -831,7 +969,9 @@
     "isoCode": "NP-P3",
     "lat": 27.437,
     "lng": 85.115,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Manahari",
@@ -843,7 +983,9 @@
     "isoCode": "NP-P3",
     "lat": 27.485,
     "lng": 84.857,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Raksirang",
@@ -855,7 +997,9 @@
     "isoCode": "NP-P3",
     "lat": 27.591,
     "lng": 84.832,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Thaha",
@@ -867,7 +1011,9 @@
     "isoCode": "NP-P3",
     "lat": 27.645,
     "lng": 85.096,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 12,
+    "wardsVerified": true
   },
   {
     "name": "Belkotgadhi",
@@ -879,7 +1025,9 @@
     "isoCode": "NP-P3",
     "lat": 27.826,
     "lng": 85.109,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 13,
+    "wardsVerified": true
   },
   {
     "name": "Bidur",
@@ -891,7 +1039,9 @@
     "isoCode": "NP-P3",
     "lat": 27.919,
     "lng": 85.131,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 13,
+    "wardsVerified": true
   },
   {
     "name": "Dupcheshwor",
@@ -903,7 +1053,9 @@
     "isoCode": "NP-P3",
     "lat": 27.948,
     "lng": 85.425,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Kakani",
@@ -915,7 +1067,9 @@
     "isoCode": "NP-P3",
     "lat": 27.822,
     "lng": 85.244,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Kispang",
@@ -927,7 +1081,9 @@
     "isoCode": "NP-P3",
     "lat": 28.035,
     "lng": 85.103,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Likhu",
@@ -939,7 +1095,9 @@
     "isoCode": "NP-P3",
     "lat": 27.887,
     "lng": 85.216,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Meghang",
@@ -960,7 +1118,9 @@
     "isoCode": "NP-P3",
     "lat": 27.891,
     "lng": 85.301,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Shivapuri",
@@ -972,7 +1132,9 @@
     "isoCode": "NP-P3",
     "lat": 27.854,
     "lng": 85.368,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Suryagadhi",
@@ -984,7 +1146,9 @@
     "isoCode": "NP-P3",
     "lat": 27.946,
     "lng": 85.236,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Tadi",
@@ -996,7 +1160,9 @@
     "isoCode": "NP-P3",
     "lat": 27.966,
     "lng": 85.338,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Tarakeshwar",
@@ -1008,7 +1174,9 @@
     "isoCode": "NP-P3",
     "lat": 27.882,
     "lng": 85.037,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Doramba",
@@ -1020,7 +1188,9 @@
     "isoCode": "NP-P3",
     "lat": 27.546,
     "lng": 85.92,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Gokulganga",
@@ -1032,7 +1202,9 @@
     "isoCode": "NP-P3",
     "lat": 27.584,
     "lng": 86.278,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Khandadevi",
@@ -1044,7 +1216,9 @@
     "isoCode": "NP-P3",
     "lat": 27.427,
     "lng": 85.915,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Likhu",
@@ -1053,7 +1227,9 @@
     "province": "Bagmati",
     "cbsCode": null,
     "cbsCodeVerified": false,
-    "isoCode": "NP-P3"
+    "isoCode": "NP-P3",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Manthali",
@@ -1065,7 +1241,9 @@
     "isoCode": "NP-P3",
     "lat": 27.409,
     "lng": 86.053,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 14,
+    "wardsVerified": true
   },
   {
     "name": "Ramechhap",
@@ -1077,7 +1255,9 @@
     "isoCode": "NP-P3",
     "lat": 27.322,
     "lng": 86.126,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Sunapati",
@@ -1089,7 +1269,9 @@
     "isoCode": "NP-P3",
     "lat": 27.507,
     "lng": 85.86,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Umakunda",
@@ -1101,7 +1283,9 @@
     "isoCode": "NP-P3",
     "lat": 27.644,
     "lng": 86.446,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Aamachhodingmo",
@@ -1125,7 +1309,9 @@
     "isoCode": "NP-P3",
     "lat": 28.212,
     "lng": 85.544,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Kalika",
@@ -1137,7 +1323,9 @@
     "isoCode": "NP-P3",
     "lat": 28.029,
     "lng": 85.217,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Naukunda",
@@ -1149,7 +1337,9 @@
     "isoCode": "NP-P3",
     "lat": 28.019,
     "lng": 85.301,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Uttargaya",
@@ -1161,7 +1351,9 @@
     "isoCode": "NP-P3",
     "lat": 28.071,
     "lng": 85.183,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Dudhouli",
@@ -1173,7 +1365,9 @@
     "isoCode": "NP-P3",
     "lat": 27.025,
     "lng": 86.215,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 14,
+    "wardsVerified": true
   },
   {
     "name": "Ghyanglekha",
@@ -1185,7 +1379,9 @@
     "isoCode": "NP-P3",
     "lat": 27.345,
     "lng": 85.792,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Golanjor",
@@ -1197,7 +1393,9 @@
     "isoCode": "NP-P3",
     "lat": 27.261,
     "lng": 86.056,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Hariharpurgaghi",
@@ -1209,7 +1407,9 @@
     "isoCode": "NP-P3",
     "lat": 27.257,
     "lng": 85.541,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Kamalamai",
@@ -1221,7 +1421,9 @@
     "isoCode": "NP-P3",
     "lat": 27.173,
     "lng": 85.91,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 14,
+    "wardsVerified": true
   },
   {
     "name": "Marin",
@@ -1233,7 +1435,9 @@
     "isoCode": "NP-P3",
     "lat": 27.248,
     "lng": 85.697,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Phikkal",
@@ -1245,7 +1449,9 @@
     "isoCode": "NP-P3",
     "lat": 27.185,
     "lng": 86.298,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Sunkoshi",
@@ -1257,7 +1463,9 @@
     "isoCode": "NP-P3",
     "lat": 27.38,
     "lng": 85.876,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Tinpatan",
@@ -1269,7 +1477,9 @@
     "isoCode": "NP-P3",
     "lat": 27.132,
     "lng": 86.133,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Bahrabise",
@@ -1281,7 +1491,9 @@
     "isoCode": "NP-P3",
     "lat": 27.84,
     "lng": 85.873,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Balephi",
@@ -1293,7 +1505,9 @@
     "isoCode": "NP-P3",
     "lat": 27.787,
     "lng": 85.802,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Bhotekoshi",
@@ -1305,7 +1519,9 @@
     "isoCode": "NP-P3",
     "lat": 27.933,
     "lng": 85.906,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Chautara Sangachowkgadhi",
@@ -1317,7 +1533,9 @@
     "isoCode": "NP-P3",
     "lat": 27.751,
     "lng": 85.727,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 14,
+    "wardsVerified": true
   },
   {
     "name": "Helambu",
@@ -1329,7 +1547,9 @@
     "isoCode": "NP-P3",
     "lat": 28.006,
     "lng": 85.532,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Indrawoti",
@@ -1341,7 +1561,9 @@
     "isoCode": "NP-P3",
     "lat": 27.786,
     "lng": 85.625,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 12,
+    "wardsVerified": true
   },
   {
     "name": "Jugal",
@@ -1353,7 +1575,9 @@
     "isoCode": "NP-P3",
     "lat": 28.003,
     "lng": 85.806,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Lisankhu Pakhar",
@@ -1365,7 +1589,9 @@
     "isoCode": "NP-P3",
     "lat": 27.677,
     "lng": 85.878,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Melamchi",
@@ -1377,7 +1603,9 @@
     "isoCode": "NP-P3",
     "lat": 27.82,
     "lng": 85.525,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 13,
+    "wardsVerified": true
   },
   {
     "name": "Panchpokhari Thangpal",
@@ -1389,7 +1617,9 @@
     "isoCode": "NP-P3",
     "lat": 28.008,
     "lng": 85.649,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Sunkoshi",
@@ -1401,7 +1631,9 @@
     "isoCode": "NP-P3",
     "lat": 27.711,
     "lng": 85.809,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Tripurasundari",
@@ -1413,7 +1645,9 @@
     "isoCode": "NP-P3",
     "lat": 27.748,
     "lng": 85.949,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Badigad",
@@ -1425,7 +1659,9 @@
     "isoCode": "NP-P4",
     "lat": 28.268,
     "lng": 83.251,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Baglung",
@@ -1437,7 +1673,9 @@
     "isoCode": "NP-P4",
     "lat": 28.251,
     "lng": 83.579,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 14,
+    "wardsVerified": true
   },
   {
     "name": "Bareng",
@@ -1449,7 +1687,9 @@
     "isoCode": "NP-P4",
     "lat": 28.148,
     "lng": 83.47,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Dhorpatan",
@@ -1461,7 +1701,9 @@
     "isoCode": "NP-P4",
     "lat": 28.39,
     "lng": 83.115,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Galkot",
@@ -1473,7 +1715,9 @@
     "isoCode": "NP-P4",
     "lat": 28.251,
     "lng": 83.381,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Jaimini",
@@ -1485,7 +1729,9 @@
     "isoCode": "NP-P4",
     "lat": 28.149,
     "lng": 83.586,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Kathekhola",
@@ -1497,7 +1743,9 @@
     "isoCode": "NP-P4",
     "lat": 28.263,
     "lng": 83.514,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Nisikhola",
@@ -1509,7 +1757,9 @@
     "isoCode": "NP-P4",
     "lat": 28.376,
     "lng": 83.02,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Tamankhola",
@@ -1521,7 +1771,9 @@
     "isoCode": "NP-P4",
     "lat": 28.439,
     "lng": 83.215,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Tarakhola",
@@ -1533,7 +1785,9 @@
     "isoCode": "NP-P4",
     "lat": 28.308,
     "lng": 83.413,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Aarughat",
@@ -1545,7 +1799,9 @@
     "isoCode": "NP-P4",
     "lat": 28.119,
     "lng": 84.814,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Ajirkot",
@@ -1557,7 +1813,9 @@
     "isoCode": "NP-P4",
     "lat": 28.235,
     "lng": 84.686,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Bhimsen",
@@ -1566,7 +1824,9 @@
     "province": "Gandaki",
     "cbsCode": null,
     "cbsCodeVerified": false,
-    "isoCode": "NP-P4"
+    "isoCode": "NP-P4",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Chumanubri",
@@ -1578,7 +1838,9 @@
     "isoCode": "NP-P4",
     "lat": 28.541,
     "lng": 84.873,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Dharche",
@@ -1590,7 +1852,9 @@
     "isoCode": "NP-P4",
     "lat": 28.312,
     "lng": 84.896,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Gandaki",
@@ -1602,7 +1866,9 @@
     "isoCode": "NP-P4",
     "lat": 27.862,
     "lng": 84.695,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Gorkha",
@@ -1614,7 +1880,9 @@
     "isoCode": "NP-P4",
     "lat": 27.977,
     "lng": 84.605,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 14,
+    "wardsVerified": true
   },
   {
     "name": "Palungtar",
@@ -1626,7 +1894,9 @@
     "isoCode": "NP-P4",
     "lat": 28.013,
     "lng": 84.52,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Shahid Lakhan",
@@ -1638,7 +1908,9 @@
     "isoCode": "NP-P4",
     "lat": 27.928,
     "lng": 84.639,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Siranchowk",
@@ -1650,7 +1922,9 @@
     "isoCode": "NP-P4",
     "lat": 28.086,
     "lng": 84.586,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Sulikot",
@@ -1659,7 +1933,9 @@
     "province": "Gandaki",
     "cbsCode": 40103,
     "cbsCodeVerified": true,
-    "isoCode": "NP-P4"
+    "isoCode": "NP-P4",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Annapurna",
@@ -1671,7 +1947,9 @@
     "isoCode": "NP-P4",
     "lat": 28.434,
     "lng": 83.804,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Machhapuchchhre",
@@ -1683,7 +1961,9 @@
     "isoCode": "NP-P4",
     "lat": 28.445,
     "lng": 83.964,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Madi",
@@ -1695,7 +1975,9 @@
     "isoCode": "NP-P4",
     "lat": 28.364,
     "lng": 84.135,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 12,
+    "wardsVerified": true
   },
   {
     "name": "Pokhara",
@@ -1707,7 +1989,9 @@
     "isoCode": "NP-P4",
     "lat": 28.209,
     "lng": 83.982,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 33,
+    "wardsVerified": true
   },
   {
     "name": "Rupa",
@@ -1719,7 +2003,9 @@
     "isoCode": "NP-P4",
     "lat": 28.145,
     "lng": 84.168,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Bensi Shahar",
@@ -1731,7 +2017,9 @@
     "isoCode": "NP-P4",
     "lat": 28.219,
     "lng": 84.351,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Dordi",
@@ -1743,7 +2031,9 @@
     "isoCode": "NP-P4",
     "lat": 28.293,
     "lng": 84.527,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Dudhapokhari",
@@ -1755,7 +2045,9 @@
     "isoCode": "NP-P4",
     "lat": 28.223,
     "lng": 84.595,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Kwhola Sothar",
@@ -1767,7 +2059,9 @@
     "isoCode": "NP-P4",
     "lat": 28.311,
     "lng": 84.246,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Madhya Nepal",
@@ -1779,7 +2073,9 @@
     "isoCode": "NP-P4",
     "lat": 28.147,
     "lng": 84.265,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Marshyangdi",
@@ -1791,7 +2087,9 @@
     "isoCode": "NP-P4",
     "lat": 28.381,
     "lng": 84.414,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Rainas",
@@ -1803,7 +2101,9 @@
     "isoCode": "NP-P4",
     "lat": 28.108,
     "lng": 84.492,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Sundarbazar",
@@ -1815,7 +2115,9 @@
     "isoCode": "NP-P4",
     "lat": 28.155,
     "lng": 84.362,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Chame",
@@ -1827,7 +2129,9 @@
     "isoCode": "NP-P4",
     "lat": 28.524,
     "lng": 84.26,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Naraphu",
@@ -1848,7 +2152,9 @@
     "isoCode": "NP-P4",
     "lat": 28.608,
     "lng": 84.395,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Neshang",
@@ -1866,7 +2172,9 @@
     "province": "Gandaki",
     "cbsCode": null,
     "cbsCodeVerified": false,
-    "isoCode": "NP-P4"
+    "isoCode": "NP-P4",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Dalome",
@@ -1875,7 +2183,9 @@
     "province": "Gandaki",
     "cbsCode": null,
     "cbsCodeVerified": false,
-    "isoCode": "NP-P4"
+    "isoCode": "NP-P4",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Gharapjhong",
@@ -1887,7 +2197,9 @@
     "isoCode": "NP-P4",
     "lat": 28.769,
     "lng": 83.747,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Lomanthang",
@@ -1899,7 +2211,9 @@
     "isoCode": "NP-P4",
     "lat": 29.202,
     "lng": 83.983,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Thasang",
@@ -1911,7 +2225,9 @@
     "isoCode": "NP-P4",
     "lat": 28.689,
     "lng": 83.587,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Annapurna",
@@ -1923,7 +2239,9 @@
     "isoCode": "NP-P4",
     "lat": 28.521,
     "lng": 83.696,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Beni",
@@ -1935,7 +2253,9 @@
     "isoCode": "NP-P4",
     "lat": 28.356,
     "lng": 83.524,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Dhawalagiri",
@@ -1947,7 +2267,9 @@
     "isoCode": "NP-P4",
     "lat": 28.613,
     "lng": 83.298,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Malika",
@@ -1959,7 +2281,9 @@
     "isoCode": "NP-P4",
     "lat": 28.421,
     "lng": 83.36,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Mangala",
@@ -1971,7 +2295,9 @@
     "isoCode": "NP-P4",
     "lat": 28.38,
     "lng": 83.444,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Raghuganga",
@@ -1983,7 +2309,9 @@
     "isoCode": "NP-P4",
     "lat": 28.536,
     "lng": 83.508,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Binayi Tribeni",
@@ -1995,7 +2323,9 @@
     "isoCode": "NP-P4",
     "lat": 27.632,
     "lng": 83.861,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Bulingtar",
@@ -2007,7 +2337,9 @@
     "isoCode": "NP-P4",
     "lat": 27.807,
     "lng": 84.203,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Bungdikali",
@@ -2016,7 +2348,9 @@
     "province": "Gandaki",
     "cbsCode": null,
     "cbsCodeVerified": false,
-    "isoCode": "NP-P4"
+    "isoCode": "NP-P4",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Devchuli",
@@ -2028,7 +2362,9 @@
     "isoCode": "NP-P4",
     "lat": 27.714,
     "lng": 84.199,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 17,
+    "wardsVerified": true
   },
   {
     "name": "Gaidakot",
@@ -2040,7 +2376,9 @@
     "isoCode": "NP-P4",
     "lat": 27.733,
     "lng": 84.34,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 18,
+    "wardsVerified": true
   },
   {
     "name": "Hupsekot",
@@ -2052,7 +2390,9 @@
     "isoCode": "NP-P4",
     "lat": 27.701,
     "lng": 84.063,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Kawasoti",
@@ -2064,7 +2404,9 @@
     "isoCode": "NP-P4",
     "lat": 27.651,
     "lng": 84.144,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 17,
+    "wardsVerified": true
   },
   {
     "name": "Madhya Bindu",
@@ -2076,7 +2418,9 @@
     "isoCode": "NP-P4",
     "lat": 27.635,
     "lng": 83.986,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 15,
+    "wardsVerified": true
   },
   {
     "name": "Bihadi",
@@ -2088,7 +2432,9 @@
     "isoCode": "NP-P4",
     "lat": 28.061,
     "lng": 83.597,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Jaljala",
@@ -2100,7 +2446,9 @@
     "isoCode": "NP-P4",
     "lat": 28.329,
     "lng": 83.622,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Kushma",
@@ -2112,7 +2460,9 @@
     "isoCode": "NP-P4",
     "lat": 28.234,
     "lng": 83.686,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 14,
+    "wardsVerified": true
   },
   {
     "name": "Mahashila",
@@ -2124,7 +2474,9 @@
     "isoCode": "NP-P4",
     "lat": 28.093,
     "lng": 83.671,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Modi",
@@ -2136,7 +2488,9 @@
     "isoCode": "NP-P4",
     "lat": 28.311,
     "lng": 83.716,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Paiyu",
@@ -2148,7 +2502,9 @@
     "isoCode": "NP-P4",
     "lat": 28.048,
     "lng": 83.662,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Phalebas",
@@ -2160,7 +2516,9 @@
     "isoCode": "NP-P4",
     "lat": 28.151,
     "lng": 83.698,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Aandhikhola",
@@ -2172,7 +2530,9 @@
     "isoCode": "NP-P4",
     "lat": 28.167,
     "lng": 83.799,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Arjunchaupari",
@@ -2184,7 +2544,9 @@
     "isoCode": "NP-P4",
     "lat": 28.104,
     "lng": 83.773,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Bhirkot",
@@ -2196,7 +2558,9 @@
     "isoCode": "NP-P4",
     "lat": 28.042,
     "lng": 83.76,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Biruwa",
@@ -2208,7 +2572,9 @@
     "isoCode": "NP-P4",
     "lat": 27.993,
     "lng": 83.898,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Chapakot",
@@ -2220,7 +2586,9 @@
     "isoCode": "NP-P4",
     "lat": 27.924,
     "lng": 83.791,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Galyang",
@@ -2232,7 +2600,9 @@
     "isoCode": "NP-P4",
     "lat": 27.958,
     "lng": 83.656,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Harinas",
@@ -2244,7 +2614,9 @@
     "isoCode": "NP-P4",
     "lat": 27.977,
     "lng": 83.951,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Kaligandaki",
@@ -2256,7 +2628,9 @@
     "isoCode": "NP-P4",
     "lat": 27.952,
     "lng": 83.536,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Phedikhola",
@@ -2268,7 +2642,9 @@
     "isoCode": "NP-P4",
     "lat": 28.175,
     "lng": 83.869,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Putalibazar",
@@ -2280,7 +2656,9 @@
     "isoCode": "NP-P4",
     "lat": 28.091,
     "lng": 83.885,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 14,
+    "wardsVerified": true
   },
   {
     "name": "Walling",
@@ -2292,7 +2670,9 @@
     "isoCode": "NP-P4",
     "lat": 27.985,
     "lng": 83.768,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 14,
+    "wardsVerified": true
   },
   {
     "name": "Aanbu Khaireni",
@@ -2304,7 +2684,9 @@
     "isoCode": "NP-P4",
     "lat": 27.88,
     "lng": 84.477,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Bandipur",
@@ -2316,7 +2698,9 @@
     "isoCode": "NP-P4",
     "lat": 27.918,
     "lng": 84.394,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Bhanu",
@@ -2328,7 +2712,9 @@
     "isoCode": "NP-P4",
     "lat": 28.041,
     "lng": 84.405,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 13,
+    "wardsVerified": true
   },
   {
     "name": "Bhimad",
@@ -2340,7 +2726,9 @@
     "isoCode": "NP-P4",
     "lat": 27.963,
     "lng": 84.064,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Byas",
@@ -2352,7 +2740,9 @@
     "isoCode": "NP-P4",
     "lat": 28.001,
     "lng": 84.289,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 14,
+    "wardsVerified": true
   },
   {
     "name": "Devghat",
@@ -2364,7 +2754,9 @@
     "isoCode": "NP-P4",
     "lat": 27.811,
     "lng": 84.367,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Ghiring",
@@ -2376,7 +2768,9 @@
     "isoCode": "NP-P4",
     "lat": 27.899,
     "lng": 84.044,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Myagde",
@@ -2388,7 +2782,9 @@
     "isoCode": "NP-P4",
     "lat": 28.007,
     "lng": 84.154,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Rishing",
@@ -2400,7 +2796,9 @@
     "isoCode": "NP-P4",
     "lat": 27.901,
     "lng": 84.226,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Shuklagandaki",
@@ -2412,7 +2810,9 @@
     "isoCode": "NP-P4",
     "lat": 28.061,
     "lng": 84.045,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 12,
+    "wardsVerified": true
   },
   {
     "name": "Aathbis",
@@ -2424,7 +2824,9 @@
     "isoCode": "NP-P6",
     "lat": 29.024,
     "lng": 81.479,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Bhagawatimai",
@@ -2436,7 +2838,9 @@
     "isoCode": "NP-P6",
     "lat": 28.801,
     "lng": 81.815,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Bhairabi",
@@ -2448,7 +2852,9 @@
     "isoCode": "NP-P6",
     "lat": 28.945,
     "lng": 81.635,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Chamunda Bindrasaini",
@@ -2460,7 +2866,9 @@
     "isoCode": "NP-P6",
     "lat": 28.935,
     "lng": 81.562,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Dullu",
@@ -2472,7 +2880,9 @@
     "isoCode": "NP-P6",
     "lat": 28.833,
     "lng": 81.608,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 13,
+    "wardsVerified": true
   },
   {
     "name": "Dungeshwor",
@@ -2484,7 +2894,9 @@
     "isoCode": "NP-P6",
     "lat": 28.754,
     "lng": 81.716,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Gurans",
@@ -2496,7 +2908,9 @@
     "isoCode": "NP-P6",
     "lat": 28.71,
     "lng": 81.645,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Mahabu",
@@ -2508,7 +2922,9 @@
     "isoCode": "NP-P6",
     "lat": 28.942,
     "lng": 81.698,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Narayan",
@@ -2520,7 +2936,9 @@
     "isoCode": "NP-P6",
     "lat": 28.877,
     "lng": 81.739,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Naumule",
@@ -2532,7 +2950,9 @@
     "isoCode": "NP-P6",
     "lat": 28.926,
     "lng": 81.843,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Thantikandh",
@@ -2544,7 +2964,9 @@
     "isoCode": "NP-P6",
     "lat": 28.993,
     "lng": 81.539,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Chharka Tangsong",
@@ -2556,7 +2978,9 @@
     "isoCode": "NP-P6",
     "lat": 28.98,
     "lng": 83.339,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Dolpo Buddha",
@@ -2568,7 +2992,9 @@
     "isoCode": "NP-P6",
     "lat": 29.287,
     "lng": 83.316,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Jagadulla",
@@ -2580,7 +3006,9 @@
     "isoCode": "NP-P6",
     "lat": 29.241,
     "lng": 82.662,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Kaike",
@@ -2592,7 +3020,9 @@
     "isoCode": "NP-P6",
     "lat": 28.922,
     "lng": 82.99,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Mudkechula",
@@ -2604,7 +3034,9 @@
     "isoCode": "NP-P6",
     "lat": 29.057,
     "lng": 82.531,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Shey Phoksundo",
@@ -2616,7 +3048,9 @@
     "isoCode": "NP-P6",
     "lat": 29.373,
     "lng": 83.013,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Thulibheri",
@@ -2628,7 +3062,9 @@
     "isoCode": "NP-P6",
     "lat": 28.956,
     "lng": 82.854,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Tripurasundari",
@@ -2640,7 +3076,9 @@
     "isoCode": "NP-P6",
     "lat": 29.017,
     "lng": 82.762,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Adanchuli",
@@ -2652,7 +3090,9 @@
     "isoCode": "NP-P6",
     "lat": 29.701,
     "lng": 81.861,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Chankheli",
@@ -2664,7 +3104,9 @@
     "isoCode": "NP-P6",
     "lat": 29.855,
     "lng": 82.235,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Kharpunath",
@@ -2676,7 +3118,9 @@
     "isoCode": "NP-P6",
     "lat": 30.08,
     "lng": 82.099,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Namkha",
@@ -2688,7 +3132,9 @@
     "isoCode": "NP-P6",
     "lat": 30.167,
     "lng": 81.618,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Sarkegad",
@@ -2700,7 +3146,9 @@
     "isoCode": "NP-P6",
     "lat": 29.79,
     "lng": 81.892,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Simkot",
@@ -2712,7 +3160,9 @@
     "isoCode": "NP-P6",
     "lat": 30.136,
     "lng": 81.971,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Tanjakot",
@@ -2724,7 +3174,9 @@
     "isoCode": "NP-P6",
     "lat": 29.703,
     "lng": 81.749,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Barekot",
@@ -2736,7 +3188,9 @@
     "isoCode": "NP-P6",
     "lat": 28.986,
     "lng": 82.27,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Bheri",
@@ -2745,7 +3199,9 @@
     "province": "Karnali",
     "cbsCode": null,
     "cbsCodeVerified": false,
-    "isoCode": "NP-P6"
+    "isoCode": "NP-P6",
+    "wards": 13,
+    "wardsVerified": true
   },
   {
     "name": "Chhedagad",
@@ -2757,7 +3213,9 @@
     "isoCode": "NP-P6",
     "lat": 28.752,
     "lng": 82.017,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 13,
+    "wardsVerified": true
   },
   {
     "name": "Junichande",
@@ -2769,7 +3227,9 @@
     "isoCode": "NP-P6",
     "lat": 28.902,
     "lng": 81.987,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Kuse",
@@ -2781,7 +3241,9 @@
     "isoCode": "NP-P6",
     "lat": 28.881,
     "lng": 82.148,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Nalagad",
@@ -2793,7 +3255,9 @@
     "isoCode": "NP-P6",
     "lat": 28.866,
     "lng": 82.391,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 13,
+    "wardsVerified": true
   },
   {
     "name": "Shivalaya",
@@ -2805,7 +3269,9 @@
     "isoCode": "NP-P6",
     "lat": 28.691,
     "lng": 81.931,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Chandannath",
@@ -2817,7 +3283,9 @@
     "isoCode": "NP-P6",
     "lat": 29.303,
     "lng": 82.15,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Guthichaur",
@@ -2829,7 +3297,9 @@
     "isoCode": "NP-P6",
     "lat": 29.197,
     "lng": 82.397,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Hima",
@@ -2841,7 +3311,9 @@
     "isoCode": "NP-P6",
     "lat": 29.271,
     "lng": 81.93,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Kanaka Sundari",
@@ -2853,7 +3325,9 @@
     "isoCode": "NP-P6",
     "lat": 29.412,
     "lng": 82.05,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Patarasi",
@@ -2865,7 +3339,9 @@
     "isoCode": "NP-P6",
     "lat": 29.368,
     "lng": 82.368,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Sinja",
@@ -2877,7 +3353,9 @@
     "isoCode": "NP-P6",
     "lat": 29.342,
     "lng": 82.029,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Tatopani",
@@ -2889,7 +3367,9 @@
     "isoCode": "NP-P6",
     "lat": 29.133,
     "lng": 82.15,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Tila",
@@ -2901,7 +3381,9 @@
     "isoCode": "NP-P6",
     "lat": 29.186,
     "lng": 81.984,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Kalika",
@@ -2910,7 +3392,9 @@
     "province": "Karnali",
     "cbsCode": null,
     "cbsCodeVerified": false,
-    "isoCode": "NP-P6"
+    "isoCode": "NP-P6",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Khandachakra",
@@ -2922,7 +3406,9 @@
     "isoCode": "NP-P6",
     "lat": 29.158,
     "lng": 81.666,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Mahawai",
@@ -2934,7 +3420,9 @@
     "isoCode": "NP-P6",
     "lat": 29.041,
     "lng": 81.856,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Naraharinath",
@@ -2946,7 +3434,9 @@
     "isoCode": "NP-P6",
     "lat": 29.221,
     "lng": 81.531,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Pachal Jharana",
@@ -2958,7 +3448,9 @@
     "isoCode": "NP-P6",
     "lat": 29.26,
     "lng": 81.721,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Palata",
@@ -2970,7 +3462,9 @@
     "isoCode": "NP-P6",
     "lat": 29.34,
     "lng": 81.84,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Raskot",
@@ -2982,7 +3476,9 @@
     "isoCode": "NP-P6",
     "lat": 29.275,
     "lng": 81.644,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Sanni Tribeni",
@@ -2994,7 +3490,9 @@
     "isoCode": "NP-P6",
     "lat": 29.264,
     "lng": 81.584,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Tilagupha",
@@ -3006,7 +3504,9 @@
     "isoCode": "NP-P6",
     "lat": 29.147,
     "lng": 81.852,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Chhayanath Rara",
@@ -3018,7 +3518,9 @@
     "isoCode": "NP-P6",
     "lat": 29.535,
     "lng": 82.152,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 14,
+    "wardsVerified": true
   },
   {
     "name": "Khatyad",
@@ -3030,7 +3532,9 @@
     "isoCode": "NP-P6",
     "lat": 29.53,
     "lng": 81.9,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Mugu Karmarong",
@@ -3039,7 +3543,9 @@
     "province": "Karnali",
     "cbsCode": null,
     "cbsCodeVerified": false,
-    "isoCode": "NP-P6"
+    "isoCode": "NP-P6",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Soru",
@@ -3051,7 +3557,9 @@
     "isoCode": "NP-P6",
     "lat": 29.637,
     "lng": 81.969,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Aathabisakot",
@@ -3063,7 +3571,9 @@
     "isoCode": "NP-P6",
     "lat": 28.846,
     "lng": 82.519,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 14,
+    "wardsVerified": true
   },
   {
     "name": "Banphikot",
@@ -3075,7 +3585,9 @@
     "isoCode": "NP-P6",
     "lat": 28.711,
     "lng": 82.509,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Chaurjahari",
@@ -3087,7 +3599,9 @@
     "isoCode": "NP-P6",
     "lat": 28.636,
     "lng": 82.251,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 14,
+    "wardsVerified": true
   },
   {
     "name": "Musikot",
@@ -3099,7 +3613,9 @@
     "isoCode": "NP-P6",
     "lat": 28.612,
     "lng": 82.47,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 14,
+    "wardsVerified": true
   },
   {
     "name": "Sanibheri",
@@ -3111,7 +3627,9 @@
     "isoCode": "NP-P6",
     "lat": 28.67,
     "lng": 82.343,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Tribeni",
@@ -3123,7 +3641,9 @@
     "isoCode": "NP-P6",
     "lat": 28.568,
     "lng": 82.427,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Bagachour",
@@ -3135,7 +3655,9 @@
     "isoCode": "NP-P6",
     "lat": 28.472,
     "lng": 82.318,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 12,
+    "wardsVerified": true
   },
   {
     "name": "Banagad Kupinde",
@@ -3147,7 +3669,9 @@
     "isoCode": "NP-P6",
     "lat": 28.493,
     "lng": 82.067,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 12,
+    "wardsVerified": true
   },
   {
     "name": "Chhatreshwori",
@@ -3159,7 +3683,9 @@
     "isoCode": "NP-P6",
     "lat": 28.358,
     "lng": 82.305,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Darma",
@@ -3171,7 +3697,9 @@
     "isoCode": "NP-P6",
     "lat": 28.55,
     "lng": 82.318,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Dhorchaur",
@@ -3192,7 +3720,9 @@
     "isoCode": "NP-P6",
     "lat": 28.297,
     "lng": 81.962,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Kapurkot",
@@ -3204,7 +3734,9 @@
     "isoCode": "NP-P6",
     "lat": 28.249,
     "lng": 82.358,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Kumakh Malika",
@@ -3213,7 +3745,9 @@
     "province": "Karnali",
     "cbsCode": null,
     "cbsCodeVerified": false,
-    "isoCode": "NP-P6"
+    "isoCode": "NP-P6",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Sharada",
@@ -3225,7 +3759,9 @@
     "isoCode": "NP-P6",
     "lat": 28.388,
     "lng": 82.167,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 15,
+    "wardsVerified": true
   },
   {
     "name": "Tribeni",
@@ -3237,7 +3773,9 @@
     "isoCode": "NP-P6",
     "lat": 28.286,
     "lng": 82.192,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Barahatal",
@@ -3249,7 +3787,9 @@
     "isoCode": "NP-P6",
     "lat": 28.654,
     "lng": 81.449,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Bheriganga",
@@ -3261,7 +3801,9 @@
     "isoCode": "NP-P6",
     "lat": 28.47,
     "lng": 81.681,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 13,
+    "wardsVerified": true
   },
   {
     "name": "Birendranagar",
@@ -3273,7 +3815,9 @@
     "isoCode": "NP-P6",
     "lat": 28.599,
     "lng": 81.606,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 16,
+    "wardsVerified": true
   },
   {
     "name": "Chaukune",
@@ -3285,7 +3829,9 @@
     "isoCode": "NP-P6",
     "lat": 28.859,
     "lng": 81.277,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Chingad",
@@ -3297,7 +3843,9 @@
     "isoCode": "NP-P6",
     "lat": 28.627,
     "lng": 81.839,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Gurbhakot",
@@ -3309,7 +3857,9 @@
     "isoCode": "NP-P6",
     "lat": 28.437,
     "lng": 81.9,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 14,
+    "wardsVerified": true
   },
   {
     "name": "Lekabeshi",
@@ -3321,7 +3871,9 @@
     "isoCode": "NP-P6",
     "lat": 28.536,
     "lng": 81.762,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Panchapuri",
@@ -3333,7 +3885,9 @@
     "isoCode": "NP-P6",
     "lat": 28.789,
     "lng": 81.402,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Simta",
@@ -3345,7 +3899,9 @@
     "isoCode": "NP-P6",
     "lat": 28.545,
     "lng": 81.943,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Aamchowk",
@@ -3357,7 +3913,9 @@
     "isoCode": "NP-P1",
     "lat": 26.972,
     "lng": 87.034,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Arun",
@@ -3369,7 +3927,9 @@
     "isoCode": "NP-P1",
     "lat": 27.186,
     "lng": 87.207,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Bhojpur",
@@ -3381,7 +3941,9 @@
     "isoCode": "NP-P1",
     "lat": 27.188,
     "lng": 87.05,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 12,
+    "wardsVerified": true
   },
   {
     "name": "Hatuwagadhi",
@@ -3393,7 +3955,9 @@
     "isoCode": "NP-P1",
     "lat": 26.995,
     "lng": 87.138,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Pauwa Dunma",
@@ -3405,7 +3969,9 @@
     "isoCode": "NP-P1",
     "lat": 27.123,
     "lng": 87.145,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Ramprasad Rai",
@@ -3417,7 +3983,9 @@
     "isoCode": "NP-P1",
     "lat": 27.081,
     "lng": 87.031,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Salpa Silichho",
@@ -3429,7 +3997,9 @@
     "isoCode": "NP-P1",
     "lat": 27.385,
     "lng": 86.979,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Shadananda",
@@ -3441,7 +4011,9 @@
     "isoCode": "NP-P1",
     "lat": 27.337,
     "lng": 87.103,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 14,
+    "wardsVerified": true
   },
   {
     "name": "Tyamke Maiyum",
@@ -3453,7 +4025,9 @@
     "isoCode": "NP-P1",
     "lat": 27.205,
     "lng": 86.961,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Chaubise",
@@ -3465,7 +4039,9 @@
     "isoCode": "NP-P1",
     "lat": 26.921,
     "lng": 87.465,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Chhathar Jorpati",
@@ -3477,7 +4053,9 @@
     "isoCode": "NP-P1",
     "lat": 27.022,
     "lng": 87.403,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Dhankuta",
@@ -3489,7 +4067,9 @@
     "isoCode": "NP-P1",
     "lat": 26.983,
     "lng": 87.325,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Mahalaxmi",
@@ -3501,7 +4081,9 @@
     "isoCode": "NP-P1",
     "lat": 27.134,
     "lng": 87.333,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Pakhribas",
@@ -3513,7 +4095,9 @@
     "isoCode": "NP-P1",
     "lat": 27.055,
     "lng": 87.251,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Sahidbhumi",
@@ -3525,7 +4109,9 @@
     "isoCode": "NP-P1",
     "lat": 26.96,
     "lng": 87.218,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Sangurigadhi",
@@ -3537,7 +4123,9 @@
     "isoCode": "NP-P1",
     "lat": 26.901,
     "lng": 87.287,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Chulachuli",
@@ -3549,7 +4137,9 @@
     "isoCode": "NP-P1",
     "lat": 26.766,
     "lng": 87.683,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Deumai",
@@ -3561,7 +4151,9 @@
     "isoCode": "NP-P1",
     "lat": 26.933,
     "lng": 87.844,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Fakfokathum",
@@ -3573,7 +4165,9 @@
     "isoCode": "NP-P1",
     "lat": 26.966,
     "lng": 87.751,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Ilam",
@@ -3585,7 +4179,9 @@
     "isoCode": "NP-P1",
     "lat": 26.94,
     "lng": 87.925,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 12,
+    "wardsVerified": true
   },
   {
     "name": "Mai",
@@ -3597,7 +4193,9 @@
     "isoCode": "NP-P1",
     "lat": 26.768,
     "lng": 87.862,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Mai Jogmai",
@@ -3609,7 +4207,9 @@
     "isoCode": "NP-P1",
     "lat": 26.962,
     "lng": 88.003,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Mangsebung",
@@ -3621,7 +4221,9 @@
     "isoCode": "NP-P1",
     "lat": 26.828,
     "lng": 87.733,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Rong",
@@ -3633,7 +4235,9 @@
     "isoCode": "NP-P1",
     "lat": 26.805,
     "lng": 88.063,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Sandakpur",
@@ -3645,7 +4249,9 @@
     "isoCode": "NP-P1",
     "lat": 27.047,
     "lng": 87.952,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Suryodaya",
@@ -3657,7 +4263,9 @@
     "isoCode": "NP-P1",
     "lat": 26.898,
     "lng": 88.066,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 14,
+    "wardsVerified": true
   },
   {
     "name": "Arjundhara",
@@ -3669,7 +4277,9 @@
     "isoCode": "NP-P1",
     "lat": 26.715,
     "lng": 87.961,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Barhadashi",
@@ -3681,7 +4291,9 @@
     "isoCode": "NP-P1",
     "lat": 26.528,
     "lng": 87.921,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Bhadrapur",
@@ -3693,7 +4305,9 @@
     "isoCode": "NP-P1",
     "lat": 26.526,
     "lng": 88.077,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Birtamod",
@@ -3705,7 +4319,9 @@
     "isoCode": "NP-P1",
     "lat": 26.605,
     "lng": 87.993,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Buddhashanti",
@@ -3717,7 +4333,9 @@
     "isoCode": "NP-P1",
     "lat": 26.74,
     "lng": 88.068,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Damak",
@@ -3729,7 +4347,9 @@
     "isoCode": "NP-P1",
     "lat": 26.67,
     "lng": 87.68,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Gauradaha",
@@ -3741,7 +4361,9 @@
     "isoCode": "NP-P1",
     "lat": 26.549,
     "lng": 87.694,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Gauriganj",
@@ -3753,7 +4375,9 @@
     "isoCode": "NP-P1",
     "lat": 26.469,
     "lng": 87.723,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Haldibari",
@@ -3765,7 +4389,9 @@
     "isoCode": "NP-P1",
     "lat": 26.516,
     "lng": 87.999,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Jhapa",
@@ -3777,7 +4403,9 @@
     "isoCode": "NP-P1",
     "lat": 26.513,
     "lng": 87.867,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Kachanakawal",
@@ -3789,7 +4417,9 @@
     "isoCode": "NP-P1",
     "lat": 26.415,
     "lng": 88.005,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Kamal",
@@ -3801,7 +4431,9 @@
     "isoCode": "NP-P1",
     "lat": 26.608,
     "lng": 87.745,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Kankai",
@@ -3813,7 +4445,9 @@
     "isoCode": "NP-P1",
     "lat": 26.637,
     "lng": 87.911,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Mechinagar",
@@ -3825,7 +4459,9 @@
     "isoCode": "NP-P1",
     "lat": 26.681,
     "lng": 88.078,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 15,
+    "wardsVerified": true
   },
   {
     "name": "Shivasatakshi",
@@ -3837,7 +4473,9 @@
     "isoCode": "NP-P1",
     "lat": 26.609,
     "lng": 87.812,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Aiselukharka",
@@ -3849,7 +4487,9 @@
     "isoCode": "NP-P1",
     "lat": 27.374,
     "lng": 86.756,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Baraha Pokhari",
@@ -3861,7 +4501,9 @@
     "isoCode": "NP-P1",
     "lat": 26.941,
     "lng": 86.82,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Diktel Rupakot Majhuwagadhi",
@@ -3873,7 +4515,9 @@
     "isoCode": "NP-P1",
     "lat": 27.234,
     "lng": 86.801,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 15,
+    "wardsVerified": true
   },
   {
     "name": "Diprung",
@@ -3882,7 +4526,9 @@
     "province": "Koshi",
     "cbsCode": null,
     "cbsCodeVerified": false,
-    "isoCode": "NP-P1"
+    "isoCode": "NP-P1",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Halesi Tuwachung",
@@ -3894,7 +4540,9 @@
     "isoCode": "NP-P1",
     "lat": 27.168,
     "lng": 86.601,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Jante Dhunga",
@@ -3906,7 +4554,9 @@
     "isoCode": "NP-P1",
     "lat": 26.97,
     "lng": 86.922,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Kepilasgadhi",
@@ -3918,7 +4568,9 @@
     "isoCode": "NP-P1",
     "lat": 27.35,
     "lng": 86.886,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Khotehang",
@@ -3930,7 +4582,9 @@
     "isoCode": "NP-P1",
     "lat": 27.045,
     "lng": 86.85,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Rawabesi",
@@ -3942,7 +4596,9 @@
     "isoCode": "NP-P1",
     "lat": 27.286,
     "lng": 86.727,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Sakela",
@@ -3954,7 +4610,9 @@
     "isoCode": "NP-P1",
     "lat": 27.18,
     "lng": 86.873,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Belbari",
@@ -3966,7 +4624,9 @@
     "isoCode": "NP-P1",
     "lat": 26.63,
     "lng": 87.444,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Biratnagar",
@@ -3978,7 +4638,9 @@
     "isoCode": "NP-P1",
     "lat": 26.442,
     "lng": 87.274,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 19,
+    "wardsVerified": true
   },
   {
     "name": "Budhiganga",
@@ -3990,7 +4652,9 @@
     "isoCode": "NP-P1",
     "lat": 26.562,
     "lng": 87.301,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Dhanapalthan",
@@ -4002,7 +4666,9 @@
     "isoCode": "NP-P1",
     "lat": 26.462,
     "lng": 87.406,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Gramthan",
@@ -4014,7 +4680,9 @@
     "isoCode": "NP-P1",
     "lat": 26.555,
     "lng": 87.357,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Jahada",
@@ -4026,7 +4694,9 @@
     "isoCode": "NP-P1",
     "lat": 26.409,
     "lng": 87.333,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Kanepokhari",
@@ -4038,7 +4708,9 @@
     "isoCode": "NP-P1",
     "lat": 26.601,
     "lng": 87.497,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Katahari",
@@ -4050,7 +4722,9 @@
     "isoCode": "NP-P1",
     "lat": 26.488,
     "lng": 87.348,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Kerabari",
@@ -4062,7 +4736,9 @@
     "isoCode": "NP-P1",
     "lat": 26.776,
     "lng": 87.384,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Letang",
@@ -4074,7 +4750,9 @@
     "isoCode": "NP-P1",
     "lat": 26.765,
     "lng": 87.501,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Miklajung",
@@ -4086,7 +4764,9 @@
     "isoCode": "NP-P1",
     "lat": 26.782,
     "lng": 87.619,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Pathari Shanishchare",
@@ -4098,7 +4778,9 @@
     "isoCode": "NP-P1",
     "lat": 26.61,
     "lng": 87.562,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Rangeli",
@@ -4110,7 +4792,9 @@
     "isoCode": "NP-P1",
     "lat": 26.489,
     "lng": 87.462,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Ratuwamai",
@@ -4122,7 +4806,9 @@
     "isoCode": "NP-P1",
     "lat": 26.485,
     "lng": 87.612,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Sundarharaicha",
@@ -4134,7 +4820,9 @@
     "isoCode": "NP-P1",
     "lat": 26.659,
     "lng": 87.342,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 12,
+    "wardsVerified": true
   },
   {
     "name": "Sunwarshi",
@@ -4146,7 +4834,9 @@
     "isoCode": "NP-P1",
     "lat": 26.485,
     "lng": 87.537,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Urlabari",
@@ -4158,7 +4848,9 @@
     "isoCode": "NP-P1",
     "lat": 26.64,
     "lng": 87.627,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Champadevi",
@@ -4170,7 +4862,9 @@
     "isoCode": "NP-P1",
     "lat": 27.308,
     "lng": 86.309,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Chishankhu Gadhi",
@@ -4182,7 +4876,9 @@
     "isoCode": "NP-P1",
     "lat": 27.319,
     "lng": 86.618,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Khiji Demba",
@@ -4194,7 +4890,9 @@
     "isoCode": "NP-P1",
     "lat": 27.448,
     "lng": 86.354,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Likhu",
@@ -4206,7 +4904,9 @@
     "isoCode": "NP-P1",
     "lat": 27.373,
     "lng": 86.262,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Manebhanjyang",
@@ -4218,7 +4918,9 @@
     "isoCode": "NP-P1",
     "lat": 27.212,
     "lng": 86.466,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Molung",
@@ -4230,7 +4932,9 @@
     "isoCode": "NP-P1",
     "lat": 27.366,
     "lng": 86.409,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Siddhicharan",
@@ -4242,7 +4946,9 @@
     "isoCode": "NP-P1",
     "lat": 27.339,
     "lng": 86.529,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 12,
+    "wardsVerified": true
   },
   {
     "name": "Sunkoshi",
@@ -4254,7 +4960,9 @@
     "isoCode": "NP-P1",
     "lat": 27.274,
     "lng": 86.367,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Falelung",
@@ -4266,7 +4974,9 @@
     "isoCode": "NP-P1",
     "lat": 27.169,
     "lng": 87.926,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Falgunanda",
@@ -4278,7 +4988,9 @@
     "isoCode": "NP-P1",
     "lat": 27.048,
     "lng": 87.762,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Hilihan",
@@ -4290,7 +5002,9 @@
     "isoCode": "NP-P1",
     "lat": 27.221,
     "lng": 87.792,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Kummayak",
@@ -4302,7 +5016,9 @@
     "isoCode": "NP-P1",
     "lat": 27.075,
     "lng": 87.621,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Miklajung",
@@ -4314,7 +5030,9 @@
     "isoCode": "NP-P1",
     "lat": 26.938,
     "lng": 87.653,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Phidim",
@@ -4326,7 +5044,9 @@
     "isoCode": "NP-P1",
     "lat": 27.12,
     "lng": 87.795,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 14,
+    "wardsVerified": true
   },
   {
     "name": "Tumbewa",
@@ -4338,7 +5058,9 @@
     "isoCode": "NP-P1",
     "lat": 26.984,
     "lng": 87.568,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Yangbarak",
@@ -4350,7 +5072,9 @@
     "isoCode": "NP-P1",
     "lat": 27.327,
     "lng": 88.029,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Bhotkhola",
@@ -4362,7 +5086,9 @@
     "isoCode": "NP-P1",
     "lat": 27.749,
     "lng": 87.474,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Chainapur",
@@ -4374,7 +5100,9 @@
     "isoCode": "NP-P1",
     "lat": 27.308,
     "lng": 87.399,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Chichila",
@@ -4386,7 +5114,9 @@
     "isoCode": "NP-P1",
     "lat": 27.483,
     "lng": 87.23,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Dharmadevi",
@@ -4398,7 +5128,9 @@
     "isoCode": "NP-P1",
     "lat": 27.202,
     "lng": 87.356,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Khandabari",
@@ -4410,7 +5142,9 @@
     "isoCode": "NP-P1",
     "lat": 27.367,
     "lng": 87.207,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Madi",
@@ -4422,7 +5156,9 @@
     "isoCode": "NP-P1",
     "lat": 27.252,
     "lng": 87.41,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Makalu",
@@ -4434,7 +5170,9 @@
     "isoCode": "NP-P1",
     "lat": 27.729,
     "lng": 87.154,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Panchakhapan",
@@ -4446,7 +5184,9 @@
     "isoCode": "NP-P1",
     "lat": 27.352,
     "lng": 87.302,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Sabhapokhari",
@@ -4458,7 +5198,9 @@
     "isoCode": "NP-P1",
     "lat": 27.438,
     "lng": 87.356,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Silichong",
@@ -4470,7 +5212,9 @@
     "isoCode": "NP-P1",
     "lat": 27.582,
     "lng": 87.056,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Khumbu Pasanglhamu",
@@ -4482,7 +5226,9 @@
     "isoCode": "NP-P1",
     "lat": 27.843,
     "lng": 86.718,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Likhu Pike",
@@ -4494,7 +5240,9 @@
     "isoCode": "NP-P1",
     "lat": 27.551,
     "lng": 86.434,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Mahakulung",
@@ -4506,7 +5254,9 @@
     "isoCode": "NP-P1",
     "lat": 27.654,
     "lng": 86.899,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Mapya Dudhkoshi",
@@ -4518,7 +5268,9 @@
     "isoCode": "NP-P1",
     "lat": 27.537,
     "lng": 86.693,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Necha Salyan",
@@ -4530,7 +5282,9 @@
     "isoCode": "NP-P1",
     "lat": 27.373,
     "lng": 86.605,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Solu Dudhkunda",
@@ -4542,7 +5296,9 @@
     "isoCode": "NP-P1",
     "lat": 27.573,
     "lng": 86.585,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Sotang",
@@ -4554,7 +5310,9 @@
     "isoCode": "NP-P1",
     "lat": 27.517,
     "lng": 86.775,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Thulung Dudhkoshi",
@@ -4566,7 +5324,9 @@
     "isoCode": "NP-P1",
     "lat": 27.428,
     "lng": 86.714,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Baraha",
@@ -4575,7 +5335,9 @@
     "province": "Koshi",
     "cbsCode": null,
     "cbsCodeVerified": false,
-    "isoCode": "NP-P1"
+    "isoCode": "NP-P1",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Barju",
@@ -4587,7 +5349,9 @@
     "isoCode": "NP-P1",
     "lat": 26.461,
     "lng": 87.209,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Bhokraha",
@@ -4596,7 +5360,9 @@
     "province": "Koshi",
     "cbsCode": null,
     "cbsCodeVerified": false,
-    "isoCode": "NP-P1"
+    "isoCode": "NP-P1",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Dewangunj",
@@ -4608,7 +5374,9 @@
     "isoCode": "NP-P1",
     "lat": 26.461,
     "lng": 87.151,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Dharan",
@@ -4620,7 +5388,9 @@
     "isoCode": "NP-P1",
     "lat": 26.795,
     "lng": 87.277,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 20,
+    "wardsVerified": true
   },
   {
     "name": "Duhabi",
@@ -4632,7 +5402,9 @@
     "isoCode": "NP-P1",
     "lat": 26.553,
     "lng": 87.242,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 12,
+    "wardsVerified": true
   },
   {
     "name": "Gadhi",
@@ -4644,7 +5416,9 @@
     "isoCode": "NP-P1",
     "lat": 26.565,
     "lng": 87.181,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Harinagara",
@@ -4656,7 +5430,9 @@
     "isoCode": "NP-P1",
     "lat": 26.493,
     "lng": 87.106,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Inaruwa",
@@ -4668,7 +5444,9 @@
     "isoCode": "NP-P1",
     "lat": 26.6,
     "lng": 87.168,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Itahari",
@@ -4680,7 +5458,9 @@
     "isoCode": "NP-P1",
     "lat": 26.674,
     "lng": 87.258,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 20,
+    "wardsVerified": true
   },
   {
     "name": "Koshi",
@@ -4692,7 +5472,9 @@
     "isoCode": "NP-P1",
     "lat": 26.562,
     "lng": 87.009,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Ramdhuni",
@@ -4704,7 +5486,9 @@
     "isoCode": "NP-P1",
     "lat": 26.693,
     "lng": 87.172,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Aatharai Tribeni",
@@ -4716,7 +5500,9 @@
     "isoCode": "NP-P1",
     "lat": 27.32,
     "lng": 87.615,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Maiwakhola",
@@ -4728,7 +5514,9 @@
     "isoCode": "NP-P1",
     "lat": 27.386,
     "lng": 87.502,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Meringden",
@@ -4740,7 +5528,9 @@
     "isoCode": "NP-P1",
     "lat": 27.481,
     "lng": 87.538,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Mikwakhola",
@@ -4752,7 +5542,9 @@
     "isoCode": "NP-P1",
     "lat": 27.557,
     "lng": 87.611,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Phaktanglung",
@@ -4764,7 +5556,9 @@
     "isoCode": "NP-P1",
     "lat": 27.679,
     "lng": 87.913,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Phungling",
@@ -4776,7 +5570,9 @@
     "isoCode": "NP-P1",
     "lat": 27.383,
     "lng": 87.716,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Sidingba",
@@ -4788,7 +5584,9 @@
     "isoCode": "NP-P1",
     "lat": 27.361,
     "lng": 87.94,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Sirijangha",
@@ -4800,7 +5598,9 @@
     "isoCode": "NP-P1",
     "lat": 27.497,
     "lng": 87.966,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Yangwarak",
@@ -4809,7 +5609,9 @@
     "province": "Koshi",
     "cbsCode": null,
     "cbsCodeVerified": false,
-    "isoCode": "NP-P1"
+    "isoCode": "NP-P1",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Aatharai",
@@ -4821,7 +5623,9 @@
     "isoCode": "NP-P1",
     "lat": 27.208,
     "lng": 87.682,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Chhathar",
@@ -4833,7 +5637,9 @@
     "isoCode": "NP-P1",
     "lat": 27.035,
     "lng": 87.481,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Laligurans",
@@ -4845,7 +5651,9 @@
     "isoCode": "NP-P1",
     "lat": 27.13,
     "lng": 87.451,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Menchhyayem",
@@ -4857,7 +5665,9 @@
     "isoCode": "NP-P1",
     "lat": 27.242,
     "lng": 87.52,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Myanglung",
@@ -4869,7 +5679,9 @@
     "isoCode": "NP-P1",
     "lat": 27.141,
     "lng": 87.516,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Phedap",
@@ -4881,7 +5693,9 @@
     "isoCode": "NP-P1",
     "lat": 27.198,
     "lng": 87.576,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Belaka",
@@ -4893,7 +5707,9 @@
     "isoCode": "NP-P1",
     "lat": 26.818,
     "lng": 87.052,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Chaudandigadhi",
@@ -4905,7 +5721,9 @@
     "isoCode": "NP-P1",
     "lat": 26.799,
     "lng": 86.87,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Katari",
@@ -4917,7 +5735,9 @@
     "isoCode": "NP-P1",
     "lat": 27.022,
     "lng": 86.42,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 14,
+    "wardsVerified": true
   },
   {
     "name": "Rautamai",
@@ -4929,7 +5749,9 @@
     "isoCode": "NP-P1",
     "lat": 26.975,
     "lng": 86.679,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Sunkoshi",
@@ -4950,7 +5772,9 @@
     "isoCode": "NP-P1",
     "lat": 27.085,
     "lng": 86.535,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Triyuga",
@@ -4962,7 +5786,9 @@
     "isoCode": "NP-P1",
     "lat": 26.816,
     "lng": 86.666,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 16,
+    "wardsVerified": true
   },
   {
     "name": "Udayapurgadhi",
@@ -4974,7 +5800,9 @@
     "isoCode": "NP-P1",
     "lat": 26.915,
     "lng": 86.549,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Bhumikasthan",
@@ -4986,7 +5814,9 @@
     "isoCode": "NP-P5",
     "lat": 27.998,
     "lng": 83.006,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Chhatradev",
@@ -4998,7 +5828,9 @@
     "isoCode": "NP-P5",
     "lat": 28.01,
     "lng": 83.205,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Malarani",
@@ -5010,7 +5842,9 @@
     "isoCode": "NP-P5",
     "lat": 28.067,
     "lng": 83.071,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Panini",
@@ -5022,7 +5856,9 @@
     "isoCode": "NP-P5",
     "lat": 27.885,
     "lng": 83.25,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Sandhikharka",
@@ -5034,7 +5870,9 @@
     "isoCode": "NP-P5",
     "lat": 27.965,
     "lng": 83.152,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 12,
+    "wardsVerified": true
   },
   {
     "name": "Shitaganga",
@@ -5046,7 +5884,9 @@
     "isoCode": "NP-P5",
     "lat": 27.841,
     "lng": 82.988,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 14,
+    "wardsVerified": true
   },
   {
     "name": "Baijanath",
@@ -5058,7 +5898,9 @@
     "isoCode": "NP-P5",
     "lat": 28.241,
     "lng": 81.657,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Duduwa",
@@ -5070,7 +5912,9 @@
     "isoCode": "NP-P5",
     "lat": 28.035,
     "lng": 81.709,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Janaki",
@@ -5082,7 +5926,9 @@
     "isoCode": "NP-P5",
     "lat": 28.086,
     "lng": 81.599,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Khajura",
@@ -5094,7 +5940,9 @@
     "isoCode": "NP-P5",
     "lat": 28.122,
     "lng": 81.551,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Kohalpur",
@@ -5106,7 +5954,9 @@
     "isoCode": "NP-P5",
     "lat": 28.218,
     "lng": 81.729,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 15,
+    "wardsVerified": true
   },
   {
     "name": "Narainapur",
@@ -5118,7 +5968,9 @@
     "isoCode": "NP-P5",
     "lat": 27.926,
     "lng": 81.869,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Nepalgunj",
@@ -5130,7 +5982,9 @@
     "isoCode": "NP-P5",
     "lat": 28.065,
     "lng": 81.65,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 23,
+    "wardsVerified": true
   },
   {
     "name": "Rapti Sonari",
@@ -5142,7 +5996,9 @@
     "isoCode": "NP-P5",
     "lat": 28.099,
     "lng": 81.875,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Badhaiyatal",
@@ -5154,7 +6010,9 @@
     "isoCode": "NP-P5",
     "lat": 28.152,
     "lng": 81.477,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Bansgadhi",
@@ -5166,7 +6024,9 @@
     "isoCode": "NP-P5",
     "lat": 28.266,
     "lng": 81.54,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Barbardiya",
@@ -5178,7 +6038,9 @@
     "isoCode": "NP-P5",
     "lat": 28.323,
     "lng": 81.395,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Geruwa",
@@ -5190,7 +6052,9 @@
     "isoCode": "NP-P5",
     "lat": 28.499,
     "lng": 81.185,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Gulariya",
@@ -5202,7 +6066,9 @@
     "isoCode": "NP-P5",
     "lat": 28.21,
     "lng": 81.361,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 12,
+    "wardsVerified": true
   },
   {
     "name": "Madhuwan",
@@ -5214,7 +6080,9 @@
     "isoCode": "NP-P5",
     "lat": 28.336,
     "lng": 81.269,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Rajapur",
@@ -5226,7 +6094,9 @@
     "isoCode": "NP-P5",
     "lat": 28.431,
     "lng": 81.125,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Thakurbaba",
@@ -5238,7 +6108,9 @@
     "isoCode": "NP-P5",
     "lat": 28.443,
     "lng": 81.287,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Babai",
@@ -5250,7 +6122,9 @@
     "isoCode": "NP-P5",
     "lat": 28.18,
     "lng": 82.066,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Bangalachuli",
@@ -5262,7 +6136,9 @@
     "isoCode": "NP-P5",
     "lat": 27.995,
     "lng": 82.669,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Dangisharan",
@@ -5274,7 +6150,9 @@
     "isoCode": "NP-P5",
     "lat": 28.086,
     "lng": 82.155,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Gadhawa",
@@ -5286,7 +6164,9 @@
     "isoCode": "NP-P5",
     "lat": 27.76,
     "lng": 82.609,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Ghorahi",
@@ -5298,7 +6178,9 @@
     "isoCode": "NP-P5",
     "lat": 28.025,
     "lng": 82.464,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 19,
+    "wardsVerified": true
   },
   {
     "name": "Lamahi",
@@ -5310,7 +6192,9 @@
     "isoCode": "NP-P5",
     "lat": 27.931,
     "lng": 82.341,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Rajpur",
@@ -5322,7 +6206,9 @@
     "isoCode": "NP-P5",
     "lat": 27.826,
     "lng": 82.355,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Rapti",
@@ -5334,7 +6220,9 @@
     "isoCode": "NP-P5",
     "lat": 27.87,
     "lng": 82.717,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Shantinagar",
@@ -5346,7 +6234,9 @@
     "isoCode": "NP-P5",
     "lat": 28.178,
     "lng": 82.199,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Tulsipur",
@@ -5358,7 +6248,9 @@
     "isoCode": "NP-P5",
     "lat": 28.106,
     "lng": 82.319,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 19,
+    "wardsVerified": true
   },
   {
     "name": "Chandrakot",
@@ -5370,7 +6262,9 @@
     "isoCode": "NP-P5",
     "lat": 28.107,
     "lng": 83.423,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Chhatrakot",
@@ -5382,7 +6276,9 @@
     "isoCode": "NP-P5",
     "lat": 27.986,
     "lng": 83.349,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Dhurkot",
@@ -5394,7 +6290,9 @@
     "isoCode": "NP-P5",
     "lat": 28.118,
     "lng": 83.163,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Gulmi Durbar",
@@ -5406,7 +6304,9 @@
     "isoCode": "NP-P5",
     "lat": 28.04,
     "lng": 83.308,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Isma",
@@ -5418,7 +6318,9 @@
     "isoCode": "NP-P5",
     "lat": 28.164,
     "lng": 83.214,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Kali Gandaki",
@@ -5430,7 +6332,9 @@
     "isoCode": "NP-P5",
     "lat": 28.05,
     "lng": 83.526,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Madane",
@@ -5442,7 +6346,9 @@
     "isoCode": "NP-P5",
     "lat": 28.175,
     "lng": 83.066,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Malika",
@@ -5454,7 +6360,9 @@
     "isoCode": "NP-P5",
     "lat": 28.213,
     "lng": 83.147,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Musikot",
@@ -5466,7 +6374,9 @@
     "isoCode": "NP-P5",
     "lat": 28.185,
     "lng": 83.305,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Resunga",
@@ -5478,7 +6388,9 @@
     "isoCode": "NP-P5",
     "lat": 28.053,
     "lng": 83.254,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 14,
+    "wardsVerified": true
   },
   {
     "name": "Ruru",
@@ -5487,7 +6399,9 @@
     "province": "Lumbini",
     "cbsCode": null,
     "cbsCodeVerified": false,
-    "isoCode": "NP-P5"
+    "isoCode": "NP-P5",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Satyawoti",
@@ -5499,7 +6413,9 @@
     "isoCode": "NP-P5",
     "lat": 28.03,
     "lng": 83.47,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Banganga",
@@ -5511,7 +6427,9 @@
     "isoCode": "NP-P5",
     "lat": 27.683,
     "lng": 83.153,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Bijayanagar",
@@ -5523,7 +6441,9 @@
     "isoCode": "NP-P5",
     "lat": 27.662,
     "lng": 82.761,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Buddhabhumi",
@@ -5535,7 +6455,9 @@
     "isoCode": "NP-P5",
     "lat": 27.684,
     "lng": 83.001,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Kapilvastu",
@@ -5547,7 +6469,9 @@
     "isoCode": "NP-P5",
     "lat": 27.567,
     "lng": 83.066,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 12,
+    "wardsVerified": true
   },
   {
     "name": "Krishnanagar",
@@ -5559,7 +6483,9 @@
     "isoCode": "NP-P5",
     "lat": 27.534,
     "lng": 82.818,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 12,
+    "wardsVerified": true
   },
   {
     "name": "Maharajganj",
@@ -5571,7 +6497,9 @@
     "isoCode": "NP-P5",
     "lat": 27.536,
     "lng": 82.939,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Mayadevi",
@@ -5583,7 +6511,9 @@
     "isoCode": "NP-P5",
     "lat": 27.527,
     "lng": 83.141,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Shivaraj",
@@ -5595,7 +6525,9 @@
     "isoCode": "NP-P5",
     "lat": 27.682,
     "lng": 82.854,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Shuddhodhan",
@@ -5607,7 +6539,9 @@
     "isoCode": "NP-P5",
     "lat": 27.508,
     "lng": 83.193,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Yasodhara",
@@ -5619,7 +6553,9 @@
     "isoCode": "NP-P5",
     "lat": 27.485,
     "lng": 83.056,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Baganaskali",
@@ -5631,7 +6567,9 @@
     "isoCode": "NP-P5",
     "lat": 27.882,
     "lng": 83.604,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Mathagadhi",
@@ -5643,7 +6581,9 @@
     "isoCode": "NP-P5",
     "lat": 27.767,
     "lng": 83.655,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Nisdi",
@@ -5655,7 +6595,9 @@
     "isoCode": "NP-P5",
     "lat": 27.786,
     "lng": 83.907,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Purbakhola",
@@ -5667,7 +6609,9 @@
     "isoCode": "NP-P5",
     "lat": 27.824,
     "lng": 83.773,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Rainadevi Chhahara",
@@ -5679,7 +6623,9 @@
     "isoCode": "NP-P5",
     "lat": 27.857,
     "lng": 83.348,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Rambha",
@@ -5691,7 +6637,9 @@
     "isoCode": "NP-P5",
     "lat": 27.868,
     "lng": 83.686,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Rampur",
@@ -5703,7 +6651,9 @@
     "isoCode": "NP-P5",
     "lat": 27.856,
     "lng": 83.894,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Ribdikot",
@@ -5715,7 +6665,9 @@
     "isoCode": "NP-P5",
     "lat": 27.867,
     "lng": 83.453,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Tansen",
@@ -5727,7 +6679,9 @@
     "isoCode": "NP-P5",
     "lat": 27.867,
     "lng": 83.529,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 14,
+    "wardsVerified": true
   },
   {
     "name": "Tinau",
@@ -5739,7 +6693,9 @@
     "isoCode": "NP-P5",
     "lat": 27.767,
     "lng": 83.468,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Bardaghat",
@@ -5751,7 +6707,9 @@
     "isoCode": "NP-P5",
     "lat": 27.57,
     "lng": 83.793,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 16,
+    "wardsVerified": true
   },
   {
     "name": "Palhinandan",
@@ -5763,7 +6721,9 @@
     "isoCode": "NP-P5",
     "lat": 27.464,
     "lng": 83.668,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Pratapapur",
@@ -5775,7 +6735,9 @@
     "isoCode": "NP-P5",
     "lat": 27.436,
     "lng": 83.794,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Ramgram",
@@ -5787,7 +6749,9 @@
     "isoCode": "NP-P5",
     "lat": 27.527,
     "lng": 83.648,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 18,
+    "wardsVerified": true
   },
   {
     "name": "Sarawal",
@@ -5799,7 +6763,9 @@
     "isoCode": "NP-P5",
     "lat": 27.509,
     "lng": 83.726,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Sunawal",
@@ -5811,7 +6777,9 @@
     "isoCode": "NP-P5",
     "lat": 27.617,
     "lng": 83.664,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 13,
+    "wardsVerified": true
   },
   {
     "name": "Susta",
@@ -5823,7 +6791,9 @@
     "isoCode": "NP-P5",
     "lat": 27.428,
     "lng": 83.843,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Airawati",
@@ -5835,7 +6805,9 @@
     "isoCode": "NP-P5",
     "lat": 27.988,
     "lng": 82.912,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Gaumukhi",
@@ -5847,7 +6819,9 @@
     "isoCode": "NP-P5",
     "lat": 28.252,
     "lng": 83.029,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Jhimaruk",
@@ -5859,7 +6833,9 @@
     "isoCode": "NP-P5",
     "lat": 28.149,
     "lng": 82.984,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Mallarani",
@@ -5871,7 +6847,9 @@
     "isoCode": "NP-P5",
     "lat": 28.073,
     "lng": 82.918,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Mandavi",
@@ -5883,7 +6861,9 @@
     "isoCode": "NP-P5",
     "lat": 28.047,
     "lng": 82.772,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Naubahini",
@@ -5895,7 +6875,9 @@
     "isoCode": "NP-P5",
     "lat": 28.255,
     "lng": 82.909,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Pyuthan",
@@ -5907,7 +6889,9 @@
     "isoCode": "NP-P5",
     "lat": 28.128,
     "lng": 82.85,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Sarumarani",
@@ -5919,7 +6903,9 @@
     "isoCode": "NP-P5",
     "lat": 27.944,
     "lng": 82.839,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Sworgadwari",
@@ -5931,7 +6917,9 @@
     "isoCode": "NP-P5",
     "lat": 28.132,
     "lng": 82.695,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Gangadev",
@@ -5943,7 +6931,9 @@
     "isoCode": "NP-P5",
     "lat": 28.446,
     "lng": 82.42,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Lungri",
@@ -5955,7 +6945,9 @@
     "isoCode": "NP-P5",
     "lat": 28.267,
     "lng": 82.809,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Madi",
@@ -5967,7 +6959,9 @@
     "isoCode": "NP-P5",
     "lat": 28.402,
     "lng": 82.506,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Paribartan",
@@ -5979,7 +6973,9 @@
     "isoCode": "NP-P5",
     "lat": 28.481,
     "lng": 82.548,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Rolpa",
@@ -5991,7 +6987,9 @@
     "isoCode": "NP-P5",
     "lat": 28.329,
     "lng": 82.605,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Runtigadhi",
@@ -6003,7 +7001,9 @@
     "isoCode": "NP-P5",
     "lat": 28.177,
     "lng": 82.513,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Sunchhahari",
@@ -6015,7 +7015,9 @@
     "isoCode": "NP-P5",
     "lat": 28.382,
     "lng": 82.829,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Sunil Smriti",
@@ -6027,7 +7029,9 @@
     "isoCode": "NP-P5",
     "lat": 28.277,
     "lng": 82.738,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Thabang",
@@ -6039,7 +7043,9 @@
     "isoCode": "NP-P5",
     "lat": 28.46,
     "lng": 82.74,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Tribeni",
@@ -6051,7 +7057,9 @@
     "isoCode": "NP-P5",
     "lat": 28.292,
     "lng": 82.483,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Bhoome",
@@ -6063,7 +7071,9 @@
     "isoCode": "NP-P5",
     "lat": 28.567,
     "lng": 82.683,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Putha Uttanganga",
@@ -6075,7 +7085,9 @@
     "isoCode": "NP-P5",
     "lat": 28.659,
     "lng": 82.808,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 14,
+    "wardsVerified": true
   },
   {
     "name": "Sisne",
@@ -6087,7 +7099,9 @@
     "isoCode": "NP-P5",
     "lat": 28.714,
     "lng": 82.648,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Butwal",
@@ -6099,7 +7113,9 @@
     "isoCode": "NP-P5",
     "lat": 27.682,
     "lng": 83.444,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 19,
+    "wardsVerified": true
   },
   {
     "name": "Devdaha",
@@ -6111,7 +7127,9 @@
     "isoCode": "NP-P5",
     "lat": 27.633,
     "lng": 83.569,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 12,
+    "wardsVerified": true
   },
   {
     "name": "Gaidahawa",
@@ -6123,7 +7141,9 @@
     "isoCode": "NP-P5",
     "lat": 27.587,
     "lng": 83.292,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Kanchan",
@@ -6135,7 +7155,9 @@
     "isoCode": "NP-P5",
     "lat": 27.639,
     "lng": 83.262,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Kotahimai",
@@ -6147,7 +7169,9 @@
     "isoCode": "NP-P5",
     "lat": 27.446,
     "lng": 83.342,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Lumbini Sanskritik",
@@ -6159,7 +7183,9 @@
     "isoCode": "NP-P5",
     "lat": 27.469,
     "lng": 83.247,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 13,
+    "wardsVerified": true
   },
   {
     "name": "Marchawari",
@@ -6171,7 +7197,9 @@
     "isoCode": "NP-P5",
     "lat": 27.376,
     "lng": 83.354,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Mayadevi",
@@ -6183,7 +7211,9 @@
     "isoCode": "NP-P5",
     "lat": 27.515,
     "lng": 83.366,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Om Satiya",
@@ -6195,7 +7225,9 @@
     "isoCode": "NP-P5",
     "lat": 27.532,
     "lng": 83.522,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Rohini",
@@ -6207,7 +7239,9 @@
     "isoCode": "NP-P5",
     "lat": 27.501,
     "lng": 83.55,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Sainamaina",
@@ -6219,7 +7253,9 @@
     "isoCode": "NP-P5",
     "lat": 27.706,
     "lng": 83.302,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Sammarimai",
@@ -6231,7 +7267,9 @@
     "isoCode": "NP-P5",
     "lat": 27.384,
     "lng": 83.309,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Siddharthanagar",
@@ -6243,7 +7281,9 @@
     "isoCode": "NP-P5",
     "lat": 27.507,
     "lng": 83.437,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 13,
+    "wardsVerified": true
   },
   {
     "name": "Siyari",
@@ -6255,7 +7295,9 @@
     "isoCode": "NP-P5",
     "lat": 27.57,
     "lng": 83.375,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Suddhodhan",
@@ -6267,7 +7309,9 @@
     "isoCode": "NP-P5",
     "lat": 27.614,
     "lng": 83.364,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Tilottama",
@@ -6279,7 +7323,9 @@
     "isoCode": "NP-P5",
     "lat": 27.612,
     "lng": 83.489,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 17,
+    "wardsVerified": true
   },
   {
     "name": "Aadarsha Kotwal",
@@ -6291,7 +7337,9 @@
     "isoCode": "NP-P2",
     "lat": 26.946,
     "lng": 85.143,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Baragadhi",
@@ -6303,7 +7351,9 @@
     "isoCode": "NP-P2",
     "lat": 26.99,
     "lng": 85.138,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Bishrampur",
@@ -6315,7 +7365,9 @@
     "isoCode": "NP-P2",
     "lat": 26.993,
     "lng": 84.901,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Devtal",
@@ -6327,7 +7379,9 @@
     "isoCode": "NP-P2",
     "lat": 26.948,
     "lng": 85.012,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Jitpur Simara",
@@ -6339,7 +7393,9 @@
     "isoCode": "NP-P2",
     "lat": 27.214,
     "lng": 85.013,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 24,
+    "wardsVerified": true
   },
   {
     "name": "Kalaiya",
@@ -6351,7 +7407,9 @@
     "isoCode": "NP-P2",
     "lat": 27.026,
     "lng": 84.995,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 27,
+    "wardsVerified": true
   },
   {
     "name": "Karaiyamai",
@@ -6363,7 +7421,9 @@
     "isoCode": "NP-P2",
     "lat": 27.024,
     "lng": 85.1,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Kolhabi",
@@ -6375,7 +7435,9 @@
     "isoCode": "NP-P2",
     "lat": 27.092,
     "lng": 85.144,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Mahagadhimai",
@@ -6387,7 +7449,9 @@
     "isoCode": "NP-P2",
     "lat": 26.982,
     "lng": 85.051,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Nijagadh",
@@ -6399,7 +7463,9 @@
     "isoCode": "NP-P2",
     "lat": 27.241,
     "lng": 85.145,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 13,
+    "wardsVerified": true
   },
   {
     "name": "Pacharauta",
@@ -6411,7 +7477,9 @@
     "isoCode": "NP-P2",
     "lat": 26.909,
     "lng": 85.076,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Parawanipur",
@@ -6423,7 +7491,9 @@
     "isoCode": "NP-P2",
     "lat": 27.055,
     "lng": 84.931,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Pheta",
@@ -6435,7 +7505,9 @@
     "isoCode": "NP-P2",
     "lat": 27.002,
     "lng": 84.94,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Prasauni",
@@ -6447,7 +7519,9 @@
     "isoCode": "NP-P2",
     "lat": 27.048,
     "lng": 84.966,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Simroungadh",
@@ -6459,7 +7533,9 @@
     "isoCode": "NP-P2",
     "lat": 26.9,
     "lng": 85.131,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Subarna",
@@ -6471,7 +7547,9 @@
     "isoCode": "NP-P2",
     "lat": 26.926,
     "lng": 85.06,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Aurahi",
@@ -6483,7 +7561,9 @@
     "isoCode": "NP-P2",
     "lat": 26.708,
     "lng": 86.021,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Bateshwor",
@@ -6495,7 +7575,9 @@
     "isoCode": "NP-P2",
     "lat": 26.883,
     "lng": 85.921,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Bideha",
@@ -6507,7 +7589,9 @@
     "isoCode": "NP-P2",
     "lat": 26.68,
     "lng": 86.059,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Chhireshwornath",
@@ -6519,7 +7603,9 @@
     "isoCode": "NP-P2",
     "lat": 26.847,
     "lng": 85.971,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Dhanauji",
@@ -6531,7 +7617,9 @@
     "isoCode": "NP-P2",
     "lat": 26.675,
     "lng": 85.979,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Dhanushadham",
@@ -6543,7 +7631,9 @@
     "isoCode": "NP-P2",
     "lat": 26.882,
     "lng": 86.036,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Ganeshman Charnath",
@@ -6555,7 +7645,9 @@
     "isoCode": "NP-P2",
     "lat": 26.925,
     "lng": 86.209,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Hansapur",
@@ -6567,7 +7659,9 @@
     "isoCode": "NP-P2",
     "lat": 26.764,
     "lng": 86.024,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Janak Nandini",
@@ -6579,7 +7673,9 @@
     "isoCode": "NP-P2",
     "lat": 26.636,
     "lng": 86.126,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Janakpurdham",
@@ -6591,7 +7687,9 @@
     "isoCode": "NP-P2",
     "lat": 26.728,
     "lng": 85.936,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 25,
+    "wardsVerified": true
   },
   {
     "name": "Kamala",
@@ -6603,7 +7701,9 @@
     "isoCode": "NP-P2",
     "lat": 26.709,
     "lng": 86.167,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Laxminiya",
@@ -6615,7 +7715,9 @@
     "isoCode": "NP-P2",
     "lat": 26.798,
     "lng": 85.935,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Mithila",
@@ -6627,7 +7729,9 @@
     "isoCode": "NP-P2",
     "lat": 26.999,
     "lng": 85.971,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Mithila Bihari",
@@ -6639,7 +7743,9 @@
     "isoCode": "NP-P2",
     "lat": 26.797,
     "lng": 86.011,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Mukhiyapatti Musaharmiya",
@@ -6651,7 +7757,9 @@
     "isoCode": "NP-P2",
     "lat": 26.603,
     "lng": 85.879,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Nagarain",
@@ -6663,7 +7771,9 @@
     "isoCode": "NP-P2",
     "lat": 26.647,
     "lng": 85.925,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Sabaila",
@@ -6675,7 +7785,9 @@
     "isoCode": "NP-P2",
     "lat": 26.794,
     "lng": 86.099,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 13,
+    "wardsVerified": true
   },
   {
     "name": "Shahidnagar",
@@ -6687,7 +7799,9 @@
     "isoCode": "NP-P2",
     "lat": 26.734,
     "lng": 86.096,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Aurahi",
@@ -6699,7 +7813,9 @@
     "isoCode": "NP-P2",
     "lat": 26.865,
     "lng": 85.792,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Balawa",
@@ -6711,7 +7827,9 @@
     "isoCode": "NP-P2",
     "lat": 26.772,
     "lng": 85.815,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Bardibas",
@@ -6723,7 +7841,9 @@
     "isoCode": "NP-P2",
     "lat": 27.022,
     "lng": 85.833,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 14,
+    "wardsVerified": true
   },
   {
     "name": "Bhangaha",
@@ -6735,7 +7855,9 @@
     "isoCode": "NP-P2",
     "lat": 26.852,
     "lng": 85.869,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Ekadara",
@@ -6747,7 +7869,9 @@
     "isoCode": "NP-P2",
     "lat": 26.684,
     "lng": 85.764,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Gaushala",
@@ -6759,7 +7883,9 @@
     "isoCode": "NP-P2",
     "lat": 26.94,
     "lng": 85.778,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 12,
+    "wardsVerified": true
   },
   {
     "name": "Jaleshwor",
@@ -6771,7 +7897,9 @@
     "isoCode": "NP-P2",
     "lat": 26.642,
     "lng": 85.789,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 12,
+    "wardsVerified": true
   },
   {
     "name": "Loharpatti",
@@ -6783,7 +7911,9 @@
     "isoCode": "NP-P2",
     "lat": 26.763,
     "lng": 85.867,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Mahottari",
@@ -6795,7 +7925,9 @@
     "isoCode": "NP-P2",
     "lat": 26.706,
     "lng": 85.816,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Manara Shisawa",
@@ -6807,7 +7939,9 @@
     "isoCode": "NP-P2",
     "lat": 26.705,
     "lng": 85.733,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Matihani",
@@ -6819,7 +7953,9 @@
     "isoCode": "NP-P2",
     "lat": 26.641,
     "lng": 85.853,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Pipara",
@@ -6831,7 +7967,9 @@
     "isoCode": "NP-P2",
     "lat": 26.703,
     "lng": 85.864,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Ram Gopalpur",
@@ -6843,7 +7981,9 @@
     "isoCode": "NP-P2",
     "lat": 26.811,
     "lng": 85.782,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Samsi",
@@ -6855,7 +7995,9 @@
     "isoCode": "NP-P2",
     "lat": 26.813,
     "lng": 85.735,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Sonama",
@@ -6867,7 +8009,9 @@
     "isoCode": "NP-P2",
     "lat": 26.866,
     "lng": 85.722,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Bahudarmai",
@@ -6879,7 +8023,9 @@
     "isoCode": "NP-P2",
     "lat": 27.079,
     "lng": 84.822,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Bindabasini",
@@ -6891,7 +8037,9 @@
     "isoCode": "NP-P2",
     "lat": 27.037,
     "lng": 84.787,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Birgunj",
@@ -6903,7 +8051,9 @@
     "isoCode": "NP-P2",
     "lat": 27.108,
     "lng": 84.912,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 32,
+    "wardsVerified": true
   },
   {
     "name": "Chhipaharmai",
@@ -6915,7 +8065,9 @@
     "isoCode": "NP-P2",
     "lat": 27.064,
     "lng": 84.663,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Dhobini",
@@ -6927,7 +8079,9 @@
     "isoCode": "NP-P2",
     "lat": 27.097,
     "lng": 84.694,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Jagarnathpur",
@@ -6939,7 +8093,9 @@
     "isoCode": "NP-P2",
     "lat": 27.144,
     "lng": 84.716,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Jirabhawani",
@@ -6951,7 +8107,9 @@
     "isoCode": "NP-P2",
     "lat": 27.201,
     "lng": 84.72,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Kalikamai",
@@ -6963,7 +8121,9 @@
     "isoCode": "NP-P2",
     "lat": 27.076,
     "lng": 84.726,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Pakaha Mainpur",
@@ -6975,7 +8135,9 @@
     "isoCode": "NP-P2",
     "lat": 27.026,
     "lng": 84.733,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Parsagadhi",
@@ -6987,7 +8149,9 @@
     "isoCode": "NP-P2",
     "lat": 27.166,
     "lng": 84.891,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Paterwa Sugauli",
@@ -6999,7 +8163,9 @@
     "isoCode": "NP-P2",
     "lat": 27.186,
     "lng": 84.79,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Pokhariya",
@@ -7011,7 +8177,9 @@
     "isoCode": "NP-P2",
     "lat": 27.078,
     "lng": 84.77,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Sakhuwa Prasauni",
@@ -7023,7 +8191,9 @@
     "isoCode": "NP-P2",
     "lat": 27.163,
     "lng": 84.817,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Thori",
@@ -7035,7 +8205,9 @@
     "isoCode": "NP-P2",
     "lat": 27.3,
     "lng": 84.666,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Boudhimai",
@@ -7047,7 +8219,9 @@
     "isoCode": "NP-P2",
     "lat": 26.893,
     "lng": 85.231,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Brindaban",
@@ -7059,7 +8233,9 @@
     "isoCode": "NP-P2",
     "lat": 27.044,
     "lng": 85.396,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Chandrapur",
@@ -7071,7 +8247,9 @@
     "isoCode": "NP-P2",
     "lat": 27.127,
     "lng": 85.38,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Dewahi Gonahi",
@@ -7083,7 +8261,9 @@
     "isoCode": "NP-P2",
     "lat": 26.924,
     "lng": 85.254,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Durga Bhagawati",
@@ -7095,7 +8275,9 @@
     "isoCode": "NP-P2",
     "lat": 26.834,
     "lng": 85.319,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Gadhimai",
@@ -7107,7 +8289,9 @@
     "isoCode": "NP-P2",
     "lat": 26.947,
     "lng": 85.368,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Garuda",
@@ -7119,7 +8303,9 @@
     "isoCode": "NP-P2",
     "lat": 26.949,
     "lng": 85.312,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Gaur",
@@ -7131,7 +8317,9 @@
     "isoCode": "NP-P2",
     "lat": 26.778,
     "lng": 85.279,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Gujara",
@@ -7143,7 +8331,9 @@
     "isoCode": "NP-P2",
     "lat": 27.115,
     "lng": 85.247,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Ishanath",
@@ -7155,7 +8345,9 @@
     "isoCode": "NP-P2",
     "lat": 26.799,
     "lng": 85.206,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Katahariya",
@@ -7167,7 +8359,9 @@
     "isoCode": "NP-P2",
     "lat": 27.0,
     "lng": 85.247,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Madhav Narayan",
@@ -7179,7 +8373,9 @@
     "isoCode": "NP-P2",
     "lat": 26.889,
     "lng": 85.336,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Maulapur",
@@ -7191,7 +8387,9 @@
     "isoCode": "NP-P2",
     "lat": 26.93,
     "lng": 85.205,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Paroha",
@@ -7203,7 +8401,9 @@
     "isoCode": "NP-P2",
     "lat": 26.85,
     "lng": 85.23,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Phatuwa Bijayapur",
@@ -7215,7 +8415,9 @@
     "isoCode": "NP-P2",
     "lat": 27.031,
     "lng": 85.213,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Rajdevi",
@@ -7227,7 +8429,9 @@
     "isoCode": "NP-P2",
     "lat": 26.781,
     "lng": 85.324,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Rajpur",
@@ -7239,7 +8443,9 @@
     "isoCode": "NP-P2",
     "lat": 26.812,
     "lng": 85.258,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Yamunamai",
@@ -7251,7 +8457,9 @@
     "isoCode": "NP-P2",
     "lat": 26.843,
     "lng": 85.287,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Agnisair Krishna Sabaran",
@@ -7263,7 +8471,9 @@
     "isoCode": "NP-P2",
     "lat": 26.645,
     "lng": 86.798,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Balan-Bihul",
@@ -7275,7 +8485,9 @@
     "isoCode": "NP-P2",
     "lat": 26.575,
     "lng": 86.517,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Belhi Chapena",
@@ -7296,7 +8508,9 @@
     "isoCode": "NP-P2",
     "lat": 26.521,
     "lng": 86.701,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "BodeBarsain",
@@ -7308,7 +8522,9 @@
     "isoCode": "NP-P2",
     "lat": 26.555,
     "lng": 86.571,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Chhinnamasta",
@@ -7320,7 +8536,9 @@
     "isoCode": "NP-P2",
     "lat": 26.465,
     "lng": 86.729,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Dakneshwori",
@@ -7332,7 +8550,9 @@
     "isoCode": "NP-P2",
     "lat": 26.531,
     "lng": 86.63,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Hanumannagar Kankalini",
@@ -7344,7 +8564,9 @@
     "isoCode": "NP-P2",
     "lat": 26.512,
     "lng": 86.875,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 14,
+    "wardsVerified": true
   },
   {
     "name": "Kanchanrup",
@@ -7356,7 +8578,9 @@
     "isoCode": "NP-P2",
     "lat": 26.631,
     "lng": 86.891,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 12,
+    "wardsVerified": true
   },
   {
     "name": "Khadak",
@@ -7368,7 +8592,9 @@
     "isoCode": "NP-P2",
     "lat": 26.631,
     "lng": 86.595,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Mahadewa",
@@ -7380,7 +8606,9 @@
     "isoCode": "NP-P2",
     "lat": 26.553,
     "lng": 86.819,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Rajbiraj",
@@ -7392,7 +8620,9 @@
     "isoCode": "NP-P2",
     "lat": 26.535,
     "lng": 86.758,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 16,
+    "wardsVerified": true
   },
   {
     "name": "Rupani",
@@ -7404,7 +8634,9 @@
     "isoCode": "NP-P2",
     "lat": 26.635,
     "lng": 86.742,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Saptakoshi",
@@ -7416,7 +8648,9 @@
     "isoCode": "NP-P2",
     "lat": 26.717,
     "lng": 86.934,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Shambhunath",
@@ -7428,7 +8662,9 @@
     "isoCode": "NP-P2",
     "lat": 26.627,
     "lng": 86.673,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 12,
+    "wardsVerified": true
   },
   {
     "name": "Surunga",
@@ -7440,7 +8676,9 @@
     "isoCode": "NP-P2",
     "lat": 26.693,
     "lng": 86.548,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Tilathi Koiladi",
@@ -7452,7 +8690,9 @@
     "isoCode": "NP-P2",
     "lat": 26.491,
     "lng": 86.828,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Tirahut",
@@ -7464,7 +8704,9 @@
     "isoCode": "NP-P2",
     "lat": 26.592,
     "lng": 86.859,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Bagmati",
@@ -7476,7 +8718,9 @@
     "isoCode": "NP-P2",
     "lat": 27.081,
     "lng": 85.477,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 12,
+    "wardsVerified": true
   },
   {
     "name": "Balara",
@@ -7488,7 +8732,9 @@
     "isoCode": "NP-P2",
     "lat": 26.787,
     "lng": 85.373,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Barahathawa",
@@ -7500,7 +8746,9 @@
     "isoCode": "NP-P2",
     "lat": 26.982,
     "lng": 85.457,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 18,
+    "wardsVerified": true
   },
   {
     "name": "Basbariya",
@@ -7512,7 +8760,9 @@
     "isoCode": "NP-P2",
     "lat": 26.926,
     "lng": 85.42,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Bishnu",
@@ -7524,7 +8774,9 @@
     "isoCode": "NP-P2",
     "lat": 26.82,
     "lng": 85.481,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Brahmapuri",
@@ -7536,7 +8788,9 @@
     "isoCode": "NP-P2",
     "lat": 26.889,
     "lng": 85.603,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Chakraghatta",
@@ -7548,7 +8802,9 @@
     "isoCode": "NP-P2",
     "lat": 26.902,
     "lng": 85.513,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Chandranagar",
@@ -7560,7 +8816,9 @@
     "isoCode": "NP-P2",
     "lat": 26.936,
     "lng": 85.601,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Dhanakaul",
@@ -7572,7 +8830,9 @@
     "isoCode": "NP-P2",
     "lat": 26.883,
     "lng": 85.42,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Godaita",
@@ -7584,7 +8844,9 @@
     "isoCode": "NP-P2",
     "lat": 26.846,
     "lng": 85.444,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 12,
+    "wardsVerified": true
   },
   {
     "name": "Haripur",
@@ -7596,7 +8858,9 @@
     "isoCode": "NP-P2",
     "lat": 27.014,
     "lng": 85.542,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Haripurwa",
@@ -7608,7 +8872,9 @@
     "isoCode": "NP-P2",
     "lat": 26.913,
     "lng": 85.685,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Hariwan",
@@ -7620,7 +8886,9 @@
     "isoCode": "NP-P2",
     "lat": 27.093,
     "lng": 85.58,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Ishworpur",
@@ -7632,7 +8900,9 @@
     "isoCode": "NP-P2",
     "lat": 27.04,
     "lng": 85.716,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 15,
+    "wardsVerified": true
   },
   {
     "name": "Kabilashi",
@@ -7644,7 +8914,9 @@
     "isoCode": "NP-P2",
     "lat": 26.94,
     "lng": 85.534,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Kaudena",
@@ -7656,7 +8928,9 @@
     "isoCode": "NP-P2",
     "lat": 26.85,
     "lng": 85.503,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Lalbandi",
@@ -7668,7 +8942,9 @@
     "isoCode": "NP-P2",
     "lat": 27.099,
     "lng": 85.699,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 17,
+    "wardsVerified": true
   },
   {
     "name": "Malangawa",
@@ -7680,7 +8956,9 @@
     "isoCode": "NP-P2",
     "lat": 26.855,
     "lng": 85.551,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 12,
+    "wardsVerified": true
   },
   {
     "name": "Parsa",
@@ -7692,7 +8970,9 @@
     "isoCode": "NP-P2",
     "lat": 26.873,
     "lng": 85.653,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Ramnagar",
@@ -7704,7 +8984,9 @@
     "isoCode": "NP-P2",
     "lat": 26.839,
     "lng": 85.384,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Arnama",
@@ -7716,7 +8998,9 @@
     "isoCode": "NP-P2",
     "lat": 26.691,
     "lng": 86.284,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Aurahi",
@@ -7728,7 +9012,9 @@
     "isoCode": "NP-P2",
     "lat": 26.649,
     "lng": 86.308,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Bariyarpatti",
@@ -7740,7 +9026,9 @@
     "isoCode": "NP-P2",
     "lat": 26.632,
     "lng": 86.363,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Bhagawanpur",
@@ -7752,7 +9040,9 @@
     "isoCode": "NP-P2",
     "lat": 26.586,
     "lng": 86.468,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Bishnupur",
@@ -7764,7 +9054,9 @@
     "isoCode": "NP-P2",
     "lat": 26.726,
     "lng": 86.247,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Dhangadhimai",
@@ -7776,7 +9068,9 @@
     "isoCode": "NP-P2",
     "lat": 26.81,
     "lng": 86.425,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 14,
+    "wardsVerified": true
   },
   {
     "name": "Golbazar",
@@ -7788,7 +9082,9 @@
     "isoCode": "NP-P2",
     "lat": 26.803,
     "lng": 86.332,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 13,
+    "wardsVerified": true
   },
   {
     "name": "Kalyanpur",
@@ -7800,7 +9096,9 @@
     "isoCode": "NP-P2",
     "lat": 26.755,
     "lng": 86.203,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 12,
+    "wardsVerified": true
   },
   {
     "name": "Karjanha",
@@ -7812,7 +9110,9 @@
     "isoCode": "NP-P2",
     "lat": 26.874,
     "lng": 86.187,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Lahan",
@@ -7824,7 +9124,9 @@
     "isoCode": "NP-P2",
     "lat": 26.757,
     "lng": 86.472,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 24,
+    "wardsVerified": true
   },
   {
     "name": "Laxmipur Patari",
@@ -7836,7 +9138,9 @@
     "isoCode": "NP-P2",
     "lat": 26.669,
     "lng": 86.417,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Mirchaiya",
@@ -7848,7 +9152,9 @@
     "isoCode": "NP-P2",
     "lat": 26.832,
     "lng": 86.245,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 12,
+    "wardsVerified": true
   },
   {
     "name": "Naraha",
@@ -7860,7 +9166,9 @@
     "isoCode": "NP-P2",
     "lat": 26.779,
     "lng": 86.28,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Nawarajpur",
@@ -7872,7 +9180,9 @@
     "isoCode": "NP-P2",
     "lat": 26.609,
     "lng": 86.427,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Sakhuwa Nankarkatti",
@@ -7884,7 +9194,9 @@
     "isoCode": "NP-P2",
     "lat": 26.628,
     "lng": 86.493,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Siraha",
@@ -7896,7 +9208,9 @@
     "isoCode": "NP-P2",
     "lat": 26.652,
     "lng": 86.216,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 22,
+    "wardsVerified": true
   },
   {
     "name": "Sukhipur",
@@ -7908,7 +9222,9 @@
     "isoCode": "NP-P2",
     "lat": 26.697,
     "lng": 86.357,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Bannigadhi Jayagadh",
@@ -7920,7 +9236,9 @@
     "isoCode": "NP-P7",
     "lat": 29.193,
     "lng": 81.3,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Chaurpati",
@@ -7932,7 +9250,9 @@
     "isoCode": "NP-P7",
     "lat": 29.202,
     "lng": 81.127,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Dhakari",
@@ -7944,7 +9264,9 @@
     "isoCode": "NP-P7",
     "lat": 28.976,
     "lng": 81.224,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Kamal Bazar",
@@ -7956,7 +9278,9 @@
     "isoCode": "NP-P7",
     "lat": 29.065,
     "lng": 81.331,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Mangalsen",
@@ -7968,7 +9292,9 @@
     "isoCode": "NP-P7",
     "lat": 29.095,
     "lng": 81.204,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 14,
+    "wardsVerified": true
   },
   {
     "name": "Mellekh",
@@ -7980,7 +9306,9 @@
     "isoCode": "NP-P7",
     "lat": 29.267,
     "lng": 81.319,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Panchdebal Binayak",
@@ -7992,7 +9320,9 @@
     "isoCode": "NP-P7",
     "lat": 29.099,
     "lng": 81.444,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Ramaroshan",
@@ -8004,7 +9334,9 @@
     "isoCode": "NP-P7",
     "lat": 29.202,
     "lng": 81.414,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Sanphebagar",
@@ -8016,7 +9348,9 @@
     "isoCode": "NP-P7",
     "lat": 29.259,
     "lng": 81.18,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 14,
+    "wardsVerified": true
   },
   {
     "name": "Turmakhand",
@@ -8028,7 +9362,9 @@
     "isoCode": "NP-P7",
     "lat": 28.886,
     "lng": 81.488,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Dasharathchand",
@@ -8040,7 +9376,9 @@
     "isoCode": "NP-P7",
     "lat": 29.544,
     "lng": 80.417,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Dilasaini",
@@ -8052,7 +9390,9 @@
     "isoCode": "NP-P7",
     "lat": 29.66,
     "lng": 80.605,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Dogada Kedar",
@@ -8064,7 +9404,9 @@
     "isoCode": "NP-P7",
     "lat": 29.592,
     "lng": 80.524,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Melauli",
@@ -8076,7 +9418,9 @@
     "isoCode": "NP-P7",
     "lat": 29.42,
     "lng": 80.424,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Pancheshwor",
@@ -8088,7 +9432,9 @@
     "isoCode": "NP-P7",
     "lat": 29.446,
     "lng": 80.303,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Patan",
@@ -8100,7 +9446,9 @@
     "isoCode": "NP-P7",
     "lat": 29.45,
     "lng": 80.582,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Puchaundi",
@@ -8112,7 +9460,9 @@
     "isoCode": "NP-P7",
     "lat": 29.605,
     "lng": 80.699,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Shivanath",
@@ -8124,7 +9474,9 @@
     "isoCode": "NP-P7",
     "lat": 29.384,
     "lng": 80.349,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Sigas",
@@ -8136,7 +9488,9 @@
     "isoCode": "NP-P7",
     "lat": 29.45,
     "lng": 80.777,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Surnaya",
@@ -8148,7 +9502,9 @@
     "isoCode": "NP-P7",
     "lat": 29.529,
     "lng": 80.614,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Bitthadchir",
@@ -8160,7 +9516,9 @@
     "isoCode": "NP-P7",
     "lat": 29.504,
     "lng": 80.854,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Bungal",
@@ -8172,7 +9530,9 @@
     "isoCode": "NP-P7",
     "lat": 29.689,
     "lng": 80.947,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Chhabis Pathibhara",
@@ -8184,7 +9544,9 @@
     "isoCode": "NP-P7",
     "lat": 29.56,
     "lng": 81.06,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Durgathali",
@@ -8196,7 +9558,9 @@
     "isoCode": "NP-P7",
     "lat": 29.536,
     "lng": 81.001,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Jayaprithvi",
@@ -8208,7 +9572,9 @@
     "isoCode": "NP-P7",
     "lat": 29.552,
     "lng": 81.16,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Kanda",
@@ -8229,7 +9595,9 @@
     "isoCode": "NP-P7",
     "lat": 29.512,
     "lng": 80.931,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Khaptad Chhanna",
@@ -8241,7 +9609,9 @@
     "isoCode": "NP-P7",
     "lat": 29.458,
     "lng": 81.213,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Masta",
@@ -8253,7 +9623,9 @@
     "isoCode": "NP-P7",
     "lat": 29.543,
     "lng": 81.298,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Surma",
@@ -8265,7 +9637,9 @@
     "isoCode": "NP-P7",
     "lat": 29.694,
     "lng": 81.147,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Talkot",
@@ -8277,7 +9651,9 @@
     "isoCode": "NP-P7",
     "lat": 29.685,
     "lng": 81.279,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Thalara",
@@ -8289,7 +9665,9 @@
     "isoCode": "NP-P7",
     "lat": 29.451,
     "lng": 80.997,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Badimalika",
@@ -8301,7 +9679,9 @@
     "isoCode": "NP-P7",
     "lat": 29.44,
     "lng": 81.497,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Budhiganga",
@@ -8313,7 +9693,9 @@
     "isoCode": "NP-P7",
     "lat": 29.361,
     "lng": 81.322,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Budhinanda",
@@ -8325,7 +9707,9 @@
     "isoCode": "NP-P7",
     "lat": 29.538,
     "lng": 81.617,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Gaumul",
@@ -8337,7 +9721,9 @@
     "isoCode": "NP-P7",
     "lat": 29.568,
     "lng": 81.482,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Himali",
@@ -8349,7 +9735,9 @@
     "isoCode": "NP-P7",
     "lat": 29.712,
     "lng": 81.618,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Jagannath",
@@ -8361,7 +9749,9 @@
     "isoCode": "NP-P7",
     "lat": 29.399,
     "lng": 81.645,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Khaptad Chhededaha",
@@ -8373,7 +9763,9 @@
     "isoCode": "NP-P7",
     "lat": 29.398,
     "lng": 81.281,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Swami Kartik",
@@ -8382,7 +9774,9 @@
     "province": "Sudurpashchim",
     "cbsCode": null,
     "cbsCodeVerified": false,
-    "isoCode": "NP-P7"
+    "isoCode": "NP-P7",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Tribeni",
@@ -8394,7 +9788,9 @@
     "isoCode": "NP-P7",
     "lat": 29.335,
     "lng": 81.429,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Aalital",
@@ -8406,7 +9802,9 @@
     "isoCode": "NP-P7",
     "lat": 29.115,
     "lng": 80.493,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Ajayameru",
@@ -8418,7 +9816,9 @@
     "isoCode": "NP-P7",
     "lat": 29.364,
     "lng": 80.512,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Amargadhi",
@@ -8430,7 +9830,9 @@
     "isoCode": "NP-P7",
     "lat": 29.306,
     "lng": 80.608,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Bhageshwor",
@@ -8442,7 +9844,9 @@
     "isoCode": "NP-P7",
     "lat": 29.282,
     "lng": 80.411,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Ganyapdhura",
@@ -8454,7 +9858,9 @@
     "isoCode": "NP-P7",
     "lat": 29.248,
     "lng": 80.678,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Nawadurga",
@@ -8466,7 +9872,9 @@
     "isoCode": "NP-P7",
     "lat": 29.363,
     "lng": 80.695,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Parashuram",
@@ -8478,7 +9886,9 @@
     "isoCode": "NP-P7",
     "lat": 29.13,
     "lng": 80.34,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 12,
+    "wardsVerified": true
   },
   {
     "name": "Apihimal",
@@ -8490,7 +9900,9 @@
     "isoCode": "NP-P7",
     "lat": 29.867,
     "lng": 80.883,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Byas",
@@ -8502,7 +9914,9 @@
     "isoCode": "NP-P7",
     "lat": 30.058,
     "lng": 80.937,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Duhun",
@@ -8514,7 +9928,9 @@
     "isoCode": "NP-P7",
     "lat": 29.891,
     "lng": 80.618,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Lekam",
@@ -8526,7 +9942,9 @@
     "isoCode": "NP-P7",
     "lat": 29.657,
     "lng": 80.463,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Mahakali",
@@ -8538,7 +9956,9 @@
     "isoCode": "NP-P7",
     "lat": 29.808,
     "lng": 80.564,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Malikarjun",
@@ -8550,7 +9970,9 @@
     "isoCode": "NP-P7",
     "lat": 29.73,
     "lng": 80.428,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 8,
+    "wardsVerified": true
   },
   {
     "name": "Marma",
@@ -8562,7 +9984,9 @@
     "isoCode": "NP-P7",
     "lat": 29.741,
     "lng": 80.846,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Naugad",
@@ -8574,7 +9998,9 @@
     "isoCode": "NP-P7",
     "lat": 29.798,
     "lng": 80.678,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Shailyashikhar",
@@ -8586,7 +10012,9 @@
     "isoCode": "NP-P7",
     "lat": 29.706,
     "lng": 80.574,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Aadarsha",
@@ -8598,7 +10026,9 @@
     "isoCode": "NP-P7",
     "lat": 29.35,
     "lng": 80.867,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Badi Kedar",
@@ -8610,7 +10040,9 @@
     "isoCode": "NP-P7",
     "lat": 29.029,
     "lng": 80.865,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Bogatan",
@@ -8619,7 +10051,9 @@
     "province": "Sudurpashchim",
     "cbsCode": null,
     "cbsCodeVerified": false,
-    "isoCode": "NP-P7"
+    "isoCode": "NP-P7",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Dipayal Silgadhi",
@@ -8631,7 +10065,9 @@
     "isoCode": "NP-P7",
     "lat": 29.258,
     "lng": 80.972,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Jorayal",
@@ -8643,7 +10079,9 @@
     "isoCode": "NP-P7",
     "lat": 29.101,
     "lng": 80.674,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "K.I. Singh",
@@ -8655,7 +10093,9 @@
     "isoCode": "NP-P7",
     "lat": 29.179,
     "lng": 80.979,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Purbichouki",
@@ -8667,7 +10107,9 @@
     "isoCode": "NP-P7",
     "lat": 29.269,
     "lng": 81.059,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Sayal",
@@ -8679,7 +10121,9 @@
     "isoCode": "NP-P7",
     "lat": 29.368,
     "lng": 80.971,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Shikhar",
@@ -8691,7 +10135,9 @@
     "isoCode": "NP-P7",
     "lat": 29.244,
     "lng": 80.822,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Bardagoriya",
@@ -8703,7 +10149,9 @@
     "isoCode": "NP-P7",
     "lat": 28.688,
     "lng": 81.042,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Bhajani",
@@ -8715,7 +10163,9 @@
     "isoCode": "NP-P7",
     "lat": 28.52,
     "lng": 80.964,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Chure",
@@ -8727,7 +10177,9 @@
     "isoCode": "NP-P7",
     "lat": 28.927,
     "lng": 80.745,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Dhangadhi",
@@ -8739,7 +10191,9 @@
     "isoCode": "NP-P7",
     "lat": 28.675,
     "lng": 80.652,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 19,
+    "wardsVerified": true
   },
   {
     "name": "Gauriganga",
@@ -8751,7 +10205,9 @@
     "isoCode": "NP-P7",
     "lat": 28.75,
     "lng": 80.808,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Ghodaghodi",
@@ -8763,7 +10219,9 @@
     "isoCode": "NP-P7",
     "lat": 28.711,
     "lng": 80.945,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 12,
+    "wardsVerified": true
   },
   {
     "name": "Godawari",
@@ -8775,7 +10233,9 @@
     "isoCode": "NP-P7",
     "lat": 28.863,
     "lng": 80.582,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 12,
+    "wardsVerified": true
   },
   {
     "name": "Janaki",
@@ -8787,7 +10247,9 @@
     "isoCode": "NP-P7",
     "lat": 28.568,
     "lng": 81.143,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Joshipur",
@@ -8799,7 +10261,9 @@
     "isoCode": "NP-P7",
     "lat": 28.569,
     "lng": 81.03,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Kailari",
@@ -8811,7 +10275,9 @@
     "isoCode": "NP-P7",
     "lat": 28.598,
     "lng": 80.794,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Lamki Chuha",
@@ -8823,7 +10289,9 @@
     "isoCode": "NP-P7",
     "lat": 28.658,
     "lng": 81.153,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Mohanyal",
@@ -8835,7 +10303,9 @@
     "isoCode": "NP-P7",
     "lat": 28.813,
     "lng": 81.111,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 7,
+    "wardsVerified": true
   },
   {
     "name": "Tikapur",
@@ -8847,7 +10317,9 @@
     "isoCode": "NP-P7",
     "lat": 28.474,
     "lng": 81.082,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Bedkot",
@@ -8859,7 +10331,9 @@
     "isoCode": "NP-P7",
     "lat": 28.984,
     "lng": 80.267,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Beldandi",
@@ -8871,7 +10345,9 @@
     "isoCode": "NP-P7",
     "lat": 28.774,
     "lng": 80.267,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 5,
+    "wardsVerified": true
   },
   {
     "name": "Belouri",
@@ -8883,7 +10359,9 @@
     "isoCode": "NP-P7",
     "lat": 28.701,
     "lng": 80.358,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Bhimdatta",
@@ -8895,7 +10373,9 @@
     "isoCode": "NP-P7",
     "lat": 29.016,
     "lng": 80.171,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 19,
+    "wardsVerified": true
   },
   {
     "name": "Krishnapur",
@@ -8907,7 +10387,9 @@
     "isoCode": "NP-P7",
     "lat": 28.874,
     "lng": 80.449,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 9,
+    "wardsVerified": true
   },
   {
     "name": "Laljhadi",
@@ -8919,7 +10401,9 @@
     "isoCode": "NP-P7",
     "lat": 28.757,
     "lng": 80.404,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 6,
+    "wardsVerified": true
   },
   {
     "name": "Mahakali",
@@ -8928,7 +10412,9 @@
     "province": "Sudurpashchim",
     "cbsCode": null,
     "cbsCodeVerified": false,
-    "isoCode": "NP-P7"
+    "isoCode": "NP-P7",
+    "wards": 10,
+    "wardsVerified": true
   },
   {
     "name": "Punarbas",
@@ -8940,7 +10426,9 @@
     "isoCode": "NP-P7",
     "lat": 28.639,
     "lng": 80.467,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 11,
+    "wardsVerified": true
   },
   {
     "name": "Shuklaphanta",
@@ -8952,6 +10440,8 @@
     "isoCode": "NP-P7",
     "lat": 28.926,
     "lng": 80.372,
-    "geoSource": "open-admin-data"
+    "geoSource": "open-admin-data",
+    "wards": 12,
+    "wardsVerified": true
   }
 ]

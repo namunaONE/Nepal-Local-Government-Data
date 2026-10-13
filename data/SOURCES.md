@@ -136,6 +136,19 @@ English spellings are UPPERCASE variants (`CHITAWAN`, `DHANUSA`,
 **Used for:** `nsoCode` (verified), `nsoCodeVerified`, district-code
 resolution, 4th Devanagari vote (palika level, where aligned).
 
+## Ward counts (`verify_wards.dart`, HYA-324)
+
+Per-palika ward counts merge from two 753-row snapshots (sagautam5
+`dataset_municipalities_en.json` + geo-pro-max `src_data_local-units.ts`)
+with district-scoped exact/alias/fuzzy/containment matching. **Honesty
+note:** geo-pro-max derives from sagautam5 (per its header), so snapshot
+agreement is a transcription check; the independent check is province-sum
+reconciliation against declared totals (different lineage): 745/753
+verified, Lumbini fully reconciled (109 units, 983 wards). 8 gaps are
+MoFAGA-backed roster defects (ours+CBS vs sag+MoFAGA splits + 2 silent
+harvest gaps), recorded in `data/_stage/wards.json` review — never guessed.
+Human decision: Janakpurdham 25 (sub-metro official; geo-pro-max stale 24).
+
 ## Website basemap (not shipped in the package)
 
 The GitHub Pages explorer renders centroid dots over

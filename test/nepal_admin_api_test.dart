@@ -236,4 +236,70 @@ void main() {
       }
     });
   });
+
+  group('v2.3 ward counts', () {
+    test('wards are sane positive integers when present', () {
+      for (final b in NepalAdminApi.getAllLocalBodies()) {
+        if (b.wards != null) {
+          expect(b.wards!, greaterThanOrEqualTo(1),
+              reason: '${b.fullPath} wards');
+          expect(b.wards!, lessThanOrEqualTo(40),
+              reason: '${b.fullPath} wards');
+        }
+      }
+    });
+
+    test('745 palikas carry verified ward counts', () {
+      final bodies = NepalAdminApi.getAllLocalBodies();
+      final verified = bodies.whereWardsVerified;
+      expect(verified.length, 745);
+      expect(verified.every((b) => b.wards != null), isTrue);
+    });
+
+    test('the 8 known gaps are exactly the roster-defect set', () {
+      const expectedGaps = {
+        'Udayapur|Sunkoshi',
+        'Saptari|Belhi Chapena',
+        'Nuwakot|Meghang',
+        'Rasuwa|Aamachhodingmo',
+        'Manang|Naraphu',
+        'Manang|Neshang',
+        'Salyan|Dhorchaur',
+        'Bajhang|Kanda',
+      };
+      final actualGaps = {
+        for (final b in NepalAdminApi.getAllLocalBodies())
+          if (b.wards == null) '${b.districtName}|${b.name}',
+      };
+      expect(actualGaps, expectedGaps);
+    });
+
+    test('Lumbini reconciles fully (109 units, 983 wards)', () {
+      final lumbini = NepalAdminApi.getProvinceById('lumbini')!;
+      final bodies = lumbini.localBodies;
+      expect(bodies.length, 109);
+      expect(bodies.every((b) => b.wards != null), isTrue);
+      final sum = bodies.fold<int>(0, (s, b) => s + b.wards!);
+      expect(sum, lumbini.stats.wards);
+      expect(sum, 983);
+    });
+
+    test('District.wards sums verified counts', () {
+      final chitwan = NepalAdminApi.getDistrictByName('Chitwan')!;
+      expect(chitwan.wards,
+          chitwan.localBodies.fold<int>(0, (s, b) => s + (b.wards ?? 0)));
+      // Spot check: Bharatpur metro has 29 wards.
+      final bharatpur = NepalAdminApi.getLocalBodyByCbs(31304)!;
+      expect(bharatpur.wards, 29);
+      expect(bharatpur.wardsVerified, isTrue);
+    });
+
+    test('json round-trip preserves wards', () {
+      final withWards =
+          NepalAdminApi.getAllLocalBodies().firstWhere((b) => b.wards != null);
+      final restored = LocalBody.fromJson(withWards.toJson());
+      expect(restored.wards, withWards.wards);
+      expect(restored.wardsVerified, withWards.wardsVerified);
+    });
+  });
 }

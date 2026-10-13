@@ -90,6 +90,14 @@ class LocalBody {
   /// Provenance of the coordinates, e.g. 'open-admin-data', 'osm-nominatim'.
   final String? geoSource;
 
+  /// Number of wards in this local body. Null when not verified against
+  /// ward-count sources (see `wardsVerified`).
+  final int? wards;
+
+  /// Whether [wards] is doubly-attested (sagautam5 + geo-pro-max agree,
+  /// or a documented human decision in decisions_wards_manual.json).
+  final bool wardsVerified;
+
   const LocalBody({
     required this.name,
     required this.type,
@@ -100,6 +108,8 @@ class LocalBody {
     this.lat,
     this.lng,
     this.geoSource,
+    this.wards,
+    this.wardsVerified = false,
   });
 
   /// Full display name of the type, e.g. 'Rural Municipality'.
@@ -131,6 +141,8 @@ class LocalBody {
         if (lat != null) 'lat': lat,
         if (lng != null) 'lng': lng,
         if (geoSource != null) 'geoSource': geoSource,
+        if (wards != null) 'wards': wards,
+        if (wardsVerified) 'wardsVerified': wardsVerified,
       };
 
   factory LocalBody.fromJson(Map<String, dynamic> json) => LocalBody(
@@ -143,6 +155,8 @@ class LocalBody {
         lat: (json['lat'] as num?)?.toDouble(),
         lng: (json['lng'] as num?)?.toDouble(),
         geoSource: json['geoSource'] as String?,
+        wards: json['wards'] as int?,
+        wardsVerified: json['wardsVerified'] as bool? ?? false,
       );
 
   @override
@@ -181,6 +195,10 @@ class District {
 
   /// Number of local bodies in this district.
   int get localBodyCount => _units.length;
+
+  /// Total wards in this district (sums verified counts; unverified
+  /// units contribute 0 — use [verifiedLocalBodies] for exact sums).
+  int get wards => _units.fold<int>(0, (sum, b) => sum + (b.wards ?? 0));
 
   /// Local bodies of one [type] in this district.
   List<LocalBody> localBodiesByType(LocalBodyType type) => [
@@ -482,5 +500,11 @@ extension LocalBodyListX on List<LocalBody> {
   List<LocalBody> get whereMapped => [
         for (final b in this)
           if (b.hasCoordinates) b,
+      ];
+
+  /// Only bodies with verified ward counts.
+  List<LocalBody> get whereWardsVerified => [
+        for (final b in this)
+          if (b.wardsVerified) b,
       ];
 }

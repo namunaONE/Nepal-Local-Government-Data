@@ -40,6 +40,8 @@ void main() {
           if (body['lat'] != null) 'lat': body['lat'],
           if (body['lng'] != null) 'lng': body['lng'],
           if (body['geoSource'] != null) 'geoSource': body['geoSource'],
+          if (body['wards'] != null) 'wards': body['wards'],
+          if (body['wardsVerified'] == true) 'wardsVerified': true,
         });
       }
     }
@@ -61,10 +63,13 @@ void main() {
   // Stats
   final verified = explorerData.where((d) => d['cbsCode'] != null).length;
   final mapped = explorerData.where((d) => d['lat'] != null).length;
+  final warded = explorerData.where((d) => d['wards'] != null).length;
   print('Generated docs/data.json');
   print('Total records: ${explorerData.length}');
   print('Verified CBS codes: $verified');
   print('Unverified: ${explorerData.length - verified}');
   print('With coordinates: $mapped');
   print('Without coordinates: ${explorerData.length - mapped}');
+  print('With wards: $warded');
+  print('Without wards: ${explorerData.length - warded}');
 }
