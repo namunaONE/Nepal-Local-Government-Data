@@ -116,9 +116,17 @@ It runs these steps in order, aborting on the first failure:
 tool/merge/verify_codes.dart         CBS codes, doubly-attested tier
 tool/merge/apply_cbs_codes.dart     write them into the dataset
 tool/merge/resolve_code_tiers.dart  single-source tier + bijection gate
+tool/merge/attach_bilingual.dart    Devanagari names at all 3 levels
+tool/merge/attach_attributes.dart   HQ / area / website / contact / postal
 tool/generate.dart                  lib/src/nepal_data.dart (validates)
 tool/generate_explorer_data.dart    docs/data.json
 ```
+
+Steps 4 and 5 are **order-dependent**. The MoFAGA harvest carries no codes, so
+`attach_attributes` joins palikas by their Devanagari name, which only exists
+once `attach_bilingual` has run. Running them out of order attaches nothing and
+fails *silently* — which is why the pipeline, not the individual tools, is the
+supported entry point.
 
 Additional merge tools you may need after re-fetching sources:
 `tool/merge/inventory.dart` (source audit), `tool/merge/match.dart` and
@@ -138,6 +146,8 @@ a bad merge cannot reach a release:
 - **bijection** — no two palikas share a CBS code
 - **district containment** — a code's PDD prefix matches its district's code
 - a `cbsCodeConfidence` tier that contradicts the `cbsCodeVerified` flag
+- every `nameNe` actually contains Devanagari (a Latin string in that field is
+  a broken pipeline, not a gap)
 - coordinates inside Nepal's bounding box; ward counts in a sane range
 - no province claiming fewer wards than its own rows substantiate
 

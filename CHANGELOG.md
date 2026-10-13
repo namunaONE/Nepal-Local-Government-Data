@@ -4,6 +4,74 @@ All notable changes to this package are documented in this file.
 The format follows [Keep a Changelog](https://keepachangelog.com/) and the
 package adheres to [Semantic Versioning](https://semver.org/).
 
+## 2.6.0 — 2026-10-13
+
+The bindings release. Until now the dataset was only reachable from Dart, which
+was a real ceiling: most people who want Nepal's administrative structure reach
+for pandas, a spreadsheet, or a JavaScript map. Re-typing 753 rows by hand is
+exactly what this project exists to stop.
+
+No change to the Dart public API. The package gains a generated sibling tree.
+
+### Added
+- **`tool/generate_bindings.dart`** — emits every non-Dart artifact from the
+  one dataset, via a single in-memory projection, so the bindings cannot
+  drift apart from each other or from the Dart package.
+  - **`bindings/csv/`** — `provinces.csv`, `districts.csv`,
+    `local_bodies.csv`. RFC 4180 quoting, LF endings, no BOM. For pandas,
+    Excel, R, QGIS, or a merge against a voter register.
+  - **`bindings/geojson/`** — centroid `FeatureCollection`s (RFC 7946, WGS84,
+    `[lng, lat]`) for all three levels. District and province centroids are
+    derived as the mean of their members' mapped centroids and are labelled
+    approximate in `centroidMethod`.
+  - **`bindings/javascript/`** — npm-ready `nepal-admin-data`: `index.js`
+    (zero dependencies), `index.d.ts`, `package.json`, plus `LICENSE` and
+    `NOTICE`. Mirrors the Dart API.
+  - **`bindings/python/`** — PyPI-ready `nepal-admin-data`: pure standard
+    library, `python -m nepal_admin` prints a summary.
+  - **`bindings/meta.json`** — version, `dataAsOf`, and coverage counters.
+- **`bindings/verify_bindings.cjs`** — 135 assertions that *execute* the
+  JavaScript, parse the CSV and GeoJSON, and cross-check every artifact
+  against `data/nepal_local_levels.json`. Runs in CI.
+- **`test/bindings_parity_test.dart`** — reads the shipped artifacts and
+  compares them field by field against the live Dart API, including that the
+  JS and Python payloads are byte-identical.
+- CI: `bindings/` is drift-checked like every other generated artifact; a
+  `python-bindings` job runs the Python package for the first time anywhere;
+  the Pages deploy stages `csv/`, `geojson/` and `meta.json` into
+  `docs/downloads/` so the site is the download surface.
+- `.pubignore` excludes `bindings/` — ~1.7 MB of duplicate JSON would
+  otherwise ship inside the Dart package for no Dart consumer.
+
+### Fixed
+- **A real bug the verifier caught.** The JavaScript
+  `getLocalBodiesByName` and `getLocalBodiesByDistrict` read
+  `district.localBodies`, which does not exist on the flat district records —
+  both silently returned empty arrays. Both now filter the flat list. This is
+  the argument for executing generated code rather than only generating it.
+
+### Notes
+- The bindings carry the **dataset's** type vocabulary
+  (`metropolitan` | `subMetropolitan` | `municipality` | `ruralMunicipality`),
+  not `LocalBodyType.shortName` (`M`, `RM`): `M` is meaningless in a CSV
+  column, and these artifacts are read by people who never see the Dart enum.
+- Output is byte-stable — fixed ordering, LF, UTF-8 without BOM, **no
+  timestamps** — so CI drift is a plain `git diff`.
+
+### Not done, and why
+- **The Python binding is generated and reviewed but not executed locally.**
+  The machine used for this release has no Python interpreter. It is exercised
+  for the first time in the `python-bindings` CI job, which asserts the same
+  numbers as the Dart and JavaScript artifacts. This is stated in
+  `bindings/README.md` rather than papered over.
+- **Boundary polygons.** Only centroids ship. The only vendored geometry
+  carries 777 features against the gazetted 753 and is quarantined
+  (`data/SOURCES.md` § Boundaries). Centroids now means a polygon layer can
+  be added later without changing the bindings' contract.
+- **A Flutter widgets package.** Deferred: no Flutter SDK is available on this
+  machine, and shipping widget code nothing can compile is exactly the rot the
+  `flutter-example` CI job exists to prevent.
+
 ## 2.5.0 — 2026-10-13
 
 The bilingual release. For a package about Nepal's own government structure,

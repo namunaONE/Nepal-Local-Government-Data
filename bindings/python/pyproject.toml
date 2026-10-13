@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nepal-admin-data"
+version = "2.6.0"
+description = "Offline administrative divisions of Nepal - 7 provinces, 77 districts, 753 local bodies, 6,743 wards. CBS codes, Devanagari names, coordinates, ward counts."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+keywords = ["nepal", "geography", "admin", "districts", "municipality", "palika", "open-data"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: GIS",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/namunaONE/Nepal-Local-Government-Data"
+Documentation = "https://namunaONE.github.io/Nepal-Local-Government-Data/"
+
+[tool.setuptools]
+packages = ["nepal_admin"]
+
+[tool.setuptools.package-data]
+nepal_admin = ["data.json", "NOTICE", "LICENSE"]

@@ -162,6 +162,26 @@
           <article class="feature-card">
             <div class="feature-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 5h16M4 12h10M4 19h7"/>
+                <circle cx="18" cy="16" r="4"/>
+                <path d="M21 19l2 2"/>
+              </svg>
+            </div>
+            <h3>Bilingual (Devanagari)</h3>
+            <p>नाम in both scripts for all 7 provinces, 77 districts and 731/753 palikas — taken from source rosters, never transliterated. Search works in either language.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"/>
+              </svg>
+            </div>
+            <h3>Administrative Attributes</h3>
+            <p>District headquarters, area and official website for all 77 districts; province capitals; palika contact details and Nepal Post postal codes.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <circle cx="12" cy="12" r="10"/>
                 <line x1="12" y1="16" x2="12" y2="12"/>
                 <line x1="12" y1="8" x2="12.01" y2="8"/>
@@ -194,6 +214,44 @@
         </div>
       </div>
     </section>
+
+    <section class="downloads">
+    <div class="container">
+      <h2>Download the data</h2>
+      <p>Every artifact below is generated from the same verified dataset the
+      package ships, and is byte-for-byte reproducible from the repository.</p>
+      <div class="download-grid">
+        <a class="download-card" href="downloads/local_bodies.csv" download>
+          <strong>local_bodies.csv</strong>
+          <span>753 rows · 19 columns · for pandas, Excel, QGIS</span>
+        </a>
+        <a class="download-card" href="downloads/districts.csv" download>
+          <strong>districts.csv</strong>
+          <span>77 rows · headquarters, area, website</span>
+        </a>
+        <a class="download-card" href="downloads/provinces.csv" download>
+          <strong>provinces.csv</strong>
+          <span>7 rows · capital, area, website</span>
+        </a>
+        <a class="download-card" href="downloads/local-bodies.centroids.geojson" download>
+          <strong>local-bodies.centroids.geojson</strong>
+          <span>726 points · RFC 7946 · Leaflet, geojson.io, QGIS</span>
+        </a>
+        <a class="download-card" href="downloads/districts.centroids.geojson" download>
+          <strong>districts.centroids.geojson</strong>
+          <span>77 points · derived, marked approximate</span>
+        </a>
+        <a class="download-card" href="downloads/meta.json" download>
+          <strong>meta.json</strong>
+          <span>version, data-as-of date, coverage counters</span>
+        </a>
+      </div>
+      <p class="download-note">Also available as packages:
+      <code>npm install nepal-admin-data</code> ·
+      <code>pip install nepal-admin-data</code> ·
+      <code>nepal_admin_api</code> on pub.dev. All five share the same numbers.</p>
+    </div>
+  </section>
 
     <section class="install">
       <div class="container">

@@ -20,6 +20,7 @@
 //   5. tool/merge/attach_attributes.dart HQ / area / website / contact / postal
 //   6. tool/generate.dart                lib/src/nepal_data.dart (validates)
 //   7. tool/generate_explorer_data.dart  docs/data.json
+//   8. tool/generate_bindings.dart       CSV / GeoJSON / JS / Python bindings
 //
 // Steps 4 and 5 are ORDERED, not incidental: MoFAGA rows carry no codes, so
 // attach_attributes joins palikas by their Devanagari name, which only exists
@@ -35,15 +36,17 @@
 import 'dart:io';
 
 const _steps = <String, String>{
-  'verifying CBS codes (step 1/7)': 'tool/merge/verify_codes.dart',
-  'applying CBS codes (step 2/7)': 'tool/merge/apply_cbs_codes.dart',
-  'resolving code confidence tiers (step 3/7)':
+  'verifying CBS codes (step 1/8)': 'tool/merge/verify_codes.dart',
+  'applying CBS codes (step 2/8)': 'tool/merge/apply_cbs_codes.dart',
+  'resolving code confidence tiers (step 3/8)':
       'tool/merge/resolve_code_tiers.dart',
-  'attaching Devanagari names (step 4/7)': 'tool/merge/attach_bilingual.dart',
-  'attaching administrative attributes (step 5/7)':
+  'attaching Devanagari names (step 4/8)': 'tool/merge/attach_bilingual.dart',
+  'attaching administrative attributes (step 5/8)':
       'tool/merge/attach_attributes.dart',
-  'generating lib/src/nepal_data.dart (step 6/7)': 'tool/generate.dart',
-  'generating docs/data.json (step 7/7)': 'tool/generate_explorer_data.dart',
+  'generating lib/src/nepal_data.dart (step 6/8)': 'tool/generate.dart',
+  'generating docs/data.json (step 7/8)': 'tool/generate_explorer_data.dart',
+  'generating CSV / GeoJSON / JS / Python bindings (step 8/8)':
+      'tool/generate_bindings.dart',
 };
 
 void main(List<String> args) {
@@ -76,12 +79,12 @@ void main(List<String> args) {
       // Still execute: these tools validate and report, and a dry run that
       // cannot detect a broken dataset is not worth much. Only the writing
       // steps are told to hold off.
-      final preview = script.contains('resolve_code_tiers')
+      final preview = script.contains('resolve_code_tiers') ||
+              script.contains('attach_bilingual') ||
+              script.contains('attach_attributes') ||
+              script.contains('generate_bindings')
           ? <String>['--dry-run']
-          : (script.contains('attach_bilingual') ||
-                  script.contains('attach_attributes'))
-              ? <String>['--dry-run']
-              : const <String>[];
+          : const <String>[];
       final r = Process.runSync(
         Platform.resolvedExecutable,
         <String>['run', script, ...preview],

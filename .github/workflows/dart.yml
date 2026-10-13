@@ -39,6 +39,10 @@ jobs:
         run: dart run tool/generate_explorer_data.dart
       - name: Verify no website data drift (docs must match the package)
         run: git diff --exit-code -- docs/data.json
+      - name: Regenerate CSV / GeoJSON / JS / Python bindings
+        run: dart run tool/generate_bindings.dart
+      - name: Verify no bindings drift
+        run: git diff --exit-code -- bindings/
       - name: Analyze
         run: dart analyze --fatal-infos
       - name: Run tests
@@ -47,6 +51,75 @@ jobs:
         run: dart test --coverage=coverage && dart pub global activate coverage && dart pub global run coverage:format_coverage --lcov --in=coverage --out=coverage/lcov.info --report-on=lib
       - name: Explorer smoke test (no browser, no npm deps)
         run: node docs/smoke.cjs
+      - name: Bindings smoke test (executes the JS, parses CSV + GeoJSON)
+        run: node bindings/verify_bindings.cjs
+
+  # The Python binding cannot be exercised locally (the release machine has no
+  # interpreter), so this is where it is first actually run. It imports the
+  # package, walks the whole API and asserts the same numbers the Dart, JS and
+  # CSV artifacts are held to.
+  python-bindings:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Import the package
+        working-directory: bindings/python
+        run: |
+          python -c "import nepal_admin as n; print('imported', n.__version__)"
+      - name: Exercise the full API and assert the numbers
+        working-directory: bindings/python
+        run: |
+          python - <<'PY'
+          import nepal_admin as n
+
+          s = n.get_national_stats()
+          assert (s["provinces"], s["districts"], s["total"]) == (7, 77, 753), s
+          assert (s["metro"], s["sub_metro"]) == (6, 11), s
+          assert (s["municipalities"], s["rural_municipalities"]) == (276, 460), s
+          assert s["wards"] == 6743, s
+          assert s["verified_wards"] == 6697, s
+          assert s["ward_gaps"] == 8, s
+          assert s["unreconciled_wards"] == 46, s
+
+          assert len(n.get_local_bodies_with_code()) == 744
+          assert len(n.get_verified_local_bodies()) == 548
+          assert len(n.get_single_source_local_bodies()) == 196
+          assert len(n.get_uncoded_local_bodies()) == 9
+          assert len(n.get_mappable_local_bodies()) == 718
+
+          b = n.get_local_body_by_cbs(31304)
+          assert b["name"] == "Bharatpur" and b["district"] == "Chitwan", b
+          assert b["nameNe"], "Bharatpur must carry a Devanagari name"
+          assert n.get_local_body_by_cbs(99999) is None
+          # A single-source code is reachable but not by the strict lookup.
+          assert n.get_local_body_by_cbs(40504)["name"] == "Pokhara"
+          assert n.get_local_body_by_cbs_verified(40504) is None
+
+          assert n.get_province_by_id("bagmati")["name"] == "Bagmati"
+          assert n.get_province_by_id("NP-P3")["id"] == "bagmati"
+          assert n.get_district_by_cbs(306)["name"] == "Kathmandu"
+          assert n.get_district_by_name("Chitwan")["headquarter"] == "Bharatpur"
+
+          # Bilingual search, both directions.
+          en = n.search("Bharatpur")["localBodies"]
+          ne = n.search(b["nameNe"])["localBodies"]
+          assert ne and len(ne) == len(en), (len(ne), len(en))
+          assert len(n.search("जकजकजक")["localBodies"]) == 0
+
+          # Duplicate-name disambiguation and the null-on-ambiguity rule.
+          assert len(n.get_local_bodies_by_name("Sunkoshi", "Okhaldhunga")) == 1
+          assert n.get_local_body_by_full_path("Bharatpur, Chitwan, Bagmati")
+          assert n.get_local_body_by_full_path("Sunkoshi") is None
+
+          # Ward reconciliation.
+          assert n.get_province_stats("lumbini")["wards_reconcile"] is True
+          assert n.get_province_stats("gandaki")["unreconciled_wards"] == 14
+
+          print("PYTHON BINDINGS OK")
+          PY
 
   # example/brand_theme.dart imports package:flutter/material.dart, so plain
   # `dart analyze` excludes it. Without this job it is the only Dart file in the
@@ -122,6 +195,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
+      # The CSV and GeoJSON live under bindings/ (excluded from the published
+      # Dart package), but the docs site is the natural download surface for
+      # people who want to open them in pandas or QGIS. Copy them into the
+      # Pages artifact at build time rather than duplicating them in the repo.
+      - name: Stage downloadable data files for the site
+        run: |
+          mkdir -p docs/downloads
+          cp bindings/csv/*.csv docs/downloads/
+          cp bindings/geojson/*.geojson docs/downloads/
+          cp bindings/meta.json docs/downloads/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: docs/

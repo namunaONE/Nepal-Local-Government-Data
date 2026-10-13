@@ -1,0 +1,37 @@
+{
+  "name": "nepal-admin-data",
+  "version": "2.6.0",
+  "description": "Offline administrative divisions of Nepal — 7 provinces, 77 districts, 753 local bodies, 6,743 wards. CBS codes, Devanagari names, coordinates, ward counts. Zero dependencies.",
+  "keywords": [
+    "nepal",
+    "geography",
+    "admin",
+    "districts",
+    "municipality",
+    "palika",
+    "open-data"
+  ],
+  "license": "MIT",
+  "type": "commonjs",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    },
+    "./data.json": "./data.json",
+    "./csv/*": "./csv/*"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "data.json",
+    "csv",
+    "NOTICE",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=14"
+  }
+}

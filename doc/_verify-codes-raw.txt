@@ -1,6 +1,6 @@
 ==============================================================================
 STEP 2 CODE VERIFICATION
-generated: 2026-10-13T10:21:43.902277Z
+generated: 2026-10-13T10:43:41.839080Z
 CBS harvest: opendatanepal geographical-codes dataset, license cc-by, metadata 2026-06-14 (re-verified at fetch)
 ==============================================================================
   ok: states rows == 7 (got 7)

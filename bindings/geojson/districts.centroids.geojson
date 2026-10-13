@@ -1,0 +1,1853 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.072,
+          27.163556
+        ]
+      },
+      "properties": {
+        "name": "Bhojpur",
+        "nameNe": "भोजपुर",
+        "nameNeVerified": true,
+        "cbsCode": 106,
+        "province": "Koshi",
+        "isoCode": "NP-P1",
+        "headquarter": "Bhojpur",
+        "areaSqKm": 1507.0,
+        "localBodyCount": 9,
+        "wards": 81,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "9 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.326,
+          26.996571
+        ]
+      },
+      "properties": {
+        "name": "Dhankuta",
+        "nameNe": "धनकुटा",
+        "nameNeVerified": true,
+        "cbsCode": 107,
+        "province": "Koshi",
+        "isoCode": "NP-P1",
+        "headquarter": "Dhankuta",
+        "areaSqKm": 892.0,
+        "localBodyCount": 7,
+        "wards": 60,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "7 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.8882,
+          26.8913
+        ]
+      },
+      "properties": {
+        "name": "Ilam",
+        "nameNe": "इलाम",
+        "nameNeVerified": true,
+        "cbsCode": 110,
+        "province": "Koshi",
+        "isoCode": "NP-P1",
+        "headquarter": "Ilam",
+        "areaSqKm": 1703.0,
+        "localBodyCount": 10,
+        "wards": 81,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "10 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.902267,
+          26.5854
+        ]
+      },
+      "properties": {
+        "name": "Jhapa",
+        "nameNe": "झापा",
+        "nameNeVerified": true,
+        "cbsCode": 111,
+        "province": "Koshi",
+        "isoCode": "NP-P1",
+        "headquarter": "Bhadrapur",
+        "areaSqKm": 1606.0,
+        "localBodyCount": 15,
+        "wards": 131,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "15 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.804,
+          27.172
+        ]
+      },
+      "properties": {
+        "name": "Khotang",
+        "nameNe": "खोटाङ",
+        "nameNeVerified": true,
+        "cbsCode": 105,
+        "province": "Koshi",
+        "isoCode": "NP-P1",
+        "headquarter": "Diktel",
+        "areaSqKm": 1591.0,
+        "localBodyCount": 10,
+        "wards": 79,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "9 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.447412,
+          26.578824
+        ]
+      },
+      "properties": {
+        "name": "Morang",
+        "nameNe": "मोरङ",
+        "nameNeVerified": true,
+        "cbsCode": 112,
+        "province": "Koshi",
+        "isoCode": "NP-P1",
+        "headquarter": "Biratnagar",
+        "areaSqKm": 1855.0,
+        "localBodyCount": 17,
+        "wards": 159,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "17 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.41425,
+          27.329875
+        ]
+      },
+      "properties": {
+        "name": "Okhaldhunga",
+        "nameNe": "ओखलढुङ्गा",
+        "nameNeVerified": true,
+        "cbsCode": 104,
+        "province": "Koshi",
+        "isoCode": "NP-P1",
+        "headquarter": "Siddhicharan",
+        "areaSqKm": 1074.0,
+        "localBodyCount": 8,
+        "wards": 75,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "8 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.76825,
+          27.11025
+        ]
+      },
+      "properties": {
+        "name": "Panchthar",
+        "nameNe": "पाँचथर",
+        "nameNeVerified": true,
+        "cbsCode": 109,
+        "province": "Koshi",
+        "isoCode": "NP-P1",
+        "headquarter": "Phidim",
+        "areaSqKm": 1241.0,
+        "localBodyCount": 8,
+        "wards": 60,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "8 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.2944,
+          27.4462
+        ]
+      },
+      "properties": {
+        "name": "Sankhuwasabha",
+        "nameNe": "संखुवासभा",
+        "nameNeVerified": false,
+        "cbsCode": 102,
+        "province": "Koshi",
+        "isoCode": "NP-P1",
+        "headquarter": "Khandbari",
+        "areaSqKm": 3480.0,
+        "localBodyCount": 10,
+        "wards": 76,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "10 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.677875,
+          27.5595
+        ]
+      },
+      "properties": {
+        "name": "Solukhumbu",
+        "nameNe": "सोलुखुम्बु",
+        "nameNeVerified": true,
+        "cbsCode": 103,
+        "province": "Koshi",
+        "isoCode": "NP-P1",
+        "headquarter": "Salleri",
+        "areaSqKm": 3312.0,
+        "localBodyCount": 8,
+        "wards": 52,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "8 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.1773,
+          26.5857
+        ]
+      },
+      "properties": {
+        "name": "Sunsari",
+        "nameNe": "सुनसरी",
+        "nameNeVerified": true,
+        "cbsCode": 113,
+        "province": "Koshi",
+        "isoCode": "NP-P1",
+        "headquarter": "Inaruwa",
+        "areaSqKm": 1257.0,
+        "localBodyCount": 12,
+        "wards": 124,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "10 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.725125,
+          27.458
+        ]
+      },
+      "properties": {
+        "name": "Taplejung",
+        "nameNe": "ताप्लेजुङ",
+        "nameNeVerified": true,
+        "cbsCode": 101,
+        "province": "Koshi",
+        "isoCode": "NP-P1",
+        "headquarter": "Taplejung",
+        "areaSqKm": 3646.0,
+        "localBodyCount": 9,
+        "wards": 61,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "8 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.537667,
+          27.159
+        ]
+      },
+      "properties": {
+        "name": "Terhathum",
+        "nameNe": "तेह्रथुम",
+        "nameNeVerified": true,
+        "cbsCode": 108,
+        "province": "Koshi",
+        "isoCode": "NP-P1",
+        "headquarter": "Myanglung",
+        "areaSqKm": 679.0,
+        "localBodyCount": 6,
+        "wards": 43,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "6 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.681571,
+          26.918571
+        ]
+      },
+      "properties": {
+        "name": "Udayapur",
+        "nameNe": "उदयपुर",
+        "nameNeVerified": true,
+        "cbsCode": 114,
+        "province": "Koshi",
+        "isoCode": "NP-P1",
+        "headquarter": "Gaighat",
+        "areaSqKm": 2063.0,
+        "localBodyCount": 8,
+        "wards": 70,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "7 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.046625,
+          27.0185
+        ]
+      },
+      "properties": {
+        "name": "Bara",
+        "nameNe": "बारा",
+        "nameNeVerified": true,
+        "cbsCode": 207,
+        "province": "Madhesh",
+        "isoCode": "NP-P2",
+        "headquarter": "Kalaiya",
+        "areaSqKm": 1190.0,
+        "localBodyCount": 16,
+        "wards": 167,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "16 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.020278,
+          26.767167
+        ]
+      },
+      "properties": {
+        "name": "Dhanusha",
+        "nameNe": "धनुषा",
+        "nameNeVerified": true,
+        "cbsCode": 203,
+        "province": "Madhesh",
+        "isoCode": "NP-P2",
+        "headquarter": "Janakpur",
+        "areaSqKm": 1180.0,
+        "localBodyCount": 18,
+        "wards": 169,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "18 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.8008,
+          26.785667
+        ]
+      },
+      "properties": {
+        "name": "Mahottari",
+        "nameNe": "महोत्तरी",
+        "nameNeVerified": true,
+        "cbsCode": 204,
+        "province": "Madhesh",
+        "isoCode": "NP-P2",
+        "headquarter": "Jaleshwar",
+        "areaSqKm": 1002.0,
+        "localBodyCount": 15,
+        "wards": 138,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "15 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.764786,
+          27.123214
+        ]
+      },
+      "properties": {
+        "name": "Parsa",
+        "nameNe": "पर्सा",
+        "nameNeVerified": true,
+        "cbsCode": 208,
+        "province": "Madhesh",
+        "isoCode": "NP-P2",
+        "headquarter": "Birgunj",
+        "areaSqKm": 1353.0,
+        "localBodyCount": 14,
+        "wards": 112,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "14 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.282889,
+          26.919222
+        ]
+      },
+      "properties": {
+        "name": "Rautahat",
+        "nameNe": "रौतहट",
+        "nameNeVerified": true,
+        "cbsCode": 206,
+        "province": "Madhesh",
+        "isoCode": "NP-P2",
+        "headquarter": "Gaur",
+        "areaSqKm": 1126.0,
+        "localBodyCount": 18,
+        "wards": 157,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "18 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.733412,
+          26.582882
+        ]
+      },
+      "properties": {
+        "name": "Saptari",
+        "nameNe": "सप्तरी",
+        "nameNeVerified": true,
+        "cbsCode": 201,
+        "province": "Madhesh",
+        "isoCode": "NP-P2",
+        "headquarter": "Rajbiraj",
+        "areaSqKm": 1363.0,
+        "localBodyCount": 18,
+        "wards": 158,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "17 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5318,
+          26.9284
+        ]
+      },
+      "properties": {
+        "name": "Sarlahi",
+        "nameNe": "सर्लाही",
+        "nameNeVerified": true,
+        "cbsCode": 205,
+        "province": "Madhesh",
+        "isoCode": "NP-P2",
+        "headquarter": "Malangawa",
+        "areaSqKm": 1259.0,
+        "localBodyCount": 20,
+        "wards": 200,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "20 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.336706,
+          26.714647
+        ]
+      },
+      "properties": {
+        "name": "Siraha",
+        "nameNe": "सिराहा",
+        "nameNeVerified": true,
+        "cbsCode": 202,
+        "province": "Madhesh",
+        "isoCode": "NP-P2",
+        "headquarter": "Siraha",
+        "areaSqKm": 1188.0,
+        "localBodyCount": 17,
+        "wards": 164,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "17 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.425,
+          27.6755
+        ]
+      },
+      "properties": {
+        "name": "Bhaktapur",
+        "nameNe": "भक्तपुर",
+        "nameNeVerified": true,
+        "cbsCode": 307,
+        "province": "Bagmati",
+        "isoCode": "NP-P3",
+        "headquarter": "Bhaktapur",
+        "areaSqKm": 119.0,
+        "localBodyCount": 4,
+        "wards": 38,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "4 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.528,
+          27.646
+        ]
+      },
+      "properties": {
+        "name": "Chitwan",
+        "nameNe": "चितवन",
+        "nameNeVerified": true,
+        "cbsCode": 313,
+        "province": "Bagmati",
+        "isoCode": "NP-P3",
+        "headquarter": "Bharatpur",
+        "areaSqKm": 2218.0,
+        "localBodyCount": 7,
+        "wards": 98,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "7 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.947083,
+          27.903333
+        ]
+      },
+      "properties": {
+        "name": "Dhading",
+        "nameNe": "धादिङ",
+        "nameNeVerified": true,
+        "cbsCode": 304,
+        "province": "Bagmati",
+        "isoCode": "NP-P3",
+        "headquarter": "Nilkantha",
+        "areaSqKm": 1926.0,
+        "localBodyCount": 13,
+        "wards": 104,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "12 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.130625,
+          27.696625
+        ]
+      },
+      "properties": {
+        "name": "Dolakha",
+        "nameNe": "दोलखा",
+        "nameNeVerified": true,
+        "cbsCode": 301,
+        "province": "Bagmati",
+        "isoCode": "NP-P3",
+        "headquarter": "Bhimeshwar",
+        "areaSqKm": 2191.0,
+        "localBodyCount": 9,
+        "wards": 74,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "8 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.332818,
+          27.724727
+        ]
+      },
+      "properties": {
+        "name": "Kathmandu",
+        "nameNe": "काठमाडौं",
+        "nameNeVerified": false,
+        "cbsCode": 306,
+        "province": "Bagmati",
+        "isoCode": "NP-P3",
+        "headquarter": "Kathmandu",
+        "areaSqKm": 395.0,
+        "localBodyCount": 11,
+        "wards": 138,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "11 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.613538,
+          27.558769
+        ]
+      },
+      "properties": {
+        "name": "Kavrepalanchok",
+        "nameNe": "काभ्रेपलाञ्चोक",
+        "nameNeVerified": true,
+        "cbsCode": 309,
+        "province": "Bagmati",
+        "isoCode": "NP-P3",
+        "headquarter": "Dhulikhel",
+        "areaSqKm": 1396.0,
+        "localBodyCount": 13,
+        "wards": 135,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "13 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.345,
+          27.557333
+        ]
+      },
+      "properties": {
+        "name": "Lalitpur",
+        "nameNe": "ललितपुर",
+        "nameNeVerified": true,
+        "cbsCode": 308,
+        "province": "Bagmati",
+        "isoCode": "NP-P3",
+        "headquarter": "Lalitpur",
+        "areaSqKm": 385.0,
+        "localBodyCount": 6,
+        "wards": 71,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "6 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.0736,
+          27.4959
+        ]
+      },
+      "properties": {
+        "name": "Makwanpur",
+        "nameNe": "मकवानपुर",
+        "nameNeVerified": true,
+        "cbsCode": 312,
+        "province": "Bagmati",
+        "isoCode": "NP-P3",
+        "headquarter": "Hetauda",
+        "areaSqKm": 2426.0,
+        "localBodyCount": 10,
+        "wards": 102,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "10 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.228,
+          27.906909
+        ]
+      },
+      "properties": {
+        "name": "Nuwakot",
+        "nameNe": "नुवाकोट",
+        "nameNeVerified": true,
+        "cbsCode": 305,
+        "province": "Bagmati",
+        "isoCode": "NP-P3",
+        "headquarter": "Bidur",
+        "areaSqKm": 1121.0,
+        "localBodyCount": 12,
+        "wards": 82,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "11 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.085429,
+          27.491286
+        ]
+      },
+      "properties": {
+        "name": "Ramechhap",
+        "nameNe": "रामेछाप",
+        "nameNeVerified": true,
+        "cbsCode": 310,
+        "province": "Bagmati",
+        "isoCode": "NP-P3",
+        "headquarter": "Manthali",
+        "areaSqKm": 1546.0,
+        "localBodyCount": 8,
+        "wards": 64,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "7 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.2996,
+          28.1094
+        ]
+      },
+      "properties": {
+        "name": "Rasuwa",
+        "nameNe": "रसुवा",
+        "nameNeVerified": true,
+        "cbsCode": 303,
+        "province": "Bagmati",
+        "isoCode": "NP-P3",
+        "headquarter": "Dhunche",
+        "areaSqKm": 1544.0,
+        "localBodyCount": 5,
+        "wards": 22,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "5 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.946444,
+          27.222889
+        ]
+      },
+      "properties": {
+        "name": "Sindhuli",
+        "nameNe": "सिन्धुली",
+        "nameNeVerified": true,
+        "cbsCode": 311,
+        "province": "Bagmati",
+        "isoCode": "NP-P3",
+        "headquarter": "Kamalamai",
+        "areaSqKm": 2491.0,
+        "localBodyCount": 9,
+        "wards": 79,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "9 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.75675,
+          27.839167
+        ]
+      },
+      "properties": {
+        "name": "Sindhupalchok",
+        "nameNe": "सिन्धुपाल्चोक",
+        "nameNeVerified": true,
+        "cbsCode": 302,
+        "province": "Bagmati",
+        "isoCode": "NP-P3",
+        "headquarter": "Chautara",
+        "areaSqKm": 2542.0,
+        "localBodyCount": 12,
+        "wards": 103,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "12 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.3544,
+          28.2843
+        ]
+      },
+      "properties": {
+        "name": "Baglung",
+        "nameNe": "बागलुङ",
+        "nameNeVerified": false,
+        "cbsCode": 411,
+        "province": "Gandaki",
+        "isoCode": "NP-P4",
+        "headquarter": "Baglung",
+        "areaSqKm": 1784.0,
+        "localBodyCount": 10,
+        "wards": 85,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "10 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.701556,
+          28.119222
+        ]
+      },
+      "properties": {
+        "name": "Gorkha",
+        "nameNe": "गोरखा",
+        "nameNeVerified": false,
+        "cbsCode": 401,
+        "province": "Gandaki",
+        "isoCode": "NP-P4",
+        "headquarter": "Gorkha",
+        "areaSqKm": 3610.0,
+        "localBodyCount": 11,
+        "wards": 94,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "9 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.0106,
+          28.3194
+        ]
+      },
+      "properties": {
+        "name": "Kaski",
+        "nameNe": "कास्की",
+        "nameNeVerified": true,
+        "cbsCode": 405,
+        "province": "Gandaki",
+        "isoCode": "NP-P4",
+        "headquarter": "Pokhara",
+        "areaSqKm": 2017.0,
+        "localBodyCount": 5,
+        "wards": 72,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "5 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.4065,
+          28.229625
+        ]
+      },
+      "properties": {
+        "name": "Lamjung",
+        "nameNe": "लमजुङ",
+        "nameNeVerified": false,
+        "cbsCode": 406,
+        "province": "Gandaki",
+        "isoCode": "NP-P4",
+        "headquarter": "Besisahar",
+        "areaSqKm": 1692.0,
+        "localBodyCount": 8,
+        "wards": 75,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "8 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.3275,
+          28.566
+        ]
+      },
+      "properties": {
+        "name": "Manang",
+        "nameNe": "मनाङ",
+        "nameNeVerified": true,
+        "cbsCode": 402,
+        "province": "Gandaki",
+        "isoCode": "NP-P4",
+        "headquarter": "Chame",
+        "areaSqKm": 2246.0,
+        "localBodyCount": 4,
+        "wards": 14,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "2 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.772333,
+          28.886667
+        ]
+      },
+      "properties": {
+        "name": "Mustang",
+        "nameNe": "मुस्ताङ",
+        "nameNeVerified": true,
+        "cbsCode": 403,
+        "province": "Gandaki",
+        "isoCode": "NP-P4",
+        "headquarter": "Jomsom",
+        "areaSqKm": 3573.0,
+        "localBodyCount": 5,
+        "wards": 25,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "3 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.471667,
+          28.471167
+        ]
+      },
+      "properties": {
+        "name": "Myagdi",
+        "nameNe": "म्याग्दी",
+        "nameNeVerified": true,
+        "cbsCode": 404,
+        "province": "Gandaki",
+        "isoCode": "NP-P4",
+        "headquarter": "Beni",
+        "areaSqKm": 2297.0,
+        "localBodyCount": 6,
+        "wards": 45,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "6 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.113714,
+          27.696143
+        ]
+      },
+      "properties": {
+        "name": "Nawalpur",
+        "nameNe": "नवलपरासी पूर्व",
+        "nameNeVerified": false,
+        "cbsCode": 408,
+        "province": "Gandaki",
+        "isoCode": "NP-P4",
+        "headquarter": "Kawasoti",
+        "areaSqKm": 1043.1,
+        "localBodyCount": 8,
+        "wards": 92,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "7 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.664571,
+          28.175286
+        ]
+      },
+      "properties": {
+        "name": "Parbat",
+        "nameNe": "पर्वत",
+        "nameNeVerified": true,
+        "cbsCode": 410,
+        "province": "Gandaki",
+        "isoCode": "NP-P4",
+        "headquarter": "Kusma",
+        "areaSqKm": 494.0,
+        "localBodyCount": 7,
+        "wards": 61,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "7 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.789636,
+          28.033455
+        ]
+      },
+      "properties": {
+        "name": "Syangja",
+        "nameNe": "स्याङ्जा",
+        "nameNeVerified": true,
+        "cbsCode": 409,
+        "province": "Gandaki",
+        "isoCode": "NP-P4",
+        "headquarter": "Putalibazar",
+        "areaSqKm": 1164.0,
+        "localBodyCount": 11,
+        "wards": 97,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "11 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.2465,
+          27.9482
+        ]
+      },
+      "properties": {
+        "name": "Tanahun",
+        "nameNe": "तनहुँ",
+        "nameNeVerified": true,
+        "cbsCode": 407,
+        "province": "Gandaki",
+        "isoCode": "NP-P4",
+        "headquarter": "Damauli",
+        "areaSqKm": 1546.0,
+        "localBodyCount": 10,
+        "wards": 85,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "10 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.112,
+          27.961
+        ]
+      },
+      "properties": {
+        "name": "Arghakhanchi",
+        "nameNe": "अर्घाखाँची",
+        "nameNeVerified": true,
+        "cbsCode": 505,
+        "province": "Lumbini",
+        "isoCode": "NP-P5",
+        "headquarter": "Sandhikharka",
+        "areaSqKm": 1193.0,
+        "localBodyCount": 6,
+        "wards": 61,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "6 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.704875,
+          28.099
+        ]
+      },
+      "properties": {
+        "name": "Banke",
+        "nameNe": "बाँके",
+        "nameNeVerified": true,
+        "cbsCode": 511,
+        "province": "Lumbini",
+        "isoCode": "NP-P5",
+        "headquarter": "Nepalganj",
+        "areaSqKm": 2337.0,
+        "localBodyCount": 8,
+        "wards": 81,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "8 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.329875,
+          28.3325
+        ]
+      },
+      "properties": {
+        "name": "Bardiya",
+        "nameNe": "बर्दिया",
+        "nameNeVerified": true,
+        "cbsCode": 512,
+        "province": "Lumbini",
+        "isoCode": "NP-P5",
+        "headquarter": "Gulariya",
+        "areaSqKm": 2025.0,
+        "localBodyCount": 8,
+        "wards": 75,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "8 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.3894,
+          27.9957
+        ]
+      },
+      "properties": {
+        "name": "Dang",
+        "nameNe": "दाङ",
+        "nameNeVerified": true,
+        "cbsCode": 510,
+        "province": "Lumbini",
+        "isoCode": "NP-P5",
+        "headquarter": "Ghorahi",
+        "areaSqKm": 2955.0,
+        "localBodyCount": 10,
+        "wards": 100,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "10 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.293182,
+          28.101909
+        ]
+      },
+      "properties": {
+        "name": "Gulmi",
+        "nameNe": "गुल्मी",
+        "nameNeVerified": true,
+        "cbsCode": 504,
+        "province": "Lumbini",
+        "isoCode": "NP-P5",
+        "headquarter": "Tamghas",
+        "areaSqKm": 1149.0,
+        "localBodyCount": 12,
+        "wards": 93,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "11 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.9982,
+          27.5868
+        ]
+      },
+      "properties": {
+        "name": "Kapilvastu",
+        "nameNe": "कपिलवस्तु",
+        "nameNeVerified": true,
+        "cbsCode": 509,
+        "province": "Lumbini",
+        "isoCode": "NP-P5",
+        "headquarter": "Taulihawa",
+        "areaSqKm": 1738.0,
+        "localBodyCount": 10,
+        "wards": 96,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "10 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.6317,
+          27.8341
+        ]
+      },
+      "properties": {
+        "name": "Palpa",
+        "nameNe": "पाल्पा",
+        "nameNeVerified": true,
+        "cbsCode": 506,
+        "province": "Lumbini",
+        "isoCode": "NP-P5",
+        "headquarter": "Tansen",
+        "areaSqKm": 1373.0,
+        "localBodyCount": 10,
+        "wards": 81,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "10 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.733714,
+          27.507286
+        ]
+      },
+      "properties": {
+        "name": "Parasi (Nawalparasi West)",
+        "nameNe": "नवलपरासी पश्चिम",
+        "nameNeVerified": false,
+        "cbsCode": 507,
+        "province": "Lumbini",
+        "isoCode": "NP-P5",
+        "headquarter": "Ramgram",
+        "areaSqKm": 634.88,
+        "localBodyCount": 7,
+        "wards": 74,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "7 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.878667,
+          28.107556
+        ]
+      },
+      "properties": {
+        "name": "Pyuthan",
+        "nameNe": "प्युठान",
+        "nameNeVerified": false,
+        "cbsCode": 503,
+        "province": "Lumbini",
+        "isoCode": "NP-P5",
+        "headquarter": "Pyuthan",
+        "areaSqKm": 1309.0,
+        "localBodyCount": 9,
+        "wards": 64,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "9 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.6191,
+          28.3513
+        ]
+      },
+      "properties": {
+        "name": "Rolpa",
+        "nameNe": "रोल्पा",
+        "nameNeVerified": true,
+        "cbsCode": 502,
+        "province": "Lumbini",
+        "isoCode": "NP-P5",
+        "headquarter": "Liwang",
+        "areaSqKm": 1879.0,
+        "localBodyCount": 10,
+        "wards": 72,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "10 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.713,
+          28.646667
+        ]
+      },
+      "properties": {
+        "name": "Rukum East",
+        "nameNe": "रुकुम पूर्व",
+        "nameNeVerified": false,
+        "cbsCode": 501,
+        "province": "Lumbini",
+        "isoCode": "NP-P5",
+        "headquarter": "Rukumkot",
+        "areaSqKm": 1161.13,
+        "localBodyCount": 3,
+        "wards": 31,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "3 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.389,
+          27.548312
+        ]
+      },
+      "properties": {
+        "name": "Rupandehi",
+        "nameNe": "रुपन्देही",
+        "nameNeVerified": true,
+        "cbsCode": 508,
+        "province": "Lumbini",
+        "isoCode": "NP-P5",
+        "headquarter": "Siddharthanagar",
+        "areaSqKm": 1360.0,
+        "localBodyCount": 16,
+        "wards": 155,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "16 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.661727,
+          28.885455
+        ]
+      },
+      "properties": {
+        "name": "Dailekh",
+        "nameNe": "दैलेख",
+        "nameNeVerified": true,
+        "cbsCode": 606,
+        "province": "Karnali",
+        "isoCode": "NP-P6",
+        "headquarter": "Dailekh",
+        "areaSqKm": 1502.0,
+        "localBodyCount": 11,
+        "wards": 90,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "11 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.933375,
+          29.104125
+        ]
+      },
+      "properties": {
+        "name": "Dolpa",
+        "nameNe": "डोल्पा",
+        "nameNeVerified": true,
+        "cbsCode": 601,
+        "province": "Karnali",
+        "isoCode": "NP-P6",
+        "headquarter": "Dunai",
+        "areaSqKm": 7889.0,
+        "localBodyCount": 8,
+        "wards": 65,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "8 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.917857,
+          29.918857
+        ]
+      },
+      "properties": {
+        "name": "Humla",
+        "nameNe": "हुम्ला",
+        "nameNeVerified": true,
+        "cbsCode": 603,
+        "province": "Karnali",
+        "isoCode": "NP-P6",
+        "headquarter": "Simikot",
+        "areaSqKm": 5655.0,
+        "localBodyCount": 7,
+        "wards": 44,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "7 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.124,
+          28.846333
+        ]
+      },
+      "properties": {
+        "name": "Jajarkot",
+        "nameNe": "जाजरकोट",
+        "nameNeVerified": true,
+        "cbsCode": 607,
+        "province": "Karnali",
+        "isoCode": "NP-P6",
+        "headquarter": "Khalanga",
+        "areaSqKm": 2230.0,
+        "localBodyCount": 7,
+        "wards": 77,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "6 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.13225,
+          29.2765
+        ]
+      },
+      "properties": {
+        "name": "Jumla",
+        "nameNe": "जुम्ला",
+        "nameNeVerified": true,
+        "cbsCode": 604,
+        "province": "Karnali",
+        "isoCode": "NP-P6",
+        "headquarter": "Chandannath",
+        "areaSqKm": 2531.0,
+        "localBodyCount": 8,
+        "wards": 60,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "8 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.71175,
+          29.21325
+        ]
+      },
+      "properties": {
+        "name": "Kalikot",
+        "nameNe": "कालिकोट",
+        "nameNeVerified": true,
+        "cbsCode": 605,
+        "province": "Karnali",
+        "isoCode": "NP-P6",
+        "headquarter": "Manma",
+        "areaSqKm": 1741.0,
+        "localBodyCount": 9,
+        "wards": 82,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "8 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.007,
+          29.567333
+        ]
+      },
+      "properties": {
+        "name": "Mugu",
+        "nameNe": "मुगु",
+        "nameNeVerified": true,
+        "cbsCode": 602,
+        "province": "Karnali",
+        "isoCode": "NP-P6",
+        "headquarter": "Gamgadhi",
+        "areaSqKm": 3535.0,
+        "localBodyCount": 4,
+        "wards": 45,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "3 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.419833,
+          28.673833
+        ]
+      },
+      "properties": {
+        "name": "Rukum West",
+        "nameNe": "रुकुम पश्चिम",
+        "nameNeVerified": false,
+        "cbsCode": 608,
+        "province": "Karnali",
+        "isoCode": "NP-P6",
+        "headquarter": "Musikot",
+        "areaSqKm": 1213.49,
+        "localBodyCount": 6,
+        "wards": 73,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "6 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.210875,
+          28.386625
+        ]
+      },
+      "properties": {
+        "name": "Salyan",
+        "nameNe": "सल्यान",
+        "nameNeVerified": true,
+        "cbsCode": 609,
+        "province": "Karnali",
+        "isoCode": "NP-P6",
+        "headquarter": "Salyan",
+        "areaSqKm": 1462.0,
+        "localBodyCount": 10,
+        "wards": 78,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "8 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.651,
+          28.612889
+        ]
+      },
+      "properties": {
+        "name": "Surkhet",
+        "nameNe": "सुर्खेत",
+        "nameNeVerified": true,
+        "cbsCode": 610,
+        "province": "Karnali",
+        "isoCode": "NP-P6",
+        "headquarter": "Birendranagar",
+        "areaSqKm": 2451.0,
+        "localBodyCount": 9,
+        "wards": 99,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "9 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.3031,
+          29.1244
+        ]
+      },
+      "properties": {
+        "name": "Achham",
+        "nameNe": "अछाम",
+        "nameNeVerified": true,
+        "cbsCode": 707,
+        "province": "Sudurpashchim",
+        "isoCode": "NP-P7",
+        "headquarter": "Mangalsen",
+        "areaSqKm": 1692.0,
+        "localBodyCount": 10,
+        "wards": 91,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "10 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.5294,
+          29.508
+        ]
+      },
+      "properties": {
+        "name": "Baitadi",
+        "nameNe": "बैतडी",
+        "nameNeVerified": true,
+        "cbsCode": 704,
+        "province": "Sudurpashchim",
+        "isoCode": "NP-P7",
+        "headquarter": "Dasharathchand",
+        "areaSqKm": 1496.04,
+        "localBodyCount": 10,
+        "wards": 84,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "10 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.080636,
+          29.562182
+        ]
+      },
+      "properties": {
+        "name": "Bajhang",
+        "nameNe": "बझाङ",
+        "nameNeVerified": true,
+        "cbsCode": 702,
+        "province": "Sudurpashchim",
+        "isoCode": "NP-P7",
+        "headquarter": "Jayaprithvi",
+        "areaSqKm": 3394.21,
+        "localBodyCount": 12,
+        "wards": 89,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "11 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.486375,
+          29.468875
+        ]
+      },
+      "properties": {
+        "name": "Bajura",
+        "nameNe": "बाजुरा",
+        "nameNeVerified": true,
+        "cbsCode": 701,
+        "province": "Sudurpashchim",
+        "isoCode": "NP-P7",
+        "headquarter": "Badimalika",
+        "areaSqKm": 2300.34,
+        "localBodyCount": 9,
+        "wards": 69,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "8 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.533857,
+          29.258286
+        ]
+      },
+      "properties": {
+        "name": "Dadeldhura",
+        "nameNe": "डडेलधुरा",
+        "nameNeVerified": true,
+        "cbsCode": 705,
+        "province": "Sudurpashchim",
+        "isoCode": "NP-P7",
+        "headquarter": "Amargadhi",
+        "areaSqKm": 1506.09,
+        "localBodyCount": 7,
+        "wards": 52,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "7 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.665667,
+          29.806222
+        ]
+      },
+      "properties": {
+        "name": "Darchula",
+        "nameNe": "दार्चुला",
+        "nameNeVerified": true,
+        "cbsCode": 703,
+        "province": "Sudurpashchim",
+        "isoCode": "NP-P7",
+        "headquarter": "Darchula",
+        "areaSqKm": 2344.61,
+        "localBodyCount": 9,
+        "wards": 61,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "9 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.901125,
+          29.22475
+        ]
+      },
+      "properties": {
+        "name": "Doti",
+        "nameNe": "डोटी",
+        "nameNeVerified": true,
+        "cbsCode": 706,
+        "province": "Sudurpashchim",
+        "isoCode": "NP-P7",
+        "headquarter": "Dipayal Silgadhi",
+        "areaSqKm": 2295.71,
+        "localBodyCount": 9,
+        "wards": 65,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "8 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.927,
+          28.678
+        ]
+      },
+      "properties": {
+        "name": "Kailali",
+        "nameNe": "कैलाली",
+        "nameNeVerified": true,
+        "cbsCode": 708,
+        "province": "Sudurpashchim",
+        "isoCode": "NP-P7",
+        "headquarter": "Dhangadhi",
+        "areaSqKm": 3292.35,
+        "localBodyCount": 13,
+        "wards": 126,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "13 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.344375,
+          28.833875
+        ]
+      },
+      "properties": {
+        "name": "Kanchanpur",
+        "nameNe": "कञ्चनपुर",
+        "nameNeVerified": true,
+        "cbsCode": 709,
+        "province": "Sudurpashchim",
+        "isoCode": "NP-P7",
+        "headquarter": "Bheemdatta",
+        "areaSqKm": 1222.31,
+        "localBodyCount": 9,
+        "wards": 92,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "8 mapped local bodies"
+      }
+    }
+  ]
+}

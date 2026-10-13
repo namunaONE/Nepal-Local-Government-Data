@@ -1,0 +1,32 @@
+{
+  "name": "Nepal administrative divisions",
+  "version": "2.6.0",
+  "dataAsOf": "2026-10-13",
+  "source": "Federal structure established by the Local Level Restructuring Commission (2017) under the Constitution of Nepal (2015); cross-checked against MoFAGA references.",
+  "totals": {
+    "provinces": 7,
+    "districts": 77,
+    "localBodies": 753,
+    "metropolitan": 6,
+    "subMetropolitan": 11,
+    "municipality": 276,
+    "ruralMunicipality": 460,
+    "wards": 6743
+  },
+  "coverage": {
+    "localBodies": 753,
+    "districts": 77,
+    "provinces": 7,
+    "withCbsCode": 744,
+    "doublyAttestedCodes": 548,
+    "singleSourceCodes": 196,
+    "withNameNe": 731,
+    "nameNeCorroborated": 450,
+    "withCoordinates": 726,
+    "withWards": 745,
+    "withContact": 371,
+    "withZipCodes": 474,
+    "declaredWards": 6743,
+    "substantiatedWards": 6697
+  }
+}

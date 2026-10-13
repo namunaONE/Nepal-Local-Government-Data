@@ -22,7 +22,8 @@ Pure Dart package. Zero runtime dependencies. Data ships in the box.
 
 | Feature | Description |
 |---------|-------------|
-| **Bilingual** | Devanagari names for all 7 provinces, 77 districts and **731/753 palikas** — never transliterated, never guessed |
+| **Bindings for 5 ecosystems** | Dart · TypeScript/JavaScript · Python · CSV · GeoJSON — all generated from one dataset, drift-checked in CI |
+| **Bilingual** | Devanagari names for all 7 provinces, 77 districts and **731/753 palikas** - never transliterated, never guessed |
 | **Bilingual search** | `search('भरतपुर')` and `search('Bharatpur')` return the same palika; fragments match too |
 | **Complete hierarchy** | Province → District → Local Body (palika) |
 | **Official codes** | 744/753 palikas with CBS 5-digit codes (PDDPP), all 77 districts (3-digit), all 7 provinces (NP-P1…NP-P7) |
@@ -150,6 +151,45 @@ Wards: ${stats.wards}                   // 6,743 declared
 ```
 
 ---
+
+## 🌐 Bindings — one dataset, five ecosystems
+
+Everything below is **generated** from `data/nepal_local_levels.json` by
+`dart run tool/generate_bindings.dart`, cross-checked against the Dart package in
+CI, and byte-stable across regenerations. Same numbers, same honesty
+guarantees, in whichever shape you already use.
+
+| Target | Install | Shape |
+|---|---|---|
+| **Dart / Flutter** | `nepal_admin_api` (pub.dev) | typed classes, zero deps |
+| **JavaScript / TypeScript** | `npm install nepal-admin-data` | `index.js` + `index.d.ts`, zero deps |
+| **Python** | `pip install nepal-admin-data` | pure stdlib, zero deps |
+| **CSV** | [`local_bodies.csv`](https://namunaONE.github.io/Nepal-Local-Government-Data/downloads/local_bodies.csv) | 3 flat files, RFC 4180 |
+| **GeoJSON** | [`local-bodies.centroids.geojson`](https://namunaONE.github.io/Nepal-Local-Government-Data/downloads/local-bodies.centroids.geojson) | RFC 7946, WGS84 |
+
+```js
+const nad = require('nepal-admin-data');
+nad.getLocalBodyByCbs(31304).nameNe;                  // 'भरतपुर'
+nad.search('भरतपुर').localBodies.length
+  === nad.search('Bharatpur').localBodies.length;     // true
+new Map(nad.getLocalBodiesWithCode().map(b => [b.cbsCode, b])).size;  // 744
+```
+
+```python
+import nepal_admin as nad
+nad.get_local_body_by_cbs(31304)["nameNe"]            # 'भरतपुर'
+len(nad.get_local_bodies_with_code())                 # 744
+nad.get_national_stats()["unreconciled_wards"]        # 46
+```
+
+```python
+import pandas as pd
+pd.read_csv("local_bodies.csv").query("cbsCode == 31304")[["name", "nameNe"]]
+```
+
+The JS and Python APIs mirror the Dart one name-for-name, so moving between
+them is a rename rather than a rewrite. `bindings/README.md` documents the
+generated tree; `bindings/verify_bindings.cjs` executes it.
 
 ## 🇳🇵 Bilingual data
 
@@ -400,12 +440,28 @@ tool/pipeline.dart` is the whole story. The steps it wraps are:
 tool/merge/verify_codes.dart        → doubly-attested CBS codes
 tool/merge/apply_cbs_codes.dart    → write them into the dataset
 tool/merge/resolve_code_tiers.dart → single-source tier + bijection gate
+tool/merge/attach_bilingual.dart   → Devanagari names at all 3 levels
+tool/merge/attach_attributes.dart  → HQ / area / website / contact / postal
 tool/generate.dart                 → lib/src/nepal_data.dart (validates)
 tool/generate_explorer_data.dart   → docs/data.json
+tool/generate_bindings.dart        → CSV / GeoJSON / JS / Python bindings
 ```
 
-Commit the dataset **and** both generated files together; CI fails if they
-drift apart.
+Steps 4 and 5 are **order-dependent**: the MoFAGA harvest carries no codes, so
+attributes join palikas by their Devanagari name, which only exists after
+step 4. Running them out of order attaches nothing and fails *silently*, which
+is why the pipeline rather than the individual tools is the entry point.
+
+Output is byte-stable — fixed ordering, LF endings, UTF-8 without BOM, no
+timestamps — so CI drift is a plain `git diff`. Verify at any time:
+
+```bash
+node bindings/verify_bindings.cjs   # executes the JS, parses CSV + GeoJSON
+dart test                            # includes cross-binding parity tests
+```
+
+Commit the dataset **and** every generated file together; CI fails if any of
+them drift apart.
 
 ---
 

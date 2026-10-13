@@ -1,0 +1,180 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.315045,
+          27.006773
+        ]
+      },
+      "properties": {
+        "id": "koshi",
+        "name": "Koshi",
+        "nameNe": "कोशी प्रदेश",
+        "nameNeVerified": true,
+        "cbsCode": 1,
+        "isoCode": "NP-P1",
+        "capital": "Biratnagar",
+        "areaSqKm": 25906.0,
+        "districtCount": 14,
+        "localBodyCount": 137,
+        "wards": 1157,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "132 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.709259,
+          26.850274
+        ]
+      },
+      "properties": {
+        "id": "madhesh",
+        "name": "Madhesh",
+        "nameNe": "मधेश प्रदेश",
+        "nameNeVerified": true,
+        "cbsCode": 2,
+        "isoCode": "NP-P2",
+        "capital": "Janakpur",
+        "areaSqKm": 9661.0,
+        "districtCount": 8,
+        "localBodyCount": 136,
+        "wards": 1271,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "135 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.438713,
+          27.680122
+        ]
+      },
+      "properties": {
+        "id": "bagmati",
+        "name": "Bagmati",
+        "nameNe": "बागमती प्रदेश",
+        "nameNeVerified": true,
+        "cbsCode": 3,
+        "isoCode": "NP-P3",
+        "capital": "Hetauda",
+        "areaSqKm": 20300.0,
+        "districtCount": 13,
+        "localBodyCount": 119,
+        "wards": 1121,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "115 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.98159,
+          28.165628
+        ]
+      },
+      "properties": {
+        "id": "gandaki",
+        "name": "Gandaki",
+        "nameNe": "गण्डकी प्रदेश",
+        "nameNeVerified": true,
+        "cbsCode": 4,
+        "isoCode": "NP-P4",
+        "capital": "Pokhara",
+        "areaSqKm": 21856.0,
+        "districtCount": 11,
+        "localBodyCount": 85,
+        "wards": 759,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "78 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.870056,
+          27.946759
+        ]
+      },
+      "properties": {
+        "id": "lumbini",
+        "name": "Lumbini",
+        "nameNe": "लुम्बिनी प्रदेश",
+        "nameNeVerified": true,
+        "cbsCode": 5,
+        "isoCode": "NP-P5",
+        "capital": "Deukhuri",
+        "areaSqKm": 19707.0,
+        "districtCount": 12,
+        "localBodyCount": 109,
+        "wards": 983,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "108 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.050716,
+          29.004797
+        ]
+      },
+      "properties": {
+        "id": "karnali",
+        "name": "Karnali",
+        "nameNe": "कर्णाली प्रदेश",
+        "nameNeVerified": true,
+        "cbsCode": 6,
+        "isoCode": "NP-P6",
+        "capital": "Birendranagar",
+        "areaSqKm": 30213.0,
+        "districtCount": 10,
+        "localBodyCount": 79,
+        "wards": 718,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "74 mapped local bodies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.879119,
+          29.257214
+        ]
+      },
+      "properties": {
+        "id": "sudurpashchim",
+        "name": "Sudurpashchim",
+        "nameNe": "सुदूरपश्चिम प्रदेश",
+        "nameNeVerified": false,
+        "cbsCode": 7,
+        "isoCode": "NP-P7",
+        "capital": "Godawari",
+        "areaSqKm": 19539.0,
+        "districtCount": 9,
+        "localBodyCount": 88,
+        "wards": 734,
+        "centroidMethod": "mean of mapped local-body centroids (approximate)",
+        "derivedFrom": "84 mapped local bodies"
+      }
+    }
+  ]
+}

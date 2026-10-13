@@ -1,6 +1,11 @@
 # GitHub Pages website (served separately, not part of package)
 docs/
 
+# Generated non-Dart bindings (npm / PyPI / CSV / GeoJSON). They are built
+# from the same dataset but published separately; shipping them inside the
+# Dart package would add ~1.7 MB of duplicate JSON for no Dart consumer.
+bindings/
+
 # Tooling scripts (not needed in published package)
 tool/
 

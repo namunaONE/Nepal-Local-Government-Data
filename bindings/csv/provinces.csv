@@ -1,0 +1,8 @@
+id,name,nameNe,nameNeVerified,cbsCode,isoCode,capital,areaSqKm,website,districtCount,localBodyCount,wards
+koshi,Koshi,कोशी प्रदेश,true,1,NP-P1,Biratnagar,25906.0,https://koshi.gov.np/,14,137,1157
+madhesh,Madhesh,मधेश प्रदेश,true,2,NP-P2,Janakpur,9661.0,https://madhesh.gov.np/,8,136,1271
+bagmati,Bagmati,बागमती प्रदेश,true,3,NP-P3,Hetauda,20300.0,https://ocmcm.bagamati.gov.np/,13,119,1121
+gandaki,Gandaki,गण्डकी प्रदेश,true,4,NP-P4,Pokhara,21856.0,https://gandaki.gov.np/,11,85,759
+lumbini,Lumbini,लुम्बिनी प्रदेश,true,5,NP-P5,Deukhuri,19707.0,https://ocmcm.lumbini.gov.np/,12,109,983
+karnali,Karnali,कर्णाली प्रदेश,true,6,NP-P6,Birendranagar,30213.0,https://karnali.gov.np/,10,79,718
+sudurpashchim,Sudurpashchim,सुदूरपश्चिम प्रदेश,false,7,NP-P7,Godawari,19539.0,https://sudurpashchim.gov.np/,9,88,734

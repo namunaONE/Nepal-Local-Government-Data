@@ -1,6 +1,6 @@
 {
   "provenance": {
-    "generated": "2026-10-13T10:21:48.218320Z",
+    "generated": "2026-10-13T10:43:45.831283Z",
     "tool": "tool/merge/attach_bilingual.dart",
     "inputs": [
       "data/_raw/abinrimal/provinces.json",

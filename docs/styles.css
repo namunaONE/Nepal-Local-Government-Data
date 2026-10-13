@@ -410,6 +410,36 @@ html.dark .type-rural, html[data-theme="dark"] .type-rural { background: var(--g
   font-weight: var(--weight-normal);
 }
 .leaflet-popup-content .popup-ne { color: var(--color-text-muted); font-size: 12px; }
+
+/* Download cards on the home page. */
+.downloads { padding: var(--space-16) 0; }
+.downloads h2 { margin-bottom: var(--space-3); }
+.downloads > .container > p { color: var(--color-text-secondary); margin-bottom: var(--space-6); }
+.download-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-4);
+}
+.download-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-bg-secondary);
+  text-decoration: none;
+  color: inherit;
+  transition: all var(--transition);
+}
+.download-card:hover, .download-card:focus-visible {
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+.download-card strong { font-family: var(--font-mono); font-size: var(--text-sm); word-break: break-all; }
+.download-card span { color: var(--color-text-muted); font-size: var(--text-sm); }
+.download-note { margin-top: var(--space-6); color: var(--color-text-muted); font-size: var(--text-sm); }
 .pagination { display: flex; justify-content: center; gap: var(--space-2); margin-top: var(--space-6); flex-wrap: wrap; }
 .pagination button { min-height: 44px; padding: var(--space-2) var(--space-4); border: 1px solid var(--color-border); background: var(--color-bg); color: var(--color-text); border-radius: var(--radius-md); cursor: pointer; transition: all var(--transition); font-size: var(--text-sm); }
 .pagination button:hover:not(:disabled) { background: var(--color-primary-light); border-color: var(--color-primary); color: var(--color-primary); }

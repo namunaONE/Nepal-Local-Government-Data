@@ -1,0 +1,29 @@
+THIRD-PARTY DATA ATTRIBUTION
+
+This package redistributes a dataset adapted from third-party sources under
+Creative Commons Attribution 4.0 International (CC-BY-4.0) and Creative
+Commons Attribution (CC-BY).
+
+  1. Nepal Administrative Divisions (open-admin-data)
+     https://github.com/open-admin-data/nepal-administrative-divisions
+     CC-BY-4.0 - https://creativecommons.org/licenses/by/4.0/
+     Used for: coordinates, postal codes, Devanagari names (second source).
+
+  2. Geographical Codes for States, Districts and Local Bodies
+     (Open Data Nepal, harvested from the Central Bureau of Statistics)
+     https://opendatanepal.com/dataset/geographical-codes-for-states-districts-and-local-bodies
+     CC-BY - https://creativecommons.org/licenses/by/4.0/
+     Used for: the authoritative CBS hierarchical codes, and the official
+     contact block for local bodies.
+
+  3. local-states-nepal (sagautam5) and nepal-administrative-divisions-json
+     (abinrimal) - MIT licensed.
+     Used for: ward counts, district headquarters, area, official websites,
+     and the primary Devanagari names.
+
+The package's own code is MIT-licensed. Per-field provenance, including
+retrieval dates and the SHA-256 manifest, lives in the project repository at
+https://github.com/namunaONE/Nepal-Local-Government-Data
+(see NOTICE and data/SOURCES.md).
+
+Not affiliated with the Government of Nepal.
