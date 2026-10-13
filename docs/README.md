@@ -7,6 +7,9 @@ Static documentation site deployed via GitHub Pages from `docs/`.
   `explorer.html` (interactive table + centroid map over `data.json`)
 - **Assets:** `logo.svg` (icon), `logo-full.svg` (icon + wordmark),
   `favicon.svg`, `styles.css`, `app.js`, `data.json`
+- **Cache policy:** asset URLs carry `?v=N` (bump on every visual/data
+  change; `DATA_URL` in `app.js` likewise) so returning visitors never
+  run mixed old/new bundles after a deploy.
 - **No build step.** Pure HTML/CSS/JS. `.nojekyll` disables Jekyll.
 
 ## Design system

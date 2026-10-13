@@ -172,11 +172,22 @@ function initExplorer() {
   let filteredData = [];
   let currentPage = 1;
   const pageSize = 25;
+  // Versioned URL busts stale CDN/browser caches after deploys.
+  // Bump when data.json shape changes.
+  const DATA_URL = 'data.json?v=4';
 
   // Load data
-  fetch('data.json')
-    .then(res => res.json())
+  fetch(DATA_URL)
+    .then(res => {
+      if (!res.ok) {
+        throw new Error(`HTTP ${res.status} loading ${DATA_URL}`);
+      }
+      return res.json();
+    })
     .then(data => {
+      if (!Array.isArray(data)) {
+        throw new Error('data.json did not parse to an array');
+      }
       allData = data;
       filteredData = [...data];
       window.__explorerByCbs = (cbs) =>
@@ -186,8 +197,23 @@ function initExplorer() {
     })
     .catch(err => {
       console.error('Failed to load data:', err);
-      tableBody.innerHTML = '<tr><td colspan="8" style="text-align:center; padding: 48px; color: var(--color-text-muted);">Failed to load data. Please ensure data.json exists.</td></tr>';
+      showLoadError(err);
     });
+
+  function showLoadError(err) {
+    const detail = (err && err.message) ? err.message : String(err);
+    tableBody.innerHTML = `<tr><td colspan="8" style="text-align:center; padding: 48px;">` +
+      `<div style="color: var(--color-text); font-weight: 600; margin-bottom: 8px;">Could not load dataset</div>` +
+      `<div style="color: var(--color-text-muted); font-size: 0.875rem; margin-bottom: 16px;"><code>${escapeHtml(detail)}</code></div>` +
+      `<button class="btn btn-secondary btn-sm" id="retry-load">Retry</button>` +
+      `</td></tr>`;
+    const retry = document.getElementById('retry-load');
+    if (retry) {
+      retry.addEventListener('click', () => window.location.reload());
+    }
+    const status = document.getElementById('map-status');
+    if (status) status.textContent = `Data failed to load (${detail}) — map unavailable.`;
+  }
 
   function populateFilters() {
     const provinces = [...new Set(allData.map(d => d.province))].sort();
@@ -242,7 +268,18 @@ function initExplorer() {
     `;
     syncMap(filteredData);
 
-    // Render table
+    // Render table — guarded so a single bad record can never wipe
+    // the stats/map above. Bad rows are skipped with a console warning.
+    try {
+      renderTable(pageData);
+    } catch (err) {
+      console.error('Table render failed:', err);
+      tableBody.innerHTML = `<tr><td colspan="8" style="text-align:center; padding: 48px;">` +
+        `<div style="color: var(--color-text); font-weight: 600; margin-bottom: 8px;">Table failed to render</div>` +
+        `<div style="color: var(--color-text-muted); font-size: 0.875rem;"><code>${escapeHtml((err && err.message) || String(err))}</code> — stats and map above are unaffected.</div>` +
+        `</td></tr>`;
+    }
+  function renderTable(pageData) {
     if (pageData.length === 0) {
       tableBody.innerHTML = '<tr><td colspan="8" style="text-align:center; padding: 48px; color: var(--color-text-muted);">No matching records</td></tr>';
     } else {
@@ -269,8 +306,7 @@ function initExplorer() {
         });
       });
     }
-
-    // Render pagination
+  }
     const totalPages = Math.ceil(filteredData.length / pageSize);
     if (totalPages <= 1) {
       paginationEl.innerHTML = '';
