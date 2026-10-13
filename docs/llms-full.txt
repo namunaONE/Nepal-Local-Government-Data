@@ -1,0 +1,129 @@
+# Nepal Administrative Data — Full Documentation
+
+> Offline Dart package (`nepal_admin_api` v2.3.0) for Nepal's administrative divisions: 7 provinces, 77 districts, 753 local bodies, 6,743 wards, with official CBS/NSO codes, ward counts, and map coordinates. Pure Dart, zero runtime dependencies. Maintained by namunaONE under HyaMuji and Taire Bhai. Not affiliated with the Government of Nepal.
+
+This file is the complete text companion to `llms.txt`. Sources of truth: the [GitHub repository](https://github.com/namunaONE/Nepal-Local-Government-Data), the [API reference page](https://namunaONE.github.io/Nepal-Local-Government-Data/api.html), and the [package on pub.dev](https://pub.dev/packages/nepal_admin_api).
+
+## Installation
+
+```yaml
+dependencies:
+  nepal_admin_api: ^2.3.0
+```
+
+```bash
+dart pub get
+# or
+flutter pub get
+```
+
+```dart
+import 'package:nepal_admin_api/nepal_admin_api.dart';
+```
+
+## Quickstart
+
+```dart
+import 'package:nepal_admin_api/nepal_admin_api.dart';
+
+void main() {
+  // Provinces (7). Lookup by slug or ISO 3166-2 code, case-insensitive.
+  final provinces = NepalAdminApi.getAllProvinces(); // length 7
+  final bagmati = NepalAdminApi.getProvinceById('NP-P3');
+  print('${bagmati?.name} CBS:${bagmati?.cbsCode} ISO:${bagmati?.isoCode}');
+  // Bagmati CBS:3 ISO:NP-P3
+
+  // Districts (77). By name (case-insensitive) or 3-digit CBS code.
+  final chitwan = NepalAdminApi.getDistrictByName('Chitwan');
+  print('${chitwan?.localBodyCount} bodies'); // 7
+  final kathmandu = NepalAdminApi.getDistrictByCbs(306);
+
+  // Local bodies / palikas (753). By district, province, type, or CBS code.
+  final bharatpur = NepalAdminApi.getLocalBodyByCbs(31304)!;
+  print('${bharatpur.name} (${bharatpur.typeName})'); // Bharatpur (Metropolitan City)
+  print('${bharatpur.fullPath}'); // Bharatpur, Chitwan, Bagmati
+  print('CBS:${bharatpur.cbsCode} verified:${bharatpur.cbsCodeVerified}'); // 31304 true
+  print('Wards:${bharatpur.wards} verified:${bharatpur.wardsVerified}'); // 29 true
+  print('Coords:${bharatpur.lat},${bharatpur.lng}'); // approx. centroid
+
+  // Search returns typed SearchResult(provinces, districts, localBodies).
+  // Names are NOT unique: disambiguate with districtName/provinceName.
+  for (final lb in NepalAdminApi.search('Sunkoshi').localBodies) {
+    print(lb.fullPath);
+  }
+
+  // Sorted / filtered lists via extension.
+  final metros = NepalAdminApi.getAllLocalBodies().ofType(LocalBodyType.metropolitan); // 6
+  final dropdown = NepalAdminApi.getLocalBodiesByDistrict('Chitwan').sortedByName;
+
+  // National totals, computed live.
+  final s = NepalAdminApi.getNationalStats();
+  print('${s.provinces}/${s.districts}/${s.total}/${s.wards}'); // 7/77/753/6743
+
+  // JSON round-trip (preserves codes, coords, wards).
+  final restored = LocalBody.fromJson(bharatpur.toJson());
+  assert(restored.cbsCode == 31304);
+}
+```
+
+## Models
+
+### LocalBodyType (enum)
+`metropolitan` (Metro, 6) · `subMetropolitan` (Sub-Metro, 11) · `municipality` (M, 276) · `ruralMunicipality` (RM, 460) · `unknown` (deserialization fallback). `LocalBodyType.fromShort('RM')` resolves abbreviations.
+
+### Province
+`id` (slug, e.g. `'koshi'`) · `name` · `cbsCode` (1–7) · `isoCode` (`'NP-P1'`…`'NP-P7'`) · `stats` (`ProvinceStats`) · `districts`. Getters: `localBodies` (flattened), `localBodyCount`.
+
+### District
+`name` · `cbsCode` (int?, 3-digit, e.g. 306 Kathmandu) · `provinceName` · `localBodies` · `localBodyCount` · `wards` (sums verified counts) · `localBodiesByType(type)` · `verifiedLocalBodies`.
+
+### LocalBody
+`name` · `type` · `districtName` · `provinceName` · `cbsCode` (int?, 5-digit PDDPP, null when unverified) · `cbsCodeVerified` · `lat`/`lng` (double?, WGS84 centroid, null when unmapped) · `geoSource` (e.g. `'open-admin-data'`) · `wards` (int?, null for 8 pending roster adjudication) · `wardsVerified`. Getters: `typeName`, `isUrban`, `isRural`, `hasCoordinates`, `fullPath` (`'Name, District, Province'`). `toJson()` omits nulls; `fromJson()` restores all fields.
+
+### ProvinceStats / NationalStats / SearchResult
+`ProvinceStats{districts, metro, subMetro, mun, ruralMun, total, wards}` (+`toJson`). `NationalStats{provinces:7, districts:77, metro:6, subMetro:11, municipalities:276, ruralMunicipalities:460, total:753, wards:6743}`. `SearchResult{provinces, districts, localBodies, isEmpty, length}`.
+
+## Queries (all static on NepalAdminApi)
+
+- `getAllProvinces()` → 7 provinces
+- `getProvinceById(id)` → by slug or ISO, case-insensitive, null when unknown
+- `getProvinceByIso('NP-P3')`, `getProvinceByCbs(3)`
+- `getAllDistricts()` → 77; `getDistrictsByProvince(idOrIso)`; `getDistrictByName('Chitwan')` (case-insensitive); `getDistrictByCbs(306)`
+- `getAllLocalBodies()` → 753; `getLocalBodiesByDistrict(name)`; `getLocalBodiesByProvince(idOrIso)`; `getLocalBodiesByType(type)`; `getLocalBodyByCbs(31304)` (null when unverified/absent); `getVerifiedLocalBodies()` (547 CBS-verified)
+- `search(query)` → case-insensitive across names, ISO codes, full paths, type names; empty query → empty result
+- `getNationalStats()` → computed live, never hardcoded
+
+## List helpers (LocalBodyListX extension)
+
+`sortedByName` · `sortedByFullPath` · `whereUrban` · `whereRural` · `whereVerified` (CBS) · `whereMapped` (has coordinates) · `whereWardsVerified` · `ofType(type)` (named to avoid clashing with Dart's built-in `Iterable.whereType`).
+
+## Code formats
+
+- **CBS PDDPP (5-digit):** 3-digit district code + 2-digit palika number. Example: `31304` = district 313 (Chitwan) + palika 04 (Bharatpur). District codes embed province as first digit (306 = province 3, Kathmandu).
+- **ISO 3166-2:** `NP-P1`…`NP-P7` for Koshi, Madhesh, Bagmati, Gandaki, Lumbini, Karnali, Sudurpashchim.
+- **Provinces:** koshi(1), madhesh(2), bagmati(3), gandaki(4), lumbini(5), karnali(6), sudurpashchim(7).
+
+## Data verification (why AI can trust these numbers)
+
+- 5+ independent sources merged (abinrimal, sagautam5, CBS/NSO CSVs, Postal Codes 2025, nepali-geo-pro-max, open-admin-data, MoFAGA directory).
+- **CBS codes:** 547/753 doubly-attested (CBS CSV + Postal-2025 agreement); rest null, never guessed.
+- **Ward counts:** 745/753 doubly-attested (two 753-row snapshots + province-sum reconciliation; Lumbini 109/109=983 fully reconciled); 1 human decision (Janakpurdham 25); 8 null pending roster adjudication.
+- **Coordinates:** 726/753 approximate centroids from vendored open-admin-data extract; 27 null, never fabricated.
+- **Devanagari spellings:** 72 conflicts adjudicated (49 MoFAGA-exact, 15 slug-identified, 8 human) — see `data/_stage/adjudications.json`.
+- Full audit trail in `data/_stage/`; per-field provenance in `data/SOURCES.md`; pipeline tools in `tool/merge/`.
+
+## Known gaps (do not fill by guessing)
+
+- 8 palikas lack ward counts (MoFAGA-backed roster defects): Manang Naraphu/Neshang, Salyan Dhorchaur, Bajhang Kanda, Udayapur Sunkoshi, Saptari Belhi Chapena, Nuwakot Meghang, Rasuwa Aamachhodingmo.
+- 206 palikas lack verified CBS codes; 27 lack coordinates. All surface as `null` with `*Verified == false`.
+- Administrative boundaries may change by government decision; dataset is versioned per release (see Changelog).
+
+## Website
+
+- Landing + quickstart: <https://namunaONE.github.io/Nepal-Local-Government-Data/>
+- API reference: <https://namunaONE.github.io/Nepal-Local-Government-Data/api.html>
+- Interactive explorer (search, filters, CBS/wards columns, centroid map, `?cbs=` deep links): <https://namunaONE.github.io/Nepal-Local-Government-Data/explorer.html>
+
+## License
+
+MIT for code ([LICENSE](https://github.com/namunaONE/Nepal-Local-Government-Data/blob/main/LICENSE)). Adapted data fields under CC-BY-4.0 with attribution in [NOTICE](https://github.com/namunaONE/Nepal-Local-Government-Data/blob/main/NOTICE). Not affiliated with the Government of Nepal.

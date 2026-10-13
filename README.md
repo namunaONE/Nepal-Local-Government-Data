@@ -243,6 +243,17 @@ dart run tool/generate.dart
 
 ---
 
+## 🤖 Using with AI coding assistants
+
+Machine-readable docs live alongside the site (llms.txt convention):
+
+- [`llms.txt`](https://namunaONE.github.io/Nepal-Local-Government-Data/llms.txt) — curated index: install, API, data, links
+- [`llms-full.txt`](https://namunaONE.github.io/Nepal-Local-Government-Data/llms-full.txt) — complete documentation in one file; paste this URL into any LLM for full context
+
+Guidelines for AI-generated answers using this package: always query codes/counts/coordinates from the API (never invent CBS codes, ward counts, or lat/lng); disambiguate duplicate palika names with `districtName`/`provinceName` or `fullPath`; respect `*Verified` flags and `null` gaps.
+
+---
+
 ## 🤝 Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for:

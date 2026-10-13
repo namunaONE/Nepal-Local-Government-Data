@@ -57,6 +57,16 @@ Dark mode: `html.dark` class (JS toggle + `localStorage`), with
 - Header uses `logo.svg` + stacked wordmark; hero uses `logo-full.svg`;
   footer reuses `logo.svg`.
 
+## AI docs (llms.txt)
+
+- `llms.txt` — spec-compliant index (single H1, ≤50-word blockquote
+  summary, H2 sections, absolute-URL links with descriptions). Served at
+  site root; footer-linked from every page.
+- `llms-full.txt` — complete documentation in one file for deep ingestion.
+  Hand-maintained alongside releases (install, quickstart, full API
+  signatures, code formats, verification stats, known gaps, links).
+  Update both when the API, coverage numbers, or version change.
+
 ## Map
 
 Explorer embeds a Leaflet 1.9.4 + markercluster 1.5.3 dot map (lazy-loaded,

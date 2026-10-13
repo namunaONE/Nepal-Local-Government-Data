@@ -1,0 +1,37 @@
+# Nepal Administrative Data
+
+> Offline Dart package for Nepal's administrative divisions: 7 provinces, 77 districts, 753 local bodies, 6,743 wards, with official CBS/NSO codes, ward counts, and map coordinates.
+
+## Documentation
+
+- [Homepage](https://namunaONE.github.io/Nepal-Local-Government-Data/): Installation, quickstart, features, data sources, verification pipeline
+- [API Reference](https://namunaONE.github.io/Nepal-Local-Government-Data/api.html): Complete typed API — models, queries, JSON serialization, v1→v2 migration guide
+- [Data Explorer](https://namunaONE.github.io/Nepal-Local-Government-Data/explorer.html): Searchable, filterable table of all 753 palikas plus an interactive centroid map
+- [Changelog](https://github.com/namunaONE/Nepal-Local-Government-Data/blob/main/CHANGELOG.md): Version history (Keep a Changelog, SemVer)
+
+## Package
+
+- [pub.dev package](https://pub.dev/packages/nepal_admin_api): v2.3.0, pure Dart, zero runtime dependencies, offline-first
+- [GitHub repository](https://github.com/namunaONE/Nepal-Local-Government-Data): Source code, issue tracker, data merge pipeline
+- [Full documentation (single file)](https://namunaONE.github.io/Nepal-Local-Government-Data/llms-full.txt): Complete text of these docs for deep AI ingestion — paste this URL into any LLM for full context
+
+## Data
+
+- [Canonical dataset](https://github.com/namunaONE/Nepal-Local-Government-Data/blob/main/data/nepal_local_levels.json): Single source of truth; the Dart package is generated from it
+- [Provenance](https://github.com/namunaONE/Nepal-Local-Government-Data/blob/main/data/SOURCES.md): Per-field sources, licenses, retrieval dates, honesty notes
+- [Attribution](https://github.com/namunaONE/Nepal-Local-Government-Data/blob/main/NOTICE): MIT for code; CC-BY-4.0 attributions for adapted data fields
+- [Contributing](https://github.com/namunaONE/Nepal-Local-Government-Data/blob/main/CONTRIBUTING.md): Bug reports, PR guidelines, Conventional Commits, data pipeline docs
+
+## Key facts for code generation
+
+- Install: `dependencies: { nepal_admin_api: ^2.3.0 }`, then `dart pub get`.
+- Import: `import 'package:nepal_admin_api/nepal_admin_api.dart';`
+- Entry point is the static class `NepalAdminApi` (never instantiated).
+- `getProvinceById(id)` accepts a slug (`'bagmati'`) or ISO code (`'NP-P3'`), case-insensitive; `getProvinceByIso` / `getProvinceByCbs(3)` are explicit.
+- `getDistrictByName('Chitwan')` is case-insensitive; `getDistrictByCbs(306)` looks up by 3-digit CBS code.
+- `getLocalBodyByCbs(31304)` looks up by 5-digit CBS code (3-digit district + 2-digit palika, e.g. 31304 = Bharatpur, Chitwan).
+- `search('Bharatpur')` returns a typed `SearchResult` (provinces, districts, localBodies). Palika names are NOT unique — always disambiguate with `districtName` / `provinceName`, or display `fullPath` (`'Bharatpur, Chitwan, Bagmati'`).
+- `LocalBody` fields: `name`, `type` (`LocalBodyType`: metropolitan, subMetropolitan, municipality, ruralMunicipality), `districtName`, `provinceName`, `cbsCode` (int?, null when unverified) + `cbsCodeVerified`, `lat`/`lng` (double?, null when unmapped) + `geoSource`, `wards` (int?, null for 8 pending roster adjudication) + `wardsVerified`. All optional fields are backward-compatible; JSON round-trips via `toJson`/`fromJson`.
+- Coverage: 547/753 CBS-verified, 726/753 mapped, 745/753 ward counts. `getVerifiedLocalBodies()`, `LocalBodyListX` extensions (`sortedByName`, `sortedByFullPath`, `whereUrban`, `whereRural`, `whereVerified`, `whereMapped`, `whereWardsVerified`, `ofType`).
+- `getNationalStats()` computes totals live: 7 provinces, 77 districts, 6 metro, 11 sub-metro, 276 municipalities, 460 rural municipalities, 753 total, 6,743 wards.
+- Never invent CBS codes, ward counts, or coordinates — query them from the package. This project is not affiliated with the Government of Nepal.
