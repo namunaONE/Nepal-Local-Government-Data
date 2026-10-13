@@ -19,6 +19,50 @@ function initTheme() {
     document.documentElement.classList.toggle('dark', newDark);
     localStorage.setItem('theme', newDark ? 'dark' : 'light');
     document.documentElement.setAttribute('data-theme', newDark ? 'dark' : 'light');
+    syncThemeColorMeta(newDark);
+  });
+  syncThemeColorMeta(isDark);
+}
+
+function syncThemeColorMeta(isDark) {
+  let meta = document.querySelector('meta[name="theme-color"]:not([media])');
+  if (!meta) {
+    meta = document.createElement('meta');
+    meta.setAttribute('name', 'theme-color');
+    document.head.appendChild(meta);
+  }
+  meta.setAttribute('content', isDark ? '#0f172a' : '#ffffff');
+}
+
+// Mobile navigation (hamburger): toggle panel, close on link/Escape.
+function initNav() {
+  const toggle = document.querySelector('.nav-toggle');
+  const menu = document.getElementById('nav-menu');
+  if (!toggle || !menu) return;
+  const setOpen = (open) => {
+    toggle.setAttribute('aria-expanded', String(open));
+    menu.classList.toggle('open', open);
+  };
+  toggle.addEventListener('click', () => {
+    setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+  });
+  menu.querySelectorAll('a').forEach((a) => {
+    a.addEventListener('click', () => setOpen(false));
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      setOpen(false);
+      toggle.blur();
+    }
+  });
+  document.addEventListener('click', (e) => {
+    if (!menu.classList.contains('open')) return;
+    const target = e.target;
+    if (target instanceof Node &&
+        !menu.contains(target) &&
+        !toggle.contains(target)) {
+      setOpen(false);
+    }
   });
 }
 
@@ -416,8 +460,11 @@ function escapeHtmlAttr(text) {
   return String(text ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
-// Initialize theme on load
-document.addEventListener('DOMContentLoaded', initTheme);
+// Initialize theme + nav on load
+document.addEventListener('DOMContentLoaded', () => {
+  initTheme();
+  initNav();
+});
 
 // API docs nav highlighting
 if (document.querySelector('.api-nav')) {

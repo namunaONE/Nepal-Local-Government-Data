@@ -11,22 +11,26 @@ Static documentation site deployed via GitHub Pages from `docs/`.
 
 ## Design system
 
-`styles.css` is the single source of truth:
+`styles.css` is the single source of truth (Design System v1.1):
 
 1. **Primitive tokens** — palette scales (`--slate-*`, `--nepal-*`,
    status scales). Never use directly in components.
 2. **Semantic tokens** — `--color-primary`, `--color-bg`, `--color-text`,
    `--color-border`, `--color-success/warning/danger/info`.
-3. **Typography** — `--text-xs`…`--text-5xl`, `--leading-*`,
-   `--weight-*`, `--tracking-*`. Body: Inter; code: JetBrains Mono.
-4. **Spacing** — `--space-1`…`--space-20`. Radius `--radius-*`.
-   Elevation `--shadow-*`. Motion `--transition*`.
+3. **Fluid typography + spacing** — `--text-*` and `--space-*` use
+   `clamp()` (rem anchors + vw interpolation); no breakpoint-jumps.
+4. **Layout primitives** — `.stack`, `.cluster`, `.grid-auto`; card grids
+   use container queries (`container-type: inline-size`).
 5. **Iconography** — `--icon-xs`…`--icon-xl` (14/16/20/24/32px),
    `currentColor` stroke icons, `.theme-icon` sun/moon swap.
 6. **Components** — `.btn` (+primary/secondary/ghost/danger/sm/lg),
    `.badge` (+neutral/success/warning/danger/info), `.card`,
-   `.alert-*`, `.code-block`, `.explorer-table`, `.pagination`,
-   `.toast`, `.maintainer-badge`.
+   `.alert-*`, `.code-block`, `.explorer-table` (sticky header +
+   scroll-shadow hint), `.pagination`, `.toast`, `.maintainer-badge`.
+7. **Nav** — sticky blurred header, hamburger panel ≤860px
+   (aria-expanded, Escape/outside-click close), 44px touch targets.
+8. **Map** — fluid height `clamp(300px, 52vh, 460px)`, dark-filtered tiles,
+   themed Leaflet controls/popups.
 
 Dark mode: `html.dark` class (JS toggle + `localStorage`), with
 `prefers-color-scheme` as first-visit default. Honor
