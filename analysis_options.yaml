@@ -1,5 +1,11 @@
 include: package:lints/recommended.yaml
 
+analyzer:
+  # example/brand_theme.dart needs the Flutter SDK (package:flutter/material.dart).
+  # Consumers copy it into their Flutter app; pure-Dart `dart analyze` skips it.
+  exclude:
+    - example/brand_theme.dart
+
 linter:
   rules:
     - prefer_const_declarations

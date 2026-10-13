@@ -1,0 +1,130 @@
+/* ==========================================================================
+   Brand System v2 — Himalayan Trust (#002C6D) x Everest Growth (#4FD166)
+   M3 roles as CSS vars. Import AFTER styles.css:
+     <link rel="stylesheet" href="brand-tokens.css">
+   Light = :root, Dark = html.dark / [data-theme="dark"]
+   Tones verified via material_color_utilities 0.13.1 (tonalSpot).
+   ========================================================================== */
+
+:root {
+  /* ---- Seeds ---- */
+  --brand-navy-seed: #002C6D;
+  --brand-green-seed: #4FD166;
+
+  /* ---- Primitive tonal: primary (navy, c36) ---- */
+  --p-0:#000000; --p-5:#000F30; --p-10:#001945; --p-15:#062355; --p-20:#152E60;
+  --p-25:#223A6C; --p-30:#2E4578; --p-35:#3A5185; --p-40:#475D92; --p-50:#6076AC;
+  --p-60:#7990C8; --p-70:#94AAE4; --p-80:#B0C6FF; --p-90:#D9E2FF; --p-95:#EEF0FF;
+  --p-98:#FAF8FF; --p-99:#FEFBFF; --p-100:#FFFFFF;
+
+  /* ---- Primitive tonal: growth green (raw #4FD166, h148 c68) ---- */
+  --g-0:#000000; --g-5:#001503; --g-10:#002107; --g-15:#002D0B; --g-20:#003910;
+  --g-25:#004616; --g-30:#00531B; --g-35:#006021; --g-40:#006E27; --g-50:#008A33;
+  --g-60:#15A742; --g-70:#3FC35A; --g-80:#5EE072; --g-90:#7CFD8C; --g-95:#C7FFC4;
+  --g-98:#EBFFE6; --g-99:#F6FFF1; --g-100:#FFFFFF;
+
+  /* ---- Primitive tonal: tertiary plum / neutral / variant / error ---- */
+  --t-20:#412742; --t-30:#593D5A; --t-40:#725572; --t-80:#E0BBDE; --t-90:#FDD7FA;
+  --n-6:#121318; --n-10:#1A1B20; --n-98:#FAF8FF;
+  --nv-30:#44464F; --nv-40:#5C5E67; --nv-50:#757780; --nv-60:#8F9099;
+  --nv-80:#C5C6D0; --nv-90:#E1E2EC;
+  --e-40:#BA1A1A; --e-80:#FFB4AB; --e-90:#FFDAD6;
+
+  /* ---- M3 roles: LIGHT (premium dual-seed) ---- */
+  --md-primary:#475D92; --md-on-primary:#FFFFFF;
+  --md-primary-container:#D9E2FF; --md-on-primary-container:#2E4578;
+  --md-secondary:#006E27; --md-on-secondary:#FFFFFF;
+  --md-secondary-container:#7CFD8C; --md-on-secondary-container:#002107;
+  --md-tertiary:#725572; --md-on-tertiary:#FFFFFF;
+  --md-tertiary-container:#FDD7FA; --md-on-tertiary-container:#593D5A;
+  --md-error:#BA1A1A; --md-on-error:#FFFFFF;
+  --md-error-container:#FFDAD6; --md-on-error-container:#93000A;
+  --md-surface-dim:#DAD9E0; --md-surface:#FAF8FF; --md-surface-bright:#FAF8FF;
+  --md-lowest:#FFFFFF; --md-low:#F4F3FA; --md-container:#EEEDF4;
+  --md-high:#E8E7EF; --md-highest:#E2E2E9;
+  --md-on-surface:#1A1B20; --md-on-surface-variant:#44464F;
+  --md-outline:#757780; --md-outline-variant:#C5C6D0;
+  --md-inverse-surface:#2F3036; --md-inverse-on-surface:#F1F0F7;
+  --md-inverse-primary:#B0C6FF; --md-surface-tint:#475D92;
+  --md-scrim:#000000; --md-shadow:#000000;
+
+  /* ---- Brand gradients / premium surfaces ---- */
+  --brand-hero-gradient: linear-gradient(135deg, #002C6D 0%, #004616 55%, #15A742 100%);
+  --brand-glow-green: 0 0 0 1px rgb(79 209 102 / 0.35), 0 8px 30px -8px rgb(79 209 102 / 0.45);
+  --brand-glow-navy: 0 10px 30px -12px rgb(0 44 109 / 0.55);
+
+  /* ---- Map: brand remap (rural=green, mun=navy) ---- */
+  --map-metro:#BA1A1A; --map-sub:#EA580C; --map-mun:#2E4578; --map-rural:#006E27;
+
+  /* ---- Bridge onto existing Design System v1 ---- */
+  --color-primary: var(--md-primary);
+  --color-primary-dark: var(--p-30);
+  --color-primary-light: var(--p-90);
+  --color-border-focus: var(--md-primary);
+  --color-success: var(--md-secondary);
+  --color-success-bg: var(--g-90);
+  --focus-ring: 0 0 0 3px color-mix(in srgb, var(--md-primary) 25%, transparent);
+}
+
+html.dark,
+html[data-theme="dark"] {
+  --md-primary:#B0C6FF; --md-on-primary:#152E60;
+  --md-primary-container:#2E4578; --md-on-primary-container:#D9E2FF;
+  --md-secondary:#5EE072; --md-on-secondary:#003910;
+  --md-secondary-container:#00531B; --md-on-secondary-container:#EBFFE6;
+  --md-tertiary:#E0BBDE; --md-on-tertiary:#412742;
+  --md-tertiary-container:#593D5A; --md-on-tertiary-container:#FDD7FA;
+  --md-error:#FFB4AB; --md-on-error:#690005;
+  --md-error-container:#93000A; --md-on-error-container:#FFDAD6;
+  --md-surface-dim:#121318; --md-surface:#121318; --md-surface-bright:#38393F;
+  --md-lowest:#0C0E13; --md-low:#1A1B20; --md-container:#1E1F25;
+  --md-high:#282A2F; --md-highest:#33353A;
+  --md-on-surface:#E2E2E9; --md-on-surface-variant:#C5C6D0;
+  --md-outline:#8F9099; --md-outline-variant:#44464F;
+  --md-inverse-surface:#E2E2E9; --md-inverse-on-surface:#2F3036;
+  --md-inverse-primary:#475D92; --md-surface-tint:#B0C6FF;
+
+  --color-primary:#B0C6FF; --color-primary-dark:#94AAE4;
+  --color-primary-light:#223A6C;
+  --color-success:#5EE072; --color-success-bg:#004616;
+  --brand-hero-gradient: linear-gradient(135deg, #001945 0%, #002D0B 60%, #00531B 100%);
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme]) {
+    --md-primary:#B0C6FF; --md-on-primary:#152E60;
+    --md-primary-container:#2E4578; --md-on-primary-container:#D9E2FF;
+    --md-secondary:#5EE072; --md-on-secondary:#003910;
+    --md-secondary-container:#00531B; --md-on-secondary-container:#EBFFE6;
+    --md-surface:#121318; --md-on-surface:#E2E2E9;
+  }
+}
+
+/* ---- Premium helpers (opt-in, no breaking change) ---- */
+.brand-hero {
+  background: var(--brand-hero-gradient);
+  color: #fff;
+}
+.brand-hero :is(h1,h2,h3,p) { color: #fff; }
+.brand-hero .stat-value { color: #7CFD8C; }
+.btn-brand-green {
+  background: var(--md-secondary); color: var(--md-on-secondary);
+  box-shadow: var(--brand-glow-green);
+}
+.btn-brand-green:hover { filter: brightness(1.08); color: var(--md-on-secondary); }
+.badge-verified {
+  background: var(--md-secondary-container);
+  color: var(--md-on-secondary-container);
+  border: 1px solid color-mix(in srgb, var(--md-secondary) 40%, transparent);
+}
+.card-premium {
+  background: var(--md-lowest, var(--color-surface));
+  border: 1px solid var(--md-outline-variant);
+  box-shadow: var(--brand-glow-navy);
+}
+.dot-mun { background: var(--map-mun); }
+.dot-rural { background: var(--map-rural); }
+.type-mun { background: var(--p-90); color: var(--p-30); }
+.type-rural { background: var(--g-90); color: var(--g-10); }
+html.dark .type-mun, html[data-theme="dark"] .type-mun { background: #223A6C; color: #B0C6FF; }
+html.dark .type-rural, html[data-theme="dark"] .type-rural { background: #004616; color: #7CFD8C; }

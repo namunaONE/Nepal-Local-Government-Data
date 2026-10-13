@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brand System v2 — Himalayan Trust × Everest Growth</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="brand-tokens.css">
+<style>
+.swatch-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin:16px 0}
+.swatch{border:1px solid var(--md-outline-variant);border-radius:12px;overflow:hidden;background:var(--md-lowest)}
+.swatch i{display:block;height:56px}
+.swatch div{padding:8px 10px;font-size:.75rem}
+.swatch b{display:block;font-size:.78rem}
+.swatch span{color:var(--md-on-surface-variant);font-family:var(--font-mono)}
+.role-table{width:100%;border-collapse:collapse;font-size:.82rem}
+.role-table th,.role-table td{padding:10px 12px;border-bottom:1px solid var(--color-border);text-align:left}
+.chip{display:inline-block;min-width:64px;height:28px;border-radius:999px;vertical-align:middle;margin-right:8px;border:1px solid var(--md-outline-variant)}
+.hero-demo{border-radius:20px;padding:48px 32px;margin:24px 0}
+.tone-row{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}
+.tone{flex:1;min-width:72px;border-radius:10px;padding:10px 8px;text-align:center;font-size:.68rem;border:1px solid var(--md-outline-variant)}
+.tone b{display:block;font-size:.72rem}
+</style>
+</head>
+<body>
+<header class="header"><div class="header-inner"><nav class="nav container">
+<a class="logo" href="index.html"><span class="logo-text"><span class="logo-title">nepal_admin_api</span><span class="logo-sub">Brand System v2</span></span></a>
+<div class="nav-links"><a class="nav-link" href="index.html">Home</a><a class="nav-link active" href="brand.html">Brand</a><a class="nav-link" href="api.html">API</a><a class="nav-link" href="explorer.html">Explorer</a></div>
+<div class="nav-actions"><button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">◐</button></div>
+</nav></div></header>
+
+<main class="container">
+<section class="hero-demo brand-hero">
+<h1>Himalayan Trust × Everest Growth</h1>
+<p>Primary seed <code>#002C6D</code> (navy depth) + Secondary seed <code>#4FD166</code> (growth green). Material 3 tonalSpot, dual-seed premium mapping.</p>
+<div class="cluster"><a class="btn btn-primary" href="#roles">M3 roles</a><a class="btn btn-brand-green" href="#tonal">Full tonal</a><span class="badge-verified badge">✓ VERIFIED DUALLY-ATTESTED</span></div>
+</section>
+
+<section id="roles">
+<h2>1 · M3 roles (use these, never raw tones)</h2>
+<div class="table-scroll"><table class="role-table">
+<tr><th>Role</th><th>Light</th><th>Dark</th><th>Use</th></tr>
+<tr><td><span class="chip" style="background:#475D92"></span>primary / onPrimary</td><td><code>#475D92 / #FFFFFF</code></td><td><code>#B0C6FF / #152E60</code></td><td>CTA, links, FAB, focus</td></tr>
+<tr><td><span class="chip" style="background:#D9E2FF"></span>primaryContainer</td><td><code>#D9E2FF / #2E4578</code></td><td><code>#2E4578 / #D9E2FF</code></td><td>Highlight sections</td></tr>
+<tr><td><span class="chip" style="background:#006E27"></span>secondary ★ brand</td><td><code>#006E27 / #FFFFFF</code></td><td><code>#5EE072 / #003910</code></td><td>Verified, progress, filters</td></tr>
+<tr><td><span class="chip" style="background:#7CFD8C"></span>secondaryContainer ★</td><td><code>#7CFD8C / #002107</code></td><td><code>#00531B / #EBFFE6</code></td><td>Badges (dark text on neon!)</td></tr>
+<tr><td><span class="chip" style="background:#725572"></span>tertiary</td><td><code>#725572 / #FFFFFF</code></td><td><code>#E0BBDE / #412742</code></td><td>Maps, illustrations</td></tr>
+<tr><td><span class="chip" style="background:#BA1A1A"></span>error</td><td><code>#BA1A1A / #FFFFFF</code></td><td><code>#FFB4AB / #690005</code></td><td>Errors only</td></tr>
+<tr><td><span class="chip" style="background:#FAF8FF;border-color:#C5C6D0"></span>surface</td><td><code>#FAF8FF / #1A1B20</code></td><td><code>#121318 / #E2E2E9</code></td><td>Page bg + body text</td></tr>
+<tr><td><span class="chip" style="background:#EEEDF4"></span>containers</td><td><code>#FFFFFF→#E2E2E9</code> 5 steps</td><td><code>#0C0E13→#33353A</code> 5 steps</td><td>Card layering lowest→highest</td></tr>
+</table></div>
+<p>★ = premium override: Flutter default secondary would be grey <code>#575E71</code>. Verified: <code>secondary: Color(0xFF4FD166)</code> alone uses raw green (white text fails) — <code>example/brand_theme.dart</code> applies <code>copyWith</code> with tonal roles.</p>
+</section>
+
+<section id="tonal">
+<h2>2 · Full tonal palettes</h2>
+<h3>Primary — navy #002C6D (c36)</h3>
+<div class="tone-row" id="pRow"></div>
+<h3>Secondary — green #4FD166 raw (c68) ★ used for secondary roles</h3>
+<div class="tone-row" id="gRow"></div>
+<h3>Neutral — surfaces (c6) · NeutralVariant — borders (c8)</h3>
+<div class="tone-row" id="nRow"></div>
+<h3>Tertiary plum · Error red</h3>
+<div class="tone-row" id="tRow"></div>
+</section>
+
+<section>
+<h2>3 · Components</h2>
+<div class="grid-auto">
+<div class="card card-premium"><h3>Premium card</h3><p>Lowest surface + navy glow. Borders use <code>outlineVariant</code>, never pure grey.</p><div class="cluster"><span class="badge">NAVY BADGE</span><span class="badge-verified badge">✓ GREEN VERIFIED</span></div></div>
+<div class="card"><h3>Actions</h3><div class="cluster"><button class="btn btn-primary">Navy primary</button><button class="btn btn-brand-green">Green secondary</button><button class="btn btn-secondary">Surface</button></div></div>
+<div class="card"><h3>Flutter snippet</h3><div class="code-block"><pre><code>ColorScheme.fromSeed(
+  seedColor: Color(0xFF002C6D),
+).copyWith(
+  secondary: Color(0xFF006E27),
+  secondaryContainer: Color(0xFF7CFD8C),
+  onSecondaryContainer: Color(0xFF002107),
+)</code></pre></div></div>
+</div>
+</section>
+
+<section><h2>4 · Rules</h2>
+<ul>
+<li>Navy owns nav, headers, primary buttons, links, focus rings. Green owns success/verified/progress.</li>
+<li>Green container <code>#7CFD8C</code> needs dark text <code>#002107</code> (≈12:1) — never white.</li>
+<li>Hero gradient only: <code>135deg, #002C6D → #004616 → #15A742</code>. 60/30/10.</li>
+<li>Full spec: <code>doc/brand-system.md</code> · tokens: <code>brand-tokens.css</code> · Flutter: <code>example/brand_theme.dart</code>.</li>
+</ul></section>
+</main>
+
+<script>
+const T={
+p:[["0","#000000","#fff"],["5","#000F30","#fff"],["10","#001945","#fff"],["20","#152E60","#fff"],["30","#2E4578","#fff"],["40","#475D92","#fff"],["50","#6076AC","#fff"],["60","#7990C8","#000"],["70","#94AAE4","#000"],["80","#B0C6FF","#000"],["90","#D9E2FF","#000"],["95","#EEF0FF","#000"],["98","#FAF8FF","#000"]],
+g:[["0","#000000","#fff"],["10","#002107","#fff"],["20","#003910","#fff"],["30","#00531B","#fff"],["40","#006E27","#fff"],["50","#008A33","#fff"],["60","#15A742","#000"],["70","#3FC35A","#000"],["80","#5EE072","#000"],["90","#7CFD8C","#000"],["95","#C7FFC4","#000"],["98","#EBFFE6","#000"]],
+n:[["6","#121318","#fff"],["10","#1A1B20","#fff"],["30","#45464C","#fff"],["50","#76777D","#fff"],["80","#C6C6CD","#000"],["90","#E2E2E9","#000"],["95","#F1F0F7","#000"],["98","#FAF8FF","#000"]],
+t:[["20","#412742","#fff"],["40","#725572","#fff"],["80","#E0BBDE","#000"],["90","#FDD7FA","#000"],["40E","#BA1A1A","#fff"],["80E","#FFB4AB","#000"]]};
+function row(id,arr){const el=document.getElementById(id);el.innerHTML=arr.map(([t,c,fg])=>`<div class="tone" style="background:${c};color:${fg}"><b>${t}</b>${c}</div>`).join('');}
+row('pRow',T.p);row('gRow',T.g);row('nRow',T.n);row('tRow',T.t);
+const b=document.getElementById('themeToggle');
+b.addEventListener('click',()=>{const h=document.documentElement;const d=h.classList.toggle('dark');h.dataset.theme=d?'dark':'light';try{localStorage.setItem('theme',d?'dark':'light')}catch(e){}});
+try{if(localStorage.getItem('theme')==='dark'){document.documentElement.classList.add('dark');document.documentElement.dataset.theme='dark'}}catch(e){}
+</script>
+</body>
+</html>
