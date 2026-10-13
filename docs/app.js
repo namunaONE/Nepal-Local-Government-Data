@@ -355,13 +355,7 @@ function initExplorer() {
     });
   }
 
-  function escapeHtml(text) {
-    const div = document.createElement('div');
-    div.textContent = text;
-    return div.innerHTML;
-  }
-
-  // Event listeners
+  // Event listeners (escapeHtml is module-scope; see above)
   searchInput.addEventListener('input', debounce(applyFilters, 200));
   provinceFilter.addEventListener('change', applyFilters);
   districtFilter.addEventListener('change', applyFilters);
@@ -521,6 +515,15 @@ function focusMarker(lat, lng, name) {
 
 function escapeHtmlAttr(text) {
   return String(text ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
+// Module scope: typeBadge() (table rows) and map popups both need this.
+// (A previous version defined escapeHtml only inside initExplorer(),
+// which threw `escapeHtml is not defined` from module-scope callers.)
+function escapeHtml(text) {
+  const div = document.createElement('div');
+  div.textContent = text;
+  return div.innerHTML;
 }
 
 // Floating pill header on scroll (passive listener, rAF-throttled).

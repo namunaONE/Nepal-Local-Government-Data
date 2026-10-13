@@ -99,4 +99,13 @@ python -m http.server 8000
 # open http://localhost:8000/index.html
 ```
 
+## Smoke test (no browser, no npm deps)
+
+`node docs/smoke.cjs` loads the real `app.js` in Node with minimal DOM
+stubs and runs the full explorer flow (fetch → filters → stats → table →
+pagination) against the real `data.json`. It catches ReferenceError/scope
+bugs that `node --check` (syntax-only) misses — e.g. the `escapeHtml is
+not defined` outage, where a module-scope caller used an
+initExplorer-scoped helper. Runs in CI before Pages deploy.
+
 Maintained by **namunaONE** under **HyaMuji** and **Taire Bhai**.

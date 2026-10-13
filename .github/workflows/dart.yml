@@ -35,6 +35,8 @@ jobs:
         run: dart analyze --fatal-infos
       - name: Run tests
         run: dart test
+      - name: Explorer smoke test (no browser, no npm deps)
+        run: node docs/smoke.cjs
 
   publish-dry-run:
     if: github.ref == 'refs/heads/main'
