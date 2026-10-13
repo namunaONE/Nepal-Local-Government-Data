@@ -37,12 +37,25 @@ enum LocalBodyType {
 
 /// Aggregate counts for one province.
 class ProvinceStats {
+  /// Districts in the province.
   final int districts;
+
+  /// Metropolitan cities.
   final int metro;
+
+  /// Sub-metropolitan cities.
   final int subMetro;
+
+  /// Municipalities.
   final int mun;
+
+  /// Rural municipalities.
   final int ruralMun;
+
+  /// Total local bodies.
   final int total;
+
+  /// Total wards.
   final int wards;
 
   const ProvinceStats({
@@ -69,9 +82,16 @@ class ProvinceStats {
 /// A local body (palika): metropolitan, sub-metropolitan, municipality
 /// or rural municipality. The smallest administrative unit in the package.
 class LocalBody {
+  /// Display name, e.g. 'Bharatpur'.
   final String name;
+
+  /// Palika type (metro, sub-metro, municipality, rural).
   final LocalBodyType type;
+
+  /// Owning district, e.g. 'Chitwan'.
   final String districtName;
+
+  /// Owning province, e.g. 'Bagmati'.
   final String provinceName;
 
   /// CBS 5-digit code (PDDPP format: P=province 1-7, DD=district 01-77, PP=palika 01-99).
@@ -145,6 +165,7 @@ class LocalBody {
         if (wardsVerified) 'wardsVerified': wardsVerified,
       };
 
+  /// Rebuilds a [LocalBody] from [toJson] output (round-trip safe).
   factory LocalBody.fromJson(Map<String, dynamic> json) => LocalBody(
         name: json['name'] as String,
         type: LocalBodyType.fromShort(json['type'] as String?),
@@ -159,12 +180,14 @@ class LocalBody {
         wardsVerified: json['wardsVerified'] as bool? ?? false,
       );
 
+  /// Compact display form, e.g. 'Bharatpur (Metro)'.
   @override
   String toString() => '$name (${type.shortName})';
 }
 
 /// A district (77 nationwide), owning its local bodies.
 class District {
+  /// Display name, e.g. 'Chitwan'.
   final String name;
 
   /// CBS 3-digit district code (e.g., 101 for Taplejung, 306 for Kathmandu).
@@ -182,7 +205,8 @@ class District {
         _provinceName = provinceName;
 
   /// Called by [Province] when this district is attached to it.
-  // Public on purpose: the data lives in nepal_data.dart (another library).
+  /// Public on purpose: the data lives in nepal_data.dart (another library).
+  /// Prefer constructing [District] with [provinceName] directly.
   void setProvinceContext(String provinceName) {
     _provinceName = provinceName;
   }
@@ -222,7 +246,10 @@ class District {
 
 /// A province (7 nationwide).
 class Province {
+  /// Lowercase slug id, e.g. 'bagmati'.
   final String id;
+
+  /// Display name, e.g. 'Bagmati'.
   final String name;
 
   /// CBS province code (1-7).
@@ -230,7 +257,11 @@ class Province {
 
   /// ISO 3166-2 code (NP-P1..NP-P7).
   final String isoCode;
+
+  /// Declared aggregate counts for this province.
   final ProvinceStats stats;
+
+  /// Districts belonging to this province.
   final List<District> districts;
 
   Province({
@@ -258,13 +289,28 @@ class Province {
 
 /// Computed national totals (matches the official federal structure).
 class NationalStats {
+  /// Provinces (7).
   final int provinces;
+
+  /// Districts (77).
   final int districts;
+
+  /// Metropolitan cities (6).
   final int metro;
+
+  /// Sub-metropolitan cities (11).
   final int subMetro;
+
+  /// Municipalities (276).
   final int municipalities;
+
+  /// Rural municipalities (460).
   final int ruralMunicipalities;
+
+  /// Total local bodies (753).
   final int total;
+
+  /// Total wards (6,743).
   final int wards;
 
   const NationalStats({
@@ -281,8 +327,13 @@ class NationalStats {
 
 /// Typed result of [NepalAdminApi.search].
 class SearchResult {
+  /// Matching provinces.
   final List<Province> provinces;
+
+  /// Matching districts.
   final List<District> districts;
+
+  /// Matching local bodies.
   final List<LocalBody> localBodies;
 
   const SearchResult({

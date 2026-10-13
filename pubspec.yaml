@@ -19,5 +19,5 @@ environment:
 # Pure Dart package: no runtime dependencies needed — the data ships in the box.
 dev_dependencies:
   crypto: ^3.0.7 # tool/merge only (SHA-256 provenance verification); never imported by lib/
-  lints: ^5.0.0
+  lints: ^6.0.0
   test: ^1.25.0
