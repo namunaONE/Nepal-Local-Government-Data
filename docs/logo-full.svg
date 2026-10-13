@@ -1,6 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 96" role="img" aria-labelledby="nadFullTitle nadFullDesc">
   <title id="nadFullTitle">Nepal Administrative Data by namunaONE</title>
   <desc id="nadFullDesc">Nepal double-pennon mark with Nepal Administrative Data wordmark by namunaONE</desc>
+  <style>
+    .nad-title { fill: #0f172a; }
+    .nad-sub { fill: #0f172a; opacity: 0.68; }
+    .nad-by { fill: #DC143C; }
+    @media (prefers-color-scheme: dark) {
+      .nad-title { fill: #f8fafc; }
+      .nad-sub { fill: #cbd5e1; opacity: 0.8; }
+      .nad-by { fill: #f87171; }
+    }
+  </style>
   <!-- Icon -->
   <g transform="translate(4,2)">
     <path d="M20 8 L64 33 L43 33 L68 62 L20 62 Z"
@@ -24,8 +34,8 @@
   </g>
   <!-- Wordmark -->
   <g font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif">
-    <text x="96" y="38" font-size="21" font-weight="800" fill="currentColor" letter-spacing="-0.02em">Nepal Administrative Data</text>
-    <text x="96" y="60" font-size="13.5" font-weight="500" fill="currentColor" opacity="0.68" letter-spacing="0.02em">7 provinces · 77 districts · 753 palikas</text>
-    <text x="96" y="78" font-size="11.5" font-weight="700" fill="#DC143C" letter-spacing="0.14em">BY namunaONE</text>
+    <text x="96" y="38" font-size="21" font-weight="800" class="nad-title" letter-spacing="-0.02em">Nepal Administrative Data</text>
+    <text x="96" y="60" font-size="13.5" font-weight="500" class="nad-sub" letter-spacing="0.02em">7 provinces · 77 districts · 753 palikas</text>
+    <text x="96" y="78" font-size="11.5" font-weight="700" class="nad-by" letter-spacing="0.14em">BY namunaONE</text>
   </g>
 </svg>

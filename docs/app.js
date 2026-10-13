@@ -16,12 +16,21 @@ function initTheme() {
 
   toggle.addEventListener('click', () => {
     const newDark = !document.documentElement.classList.contains('dark');
-    document.documentElement.classList.toggle('dark', newDark);
-    localStorage.setItem('theme', newDark ? 'dark' : 'light');
-    document.documentElement.setAttribute('data-theme', newDark ? 'dark' : 'light');
-    syncThemeColorMeta(newDark);
+    applyTheme(newDark);
   });
+  applyTheme(isDark);
+}
+
+function applyTheme(isDark) {
+  document.documentElement.classList.toggle('dark', isDark);
+  localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
   syncThemeColorMeta(isDark);
+  // Swap theme-sensitive brand imagery (SVG <img> can't read page classes).
+  document.querySelectorAll('img[data-logo-light]').forEach((img) => {
+    const next = isDark ? img.dataset.logoDark : img.dataset.logoLight;
+    if (next && img.getAttribute('src') !== next) img.setAttribute('src', next);
+  });
 }
 
 function syncThemeColorMeta(isDark) {
@@ -130,6 +139,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+// Explicit type metadata — never derive CSS classes via chained
+// string replaces (that produced unstyled `type-ruralmun` /
+/// `type-submetro` chips for rural + sub-metro rows).
+const TYPE_META = {
+  metropolitan: { cls: 'metro', label: 'Metro', full: 'Metropolitan City' },
+  subMetropolitan: { cls: 'sub', label: 'Sub-Metro', full: 'Sub-Metropolitan City' },
+  municipality: { cls: 'mun', label: 'Municipality', full: 'Municipality' },
+  ruralMunicipality: { cls: 'rural', label: 'Rural', full: 'Rural Municipality' },
+};
+
+function typeBadge(type) {
+  const meta = TYPE_META[type] || { cls: 'unknown', label: type, full: type };
+  return `<span class="type-badge type-${meta.cls}" title="${escapeHtmlAttr(meta.full)}">${escapeHtml(meta.label)}</span>`;
+}
+
 // Explorer functionality (if on explorer page)
 if (document.querySelector('.explorer-table')) {
   initExplorer();
@@ -175,7 +199,10 @@ function initExplorer() {
     districtFilter.innerHTML = '<option value="">All Districts</option>' +
       districts.map(d => `<option value="${d}">${d}</option>`).join('');
     typeFilter.innerHTML = '<option value="">All Types</option>' +
-      types.map(t => `<option value="${t}">${t}</option>`).join('');
+      types.map(t => {
+        const label = (typeof TYPE_META !== 'undefined' && TYPE_META[t]) ? TYPE_META[t].label : t;
+        return `<option value="${t}">${label}</option>`;
+      }).join('');
   }
 
   function applyFilters() {
@@ -222,7 +249,7 @@ function initExplorer() {
       tableBody.innerHTML = pageData.map(item => `
         <tr data-cbs="${item.cbsCode ?? ''}" data-lat="${item.lat ?? ''}" data-lng="${item.lng ?? ''}" data-name="${escapeHtml(item.name)}" tabindex="0" title="${item.lat != null ? 'Click to locate on map' : 'No coordinates available'}">
           <td>${escapeHtml(item.name)}</td>
-          <td><span class="type-badge type-${item.type.toLowerCase().replace('municipality', 'mun').replace('rural', 'rural').replace('metropolitan', 'metro').replace('sub-metropolitan', 'sub')}">${escapeHtml(item.type)}</span></td>
+          <td>${typeBadge(item.type)}</td>
           <td>${escapeHtml(item.district)}</td>
           <td>${escapeHtml(item.province)}</td>
           <td>${item.cbsCode !== null ? `<code>${item.cbsCode}</code>` : '<span class="unverified">—</span>'}</td>
@@ -322,7 +349,7 @@ const MAP_TILES = {
 };
 const TYPE_COLORS = {
   metropolitan: '#dc2626',
-  'sub-metropolitan': '#ea580c',
+  subMetropolitan: '#ea580c',
   municipality: '#2563eb',
   ruralMunicipality: '#16a34a',
 };
@@ -460,10 +487,31 @@ function escapeHtmlAttr(text) {
   return String(text ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
-// Initialize theme + nav on load
+// Floating pill header on scroll (passive listener, rAF-throttled).
+function initHeaderScroll() {
+  const header = document.querySelector('.header');
+  if (!header) return;
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let ticking = false;
+  const update = () => {
+    ticking = false;
+    header.classList.toggle('scrolled', window.scrollY > 8);
+  };
+  update();
+  window.addEventListener('scroll', () => {
+    if (reduced) { update(); return; }
+    if (!ticking) {
+      ticking = true;
+      requestAnimationFrame(update);
+    }
+  }, { passive: true });
+}
+
+// Initialize theme + nav + header on load
 document.addEventListener('DOMContentLoaded', () => {
   initTheme();
   initNav();
+  initHeaderScroll();
 });
 
 // API docs nav highlighting

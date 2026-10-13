@@ -184,8 +184,18 @@ code, kbd, pre { font-family: var(--font-mono); }
 .skip-link:focus { top: var(--space-2); }
 
 /* ---- Header / brand ---- */
-.header { position: sticky; top: 0; z-index: var(--z-header); min-height: var(--header-height); background: color-mix(in srgb, var(--color-bg) 88%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--color-border); }
-.nav { display: flex; align-items: center; gap: var(--space-4); min-height: var(--header-height); padding-top: var(--space-2); padding-bottom: var(--space-2); }
+.header { position: sticky; top: 0; z-index: var(--z-header); transition: background-color var(--transition), box-shadow var(--transition-slow); }
+.header-inner { min-height: var(--header-height); background: color-mix(in srgb, var(--color-bg) 88%, transparent); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid var(--color-border); transition: all var(--transition-slow); }
+.nav { display: flex; align-items: center; gap: var(--space-4); min-height: var(--header-height); padding-top: var(--space-2); padding-bottom: var(--space-2); transition: all var(--transition-slow); }
+
+/* Floating pill bar once the page scrolls (JS toggles .scrolled) */
+.header.scrolled .header-inner { background: transparent; border-bottom-color: transparent; backdrop-filter: none; -webkit-backdrop-filter: none; }
+.header.scrolled .nav.container { max-width: 1060px; margin-top: var(--space-3); min-height: 56px; padding: var(--space-1) var(--space-2) var(--space-1) var(--space-5); background: color-mix(in srgb, var(--color-bg) 82%, transparent); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border: 1px solid var(--color-border); border-radius: var(--radius-full); box-shadow: var(--shadow-lg); }
+@media (max-width: 860px) {
+  .header.scrolled .nav.container { margin-left: var(--space-3); margin-right: var(--space-3); padding-left: var(--space-4); }
+  .header.scrolled .nav-links { border-radius: var(--radius-lg); }
+}
+@media (prefers-reduced-motion: reduce) { .header-inner, .nav { transition: none; } }
 .logo { display: flex; align-items: center; gap: 10px; font-weight: var(--weight-bold); font-size: var(--text-lg); color: var(--color-text); margin-right: auto; }
 .logo img, .logo-icon { width: 32px; height: 32px; border-radius: 8px; flex: none; }
 .logo-icon { color: var(--color-primary); }
@@ -383,6 +393,7 @@ section { padding: var(--space-16) 0; }
 .type-sub { background: #fff7ed; color: #ea580c; }
 .type-mun { background: var(--nepal-blue-100); color: #2563eb; }
 .type-rural { background: var(--green-100); color: #16a34a; }
+.type-unknown { background: var(--color-bg-tertiary); color: var(--color-text-muted); }
 html.dark .type-metro, html[data-theme="dark"] .type-metro { background: var(--nepal-crimson-900); color: #fca5a5; }
 html.dark .type-sub, html[data-theme="dark"] .type-sub { background: #431407; color: #fdba74; }
 html.dark .type-mun, html[data-theme="dark"] .type-mun { background: #1e3a5f; color: #93c5fd; }

@@ -27,10 +27,14 @@ Static documentation site deployed via GitHub Pages from `docs/`.
    `.badge` (+neutral/success/warning/danger/info), `.card`,
    `.alert-*`, `.code-block`, `.explorer-table` (sticky header +
    scroll-shadow hint), `.pagination`, `.toast`, `.maintainer-badge`.
-7. **Nav** — sticky blurred header, hamburger panel ≤860px
-   (aria-expanded, Escape/outside-click close), 44px touch targets.
+7. **Nav** — sticky blurred header, floating pill on scroll (`.scrolled`,
+   passive rAF listener), hamburger panel ≤860px (aria-expanded,
+   Escape/outside-click close), 44px touch targets.
 8. **Map** — fluid height `clamp(300px, 52vh, 460px)`, dark-filtered tiles,
    themed Leaflet controls/popups.
+9. **Badges** — explicit `TYPE_META` map (class + short label + full-name
+   tooltip); `.type-unknown` fallback; filter dropdown uses short labels.
+   Never derive chip classes via chained string replaces.
 
 Dark mode: `html.dark` class (JS toggle + `localStorage`), with
 `prefers-color-scheme` as first-visit default. Honor
@@ -43,6 +47,10 @@ Dark mode: `html.dark` class (JS toggle + `localStorage`), with
 - `logo-full.svg` — mark + “Nepal Administrative Data” +
   “7 provinces · 77 districts · 753 palikas” + “BY namunaONE”.
 - `favicon.svg` — 64px rounded version for browsers.
+- `logo-full-dark.svg` — dark-mode wordmark (light text); swapped by JS
+  via `data-logo-light`/`data-logo-dark` because SVG `<img>` cannot read
+  page classes. `logo-full.svg` also carries a `prefers-color-scheme`
+  media fallback for no-JS.
 - Header uses `logo.svg` + stacked wordmark; hero uses `logo-full.svg`;
   footer reuses `logo.svg`.
 
