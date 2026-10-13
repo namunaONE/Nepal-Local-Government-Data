@@ -22,6 +22,7 @@ Pure Dart package. Zero runtime dependencies. Data ships in the box.
 
 | Feature | Description |
 |---------|-------------|
+| **Flutter widgets** | [`nepal_admin_widgets`](/packages/nepal_admin_widgets) — cascading Province → District → Palika pickers, bilingual, offline, 58 widget tests |
 | **Bindings for 5 ecosystems** | Dart · TypeScript/JavaScript · Python · CSV · GeoJSON — all generated from one dataset, drift-checked in CI |
 | **Bilingual** | Devanagari names for all 7 provinces, 77 districts and **731/753 palikas** - never transliterated, never guessed |
 | **Bilingual search** | `search('भरतपुर')` and `search('Bharatpur')` return the same palika; fragments match too |

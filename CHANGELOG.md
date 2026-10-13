@@ -4,6 +4,59 @@ All notable changes to this package are documented in this file.
 The format follows [Keep a Changelog](https://keepachangelog.com/) and the
 package adheres to [Semantic Versioning](https://semver.org/).
 
+## 2.7.0 — 2026-10-13
+
+The Flutter release, plus a boundary investigation that ended in a refusal to
+ship. No change to the Dart public API.
+
+### Added
+- **`packages/nepal_admin_widgets`** — a Flutter companion package: a cascading
+  Province → District → Local body picker, bilingual and fully offline.
+  - `AdministrativeCascade`, a widget-free `ChangeNotifier` holding the state
+    transitions and label rules. It is the part worth testing, so it is
+    separately testable and reusable behind any UI.
+  - `AdministrativeDropdown`, three dependent dropdowns, each disabled until its
+    parent is chosen, with a helper line reporting how many options remain.
+  - `LocalBodySearchField`, debounced bilingual search scoped to the cascade,
+    every result labelled with its district.
+  - `LabelStyle` (`english` / `devanagari` / `both`) with single-script
+    fallback, so no label ends in a dangling separator for the 22 local bodies
+    with no attested Devanagari name.
+  - 58 tests (`flutter test`), run against the real dataset rather than
+    fixtures, and a runnable `example/`.
+  - CI: a `flutter-widgets` job runs `flutter analyze --fatal-infos`,
+    `dart format` and `flutter test`. The widget code is a separate package with
+    a path dependency, so the root Dart job does not cover it.
+- **`tool/merge/probe_boundaries.dart`** — reconciles the vendored boundary
+  GeoJSON against the roster and writes nothing.
+
+### Boundaries: investigated, and deliberately still not shipped
+`data/_raw/boundaries/oknp_local_levels.geojson` was reconciled properly rather
+than assumed unusable. Two earlier suspicions turned out to be wrong:
+
+- The "777 vs 753" over-count is **not** a roster mismatch. 22 of the 777 are
+  national parks and wildlife reserves rather than local bodies; the remaining
+  755 is a near-exact match, and **705** match our names outright (562 exactly).
+  The source does not appear to be a different administrative vintage — this
+  probe disproved that suspicion.
+- The residual mismatches are mostly **naming style, not structure**: longer
+  official names where we use the short form ("Pokhara Lekhnath" vs "Pokhara"),
+  and transliteration variants elsewhere.
+
+What remains is a format defect and a verification gap. **4,477 of 4,478 rings
+are unclosed**, violating RFC 7946, and 122 are degenerate — both repairable.
+The blocker is that nothing in this repository can confirm the boundaries are
+*current*: there is no second geometry source to cross-check against and no
+gazette. Publishing a polygon layer verified only for shape validity and name
+correspondence would be a weaker claim than every other field here, each of
+which carries at least two independent attestations — and this project has
+already refused to publish a single-source CBS code rather than label it
+honestly. `data/SOURCES.md` records what would unblock it.
+
+### Changed
+- `.pubignore` excludes `packages/`, so the Flutter companion is not bundled
+  into the published Dart package.
+
 ## 2.6.0 — 2026-10-13
 
 The bindings release. Until now the dataset was only reachable from Dart, which

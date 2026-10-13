@@ -135,6 +135,30 @@ jobs:
       - name: Compile-check the Flutter example
         run: dart analyze --fatal-infos example/brand_theme.dart
 
+  # packages/nepal_admin_widgets. It is a Flutter package with a path
+  # dependency on this one, so `dart analyze`/`dart test` in the root job do not
+  # cover it — without this job every line of it would be unverified, which is
+  # exactly the rot this repo exists to avoid.
+  flutter-widgets:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: packages/nepal_admin_widgets
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: stable
+          channel: stable
+      - name: Resolve dependencies
+        run: flutter pub get
+      - name: Analyze library, example and tests
+        run: flutter analyze --fatal-infos
+      - name: Verify formatting
+        run: dart format --output=none --set-exit-if-changed lib test example
+      - name: Run widget tests
+        run: flutter test
+
   # Scheduled integrity watch: re-hashes every vendored input against the
   # provenance manifest and files an issue when an upstream source changes,
   # so a silent upstream drift cannot sit unnoticed until a merge run fails.

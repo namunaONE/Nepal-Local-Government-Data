@@ -1,0 +1,26 @@
+﻿name: nepal_admin_widgets
+description: >-
+  Flutter dropdowns for Nepal's administrative divisions — 7 provinces,
+  77 districts, 753 local bodies. Bilingual (English + Devanagari), offline,
+  and backed by the verified nepal_admin_api dataset.
+version: 0.1.0
+# Not published yet: this is a monorepo package that depends on the local
+# nepal_admin_api checkout. Change to a version constraint before publishing.
+publish_to: none
+
+environment:
+  sdk: ^3.0.0
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  nepal_admin_api:
+    path: ../../
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:

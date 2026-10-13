@@ -9,6 +9,11 @@ bindings/
 # Tooling scripts (not needed in published package)
 tool/
 
+# Companion Flutter packages. nepal_admin_widgets is published separately and
+# depends on THIS package via a path dependency; shipping it inside would add
+# the whole widget source plus its pubspec lock to every download.
+packages/
+
 # Raw data sources (not needed in published package)
 data/_raw/
 data/_stage/
