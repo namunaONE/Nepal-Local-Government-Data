@@ -11,13 +11,17 @@ data/SOURCES.md.
    Source:  https://github.com/open-admin-data/nepal-administrative-divisions
    License: Creative Commons Attribution 4.0 International (CC-BY-4.0),
             https://creativecommons.org/licenses/by/4.0/
-   Used for: geographic coordinates (latitude/longitude) and postal codes
-            at province, district and local-unit level.
+   Used for: geographic coordinates (latitude/longitude) at province, district
+            and local-unit level; Devanagari names (as the second bilingual
+            source, and as a fallback where abinrimal's roster is short in a
+            district or blank for a row); and Nepal Post postal codes at
+            local-unit level.
    Adaptation: values are merged with other sources, reformatted into this
             package's schema, and redistributed as part of its dataset.
             Counts from this source are NOT used (it reports 775 local
-            units against the gazetted 753); only coordinates, postal codes
-            and slugs are consumed, each flagged as supplementary.
+            units against the gazetted 753); only coordinates, postal codes,
+            Devanagari names and slugs are consumed, each flagged as
+            supplementary. This source is never used as an identifier.
 
 2. Geographical Codes for States, Districts and Local Bodies
    (Open Data Nepal, harvested from the Central Bureau of Statistics)
@@ -29,12 +33,24 @@ data/SOURCES.md.
    Used for: the authoritative CBS hierarchical codes — 77 districts
             (101-709), 753 local bodies (10101-70909), 7 states — and
             Devanagari names at palika level where verified aligned.
+            As of v2.5.0 also: the official contact block (website, email,
+            phone) for local bodies, joined on Devanagari name because the
+            harvest carries no identifiers.
    Adaptation: codes are reconciled against two further sources and
             redistributed per-record with nsoCodeVerified flags;
             per-record provenance is recorded in data/SOURCES.md.
             The districts file's Devanagari column (corrupt from row 43
             in the upstream CSV) is never consumed.
 
-Phase 3 boundary geometry (opentechcommunity/map-of-nepal, CC-BY-4.0) will
-be attributed here when it is imported. No other CC-BY-4.0 material is
-currently shipped.
+3. Nepal Administrative Boundaries (opentechcommunity/map-of-nepal)
+   Source:  https://github.com/opentechcommunity/map-of-nepal
+   License: Creative Commons Attribution 4.0 International (CC-BY-4.0),
+            https://creativecommons.org/licenses/by/4.0/
+   Used for: NOT YET USED. The boundary geometry in data/_raw/boundaries/ is
+            vendored and SHA-256 pinned for integrity, but no field of the
+            shipped package is derived from it: the file ships 777 features
+            against the gazetted 753 and is quarantined pending review (see
+            data/SOURCES.md, "Boundaries").
+   Adaptation: none yet. This attribution is recorded in advance of any use.
+
+No other CC-BY-4.0 material is currently shipped.

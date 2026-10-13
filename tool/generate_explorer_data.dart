@@ -28,20 +28,30 @@ void main() {
         final type = body['type'] as String;
         final cbsCode = body['cbsCode'] as int?;
         final cbsCodeVerified = body['cbsCodeVerified'] as bool? ?? false;
+        final confidence = body['cbsCodeConfidence'] as String? ??
+            (cbsCodeVerified ? 'verified' : 'unverified');
 
         explorerData.add({
           'name': name,
+          if (body['nameNe'] != null) 'nameNe': body['nameNe'],
+          if (body['nameNeVerified'] == true) 'nameNeVerified': true,
           'type': type,
           'district': districtName,
           'province': provinceName,
+          if (district['nameNe'] != null) 'districtNe': district['nameNe'],
           'cbsCode': cbsCode,
           'cbsCodeVerified': cbsCodeVerified,
+          'cbsCodeConfidence': confidence,
           'isoCode': isoCode,
           if (body['lat'] != null) 'lat': body['lat'],
           if (body['lng'] != null) 'lng': body['lng'],
           if (body['geoSource'] != null) 'geoSource': body['geoSource'],
           if (body['wards'] != null) 'wards': body['wards'],
           if (body['wardsVerified'] == true) 'wardsVerified': true,
+          if (body['website'] != null) 'website': body['website'],
+          if (body['email'] != null) 'email': body['email'],
+          if (body['phone'] != null) 'phone': body['phone'],
+          if (body['zipCodes'] != null) 'zipCodes': body['zipCodes'],
         });
       }
     }
@@ -61,13 +71,16 @@ void main() {
   File('docs/data.json').writeAsStringSync(encoder.convert(explorerData));
 
   // Stats
-  final verified = explorerData.where((d) => d['cbsCode'] != null).length;
+  final coded = explorerData.where((d) => d['cbsCode'] != null).length;
+  final doubled =
+      explorerData.where((d) => d['cbsCodeConfidence'] == 'verified').length;
   final mapped = explorerData.where((d) => d['lat'] != null).length;
   final warded = explorerData.where((d) => d['wards'] != null).length;
   print('Generated docs/data.json');
   print('Total records: ${explorerData.length}');
-  print('Verified CBS codes: $verified');
-  print('Unverified: ${explorerData.length - verified}');
+  print('With CBS code: $coded ($doubled doubly-attested, '
+      '${coded - doubled} single-source)');
+  print('Without CBS code: ${explorerData.length - coded}');
   print('With coordinates: $mapped');
   print('Without coordinates: ${explorerData.length - mapped}');
   print('With wards: $warded');

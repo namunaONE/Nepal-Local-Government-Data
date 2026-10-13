@@ -23,7 +23,7 @@ re-fetchable from the URLs below. Integrity is verified against
 | 2 | `sagautam5/local-states-nepal` | `master` | MIT | No | 2026-10-11 |
 | 3 | `l3lackcurtains/nepali-geo-pro-max` | `main` | MIT | No | 2026-10-11 |
 | 4 | `open-admin-data/nepal-administrative-divisions` | `main` | **CC-BY-4.0** | **Yes** | 2026-10-11 |
-| 5 | `opentechcommunity/map-of-nepal` | `master` | **CC-BY-4.0** | **Yes** | *not fetched — Phase 3* |
+| 5 | `opentechcommunity/map-of-nepal` | `master` | **CC-BY-4.0** | **Yes** | 2026-10-13 |
 | 6 | opendatanepal `geographical-codes-for-states-districts-and-local-bodies` (CBS harvest) | CKAN resource IDs, see §6 | **CC-BY** (`license_id: cc-by`, re-verified at fetch) | **Yes — via NOTICE** | 2026-10-11 |
 
 ## File-level pins and blob SHAs
@@ -136,6 +136,172 @@ English spellings are UPPERCASE variants (`CHITAWAN`, `DHANUSA`,
 **Used for:** `nsoCode` (verified), `nsoCodeVerified`, district-code
 resolution, 4th Devanagari vote (palika level, where aligned).
 
+## Code confidence tiers (`resolve_code_tiers.dart`, v2.4.0)
+
+`verify_codes.dart` is deliberately strict: a code is `verified` only when
+postal-2025 and the CBS harvest independently name the same code for the same
+entity. That rule is right, but it left **206 of 753 palikas with
+`cbsCode == null`** even though the CBS roster names every one of them — so a
+consumer building a code-keyed map to join against government datasets was
+silently dropping over a quarter of Nepal's local bodies.
+
+`resolve_code_tiers.dart` keeps the strict tier and adds a weaker one that is
+**published with an honest label rather than discarded**:
+
+- `verified` (548) — unchanged: doubly-attested.
+- `singleSource` (196) — one attestation from the authoritative CBS roster.
+  Accepted only when **all** of these hold:
+  1. the row is in the same district (PDD prefix match),
+  2. its palika type agrees after canonicalising the harvest's own dialect
+     (`Metropolitian`, `Municipaity`, `Gaun Palika`, `Gaunpaika` — see
+     `cbsTypeToCanonical` in `tool/merge/common.dart`),
+  3. its normalized name is within Levenshtein distance 2 of ours, **and is
+     the unique best such candidate** (a tie is a guess, so it is refused), or
+     the pairing is forced by elimination — exactly one of our palikas and
+     exactly one free CBS row of that type remain in a district whose roster
+     matches the CBS roster type-for-type.
+- `unverified` (9) — no defensible code; `cbsCode` stays null. These are
+  genuine ambiguities (several unclaimed same-type rows in one district, where
+  any assignment would be a permutation guess), not omissions.
+
+Two invariants are machine-enforced, so a wrong code cannot ship:
+
+- **Bijection** — the assignment set is forced one-to-one; no two palikas can
+  share a code.
+- **District containment** — every code's PDD prefix must equal the CBS code of
+  its owning district. `tool/generate.dart` re-checks both and refuses to emit.
+
+Per-record evidence for all 753 palikas is written to
+`data/_stage/code_tiers.json`.
+
+> **Honesty note.** `singleSource` is *one* source, not two. It is offered for
+> joins and clearly labelled; anything load-bearing (payments, statutory
+> filings, addressing) should use `verified` only.
+
+## Boundaries (source 5) — pinned, geometry quarantined
+
+`data/_raw/boundaries/oknp_local_levels.{geojson,topojson}` are now fetched
+and SHA-256 pinned. They were previously untracked in the manifest, which made
+`verifyProvenance()` fail — and because that gate is the first thing every
+merge tool runs, **the whole pipeline was unrunnable**. Pinning restores it.
+
+The geometry itself is still **quarantined from the merge**:
+
+- The GeoJSON ships **777** features against the gazetted 753 — the same
+  over-count defect class as source #4.
+- Its properties use the CBS harvest's spellings (`Aathrai Tribeni`, not our
+  `Athrai Tribeni`) and carry no PDDPP code, so joining it to the dataset
+  requires the same name-folding work as the code pipeline.
+
+Nothing from this source is consumed by any shipped artifact yet. Admitting it
+requires the Phase 3 review: reconcile the feature count against the roster,
+define the district-containment check for geometry, and add the CC-BY-4.0
+attribution to `NOTICE`. The PMTiles workflow
+(`.github/workflows/pmtiles.yml`) builds a tile pyramid from it for on-demand
+map delivery and does not alter the dataset.
+
+## Bilingual names (`attach_bilingual.dart`, v2.5.0)
+
+`nameNe` is taken from upstream rosters, never transliterated from the English
+name: a machine transliteration is a guess about how a Nepali speaker spells a
+place, and it disagrees with the gazette, the building and the voter roll often
+enough to matter.
+
+| Level | Named | Corroborated by two sources |
+|---|---|---|
+| Province | 7/7 | 6/7 |
+| District | 77/77 | 77/77 |
+| Local body | 731/753 | 450/731 |
+
+- **Primary:** source #1 (`abinrimal`), `name_ne`.
+- **Second vote / fallback:** source #4 (`open-admin-data`), `name.local`.
+  Where abinrimal's roster is short in a district or blank for a row, this
+  source fills the gap — it is never used as an *identifier*, because it ships
+  775 units against 753.
+
+**What `nameNeVerified` means.** True only when the two sources produce the
+*same string*. False does not mean the name is doubtful: of 704 palikas where
+both sources spoke, **262 differ only in orthography** — `ब`/`व`, `ी`/`ि`, the
+candrabindu, `प्प`/`प`. That is the same phenomenon as the English spelling
+variants documented for source #3, and it mirrors them one for one. Both
+sources agreed on which palika it is; they disagree on the letters.
+
+**Matching rule.** Palikas are identified from the *English* name, scoped to
+the district, by normalized name (lowercased, type suffix and parentheticals
+stripped, punctuation flattened) with Levenshtein distance ≤ 2 and a
+unique-best-candidate requirement. Ties are refused, never arbitrated.
+
+> **Why 2 and not 4.** A threshold of 4 was implemented and measured. It
+> produced confidently wrong pairings between genuinely different neighbouring
+> palikas — our `Dhorchaur` taking Bagachour's name, `Sulikot` taking
+> Ajirkot's, `Kanda` taking Masta's. Distance 2 still covers every observed
+> transliteration variant (`Pauwa Dunma`/`Pauwadungma`, `Gulmi Durbar`/
+> `Gulmidarbar`, `Kapilvastu`/`Kapilbastu`). A wrong name is worse than an
+> absent one.
+
+**Source defects absorbed:**
+- abinrimal's `code` column holds only four distinct values (it is a type
+  code, not an identifier). It cannot key a "already matched" set; doing so
+  silently dropped 575 matches. Identity uses `district_code` + `name_en`.
+- abinrimal duplicates `Gulmi / Chatrakot`. Duplicate Devanagari names inside a
+  district are resolved by evidence strength (corroboration first, then match
+  distance); the weaker claim is dropped rather than duplicating a name across
+  two palikas.
+- Two abinrimal rows carry no Devanagari at all (Meringden, Bogtan Foodsil).
+  open-admin-data supplies them.
+
+## Administrative attributes (`attach_attributes.dart`, v2.5.0)
+
+**All fields below are single-source.** They were extracted by earlier steps
+and held back of the schema for exactly this reason; they ship now with the
+limitation stated on every field. Treat `areaSqKm` as approximate for anything
+load-bearing.
+
+| Field | Coverage | Source |
+|---|---|---|
+| `District.headquarter`, `areaSqKm`, `website` | 77/77 | #2 sagautam5 |
+| `Province.capital`, `areaSqKm`, `website` | 7/7 | #2 sagautam5 |
+| `LocalBody.website`, `email`, `phone` | 371/753 | #6 MoFAGA harvest |
+| `LocalBody.zipCodes` | 474/753 | #4 open-admin-data |
+
+**MoFAGA joins on Devanagari, not on a code.** The harvest carries no
+identifiers, so a palika is matched by its bare Devanagari name. Two hazards
+were measured and handled:
+
+- *District-keyed matching loses whole districts.* 12 districts spell their
+  Devanagari differently in this source (`स्याङ्जा` vs `स्याञ्जा`, `रुपन्देही`
+  vs `रूपन्देही`, `नवलपरासी पूर्व` …). Indexing by district silently dropped all
+  of their contact details. Indexing is therefore global, by bare name.
+- *Bare Devanagari palika names are not unique.* Many rural municipalities
+  share a name across districts — 41 collisions in this harvest. A candidate is
+  accepted only when it is unambiguous: exactly one row nationwide, or several
+  of which exactly one sits in our district. Where our own roster has two
+  palikas sharing a Devanagari name, **55 palikas are skipped entirely** rather
+  than handed a contact block that may belong to a different palika.
+
+sagautam5's province names also need one fold: it spells Sudurpashchim with
+one `c` fewer ("Sudurpaschim").
+
+## Ward-level records — NOT AVAILABLE
+
+`wards` is a **count**. No vendored source names individual wards, so
+6,743 ward records cannot be published without inventing them.
+
+Checked and confirmed absent:
+
+| Source | What it actually holds |
+|---|---|
+| #6 MoFAGA `mofaga_all.json` | 750 rows, all palikas — no wards |
+| #3 nepali-geo-pro-max `local-units.ts` | ~757 rows, all palikas — no wards |
+| #2 sagautam5 | `wards` **count** only |
+| #4 open-admin-data | `children_count` is an empty object |
+| #1 abinrimal | 753 palikas, no ward layer |
+
+Adding this layer needs a new source, fetched and pinned like any other, before
+any tool is written. Candidates: MoFAGA's own ward-level roster pages, ward
+boundaries GeoJSON, or Election Commission delimitation data. Until one is
+pinned, the honest position is a count and a documented gap.
+
 ## Ward counts (`verify_wards.dart`, HYA-324)
 
 Per-palika ward counts merge from two 753-row snapshots (sagautam5
@@ -148,6 +314,13 @@ verified, Lumbini fully reconciled (109 units, 983 wards). 8 gaps are
 MoFAGA-backed roster defects (ours+CBS vs sag+MoFAGA splits + 2 silent
 harvest gaps), recorded in `data/_stage/wards.json` review — never guessed.
 Human decision: Janakpurdham 25 (sub-metro official; geo-pro-max stale 24).
+
+> **Two ward totals, reported separately.** The declared national total is
+> **6,743**; the per-palika rows sum to **6,697**. The 46-ward difference is
+> the 8 palikas above, pending roster adjudication. The package exposes both
+> (`NationalStats.wards` vs `verifiedWards`, `Province.unreconciledWards`)
+> rather than publishing one number that silently disagrees with the other.
+> Only Lumbini reconciles exactly (109 units, 983 wards).
 
 ## Website basemap (not shipped in the package)
 

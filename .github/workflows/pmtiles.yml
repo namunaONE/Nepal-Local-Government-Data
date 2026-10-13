@@ -1,0 +1,67 @@
+name: Generate PMTiles
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/_raw/boundaries/oknp_local_levels.geojson'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate-pmtiles:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Install tippecanoe and pmtiles
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y build-essential libsqlite3-dev zlib1g-dev
+          # Install tippecanoe
+          git clone https://github.com/felt/tippecanoe.git /tmp/tippecanoe
+          cd /tmp/tippecanoe
+          make -j$(nproc)
+          sudo make install
+          # Install pmtiles
+          curl -fsSL https://github.com/protomaps/PMTiles/releases/download/v1.11.0/pmtiles-1.11.0-linux-x86_64.tar.gz | tar -xz -C /usr/local/bin
+
+      - name: Generate MBTiles from GeoJSON
+        run: |
+          tippecanoe \
+            -o data/_raw/boundaries/nepal_local_levels.mbtiles \
+            --layer=nepal_local_levels \
+            --minimum-zoom=6 \
+            --maximum-zoom=12 \
+            --drop-densest-as-needed \
+            --extend-zooms-if-still-dropping \
+            --force \
+            data/_raw/boundaries/oknp_local_levels.geojson
+
+      - name: Convert MBTiles to PMTiles
+        run: |
+          pmtiles convert \
+            data/_raw/boundaries/nepal_local_levels.mbtiles \
+            data/_raw/boundaries/nepal_local_levels.pmtiles
+
+      - name: Verify PMTiles
+        run: |
+          pmtiles show data/_raw/boundaries/nepal_local_levels.pmtiles
+
+      - name: Upload PMTiles as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: nepal-local-levels-pmtiles
+          path: data/_raw/boundaries/nepal_local_levels.pmtiles
+          retention-days: 30
+
+      - name: Create Release (on tag)
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v1
+        with:
+          files: data/_raw/boundaries/nepal_local_levels.pmtiles
+          generate_release_notes: true

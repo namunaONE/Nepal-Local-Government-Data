@@ -1,6 +1,6 @@
 {
   "provenance": {
-    "generated": "2026-10-11T09:50:58.002485Z",
+    "generated": "2026-10-13T10:21:44.088948Z",
     "tool": "tool/merge/verify_codes.dart",
     "inputs": [
       "data/_raw/cbs-codes/cbs_local_bodies.csv",
@@ -12,8 +12,8 @@
     "rule": "VERIFIED iff postal-2025 T1/T2 code is doubly-attested by a same-district CBS row with agreeing normalized name; else null. Nothing is guessed."
   },
   "counts": {
-    "verified": 547,
-    "unverified": 206,
+    "verified": 548,
+    "unverified": 205,
     "total": 753
   },
   "assignments": [
@@ -5620,9 +5620,9 @@
       "district": "Jumla",
       "name": "Kanaka Sundari",
       "type": "ruralMunicipality",
-      "nsoCode": null,
-      "nsoCodeVerified": false,
-      "evidence": "no doubly-attested code; suggestion \"kanaka sundari rural municipality\"=60402 (d=0)"
+      "nsoCode": "60402",
+      "nsoCodeVerified": true,
+      "evidence": "postal key \"kanaka sundari rural municipality\"; CBS code 60402 (Jumla) (tier T1)"
     },
     {
       "province": "karnali",

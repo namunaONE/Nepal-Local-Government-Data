@@ -154,6 +154,37 @@ function typeBadge(type) {
   return `<span class="type-badge type-${meta.cls}" title="${escapeHtmlAttr(meta.full)}">${escapeHtml(meta.label)}</span>`;
 }
 
+// Bilingual label: English plus the Devanagari name when the record has one.
+// The separator is only added when there IS a second script, so a record
+// without a Devanagari name renders cleanly instead of leaving a dangling "·".
+function bilingualName(item) {
+  const en = escapeHtml(item.name);
+  const ne = item.nameNe ? escapeHtml(item.nameNe) : '';
+  return ne ? `${en}<span class="name-ne">${ne}</span>` : en;
+}
+
+// CBS code confidence, as three distinct states rather than two.
+//   verified     — doubly-attested (postal-2025 + CBS roster)
+//   singleSource — one attestation from the CBS roster; usable for joins
+//   unverified   — no defensible code
+function confidenceMeta(item) {
+  const tier = item.cbsCodeConfidence
+    || (item.cbsCodeVerified ? 'verified' : (item.cbsCode != null ? 'singleSource' : 'unverified'));
+  switch (tier) {
+    case 'verified':
+      return { cls: 'verified', label: '✓ Verified', full: 'Doubly-attested: the postal-2025 list and the CBS roster name the same code' };
+    case 'singleSource':
+      return { cls: 'single-source', label: '~ Single', full: 'One attestation from the CBS roster only. Usable for joins, but not doubly-attested' };
+    default:
+      return { cls: 'unverified', label: '— None', full: 'No defensible code. Left empty on purpose rather than guessed' };
+  }
+}
+
+function tierBadge(item) {
+  const meta = confidenceMeta(item);
+  return `<span class="${meta.cls}" title="${escapeHtmlAttr(meta.full)}">${escapeHtml(meta.label)}</span>`;
+}
+
 // Explorer functionality (if on explorer page)
 if (document.querySelector('.explorer-table')) {
   initExplorer();
@@ -238,9 +269,13 @@ function initExplorer() {
     const type = typeFilter.value;
 
     filteredData = allData.filter(item => {
+      // Search both scripts: an English or Devanagari query matches either
+      // name, so the explorer is usable in both languages.
       const matchesSearch = !search ||
         item.name.toLowerCase().includes(search) ||
+        (item.nameNe && item.nameNe.toLowerCase().includes(search)) ||
         item.district.toLowerCase().includes(search) ||
+        (item.districtNe && item.districtNe.toLowerCase().includes(search)) ||
         item.province.toLowerCase().includes(search);
       const matchesProvince = !province || item.province === province;
       const matchesDistrict = !district || item.district === district;
@@ -257,13 +292,19 @@ function initExplorer() {
     const end = start + pageSize;
     const pageData = filteredData.slice(start, end);
 
-    // Update stats
-    const verified = filteredData.filter(d => d.cbsCode !== null).length;
+    // Update stats. Code confidence is three-state, not two: a
+    // single-source code is attested (usable for joins) but not
+    // doubly-attested, and collapsing the two would overstate the gap.
+    const doubled = filteredData.filter(d => d.cbsCodeConfidence === 'verified').length;
+    const single = filteredData.filter(d => d.cbsCodeConfidence === 'singleSource').length;
+    const uncoded = filteredData.length - doubled - single;
     const mapped = filteredData.filter(d => d.lat != null && d.lng != null).length;
     statsEl.innerHTML = `
       <span>Total: <strong>${filteredData.length}</strong></span>
-      <span>Verified CBS: <strong>${verified}</strong></span>
-      <span>Unverified: <strong>${filteredData.length - verified}</strong></span>
+      <span>Coded: <strong>${doubled + single}</strong></span>
+      <span>Verified: <strong>${doubled}</strong></span>
+      <span>Single-source: <strong>${single}</strong></span>
+      <span>No code: <strong>${uncoded}</strong></span>
       <span>Mapped: <strong>${mapped}</strong></span>
     `;
     syncMap(filteredData);
@@ -285,12 +326,12 @@ function initExplorer() {
     } else {
       tableBody.innerHTML = pageData.map(item => `
         <tr data-cbs="${item.cbsCode ?? ''}" data-lat="${item.lat ?? ''}" data-lng="${item.lng ?? ''}" data-name="${escapeHtml(item.name)}" tabindex="0" title="${item.lat != null ? 'Click to locate on map' : 'No coordinates available'}">
-          <td>${escapeHtml(item.name)}</td>
+          <td>${bilingualName(item)}</td>
           <td>${typeBadge(item.type)}</td>
-          <td>${escapeHtml(item.district)}</td>
+          <td>${item.districtNe ? `${escapeHtml(item.district)}<span class="name-ne">${escapeHtml(item.districtNe)}</span>` : escapeHtml(item.district)}</td>
           <td>${escapeHtml(item.province)}</td>
           <td>${item.cbsCode !== null ? `<code>${item.cbsCode}</code>` : '<span class="unverified">—</span>'}</td>
-          <td>${item.cbsCodeVerified ? '<span class="verified">✓ Verified</span>' : '<span class="unverified">Unverified</span>'}</td>
+          <td>${tierBadge(item)}</td>
           <td>${item.isoCode ? `<code>${item.isoCode}</code>` : '—'}</td>
           <td>${item.wards != null ? `${item.wards}` : '<span class="unverified">—</span>'}</td>
         </tr>
@@ -474,14 +515,17 @@ function syncMap(items) {
         weight: 2,
         opacity: 1,
         fillColor: color,
-        fillOpacity: item.cbsCodeVerified ? 0.85 : 0.2,
+        fillOpacity: item.cbsCode != null ? 0.85 : 0.2,
       });
       const cbs = item.cbsCode != null ? `<code>${item.cbsCode}</code>` : '—';
       const wards = item.wards != null ? `${item.wards} wards` : 'wards n/a';
+      const tier = confidenceMeta(item);
+      const tierShort = { verified: '✓ verified', singleSource: '~ single-source', unverified: '— no code' }[tier.cls];
       m.bindPopup(
         `<strong>${escapeHtmlAttr(item.name)}</strong>` +
+        (item.nameNe ? `<span class="popup-ne">${escapeHtmlAttr(item.nameNe)}</span><br>` : '') +
         `${escapeHtmlAttr(item.district)}, ${escapeHtmlAttr(item.province)}<br>` +
-        `CBS: ${cbs} ${item.cbsCodeVerified ? '✓' : '(unverified)'} · ${wards}<br>` +
+        `CBS: ${cbs} (${tierShort}) · ${wards}<br>` +
         `<span style="color:#64748b;font-size:12px">${item.lat.toFixed(3)}, ${item.lng.toFixed(3)} · ${escapeHtmlAttr(item.geoSource || 'compiled')}</span>`
       );
       return m;

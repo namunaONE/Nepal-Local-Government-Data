@@ -162,7 +162,7 @@ void main() {
               .length,
           460);
       final verified = NepalAdminApi.getVerifiedLocalBodies();
-      expect(verified.length, 547);
+      expect(verified.length, 548);
       expect(verified.every((b) => b.cbsCodeVerified), isTrue);
     });
 
@@ -184,7 +184,7 @@ void main() {
       );
       expect(
           bodies.whereUrban.length + bodies.whereRural.length, bodies.length);
-      expect(bodies.whereVerified.length, 547);
+      expect(bodies.whereVerified.length, 548);
       expect(bodies.ofType(LocalBodyType.metropolitan).length, 6);
     });
 

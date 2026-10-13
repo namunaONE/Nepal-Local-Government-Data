@@ -4,16 +4,167 @@ All notable changes to this package are documented in this file.
 The format follows [Keep a Changelog](https://keepachangelog.com/) and the
 package adheres to [Semantic Versioning](https://semver.org/).
 
+## 2.5.0 — 2026-10-13
+
+The bilingual release. For a package about Nepal's own government structure,
+the Nepali name of a palika is not a nicety — it is what appears on the
+building, in the gazette, and on every form a citizen fills in. It was
+absent.
+
+### Added
+- **Devanagari names at all three levels.** `Province.nameNe`,
+  `District.nameNe`, `LocalBody.nameNe`, plus `nameNeVerified` on each.
+  Coverage: **7/7 provinces, 77/77 districts, 731/753 palikas**, of which 450
+  are corroborated by two independent sources.
+  - Nothing is transliterated. The 22 palikas with no attested Devanagari
+    name keep `nameNe == null` and are listed in the CHANGELOG and the test
+    suite.
+  - `nameNeVerified == false` means the two sources spell the same name
+    differently *orthographically* — 262 of them differ only in ब/व, ी/ि, the
+    candrabindu, or प्प/प. It does **not** mean the name is wrong. Both
+    sources agreed on the entity; they disagree on spelling.
+- **Bilingual search.** `search()` now matches both scripts in either
+  direction, substring-wise, so `search('भरतपुर')` and `search('Bharatpur')`
+  return the same palika, and `search('भारत')` matches a fragment.
+- `LocalBody.nameNeOrName` (never null) and `LocalBody.displayBoth`
+  (`'Bharatpur · भरतपुर'`); the same pair on `District` and `Province`.
+  Bilingual tables and pickers become one line, and `displayBoth` degrades to
+  a single script rather than rendering a dangling separator.
+- **Administrative attributes**, all **single-source** and documented as such
+  (`data/SOURCES.md`):
+  - `District.headquarter`, `District.areaSqKm`, `District.website` — 77/77
+    districts complete.
+  - `Province.capital`, `Province.areaSqKm`, `Province.website` — 7/7.
+  - `LocalBody.website`, `email`, `phone` — 371/753, with
+    `LocalBody.hasContact`. The remaining 382 keep nulls rather than plausible
+    values.
+  - `LocalBody.zipCodes` — 474/753, sorted and de-duplicated.
+- `District.localBodyByName(name)` — one-district scoped lookup that returns a
+  single body or null.
+- `tool/merge/attach_bilingual.dart`, `tool/merge/attach_attributes.dart`,
+  and per-record evidence in `data/_stage/bilingual.json`.
+
+### Fixed
+- Kathmandu's Devanagari name carried a trailing Nepali full stop
+  ("काठमाडौं ।") from the upstream roster. `cleanDisplayName` now trims edge
+  punctuation from every name; internal spaces are preserved, because
+  multi-word names are correct. The danda removal also made Kathmandu
+  corroborated (449 → 450).
+- abinrimal's `code` column has only four distinct values — it is a type code,
+  not an identifier. Keying a "already matched" set on it silently dropped 575
+  legitimate Devanagari matches; identity now uses `district_code` + name.
+- `attach_attributes` no longer keys on the MoFAGA district name: 12 districts
+  spell their Devanagari differently there ("स्याङ्जा" vs "स्याञ्जा",
+  "रुपन्देही" vs "रूपन्देही"), which silently lost all of their contact
+  details. Matching is now by bare palika name with a uniqueness gate.
+- Bare Devanagari palika names are **not** unique nationwide (41 collisions in
+  the MoFAGA harvest: many rural municipalities share a name across
+  districts). 55 palikas are now skipped rather than given a contact block
+  that may belong to a different palika.
+
+### Changed
+- The pipeline is now 7 steps. Steps 4 (Devanagari) and 5 (attributes) are
+  **order-dependent**: MoFAGA rows carry no codes, so attributes join on the
+  Devanagari name. Running them out of order would silently attach nothing to
+  731 records.
+- The Devanagari name matcher rejects anything beyond normalized-name distance
+  2. Distance 3-4 was measured and produced confidently WRONG pairings across
+  neighbouring palikas — our "Dhorchaur" taking Bagachour's name, "Sulikot"
+  taking Ajirkot's, "Kanda" taking Masta's. A wrong name is far worse than an
+  absent one, so the threshold is conservative and the refusals are listed.
+
+### Not done, and why
+- **Ward-level records (6,743).** Every vendored source was checked: MoFAGA is
+  a 750-row palika table, nepali-geo-pro-max has ~757 palika rows,
+  sagautam5 carries ward *counts* only, and open-admin-data's `children_count`
+  is empty. No source in `data/_raw/` names individual wards, so publishing
+  them would mean inventing 6,743 records. This needs a new source (MoFAGA
+  ward rosters, ward-level boundaries, or Election Commission data) fetched
+  and pinned first — see `data/SOURCES.md` § "Ward-level records".
+
+## 2.4.0 — 2026-10-13
+
+### Added
+- **CBS code confidence tiers.** `CbsCodeConfidence` (`verified` /
+  `singleSource` / `unverified`) plus `LocalBody.cbsCodeConfidence`. Code
+  coverage rises **547 → 744 of 753 (98.8%)** because a code attested by the
+  CBS roster alone is no longer discarded — it is published with an honest
+  label instead. `cbsCodeVerified` still means exactly what it did
+  (doubly-attested), so existing code behaves identically.
+  - `verified` (548) — postal-2025 **and** the CBS harvest name the same
+    code for the same entity.
+  - `singleSource` (196) — exactly one same-district, same-type row of the
+    authoritative CBS roster whose normalized name is within Levenshtein
+    distance 2, **or** a pairing forced by elimination inside a district
+    whose roster matches the CBS roster type-for-type. Assignment is forced
+    to be a bijection, so no two palikas can share a code.
+  - `unverified` (9) — no defensible code; `cbsCode` stays null. Documented
+    ambiguities, never guesses.
+- `getLocalBodiesWithCode()`, `getSingleSourceLocalBodies()`,
+  `getUncodedLocalBodies()`, `getLocalBodyByCbsVerified()`.
+- `LocalBody.hasCbsCode`, `cbsCodeString` (zero-padded 5-digit PDDPP for
+  string joins), `districtCbsCodeString`, `isCodeAndCoordinateMapped`.
+- `LocalBodyListX.whereCoded`, `whereDoublyAttested`, `whereSingleSource`,
+  `whereUncoded`, `whereCodeAndCoordinateMapped`, `totalWards`, `byCbsCode`
+  (code-keyed map for joining against government datasets).
+- `getLocalBodiesByName(name, district)` — disambiguates the duplicate names
+  that make `search()` ambiguous, without scanning the whole country.
+- `getLocalBodyByFullPath()` — resolves `'Bharatpur, Chitwan, Bagmati'`,
+  order-insensitively, returning null when the path is ambiguous rather than
+  silently picking one.
+- `District.fromJson`, `Province.fromJson`, `NationalStats.toJson()`, and
+  `==`/`hashCode` on all three models. README previously claimed JSON
+  serialization "on all models"; it now actually is.
+- `tool/merge/resolve_code_tiers.dart` — the tier resolver, with
+  district-prefix and bijection gates. `--dry-run` reports without writing.
+- `tool/pipeline.dart` — one command (`dart run tool/pipeline.dart`) runs
+  every merge and codegen step in order and aborts on the first failure,
+  replacing a hand-run sequence in which a forgotten step failed silently.
+- CI: `docs/data.json` is now drift-checked (the website could previously
+  disagree with the package); a Flutter job compile-checks
+  `example/brand_theme.dart` (the one Dart file nothing ever compiled); a
+  weekly scheduled provenance watch re-verifies `data/_raw/` against its
+  SHA-256 pins and files an issue on upstream drift; coverage reporting added.
+
+### Changed
+- `getLocalBodyByCbs()` now resolves the single-source tier too, so it
+reaches 744 of 753 instead of 547. Use `getLocalBodyByCbsVerified()` for
+the strict doubly-attested reading.
+- The merge tools tolerate more of the CBS harvest's own dialect: the
+"Metropolitian" typo and, newly, "Municipaity", "Gaun Palika" and
+"Gaunpaika". Previously three rows could not be typed at all, which
+silently blocked Gulmi Durbar, Kanaka Sundari and Bhirkot.
+- Kanaka Sundari (Jumla) is now doubly-attested at 60402, because its CBS
+row stopped being unreadable.
+- CBS/alignment gate reports on 750/753 rows (was 747).
+
+### Fixed
+- **Two ward totals no longer disagree silently.** `NationalStats.wards`
+(6,743) is the declared national figure; `NationalStats.verifiedWards`
+(6,697) is what the per-palika rows actually sum to. They differ by 46
+because 8 palikas carry no verified count. Both are exposed, along with
+`wardGaps` and `unreconciledWards`, and `Province` now offers
+`declaredWards` / `verifiedWards` / `unreconciledWards` / `wardsReconcile`.
+Previously a caller summing `District.wards` got 6,697 from a package whose
+national stat said 6,743 with no indication that anything was missing.
+- `tool/generate.dart` now fails loudly on a malformed dataset: a tier that
+contradicts the verified flag, a duplicate CBS code, or a code outside its
+own district is an error rather than something that compiles.
+- The boundary GeoJSON/TopoJSON in `data/_raw/boundaries/` were unpinned, so
+the provenance gate failed and **the entire merge pipeline could not run**.
+Both are now pinned; geometry remains quarantined from the merge (see
+`data/SOURCES.md` §5).
+
 ## 2.3.1 — 2026-10-13
 
 ### Fixed
 - Provenance freshness: `meta.dataAsOf` corrected `2026-10-09` →
-  `2026-10-13` (snapshot verified through the v2.3.0 ward/geo merges).
+`2026-10-13` (snapshot verified through the v2.3.0 ward/geo merges).
 - New golden test pins `dataAsOf` to never regress below the last
-  verification date.
+verification date.
 - Website: Brand System v2 page (`brand.html`) linked from all navs and
-  footers; `llms.txt` / `llms-full.txt` cover the dual-seed theme
-  (navy `#002C6D` × green `#4FD166`) with the `copyWith` gotcha.
+footers; `llms.txt` / `llms-full.txt` cover the dual-seed theme
+(navy `#002C6D` × green `#4FD166`) with the `copyWith` gotcha.
 
 ## 2.3.0 — 2026-10-13
 

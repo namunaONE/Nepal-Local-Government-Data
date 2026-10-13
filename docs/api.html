@@ -482,7 +482,7 @@ print('Wards: ${stats.wards}');                // 6743</code></pre>
           <h3>New Capabilities</h3>
           <ul>
             <li>Look up by ISO code: <code>getProvinceById('NP-P3')</code></li>
-            <li>Check CBS verification: <code>lb.cbsCodeVerified</code> (547/753 verified)</li>
+            <li>Check how strongly the code is attested: <code>lb.cbsCodeConfidence</code> — <code>verified</code> (548), <code>singleSource</code> (196), <code>unverified</code> (9). <code>lb.cbsCodeVerified</code> is true only for <code>verified</code>.</li>
             <li>District codes: <code>district.cbsCode</code> (3-digit)</li>
           </ul>
         </section>

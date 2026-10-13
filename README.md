@@ -22,15 +22,19 @@ Pure Dart package. Zero runtime dependencies. Data ships in the box.
 
 | Feature | Description |
 |---------|-------------|
+| **Bilingual** | Devanagari names for all 7 provinces, 77 districts and **731/753 palikas** — never transliterated, never guessed |
+| **Bilingual search** | `search('भरतपुर')` and `search('Bharatpur')` return the same palika; fragments match too |
 | **Complete hierarchy** | Province → District → Local Body (palika) |
-| **Official codes** | 547/753 palikas with verified 5-digit CBS codes (PDDPP), all 77 districts (3-digit), all 7 provinces (NP-P1…NP-P7) |
-| **Ward counts** | 745/753 palikas with verified ward counts; `District.wards` sums; 8 documented roster-defect gaps |
+| **Official codes** | 744/753 palikas with CBS 5-digit codes (PDDPP), all 77 districts (3-digit), all 7 provinces (NP-P1…NP-P7) |
+| **Honest confidence tiers** | Every code labelled `verified` (548) / `singleSource` (196) / `unverified` (9) — you choose how much to trust it |
+| **Ward counts** | 745/753 palikas with verified ward counts; declared vs substantiated totals reported side by side; 8 documented roster-defect gaps |
+| **Administrative attributes** | District HQ, area and website (77/77); province capital, area and website (7/7); palika website/email/phone and postal codes |
 | **Map coordinates** | 726/753 palikas with approximate centroids (`lat`/`lng` + `geoSource`); `hasCoordinates`, `whereMapped` |
-| **Type-safe models** | `Province`, `District`, `LocalBody`, `LocalBodyType` enum |
+| **Type-safe models** | `Province`, `District`, `LocalBody`, `LocalBodyType`, `CbsCodeConfidence` enums |
 | **Hierarchical queries** | Navigate province → district → local body with typed accessors |
-| **Typed search** | Disambiguates duplicate names by district/province context |
-| **Computed stats** | National & provincial totals (not hardcoded) |
-| **JSON serialization** | `toJson()` / `fromJson()` on all models |
+| **Typed search** | Disambiguates duplicate names by district/province context, by `fullPath`, or by district-scoped lookup |
+| **Computed stats** | National & provincial totals (not hardcoded), with declared-vs-verified ward reconciliation |
+| **JSON serialization** | `toJson()` / `fromJson()` + `==` / `hashCode` on all models |
 | **Zero dependencies** | Pure Dart, works offline on every platform |
 | **130/130 pub.dev** | Full score: analysis, formatting, tests, docs, platform support |
 
@@ -112,8 +116,28 @@ Sub-Metro: ${stats.subMetro}            // 11
 Municipalities: ${stats.municipalities} // 276
 Rural Municipalities: ${stats.ruralMunicipalities} // 460
 Total: ${stats.total}                   // 753
-Wards: ${stats.wards}                   // 6,743
+Wards: ${stats.wards}                   // 6,743 declared
 ''');
+
+  // `wards` is the declared national figure. `verifiedWards` is what the
+  // per-palika rows we can actually substantiate add up to. They differ by
+  // 46 because 8 palikas carry no verified ward count — so the package
+  // reports both instead of quietly picking one.
+  assert(stats.verifiedWards == 6697);
+  assert(stats.wardGaps == 8);
+  assert(stats.unreconciledWards == stats.wards - stats.verifiedWards);
+
+  // ──────────────────────────────────────────────
+  // Code confidence — join to government datasets
+  // ──────────────────────────────────────────────
+  // 744 of 753 palikas carry a code. Each says how strongly it is attested.
+  final byCode = NepalAdminApi.getAllLocalBodies().byCbsCode; // Map<int, LocalBody>
+  print('Joinable by CBS code: ${byCode.length}/753');
+
+  for (final lb in NepalAdminApi.getSingleSourceLocalBodies().take(2)) {
+    print('${lb.cbsCodeString} ${lb.name} '
+        '(${lb.cbsCodeConfidence.wireName}, verified=${lb.cbsCodeVerified})');
+  }
 
   // ──────────────────────────────────────────────
   // JSON Serialization
@@ -121,8 +145,99 @@ Wards: ${stats.wards}                   // 6,743
   final json = bharatpur.toJson();
   final restored = LocalBody.fromJson(json);
   assert(restored.cbsCode == bharatpur.cbsCode);
+  assert(restored.cbsCodeConfidence == bharatpur.cbsCodeConfidence);
 }
 ```
+
+---
+
+## 🇳🇵 Bilingual data
+
+Every level carries its Devanagari name, taken from source rosters — never
+transliterated from the English, because a machine transliteration would be a
+guess about how a Nepali speaker spells a place.
+
+```dart
+final bharatpur = NepalAdminApi.getLocalBodyByCbs(31304)!;
+print(bharatpur.name);          // Bharatpur
+print(bharatpur.nameNe);        // भरतपुर
+print(bharatpur.nameNeOrName);  // भरतपुर   (never null)
+print(bharatpur.displayBoth);   // Bharatpur · भरतपुर
+
+// Search works in both directions, including fragments.
+NepalAdminApi.search('भरतपुर').localBodies;   // same as search('Bharatpur')
+NepalAdminApi.search('भारत').localBodies;      // fragment match
+NepalAdminApi.search('चितवन').districts;       // Chitwan
+```
+
+| Level | Coverage | Corroborated by 2 sources |
+|---|---|---|
+| Province | 7/7 | 6/7 |
+| District | 77/77 | 77/77 |
+| Local body | **731/753** | 450/731 |
+
+**What `nameNeVerified == false` means.** Not that the name is wrong. It means
+the two rosters spell the *same* name differently in orthography — 262 pairs
+differ only in `ब`/`व`, `ी`/`ि`, the candrabindu, or `प्प`/`प`. Both sources
+agreed on which palika it is; they disagree on spelling. The published string
+is the primary source's.
+
+**What is missing.** 22 palikas have no attested Devanagari name and keep
+`nameNe == null` — listed by name in the CHANGELOG and pinned in the test
+suite. Nothing was invented to fill them.
+
+## 🏛️ Administrative attributes
+
+Single-source fields, documented as such in [data/SOURCES.md](data/SOURCES.md).
+Treat `areaSqKm` as approximate for anything load-bearing.
+
+```dart
+final chitwan = NepalAdminApi.getDistrictByName('Chitwan')!;
+print(chitwan.headquarter);  // Bharatpur  (the district's seat)
+print(chitwan.areaSqKm);     // 2218.0
+print(chitwan.website);      // https://dccchitwan.gov.np/
+
+final koshi = NepalAdminApi.getProvinceById('koshi')!;
+print(koshi.capital);        // Biratnagar
+
+final bharatpur = NepalAdminApi.getLocalBodyByCbs(31304)!;
+print(bharatpur.website);    // http://bharatpurmun.gov.np
+print(bharatpur.phone);      // 056-525879
+print(bharatpur.zipCodes);   // [44200]
+print(bharatpur.hasContact); // true
+```
+
+| Field | Coverage | Source |
+|---|---|---|
+| `District.headquarter` / `areaSqKm` / `website` | 77/77 | sagautam5 |
+| `Province.capital` / `areaSqKm` / `website` | 7/7 | sagautam5 |
+| `LocalBody.website` / `email` / `phone` | 371/753 | MoFAGA |
+| `LocalBody.zipCodes` | 474/753 | open-admin-data |
+
+## 🔍 Code confidence, explained
+
+A missing code and a doubtful code are different problems, so the package
+distinguishes them instead of collapsing both to `null`:
+
+| Tier | Count | Meaning | Use it for |
+|------|-------|---------|------------|
+| `verified` | 548 | postal-2025 **and** the CBS harvest name the same code | Anything load-bearing |
+| `singleSource` | 196 | One attestation from the authoritative CBS roster: a unique same-district, same-type row whose normalized name matches — or a pairing forced by elimination where the rosters agree type-for-type | Joining datasets; worth spot-checking |
+| `unverified` | 9 | No defensible code. Left `null` on purpose | Report the gap, don't guess |
+
+`cbsCodeVerified` is still exactly what it always was — `true` only for the
+doubly-attested tier — so existing code keeps working unchanged. The
+assignment is forced to be a bijection, and every code must sit inside its own
+district, both enforced by the generator.
+
+## ⚖️ Two ward totals, on purpose
+
+`NationalStats.wards` is **6,743** — the declared national figure.
+`NationalStats.verifiedWards` is **6,697** — the sum of the per-palika counts
+this package can substantiate. The 46-ward difference is the 8 palikas
+documented as roster defects in [CHANGELOG](CHANGELOG.md). Lumbini reconciles
+exactly (109 units, 983 wards); the other six provinces differ by their own
+known gaps, which `Province.unreconciledWards` reports per province.
 
 ---
 
@@ -142,14 +257,20 @@ Wards: ${stats.wards}                   // 6,743
 | `getLocalBodiesByDistrict(name)` | `List<LocalBody>` | Palikas in a district |
 | `getLocalBodiesByProvince(id)` | `List<LocalBody>` | Palikas in a province (id or ISO) |
 | `getLocalBodiesByType(type)` | `List<LocalBody>` | Palikas of one type |
-| `getLocalBodyByCbs(code)` | `LocalBody?` | By CBS PDDPP (`31304` = Bharatpur) |
-| `getVerifiedLocalBodies()` | `List<LocalBody>` | Only CBS-verified (547/753) |
+| `getLocalBodiesByName(name, district)` | `List<LocalBody>` | **Disambiguates duplicates by district** |
+| `getLocalBodyByFullPath(path)` | `LocalBody?` | **`'Bharatpur, Chitwan, Bagmati'`; null if ambiguous** |
+| `getLocalBodyByCbs(code)` | `LocalBody?` | **Any tier** — resolves 744/753 (`31304` = Bharatpur) |
+| `getLocalBodyByCbsVerified(code)` | `LocalBody?` | **Strict tier only** — 548/753 |
+| `getLocalBodiesWithCode()` | `List<LocalBody>` | **744 — the joinable set** |
+| `getVerifiedLocalBodies()` | `List<LocalBody>` | Doubly-attested only (548) |
+| `getSingleSourceLocalBodies()` | `List<LocalBody>` | Single attestation (196) |
+| `getUncodedLocalBodies()` | `List<LocalBody>` | No defensible code (9) |
 | `search(query)` | `SearchResult` | Typed search (names, ISO, full paths) |
 | `getNationalStats()` | `NationalStats` | Computed national totals |
 
-**Models**: `Province`, `District`, `LocalBody`, `LocalBodyType`, `ProvinceStats`, `NationalStats`, `SearchResult`
+**Models**: `Province`, `District`, `LocalBody`, `LocalBodyType`, `CbsCodeConfidence`, `ProvinceStats`, `NationalStats`, `SearchResult`
 
-**Helpers**: `LocalBody.fullPath` (`'Bharatpur, Chitwan, Bagmati'`), `isUrban` / `isRural`, `hasCoordinates`, `LocalBodyListX` (`sortedByName`, `sortedByFullPath`, `whereUrban`, `whereRural`, `whereVerified`, `whereMapped`, `whereWardsVerified`, `ofType`), `District.wards` sums
+**Helpers**: bilingual (`nameNe`, `nameNeOrName`, `displayBoth` on all three models), `LocalBody.fullPath` (`'Bharatpur, Chitwan, Bagmati'`), `isUrban` / `isRural`, `hasCoordinates`, `hasCbsCode`, `cbsCodeString` (zero-padded, for string joins), `LocalBodyListX` (`sortedByName`, `sortedByFullPath`, `whereUrban`, `whereRural`, `whereVerified`, `whereMapped`, `whereCoded`, `whereDoublyAttested`, `whereSingleSource`, `whereUncoded`, `whereCodeAndCoordinateMapped`, `whereWardsVerified`, `ofType`, `totalWards`, `byCbsCode`), ward reconciliation (`District.wards` / `verifiedWardCoverage` / `wardsFullyVerified`, `Province.declaredWards` / `verifiedWards` / `unreconciledWards` / `wardsReconcile`)
 
 👉 [Full API Documentation](https://namunaONE.github.io/Nepal-Local-Government-Data/api.html)
 
@@ -198,8 +319,8 @@ LocalBody(
 Step 1: Inventory & defect audit (tool/merge/inventory.dart)
        │
        ▼
-Step 2: CBS code verification via MoFAGA harvest + Postal-2025 (tool/merge/verify_codes.dart)
-       │ 547/753 verified (73%)
+Step 2: CBS code verification via the CBS harvest + Postal-2025 (tool/merge/verify_codes.dart)
+       │ 548/753 doubly-attested (verified)
        ▼
 Step 3: Adjudication — 72 conflicts, 72 resolved (tool/merge/adjudicate.dart)
        │ 49 mofaga-exact, 15 mofaga-slug, 8 human
@@ -207,11 +328,37 @@ Step 3: Adjudication — 72 conflicts, 72 resolved (tool/merge/adjudicate.dart)
 Step 4: Schema v2 with CBS codes embedded (tool/merge/apply_cbs_codes.dart)
        │
        ▼
-Generated: lib/src/nepal_data.dart (embedded, compile-time)
-```
+Step 5: Confidence tiers — single-source codes recovered from the CBS roster,
+        with a bijection gate so no two palikas share a code
+        (tool/merge/resolve_code_tiers.dart)
+       │ 548 verified + 196 singleSource = 744/753 codes (98.8%)
+       ▼
+Step 6: Devanagari names at all three levels, corroborated against a second
+        bilingual source (tool/merge/attach_bilingual.dart)
+       │ 7/7 provinces, 77/77 districts, 731/753 palikas
+       ▼
+Step 7: Administrative attributes — HQ, area, website, contact, postal codes
+        (tool/merge/attach_attributes.dart)
+       │ 77/77 districts, 7/7 provinces, 371/753 palikas, 474 postal codes
+       ▼
+Step 8: Codegen (tool/generate.dart) + website payload
+        (tool/generate_explorer_data.dart)
 
-**Sources** (all CC-BY-4.0, attributed in [NOTICE](NOTICE)):
-- `abinrimal/nepal-local-levels` — Devanagari names
+All of the above runs in one command:
+   dart run tool/pipeline.dart
+
+Steps 6 and 7 are ORDER-DEPENDENT: the MoFAGA harvest carries no codes, so
+attributes join palikas by their Devanagari name, which only exists after
+step 6. Running them out of order attaches nothing and fails silently, so
+use the pipeline rather than the individual tools.
+
+The whole chain aborts on the first failure, and every step is gated: the
+generator refuses to emit a dataset with a code outside its own district, a
+duplicate code, a confidence tier that contradicts the verified flag, or a
+Devanagari field holding no Devanagari.
+
+**Sources** (CC-BY-4.0 material attributed in [NOTICE](NOTICE)):
+- `abinrimal/nepal-administrative-divisions-json` — Devanagari names
 - `sagautam5/local-states-nepal` — Municipalities dataset  
 - `CBS/NSO official CSVs` — States, districts, local bodies codes
 - `Postal Codes 2025` — Cross-reference for verification
@@ -231,15 +378,34 @@ dart format --set-exit-if-changed .
 dart analyze --fatal-infos
 dart test
 dart run tool/generate.dart
+node docs/smoke.cjs
 
-# Regenerate dataset (after data changes)
+# Regenerate EVERYTHING from the source of truth (recommended)
+# Runs the merge steps, then both codegen steps, and aborts on the first
+# failure so no artifact can silently drift from the dataset.
+dart run tool/pipeline.dart
+
+# Inspect a data change before writing it
+dart run tool/pipeline.dart --dry-run
+
+# After re-fetching upstream sources (rare): audit, then regenerate
 dart run tool/merge/inventory.dart
-dart run tool/merge/match.dart
-dart run tool/merge/adjudicate.dart
-dart run tool/merge/verify_codes.dart
-dart run tool/merge/apply_cbs_codes.dart
-dart run tool/generate.dart
+dart run tool/pipeline.dart
 ```
+
+If you only ever edit `data/nepal_local_levels.json`, `dart run
+tool/pipeline.dart` is the whole story. The steps it wraps are:
+
+```
+tool/merge/verify_codes.dart        → doubly-attested CBS codes
+tool/merge/apply_cbs_codes.dart    → write them into the dataset
+tool/merge/resolve_code_tiers.dart → single-source tier + bijection gate
+tool/generate.dart                 → lib/src/nepal_data.dart (validates)
+tool/generate_explorer_data.dart   → docs/data.json
+```
+
+Commit the dataset **and** both generated files together; CI fails if they
+drift apart.
 
 ---
 

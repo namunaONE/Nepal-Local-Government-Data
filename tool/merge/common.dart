@@ -362,6 +362,25 @@ String stripSuffix(String s) {
 
 String flatToken(String s) => s.replaceAll(RegExp(r"[\s\-'.]"), '');
 
+/// Cleans a display name taken from an upstream roster: trims surrounding
+/// whitespace and strips leading/trailing punctuation.
+///
+/// A name is not a sentence. The abinrimal roster, for example, writes
+/// Kathmandu as "काठमाण्डौं ।" - the Nepali full stop (danda, U+0964) is
+/// sentence punctuation that leaked into the name field. Internal spaces are
+/// preserved, because multi-word names such as "गुल्मी दरबार" are correct.
+String cleanDisplayName(String raw) {
+  var s = raw.trim();
+  const edge = '।॥.,;:!?।॥॰–—-';
+  while (s.isNotEmpty && edge.contains(s[0])) {
+    s = s.substring(1).trim();
+  }
+  while (s.isNotEmpty && edge.contains(s[s.length - 1])) {
+    s = s.substring(0, s.length - 1).trim();
+  }
+  return s;
+}
+
 /// Strips a trailing Devanagari palika-type suffix ("X नगरपालिका" -> "X").
 /// No other normalization: for EXACT comparisons. For fuzzy corroboration
 /// keys use [neKey] (adjudicate.dart) instead.
@@ -380,6 +399,106 @@ String stripNeTypeSuffix(String raw) {
     if (s == suffix) return '';
   }
   return s;
+}
+
+// ---------------------------------------------------------------------------
+// CBS code normalisation (shared by verify_codes.dart and resolve_code_tiers.dart)
+// ---------------------------------------------------------------------------
+
+/// CBS English type suffixes, longest-first. Includes the harvest's own
+/// typos ("Metropolitian", "Sub-Metropolitian", "Municipaity") and the
+/// romanized-Nepali spellings it uses for rural municipalities ("Gaun Palika",
+/// "Gaunpaika") so they match as types instead of failing closed.
+/// Every variant listed here has an entry in [cbsTypeToCanonical], so a
+/// caller that needs OUR vocabulary never has to know the harvest's dialect.
+const cbsTypeSuffixes = [
+  'sub-metropolitian city',
+  'sub-metropolitan city',
+  'metropolitian city',
+  'metropolitan city',
+  'rural municipality',
+  'gaun palika',
+  'gaunpaika',
+  'municipality',
+  'municipaity',
+];
+
+/// Our dataset's `type` value -> canonical English suffix (matches the
+/// postal-2025 key vocabulary used by geo-pro-max).
+const ourTypeSuffix = {
+  'metropolitan': 'metropolitan city',
+  'subMetropolitan': 'sub-metropolitan city',
+  'municipality': 'municipality',
+  'ruralMunicipality': 'rural municipality',
+};
+
+/// Expected Devanagari suffix per CBS English suffix, covering every variant
+/// in [cbsTypeSuffixes] so the EN<->Ne alignment guard can type-check all
+/// rows instead of silently skipping the harvest's romanized spellings.
+const cbsNeSuffix = {
+  'sub-metropolitian city': 'उपमहानगरपालिका',
+  'sub-metropolitan city': 'उपमहानगरपालिका',
+  'metropolitian city': 'महानगरपालिका',
+  'metropolitan city': 'महानगरपालिका',
+  'rural municipality': 'गाउँपालिका',
+  'gaun palika': 'गाउँपालिका',
+  'gaunpaika': 'गाउँपालिका',
+  'municipality': 'नगरपालिका',
+  'municipaity': 'नगरपालिका',
+};
+
+/// Maps every [cbsTypeSuffixes] variant onto our canonical vocabulary
+/// (identical to the values of [ourTypeSuffix]), so the harvest's typos and
+/// romanized spellings collapse onto the four types our dataset uses.
+const cbsTypeToCanonical = {
+  'metropolitan city': 'metropolitan city',
+  'metropolitian city': 'metropolitan city',
+  'sub-metropolitan city': 'sub-metropolitan city',
+  'sub-metropolitian city': 'sub-metropolitan city',
+  'municipality': 'municipality',
+  'municipaity': 'municipality',
+  'rural municipality': 'rural municipality',
+  'gaun palika': 'rural municipality',
+  'gaunpaika': 'rural municipality',
+};
+
+/// The CBS English type suffix carried by a palika label such as
+/// "Phaktanlung Rural Municipality". Returns '' when no suffix is present,
+/// so callers never match a bare, untyped label by accident.
+String cbsTypeOf(String unitEn) {
+  final lower = unitEn.toLowerCase().trim();
+  for (final s in cbsTypeSuffixes) {
+    if (lower.endsWith(' $s') || lower == s) return s;
+  }
+  return '';
+}
+
+/// Canonical (metropolitan | sub-metropolitan) suffix form, folding the CBS
+/// harvest's "metropolitian" typo so the two spellings compare equal.
+String canonicalCbsType(String cbsType) =>
+    cbsTypeToCanonical[cbsType] ?? cbsType;
+
+/// Normalised name form for cross-checks: lowercase, CBS typo fixed,
+/// parentheticals and the type suffix stripped, then all spacing and
+/// punctuation flattened. Two labels agreeing here describe the same entity
+/// well enough to compare codes across sources.
+///
+/// Parentheticals are stripped BEFORE the type suffix, because the harvest
+/// writes names like "Triveni Rural Municipality (Rolpa)" where the
+/// disambiguator follows the suffix. Doing it in the other order would leave
+/// the suffix attached and break those keys.
+String normCbsKey(String raw) {
+  var s = stripParens(raw.toLowerCase().trim());
+  s = s.replaceAll('metropolitian', 'metropolitan');
+  final t = cbsTypeOf(s);
+  if (t.isNotEmpty) {
+    if (s.endsWith(' $t')) {
+      s = s.substring(0, s.length - t.length - 1).trim();
+    } else if (s == t) {
+      s = '';
+    }
+  }
+  return flatToken(s);
 }
 
 /// Matching key used across sources: `[district]|[name]`, both flattened.

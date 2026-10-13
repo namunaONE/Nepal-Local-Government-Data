@@ -27,51 +27,7 @@ import 'dart:io';
 
 import 'common.dart';
 
-/// CBS English type suffixes, longest-first. Includes the harvest's own
-/// typos ("Metropolitian", "Sub-Metropolitian") so they match as types
-/// instead of failing open.
-const _cbsTypeSuffixes = [
-  'sub-metropolitian city',
-  'sub-metropolitan city',
-  'metropolitian city',
-  'metropolitan city',
-  'rural municipality',
-  'municipality',
-];
-
-/// Our type key -> canonical English suffix (matches postal-2025 keys).
-const _ourTypeSuffix = {
-  'metropolitan': 'metropolitan city',
-  'subMetropolitan': 'sub-metropolitan city',
-  'municipality': 'municipality',
-  'ruralMunicipality': 'rural municipality',
-};
-
-/// Expected Devanagari suffix per CBS English suffix.
-const _neSuffix = {
-  'sub-metropolitian city': 'उपमहानगरपालिका',
-  'sub-metropolitan city': 'उपमहानगरपालिका',
-  'metropolitian city': 'महानगरपालिका',
-  'metropolitan city': 'महानगरपालिका',
-  'rural municipality': 'गाउँपालिका',
-  'municipality': 'नगरपालिका',
-};
-
-String _cbsTypeOf(String unitEn) {
-  final lower = unitEn.toLowerCase().trim();
-  for (final s in _cbsTypeSuffixes) {
-    if (lower.endsWith(' $s') || lower == s) return s;
-  }
-  return '';
-}
-
-/// Normalized name form for cross-checks: lowercase, parens and CBS typo
-/// fixed, type suffix stripped, punctuation removed.
-String _normKey(String raw) {
-  var s = raw.toLowerCase().trim();
-  s = s.replaceAll('metropolitian', 'metropolitan');
-  return flatToken(stripSuffix(stripParens(s)));
-}
+/// Assignment rule (strict): VERIFIED iff a postal-2025 T1/T2-accepted code C
 
 void _fail(String message) {
   stderr.writeln('VERIFY_CODES FAILED: $message');
@@ -219,12 +175,12 @@ void main() {
   var run = 0;
   var maxRun = 0;
   for (final b in bodies) {
-    final enType = _cbsTypeOf(b['unit']!);
+    final enType = cbsTypeOf(b['unit']!);
     final ne = b['ne']!.trim();
     final ok = enType.isNotEmpty &&
         ne.isNotEmpty &&
         devaRegex.hasMatch(ne) &&
-        ne.endsWith(_neSuffix[enType]!);
+        ne.endsWith(cbsNeSuffix[enType]!);
     if (ok) {
       run = 0;
     } else {
@@ -269,11 +225,7 @@ void main() {
 
   // Postal lookups: normalized index + prefix scoping from codes.
   final postalNorm = <String, List<MapEntry<String, String>>>{};
-  String normPostal(String raw) {
-    var s =
-        raw.toLowerCase().trim().replaceAll('metropolitian', 'metropolitan');
-    return flatToken(stripSuffix(stripParens(s)));
-  }
+  String normPostal(String raw) => normCbsKey(raw);
 
   for (final e in postal.entries) {
     postalNorm.putIfAbsent(normPostal(e.key), () => []).add(e);
@@ -331,7 +283,7 @@ void main() {
         final bmap = b as Map;
         final name = bmap['name'] as String;
         final type = bmap['type'] as String;
-        final suffix = _ourTypeSuffix[type]!;
+        final suffix = ourTypeSuffix[type]!;
         String? code;
         String? tier;
         String? evidence;
@@ -363,8 +315,8 @@ void main() {
           final cbs = cbsByCode[code];
           if (cbs != null &&
               cbs['code']!.startsWith(prefix) &&
-              _normKey(cbs['unit']!) ==
-                  _normKey(
+              normCbsKey(cbs['unit']!) ==
+                  normCbsKey(
                       postal.entries.firstWhere((e) => e.value == code).key)) {
             ok = true;
             evidence = '$evidence; CBS code $code (${cbs['district']})';

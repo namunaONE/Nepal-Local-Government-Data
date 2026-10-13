@@ -1,6 +1,6 @@
 ==============================================================================
 STEP 2 CODE VERIFICATION
-generated: 2026-10-11T09:50:57.812678Z
+generated: 2026-10-13T10:21:43.902277Z
 CBS harvest: opendatanepal geographical-codes dataset, license cc-by, metadata 2026-06-14 (re-verified at fetch)
 ==============================================================================
   ok: states rows == 7 (got 7)
@@ -26,20 +26,17 @@ CBS harvest: opendatanepal geographical-codes dataset, license cc-by, metadata 2
   info: province 7 palika codes: 88
   ok: every palika PDD prefix is a district code (orphans: )
   QUARANTINE-CONFIRMED: districts row 43 Ne has unbalanced parens (2 open vs 0 close) — upstream corruption signature present; district Ne column is never consumed.
-  alignment: 747/753 rows with EN<->Ne suffix correspondence (max consecutive run: 1)
+  alignment: 750/753 rows with EN<->Ne suffix correspondence (max consecutive run: 1)
     sn=8 code=10108: EN="Sirijanga Rural Municipality" Ne="सिरीजङ्गा गाउंपालिका" (enType=rural municipality)
     sn=428 code=40605: EN="Bensi Shahar Municipality" Ne="बेंसीशहर नगरापालिका" (enType=municipality)
-    sn=454 code=40905: EN="Bhirkot Municipaity" Ne="भीरकोट नगरपालिका" (enType=?)
-    sn=509 code=50410: EN="Gulmi Durbar Gaunpaika" Ne="गुल्मी दरबार गाउँपालिका" (enType=?)
     sn=542 code=50808: EN="Tilottama Municipality" Ne="तिलोत्तमा नगरापालिका" (enType=municipality)
-    sn=607 code=60402: EN="Kanaka Sundari Gaun Palika" Ne="कनका सुन्दरी गाउँपालिका" (enType=?)
   ok: postal-2025 codes unique (752)
 CBS codes: 753; postal-2025 codes: 752
 codes only in postal-2025 (stale?): 0
 codes only in CBS (the coverage gap): 1
     CBS-ONLY sn=749 Kanchanpur / Mahakali Municipality = 70905
 SUDURPASHCHIM VERDICT: CBS P7 rows = 88 (ours = 88) — STRUCTURAL MATCH; postal-2025 holds 87 P7 codes, so its shortfall is a coverage gap, not a structural difference
-ASSIGNMENTS: verified=547 unverified=206 total=753
+ASSIGNMENTS: verified=548 unverified=205 total=753
     REVIEW Shadananda [Bhojpur]: suggestion "shadanand municipality"=10601 (d=1)
     REVIEW Aamchowk [Bhojpur]: suggestion "aamchok rural municipality"=10609 (d=1)
     REVIEW Pauwa Dunma [Bhojpur]: suggestion "pauwadungma rural municipality"=10606 (d=1)
@@ -100,4 +97,4 @@ ASSIGNMENTS: verified=547 unverified=206 total=753
     REVIEW Durga Bhagawati [Rautahat]: suggestion "durga bhagwati rural municipality"=20615 (d=1)
     REVIEW Agnisair Krishna Sabaran [Saptari]: suggestion "agnisaira krishnasavaran rural municipality"=20103 (d=2)
     REVIEW Belhi Chapena [Saptari]: suggestion "agnisaira krishnasavaran rural municipality" (d=3, weak)
-wrote data/_stage/nso_codes.json (547 verified, 206 unverified)
+wrote data/_stage/nso_codes.json (548 verified, 205 unverified)

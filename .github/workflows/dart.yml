@@ -5,6 +5,10 @@ on:
     branches: [main]
   pull_request:
   workflow_dispatch:
+  schedule:
+    # Weekly provenance watch: catches upstream source drift before a merge run
+    # does, instead of after.
+    - cron: '17 4 * * 1'
 
 permissions:
   contents: read
@@ -31,15 +35,73 @@ jobs:
         run: dart run tool/generate.dart
       - name: Verify no codegen drift
         run: git diff --exit-code -- lib/src/nepal_data.dart
+      - name: Regenerate website payload
+        run: dart run tool/generate_explorer_data.dart
+      - name: Verify no website data drift (docs must match the package)
+        run: git diff --exit-code -- docs/data.json
       - name: Analyze
         run: dart analyze --fatal-infos
       - name: Run tests
         run: dart test
+      - name: Coverage report
+        run: dart test --coverage=coverage && dart pub global activate coverage && dart pub global run coverage:format_coverage --lcov --in=coverage --out=coverage/lcov.info --report-on=lib
       - name: Explorer smoke test (no browser, no npm deps)
         run: node docs/smoke.cjs
 
+  # example/brand_theme.dart imports package:flutter/material.dart, so plain
+  # `dart analyze` excludes it. Without this job it is the only Dart file in the
+  # repo that nothing ever compiles, and it would rot silently.
+  flutter-example:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: stable
+          channel: stable
+      - name: Compile-check the Flutter example
+        run: dart analyze --fatal-infos example/brand_theme.dart
+
+  # Scheduled integrity watch: re-hashes every vendored input against the
+  # provenance manifest and files an issue when an upstream source changes,
+  # so a silent upstream drift cannot sit unnoticed until a merge run fails.
+  provenance-watch:
+    if: github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+      - uses: dart-lang/setup-dart@v1
+        with:
+          sdk: stable
+      - run: dart pub get
+      - name: Verify provenance of every vendored input
+        id: provenance
+        continue-on-error: true
+        run: dart run tool/merge/verify_codes.dart
+      - name: File an issue when upstream drifted
+        if: steps.provenance.outcome == 'failure'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const body = 'The scheduled provenance check failed: at least one '
+              + 'vendored input in `data/_raw/` no longer matches its SHA-256 '
+              + 'pin in `data/PROVENANCE.sha256`, or is missing.\n\n'
+              + 'An upstream source has changed. Do NOT re-run the merge to '
+              + 'paper over it — follow the guidance in `data/SOURCES.md` '
+              + '(re-fetch, re-review, re-pin, then re-merge).\n\n'
+              + 'See the failing run logs for the specific file.';
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: '[provenance] vendored source drift detected',
+              body,
+              labels: ['data'],
+            });
+
   publish-dry-run:
-    if: github.ref == 'refs/heads/main'
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -51,7 +113,7 @@ jobs:
         run: dart pub publish --dry-run
 
   deploy-pages:
-    if: github.ref == 'refs/heads/main'
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     needs: test
     environment:

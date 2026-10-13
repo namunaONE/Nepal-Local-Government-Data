@@ -41,7 +41,8 @@ Open an issue with:
    dart format --set-exit-if-changed .
    dart analyze --fatal-infos
    dart test
-   dart run tool/generate.dart
+   node docs/smoke.cjs
+   dart run tool/pipeline.dart   # must produce no diff
    ```
 5. **Submit PR** with a clear description
 
@@ -97,18 +98,51 @@ Scope should be: `api`, `explorer`, `website`, `data`, `tool`, `ci`, `docs`, `de
 
 ## Data Changes
 
-The dataset (`data/nepal_local_levels.json`) is generated from source files via the merge pipeline:
+The dataset (`data/nepal_local_levels.json`) is the **single source of truth**
+for every artifact in this repo. Both the Dart package
+(`lib/src/nepal_data.dart`) and the website explorer (`docs/data.json`) are
+generated from it.
+
+Regenerate everything with one command:
+
+```bash
+dart run tool/pipeline.dart            # full regeneration
+dart run tool/pipeline.dart --dry-run  # report without writing
+```
+
+It runs these steps in order, aborting on the first failure:
 
 ```
-tool/merge/inventory.dart     → Source inventory
-tool/merge/match.dart         → Conflict detection (REVIEW.md)
-tool/merge/adjudicate.dart    → Resolution (decisions_manual.json)
-tool/merge/verify_codes.dart  → CBS code verification
-tool/merge/apply_cbs_codes.dart → Apply codes to dataset
-tool/generate.dart            → Generate lib/src/nepal_data.dart
+tool/merge/verify_codes.dart         CBS codes, doubly-attested tier
+tool/merge/apply_cbs_codes.dart     write them into the dataset
+tool/merge/resolve_code_tiers.dart  single-source tier + bijection gate
+tool/generate.dart                  lib/src/nepal_data.dart (validates)
+tool/generate_explorer_data.dart    docs/data.json
 ```
 
-**Never edit `lib/src/nepal_data.dart` or `data/nepal_local_levels.json` directly.** Run the pipeline instead.
+Additional merge tools you may need after re-fetching sources:
+`tool/merge/inventory.dart` (source audit), `tool/merge/match.dart` and
+`tool/merge/adjudicate.dart` (name conflicts), `tool/merge/verify_wards.dart`
+(ward counts), `tool/geocode_centroids.dart` (coordinates).
+
+**Never edit `lib/src/nepal_data.dart` or `docs/data.json` by hand** — they are
+generated, and CI fails if they drift from the dataset. When you change the
+dataset, commit it **together with both generated files**.
+
+### Data invariants CI enforces
+
+`tool/generate.dart` refuses to emit a dataset that violates any of these, so
+a bad merge cannot reach a release:
+
+- official national counts (7 / 77 / 753, split 6 / 11 / 276 / 460, 6,743 wards)
+- **bijection** — no two palikas share a CBS code
+- **district containment** — a code's PDD prefix matches its district's code
+- a `cbsCodeConfidence` tier that contradicts the `cbsCodeVerified` flag
+- coordinates inside Nepal's bounding box; ward counts in a sane range
+- no province claiming fewer wards than its own rows substantiate
+
+`data/PROVENANCE.sha256` must pin every file in `data/_raw/`; an unpinned or
+changed input fails the merge tools before they do anything.
 
 ## Testing
 
