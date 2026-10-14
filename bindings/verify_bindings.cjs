@@ -478,12 +478,69 @@ for (const f of [
   check(!buf.includes(0x0d), `${f}: LF line endings only`);
 }
 
+// ---------------------------------------------------------------------------
+// Python structural integrity.
+//
+// These are static checks, NOT a substitute for importing the module — the
+// `python-bindings` CI job does that, with a real interpreter. They exist
+// because this file has to run on machines with no Python at all, and because
+// a previous version of this check was itself wrong: it asserted the token
+// `DATA_AS_OF` was absent from `__init__.py`, which *ensured* the generator
+// clobbered the constant's own name and emitted
+// `2026-10-13 = meta["dataAsOf"]` — a SyntaxError that made the module
+// unimportable, while this check reported 135/135 green.
+//
+// So: assert properties of the output, never that a token got substituted.
+// ---------------------------------------------------------------------------
+
 {
-  // The python runtime must have its version substituted, not the placeholder.
-  const py = fs.readFileSync(
+  const pyInit = fs.readFileSync(
     path.join(BINDINGS, 'python', 'nepal_admin', '__init__.py'), 'utf8');
-  check(!py.includes('VERSION_PLACEHOLDER'), 'python version placeholder replaced');
-  check(!py.includes('DATA_AS_OF'), 'python dataAsOf placeholder replaced');
+  const pyMain = fs.readFileSync(
+    path.join(BINDINGS, 'python', 'nepal_admin', '__main__.py'), 'utf8');
+
+  check(!pyInit.includes('VERSION_PLACEHOLDER'),
+    'python: version placeholder fully substituted');
+  check(!pyInit.includes('DATA_AS_OF_VALUE'),
+    'python: dataAsOf value placeholder fully substituted');
+
+  // A Python identifier cannot start with a digit. The signature of the
+  // clobbering bug was exactly this shape.
+  const badAssign = pyInit.split('\n')
+    .map((l, i) => [i + 1, l])
+    .filter(([, l]) => /^\s*\d[\w\-\.]*\s*=[^=]/.test(l));
+  check(badAssign.length === 0,
+    'python: no assignment to a digit-leading (invalid) identifier' +
+      (badAssign.length ? ` — ${badAssign.map(([n, l]) => `L${n}: ${l.trim()}`).join('; ')}` : ''));
+
+  // The public constant must survive substitution: defined, and exported.
+  check(/^DATA_AS_OF\s*=/m.test(pyInit),
+    'python: DATA_AS_OF is defined');
+  check(/"DATA_AS_OF"/.test(pyInit),
+    'python: DATA_AS_OF is exported in __all__');
+
+  // Every name `__main__.py` imports must actually exist. This is the check
+  // that would have caught the bug on its first run, without an interpreter.
+  const importBlock = /from\s+\.\s+import\s*\(([\s\S]*?)\)/.exec(pyMain);
+  if (check(importBlock !== null, 'python: __main__ has a parseable import block')) {
+    const names = importBlock[1]
+      .split(',')
+      .map((s) => s.trim())
+      .filter(Boolean);
+    const missing = names.filter((n) =>
+      !new RegExp(`^${n}\\s*=`, 'm').test(pyInit) &&
+      !new RegExp(`\\b${n}\\b`).test(pyInit.replace(/^__all__[\s\S]*?\]\s*$/m, '')));
+    check(missing.length === 0,
+      `python: all ${names.length} names imported by __main__ are defined` +
+        (missing.length ? ` — missing ${missing.join(', ')}` : ''));
+  }
+
+  // Double-quoted `"""` blocks must balance, or the file is unparseable.
+  check((pyInit.match(/"""/g) || []).length % 2 === 0,
+    'python: triple-quoted blocks balance');
+  check((pyMain.match(/"""/g) || []).length % 2 === 0,
+    'python: __main__ triple-quoted blocks balance');
+
   const js = fs.readFileSync(path.join(BINDINGS, 'javascript', 'index.js'), 'utf8');
   check(!js.includes('DATA_AS_OF'), 'javascript dataAsOf placeholder replaced');
 }

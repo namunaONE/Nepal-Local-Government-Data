@@ -53,6 +53,30 @@ which carries at least two independent attestations — and this project has
 already refused to publish a single-source CBS code rather than label it
 honestly. `data/SOURCES.md` records what would unblock it.
 
+### Fixed
+- **The Python binding was unimportable.** The generator substituted the bare
+  token `DATA_AS_OF`, which also rewrote the constant's own name and its entry
+  in `__all__`, emitting `2026-10-13 = meta["dataAsOf"]` — a `SyntaxError`, so
+  `import nepal_admin` failed outright and `python -m nepal_admin` could not
+  run. Found by the `python-bindings` CI job, the first time the binding was
+  ever executed anywhere. The value now has its own non-colliding token
+  (`DATA_AS_OF_VALUE`).
+- **The bindings verifier was enforcing that bug.** Its check asserted the
+  token `DATA_AS_OF` was *absent* from the output — so the clobbering looked
+  correct, and the suite reported 135/135 green on a module that could not be
+  parsed. Replaced with checks on properties of the output rather than on
+  substitution: no digit-leading assignments, the public constant is defined
+  and exported, every name `__main__` imports actually exists, triple-quoted
+  blocks balance. Re-introducing the bug now fails 3 of 141 checks. These are
+  static checks, not a substitute for CI importing the module.
+- **Both Flutter jobs failed inside `subosito/flutter-action`.** They passed
+  `flutter-version: stable` together with `channel: stable`; those are
+  mutually exclusive inputs and `flutter-version` wants a semver.
+  `flutter-example` had been failing this way since it was added, so Flutter
+  had never once installed on these runners.
+- The `python-bindings` job now byte-compiles before importing, so a syntax
+  error reports as a syntax error rather than as a bare "cannot import name".
+
 ### Changed
 - `.pubignore` excludes `packages/`, so the Flutter companion is not bundled
   into the published Dart package.

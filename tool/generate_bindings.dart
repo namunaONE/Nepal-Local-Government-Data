@@ -443,9 +443,15 @@ void main(List<String> args) {
   emit('python/pyproject.toml', _pyProject(version));
   emit(
       'python/nepal_admin/__init__.py',
+      // Substitutes ONLY the value token. An earlier version replaced the
+      // bare identifier `DATA_AS_OF`, which also rewrote the constant's own
+      // name and its entry in `__all__` to a bare date - producing
+      // `2026-10-13 = meta["dataAsOf"]`, a SyntaxError that made
+      // `import nepal_admin` fail outright. `DATA_AS_OF_VALUE` has
+      // `DATA_AS_OF` as a prefix, so the public constant is never touched.
       _pyRuntime
           .replaceAll('VERSION_PLACEHOLDER', version)
-          .replaceAll('DATA_AS_OF', dataAsOf));
+          .replaceAll('DATA_AS_OF_VALUE', dataAsOf));
   emit('python/nepal_admin/__main__.py', _pyMain);
   emit('python/LICENSE', _mitLicense);
   emit('python/NOTICE', _attribution);
@@ -1086,8 +1092,9 @@ nepal_admin = ["data.json", "NOTICE", "LICENSE"]
 const _pyRuntime = r'''
 """Offline administrative divisions of Nepal.
 
-Data as of ``DATA_AS_OF``. Generated from ``data/nepal_local_levels.json`` by
-``tool/generate_bindings.dart``; do not edit by hand.
+Data as of ``DATA_AS_OF_VALUE``. Generated from
+``data/nepal_local_levels.json`` by ``tool/generate_bindings.dart``; do not
+edit by hand.
 
     >>> import nepal_admin as nad
     >>> nad.get_local_body_by_cbs(31304).name

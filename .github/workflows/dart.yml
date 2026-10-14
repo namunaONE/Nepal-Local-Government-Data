@@ -65,10 +65,19 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+      # Compile before importing, so a syntax error reports as a syntax error
+      # rather than as a bare "cannot import name", which is how a generator
+      # defect once hid here for two runs.
+      - name: Byte-compile the package
+        working-directory: bindings/python
+        run: python -m compileall -q nepal_admin
       - name: Import the package
         working-directory: bindings/python
         run: |
           python -c "import nepal_admin as n; print('imported', n.__version__)"
+      - name: Run the module entry point
+        working-directory: bindings/python
+        run: python -m nepal_admin | head -5
       - name: Exercise the full API and assert the numbers
         working-directory: bindings/python
         run: |
@@ -130,7 +139,10 @@ jobs:
       - uses: actions/checkout@v4
       - uses: subosito/flutter-action@v2
         with:
-          flutter-version: stable
+          # `flutter-version` and `channel` are mutually exclusive inputs, and
+          # `flutter-version` wants a semver, not the string "stable". Passing
+          # both made this job fail inside the action itself, which is why it
+          # had never once run successfully.
           channel: stable
       - name: Compile-check the Flutter example
         run: dart analyze --fatal-infos example/brand_theme.dart
@@ -148,7 +160,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: subosito/flutter-action@v2
         with:
-          flutter-version: stable
+          # See the note in the flutter-example job: `channel` alone.
           channel: stable
       - name: Resolve dependencies
         run: flutter pub get

@@ -1,7 +1,8 @@
 """Offline administrative divisions of Nepal.
 
-Data as of ``2026-10-13``. Generated from ``data/nepal_local_levels.json`` by
-``tool/generate_bindings.dart``; do not edit by hand.
+Data as of ``2026-10-13``. Generated from
+``data/nepal_local_levels.json`` by ``tool/generate_bindings.dart``; do not
+edit by hand.
 
     >>> import nepal_admin as nad
     >>> nad.get_local_body_by_cbs(31304).name
@@ -21,7 +22,7 @@ with open(_DATA_PATH, encoding="utf-8") as _fh:
     _raw = json.load(_fh)
 
 meta = _raw["meta"]
-2026-10-13 = meta["dataAsOf"]
+DATA_AS_OF = meta["dataAsOf"]
 
 #: All 7 provinces, each with its districts nested under ``districts``.
 provinces = _raw["provinces"]
@@ -248,7 +249,7 @@ def get_mappable_local_bodies():
 
 
 __all__ = [
-    "meta", "2026-10-13", "provinces", "districts", "local_bodies",
+    "meta", "DATA_AS_OF", "provinces", "districts", "local_bodies",
     "get_province_by_id", "get_province_by_iso", "get_province_by_cbs",
     "get_all_provinces", "get_all_districts", "get_all_local_bodies",
     "get_district_by_name", "get_district_by_cbs",
