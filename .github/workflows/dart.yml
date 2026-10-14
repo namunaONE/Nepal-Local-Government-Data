@@ -144,17 +144,39 @@ jobs:
           # both made this job fail inside the action itself, which is why it
           # had never once run successfully.
           channel: stable
-      - name: Resolve dependencies
-        working-directory: example
-        run: flutter pub get
-      # Files are passed EXPLICITLY on purpose. `flutter analyze` with no
-      # arguments only covers lib/, test/ and bin/, so it reports "No issues
-      # found" for a package whose sources sit at the package root - a green
-      # run that checked nothing. Verified: the same deliberate error that
-      # this catches is missed by the no-argument form.
       - name: Compile-check the Flutter example
-        working-directory: example
-        run: flutter analyze --fatal-infos brand_theme.dart nepal_admin_api_example.dart
+        run: |
+          set -euo pipefail
+          # example/ is deliberately NOT a package. Giving it a pubspec makes
+          # the root `dart pub get` cascade into it, and `test` and
+          # `publish-dry-run` install no Flutter SDK, so both would then fail
+          # resolving a Flutter dependency they do not need. And `dart analyze`
+          # from the root cannot resolve package:flutter at all, because the
+          # root package has no Flutter dependency. So the job builds a
+          # throwaway package around the files and compiles them there.
+          work="$(mktemp -d)"
+          cat > "$work/pubspec.yaml" <<EOF
+          name: example_check
+          description: Throwaway package that compiles the example/ files.
+          publish_to: none
+          environment:
+            sdk: ^3.0.0
+            flutter: ">=3.10.0"
+          dependencies:
+            flutter:
+              sdk: flutter
+            nepal_admin_api:
+              path: $GITHUB_WORKSPACE
+          dev_dependencies:
+            flutter_lints: ^6.0.0
+          flutter:
+            uses-material-design: true
+          EOF
+          mkdir -p "$work/lib"
+          cp example/*.dart "$work/lib/"
+          cd "$work"
+          flutter pub get
+          flutter analyze --fatal-infos
 
   # packages/nepal_admin_widgets. It is a Flutter package with a path
   # dependency on this one, so `dart analyze`/`dart test` in the root job do not
