@@ -144,8 +144,17 @@ jobs:
           # both made this job fail inside the action itself, which is why it
           # had never once run successfully.
           channel: stable
+      - name: Resolve dependencies
+        working-directory: example
+        run: flutter pub get
+      # Files are passed EXPLICITLY on purpose. `flutter analyze` with no
+      # arguments only covers lib/, test/ and bin/, so it reports "No issues
+      # found" for a package whose sources sit at the package root - a green
+      # run that checked nothing. Verified: the same deliberate error that
+      # this catches is missed by the no-argument form.
       - name: Compile-check the Flutter example
-        run: dart analyze --fatal-infos example/brand_theme.dart
+        working-directory: example
+        run: flutter analyze --fatal-infos brand_theme.dart nepal_admin_api_example.dart
 
   # packages/nepal_admin_widgets. It is a Flutter package with a path
   # dependency on this one, so `dart analyze`/`dart test` in the root job do not

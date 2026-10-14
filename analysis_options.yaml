@@ -1,10 +1,18 @@
 include: package:lints/recommended.yaml
 
 analyzer:
-  # example/brand_theme.dart needs the Flutter SDK (package:flutter/material.dart).
-  # Consumers copy it into their Flutter app; pure-Dart `dart analyze` skips it.
+  # This is a pure-Dart package, and the job that runs `dart analyze` has no
+  # Flutter SDK installed — so every `package:flutter` import below is an
+  # unresolvable URI in that job. Both exclusions are compiled by dedicated
+  # Flutter jobs instead (flutter-example, flutter-widgets); see dart.yml.
   exclude:
+    # Needs the Flutter SDK (package:flutter/material.dart). Consumers copy it
+    # into their Flutter app; compiled by the `flutter-example` job.
     - example/brand_theme.dart
+    # A separate Flutter package with its own pubspec and its own analysis job.
+    # Whether the analyzer picks up its nested context or not, it belongs to
+    # `flutter-widgets`, not to this one.
+    - packages/**
 
 linter:
   rules:
