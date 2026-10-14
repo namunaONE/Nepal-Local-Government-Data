@@ -18,75 +18,230 @@ import 'package:crypto/crypto.dart';
 // Provenance
 // ---------------------------------------------------------------------------
 
+/// Outcome of a provenance check.
+///
+/// The distinction that matters is [sourcesAbsent] versus [drifted]. A clean
+/// CI checkout deliberately does not carry `data/_raw/` (it is gitignored to
+/// keep ~2.5 MB of CC-BY snapshots out of the repository), so "the sources
+/// are not here" is an expected condition and **not** evidence that upstream
+/// changed. Reporting it as drift would accuse a source of having changed
+/// when nothing has.
+enum ProvenanceStatus {
+  /// Every pinned file is present and matches its recorded hash and size.
+  verified,
+
+  /// `data/PROVENANCE.sha256` is absent or malformed. The pinning contract
+  /// itself cannot be trusted.
+  manifestInvalid,
+
+  /// `data/_raw/` is not present, so nothing could be checked. Expected in a
+  /// clean checkout; **not** drift.
+  sourcesAbsent,
+
+  /// The sources are present and at least one disagrees with the manifest:
+  /// a pinned file is missing, a hash or size differs, or an unpinned file is
+  /// sitting in `data/_raw/`. This is real drift and needs a human.
+  drifted,
+}
+
+/// The result of a provenance check, with enough detail to tell a caller
+/// *which kind* of problem occurred.
+class ProvenanceReport {
+  ProvenanceReport({
+    required this.status,
+    required this.problems,
+    required this.pinnedCount,
+    this.sourcesPresent = false,
+  });
+
+  final ProvenanceStatus status;
+
+  /// Human-readable problems. Empty when [status] is [ProvenanceStatus.verified].
+  final List<String> problems;
+
+  /// How many files the manifest pins.
+  final int pinnedCount;
+
+  /// Whether `data/_raw/` was present at all.
+  final bool sourcesPresent;
+
+  bool get isVerified => status == ProvenanceStatus.verified;
+
+  /// True only for genuine drift — the condition that warrants waking a human.
+  bool get isDrift => status == ProvenanceStatus.drifted;
+
+  /// Whether the check was able to say anything about the payload.
+  bool get isVerifiable => status != ProvenanceStatus.sourcesAbsent;
+}
+
+/// One parsed line of `data/PROVENANCE.sha256`.
+class _PinnedFile {
+  const _PinnedFile(this.rel, this.hash, this.size);
+
+  /// Path relative to `data/_raw/`, always `/`-separated.
+  final String rel;
+
+  /// Uppercase SHA-256 hex.
+  final String hash;
+
+  final int size;
+}
+
 /// Verifies every file pinned in data/PROVENANCE.sha256 against data/_raw/.
-/// Returns the list of problems (empty = verified). Manifest lines look like:
+///
+/// Manifest lines look like
 /// `<sha256-hex>  <bytes>  <repo-relative-path-under-data/_raw>`.
-List<String> verifyProvenance() {
+///
+/// Set [manifestOnly] to check the pinning contract without requiring the
+/// vendored payloads — which is the only check that can run in a clean CI
+/// checkout. [sourcesAbsent] is still reported as a non-verified status rather
+/// than silently passing.
+///
+/// [manifestPath] and [rawDirPath] exist so the state machine can be exercised
+/// against fixtures; production callers want the defaults.
+ProvenanceReport auditProvenance({
+  bool manifestOnly = false,
+  String manifestPath = 'data/PROVENANCE.sha256',
+  String rawDirPath = 'data/_raw',
+}) {
   final problems = <String>[];
-  final manifest = File('data/PROVENANCE.sha256');
+  final manifest = File(manifestPath);
   if (!manifest.existsSync()) {
-    return ['data/PROVENANCE.sha256 is missing — cannot verify inputs'];
+    return ProvenanceReport(
+      status: ProvenanceStatus.manifestInvalid,
+      problems: const [
+        'data/PROVENANCE.sha256 is missing — cannot verify inputs'
+      ],
+      pinnedCount: 0,
+    );
   }
-  final rawDir = Directory('data/_raw');
-  if (!rawDir.existsSync()) {
-    return [
-      'data/_raw/ is missing — nothing to verify. '
-          'Re-fetch the sources per data/SOURCES.md, then re-run.',
-    ];
-  }
+
   final entry = RegExp(
     r'^([0-9A-Fa-f]{64})\s+(\d+)\s+(\S+)\s*$',
     multiLine: false,
   );
-  final pinned = <String>{};
+  final pinned = <_PinnedFile>[];
+  final seen = <String>{};
+  var malformed = 0;
   for (final line in manifest.readAsLinesSync()) {
     if (line.trim().isEmpty) continue;
     final m = entry.firstMatch(line);
     if (m == null) {
+      malformed++;
       problems.add('manifest line is malformed: $line');
       continue;
     }
-    final wantHash = m.group(1)!.toUpperCase();
-    final wantSize = int.parse(m.group(2)!);
     final rel = m.group(3)!;
-    pinned.add(rel);
-    final file = File('data/_raw/$rel');
+    if (!seen.add(rel)) {
+      malformed++;
+      problems
+          .add('DUPLICATE PIN: $rel appears more than once in the manifest');
+      continue;
+    }
+    // A pinned path must stay inside data/_raw. An absolute path or a `..`
+    // escape would make the manifest a way to name arbitrary files.
+    if (rel.startsWith('/') ||
+        rel.contains('..') ||
+        RegExp(r'^[A-Za-z]:').hasMatch(rel)) {
+      malformed++;
+      problems.add('UNSAFE PATH in manifest: $rel');
+      continue;
+    }
+    pinned.add(
+      _PinnedFile(rel, m.group(1)!.toUpperCase(), int.parse(m.group(2)!)),
+    );
+  }
+
+  final pinnedCount = pinned.length;
+  if (malformed > 0) {
+    return ProvenanceReport(
+      status: ProvenanceStatus.manifestInvalid,
+      problems: problems,
+      pinnedCount: pinnedCount,
+    );
+  }
+
+  if (manifestOnly) {
+    // Contract is sound; the payload was neither requested nor required.
+    return ProvenanceReport(
+      status: ProvenanceStatus.verified,
+      problems: const [],
+      pinnedCount: pinnedCount,
+    );
+  }
+
+  final rawDir = Directory(rawDirPath);
+  if (!rawDir.existsSync()) {
+    return ProvenanceReport(
+      status: ProvenanceStatus.sourcesAbsent,
+      problems: const [
+        'data/_raw/ is not present, so no input could be verified. This is the '
+            'expected state in a clean checkout (the snapshots are gitignored '
+            'and re-fetchable per data/SOURCES.md) and is NOT drift. Re-fetch '
+            'them if you intend to run the merge.',
+      ],
+      pinnedCount: pinnedCount,
+    );
+  }
+
+  for (final p in pinned) {
+    final file = File('$rawDirPath/${p.rel}');
     if (!file.existsSync()) {
-      problems.add(
-        'MISSING: data/_raw/$rel (pinned in manifest, not on disk)',
-      );
+      problems
+          .add('MISSING: data/_raw/${p.rel} (pinned in manifest, not on disk)');
       continue;
     }
     final bytes = file.readAsBytesSync();
     final gotHash = sha256.convert(bytes).toString().toUpperCase();
-    if (gotHash != wantHash) {
+    if (gotHash != p.hash) {
       problems.add(
-        'MISMATCH: data/_raw/$rel '
-        '(manifest ${wantHash.substring(0, 16)}… != disk ${gotHash.substring(0, 16)}…) — '
+        'MISMATCH: data/_raw/${p.rel} '
+        '(manifest ${p.hash.substring(0, 16)}… != disk ${gotHash.substring(0, 16)}…) — '
         'upstream changed; re-review before merging',
       );
-    } else if (bytes.length != wantSize) {
+    } else if (bytes.length != p.size) {
       problems.add(
-        'SIZE-DRIFT: data/_raw/$rel '
-        '(manifest $wantSize B != disk ${bytes.length} B with matching hash?!)',
+        'SIZE-DRIFT: data/_raw/${p.rel} '
+        '(manifest ${p.size} B != disk ${bytes.length} B with matching hash?!)',
       );
     }
   }
+  // Strip the raw-root prefix so on-disk paths compare against the manifest's
+  // repo-relative paths. Derived from [rawDirPath] rather than hardcoded to
+  // `data/_raw/`, or the scan would treat every real file as unpinned whenever
+  // the root is not the default.
+  final rawPrefix =
+      rawDirPath.replaceAll('\\', '/').replaceFirst(RegExp(r'/+$'), '');
+  final rawPrefixRe = RegExp('^${RegExp.escape(rawPrefix)}/');
   for (final entity in rawDir.listSync(recursive: true)) {
     if (entity is! File) continue;
-    final rel = entity.path
-        .replaceFirst(RegExp(r'^data[/\\]_raw[/\\]'), '')
-        .replaceAll('\\', '/');
+    final rel = entity.path.replaceAll('\\', '/').replaceFirst(rawPrefixRe, '');
     if (rel == 'PROVENANCE.sha256') continue;
-    if (!pinned.contains(rel)) {
+    if (!seen.contains(rel)) {
       problems.add(
-        'UNPINNED: data/_raw/$rel exists on disk but is not in '
+        'UNPINNED: $rawPrefix/$rel exists on disk but is not in '
         'the manifest — untracked input; pin it or remove it',
       );
     }
   }
-  return problems;
+
+  return ProvenanceReport(
+    status:
+        problems.isEmpty ? ProvenanceStatus.verified : ProvenanceStatus.drifted,
+    problems: problems,
+    pinnedCount: pinnedCount,
+    sourcesPresent: true,
+  );
 }
+
+/// Verifies every file pinned in data/PROVENANCE.sha256 against data/_raw/.
+/// Returns the list of problems (empty = verified).
+///
+/// Retained in this shape because every merge tool gates on it as its first
+/// action: if you are about to merge, you must be holding the sources. Use
+/// [auditProvenance] when you need to tell *why* a check did not pass — in
+/// particular, [ProvenanceStatus.sourcesAbsent] is not drift.
+List<String> verifyProvenance() => auditProvenance().problems;
 
 // ---------------------------------------------------------------------------
 // Minimal TypeScript data-module parsing

@@ -49,6 +49,13 @@ jobs:
         run: dart test
       - name: Coverage report
         run: dart test --coverage=coverage && dart pub global activate coverage && dart pub global run coverage:format_coverage --lcov --in=coverage --out=coverage/lcov.info --report-on=lib
+      # The step above has always produced a report that nothing acted on.
+      # `lib/` is dominated by lib/src/nepal_data.dart — a 1,396-line generated
+      # literal that reports 100% on import — so averaging it in would show a
+      # flattering ~98% and hide any regression in the hand-written API. This
+      # applies the floor to hand-written lines only.
+      - name: Enforce the coverage floor
+        run: dart run tool/check_coverage.dart
       - name: Explorer smoke test (no browser, no npm deps)
         run: node docs/smoke.cjs
       - name: Bindings smoke test (executes the JS, parses CSV + GeoJSON)
@@ -202,9 +209,26 @@ jobs:
       - name: Run widget tests
         run: flutter test
 
-  # Scheduled integrity watch: re-hashes every vendored input against the
-  # provenance manifest and files an issue when an upstream source changes,
-  # so a silent upstream drift cannot sit unnoticed until a merge run fails.
+  # Scheduled integrity watch.
+  #
+  # Two checks, because they answer different questions and only one of them
+  # can actually run here:
+  #
+  #   1. The pinning CONTRACT: is data/PROVENANCE.sha256 well-formed, are its
+  #      paths safe and unique, and is every vendored source documented in
+  #      data/SOURCES.md? This needs no payload and always runs.
+  #
+  #   2. The PAYLOAD: does each vendored input still hash to its recorded
+  #      value? This needs data/_raw/, which is deliberately gitignored (~2.5 MB
+  #      of CC-BY snapshots) and therefore absent from every CI checkout.
+  #
+  # The previous version ran check 2 unconditionally and filed
+  # "[provenance] vendored source drift detected" on failure — i.e. it blamed
+  # upstream for the condition "we chose not to commit the snapshots", on every
+  # scheduled run, forever. It never fired only because the job had never
+  # actually executed. The two conditions are now distinct, and the tool's
+  # exit code says which one happened:
+  #   0 verified   1 drift/invalid   2 sources absent (expected here)
   provenance-watch:
     if: github.event_name == 'schedule'
     runs-on: ubuntu-latest
@@ -216,11 +240,27 @@ jobs:
         with:
           sdk: stable
       - run: dart pub get
-      - name: Verify provenance of every vendored input
+
+      - name: Audit the provenance contract
+        run: dart run tool/merge/verify_provenance.dart --manifest
+
+      - name: Verify the vendored inputs, if they are present
         id: provenance
         continue-on-error: true
-        run: dart run tool/merge/verify_codes.dart
-      - name: File an issue when upstream drifted
+        run: |
+          # Exit 0, not the tool's exit 2: with `continue-on-error: true` any
+          # non-zero exit sets `outcome: failure`, which is the very condition
+          # that files the issue below. Absent sources must pass quietly.
+          if [ ! -d data/_raw ]; then
+            echo "::notice::data/_raw is not in this checkout (gitignored by"
+            echo "::notice::design - see data/SOURCES.md). Payload hashes cannot"
+            echo "::notice::be checked here; the contract audit above still ran."
+            echo "::notice::This is NOT upstream drift."
+            exit 0
+          fi
+          dart run tool/merge/verify_provenance.dart
+
+      - name: File an issue when upstream genuinely drifted
         if: steps.provenance.outcome == 'failure'
         uses: actions/github-script@v7
         with:

@@ -4,6 +4,55 @@ All notable changes to this package are documented in this file.
 The format follows [Keep a Changelog](https://keepachangelog.com/) and the
 package adheres to [Semantic Versioning](https://semver.org/).
 
+## 2.7.1 — 2026-10-14
+
+The integrity audit. Everything here was found by inspecting the repository
+rather than by running it — which is the point.
+
+### Fixed
+- **The scheduled drift monitor would have blamed upstream every week.**
+  `data/_raw/` is gitignored (≈2.5 MB of CC-BY snapshots), so no clean checkout
+  — including every CI checkout — contains the 36 pinned files. `verifyProvenance()`
+  fails closed when they are absent, and `provenance-watch` turned any failure
+  into a *"[provenance] vendored source drift detected"* issue. It had never
+  fired only because the job is `schedule`-only and every run so far was a
+  push. `auditProvenance()` now returns a typed `ProvenanceReport` and
+  `tool/merge/verify_provenance.dart` exits `0` verified / `2` sources absent /
+  `1` genuine drift. The job audits the pinning *contract* on every run and
+  hash-verifies only when sources are present.
+- **The provenance contract was weaker than it looked.** The manifest is now
+  rejected if it contains a duplicate pin or a path that escapes `data/_raw`
+  (absolute, `..`, or drive-absolute) — otherwise the manifest is a way to name
+  an arbitrary file.
+- **Four documentation version claims were stale.** `README.md`, `docs/llms.txt`,
+  `docs/llms-full.txt` pinned `^2.3.1` against a 2.7.0 package, and the
+  schema.org metadata on the published site still declared version `2.5.0`.
+  All corrected.
+- **Coverage was measured and then ignored.** CI produced an LCOV report that
+  nothing acted on. `tool/check_coverage.dart` now enforces an 85% floor —
+  applied to hand-written lines only, because `lib/src/nepal_data.dart` is a
+  1,396-line generated literal that reports 100% on import and would drag a
+  naive total to a flattering ~98%.
+
+### Added
+- `test/provenance_test.dart` (16 tests) — the four statuses exercised against
+  fixtures, plus the governance invariant that every vendored source directory
+  is documented in `SOURCES.md`.
+- `test/docs_drift_test.dart` (7 tests) — install snippets, prose version
+  claims, schema.org metadata, the CHANGELOG entry and the as-of date must all
+  agree with `pubspec.yaml` and the dataset.
+- `test/binding_packaging_test.dart` (9 tests) — every file the Python and
+  JavaScript bindings open at runtime must exist *and* be covered by their
+  packaging declarations. CI tests the source tree, never the artifact, so a
+  missing `data.json` in the sdist would otherwise surface only after install.
+
+### Known gap, unchanged
+- **The merge is not reproducible from a clean clone.** All eight merge tools
+  gate on `verifyProvenance()`, and the payloads are not in the repository. A
+  contributor who clones this repo cannot regenerate the dataset from sources.
+  Re-fetching from the URLs in `SOURCES.md` and verifying against the manifest
+  would close it.
+
 ## 2.7.0 — 2026-10-13
 
 The Flutter release, plus a boundary investigation that ended in a refusal to

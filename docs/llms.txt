@@ -25,7 +25,7 @@
 
 ## Key facts for code generation
 
-- Install: `dependencies: { nepal_admin_api: ^2.3.1 }`, then `dart pub get`.
+- Install: `dependencies: { nepal_admin_api: ^2.7.1 }`, then `dart pub get`.
 - Import: `import 'package:nepal_admin_api/nepal_admin_api.dart';`
 - Entry point is the static class `NepalAdminApi` (never instantiated).
 - `getProvinceById(id)` accepts a slug (`'bagmati'`) or ISO code (`'NP-P3'`), case-insensitive; `getProvinceByIso` / `getProvinceByCbs(3)` are explicit.

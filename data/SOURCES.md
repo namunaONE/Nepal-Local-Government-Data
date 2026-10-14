@@ -31,6 +31,44 @@ re-fetchable from the URLs below. Integrity is verified against
 `data/PROVENANCE.sha256` records, for every vendored file, its SHA-256, byte
 length, and repo-relative path. It is generated from `data/_raw/`.
 
+### How to verify — and what each outcome means
+
+```
+dart run tool/merge/verify_provenance.dart             # full check
+dart run tool/merge/verify_provenance.dart --manifest  # contract only
+```
+
+The tool distinguishes four outcomes, and the distinction matters because
+`data/_raw/` is **gitignored** (≈2.5 MB of CC-BY snapshots that are
+re-fetchable from the URLs below). A clean checkout therefore has no payloads
+at all, which is *not* evidence that anything changed:
+
+| Exit | Status | Meaning |
+|---|---|---|
+| `0` | `verified` | Every pinned input is present and matches its hash and size. |
+| `2` | `sourcesAbsent` | `data/_raw/` is not here. **Expected in CI.** Nothing was checked. |
+| `1` | `drifted` | Sources present, and at least one disagrees with the manifest. |
+| `1` | `manifestInvalid` | The pinning contract itself is broken. |
+
+> This separation exists because the previous arrangement conflated them. The
+> scheduled `provenance-watch` job ran the full hash check unconditionally and
+> filed a GitHub issue titled *"[provenance] vendored source drift detected"*
+> whenever it failed — i.e. it blamed upstream for the condition "we chose not
+> to commit the snapshots". It had never fired only because the job is
+> `schedule`-only. The job now audits the *contract* every run (which needs no
+> payload) and hash-verifies only when sources are present.
+
+`verifyProvenance()` — used by all eight merge tools as their first action,
+and which returns a plain problem list — keeps its original contract: **if you
+are about to merge, you must be holding the sources.** Use `auditProvenance()`
+when you need to know *why* a check did not pass.
+
+> **Reproducibility gap.** Because the payloads are not in the repository, a
+> contributor who clones this repo cannot run the merge; only a machine holding
+> `data/_raw/` can. Re-fetching from the URLs below and verifying against the
+> manifest closes that gap, and would be the preferred fix over committing the
+> snapshots. Not yet implemented.
+
 ### 1. abinrimal — `abinrimal/…`
 
 | File | Git tree SHA |
