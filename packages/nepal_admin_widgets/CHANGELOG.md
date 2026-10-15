@@ -18,5 +18,4 @@ Initial release.
   so a label never ends in a dangling separator for the 22 local bodies that
   have no attested Devanagari name.
 
-Requires `nepal_admin_api` 2.7.0 or later. Not yet published (`publish_to:
-none`) while it resolves `nepal_admin_api` by path.
+Requires `nepal_admin_api` 2.7.2 or later (hosted constraint).

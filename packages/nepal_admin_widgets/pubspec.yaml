@@ -4,9 +4,10 @@ description: >-
   77 districts, 753 local bodies. Bilingual (English + Devanagari), offline,
   and backed by the verified nepal_admin_api dataset.
 version: 0.1.0
-# Not published yet: this is a monorepo package that depends on the local
-# nepal_admin_api checkout. Change to a version constraint before publishing.
-publish_to: none
+
+homepage: https://github.com/namunaONE/Nepal-Local-Government-Data/tree/main/packages/nepal_admin_widgets
+repository: https://github.com/namunaONE/Nepal-Local-Government-Data
+issue_tracker: https://github.com/namunaONE/Nepal-Local-Government-Data/issues
 
 environment:
   sdk: ^3.0.0
@@ -15,8 +16,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  nepal_admin_api:
-    path: ../../
+  # Released against nepal_admin_api ^2.7.2 (verified by CI).
+  nepal_admin_api: ^2.7.2
 
 dev_dependencies:
   flutter_test:

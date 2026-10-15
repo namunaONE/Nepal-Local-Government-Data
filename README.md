@@ -1,7 +1,7 @@
 # Nepal Administrative Data by namunaONE — `nepal_admin_api`
 
 <p align="left">
-  <img src="docs/logo-full.svg" alt="Nepal Administrative Data by namunaONE" width="420">
+  <img src="https://raw.githubusercontent.com/namunaONE/Nepal-Local-Government-Data/main/docs/logo-full.svg" alt="Nepal Administrative Data by namunaONE" width="420">
 </p>
 
 [![pub package](https://img.shields.io/pub/v/nepal_admin_api.svg)](https://pub.dev/packages/nepal_admin_api)
@@ -22,7 +22,7 @@ Pure Dart package. Zero runtime dependencies. Data ships in the box.
 
 | Feature | Description |
 |---------|-------------|
-| **Flutter widgets** | [`nepal_admin_widgets`](/packages/nepal_admin_widgets) — cascading Province → District → Palika pickers, bilingual, offline, 58 widget tests |
+| **Flutter widgets** | [`nepal_admin_widgets`](https://github.com/namunaONE/Nepal-Local-Government-Data/tree/main/packages/nepal_admin_widgets) — cascading Province → District → Palika pickers, bilingual, offline, 58 widget tests |
 | **Bindings for 5 ecosystems** | Dart · TypeScript/JavaScript · Python · CSV · GeoJSON — all generated from one dataset, drift-checked in CI |
 | **Bilingual** | Devanagari names for all 7 provinces, 77 districts and **731/753 palikas** - never transliterated, never guessed |
 | **Bilingual search** | `search('भरतपुर')` and `search('Bharatpur')` return the same palika; fragments match too |
@@ -38,7 +38,7 @@ Pure Dart package. Zero runtime dependencies. Data ships in the box.
 | **Computed stats** | National & provincial totals (not hardcoded), with declared-vs-verified ward reconciliation |
 | **JSON serialization** | `toJson()` / `fromJson()` + `==` / `hashCode` on all models |
 | **Zero dependencies** | Pure Dart, works offline on every platform |
-| **130/130 pub.dev** | Full score: analysis, formatting, tests, docs, platform support |
+| **Verified** | `dart analyze --fatal-infos` clean, 121 tests, 141 binding checks, hand-written line coverage 91.6% with an enforced floor |
 
 ---
 
@@ -79,7 +79,7 @@ void main() {
   // ──────────────────────────────────────────────
   final chitwan = NepalAdminApi.getDistrictByName('Chitwan');
   print('Chitwan bodies: ${chitwan?.localBodyCount}'); // 7
-  print('Chitwan CBS code: ${chitwan?.cbsCode}'); // 306
+  print('Chitwan CBS code: ${chitwan?.cbsCode}'); // 313
 
   // ──────────────────────────────────────────────
   // Local Bodies (palikas) with CBS codes
@@ -103,8 +103,8 @@ void main() {
   }
   // Sunkoshi — Okhaldhunga, Koshi
   // Sunkoshi — Udayapur, Koshi
+  // Sunkoshi — Sindhuli, Bagmati
   // Sunkoshi — Sindhupalchok, Bagmati
-  // Sunkoshi — Rautahat, Madhesh
 
   // ──────────────────────────────────────────────
   // National Statistics (computed, not hardcoded)

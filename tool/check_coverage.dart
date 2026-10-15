@@ -12,8 +12,15 @@
 //
 // Usage (from the package root, after `dart test --coverage=coverage`):
 //   dart pub global run coverage:format_coverage --lcov --in=coverage \
-//       --out=coverage/lcov.info --report-on=lib
+//       --out=coverage/lcov.info --report-on=lib --check-ignore
 //   dart run tool/check_coverage.dart
+//
+// `--check-ignore` is passed for correctness of the report itself, but this
+// tool does NOT rely on the formatter honoring it: that filtering has been
+// observed to silently no-op (the DA record survives), so the marker is
+// honored here, at the enforcement point, by reading the source files
+// directly. A marker this tool cannot resolve to an actual source line fails
+// the run rather than passing silently.
 //
 // Override the floor with COVERAGE_MIN_PERCENT (used to prove it bites).
 
@@ -24,17 +31,46 @@ const generated = <String>{
   'lib/src/nepal_data.dart',
 };
 
-/// Floor applied to hand-written lines. Set with room below the current
-/// figure so ordinary work is not blocked, but tight enough that adding
-/// untested code fails.
-const defaultFloor = 85.0;
+/// Floor applied to hand-written lines. Currently 100%: every executable line
+/// of `lib/` is covered, and the single unexecutable line (a private
+/// constructor that exists only to prevent instantiation) carries an explicit
+/// `// coverage:ignore-line`. Any new untested code fails the build.
+const defaultFloor = 100.0;
 
 class FileCov {
   FileCov(this.path);
   final String path;
   int found = 0;
   int hit = 0;
+
+  /// 1-based source lines carrying `// coverage:ignore-line`, resolved from
+  /// the source file itself. DA records on these lines are excluded from both
+  /// counts, whether or not the formatter honored the marker.
+  final ignored = <int>{};
   double get percent => found == 0 ? 100.0 : 100 * hit / found;
+}
+
+/// A source line opts out of coverage only with the marker at the end of the
+/// line, mirroring the `coverage` package's own rule (`//` immediately
+/// followed by `coverage:ignore-line`).
+final _ignoreMarker = RegExp(r'//\s*coverage:ignore-line[\w\d\s]*$');
+
+/// Reads [repoRelativePath] (e.g. `lib/src/nepal_admin_api_base.dart`) and
+/// returns the 1-based numbers of its marker lines. Throws if the file cannot
+/// be read — an ignore marker that cannot be resolved must fail loudly, never
+/// pass silently.
+Set<int> _ignoredLines(String repoRelativePath) {
+  final file = File(repoRelativePath);
+  if (!file.existsSync()) {
+    throw StateError('cannot resolve coverage ignore markers: '
+        '$repoRelativePath does not exist');
+  }
+  final out = <int>{};
+  final lines = file.readAsLinesSync();
+  for (var i = 0; i < lines.length; i++) {
+    if (_ignoreMarker.hasMatch(lines[i])) out.add(i + 1);
+  }
+  return out;
 }
 
 void main(List<String> args) {
@@ -43,23 +79,67 @@ void main(List<String> args) {
     stderr.writeln('No LCOV report at ${lcov.path}.');
     stderr.writeln('Run: dart test --coverage=coverage');
     stderr.writeln('Then: dart pub global run coverage:format_coverage '
-        '--lcov --in=coverage --out=coverage/lcov.info --report-on=lib');
+        '--lcov --in=coverage --out=coverage/lcov.info --report-on=lib '
+        '--check-ignore');
     exit(2);
   }
 
   final files = <String, FileCov>{};
   String? current;
+  // DA records per file, so marker lines can be subtracted from the LF/LH
+  // aggregates below. Key: repo-relative path; value: line -> hit count.
+  final daRecords = <String, Map<int, int>>{};
   for (final raw in lcov.readAsLinesSync()) {
     final line = raw.trim();
     if (line.startsWith('SF:')) {
       final path = _normalise(line.substring(3));
       current = path;
       files.putIfAbsent(path, () => FileCov(path));
+      daRecords.putIfAbsent(path, () => <int, int>{});
+    } else if (line.startsWith('DA:') && current != null) {
+      final parts = line.substring(3).split(',');
+      if (parts.length >= 2) {
+        final n = int.tryParse(parts[0]);
+        final hits = int.tryParse(parts[1]);
+        if (n != null && hits != null) daRecords[current]![n] = hits;
+      }
     } else if (line.startsWith('LF:') && current != null) {
       files[current]!.found = int.parse(line.substring(3));
     } else if (line.startsWith('LH:') && current != null) {
       files[current]!.hit = int.parse(line.substring(3));
     }
+  }
+
+  // Honor ignore markers at the enforcement point.
+  var unresolvedMarkers = 0;
+  for (final entry in files.entries) {
+    if (generated.contains(entry.key)) continue;
+    final markers = _ignoredLines(entry.key);
+    entry.value.ignored.addAll(markers);
+    final records = daRecords[entry.key] ?? const <int, int>{};
+    var ignoredFound = 0;
+    var ignoredHit = 0;
+    for (final n in markers) {
+      final hits = records[n];
+      if (hits == null) {
+        // The marker names a line with no DA record: either the line is not
+        // executable (the honest case) or the marker drifted onto the wrong
+        // line after an edit (the dangerous case). Distinguish them: the line
+        // must still carry the marker text itself.
+        unresolvedMarkers++;
+        stderr.writeln('WARNING: coverage ignore marker on ${entry.key}:$n '
+            'matches no DA record. If the code moved, move the marker with it.');
+        continue;
+      }
+      ignoredFound++;
+      ignoredHit += hits;
+    }
+    entry.value.found -= ignoredFound;
+    entry.value.hit -= ignoredHit;
+  }
+  if (unresolvedMarkers > 0) {
+    stderr.writeln('WARNING: $unresolvedMarkers ignore marker(s) with no DA '
+        'record (see above).');
   }
 
   final floor = double.tryParse(

@@ -739,7 +739,11 @@ class SearchResult {
 
 /// The main entry point for querying Nepal's administrative divisions.
 class NepalAdminApi {
-  NepalAdminApi._(); // static-only class
+  // Private constructor exists only to prevent instantiation; it can never
+  // execute, so it is excluded from the coverage floor (see tool/).
+  // The marker must trail the code line itself, bare at line end: both this
+  // tool and the coverage package only recognize that exact shape.
+  NepalAdminApi._(); // coverage:ignore-line
 
   /// All 7 provinces.
   static List<Province> getAllProvinces() => NepalData.provinces.toList();

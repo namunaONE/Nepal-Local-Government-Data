@@ -48,12 +48,15 @@ jobs:
       - name: Run tests
         run: dart test
       - name: Coverage report
-        run: dart test --coverage=coverage && dart pub global activate coverage && dart pub global run coverage:format_coverage --lcov --in=coverage --out=coverage/lcov.info --report-on=lib
+        run: dart test --coverage=coverage && dart pub global activate coverage && dart pub global run coverage:format_coverage --lcov --in=coverage --out=coverage/lcov.info --report-on=lib --check-ignore
       # The step above has always produced a report that nothing acted on.
       # `lib/` is dominated by lib/src/nepal_data.dart — a 1,396-line generated
       # literal that reports 100% on import — so averaging it in would show a
       # flattering ~98% and hide any regression in the hand-written API. This
-      # applies the floor to hand-written lines only.
+      # applies the floor to hand-written lines only. `--check-ignore` matters:
+      # without it, `// coverage:ignore-line` markers are silently not honored
+      # and the single unexecutable line (an uninstantiable private constructor)
+      # counts as a miss.
       - name: Enforce the coverage floor
         run: dart run tool/check_coverage.dart
       - name: Explorer smoke test (no browser, no npm deps)
