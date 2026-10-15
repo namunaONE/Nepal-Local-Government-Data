@@ -49,4 +49,4 @@ nothing is fabricated to fill a column.
   `wards` is a count. See `data/SOURCES.md` § "Ward-level records".
 - **Boundary polygons.** See above.
 
-Generated 21 files · version 2.7.2 · data as of 2026-10-13.
+Generated 21 files · version 2.7.3 · data as of 2026-10-13.

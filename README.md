@@ -38,7 +38,7 @@ Pure Dart package. Zero runtime dependencies. Data ships in the box.
 | **Computed stats** | National & provincial totals (not hardcoded), with declared-vs-verified ward reconciliation |
 | **JSON serialization** | `toJson()` / `fromJson()` + `==` / `hashCode` on all models |
 | **Zero dependencies** | Pure Dart, works offline on every platform |
-| **Verified** | `dart analyze --fatal-infos` clean, 121 tests, 141 binding checks, hand-written line coverage 91.6% with an enforced floor |
+| **Verified** | `dart analyze --fatal-infos` clean, 136 tests, 141 binding checks, hand-written line coverage 100% with an enforced floor |
 
 ---
 
@@ -46,7 +46,7 @@ Pure Dart package. Zero runtime dependencies. Data ships in the box.
 
 ```yaml
 dependencies:
-  nepal_admin_api: ^2.7.2
+  nepal_admin_api: ^2.7.3
 ```
 
 ```bash

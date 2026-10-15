@@ -15,7 +15,7 @@ import json
 import os
 from typing import Dict, List, Optional
 
-__version__ = "2.7.2"
+__version__ = "2.7.3"
 
 _DATA_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data.json")
 with open(_DATA_PATH, encoding="utf-8") as _fh:

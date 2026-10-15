@@ -105,6 +105,7 @@ class ProvinceStats {
     required this.wards,
   });
 
+  /// Serializes these province-level counters. Round-trips with the raw map.
   Map<String, dynamic> toJson() => <String, dynamic>{
         'districts': districts,
         'metro': metro,
@@ -192,6 +193,8 @@ class LocalBody {
   /// Whether this local body publishes a contact address of some kind.
   bool get hasContact => website != null || email != null || phone != null;
 
+  /// Creates a local body. Prefer the package's own lookups
+  /// ([NepalAdminApi.getLocalBodyByCbs]) over constructing one by hand.
   const LocalBody({
     required this.name,
     this.nameNe,
@@ -263,6 +266,8 @@ class LocalBody {
   /// Useful for dropdowns, breadcrumbs and disambiguating duplicate names.
   String get fullPath => '$name, $districtName, $provinceName';
 
+  /// Serializes this palika. Round-trips with [LocalBody.fromJson]; absent
+  /// fields stay absent rather than becoming explicit nulls.
   Map<String, dynamic> toJson() => <String, dynamic>{
         'name': name,
         if (nameNe != null) 'nameNe': nameNe,
@@ -372,6 +377,8 @@ class District {
   final List<LocalBody> _units;
   String _provinceName;
 
+  /// Creates a district. Prefer the package's own lookups
+  /// ([NepalAdminApi.getDistrictByName]) over constructing one by hand.
   District({
     required this.name,
     this.nameNe,
@@ -448,6 +455,7 @@ class District {
           if (b.cbsCodeVerified) b
       ];
 
+  /// Serializes this district, including its local bodies.
   Map<String, dynamic> toJson() => <String, dynamic>{
         'name': name,
         if (nameNe != null) 'nameNe': nameNe,
@@ -694,6 +702,8 @@ class NationalStats {
     this.verifiedWards = 0,
     this.wardGaps = 0,
   });
+
+  /// Serializes the computed totals.
 
   Map<String, dynamic> toJson() => <String, dynamic>{
         'provinces': provinces,

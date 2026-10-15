@@ -4,6 +4,16 @@ All notable changes to this package are documented in this file.
 The format follows [Keep a Changelog](https://keepachangelog.com/) and the
 package adheres to [Semantic Versioning](https://semver.org/).
 
+## 2.7.3 — 2026-10-15
+
+Docs only, no API or data changes. Released because the live pub.dev page was
+serving two false claims: the Sunkoshi example listed `Rautahat, Madhesh`
+(a palika that does not exist — the four are Okhaldhunga, Udayapur, Sindhuli
+and Sindhupalchok) and a Chitwan CBS comment read `306` (Kathmandu's code;
+Chitwan is `313`). Both corrected, plus absolute URLs for the logo and
+widgets links (`docs/` is pubignored, so relative paths break on pub.dev),
+and dartdoc on the five symbols pana flagged (now 164/164 documented).
+
 ## 2.7.2 — 2026-10-15
 
 Boundary polygons removed entirely. The OKNP geometry (`opentechcommunity/

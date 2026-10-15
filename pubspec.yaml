@@ -1,6 +1,6 @@
 name: nepal_admin_api
 description: Offline administrative divisions of Nepal — 7 provinces, 77 districts, 753 local bodies, 6,743 wards.
-version: 2.7.2
+version: 2.7.3
 
 homepage: https://github.com/namunaONE/Nepal-Local-Government-Data
 repository: https://github.com/namunaONE/Nepal-Local-Government-Data
