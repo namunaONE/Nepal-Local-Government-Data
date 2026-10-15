@@ -11,7 +11,6 @@
 //   nepali-geo-pro-max: https://raw.githubusercontent.com/l3lackcurtains/nepali-geo-pro-max/main
 //   open-admin-data:  https://raw.githubusercontent.com/open-admin-data/nepal-administrative-divisions/main
 //   cbs-codes:        CKAN opendatanepal (resource IDs in SOURCES.md)
-//   boundaries:       (OKNP - not publicly documented; manual download required)
 //   mofaga:           (MoFAGA contact data - URL not publicly documented)
 //
 // The tool will:
@@ -117,15 +116,6 @@ final sources = <String, SourceConfig>{
       if (id == null) return null;
       return 'https://api.opendatanepal.com/dataset/22870675-146d-4e4f-8848-2216380170de/resource/$id/download/${file.split('/').last}';
     },
-  ),
-  'boundaries': SourceConfig(
-    name: 'boundaries',
-    baseUrl: '',
-    files: [
-      'oknp_local_levels.geojson',
-      'oknp_local_levels.topojson',
-    ],
-    manual: true,
   ),
   'mofaga': SourceConfig(
     name: 'mofaga',

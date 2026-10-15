@@ -1,6 +1,6 @@
 # Nepal Administrative Data — Full Documentation
 
-> Offline Dart package (`nepal_admin_api` v2.7.1) for Nepal's administrative divisions: 7 provinces, 77 districts, 753 local bodies, 6,743 wards, with official CBS/NSO codes, ward counts, and map coordinates. Pure Dart, zero runtime dependencies. Maintained by namunaONE under HyaMuji and Taire Bhai. Not affiliated with the Government of Nepal.
+> Offline Dart package (`nepal_admin_api` v2.7.2) for Nepal's administrative divisions: 7 provinces, 77 districts, 753 local bodies, 6,743 wards, with official CBS/NSO codes, ward counts, and map coordinates. Pure Dart, zero runtime dependencies. Maintained by namunaONE under HyaMuji and Taire Bhai. Not affiliated with the Government of Nepal.
 
 This file is the complete text companion to `llms.txt`. Sources of truth: the [GitHub repository](https://github.com/namunaONE/Nepal-Local-Government-Data), the [API reference page](https://namunaONE.github.io/Nepal-Local-Government-Data/api.html), and the [package on pub.dev](https://pub.dev/packages/nepal_admin_api).
 
@@ -8,7 +8,7 @@ This file is the complete text companion to `llms.txt`. Sources of truth: the [G
 
 ```yaml
 dependencies:
-  nepal_admin_api: ^2.7.1
+  nepal_admin_api: ^2.7.2
 ```
 
 ```bash

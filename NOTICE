@@ -42,15 +42,4 @@ data/SOURCES.md.
             The districts file's Devanagari column (corrupt from row 43
             in the upstream CSV) is never consumed.
 
-3. Nepal Administrative Boundaries (opentechcommunity/map-of-nepal)
-   Source:  https://github.com/opentechcommunity/map-of-nepal
-   License: Creative Commons Attribution 4.0 International (CC-BY-4.0),
-            https://creativecommons.org/licenses/by/4.0/
-   Used for: NOT YET USED. The boundary geometry in data/_raw/boundaries/ is
-            vendored and SHA-256 pinned for integrity, but no field of the
-            shipped package is derived from it: the file ships 777 features
-            against the gazetted 753 and is quarantined pending review (see
-            data/SOURCES.md, "Boundaries").
-   Adaptation: none yet. This attribution is recorded in advance of any use.
-
 No other CC-BY-4.0 material is currently shipped.

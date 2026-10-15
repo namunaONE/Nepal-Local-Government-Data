@@ -412,7 +412,7 @@ function debounce(fn, delay) {
 }
 
 // ---- Centroid map (Leaflet + OSM Standard, no API key) ----
-// Single tile factory so a future vector/PMTiles migration is surgical.
+// Single tile factory so the tile source is defined in exactly one place.
 const MAP_TILES = {
   url: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
   maxZoom: 19,

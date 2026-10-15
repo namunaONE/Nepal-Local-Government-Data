@@ -25,9 +25,9 @@ timestamps), which is what makes that check a plain `git diff`.
   spreadsheet, and copying 753 rows by hand is the thing this project exists
   to stop.
 - **GeoJSON centroids** — so a map works today. Boundary polygons are *not*
-  included: the only vendored geometry ships 777 features against the gazetted
-  753 and is quarantined pending review (`data/SOURCES.md`). Centroids now
-  means a polygon layer can be added later without changing this contract.
+  included: no verified polygon source exists (see `data/SOURCES.md`,
+  "Boundaries"). Centroids now means a polygon layer could be added later
+  without changing this contract.
 - **JavaScript / Python** — same numbers and the same API shape as the Dart
   package, so moving between them is a rename, not a rewrite.
 
@@ -49,4 +49,4 @@ nothing is fabricated to fill a column.
   `wards` is a count. See `data/SOURCES.md` § "Ward-level records".
 - **Boundary polygons.** See above.
 
-Generated 21 files · version 2.7.1 · data as of 2026-10-13.
+Generated 21 files · version 2.7.2 · data as of 2026-10-13.

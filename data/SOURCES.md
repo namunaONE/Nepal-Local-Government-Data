@@ -10,8 +10,7 @@ re-fetchable from the URLs below. Integrity is verified against
 
 1. **Licensing.** Two sources are **CC-BY-4.0**, which requires *visible
    attribution in the distributed package* — a decision that is still open.
-2. **Size.** The five sources total ~2.5 MB today; Phase 3 boundary geometry
-   alone would add ~46 MB from one source.
+2. **Size.** The sources total ~2.5 MB today.
 3. **Precedent.** `datasets/country-codes` (the closest flagship-grade
    reference for this kind of dataset) ships a fetch script, not the data.
 
@@ -23,8 +22,7 @@ re-fetchable from the URLs below. Integrity is verified against
 | 2 | `sagautam5/local-states-nepal` | `master` | MIT | No | 2026-10-11 |
 | 3 | `l3lackcurtains/nepali-geo-pro-max` | `main` | MIT | No | 2026-10-11 |
 | 4 | `open-admin-data/nepal-administrative-divisions` | `main` | **CC-BY-4.0** | **Yes** | 2026-10-11 |
-| 5 | `opentechcommunity/map-of-nepal` | `master` | **CC-BY-4.0** | **Yes** | 2026-10-13 |
-| 6 | opendatanepal `geographical-codes-for-states-districts-and-local-bodies` (CBS harvest) | CKAN resource IDs, see §6 | **CC-BY** (`license_id: cc-by`, re-verified at fetch) | **Yes — via NOTICE** | 2026-10-11 |
+| 5 | opendatanepal `geographical-codes-for-states-districts-and-local-bodies` (CBS harvest) | CKAN resource IDs, see §6 | **CC-BY** (`license_id: cc-by`, re-verified at fetch) | **Yes — via NOTICE** | 2026-10-11 |
 
 ## File-level pins and blob SHAs
 
@@ -142,7 +140,7 @@ license link + adaptation note, per CC-BY-4.0 section 3(a)), is surfaced in
 the package's own code; it does not — and cannot — relicense the adapted
 CC-BY-4.0 portions, which remain under their original terms.
 
-### 6. CBS geographical codes via opendatanepal — `cbs-codes/…`
+### 5. CBS geographical codes via opendatanepal — `cbs-codes/…`
 
 Dataset: `geographical-codes-for-states-districts-and-local-bodies`
 (package `22870675-146d-4e4f-8848-2216380170de`), organization
@@ -216,71 +214,17 @@ Per-record evidence for all 753 palikas is written to
 > joins and clearly labelled; anything load-bearing (payments, statutory
 > filings, addressing) should use `verified` only.
 
-## Boundaries (source 5) — reconciled, still NOT shipped
+## Boundaries — removed (v2.7.2)
 
-`data/_raw/boundaries/oknp_local_levels.{geojson,topojson}` are fetched and
-SHA-256 pinned. They were previously untracked in the manifest, which made
-`verifyProvenance()` fail — and because that gate is the first thing every
-merge tool runs, **the whole pipeline was unrunnable**. Pinning restored it.
-
-`tool/merge/probe_boundaries.dart` reconciles the file against the dataset and
-writes nothing. Current result:
-
-| Finding | Value |
-|---|---|
-| Total features | 777 |
-| Palika-type features | 755 (Gaunpalika 461, Nagarpalika 277, Upamahanagarpalika 11, Mahanagarpalika 6) |
-| **Not palikas** | **22** — National Park 11, Wildlife Reserve 6, Hunting Reserve 3, Watershed and Wildlife Reserve 1, Development Area 1 |
-| Name-match coverage of our 753 | **705/753 (93.6%)** at distance ≤ 2 (562 exact, 108 at d=1, 25 at d=2, 1 ambiguous, 47 unmatched) |
-| **Unclosed rings** | **4,477 of 4,478** — RFC 7946 requires the first and last position to be identical |
-| Degenerate rings (< 4 positions) | 122 (minimum ring observed: 2 positions) |
-| Total vertices | 160,494 (max ring 547) |
-| Bounding box | lng 80.06–88.20, lat 26.35–30.47 — sane, inside Nepal |
-
-**Corrections to earlier assumptions in this file:**
-
-- The "777 vs 753" over-count is *not* a roster mismatch. 22 of the 777 are
-  parks and reserves rather than local bodies; the remaining 755 is a
-  near-exact match for 753, and 705 of them match our names (562 exactly).
-  This source does **not** appear to be a different administrative vintage.
-- The residual unmatched features are mostly **naming style, not structural
-  difference**: the file uses longer official names where we use the short form
-  ("Pokhara Lekhnath" vs our "Pokhara"; "Netrawati Dabjong" vs "Netrawati"),
-  and transliteration variants elsewhere ("Bardaghat" vs "Bardagoriya").
-- Nine district names needed folds the dataset had not encoded for this file:
-  `KABHREPALANCHOK` → Kavrepalanchok, `MAKAWANPUR` → Makwanpur,
-  `CHITAWAN` → Chitwan, `KAPILBASTU` → Kapilvastu, `TANAHU` → Tanahun, and
-  the underscore forms `NAWALPARASI_E/W`, `RUKUM_E/W`. `canonDistrict`
-  already covers most; `probe_boundaries.dart` adds the rest.
-
-**Why polygons are still not shipped.** The format defects are repairable —
-closing 4,477 rings is mechanical, and 122 degenerate features can be dropped.
-The blocker is one thing the data cannot answer:
-
-> **Nothing in this repository can confirm the boundaries are current.**
-
-There is no second geometry source to cross-check against, and no gazette. So
-this repository would be publishing an authoritative-looking polygon layer
-whose geometry has been verified only for *shape validity* and *name
-correspondence* — never for correctness. That is a different claim from every
-other field in this dataset, each of which carries at least two independent
-attestations. Having refused to publish a single-source CBS code rather than
-label it honestly, publishing unverifiable boundaries would be inconsistent
-with the project's own standard.
-
-**What would unblock it**, in order of preference:
-
-1. An official CBS or MoFAGA published boundary file, pinned and reviewed like
-   any other source.
-2. A second independent geometry source, so boundary agreement becomes a
-   cross-checked fact rather than a single-source claim.
-3. A documented human review of a sample of features against an official map,
-   recorded the way `decisions_manual.json` records roster decisions.
-
-The `pmtiles` workflow (`.github/workflows/pmtiles.yml`) already builds a tile
-pyramid from this file for on-demand delivery. That is an appropriate use: it
-is a basemap, not a claim about which palika owns which boundary, and nothing
-in this package depends on it.
+Boundary polygons were investigated (`opentechcommunity/map-of-nepal`, 777
+features) and deliberately never shipped: 4,477 of 4,478 rings violated
+RFC 7946, and nothing in the repository could confirm the boundaries are
+current. In v2.7.2 the quarantine was removed entirely — the vendored files,
+their manifest pins, the `probe_boundaries.dart` diagnostic, and the
+`pmtiles.yml` tile workflow are all gone — so the package makes no boundary
+claim at all. See CHANGELOG for the full record. Re-introducing polygons
+requires an official CBS/MoFAGA file or a second independent geometry source,
+pinned and reviewed like any other source.
 
 ## Bilingual names (`attach_bilingual.dart`, v2.5.0)
 

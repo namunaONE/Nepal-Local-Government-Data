@@ -4,6 +4,28 @@ All notable changes to this package are documented in this file.
 The format follows [Keep a Changelog](https://keepachangelog.com/) and the
 package adheres to [Semantic Versioning](https://semver.org/).
 
+## 2.7.2 — 2026-10-15
+
+Boundary polygons removed entirely. The OKNP geometry (`opentechcommunity/
+map-of-nepal`, 777 features) was investigated, reconciled at 705/753 name
+matches, and deliberately never shipped: 4,477 of 4,478 rings violated
+RFC 7946 and nothing could confirm the boundaries are current. The quarantine
+itself is now gone — vendored files, manifest pins, `probe_boundaries.dart`,
+the `pmtiles.yml` tile workflow and the NOTICE attribution are all removed —
+so the package makes no boundary claim at all. The package ships centroid
+points, never polygons. Re-introducing polygons requires an official CBS/
+MoFAGA file or a second independent geometry source.
+
+### Removed
+- `data/_raw/boundaries/` vendored geometry and its 2 `PROVENANCE.sha256` pins
+  (manifest now pins 34 files)
+- `tool/merge/probe_boundaries.dart` (diagnostic; left nothing to reconcile)
+- `data/_stage/boundary_matches.json`, `boundary_matches_v2.json` (probe leftovers,
+  referenced by no tool)
+- `.github/workflows/pmtiles.yml` (built tiles from the removed geometry)
+- `NOTICE` §3 advance attribution for the OKNP source
+- `boundaries` entry in `tool/fetch_sources.dart`
+
 ## 2.7.1 — 2026-10-14
 
 The integrity audit. Everything here was found by inspecting the repository

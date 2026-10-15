@@ -82,7 +82,7 @@ CDN, only on `explorer.html`):
 - Sync: filters/search rebuild markers (all filtered, not just the page);
   table-row click/Enter flies to the marker; `?cbs=31304` deep-links.
 - Tile factory is a single `MAP_TILES` constant + `createTileLayer()` in
-  `app.js` so a future vector/PMTiles migration is surgical.
+  `app.js`, so the tile source is defined in exactly one place.
 
 ## Regenerating explorer data
 

@@ -23,11 +23,11 @@
 //              plus .d.ts types. No dependencies.
 //   python/    a PyPI-ready package, pure stdlib, no dependencies.
 //
-// Boundaries are deliberately NOT included. The only geometry vendored is
-// data/_raw/boundaries/oknp_local_levels.geojson, which ships 777 features
-// against the gazetted 753 and is quarantined pending review (see
-// data/SOURCES.md). Shipping centroids now means a map works today and a
-// polygon layer can be added later without changing this file's contract.
+// Boundaries are deliberately NOT included. The package ships centroid points,
+// never polygons: no verified polygon source exists, and an authoritative-
+// looking boundary layer whose currency cannot be confirmed would violate the
+// project's own standard (see data/SOURCES.md, "Boundaries"). Shipping
+// centroids now means a map works today.
 //
 // Determinism
 // -----------
@@ -1556,9 +1556,9 @@ timestamps), which is what makes that check a plain `git diff`.
   spreadsheet, and copying 753 rows by hand is the thing this project exists
   to stop.
 - **GeoJSON centroids** — so a map works today. Boundary polygons are *not*
-  included: the only vendored geometry ships 777 features against the gazetted
-  753 and is quarantined pending review (`data/SOURCES.md`). Centroids now
-  means a polygon layer can be added later without changing this contract.
+  included: no verified polygon source exists (see `data/SOURCES.md`,
+  "Boundaries"). Centroids now means a polygon layer could be added later
+  without changing this contract.
 - **JavaScript / Python** — same numbers and the same API shape as the Dart
   package, so moving between them is a rename, not a rewrite.
 
